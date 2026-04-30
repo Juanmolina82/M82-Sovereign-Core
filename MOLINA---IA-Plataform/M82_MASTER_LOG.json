@@ -1,1 +1,2 @@
 [2026-03-23T17:28:03.446Z] - M82 AUDIT: {"equity":{"name":"NVDA","price":142.45,"zScore":93.33,"intrinsic":251.27},"macro":{"dxy":104.15,"us10y":4.35,"brent":96.79},"ratios":{"kelly":"41.67%","fxCarry":"0.0515","goldHedge":"22.52"}}
+{"ticker_alert": "BRENT_CRUDE", "action": "HOLD/ACCUMULATE ENERGY", "geopolitical_risk_index": 7.0, "compliance_check": "OFAC_UPDATE_REQUIRED", "notes": "Trump/Iran conflict: Naval blockade strategy confirmed via White House talks."}
