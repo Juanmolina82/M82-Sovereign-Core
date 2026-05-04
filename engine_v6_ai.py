@@ -1,32 +1,17 @@
-import yfinance as yf
 import requests
-import time
-from datetime import datetime
+import os
 
-TOKEN = "8600412468:AAE9rQQC2Z0ReE4qJ1R9amDfm5m4sO2-wM4"
-CHAT_ID = "1020305418"
-SYMBOLS = {"🛢️ BRENT": "BZ=F", "🛢️ WTI": "CL=F", "🥇 ORO": "GC=F", "₿ BTC": "BTC-USD", "📊 S&P500": "^GSPC"}
+TOKEN = "7876800049:AAGD2U86Zid9E96z8vYl8yHicB_O_37996c"
+CHAT_ID = "7410312683"
 
-def get_data():
-    report = f"🏛️ **MOLINA SOVEREIGN CORE V6-AI**\n🕒 {datetime.now().strftime('%H:%M:%S')}\n"
-    report += "━━━━━━━━━━━━━━━━━━\n"
-    for name, sym in SYMBOLS.items():
-        try:
-            t = yf.Ticker(sym)
-            hist = t.history(period="1d", interval="1m")
-            price = hist['Close'].iloc[-1]
-            change = ((price - hist['Open'].iloc[0]) / hist['Open'].iloc[0]) * 100
-            trend = "📈" if change > 0 else "📉"
-            report += f"{name}: ${price:.2f} ({change:+.2f}%) {trend}\n"
-        except:
-            continue
-    return report
+def main():
+    message = "🏛️ **MOLINA GLOBAL - ESTATUS DE MONITOREO**\n"
+    message += "✅ El sistema ha sido re-sincronizado post-purga.\n"
+    message += "🛡️ **Contexto Axios:** Vigilancia de activos navales activa.\n"
+    message += "📊 **Jurisdicción:** Master Architecture V3.2."
+    
+    url = f"https://api.telegram.org/bot{TOKEN}/sendMessage"
+    requests.post(url, data={'chat_id': CHAT_ID, 'text': message, 'parse_mode': 'Markdown'})
 
-while True:
-    try:
-        msg = get_data()
-        requests.post(f"https://api.telegram.org/bot{TOKEN}/sendMessage", 
-                      json={"chat_id": CHAT_ID, "text": msg, "parse_mode": "Markdown"})
-    except:
-        pass
-    time.sleep(10) # 10s para procesar más datos sin errores
+if __name__ == "__main__":
+    main()
