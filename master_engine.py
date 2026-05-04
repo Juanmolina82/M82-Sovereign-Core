@@ -1,18 +1,20 @@
 import requests
 import os
 
-# Intenta leer de GitHub Secrets, si no, usa tus fijos
-TOKEN = os.getenv("TELEGRAM_TOKEN", "8600412468:AAE9rQQC2Z0ReE4qJ1R9amDfm5m4sO2-wM4")
-CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "1020305418")
+TOKEN = "8600412468:AAE9rQQC2Z0ReE4qJ1R9amDfm5m4sO2-wM4"
+CHAT_ID = "1020305418"
 
-def report():
+def send_intel(subject, body):
     url = f"https://api.telegram.org/bot{TOKEN}/sendMessage"
-    msg = "🏛️ **M82 GLOBAL INTELLIGENCE**\n\n✅ Operación Sincronizada: Termux <-> GitHub\n🛡️ Vigilancia Geopolítica V3.2 Activa.\n📊 Status: Sovereign Core Online."
-    try:
-        r = requests.post(url, data={'chat_id': CHAT_ID, 'text': msg, 'parse_mode': 'Markdown'})
-        print(f"Respuesta: {r.status_code}")
-    except Exception as e:
-        print(f"Error: {e}")
+    msg = f"🏛️ **M82 GLOBAL INTELLIGENCE - MANDO GERENCIAL**\n\n📌 **ASUNTO:** {subject}\n\n{body}\n\n⚖️ *Estatus: Operación Unificada V3.2*"
+    requests.post(url, data={'chat_id': CHAT_ID, 'text': msg, 'parse_mode': 'Markdown'})
 
 if __name__ == "__main__":
-    report()
+    # Primer reporte de mando AGI
+    reporte = (
+        "✅ **CORE UNIFICADO:** Sincronización Termux/GitHub exitosa.\n"
+        "📈 **MERCADOS:** Procesando Block Buys en CHRW (111K) y Movimiento en INTT.\n"
+        "🛰️ **SATÉLITE:** GitHub Actions en guardia 24/7.\n"
+        "🤖 **AGI READY:** Sistema listo para recibir órdenes de alta prioridad."
+    )
+    send_intel("DESPLIEGUE ESTRATÉGICO", reporte)
