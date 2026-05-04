@@ -1,0 +1,6 @@
+#!/data/data/com.termux/files/usr/bin/sh
+# Esperar estabilidad de red
+termux-wake-lock
+sleep 5
+# Lanzar la terminal M82 con su Watchlist de Moomoo en una sesión TMUX
+tmux new-session -d -s m82 'node ~/m82_glass.js'

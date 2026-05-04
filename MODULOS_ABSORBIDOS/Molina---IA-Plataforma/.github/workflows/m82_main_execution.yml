@@ -1,0 +1,28 @@
+name: M82 24/7 Intelligence Execution
+on:
+  push:
+    branches: [ main ]
+  schedule:
+    # Horarios programados en UTC (Ajustados para coincidir con sus horas solicitadas)
+    # 5am, 9am, 12pm, 4pm, 8pm, 12am
+    - cron: '0 9,13,16,20,0,4 * * *'
+  workflow_dispatch:
+
+jobs:
+  run-intel:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+      - name: Install dependencies
+        run: pip install requests
+      - name: Execute M82 Intelligence
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          ALPHA_VANTAGE_KEY: ${{ secrets.ALPHA_VANTAGE_KEY }}
+        run: python market_intelligence/m82_geopolitical_monitor.py

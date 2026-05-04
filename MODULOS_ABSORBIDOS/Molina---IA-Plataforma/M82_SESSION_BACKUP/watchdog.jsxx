@@ -1,0 +1,16 @@
+const BRENT_PRICE = 107.20;
+const GOLD_PRICE = 4480.80;
+
+console.log("\n--- M82 WATCHDOG: MOLINA HOLDINGS LLC ---");
+console.log("ESTADO: GUARDIA ACTIVA");
+console.log("BRENT ACTUAL: $" + BRENT_PRICE);
+console.log("ORO ACTUAL:   $" + GOLD_PRICE);
+
+if (BRENT_PRICE >= 115) {
+    console.log("🚨 ALERTA ROJA: ACTIVAR ESCUDO ATLANTICO.");
+} else {
+    console.log("✅ ESTATUS: MERCADOS DENTRO DE RANGO.");
+}
+console.log("-----------------------------------------\n");node watchdog.js
+node watchdog.js
+

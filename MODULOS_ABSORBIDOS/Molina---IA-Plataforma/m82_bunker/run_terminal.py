@@ -1,0 +1,1 @@
+/data/data/com.termux/files/home/M82/core/sovereign_core.py

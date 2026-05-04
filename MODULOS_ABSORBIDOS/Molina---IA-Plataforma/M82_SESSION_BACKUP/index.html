@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Molina Holdings LLC | M82</title>
+    <meta http-equiv="refresh" content="30">
+    <style>
+        body { background: #050505; color: #00ff41; font-family: 'Courier New', monospace; display: flex; flex-direction: column; align-items: center; padding: 40px; }
+        h1 { border-bottom: 2px solid #00ff41; padding-bottom: 10px; width: 100%; text-align: center; letter-spacing: 5px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; width: 100%; max-width: 900px; margin-top: 30px; }
+        .card { border: 1px solid #00ff41; padding: 20px; border-radius: 8px; background: rgba(0, 255, 65, 0.05); box-shadow: 0 0 15px rgba(0, 255, 65, 0.2); }
+        .asset-name { font-size: 1.5em; font-weight: bold; color: #fff; margin-bottom: 15px; display: block; }
+        .stat { margin: 10px 0; font-size: 1.1em; }
+        .value { color: #00ff41; float: right; }
+        .footer { margin-top: 50px; font-size: 0.8em; opacity: 0.6; }
+    </style>
+</head>
+<body>
+    <h1>MOLINA HOLDINGS LLC</h1>
+    <div class="grid" id="dashboard">Cargando algoritmos M82...</div>
+    <div class="footer">SISTEMA CUANTITATIVO M82 | TERMINAL ACTIVA</div>
+
+    <script>
+        async function updateData() {
+            try {
+                const res = await fetch('/api/quant');
+                const data = await res.json();
+                let html = '';
+                for (let key in data) {
+                    html += `
+                    <div class="card">
+                        <span class="asset-name">${key}</span>
+                        <div class="stat">Kelly Opt: <span class="value">${data[key].k || data[key].kelly}</span></div>
+                        <div class="stat">Capital: <span class="value">${data[key].usd || data[key].cash}</span></div>
+                    </div>`;
+                }
+                document.getElementById('dashboard').innerHTML = html;
+            } catch (e) {
+                document.getElementById('dashboard').innerHTML = 'ESPERANDO DATOS DEL MOTOR...';
+            }
+        }
+        updateData();
+    </script>
+</body>
+</html>

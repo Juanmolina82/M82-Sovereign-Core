@@ -1,0 +1,37 @@
+0 verbose cli /data/data/com.termux/files/usr/bin/node /data/data/com.termux/files/usr/bin/npm
+1 info using npm@11.13.0
+2 info using node@v25.8.2
+3 silly config load:file:/data/data/com.termux/files/usr/lib/node_modules/npm/npmrc
+4 silly config load:file:/data/data/com.termux/files/home/.npmrc
+5 silly config load:file:/data/data/com.termux/files/usr/etc/npmrc
+6 verbose title npm install pnpm
+7 verbose argv "install" "--global" "pnpm"
+8 verbose logfile logs-max:10 dir:/data/data/com.termux/files/home/.npm/_logs/2026-04-29T04_34_28_685Z-
+9 verbose logfile /data/data/com.termux/files/home/.npm/_logs/2026-04-29T04_34_28_685Z-debug-0.log
+10 silly packumentCache heap:1174405120 maxSize:293601280 maxEntrySize:146800640
+11 silly logfile start cleaning logs, removing 1 files
+12 silly logfile done cleaning log files
+13 silly idealTree buildDeps
+14 silly fetch manifest pnpm@*
+15 silly packumentCache full:https://registry.npmjs.org/pnpm cache-miss
+16 http fetch GET 200 https://registry.npmjs.org/pnpm 630ms (cache revalidated)
+17 silly packumentCache full:https://registry.npmjs.org/pnpm set size:5340701 disposed:false
+18 silly placeDep ROOT pnpm@10.33.2 OK for:  want: *
+19 silly reify mark retired [
+19 silly reify   '/data/data/com.termux/files/usr/lib/node_modules/pnpm',
+19 silly reify   '/data/data/com.termux/files/usr/bin/pnpm',
+19 silly reify   '/data/data/com.termux/files/usr/bin/pnpx'
+19 silly reify ]
+20 silly reify moves {
+20 silly reify   '/data/data/com.termux/files/usr/lib/node_modules/pnpm': '/data/data/com.termux/files/usr/lib/node_modules/.pnpm-PKTvyPFa',
+20 silly reify   '/data/data/com.termux/files/usr/bin/pnpm': '/data/data/com.termux/files/usr/bin/.pnpm-ofLg9kx2',
+20 silly reify   '/data/data/com.termux/files/usr/bin/pnpx': '/data/data/com.termux/files/usr/bin/.pnpx-uFqYJddx'
+20 silly reify }
+21 http cache pnpm@https://registry.npmjs.org/pnpm/-/pnpm-10.33.2.tgz 0ms (cache hit)
+22 silly CHANGE node_modules/pnpm
+23 verbose cwd /data/data/com.termux/files/home
+24 verbose os Linux 5.10.237-android12-9-00014-gf82f7360927e-ab14119954
+25 verbose node v25.8.2
+26 verbose npm  v11.13.0
+27 verbose exit 0
+28 info ok

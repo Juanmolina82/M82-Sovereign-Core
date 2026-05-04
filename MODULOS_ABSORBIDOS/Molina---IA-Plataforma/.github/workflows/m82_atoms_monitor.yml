@@ -1,0 +1,28 @@
+name: M82 Daily Intel & Atoms Monitor
+
+on:
+  push:
+    branches: [ main ]
+  schedule:
+    - cron: '0 12 * * *' # Corre todos los días a las 8:00 AM (Hora local aproximada)
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
+
+      - name: Install Dependencies
+        run: pip install requests
+
+      - name: Run M82 Engine
+        run: python market_intelligence/m82_geopolitical_monitor.py
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}

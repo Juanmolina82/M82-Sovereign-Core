@@ -1,0 +1,16 @@
+const nav      = 162000;   // NAV total del fondo en USD
+const xlePrice = 44;       // precio de XLE
+
+const targetEnergyValue = nav * energyWeight;
+const targetShares      = Math.floor(targetEnergyValue / xlePrice);
+
+const currentXleValue = 10000;          // valor actual en XLE
+const currentShares   = currentXleValue / 44;
+
+const sharesToTrade = targetShares - currentShares;
+
+console.log('NAV:', nav);
+console.log('Target energy value:', targetEnergyValue.toFixed(2));
+console.log('Target XLE shares:', targetShares);
+console.log('Current XLE shares:', currentShares.toFixed(2));
+console.log('Shares to trade (buy+ / sell-):', sharesToTrade.toFixed(2));

@@ -1,0 +1,10 @@
+
+===========================================================
+    M82 LOGISTICS BLUEPRINT: PORT AUDIT 2026
+===========================================================
+REGION: Caribbean - US Gulf Corridor
+NODES: Houston, Louisiana, Aruba, Curaçao, Jose, Amuay.
+VLCC CAPACITY: Validated for Deep Water Nodes.
+
+Molina Holdings LLC: Integrated Intermodal Power.
+===========================================================

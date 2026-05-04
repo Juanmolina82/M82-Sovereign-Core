@@ -1,0 +1,500 @@
+        return Object.keys(data).reduce((a, b) => data[a] > data[b] ? a : b);
+    },
+    calcularDividendo: (ingresos, pop) => {
+        return (ingresos * 0.20) / pop;
+    }
+};
+
+// --- DATOS DE MERCADO EN TIEMPO REAL (Simulados para CERAWeek) ---
+const marketData = { "Singapur": 85, "Rotterdam": 95, "Houston": 40 };
+const ingresosBase = 1000000000; // 1 Billón
+const poblacionVzla = 30000000;
+
+// --- EJECUCIÓN Y SALIDA A CONSOLA ---
+const destino = M82_Engine.analizarMercado(marketData);
+const monto = M82_Engine.calcularDividendo(ingresosBase, poblacionVzla);
+
+console.log('==============================================');
+console.log('   M82 CORE ENGINE - STATUS: OPERATIONAL      ');
+console.log('==============================================');
+console.log('DESTINO ESTRATÉGICO DETECTADO:', destino.toUpperCase());
+console.log('VALOR DEL CRACK SPREAD:', '$' + marketData[destino]);
+console.log('----------------------------------------------');
+console.log('DIVIDENDO CIUDADANO CALCULADO: $' + monto.toFixed(2));
+console.log('==============================================');
+EOF
+
+node m82_core.js
+// M82 STATUS: CRISIS MODE ACTIVATED
+const escenarios = [
+// debido a la interrupción de suministros desde el Golfo.
+termux-setup-storage
+// M82 WATCHDOG - MOLINA HOLDINGS LLC
+const BRENT_TARGET = 115.00;
+const GOLD_TARGET = 4500.00;
+function checkMarket(brentActual, goldActual) {
+}
+// Simulación de guardia activa con sus últimos datos
+checkMarket(107.20, 4480.80); 
+nano watchdog.js
+node watchdog.js
+printf "const B=107.20, G=4480.80; console.log('\\n--- M82 WATCHDOG: MOLINA HOLDINGS LLC ---\\nESTADO: GUARDIA ACTIVA\\nBRENT: $'+B+'\\nORO:   $'+G+'\\n'+(B>=115?'🚨 ALERTA ROJA: ACTIVAR ESCUDO':'✅ ESTATUS: RANGO NORMAL')+'\\n-----------------------------------------\\n');" > watchdog.js
+node watchdog.js
+cat << 'EOF' > watchdog.js
+const B = 107.20;
+const G = 4480.80;
+console.log("\n--- M82 WATCHDOG: MOLINA HOLDINGS LLC ---");
+console.log("ESTADO: GUARDIA ACTIVA");
+console.log("BRENT: $" + B);
+console.log("ORO:   $" + G);
+if (B >= 115) {
+    console.log("🚨 ALERTA ROJA: ACTIVAR ESCUDO");
+} else {
+    console.log("✅ ESTATUS: RANGO NORMAL");
+}
+console.log("-----------------------------------------\n");
+EOF
+
+node watchdog.js
+alias m82='node watchdog.js'
+[200~echo "alias m82='node ~/watchdog.js'" >> ~/.bashrc
+~
+[200~echo "alias m82='node ~/watchdog.js'" >> ~/.bashrc && source ~/.bashrc
+~
+alias m82='node watchdog.js'
+nano watchdog.js
+0
+m82
+cat << 'EOF' > watchdog.js
+const B = 118.50;
+const G = 4510.00;
+console.log("\n--- M82 WATCHDOG: MOLINA HOLDINGS LLC ---");
+console.log("ESTADO: GUARDIA ACTIVA (TEST MODE)");
+console.log("BRENT: $" + B);
+console.log("ORO:   $" + G);
+if (B >= 115) {
+    console.log("🚨 ALERTA ROJA: ACTIVAR ESCUDO ATLANTICO");
+} else {
+    console.log("✅ ESTATUS: RANGO NORMAL");
+}
+console.log("-----------------------------------------\n");
+EOF
+
+m82
+cat << 'EOF' > watchdog.js
+const B = 107.20;
+const G = 4357.00;
+console.log("\n--- M82 WATCHDOG: MOLINA HOLDINGS LLC ---");
+console.log("ESTADO: GUARDIA ACTIVA (REAL-TIME)");
+console.log("BRENT: $" + B);
+console.log("ORO:   $" + G);
+if (B >= 115) {
+    console.log("🚨 ALERTA ROJA: ACTIVAR ESCUDO ATLANTICO");
+} else if (G < 4400) {
+    console.log("⚠️ NOTA: ORO POR DEBAJO DE SOPORTE ($4400)");
+} else {
+    console.log("✅ ESTATUS: RANGO NORMAL");
+}
+console.log("-----------------------------------------\n");
+EOF
+
+m82
+cat << 'EOF' > watchdog.js
+const B = 107.20;
+const G = 4406.70;
+console.log("\n--- M82 WATCHDOG: MOLINA HOLDINGS LLC ---");
+console.log("ESTADO: GUARDIA ACTIVA (ASIAN OPENING)");
+console.log("BRENT: $" + B);
+console.log("ORO:   $" + G);
+if (B >= 115) {
+    console.log("🚨 ALERTA ROJA: ACTIVAR ESCUDO ATLANTICO");
+} else if (G <= 4410) {
+    console.log("⚠️ ALERTA DE LIQUIDEZ: ORO ROMPIÓ SOPORTE CRÍTICO");
+} else {
+    console.log("✅ ESTATUS: RANGO NORMAL");
+}
+console.log("-----------------------------------------\n");
+EOF
+
+cat << 'EOF' > watchdog.js
+const B = 107.20;
+const G = 4406.70;
+console.log("\n--- M82 WATCHDOG: MOLINA HOLDINGS LLC ---");
+console.log("ESTADO: GUARDIA ACTIVA (ASIAN OPENING)");
+console.log("BRENT: $" + B);
+console.log("ORO:   $" + G);
+if (B >= 115) {
+    console.log("🚨 ALERTA ROJA: ACTIVAR ESCUDO ATLANTICO");
+} else if (G <= 4410) {
+    console.log("⚠️ ALERTA DE LIQUIDEZ: ORO ROMPIÓ SOPORTE CRÍTICO");
+} else {
+    console.log("✅ ESTATUS: RANGO NORMAL");
+}
+console.log("-----------------------------------------\n");
+EOF
+
+npm install axios
+cat << 'EOF' > watchdog.js
+const axios = require('axios');
+
+async function checkMarkets() {
+    try {
+        // Usamos una fuente de datos abierta para la prueba
+        const response = await axios.get('https://api.binance.com/api/v3/ticker/price?symbol=PAXGUSDT');
+        const goldPrice = parseFloat(response.data.price);
+        const brentSimulado = 107.20; // El crudo requiere llaves privadas, lo dejamos base por ahora
+
+        console.log("\n--- M82 AUTOMATED WATCHDOG: MOLINA HOLDINGS ---");
+        console.log("ESTADO: MONITOREO EN VIVO (LIVE DATA)");
+        console.log("BRENT (Ref): $" + brentSimulado);
+        console.log("ORO (PAXG):  $" + goldPrice.toFixed(2));
+
+        if (goldPrice <= 4410) {
+            console.log("⚠️ ALERTA: ORO POR DEBAJO DE SOPORTE CRÍTICO");
+        } else {
+            console.log("✅ ESTATUS: MERCADOS ESTABLES");
+        }
+        console.log("-----------------------------------------------\n");
+
+    } catch (error) {
+        console.log("❌ Error de conexión: No se pudo obtener data real.");
+    }
+}
+
+checkMarkets();
+EOF
+
+cat << 'EOF' > watchdog.js
+const axios = require('axios');
+
+async function checkMarkets() {
+    try {
+        const response = await axios.get('https://api.binance.com/api/v3/ticker/price?symbol=PAXGUSDT');
+        const goldPrice = parseFloat(response.data.price);
+        const brentSimulado = 107.20;
+
+        console.clear(); // Limpia la pantalla para que el reporte sea lo único que veas
+        console.log("\n--- M82 AUTOMATED WATCHDOG: MOLINA HOLDINGS ---");
+        console.log("ACTUALIZADO: " + new Date().toLocaleTimeString());
+        console.log("ESTADO: MONITOREO EN VIVO (LOOP 10s)");
+        console.log("BRENT (Ref): $" + brentSimulado);
+        console.log("ORO (PAXG):  $" + goldPrice.toFixed(2));
+
+        if (goldPrice <= 4410) {
+            console.log("⚠️ ALERTA: ORO POR DEBAJO DE SOPORTE CRÍTICO");
+        } else {
+            console.log("✅ ESTATUS: MERCADOS ESTABLES");
+        }
+        console.log("-----------------------------------------------\n");
+
+    } catch (error) {
+        console.log("❌ Reintentando conexión...");
+    }
+}
+
+// ESTA ES LA MAGIA: Ejecuta cada 10 segundos (10,000 milisegundos)
+setInterval(checkMarkets, 10000);
+checkMarkets();
+EOF
+
+npm install axios
+m82
+pkg install nodejs -y && npm install axios
+cat << 'EOF' > watchdog.js
+const axios = require('axios');
+
+async function m82_monitor() {
+    try {
+        // Obtenemos Oro Real
+        const goldRes = await axios.get('https://api.binance.com/api/v3/ticker/price?symbol=PAXGUSDT');
+        const gold = parseFloat(goldRes.data.price);
+        
+        // Data de Bloomberg (Simulada para actualización manual rápida o integración futura)
+        const brent = 112.89; 
+        const wti = 98.95;
+        const dollarIndex = 1212.44;
+
+        console.clear();
+        console.log("\n--- M82 COMMAND CENTER: MOLINA HOLDINGS ---");
+        console.log("ACTUALIZADO: " + new Date().toLocaleTimeString());
+        console.log("-------------------------------------------");
+        console.log("BRENT (ICE):  $" + brent + " 📈");
+        console.log("WTI (NYMEX):  $" + wti + "   📈");
+        console.log("ORO (PAXG):   $" + gold.toFixed(2));
+        console.log("DXY (BLOOM):  $" + dollarIndex);
+        console.log("-------------------------------------------");
+
+        if (brent >= 115) {
+            console.log("🚨 ALERTA ROJA: INTERVENCION AIE INMINENTE");
+        } else if (brent >= 112) {
+            console.log("⚠️ PRE-ALERTA: BRENT EN ZONA DE FRICCION");
+        }
+        
+        if (gold <= 4400) {
+            console.log("💰 OPORTUNIDAD: ORO BAJO SOPORTE");
+        }
+
+        console.log("✅ SISTEMA: VIGILANCIA EN TIEMPO REAL");
+        console.log("-------------------------------------------\n");
+
+    } catch (e) {
+        console.log("📡 Buscando señal de mercado...");
+    }
+}
+
+setInterval(m82_monitor, 5000);
+m82_monitor();
+EOF
+
+node watchdog.js
+cat << 'EOF' > watchdog.js
+const axios = require('axios');
+
+async function m82_global() {
+    try {
+        // Conexión en vivo para Oro (Binance) con bypass de cache
+        const goldRes = await axios.get('https://api.binance.com/api/v3/ticker/price?symbol=PAXGUSDT&t=' + Date.now(), { timeout: 4000 });
+        const gold = parseFloat(goldRes.data.price);
+        
+        // Data Bloomberg / Futures (Manual Refs para balancear el dashboard)
+        const brent = 112.89;
+        const wti = 98.95;
+        const dxy = 1212.44;
+        
+        // DATA DE BONOS (US TREASURY YIELDS)
+        const us10y = 4.28; // Tasa de referencia a 10 años
+        const us2y = 4.62;  // Tasa de corto plazo
+        const spread = (us10y - us2y).toFixed(2);
+
+        console.clear();
+        console.log("\n--- 🏛️ M82 GLOBAL TERMINAL | MOLINA HOLDINGS ---");
+        console.log("ACTUALIZADO: " + new Date().toLocaleTimeString());
+        console.log("-----------------------------------------------");
+        
+        console.log("🏦 BONOS US:  10Y: " + us10y + "% | 2Y: " + us2y + "%");
+        console.log("📊 SPREAD:    " + spread + " (Curva Invertida)");
+        console.log("-----------------------------------------------");
+        console.log("🛢️ ENERGY:    BRENT $" + brent + " | WTI $" + wti);
+        console.log("✨ METALS:    GOLD $" + gold.toFixed(2));
+        console.log("💵 CURRENCY:  DXY " + dxy);
+        console.log("-----------------------------------------------");
+
+        // INTELIGENCIA DE MERCADO M82
+        if (spread < 0) console.log("⚠️ ESTRATEGIA: ALTA PROBABILIDAD DE RECESIÓN");
+        if (brent >= 112) console.log("🚨 ALERTA: ENERGÍA EN ZONA DE SHOCK");
+        if (gold < 4365) console.log("💰 NOTA: LIQUIDACIÓN DE ORO DETECTADA");
+
+        console.log("-----------------------------------------------\n");
+
+    } catch (e) {
+        console.log("📡 Reintentando sincronización macro...");
+    }
+}
+
+setInterval(m82_global, 5000);
+m82_global();
+EOF
+
+node watchdog.js
+cat << 'EOF' > watchdog.js
+const axios = require('axios');
+
+async function m82_stress_test() {
+    try {
+        const goldRes = await axios.get('https://api.binance.com/api/v3/ticker/price?symbol=PAXGUSDT&t=' + Date.now());
+        const gold = parseFloat(goldRes.data.price);
+        
+        // Cifras de la capitulación (09:10 AM Post-Fox News)
+        const brent = 96.41; 
+        const wti = 88.78;
+        const gas = 2.93;
+
+        console.clear();
+        console.log("\n--- 🏛️ M82 STRESS-TEST: DEAL SCENARIO ---");
+        console.log("MOLINA HOLDINGS LLC | INTELIGENCIA ESTRATÉGICA");
+        console.log("-----------------------------------------------");
+        console.log("📉 BRENT CRUDE:   $" + brent + " (-$16.48 Delta)");
+        console.log("📉 NYMEX WTI:     $" + wti + "  (-$10.17 Delta)");
+        console.log("✨ ORO (PAXG):    $" + gold.toFixed(2));
+        console.log("-----------------------------------------------");
+
+        // LÓGICA DE STRESS-TEST DE PRECIOS
+        if (brent < 95) {
+            console.log("🚨 ALERTA: SOPORTE PSICOLÓGICO ROTO ($95)");
+        } else {
+            console.log("✅ ESTATUS: RE-ABSORCIÓN DE PRIMA DE RIESGO");
+        }
+
+        if (gold < 4350) {
+            console.log("💰 NOTA: EL ORO PIERDE EL 'SAFE HAVEN' STATUS");
+        }
+
+        console.log("-----------------------------------------------\n");
+
+    } catch (e) {
+        console.log("📡 Re-sincronizando con los nuevos hubs de datos...");
+    }
+}
+
+setInterval(m82_stress_test, 5000);
+m82_stress_test();
+EOF
+
+node watchdog.js
+cat << 'EOF' > watchdog.js
+const axios = require('axios');
+
+// PARÁMETROS ESTRATÉGICOS MOLINA HOLDINGS
+const S_PRE_CONFLICT = 112.89; // Ref: Captura 11:25 PM
+const TARGET_PEACE = 85.00;
+
+async function m82_realtime_engine() {
+    try {
+        // Fetch de Oro (PAXG) - El único dato que necesitamos de API externa
+        const res = await axios.get(`https://api.binance.com/api/v3/ticker/price?symbol=PAXGUSDT&_=${Date.now()}`, {
+            timeout: 4000,
+            headers: { 'User-Agent': 'M82-Executive-V3' }
+        });
+        const gold = parseFloat(res.data.price);
+
+        // DATA REAL-TIME (Basado en la última captura de las 10:02 AM)
+        const brent = 96.79; //
+        const wti = 88.81;   //
+        const natGas = 2.938; //
+
+        // CÁLCULO DE JUMP-DIFFUSION
+        const dJ = ((brent / S_PRE_CONFLICT) - 1) * 100;
+
+        console.clear();
+        console.log("\n--- 🏛️ M82 COMMAND CENTER | MOLINA HOLDINGS ---");
+        console.log("STATUS: VOLATILIDAD EXTREMA | REAL-TIME MODE");
+        console.log("TIME: " + new Date().toLocaleTimeString() + " | MAR 23, 2026");
+        console.log("-----------------------------------------------");
+        console.log(`🛢️ BRENT CRUDE:  $${brent.toFixed(2)}  📉 (${dJ.toFixed(2)}% Jump)`);
+        console.log(`🛢️ NYMEX WTI:    $${wti.toFixed(2)}   📉 (-9.59%)`);
+        console.log(`🔥 NATURAL GAS: $${natGas.toFixed(3)}  📉 (-5.07%)`);
+        console.log(`✨ ORO (PAXG):   $${gold.toFixed(2)}  (SYNC OK)`);
+        console.log("-----------------------------------------------");
+        console.log("📢 TRUMP: 'ISRAEL ESTARÁ MUY FELIZ'");
+        console.log("⚠️ ANALISIS: RE-TESTEANDO MÍNIMOS DE SESIÓN");
+        
+        if (brent < 96.50) {
+            console.log("🚨 ALERTA: BREAKOUT BAJISTA INMINENTE HACE $95");
+        } else {
+            console.log("✅ STATUS: SOPORTE EN $96.50 AGUANTANDO");
+        }
+        console.log("-----------------------------------------------\n");
+
+    } catch (e) {
+        process.stdout.write("📡 Saltando interferencia de red... ");
+    }
+}
+
+setInterval(m82_realtime_engine, 3000); // Latido cada 3 segundos
+m82_realtime_engine();
+EOF
+
+node watchdog.js
+cat << 'EOF' > watchdog.js
+const axios = require('axios');
+
+async function getPrice() {
+    const controller = new AbortController();
+    const id = setTimeout(() => controller.abort(), 5000); // 5 segundos máximo
+
+    try {
+        const response = await axios.get('https://api.binance.com/api/v3/ticker/price?symbol=PAXGUSDT', {
+            signal: controller.signal,
+            headers: { 'User-Agent': 'Mozilla/5.0' + Math.random() } // Agente aleatorio
+        });
+        clearTimeout(id);
+        return parseFloat(response.data.price).toFixed(2);
+    } catch (e) {
+        return null;
+    }
+}
+
+async function m82_terminal() {
+    const gold = await getPrice();
+    const brent = 96.41; // Ref Captura Omán
+    const wti = 88.78;
+
+    console.clear();
+    console.log("\n--- 🏛️ M82 ULTIMA | MOLINA HOLDINGS ---");
+    console.log("DIPLOMACIA: KUSHNER/WITKOFF EN OMAN");
+    console.log("HORA:  " + new Date().toLocaleTimeString());
+    console.log("---------------------------------------");
+    console.log("🛢️ BRENT:  $" + brent + "  |  WTI: $" + wti);
+    
+    if (gold) {
+        console.log("✨ ORO:    $" + gold + " ✅");
+    } else {
+        console.log("✨ ORO:    📡 BUSCANDO SEÑAL...");
+    }
+    
+    console.log("---------------------------------------");
+    console.log("STATUS: " + (gold ? "OPERATIVO" : "FILTRADO POR RED"));
+    console.log("---------------------------------------\n");
+}
+
+setInterval(m82_terminal, 4000);
+m82_terminal();
+EOF
+
+node watchdog.js
+cat << 'EOF' > watchdog.js
+const axios = require('axios');
+
+// Parámetros del Modelo Jump-Diffusion de Molina Holdings
+const S_PRE_JUMP = 112.89; // Precio antes del titular de Trump
+const THRESHOLD_JUMP = -0.05; // Alerta si el salto es > 5%
+
+async function m82_quant_engine() {
+    try {
+        // Fetch de PAXG (Oro) vía Axios con Bypass
+        const res = await axios.get('https://api.binance.com/api/v3/ticker/price?symbol=PAXGUSDT', {
+            timeout: 5000,
+            headers: { 'User-Agent': 'M82-Quant-v2' }
+        });
+        const gold = parseFloat(res.data.price);
+        
+        // Datos de Mercado Actuales (Ref: 09:54 AM)
+        const brent = 98.84; // Rebote técnico detectado
+        const wti = 90.72;   // Soporte clave
+        
+        // CÁLCULO MATEMÁTICO DEL SALTO (dJ_t)
+        // dJ = (S_t / S_t-minus) - 1
+        const jumpDelta = (brent / S_PRE_JUMP) - 1;
+        const jumpPercentage = (jumpDelta * 100).toFixed(2);
+
+        console.clear();
+        console.log("\n--- 🏛️ M82 QUANT-ENGINE | MOLINA HOLDINGS ---");
+        console.log("MODELO: JUMP-DIFFUSION (MERTON) | " + new Date().toLocaleTimeString());
+        console.log("-------------------------------------------------");
+        console.log(`🛢️ BRENT (S_t):   $${brent.toFixed(2)}  [Ref: $${S_PRE_JUMP}]`);
+        console.log(`📉 JUMP DELTA (dJ): ${jumpPercentage}%`);
+        console.log(`✨ GOLD (PAXG):  $${gold.toFixed(2)}`);
+        console.log("-------------------------------------------------");
+
+        // LÓGICA DE ALERTA DE SALTO DISCRETO
+        if (jumpDelta <= THRESHOLD_JUMP) {
+            console.log("🚨 ALERTA: EVENTO DE SALTO DETECTADO (Jump Event)");
+            console.log("📢 CAUSA: NEGOCIACIONES KUSHNER/WITKOFF EN OMAN");
+        } else {
+            console.log("✅ ESTATUS: VOLATILIDAD DE DIFUSIÓN NORMAL");
+        }
+
+        console.log("-------------------------------------------------");
+        console.log("📊 NOTA: ISRAEL 'HAPPY' = COMPRESIÓN DE PRIMA");
+        console.log("-------------------------------------------------\n");
+
+    } catch (e) {
+        process.stdout.write("📡 Sincronizando dJ_t... ");
+    }
+}
+
+setInterval(m82_quant_engine, 5000);
+m82_quant_engine();
+EOF
+
+node watchdog.js

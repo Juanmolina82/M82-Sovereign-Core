@@ -1,0 +1,27 @@
+flowchart TD
+  User([Tú<br/>móvil])
+  Termux[Termux<br/>Android]
+  Agent[Script molina.py<br/>(orquestador)]
+  LLM[API modelo<br/>(GPT-5.1)]
+  DataAPI[API datos mercado<br/>(índices, FX, commodities)]
+  DB[(SQLite<br/>memoria.db)]
+  Files[Capturas/Notas<br/>(carpeta local)]
+
+  User -->|texto, comandos| Termux
+  Termux --> Agent
+
+  Agent -->|preguntas, contexto| LLM
+  LLM -->|resúmenes, señales| Agent
+
+  Agent -->|consultas| DataAPI
+  DataAPI -->|precios, series| Agent
+
+  Agent -->|guardar diario, tesis| DB
+  DB -->|historial, memoria| Agent
+
+  User -->|guardas screenshots| Files
+  Agent -->|lee imágenes/texto*| Files
+
+  Agent -->|salida formateada| Termux
+  Termux -->|tú lees decisiones| User
+

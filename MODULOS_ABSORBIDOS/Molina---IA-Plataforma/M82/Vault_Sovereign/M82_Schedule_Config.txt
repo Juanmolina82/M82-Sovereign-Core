@@ -1,0 +1,7 @@
+=== MOLINA HOLDINGS LLC: TACTICAL DISPATCH SCHEDULE ===
+Slot Activo: 05:00
+Slot Activo: 09:00
+Slot Activo: 12:00
+Slot Activo: 16:00
+Slot Activo: 20:00
+Slot Activo: 00:00
