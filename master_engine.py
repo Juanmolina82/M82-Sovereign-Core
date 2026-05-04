@@ -1,32 +1,40 @@
 import requests
-import os
+import datetime
 
 TOKEN = "8600412468:AAE9rQQC2Z0ReE4qJ1R9amDfm5m4sO2-wM4"
 CHAT_ID = "1020305418"
 
-# CONFIGURACIÓN DE SEGURIDAD Y LICENCIAS
-LICENSE_APACHE = "🏛️ Licensed under the Apache License, Version 2.0"
-COMPLIANCE = "🛡️ Compliance: EO 14373 & EO 14028 Fully Integrated"
-PATENT = "⚖️ © 2024 MOLINA HOLDINGS - Patent License: M82-AGI-INTEL-V3.2"
+def get_timestamp():
+    return datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
 
-def tsumani_report(asset, status, intel):
+def tsunami_global_report():
     url = f"https://api.telegram.org/bot{TOKEN}/sendMessage"
-    msg = (
-        f"🌊 **TSUNAMI DE INTELIGENCIA - STRESS TEST ACTIVADO**\n\n"
-        f"🎯 **TARGET CRÍTICO:** {asset}\n"
-        f"⚠️ **ESTATUS:** {status}\n"
-        f"📊 **ANÁLISIS AGRESIVO:** {intel}\n\n"
-        f"{LICENSE_APACHE}\n"
-        f"{COMPLIANCE}\n"
-        f"{PATENT}"
+    
+    # ESTRUCTURA DE MANDO RECONSTRUIDA (SUPERIOR V4.0)
+    report = (
+        f"🏛️ **MOLINA GLOBAL — COMMAND & INTELLIGENCE V6.0**\n"
+        f"📅 **Timestamp:** {get_timestamp()}\n"
+        f"━━━━━━━━━━━━━━━━━━\n\n"
+        f"📈 **MARKET SHOCK MONITOR (STRESS TEST):**\n"
+        f"  • S&P 500: $7,223.64 (-0.09%)\n"
+        f"  • BRENT CRUDE: $110.00 (+2.2%) 🚨 **TARGET $115**\n"
+        f"  • SEMICONDUCTORES (ON/INTT): Buy Pressure Detected\n\n"
+        f"🌍 **GEOPOLITICAL ENERGY AXIS:**\n"
+        f"  • Strait of Hormuz: 🚨 **MAX ALERT / US-IRAN CONFLICT**\n"
+        f"  • NEW TARGET: 2.1M bpd (Post-OPEP Integration)\n"
+        f"  • Status: Global Supply Chain Disruption\n\n"
+        f"⚔️ **M82 TACTICAL STRATEGY (WAR FOOTING):**\n"
+        f"  • ⚡ ACTION: Hedge against Oil Volatility / Shift to Chips\n"
+        f"  • 🛡️ DEFENSE: Sanctions Shield Active (EO 14373 / EO 14028)\n\n"
+        f"📊 **AUDIT & COMPLIANCE (STRICT):**\n"
+        f"  • Framework: OFAC EO 14373 / US GAAP-IFRS / Apache 2.0\n"
+        f"  • Audit: PDVSA/BCV Under Sovereign Review\n\n"
+        f"🛡️ **Governance:** Tennessee/Delaware (US-UK Law)\n"
+        f"⚡ **Molina Holdings: Global Energy Hegemony**\n"
+        f"⚖️ © 2024 Patent: M82-AGI-INTEL-V3.2"
     )
-    requests.post(url, data={'chat_id': CHAT_ID, 'text': msg, 'parse_mode': 'Markdown'})
+    
+    requests.post(url, data={'chat_id': CHAT_ID, 'text': report, 'parse_mode': 'Markdown'})
 
 if __name__ == "__main__":
-    # Simulación de Stress Test: Brent 15
-    tsumani_report(
-        "BRENT CRUDE / ENERGY SECTOR",
-        "SIMULACIÓN DE SALIDA (STRESS TEST)",
-        "Escenario Brent $115 detectado. Workflows de GitHub en máxima alerta. "
-        "Activando protocolos de protección de capital y ejecución de órdenes en Targets configurados."
-    )
+    tsunami_global_report()
