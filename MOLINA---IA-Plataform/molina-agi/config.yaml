@@ -1,0 +1,12 @@
+llm:
+  provider: openai
+  api_key: "TU_API_KEY_AQUI"
+  model: "gpt-5.1"
+
+data_api:
+  base_url: ""
+  api_key: ""
+
+molina:
+  idioma: "es"
+  perfil: "macro-trading"

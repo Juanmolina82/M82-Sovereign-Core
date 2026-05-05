@@ -1,0 +1,7 @@
+tmux attach -t m82 || tmux new-session -s m82 'node ~/m82_glass.js'
+tmux attach -t m82 || tmux new-session -s m82 'node ~/m82_glass.js'
+tmux attach -t m82 || tmux new-session -s m82 'node ~/m82_glass.js'
+tmux attach -t m82 || tmux new-session -s m82 'node ~/m82_glass.js'
+tmux attach -t m82 || tmux new-session -s m82 'node ~/m82_glass.js'
+alias auditar='cat cierre_jornada_NY.txt | tail -n 20'
+alias m82='echo "--- MOLINA HOLDINGS REAL-TIME ---" && echo -n "BRENT CRUDE: $" && curl -s "https://query1.finance.yahoo.com/v8/finance/chart/BZ=F" | grep -oP "\"regularMarketPrice\":\K[0-9.]+" && echo -n "GOLD (SAFE HAVEN): $" && curl -s "https://query1.finance.yahoo.com/v8/finance/chart/GC=F" | grep -oP "\"regularMarketPrice\":\K[0-9.]+" && echo -n "NVIDIA (NVDA): $" && curl -s "https://query1.finance.yahoo.com/v8/finance/chart/NVDA" | grep -oP "\"regularMarketPrice\":\K[0-9.]+" && echo "STATUS: ORMUZ ALERT ACTIVE"'
