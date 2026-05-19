@@ -4,10 +4,10 @@ import pandas as pd
 import numpy as np
 import time
 
-st.set_page_config(page_title="M82 Sovereign Core v5.8", page_icon="🦅", layout="wide")
+st.set_page_config(page_title="M82 Sovereign Core v6.1", page_icon="🦅", layout="wide")
 
 st.title("🦅 MOLINA HOLDINGS & GLOBAL LLC")
-st.subheader("M82 COMET - Options Risk & Catalyst Terminal v5.8")
+st.subheader("M82 COMET - Multi-Asset Derivative Terminal v6.1")
 st.markdown("---")
 
 # 📥 PORTAFOLIO REAL
@@ -47,42 +47,61 @@ def obtener_datos_globales():
 datos_vivos = obtener_datos_globales()
 
 # ==============================================================================
-# 🔥 NUEVO RADAR DE SIMULACIÓN DE DERIVADOS INSTITUCIONALES (BLOCK TRADES)
+# 👁️ RADAR MULTI-DIRECCIONAL DE DERIVADOS EN VIVO
 # ==============================================================================
-st.markdown("### 👁️ RADAR DE RIESGO EN DERIVADOS (INSTITUTIONAL SHORT PUT)")
-with st.expander("🛡️ Auditoría de Posiciones de Opciones de Alta Prima (Caso NVDA $1.4M)", expanded=True):
-    col_op1, col_op2, col_op3 = st.columns(3)
-    with col_op1:
-        strike = st.number_input("Strike de la Opción (K):", value=100.00)
-    with col_op2:
-        prima = st.number_input("Prima Recibida ($ por contrato):", value=41.00)
-    with col_op3:
-        contratos = st.number_input("Cantidad de Contratos Vendidos:", value=340)
+st.markdown("### 👁️ AUDITORÍA DE FLUJOS INSTITUCIONALES (BLOCK TRADES)")
+tipo_flujo = st.radio("Selecciona tipo de flujo detectado:", ["Bullish Long Call (Caso MSFT)", "Bullish Short Put (Caso NVDA)"])
 
-    # Computación de fórmulas matriciales
-    breakeven = strike - prima
-    max_profit = prima * 100 * contratos
-    max_risk = breakeven * 100 * contratos
-    nvda_spot = datos_vivos.get("NVDA", {"price": 222.96})["price"]
-    distancia_seguridad = ((nvda_spot - breakeven) / nvda_spot) * 100 if nvda_spot > 0 else 0.0
+if tipo_flujo == "Bullish Long Call (Caso MSFT)":
+    with st.expander("🚀 Parámetros del Bloque de Compra - Microsoft", expanded=True):
+        c_col1, c_col2, c_col3 = st.columns(3)
+        with c_col1:
+            strike_c = st.number_input("Strike Call Seleccionado (K):", value=420.00)
+        with c_col2:
+            prima_c = st.number_input("Prima Pagada ($ por contrato):", value=10.00)
+        with c_col3:
+            contratos_c = st.number_input("Contratos del Bloque:", value=416100)
 
-    st.markdown("#### 📊 Métricas de Exposición al Cierre:")
-    m_col1, m_col2, m_col3 = st.columns(3)
-    with m_col1:
-        st.metric(label="💰 Beneficio Máximo (Crédito Neto)", value=f"${max_profit:,.2f} USD")
-    with m_col2:
-        st.metric(label="🎯 Punto de Equilibrio (Break-Even)", value=f"${breakeven:,.2f} USD")
-    with m_col3:
-        st.metric(label="🛡️ Margen de Seguridad vs Spot", value=f"{distancia_seguridad:.1f}%")
+        be_c = strike_c + prima_c
+        inversion_total = prima_c * 100 * contratos_c
+        msft_spot = datos_vivos.get("MSFT", {"price": 422.00})["price"]
+        distancia_be = ((be_c - msft_spot) / msft_spot) * 100 if msft_spot > 0 else 0.0
 
-    if nvda_spot < breakeven:
-        st.error(f"🚨 ALERTA CRÍTICA: El precio Spot (${nvda_spot:.2f}) ha perforado el Break-Even. Pérdida potencial en curso.")
-    else:
-        st.success(f"🟢 ZONA DE SEGURIDAD: El operador retiene el crédito. Nvidia está un {distancia_seguridad:.1f}% por encima del punto de dolor.")
+        st.markdown("#### 📊 Umbrales de Reversión Máxima:")
+        mc_col1, mc_col2, mc_col3 = st.columns(3)
+        with mc_col1:
+            st.metric(label="🔥 Riesgo Fijo (Capital Invertido)", value=f"${inversion_total:,.2f} USD")
+        with mc_col2:
+            st.metric(label="🎯 Numerante Target (Break-Even)", value=f"${be_c:,.2f} USD")
+        with mc_col3:
+            st.metric(label="📈 Distancia Requerida para Profit", value=f"{distancia_be:+.2f}%")
+
+        if msft_spot >= be_c:
+            st.success(f"🟢 EN EL DINERO (ITM): MSFT (${msft_spot:.2f}) ya superó el Break-Even. El bloque está acumulando valor intrínseco.")
+        else:
+            st.warning(f"🟡 ESCENARIO DE RECUPERACIÓN: MSFT está a {distancia_be:.2f}% de activar las ganancias del bloque institucional.")
+
+else:
+    with st.expander("🛡️ Parámetros del Bloque de Venta - NVIDIA", expanded=True):
+        col_op1, col_op2, col_op3 = st.columns(3)
+        with col_op1: strike = st.number_input("Strike de la Opción (K):", value=100.00)
+        with col_op2: prima = st.number_input("Prima Recibida ($):", value=41.00)
+        with col_op3: contratos = st.number_input("Contratos:", value=340)
+
+        breakeven = strike - prima
+        max_profit = prima * 100 * contratos
+        nvda_spot = datos_vivos.get("NVDA", {"price": 222.96})["price"]
+        distancia_seguridad = ((nvda_spot - breakeven) / nvda_spot) * 100 if nvda_spot > 0 else 0.0
+
+        st.markdown("#### 📊 Métricas de Exposición:")
+        m_col1, m_col2, m_col3 = st.columns(3)
+        with m_col1: st.metric(label="💰 Beneficio Máximo", value=f"${max_profit:,.2f} USD")
+        with m_col2: st.metric(label="🎯 Break-Even", value=f"${breakeven:,.2f} USD")
+        with m_col3: st.metric(label="🛡️ Margen de Seguridad", value=f"{distancia_seguridad:.1f}%")
 
 st.markdown("---")
 
-# --- GRID RESPONSIVO 2x2 DE MONITOREO GENERAL ---
+# --- GRID RESPONSIVO DE PRECIOS VIVOS ---
 for sector, tickers in ESTRUCTURA_MERCADO.items():
     st.header(sector)
     columnas_por_fila = 2
@@ -92,7 +111,6 @@ for sector, tickers in ESTRUCTURA_MERCADO.items():
         for i, ticker in enumerate(chunk_tickers):
             info_ticker = datos_vivos.get(ticker, {"price": 0.0, "change": 0.0, "trend": pd.Series()})
             price, change, trend = info_ticker["price"], info_ticker["change"], info_ticker["trend"]
-            nombre_legible = NOMBRES_ACTIVOS.get(ticker, ticker)
             with cols[i]:
                 if price > 0:
                     st.metric(label=ticker, value=f"${price:.2f}", delta=f"{change:.2f}%")
@@ -100,4 +118,4 @@ for sector, tickers in ESTRUCTURA_MERCADO.items():
                 else: st.metric(label=ticker, value="Sincronizando...")
     st.markdown("---")
 
-st.caption("M82 Sovereign Core Terminal v5.8 PRO • Options Analytics Engine Enabled.")
+st.caption("M82 Sovereign Core Terminal v6.1 PRO • Advanced Derivatives Architecture.")
