@@ -1,7 +1,6 @@
 import streamlit as st
 import yfinance as yf
 import pandas as pd
-import time
 
 st.set_page_config(page_title="M82 Sovereign Core", page_icon="📊", layout="wide")
 
@@ -9,7 +8,17 @@ st.title("🦅 MOLINA HOLDINGS & GLOBAL LLC")
 st.subheader("Consola de Inteligencia Soberana - Broad Market Portfolio")
 st.markdown("---")
 
-# Matriz Ampliada: Inclusión de Energía de Grado Institucional
+# 📥 CONFIGURACIÓN DE TU PORTAFOLIO (Modifica las cantidades a tu gusto)
+# Estructura: "TICKER": Cantidad de acciones en tenencia
+MI_PORTAFOLIO = {
+    "NVDA": 50,    # Ejemplo: 50 acciones de NVIDIA
+    "TSLA": 20,    # Ejemplo: 20 acciones de Tesla
+    "OXY": 100,    # Ejemplo: 100 acciones de Occidental Petroleum
+    "JPM": 15,     # Ejemplo: 15 acciones de JPMorgan
+    "MSFT": 10     # Ejemplo: 10 acciones de Microsoft
+}
+
+# Matriz Ampliada de Sectores
 SECTORES = {
     "🚀 TECNOLOGÍA & IA": ["NVDA", "TSLA", "MSFT", "AAPL"],
     "🛢️ ENERGÍA E INFRAESTRUCTURA": ["OXY", "CVX", "XOM"],
@@ -38,13 +47,39 @@ def consultar_ticker_seguro(ticker):
     except Exception:
         return 0.0, 0.0, 0.0
 
-# Módulo de Control Sidebar
+# Sidebar de Control Operacional
 st.sidebar.header("🕹️ MÓDULO DE CONTROL M82")
 st.sidebar.markdown("**Estatus de Red:** 🟢 Conectado a Wall Street")
 if st.sidebar.button("🔄 Refrescar Métricas en Vivo"):
     st.rerun()
 
-# Despliegue de los Cuatro Pilares
+# --- PROCESAMIENTO PREVIO DEL PORTAFOLIO ---
+valor_total_portafolio = 0.0
+cambio_diario_estimado = 0.0
+
+# Mapear de antemano todos los tickers del portafolio para el cálculo del balance
+for ticker, cantidad in MI_PORTAFOLIO.items():
+    p, _, c = consultar_ticker_seguro(ticker)
+    if p > 0:
+        valor_posicion = p * cantidad
+        valor_total_portafolio += valor_posicion
+        # Calcular impacto ponderado del cambio diario en USD
+        cambio_diario_estimado += (valor_posicion * (c / 100))
+
+# --- DESPLIEGUE DEL BALANCE NETO EN LA PARTE SUPERIOR ---
+st.markdown("### 🏦 RESUMEN EJECUTIVO DEL PORTAFOLIO")
+p_col1, p_col2 = st.columns(2)
+with p_col1:
+    st.metric(label="💰 VALOR NETO TOTAL DE ACTIVOS", value=f"${valor_total_portafolio:,.2f} USD")
+with p_col2:
+    st.metric(
+        label="📈 RENDIMIENTO ESTIMADO DEL DÍA (USD)", 
+        value=f"${cambio_diario_estimado:+,.2f} USD",
+        delta=f"Impacto directo" if cambio_diario_estimado != 0 else "Estable"
+    )
+st.markdown("---")
+
+# Despliegue de las Matrices Sectoriales del Market
 for sector, tickers in SECTORES.items():
     st.header(sector)
     cols = st.columns(len(tickers))
@@ -56,20 +91,19 @@ for sector, tickers in SECTORES.items():
         
         with cols[i]:
             if price > 0:
-                # Distintivo especial para el núcleo de IA
                 label_ticker = f"🔥 {ticker}" if ticker == "NVDA" else ticker
-                st.metric(
-                    label=label_ticker, 
-                    value=f"${price:.2f} USD", 
-                    delta=f"{change:.2f}%"
-                )
-                st.caption(f"**P/E Ratio:** {pe_str}")
+                # Si el usuario posee este ticker, mostrar la cantidad abajo
+                tenencia_str = f"📦 Tienes: {MI_PORTAFOLIO[ticker]} acc" if ticker in MI_PORTAFOLIO else "No posicionado"
+                
+                st.metric(label=label_ticker, value=f"${price:.2f} USD", delta=f"{change:.2f}%")
+                st.caption(f"**P/E:** {pe_str} | {tenencia_str}")
                 
                 datos_tabla.append({
                     "Ticker": ticker,
                     "Precio Spot": f"${price:.2f}",
                     "Variación": f"{change:.2f}%",
-                    "Múltiplo P/E": pe_str
+                    "Múltiplo P/E": pe_str,
+                    "Tu Tenencia": MI_PORTAFOLIO.get(ticker, 0)
                 })
             else:
                 st.error(f"{ticker} - Error de canal")
@@ -79,4 +113,4 @@ for sector, tickers in SECTORES.items():
         st.dataframe(df, hide_index=True, use_container_width=True)
     st.markdown("---")
 
-st.caption("M82 Sovereign Core App v2.2 • Datos multisectoriales consolidados y optimizados.")
+st.caption("M82 Sovereign Core App v2.3 • Balance y analíticas de mercado consolidadas para uso exclusivo de la firma.")
