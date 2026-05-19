@@ -1,38 +1,53 @@
 import asyncio
-import aiohttp
 import logging
+import yfinance as yf
 
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - [M82 CORE] - %(levelname)s - %(message)s')
+# Configuración del Ledger de Monitoreo M82
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - [M82 BROAD-MARKET] - %(levelname)s - %(message)s'
+)
 
-async def fetch_market_data():
-    url = "https://api.coingecko.com/api/v3/simple/price?ids=open-ocean&vs_currencies=usd"
-    async with aiohttp.ClientSession() as session:
+# Definición de la Matriz de Cobertura de Wall Street (Fijada desde el radar M82)
+SECTORES = {
+    "TECNOLOGÍA & IA": ["NVDA", "TSLA", "MSFT", "AAPL"],
+    "FINANCIERO & BANCA": ["JPM", "BAC"],
+    "CONSUMO & DEFENSA": ["WMT", "KO", "LMT"]
+}
+
+async def analizar_sector(nombre_sector, tickers):
+    logging.info(f"Procesando matriz de datos para el sector: {nombre_sector}")
+    for ticker in tickers:
         try:
-            async with session.get(url, timeout=5) as response:
-                if response.status == 200:
-                    return 61.02
-                return 61.00
-        except Exception:
-            return 61.00
+            # Consulta asíncrona no bloqueante mediante subprocesos de yfinance
+            loop = asyncio.get_event_loop()
+            t_obj = yf.Ticker(ticker)
+            
+            # Extraer telemetría básica (Precio spot y ratio P/E)
+            info = await loop.run_in_executor(None, lambda: t_obj.info)
+            price = info.get("currentPrice") or info.get("regularMarketPrice") or 0.0
+            pe_ratio = info.get("trailingPE") or 0.0
+            change = info.get("regularMarketChangePercent") or 0.0
+            
+            # Formatear salida analítica para los Deploy Logs
+            pe_str = f"{pe_ratio:.2f}x" if pe_ratio else "N/A"
+            logging.info(
+                f"[{ticker}] Spot: ${price:.2f} USD | Var: {change:.2f}% | P/E Ratio: {pe_str}"
+            )
+        except Exception as e:
+            logging.error(f"Error extrayendo métricas para {ticker}: {str(e)}")
 
 async def main():
-    logging.info("Inicializando clúster soberano de procesamiento financiero...")
-    
-    oxy_ev_ebitda = 6.10
-    chevron_ev_ebitda = 10.69
-    exxon_ev_ebitda = 10.27
+    logging.info("Inicializando clúster soberano multisectorial de Wall Street...")
     
     while True:
-        oxy_price = await fetch_market_data()
+        # Ejecutar el análisis de todos los sectores en paralelo para máxima velocidad
+        tareas = [analizar_sector(sector, tickers) for sector, tickers in SECTORES.items()]
+        await asyncio.gather(*tareas)
         
-        spread_vs_cvx = chevron_ev_ebitda - oxy_ev_ebitda
-        spread_vs_xom = exxon_ev_ebitda - oxy_ev_ebitda
-        
-        # Eliminada por completo la barra invertida conflictiva
-        logging.info(f"CAPTURA EXITOSA | OXY Spot: {oxy_price} USD")
-        logging.info(f"ANÁLISIS DE BRECHA | Descuento vs Chevron: {spread_vs_cvx:.2f}x | Descuento vs Exxon: {spread_vs_xom:.2f}x")
-        
-        await asyncio.sleep(60)
+        logging.info("Ciclo de captura completado. Próxima transmisión en 5 minutos...")
+        # Intervalo de refresco para el monitoreo institucional continuo
+        await asyncio.sleep(300)
 
 if __name__ == "__main__":
     asyncio.run(main())
