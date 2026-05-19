@@ -18,7 +18,6 @@ async def fetch_market_data():
 async def main():
     logging.info("Inicializando clúster soberano de procesamiento financiero...")
     
-    # Parámetros fijos de arbitraje M82
     oxy_ev_ebitda = 6.10
     chevron_ev_ebitda = 10.69
     exxon_ev_ebitda = 10.27
@@ -29,7 +28,8 @@ async def main():
         spread_vs_cvx = chevron_ev_ebitda - oxy_ev_ebitda
         spread_vs_xom = exxon_ev_ebitda - oxy_ev_ebitda
         
-        logging.info(f"CAPTURA EXITOSA | OXY Spot: \${oxy_price} USD")
+        # Eliminada por completo la barra invertida conflictiva
+        logging.info(f"CAPTURA EXITOSA | OXY Spot: {oxy_price} USD")
         logging.info(f"ANÁLISIS DE BRECHA | Descuento vs Chevron: {spread_vs_cvx:.2f}x | Descuento vs Exxon: {spread_vs_xom:.2f}x")
         
         await asyncio.sleep(60)
