@@ -18,6 +18,7 @@ async def fetch_market_data():
 async def main():
     logging.info("Inicializando clúster soberano de procesamiento financiero...")
     
+    # Parámetros fijos de arbitraje M82
     oxy_ev_ebitda = 6.10
     chevron_ev_ebitda = 10.69
     exxon_ev_ebitda = 10.27
