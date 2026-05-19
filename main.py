@@ -1,83 +1,84 @@
-import asyncio
-import logging
+import streamlit as st
 import yfinance as yf
+import pandas as pd
+import time
 
-# Configuración de la Consola M82 con formato de auditoría financiera
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - [M82 BROAD-MARKET] - %(levelname)s - %(message)s'
-)
+# Configuración soberana de la interfaz de la App
+st.set_page_config(page_title="M82 Sovereign Core", page_icon="📊", layout="wide")
 
-# Matriz Multisectorial de Cobertura
+st.title("🦅 MOLINA HOLDINGS & GLOBAL LLC")
+st.subheader("Consola de Inteligencia Soberana - Broad Market Portfolio")
+st.markdown("---")
+
+# Matriz Multisectorial (Radar M82)
 SECTORES = {
-    "TECNOLOGÍA & IA": ["NVDA", "TSLA", "MSFT", "AAPL"],
-    "FINANCIERO & BANCA": ["JPM", "BAC"],
-    "CONSUMO & DEFENSA": ["WMT", "KO", "LMT"]
+    "🚀 TECNOLOGÍA & IA": ["NVDA", "TSLA", "MSFT", "AAPL"],
+    "🏦 FINANCIERO & BANCA": ["JPM", "BAC"],
+    "📦 CONSUMO & DEFENSA": ["WMT", "KO", "LMT"]
 }
 
-# Umbral crítico de volatilidad para el bloque de ganancias (5.0%)
-UMBRAL_VOLATILIDAD = 5.0
-
 def consultar_ticker_seguro(ticker):
-    """Extrae métricas operacionales usando canales históricos resilients"""
-    t_obj = yf.Ticker(ticker)
-    
-    # Canal de precio de alta disponibilidad
-    hist = t_obj.history(period="1d")
-    if not hist.empty:
-        price = float(hist['Close'].iloc[-1])
-        open_p = float(hist['Open'].iloc[-1])
-        change = ((price - open_p) / open_p) * 100 if open_p else 0.0
-    else:
-        price, change = 0.0, 0.0
-
-    # Canal secundario para la extracción segura del ratio P/E
+    """Extrae métricas usando canales históricos de alta disponibilidad"""
     try:
-        info = t_obj.info
-        pe_ratio = info.get("trailingPE") or info.get("forwardPE") or 0.0
-    except Exception:
-        pe_ratio = 0.0
-
-    return price, pe_ratio, change
-
-async def analizar_sector(nombre_sector, tickers):
-    logging.info(f"Abriendo canal de datos sectorial: {nombre_sector}")
-    for ticker in tickers:
+        t_obj = yf.Ticker(ticker)
+        hist = t_obj.history(period="1d")
+        if not hist.empty:
+            price = float(hist['Close'].iloc[-1])
+            open_p = float(hist['Open'].iloc[-1])
+            change = ((price - open_p) / open_p) * 100 if open_p else 0.0
+        else:
+            price, change = 0.0, 0.0
+            
         try:
-            # Consulta delegada al gestor de hilos de Linux
-            price, pe_ratio, change = await asyncio.to_thread(consultar_ticker_seguro, ticker)
+            info = t_obj.info
+            pe_ratio = info.get("trailingPE") or info.get("forwardPE") or 0.0
+        except Exception:
+            pe_ratio = 0.0
             
-            if price > 0:
-                pe_str = f"{pe_ratio:.2f}x" if pe_ratio else "N/A"
-                
-                # --- CONTROLADOR DE ALERTAS DE VOLATILIDAD M82 ---
-                if abs(change) >= UMBRAL_VOLATILIDAD:
-                    logging.warning(
-                        f"🚨 [ALERTA MAXIMA M82] - {ticker} REGISTRA MOVIMIENTO EXTREMO: {change:.2f}% | Spot: ${price:.2f} USD | P/E: {pe_str}"
-                    )
-                else:
-                    logging.info(
-                        f"[{ticker}] Spot: ${price:.2f} USD | Var: {change:.2f}% | P/E: {pe_str}"
-                    )
-            else:
-                logging.warning(f"[{ticker}] Alerta: Proveedor de datos devolvió búfer vacío.")
-                
-            # Retraso táctico anti-bloqueo entre peticiones
-            await asyncio.sleep(3)
-            
-        except Exception as e:
-            logging.error(f"Fallo en módulo de transmisión para {ticker}: {str(e)}")
+        return price, pe_ratio, change
+    except Exception:
+        return 0.0, 0.0, 0.0
 
-async def main():
-    logging.info("Inicializando clúster soberano multisectorial de Wall Street...")
+# Sidebar de Control Operacional
+st.sidebar.header("🕹️ MÓDULO DE CONTROL M82")
+st.sidebar.markdown("**Estatus de Red:** 🟢 Conectado a Wall Street")
+if st.sidebar.button("🔄 Refrescar Métricas en Vivo"):
+    st.rerun()
+
+# Renderizado dinámico de la App por Sectores
+for sector, tickers in SECTORES.items():
+    st.header(sector)
+    cols = st.columns(len(tickers))
     
-    while True:
-        for sector, tickers in SECTORES.items():
-            await analizar_sector(sector, tickers)
-            await asyncio.sleep(5)
-            
-        logging.info("Matriz analizada por completo. Entrando en reposo por 5 minutos...")
-        await asyncio.sleep(300)
+    datos_tabla = []
+    
+    for i, ticker in enumerate(tickers):
+        price, pe_ratio, change = consultar_ticker_seguro(ticker)
+        pe_str = f"{pe_ratio:.2f}x" if pe_ratio > 0 else "N/A"
+        
+        # Inyectar tarjetas métricas de alta visibilidad (Roncando duro)
+        with cols[i]:
+            if price > 0:
+                st.metric(
+                    label=f"🔥 {ticker}" if ticker == "NVDA" else ticker, 
+                    value=f"${price:.2f} USD", 
+                    delta=f"{change:.2f}%"
+                )
+                st.caption(f"**P/E Ratio:** {pe_str}")
+                
+                datos_tabla.append({
+                    "Ticker": ticker,
+                    "Precio Spot": f"${price:.2f}",
+                    "Variación": f"{change:.2f}%",
+                    "Múltiplo P/E": pe_str
+                })
+            else:
+                st.error(f"{ticker} - Error de red")
+                
+    # Mostrar tabla resumen limpia del sector para control de datos crudos
+    if datos_tabla:
+        df = pd.DataFrame(datos_tabla)
+        st.dataframe(df, hide_index=True, use_container_width=True)
+    st.markdown("---")
 
-if __name__ == "__main__":
-    asyncio.run(main())
+st.caption("M82 Sovereign Core App v2.0 • Datos provistos directamente desde Wall Street en tiempo real.")
