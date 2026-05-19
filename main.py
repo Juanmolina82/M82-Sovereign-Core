@@ -3,10 +3,10 @@ import yfinance as yf
 import pandas as pd
 import time
 
-st.set_page_config(page_title="M82 Sovereign Core v5.5", page_icon="🦅", layout="wide")
+st.set_page_config(page_title="M82 Sovereign Core v5.6", page_icon="🦅", layout="wide")
 
 st.title("🦅 MOLINA HOLDINGS & GLOBAL LLC")
-st.subheader("M82 COMET - Catalyst & Performance Terminal v5.5")
+st.subheader("M82 COMET - Sovereign Responsive Terminal v5.6")
 st.markdown("---")
 
 # 📥 CONFIGURACIÓN DE TU PORTAFOLIO REAL DE ACCIONES (EQUITIES)
@@ -23,7 +23,7 @@ MI_PORTAFOLIO = {
 # 🗺️ MATRIZ BROAD-MARKET UNIFICADA
 ESTRUCTURA_MERCADO = {
     "🚀 EQUITIES & BIG TECH": ["NVDA", "TSLA", "MSFT", "AAPL", "AMZN", "GOOGL"],
-    "📦 ETFs & FUTURES": ["SPY", "QQQ", "IWM", "NQ=F"],
+    "📦 ETFs & FUTURES": ["SPY", QQQ, "IWM", "NQ=F"],
     "🧱 COMMODITIES CRÍTICOS": ["CL=F", "GC=F", "NG=F", "SI=F"],
     "📉 BONDS & RATES": ["^TNX", "TLT"]
 }
@@ -96,9 +96,7 @@ def extraer_datos_canslim_ibd(ticker):
     except Exception:
         return pd.DataFrame(), pd.DataFrame(), {}
 
-# ==============================================================================
-# INTERFAZ LATERAL SECTORIAL: CALENDARIO DE EVENTOS CRÍTICOS M82
-# ==============================================================================
+# --- INTERFAZ LATERAL ---
 st.sidebar.header("🕹️ MÓDULO DE CONTROL M82")
 st.sidebar.markdown("---")
 st.sidebar.markdown("### 📅 CRONOGRAMA DE IMPACTO (MAÑANA)")
@@ -125,7 +123,7 @@ for ticker, cantidad in MI_PORTAFOLIO.items():
         valor_total_portafolio += valor_posicion
         cambio_diario_estimado += (valor_posicion * (c / 100))
 
-# --- DESPLIEGUE SUPERIOR DE CAPITAL ---
+# --- DESPLIEGUE SUPERIOR ---
 st.markdown("### 🏦 VALORACIÓN DE ACTIVOS PROPIETARIOS")
 p_col1, p_col2 = st.columns(2)
 with p_col1:
@@ -142,18 +140,15 @@ if ticker_seleccionado:
     df_a, df_t, rats = extraer_datos_canslim_ibd(ticker_seleccionado)
     if not df_a.empty:
         st.markdown(f"#### 🏷️ Análisis de Estructura de Capital: **{ticker_seleccionado}**")
-        r_cols = st.columns(4)
+        r_cols = st.columns(2)  # Optimizado para pantallas móviles
         with r_cols[0]:
             st.metric(label="📊 Composite Rating", value=rats["Composite Rating"])
             st.metric(label="📈 EPS Rating", value=rats["EPS Rating"])
+            st.metric(label="⚖️ Trailing P/E", value=rats["P/E Ratio"])
         with r_cols[1]:
             st.metric(label="⚡ RS Rating (Fuerza Relativa)", value=rats["RS Rating"])
-            st.metric(label="⚖️ Trailing P/E", value=rats["P/E Ratio"])
-        with r_cols[2]:
             st.metric(label="🔮 Forward P/E", value=rats["Forward P/E"])
             st.metric(label="💎 Return on Equity (ROE)", value=rats["Return on Equity (ROE)"])
-        with r_cols[3]:
-            st.metric(label="🛡️ Debt / Equity", value=rats["Debt/Equity"])
             
         st.markdown("##### 📅 Desglose Histórico & Proyecciones Anuales (IBD Matrix STYLE)")
         st.dataframe(df_a, hide_index=True, use_container_width=True)
@@ -162,29 +157,35 @@ if ticker_seleccionado:
         st.dataframe(df_t, hide_index=True, use_container_width=True)
 st.markdown("---")
 
-# --- BLOQUE SECTORIAL DE PANTALLA GENERAL CON MINICHARTS ---
+# --- 🚀 NUEVO MOTOR GRID 2x2 RESPONSIVO MÓVIL PARA EVITAR CORTE DE TEXTO ---
 for sector, tickers in ESTRUCTURA_MERCADO.items():
     st.header(sector)
-    cols = st.columns(len(tickers))
-    for i, ticker in enumerate(tickers):
-        info_ticker = datos_vivos.get(ticker, {"price": 0.0, "change": 0.0, "trend": pd.Series()})
-        price = info_ticker["price"]
-        change = info_ticker["change"]
-        trend = info_ticker["trend"]
+    
+    # En lugar de usar st.columns(len(tickers)), creamos filas controladas de máximo 2 elementos
+    columnas_por_fila = 2
+    for chunk_idx in range(0, len(tickers), columnas_por_fila):
+        chunk_tickers = tickers[chunk_idx:chunk_idx + columnas_por_fila]
+        cols = st.columns(len(chunk_tickers))
         
-        nombre_legible = NOMBRES_ACTIVOS.get(ticker, ticker)
-        label_visual = f"🔥 {ticker}" if ticker == "NVDA" else ticker
-        is_bond = (ticker == "^TNX")
-        val_str = f"{price:.2f}%" if is_bond else f"${price:.2f}"
-        
-        with cols[i]:
-            if price > 0:
-                st.metric(label=label_visual, value=val_str, delta=f"{change:.2f}%")
-                st.caption(f"**{nombre_legible}**")
-                if not trend.empty:
-                    st.line_chart(trend, height=65, use_container_width=True)
-            else:
-                st.metric(label=label_visual, value="Cargando...", delta="0.00%")
+        for i, ticker in enumerate(chunk_tickers):
+            info_ticker = datos_vivos.get(ticker, {"price": 0.0, "change": 0.0, "trend": pd.Series()})
+            price = info_ticker["price"]
+            change = info_ticker["change"]
+            trend = info_ticker["trend"]
+            
+            nombre_legible = NOMBRES_ACTIVOS.get(ticker, ticker)
+            label_visual = f"🔥 {ticker}" if ticker == "NVDA" else ticker
+            is_bond = (ticker == "^TNX")
+            val_str = f"{price:.2f}%" if is_bond else f"${price:.2f}"
+            
+            with cols[i]:
+                if price > 0:
+                    st.metric(label=label_visual, value=val_str, delta=f"{change:.2f}%")
+                    st.caption(f"**{nombre_legible}**")
+                    if not trend.empty:
+                        st.line_chart(trend, height=75, use_container_width=True)
+                else:
+                    st.metric(label=label_visual, value="Sincronizando...", delta="0.00%")
     st.markdown("---")
 
-st.caption("M82 Sovereign Core Terminal v5.5 PRO • Catalyst Tracking Engine Driven.")
+st.caption("M82 Sovereign Core Terminal v5.6 PRO • Core Grid Autolayout Adjusted.")
