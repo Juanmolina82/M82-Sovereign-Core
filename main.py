@@ -4,26 +4,30 @@ import pandas as pd
 import numpy as np
 import time
 
-st.set_page_config(page_title="M82 Sovereign Core v6.5", page_icon="🦅", layout="wide")
+st.set_page_config(page_title="M82 Sovereign Core v6.8", page_icon="🦅", layout="wide")
 
 st.title("🦅 MOLINA HOLDINGS & GLOBAL LLC")
-st.subheader("M82 COMET - Extended Market Terminal v6.5 PRO")
+st.subheader("M82 COMET - Global Futures & Extended Terminal v6.8 PRO")
 st.markdown("---")
 
-# 📥 PORTAFOLIO REAL
+# 📥 PORTAFOLIO REAL DE ACCIONES
 MI_PORTAFOLIO = {
     "NVDA": 50, "TSLA": 20, "OXY": 100, "JPM": 15, "MSFT": 10, "AAPL": 10, "AMZN": 15
 }
 
+# 🗺️ NUEVA MATRIZ GLOBAL EXTENDIDA (MERCADOS INTERNACIONALES INCLUIDOS)
 ESTRUCTURA_MERCADO = {
-    "🚀 EQUITIES & BIG TECH": ["NVDA", "TSLA", "MSFT", "AAPL", "AMZN", "GOOGL"],
-    "📦 ETFs & FUTURES": ["SPY", "QQQ", "IWM", "NQ=F"],
+    "🇺🇸 US FUTURES & VOLATILITY": ["NQ=F", "ES=F", "YM=F", "^VIX"],
+    "🌏 GLOBAL & ASIAN FUTURES": ["^N225", "^HSI", "^TWII"],
+    "🚀 EQUITIES & BIG TECH": ["NVDA", "MSFT", "TSLA", "AAPL", "AMZN", "GOOGL"],
     "🧱 COMMODITIES CRÍTICOS": ["CL=F", "GC=F", "NG=F", "SI=F"]
 }
 
 NOMBRES_ACTIVOS = {
-    "CL=F": "Petróleo Crudo", "GC=F": "Oro Spot", "SPY": "S&P 500 ETF", 
-    "QQQ": "Nasdaq-100 ETF", "IWM": "Russell 2000 ETF", "NQ=F": "Futuros Nasdaq-100"
+    "NQ=F": "Futuros Nasdaq 100", "ES=F": "Futuros S&P 500", "YM=F": "Futuros Dow Jones",
+    "^VIX": "Índice de Volatilidad", "^N225": "Nikkei 225 (Japón)", "^HSI": "Hang Seng (Hong Kong)",
+    "^TWII": "Taiwan Weighted", "CL=F": "Petróleo Crudo", "GC=F": "Oro Spot",
+    "NG=F": "Gas Natural", "SI=F": "Plata Spot"
 }
 
 @st.cache_data(ttl=15)
@@ -33,7 +37,7 @@ def obtener_datos_globales():
     for ticker in todos_los_tickers:
         try:
             t_obj = yf.Ticker(ticker)
-            # Forzamos la descarga incluyendo Extended Hours en el histórico de alta resolución
+            # Solicitamos datos incluyendo el flag de prepost para horas oscuras
             hist = t_obj.history(period="2d", interval="15m", prepost=True)
             
             if not hist.empty and len(hist) >= 2:
@@ -42,11 +46,10 @@ def obtener_datos_globales():
                 change = ((price - prev_close) / prev_close) * 100
                 price_trend = hist['Close']
                 
-                # Detectar sesión a través del info nativo si está disponible
+                # Extracción de precios específicos de horas extendidas
                 info = t_obj.info
                 estado_sesion = ""
                 if "postMarketPrice" in info and info["postMarketPrice"] is not None and info["postMarketPrice"] > 0:
-                    # Si el precio de post-mercado difiere, lo tomamos como referencia viva
                     price = float(info["postMarketPrice"])
                     estado_sesion = " 🌙 [POST]"
                 elif "preMarketPrice" in info and info["preMarketPrice"] is not None and info["preMarketPrice"] > 0:
@@ -56,14 +59,14 @@ def obtener_datos_globales():
                 price, change, price_trend, estado_sesion = 0.0, 0.0, pd.Series(), ""
                 
             búfer[ticker] = {"price": price, "change": change, "trend": price_trend, "sesion": estado_sesion}
-            time.sleep(0.02)
+            time.sleep(0.01)
         except Exception: 
             búfer[ticker] = {"price": 0.0, "change": 0.0, "trend": pd.Series(), "sesion": ""}
     return búfer
 
 datos_vivos = obtener_datos_globales()
 
-# --- BALANCE DEL PORTAFOLIO EN HORAS EXTENDIDAS ---
+# --- BALANCE NETO DEL PORTAFOLIO ---
 valor_total_portafolio = 0.0
 cambio_diario_estimado = 0.0
 for ticker, cantidad in MI_PORTAFOLIO.items():
@@ -76,15 +79,15 @@ for ticker, cantidad in MI_PORTAFOLIO.items():
         cambio_diario_estimado += (valor_posicion * (c / 100))
 
 # --- DESPLIEGUE SUPERIOR MATRICIAL ---
-st.markdown("### 🏦 VALORACIÓN EN TIEMPO EXTENDIDO (PRE/POST INCLUIDO)")
+st.markdown("### 🏦 VALORACIÓN DE ACTIVOS EN HORARIO EXTENDIDO")
 p_col1, p_col2 = st.columns(2)
 with p_col1:
-    st.metric(label="💰 VALOR NETO EQUITIES DYNAMIC", value=f"${valor_total_portafolio:,.2f} USD")
+    st.metric(label="💰 VALOR NETO EQUITIES EN VIVO", value=f"${valor_total_portafolio:,.2f} USD")
 with p_col2:
-    st.metric(label="📈 P&L ESTIMADO DE SESIÓN", value=f"${cambio_diario_estimado:+,.2f} USD")
+    st.metric(label="📈 P&L EXTENDED ESTIMADO DEL DÍA", value=f"${cambio_diario_estimado:+,.2f} USD")
 st.markdown("---")
 
-# --- GRID RESPONSIVO CON DETECTOR DE SESIÓN EXTRA ---
+# --- GRID RESPONSIVO VERTICAL PARA SMARTPHONES ---
 for sector, tickers in ESTRUCTURA_MERCADO.items():
     st.header(sector)
     columnas_por_fila = 2
@@ -95,12 +98,19 @@ for sector, tickers in ESTRUCTURA_MERCADO.items():
             info_ticker = datos_vivos.get(ticker, {"price": 0.0, "change": 0.0, "trend": pd.Series(), "sesion": ""})
             price, change, trend, sesion = info_ticker["price"], info_ticker["change"], info_ticker["trend"], info_ticker["sesion"]
             
+            nombre_legible = NOMBRES_ACTIVOS.get(ticker, ticker)
             label_visual = f"{ticker}{sesion}"
+            
+            # Formateo dinámico para el VIX o porcentajes de índices
+            val_str = f"{price:.2f}" if ticker == "^VIX" else f"${price:,.2f}"
+            
             with cols[i]:
                 if price > 0:
-                    st.metric(label=label_visual, value=f"${price:.2f}", delta=f"{change:.2f}%")
-                    if not trend.empty: st.line_chart(trend, height=70, use_container_width=True)
-                else: st.metric(label=ticker, value="Sincronizando...")
+                    st.metric(label=label_visual, value=val_str, delta=f"{change:.2f}%")
+                    st.caption(f"**{nombre_legible}**")
+                    if not trend.empty: st.line_chart(trend, height=75, use_container_width=True)
+                else: 
+                    st.metric(label=ticker, value="Esperando Apertura...")
     st.markdown("---")
 
-st.caption("M82 Sovereign Core Terminal v6.5 PRO • Extended Hours Engine Fully Automated.")
+st.caption("M82 Sovereign Core Terminal v6.8 PRO • Global Futures Matrix Enabled.")
