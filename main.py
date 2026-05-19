@@ -6,10 +6,10 @@ import time
 st.set_page_config(page_title="M82 Sovereign Core", page_icon="📊", layout="wide")
 
 st.title("🦅 MOLINA HOLDINGS & GLOBAL LLC")
-st.subheader("Consola de Inteligencia Soberana - Broad Market Portfolio")
+st.subheader("Consola de Inteligencia Soberana - Ultra Low-Latency Feed")
 st.markdown("---")
 
-# 📥 CONFIGURACIÓN DE TU PORTAFOLIO (Establece tus tenencias aquí)
+# 📥 PORTAFOLIO DE ACTIVOS
 MI_PORTAFOLIO = {
     "NVDA": 50,
     "TSLA": 20,
@@ -18,7 +18,7 @@ MI_PORTAFOLIO = {
     "MSFT": 10
 }
 
-# Matriz Ampliada de Sectores
+# MATRIZ MULTISECTORIAL PREMANENTMENTE MONITOREADA
 SECTORES = {
     "🚀 TECNOLOGÍA & IA": ["NVDA", "TSLA", "MSFT", "AAPL"],
     "🛢️ ENERGÍA E INFRAESTRUCTURA": ["OXY", "CVX", "XOM"],
@@ -26,47 +26,46 @@ SECTORES = {
     "📦 CONSUMO & DEFENSA": ["WMT", "KO", "LMT"]
 }
 
-@st.cache_data(ttl=120)  # Caché inteligente de 2 minutos para mitigar bloqueos de IP
+# REDUCCIÓN DE CACHÉ A 15 SEGUNDOS PARA REFRESCAMIENTO CASI INSTANTÁNEO
+@st.cache_data(ttl=15)
 def obtener_datos_mercado():
-    """Realiza un único barrido de datos limpio y estructurado"""
     búfer = {}
     todos_los_tickers = set([t for lista in SECTORES.values() for t in lista])
     
     for ticker in todos_los_tickers:
         try:
             t_obj = yf.Ticker(ticker)
-            hist = t_obj.history(period="1d")
-            if not hist.empty:
+            # Traemos un espectro corto pero rápido de datos históricos
+            hist = t_obj.history(period="2d")
+            if len(hist) >= 2:
+                price = float(hist['Close'].iloc[-1])
+                prev_close = float(hist['Close'].iloc[-2])
+                # Alineación con brókeres: Cambio porcentual respecto al CIERRE de ayer
+                change = ((price - prev_close) / prev_close) * 100 if prev_close else 0.0
+            elif not hist.empty:
                 price = float(hist['Close'].iloc[-1])
                 open_p = float(hist['Open'].iloc[-1])
                 change = ((price - open_p) / open_p) * 100 if open_p else 0.0
             else:
                 price, change = 0.0, 0.0
                 
-            try:
-                info = t_obj.info
-                pe_ratio = info.get("trailingPE") or info.get("forwardPE") or 0.0
-            except Exception:
-                pe_ratio = 0.0
-                
-            búfer[ticker] = {"price": price, "pe": pe_ratio, "change": change}
-            time.sleep(1.5)  # Retraso defensivo controlado
+            búfer[ticker] = {"price": price, "pe": 0.0, "change": change}
+            time.sleep(0.2)  # Inyección acelerada (0.2s en lugar de 1.5s)
         except Exception:
             búfer[ticker] = {"price": 0.0, "pe": 0.0, "change": 0.0}
             
     return búfer
 
-# Sidebar de Control Operacional
+# Interfaz Lateral Activa
 st.sidebar.header("🕹️ MÓDULO DE CONTROL M82")
-st.sidebar.markdown("**Estatus de Red:** 🟢 Conectado a Wall Street")
-if st.sidebar.button("🔄 Refrescar Métmeras en Vivo"):
+st.sidebar.markdown("**Modo de Telemetría:** ⚡ Rápido (15s Cache)")
+if st.sidebar.button("🔄 Forzar Barrido de Wall Street"):
     st.cache_data.clear()
     st.rerun()
 
-# Cargar el búfer unificado de Wall Street
 datos_vivos = obtener_datos_mercado()
 
-# --- CÁLCULO FINANCIERO SEGURO DEL PORTAFOLIO ---
+# --- CÁLCULO SEGURO DEL PORTAFOLIO ---
 valor_total_portafolio = 0.0
 cambio_diario_estimado = 0.0
 
@@ -80,7 +79,7 @@ for ticker, cantidad in MI_PORTAFOLIO.items():
         valor_total_portafolio += valor_posicion
         cambio_diario_estimado += (valor_posicion * (c / 100))
 
-# --- DESPLIEGUE VISUAL DEL BALANCE NETO ---
+# --- DESPLIEGUE DEL BALANCE NETO ---
 st.markdown("### 🏦 RESUMEN EJECUTIVO DEL PORTAFOLIO")
 p_col1, p_col2 = st.columns(2)
 with p_col1:
@@ -89,7 +88,7 @@ with p_col2:
     st.metric(
         label="📈 RENDIMIENTO ESTIMADO DEL DÍA (USD)", 
         value=f"${cambio_diario_estimado:+,.2f} USD",
-        delta="Impacto directo" if cambio_diario_estimado != 0 else "Estable"
+        delta="Sincronizado con cierre previo"
     )
 st.markdown("---")
 
@@ -100,34 +99,31 @@ for sector, tickers in SECTORES.items():
     datos_tabla = []
     
     for i, ticker in enumerate(tickers):
-        info_ticker = datos_vivos.get(ticker, {"price": 0.0, "pe": 0.0, "change": 0.0})
+        info_ticker = datos_vivos.get(ticker, {"price": 0.0, "change": 0.0})
         price = info_ticker["price"]
-        pe_ratio = info_ticker["pe"]
         change = info_ticker["change"]
         
-        pe_str = f"{pe_ratio:.2f}x" if pe_ratio > 0 else "N/A"
         cantidad_tengo = MI_PORTAFOLIO.get(ticker, 0)
-        tenencia_str = f"📦 Tienes: {cantidad_tengo} acc" if cantidad_tengo > 0 else "No posicionado"
+        tenencia_str = f"📦 {cantidad_tengo} acc" if cantidad_tengo > 0 else "Sin posición"
         
         with cols[i]:
             if price > 0:
                 label_ticker = f"🔥 {ticker}" if ticker == "NVDA" else ticker
                 st.metric(label=label_ticker, value=f"${price:.2f} USD", delta=f"{change:.2f}%")
-                st.caption(f"**P/E:** {pe_str} | {tenencia_str}")
+                st.caption(f"**Tenencia:** {tenencia_str}")
                 
                 datos_tabla.append({
                     "Ticker": ticker,
                     "Precio Spot": f"${price:.2f}",
-                    "Variación": f"{change:.2f}%",
-                    "Múltiplo P/E": pe_str,
-                    "Tu Tenencia": cantidad_tengo
+                    "Variación Diaria": f"{change:.2f}%",
+                    "Tu Posición": tenencia_str
                 })
             else:
-                st.error(f"{ticker} - En espera")
+                st.error(f"{ticker} - Actualizando")
                 
     if datos_tabla:
         df = pd.DataFrame(datos_tabla)
         st.dataframe(df, hide_index=True, use_container_width=True)
     st.markdown("---")
 
-st.caption("M82 Sovereign Core App v2.4 • Entorno optimizado contra rate-limiting y fallos de llave.")
+st.caption("M82 Sovereign Core App v2.5 • Feed optimizado de baja latencia.")
