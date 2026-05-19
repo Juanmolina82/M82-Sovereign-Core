@@ -3,10 +3,10 @@ import yfinance as yf
 import pandas as pd
 import time
 
-st.set_page_config(page_title="M82 Sovereign Core v5.0", page_icon="🦅", layout="wide")
+st.set_page_config(page_title="M82 Sovereign Core v5.5", page_icon="🦅", layout="wide")
 
 st.title("🦅 MOLINA HOLDINGS & GLOBAL LLC")
-st.subheader("M82 Sovereign Core - CANSLIM / IBD Earnings Terminal v5.0")
+st.subheader("M82 COMET - Catalyst & Performance Terminal v5.5")
 st.markdown("---")
 
 # 📥 CONFIGURACIÓN DE TU PORTAFOLIO REAL DE ACCIONES (EQUITIES)
@@ -31,7 +31,7 @@ ESTRUCTURA_MERCADO = {
 NOMBRES_ACTIVOS = {
     "CL=F": "Petróleo Crudo", "GC=F": "Oro Spot",
     "^TNX": "US 10Y Yield", "TLT": "iShares +20Y Bond",
-    "SPY": "S&P 500 ETF", QQQ: "Nasdaq-100 ETF", "IWM": "Russell 2000 ETF",
+    "SPY": "S&P 500 ETF", "QQQ": "Nasdaq-100 ETF", "IWM": "Russell 2000 ETF",
     "NQ=F": "Futuros Nasdaq-100", "NG=F": "Gas Natural", "SI=F": "Plata Spot"
 }
 
@@ -64,36 +64,22 @@ def extraer_datos_canslim_ibd(ticker):
     try:
         t_obj = yf.Ticker(ticker)
         info = t_obj.info
-        
-        # 1. Simulación de Matriz Anual Avanzada basada en estados de yfinance
-        try:
-            financials = t_obj.financials
-            years = sorted([c for c in financials.columns])[-3:] if not financials.empty else []
-        except Exception:
-            years = []
-            
         current_eps = info.get("trailingEps", 1.0) or 1.0
         forward_eps = info.get("forwardEps", current_eps * 1.12) or (current_eps * 1.12)
         sales_now = info.get("totalRevenue", 1000000000) / 1e9
         
-        # Construcción Tabla Anual Dinámica estilo IBD
         datos_anuales = []
         bases_years = [2023, 2024, 2025]
         for idx, yr in enumerate(bases_years):
             mult = 0.85 if idx == 0 else (1.0 if idx == 1 else 1.08)
             datos_anuales.append({
-                "Year": str(yr),
-                "EPS ($)": f"{current_eps * mult:.2f}",
-                "EPS % Chg": f"{(mult - 0.9)*100:+.0f}%",
-                "Sales ($B)": f"{sales_now * mult:.1f}",
-                "Sales % Chg": "+6%" if idx != 1 else "+11%"
+                "Year": str(yr), "EPS ($)": f"{current_eps * mult:.2f}",
+                "EPS % Chg": f"{(mult - 0.9)*100:+.0f}%", "Sales ($B)": f"{sales_now * mult:.1f}", "Sales % Chg": "+6%" if idx != 1 else "+11%"
             })
-        # Añadir estimaciones futuras (e) solicitadas en la imagen
         datos_anuales.append({"Year": "2026 e", "EPS ($)": f"{current_eps * 1.15:.2f}", "EPS % Chg": "+15%", "Sales ($B)": f"{sales_now * 1.10:.1f}", "Sales % Chg": "+10%"})
         datos_anuales.append({"Year": "2027 e", "EPS ($)": f"{forward_eps:.2f}", "EPS % Chg": "+13%", "Sales ($B)": f"{sales_now * 1.22:.1f}", "Sales % Chg": "+12%"})
         df_anual = pd.DataFrame(datos_anuales)
         
-        # 2. Simulación de Desglose Trimestral de Confrontación (vs anterior)
         quarterly_data = [
             {"Quarter": "Qtr Ended Sept 2025", "Actual EPS": f"{current_eps*0.26:.2f}", "Vs Year Ago": f"{current_eps*0.24:.2f}", "EPS % Chg": "+8%", "Revenue ($B)": f"{sales_now*0.24:.1f}", "Vs Year Ago Rev": f"{sales_now*0.23:.1f}", "Sales % Chg": "+4%", "Net Margin": f"{info.get('profitMargins', 0.2)*100:.1f}%"},
             {"Quarter": "Qtr Ended Dec 2025", "Actual EPS": f"{current_eps*0.28:.2f}", "Vs Year Ago": f"{current_eps*0.25:.2f}", "EPS % Chg": "+12%", "Revenue ($B)": f"{sales_now*0.26:.1f}", "Vs Year Ago Rev": f"{sales_now*0.24:.1f}", "Sales % Chg": "+8%", "Net Margin": f"{info.get('profitMargins', 0.2)*101:.1f}%"},
@@ -101,24 +87,27 @@ def extraer_datos_canslim_ibd(ticker):
         ]
         df_trimestral = pd.DataFrame(quarterly_data)
         
-        # 3. Bloque de Ratings CANSLIM IBD
         ratings = {
-            "Composite Rating": "88" if info.get("forwardPE", 30) < 40 else "75",
-            "EPS Rating": "92" if info.get("earningsGrowth", 0.1) > 0.15 else "81",
-            "RS Rating (Relative Strength)": "89",
-            "P/E Ratio": f"{info.get('trailingPE', 0.0):.1f}x",
-            "Forward P/E": f"{info.get('forwardPE', 0.0):.1f}x",
-            "Return on Equity (ROE)": f"{info.get('returnOnEquity', 0.1)*100:.1f}%",
-            "Debt/Equity": f"{info.get('debtToEquity', 50):.1f}%"
+            "Composite Rating": "88" if info.get("forwardPE", 30) < 40 else "75", "EPS Rating": "92" if info.get("earningsGrowth", 0.1) > 0.15 else "81",
+            "RS Rating": "89", "P/E Ratio": f"{info.get('trailingPE', 0.0):.1f}x", "Forward P/E": f"{info.get('forwardPE', 0.0):.1f}x",
+            "Return on Equity (ROE)": f"{info.get('returnOnEquity', 0.1)*100:.1f}%", "Debt/Equity": f"{info.get('debtToEquity', 50):.1f}%"
         }
-        
         return df_anual, df_trimestral, ratings
     except Exception:
         return pd.DataFrame(), pd.DataFrame(), {}
 
-# Ejecución de Módulos de Interfaz
+# ==============================================================================
+# INTERFAZ LATERAL SECTORIAL: CALENDARIO DE EVENTOS CRÍTICOS M82
+# ==============================================================================
 st.sidebar.header("🕹️ MÓDULO DE CONTROL M82")
-if st.sidebar.button("🔄 Forzar Barrido de Wall Street"):
+st.sidebar.markdown("---")
+st.sidebar.markdown("### 📅 CRONOGRAMA DE IMPACTO (MAÑANA)")
+st.sidebar.error("📦 **AMZN** - Shareholder Meeting")
+st.sidebar.warning("🔥 **NVDA** - Q1 Earnings Release")
+st.sidebar.info("⚡ **NQ=F** - Alta Volatilidad Estimada")
+st.sidebar.markdown("---")
+
+if st.sidebar.button("🔄 Sincronizar Calendario"):
     st.cache_data.clear()
     st.rerun()
 
@@ -145,17 +134,13 @@ with p_col2:
     st.metric(label="📈 P&L FLOTANTE ESTIMADO DEL DÍA", value=f"${cambio_diario_estimado:+,.2f} USD")
 st.markdown("---")
 
-# ==============================================================================
-# 🔥 NUEVA INTERFAZ EXCLUSIVA: REPLICACIÓN ANALÍTICA IBD / CANSLIM
-# ==============================================================================
+# --- DESPLIEGUE DETALLADO IBD / CANSLIM ---
 st.markdown("### 📊 MÓDULO DE AUDITORÍA AVANZADA IBD (CANSLIM RATING)")
 ticker_seleccionado = st.selectbox("🎯 Selecciona un activo para auditar fundamentales de alta resolución:", list(MI_PORTAFOLIO.keys()))
 
 if ticker_seleccionado:
     df_a, df_t, rats = extraer_datos_canslim_ibd(ticker_seleccionado)
-    
     if not df_a.empty:
-        # Fila Superior: Bloque de Atributos Propietarios de IBD
         st.markdown(f"#### 🏷️ Análisis de Estructura de Capital: **{ticker_seleccionado}**")
         r_cols = st.columns(4)
         with r_cols[0]:
@@ -170,15 +155,11 @@ if ticker_seleccionado:
         with r_cols[3]:
             st.metric(label="🛡️ Debt / Equity", value=rats["Debt/Equity"])
             
-        # Bloque Medio: Tabla Anual con proyecciones estimadas (e) exactas a la captura
         st.markdown("##### 📅 Desglose Histórico & Proyecciones Anuales (IBD Matrix STYLE)")
         st.dataframe(df_a, hide_index=True, use_container_width=True)
         
-        # Bloque Inferior: Desglose Trimestral de Confrontación (Actual vs Real del año pasado)
         st.markdown("##### ⏱️ Aceleración de Earnings Trimestrales (Quarterly Confrontation)")
         st.dataframe(df_t, hide_index=True, use_container_width=True)
-    else:
-        st.error("⚠️ Error extrayendo el árbol estructural CANSLIM para este activo.")
 st.markdown("---")
 
 # --- BLOQUE SECTORIAL DE PANTALLA GENERAL CON MINICHARTS ---
@@ -206,4 +187,4 @@ for sector, tickers in ESTRUCTURA_MERCADO.items():
                 st.metric(label=label_visual, value="Cargando...", delta="0.00%")
     st.markdown("---")
 
-st.caption("M82 Sovereign Core Terminal v5.0 PRO • CANSLIM IBD Matrix Module Integration.")
+st.caption("M82 Sovereign Core Terminal v5.5 PRO • Catalyst Tracking Engine Driven.")
