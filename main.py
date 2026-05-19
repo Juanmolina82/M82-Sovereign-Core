@@ -3,14 +3,14 @@ import yfinance as yf
 import pandas as pd
 import time
 
-st.set_page_config(page_title="M82 Sovereign Core v10.0", page_icon="🦅", layout="wide")
+st.set_page_config(page_title="M82 Core v10.5", page_icon="🦅", layout="wide")
 
 st.title("🦅 MOLINA HOLDINGS & GLOBAL LLC")
-st.subheader("M82 COMET - Master Sovereign Terminal v10.0 PRO")
+st.subheader("M82 COMET - Sovereign Eco Terminal v10.5 PRO")
 st.markdown("---")
 
 # ==============================================================================
-# 1. BASE DE DATOS MAESTRA (DEFINICIÓN INEQUÍVOCA)
+# DATOS MAESTROS CONSOLIDADOS (ESTÁTICOS + ASÍNCRONOS)
 # ==============================================================================
 MI_PORTAFOLIO = {
     "NVDA": 50, "TSLA": 20, "OXY": 100, "JPM": 15, "MSFT": 10, "AAPL": 10, "AMZN": 15
@@ -19,19 +19,15 @@ MI_PORTAFOLIO = {
 SECTORES = {
     "🚀 EQUITIES & BIG TECH": ["NVDA", "TSLA", "MSFT", "AAPL", "AMZN", "GOOGL"],
     "📦 ETFs & COVERAGE": ["SPY", "QQQ", "IWM"],
-    "🇺🇸 MAJOR US FUTURES": ["NQ=F", "ES=F", "YM=F", "MME=F"],
-    "📉 MICRO / SMALL CAP FUTURES": ["RTY=F", "MYM=F", "MNQ=F", "MES=F"],
-    "⚠️ VOLATILITY DERIVATIVES": ["^VIX", "VXM=F"],
-    "🌏 PACIFIC & ASIAN INDEXES": ["^N225", "^HSI", "STW=F"],
-    "📈 BONDS & RATES": ["^TNX", "TLT"]
+    "🇺🇸 MAJOR US FUTURES": ["NQ=F", "ES=F", "YM=F"],
+    "📉 MICRO FUTURES": ["RTY=F", "MNQ=F", "MES=F"],
+    "⚠️ VOLATILITY & BONDS": ["^VIX", "^TNX", "TLT"]
 }
 
 NOMBRES_ACTIVOS = {
     "NQ=F": "Futuros Nasdaq 100", "ES=F": "Futuros S&P 500", "YM=F": "Futuros Dow Jones",
-    "MME=F": "S&P MidCap 400 Futures", "RTY=F": "Russell 2000 Futures", "MYM=F": "Micro Dow Jones Futures",
-    "MNQ=F": "Micro Nasdaq 100 Futures", "MES=F": "Micro S&P 500 Futures", "^VIX": "VIX Index",
-    "VXM=F": "Mini VIX Futures", "^N225": "Nikkei 225 Index", "^HSI": "Hang Seng Index",
-    "STW=F": "MSCI Taiwan Futures", "NVDA": "NVIDIA Corp.", "MSFT": "Microsoft Corp.",
+    "RTY=F": "Russell 2000 Futures", "MNQ=F": "Micro Nasdaq 100", "MES=F": "Micro S&P 500",
+    "^VIX": "VIX Index", "NVDA": "NVIDIA Corp.", "MSFT": "Microsoft Corp.",
     "TSLA": "Tesla Inc.", "AAPL": "Apple Inc.", "AMZN": "Amazon.com Inc.", "GOOGL": "Alphabet Inc.",
     "SPY": "S&P 500 ETF", "QQQ": "Nasdaq-100 ETF", "IWM": "Russell 2000 ETF",
     "^TNX": "US 10Y Yield", "TLT": "iShares +20Y Bond"
@@ -44,28 +40,29 @@ CURVA_BRENT = {
     "BZ2610 (Vencimiento Octubre)": (97.56, -1.19), "BZ2611 (Vencimiento Noviembre)": (94.32, -1.19)
 }
 
-@st.cache_data(ttl=60)
-def descargar_datos_seguros():
+# Optimización extrema: Caché de 5 minutos (300 segundos) para no saturar memoria libre
+@st.cache_data(ttl=300)
+def descargar_datos_eco():
     búfer = {}
     todos = set([t for lista in SECTORES.values() for t in lista] + list(MI_PORTAFOLIO.keys()))
     for ticker in todos:
         try:
             t_obj = yf.Ticker(ticker)
-            hist = t_obj.history(period="2d", interval="30m", prepost=True)
+            # interval grande de 1 hora para minimizar el paquete de datos procesado
+            hist = t_obj.history(period="2d", interval="1h", prepost=True)
             if not hist.empty and len(hist) >= 2:
                 price = float(hist['Close'].iloc[-1])
                 change = ((price - float(hist['Close'].iloc[-2])) / float(hist['Close'].iloc[-2])) * 100
-                trend = hist['Close']
-            else: price, change, trend = 0.0, 0.0, pd.Series()
-            búfer[ticker] = {"price": price, "change": change, "trend": trend}
+            else: price, change = 0.0, 0.0
+            búfer[ticker] = {"price": price, "change": change}
         except Exception:
-            búfer[ticker] = {"price": 0.0, "change": 0.0, "trend": pd.Series()}
+            búfer[ticker] = {"price": 0.0, "change": 0.0}
     return búfer
 
-datos_vivos = descargar_datos_seguros()
+datos_vivos = descargar_datos_eco()
 
 # ==============================================================================
-# 2. VALORACIÓN DEL PORTAFOLIO EN VIVO
+# RENDIMIENTO Y VALORACIÓN NETAL DEL PORTAFOLIO
 # ==============================================================================
 valor_neto = 0.0
 p_and_l_diario = 0.0
@@ -85,9 +82,9 @@ col2.metric("📈 P&L FLOTANTE ESTIMADO DEL DÍA", f"${p_and_l_diario:+,.2f} USD
 st.markdown("---")
 
 # ==============================================================================
-# 3. MÓDULO DE AUDITORÍA AVANZADA IBD (SISTEMA INTEGRAL)
+# AUDITORÍA DE FUNDAMENTALES IBD DUAL (NVDA / WMT)
 # ==============================================================================
-st.markdown("### 📊 MÓDULO DE AUDITORÍA AVANZADA IBD (CANSLIM RATING)")
+st.markdown("### 📊 MÓDULO DE AUDITORÍA AVANZADA IBD")
 activo_ibd = st.selectbox("Seleccione activo para auditar:", ["NVIDIA (NVDA)", "WALMART (WMT)"])
 
 if activo_ibd == "NVIDIA (NVDA)":
@@ -96,21 +93,19 @@ if activo_ibd == "NVIDIA (NVDA)":
     c2.metric("RS Rating", "89")
     c3.metric("Forward P/E", "19.0x")
     c4.metric("Debt/Equity", "7.3%")
-    st.caption("Foco FactSet: Q1 Consenso EPS $1.73 (+115% YoY) | Rev $78.6B (+79% YoY).")
 else:
     c1, c2, c3, c4 = st.columns(4)
     c1.metric("Composite Rating", "75")
     c2.metric("RS Rating", "72")
     c3.metric("P/E Ratio", "50")
     c4.metric("Return on Equity", "23%")
-    st.caption("Foco IBD: Shares Outstanding 7971M | Dividend Yield 0.75%.")
 st.markdown("---")
 
 # ==============================================================================
-# 4. RADAR DE OPCIONES INSTITUCIONALES
+# RADAR DE OPCIONES INSTITUCIONALES 
 # ==============================================================================
 st.markdown("### 👁️ RADAR DE EXPOSICIÓN EN OPCIONES INSTITUCIONALES")
-opc = st.radio("Flujo institucional activo:", ["MSFT Call Block ($5.37M)", "NVDA Short Put Block ($1.4M)"])
+opc = st.radio("Flujo de bloques activo:", ["MSFT Call Block ($5.37M)", "NVDA Short Put Block ($1.4M)"])
 m1, m2, m3 = st.columns(3)
 if opc == "MSFT Call Block ($5.37M)":
     m1.metric("Strike Call (K)", "$420.00")
@@ -123,7 +118,7 @@ else:
 st.markdown("---")
 
 # ==============================================================================
-# 5. ENERGY COMPLEX: BRENT CRUDE
+# CURVA TEMPORAL DEL BRENT CRUDO
 # ==============================================================================
 st.header("🛢️ ENERGY COMPLEX: BRENT CRUDE FORWARD CURVE")
 tabla_brent = []
@@ -133,22 +128,21 @@ st.table(pd.DataFrame(tabla_brent))
 st.markdown("---")
 
 # ==============================================================================
-# 6. GRID TOTAL MULTI-SECTORIAL DE MERCADOS
+# GRID RESPONSIVO MULTI-SECTORIAL DE MERCADOS COMPACTO
 # ==============================================================================
 for sector, tickers in SECTORES.items():
     st.header(sector)
     cols = st.columns(len(tickers))
     for idx, ticker in enumerate(tickers):
-        info = datos_vivos.get(ticker, {"price": 0.0, "change": 0.0, "trend": pd.Series()})
+        info = datos_vivos.get(ticker, {"price": 0.0, "change": 0.0})
         nombre = NOMBRES_ACTIVOS.get(ticker, ticker)
         with cols[idx]:
             if info["price"] > 0:
                 v_str = f"{info['price']:.2f}%" if ticker == "^TNX" else (f"{info['price']:.2f}" if "VIX" in ticker else f"${info['price']:,.2f}")
                 st.metric(label=ticker, value=v_str, delta=f"{info['change']:.2f}%")
                 st.caption(f"**{nombre}**")
-                if not info["trend"].empty: st.line_chart(info["trend"], height=60, use_container_width=True)
             else:
-                st.metric(label=ticker, value="Sincronizando...")
+                st.metric(label=ticker, value="En cola...")
     st.markdown("---")
 
-st.caption("M82 Sovereign Core Terminal v10.0 PRO • Deployment Stabilized Perfectly.")
+st.caption("M82 Sovereign Core Terminal v10.5 | Optimized for Free-Tier Stability.")
