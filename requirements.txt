@@ -1,0 +1,2 @@
+# M82 Sovereign Core - Python dependencies
+# Core server uses only standard library modules
