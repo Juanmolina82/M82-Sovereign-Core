@@ -4,10 +4,10 @@ import pandas as pd
 import numpy as np
 import time
 
-st.set_page_config(page_title="M82 Sovereign Core v6.2", page_icon="🦅", layout="wide")
+st.set_page_config(page_title="M82 Sovereign Core v6.5", page_icon="🦅", layout="wide")
 
 st.title("🦅 MOLINA HOLDINGS & GLOBAL LLC")
-st.subheader("M82 COMET - Premium Derivative Terminal v6.2")
+st.subheader("M82 COMET - Extended Market Terminal v6.5 PRO")
 st.markdown("---")
 
 # 📥 PORTAFOLIO REAL
@@ -33,67 +33,58 @@ def obtener_datos_globales():
     for ticker in todos_los_tickers:
         try:
             t_obj = yf.Ticker(ticker)
-            hist = t_obj.history(period="2d", interval="15m")
+            # Forzamos la descarga incluyendo Extended Hours en el histórico de alta resolución
+            hist = t_obj.history(period="2d", interval="15m", prepost=True)
+            
             if not hist.empty and len(hist) >= 2:
                 price = float(hist['Close'].iloc[-1])
                 prev_close = float(hist['Close'].iloc[-2])
                 change = ((price - prev_close) / prev_close) * 100
                 price_trend = hist['Close']
-            else: price, change, price_trend = 0.0, 0.0, pd.Series()
-            búfer[ticker] = {"price": price, "change": change, "trend": price_trend}
-        except Exception: búfer[ticker] = {"price": 0.0, "change": 0.0, "trend": pd.Series()}
+                
+                # Detectar sesión a través del info nativo si está disponible
+                info = t_obj.info
+                estado_sesion = ""
+                if "postMarketPrice" in info and info["postMarketPrice"] is not None and info["postMarketPrice"] > 0:
+                    # Si el precio de post-mercado difiere, lo tomamos como referencia viva
+                    price = float(info["postMarketPrice"])
+                    estado_sesion = " 🌙 [POST]"
+                elif "preMarketPrice" in info and info["preMarketPrice"] is not None and info["preMarketPrice"] > 0:
+                    price = float(info["preMarketPrice"])
+                    estado_sesion = " 🌅 [PRE]"
+            else: 
+                price, change, price_trend, estado_sesion = 0.0, 0.0, pd.Series(), ""
+                
+            búfer[ticker] = {"price": price, "change": change, "trend": price_trend, "sesion": estado_sesion}
+            time.sleep(0.02)
+        except Exception: 
+            búfer[ticker] = {"price": 0.0, "change": 0.0, "trend": pd.Series(), "sesion": ""}
     return búfer
 
 datos_vivos = obtener_datos_globales()
 
-# ==============================================================================
-# 👁️ RADAR DE DERIVADOS - TARGET PREMIUM v6.2
-# ==============================================================================
-st.markdown("### 👁️ AUDITORÍA DE FLUJOS DE ALTA GAMA (BLOCK TRADES)")
-tipo_flujo = st.radio("Selecciona tipo de flujo detectado:", ["MSFT August 21 Block ($5.37M)", "Bullish Short Put (Caso NVDA)"])
+# --- BALANCE DEL PORTAFOLIO EN HORAS EXTENDIDAS ---
+valor_total_portafolio = 0.0
+cambio_diario_estimado = 0.0
+for ticker, cantidad in MI_PORTAFOLIO.items():
+    info_ticker = datos_vivos.get(ticker, {"price": 0.0, "change": 0.0})
+    p = info_ticker["price"]
+    c = info_ticker["change"]
+    if p > 0:
+        valor_posicion = p * cantidad
+        valor_total_portafolio += valor_posicion
+        cambio_diario_estimado += (valor_posicion * (c / 100))
 
-if tipo_flujo == "MSFT August 21 Block ($5.37M)":
-    with st.expander("🚀 Parámetros del Bloque de Compra Premium - Microsoft", expanded=True):
-        c_col1, c_col2, c_col3 = st.columns(3)
-        with c_col1:
-            strike_c = st.number_input("Strike Call de Ejercicio (K):", value=420.00)
-        with c_col2:
-            prima_c = st.number_input("Prima Premium Pagada ($):", value=90.00)
-        with c_col3:
-            contratos_c = st.number_input("Contratos Totales Calculados:", value=596)
-
-        be_c = strike_c + prima_c
-        inversion_total = prima_c * 100 * contratos_c
-        msft_spot = datos_vivos.get("MSFT", {"price": 422.00})["price"]
-        distancia_be = ((be_c - msft_spot) / msft_spot) * 100 if msft_spot > 0 else 0.0
-
-        st.markdown("#### 📊 Umbrales de Exposición Especulativa:")
-        mc_col1, mc_col2, mc_col3 = st.columns(3)
-        with mc_col1:
-            st.metric(label="🔥 Capital de Riesgo Fijo", value=f"${inversion_total:,.2f} USD")
-        with mc_col2:
-            st.metric(label="🎯 Break-Even Target Necesario", value=f"${be_c:.2f} USD")
-        with mc_col3:
-            st.metric(label="📈 Distancia Requerida vs Spot", value=f"{distancia_be:+.2f}%")
-
-        if msft_spot >= be_c:
-            st.success(f"🟢 IN THE MONEY: MSFT (${msft_spot:.2f}) ha roto la barrera cuántica del Break-Even.")
-        else:
-            st.warning(f"⚠️ CAPITULACIÓN INTRADÍA: MSFT cotiza por debajo del objetivo. Se requiere un rally del {distancia_be:.2f}% para activar este bloque.")
-
-else:
-    with st.expander("🛡️ Parámetros del Bloque de Venta - NVIDIA", expanded=True):
-        col_op1, col_op2 = st.columns(2)
-        with col_op1: strike = st.number_input("Strike (K):", value=100.00)
-        with col_op2: prima = st.number_input("Prima Recibida ($):", value=41.00)
-        
-        breakeven = strike - prima
-        nvda_spot = datos_vivos.get("NVDA", {"price": 222.96})["price"]
-        st.metric(label="🎯 Break-Even", value=f"${breakeven:,.2f} USD")
-
+# --- DESPLIEGUE SUPERIOR MATRICIAL ---
+st.markdown("### 🏦 VALORACIÓN EN TIEMPO EXTENDIDO (PRE/POST INCLUIDO)")
+p_col1, p_col2 = st.columns(2)
+with p_col1:
+    st.metric(label="💰 VALOR NETO EQUITIES DYNAMIC", value=f"${valor_total_portafolio:,.2f} USD")
+with p_col2:
+    st.metric(label="📈 P&L ESTIMADO DE SESIÓN", value=f"${cambio_diario_estimado:+,.2f} USD")
 st.markdown("---")
 
-# --- GRID RESPONSIVO DE PRECIOS VIVOS ---
+# --- GRID RESPONSIVO CON DETECTOR DE SESIÓN EXTRA ---
 for sector, tickers in ESTRUCTURA_MERCADO.items():
     st.header(sector)
     columnas_por_fila = 2
@@ -101,13 +92,15 @@ for sector, tickers in ESTRUCTURA_MERCADO.items():
         chunk_tickers = tickers[chunk_idx:chunk_idx + columnas_por_fila]
         cols = st.columns(len(chunk_tickers))
         for i, ticker in enumerate(chunk_tickers):
-            info_ticker = datos_vivos.get(ticker, {"price": 0.0, "change": 0.0, "trend": pd.Series()})
-            price, change, trend = info_ticker["price"], info_ticker["change"], info_ticker["trend"]
+            info_ticker = datos_vivos.get(ticker, {"price": 0.0, "change": 0.0, "trend": pd.Series(), "sesion": ""})
+            price, change, trend, sesion = info_ticker["price"], info_ticker["change"], info_ticker["trend"], info_ticker["sesion"]
+            
+            label_visual = f"{ticker}{sesion}"
             with cols[i]:
                 if price > 0:
-                    st.metric(label=ticker, value=f"${price:.2f}", delta=f"{change:.2f}%")
+                    st.metric(label=label_visual, value=f"${price:.2f}", delta=f"{change:.2f}%")
                     if not trend.empty: st.line_chart(trend, height=70, use_container_width=True)
                 else: st.metric(label=ticker, value="Sincronizando...")
     st.markdown("---")
 
-st.caption("M82 Sovereign Core Terminal v6.2 PRO • Premium Options Cluster.")
+st.caption("M82 Sovereign Core Terminal v6.5 PRO • Extended Hours Engine Fully Automated.")
