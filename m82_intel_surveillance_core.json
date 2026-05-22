@@ -1,11 +1,9 @@
 {
     "CITIGROUP_FUNDAMENTALS": {
-        "quarterly_eps": "$3.06 (Beat $2.63)",
-        "revenue": "$24.63 Billion",
-        "capital_allocation": "$30.00 Billion Authorized Buyback"
+        "quarterly_eps": "$3.06",
+        "revenue": "$24.63 Billion"
     },
     "PRIVATE_CREDIT_STRESS_MONITOR": {
-        "us_default_rate_fitch": "6.0% Max 12 Months",
-        "valuation_investigations": "BlackRock TCP Capital 19% asset markdown scrutiny"
+        "us_default_rate_fitch": "6.0% Max 12 Months"
     }
 }
