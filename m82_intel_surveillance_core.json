@@ -6,7 +6,6 @@
     },
     "PRIVATE_CREDIT_STRESS_MONITOR": {
         "us_default_rate_fitch": "6.0% Max 12 Months",
-        "valuation_investigations": "BlackRock TCP Capital 19% asset markdown scrutiny",
-        "goldman_sachs_bdc_downgrade": "Perspective Negative (Non-accruals 4.7%)"
+        "valuation_investigations": "BlackRock TCP Capital 19% asset markdown scrutiny"
     }
 }
