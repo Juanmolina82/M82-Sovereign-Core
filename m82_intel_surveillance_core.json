@@ -1,6 +1,17 @@
 {
-    "SOVEREIGN_CURVE_STRUCTURE": {
-        "us_2s10s_spread": "98.0 bps",
-        "cds_usa_5y": "48.0 bps"
+    "EQUITIES": {
+        "AAPL_REF": 309.41,
+        "STATUS": "MONITORED"
+    },
+    "ETFS": {
+        "SPY": 747.34,
+        "VXX_VOLATILITY": 26.25
+    },
+    "COMMODITIES": {
+        "WTI_CRUDE_OIL": 96.44,
+        "GOLD_SPOT": 4517.0
+    },
+    "FUTURES": {
+        "ES_MINI_SP500": 7508.5
     }
 }

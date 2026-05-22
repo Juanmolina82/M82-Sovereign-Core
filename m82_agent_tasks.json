@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "prioridad": "CRITICAL",
+        "descripcion": "Monitorear extensión técnica de LSEG Workspace en Caribe",
+        "estado": "PENDING"
+    },
+    {
+        "id": 2,
+        "prioridad": "HIGH",
+        "descripcion": "Esperar confirmación presupuestaria institucional (Afiliación JPM)",
+        "estado": "IN_PROGRESS"
+    },
+    {
+        "id": 3,
+        "prioridad": "MEDIUM",
+        "descripcion": "Sincronizar Ledger Monolítico Completo v7.0.0 a GitHub",
+        "estado": "AUTOMATED"
+    }
+]
