@@ -1,4 +1,37 @@
+# --- HISTORIALES Y ENTORNOS DE SISTEMA ---
 .bash_history
-.vault/
-*.env
+.python_history
 __pycache__/
+*.pyc
+.local/
+.cargo/
+.config/
+.npm/
+
+# --- CREDENCIALES Y SEGURIDAD CRÍTICA (PROHIBIDO SUBIR) ---
+.git-credentials
+.gitconfig
+.ssh/
+.streamlit/
+vault.json
+.m82_vault_key
+
+# --- LOGS, CACHÉ Y ERRORES ---
+*.log
+bot_error.log
+m82_quantum_energy.log
+m82_quantum_energy.log.bak
+logs/
+M82_SESSION_BACKUP/
+M82_Session/
+
+# --- BASES DE DATOS DINÁMICAS ---
+m82_master_architecture.json
+M82_MASTER_LOG.json
+global_sync.json
+global_sync_v2.json
+*.json
+
+# --- EXCEPCIONES TÁCTICAS M82 (JSONs Permitidos) ---
+!m82_static_template.json
+!.streamlit/config.toml
