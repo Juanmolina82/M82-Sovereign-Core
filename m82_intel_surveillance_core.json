@@ -1,17 +1,17 @@
 {
     "EQUITIES": {
-        "AAPL_REF": 309.22,
+        "AAPL_REF": 309.28,
         "STATUS": "MONITORED"
     },
     "ETFS": {
-        "SPY": 747.22,
-        "VXX_VOLATILITY": 26.23
+        "SPY": 746.49,
+        "VXX_VOLATILITY": 26.29
     },
     "COMMODITIES": {
-        "WTI_CRUDE_OIL": 96.46,
-        "GOLD_SPOT": 4518.7
+        "WTI_CRUDE_OIL": 96.22,
+        "GOLD_SPOT": 4516.9
     },
     "FUTURES": {
-        "ES_MINI_SP500": 7508.75
+        "ES_MINI_SP500": 7505.5
     }
 }
