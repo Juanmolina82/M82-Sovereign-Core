@@ -1,9 +1,6 @@
 {
-    "CITIGROUP_FUNDAMENTALS": {
-        "quarterly_eps": "$3.06",
-        "revenue": "$24.63 Billion"
-    },
-    "PRIVATE_CREDIT_STRESS_MONITOR": {
-        "us_default_rate_fitch": "6.0% Max 12 Months"
+    "SOVEREIGN_CURVE_STRUCTURE": {
+        "us_2s10s_spread": "98.6 bps",
+        "cds_usa_5y": "48.0 bps"
     }
 }
