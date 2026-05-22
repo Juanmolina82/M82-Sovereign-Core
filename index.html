@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M82 Sovereign Intelligence Console</title>
+    <style>
+        :root {
+            --bg-color: #0a0c10;
+            --card-bg: #12161f;
+            --border-color: #1f2635;
+            --text-main: #c9d1d9;
+            --accent: #58a6ff;
+            --warning: #f0883e;
+            --success: #3fb950;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, monospace;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        h1 { color: #ffffff; margin: 0; font-size: 1.5rem; letter-spacing: 1px; }
+        .sub-header { font-size: 0.85rem; color: #8b949e; margin-top: 5px; }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 20px;
+        }
+        .card h3 { margin-top: 0; color: var(--accent); border-bottom: 1px solid var(--border-color); padding-bottom: 10px; font-size: 1.1rem; }
+        .metric-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            font-size: 0.9rem;
+            border-bottom: 1px dashed #1f2635;
+        }
+        .metric-row:last-child { border-bottom: none; }
+        .label { color: #8b949e; }
+        .value { font-weight: bold; color: #ffffff; }
+        .badge {
+            background: rgba(88, 166, 255, 0.1);
+            color: var(--accent);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+        }
+        .badge-warning { background: rgba(240, 136, 62, 0.1); color: var(--warning); }
+        .badge-success { background: rgba(63, 185, 80, 0.1); color: var(--success); }
+        footer { text-align: center; color: #8b949e; font-size: 0.8rem; margin-top: 5px; padding-top: 20px; border-top: 1px solid var(--border-color); }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>MOLINA HOLDINGS & GLOBAL LLC</h1>
+        <div class="sub-header">Consola de Inteligencia Soberana | M82 Systems Engine v9.5.0</div>
+    </header>
+
+    <div class="grid">
+        <div class="card">
+            <h3>📈 Cierre de Wall Street (May 22)</h3>
+            <div class="metric-row"><span class="label">Dow Jones Industrial</span><span class="value" style="color:var(--success)">50,580.56 (Récord)</span></div>
+            <div class="metric-row"><span class="label">S&P 500 Index</span><span class="value">7,473.56</span></div>
+            <div class="metric-row"><span class="label">Nasdaq Composite</span><span class="value">26,346.27</span></div>
+            <div class="metric-row"><span class="label">Racha Semanal SPX</span><span class="badge badge-success">8 Semanas Al Alza</span></div>
+            <div class="metric-row"><span class="label">US 10-Year Bond Yield</span><span class="value" style="color:var(--accent)">4.558% (-2.6 bps)</span></div>
+        </div>
+
+        <div class="card">
+            <h3>⚡ Macro & FX Grid</h3>
+            <div class="metric-row"><span class="label">Dólar Index (DXY)</span><span class="value">99.24 (Máximos)</span></div>
+            <div class="metric-row"><span class="label">USD / JPY</span><span class="value" style="color:var(--warning)">159.11</span></div>
+            <div class="metric-row"><span class="label">Presidencia Fed</span><span class="value">Kevin Warsh (Juramentado)</span></div>
+            <div class="metric-row"><span class="label">Riesgo Tasa Octubre</span><span class="badge badge-warning">50% Probabilidad Alza</span></div>
+            <div class="metric-row"><span class="label">Múltiplo Software ARR</span><span class="value" style="color:var(--warning)">4.8x (Mínimo 10 años)</span></div>
+        </div>
+
+        <div class="card">
+            <h3>🛰️ Doctrina State 51</h3>
+            <div class="metric-row"><span class="label">Estructura Legal</span><span class="value">Simpson Thacher (NY Law)</span></div>
+            <div class="metric-row"><span class="label">Fondo de Átomos</span><span class="badge">$5,000 Millones</span></div>
+            <div class="metric-row"><span class="label">Objetivos de Custodia</span><span class="value">State Street / BlackRock</span></div>
+            <div class="metric-row"><span class="label">Colateral</span><span class="value">Flow-Based Rights (Yield Only)</span></div>
+            <div class="metric-row"><span class="label">Brecha Geopolítica</span><span class="value" style="color:var(--warning)">4+M bpd Vacuum (Irán/Irak)</span></div>
+        </div>
+    </div>
+
+    <div class="card" style="margin-bottom:30px;">
+        <h3>🚨 Última Alerta Crítica Perimetral</h3>
+        <div class="metric-row" style="border:none;">
+            <span class="label" style="color:var(--warning)">[DESPLIEGUE GEOPOLÍTICO]:</span>
+            <span class="value" style="color:#ffffff">>100 buques militares de la República Popular China desplegados en el Estrecho de Taiwán como advertencia táctica. Monitoreo M82 activo.</span>
+        </div>
+    </div>
+
+    <footer>
+        MOLINA HOLDINGS & GLOBAL LLC © 2026 | Datos de Infraestructura Privada | Inmutable en GitHub
+    </footer>
+
+</body>
+</html>
