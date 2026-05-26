@@ -4,7 +4,7 @@
         "status": "FUSED_SUCCESFULLY"
     },
     "ANALYSIS": {
-        "timestamp_execution": "2026-05-25T21:41:23.083051",
+        "timestamp_execution": "2026-05-25T21:41:28.969295",
         "liquidity_firewall_usd": 3250000000.0,
         "trading_allocation_usd": 1750000000.0,
         "citgo_undervaluation_gap_billion": 9.2,
