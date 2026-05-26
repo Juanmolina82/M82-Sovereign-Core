@@ -20,13 +20,25 @@
     "market_equities_floating": {
         "paa_spot": 24.15,
         "pagp_spot": 25.95,
-        "et_spot": 19.3,
+        "et_spot": 20.09,
         "kmi_spot": 34.73,
         "wmb_spot": 76.87
     },
     "commodity_complex": {
         "brent_spot": 94.07,
         "wti_spot": 90.61
+    },
+    "et_infrastructure_telemetry": {
+        "pipeline_miles_total": 130000,
+        "quarterly_revenue_billion_usd": 27.77,
+        "yoy_revenue_growth_pct": 32.1,
+        "dividend_yield_pct": 6.7,
+        "transwestern_ferc_form_567": {
+            "needles_station_avg_mcf_d": 407743,
+            "milagro_ic_max_mcf_d": 294732,
+            "max_installed_hp_station": 41500,
+            "maop_psig_trunkline": 1008
+        }
     },
     "geopolitical_locks": {
         "venezuela_elections_resolved": false,
@@ -35,8 +47,8 @@
         "citgo_amber_bid_billion": 5.9
     },
     "advanced_tech_telemetry": {
-        "big_data_pipelines": "INGESTION_READY_STREAM",
-        "agi_cognitive_layer": "PRE_COGNITIVE_ACTIVE",
+        "big_data_pipelines": "ET_FERC_DATA_INGESTED_STREAM",
+        "agi_cognitive_layer": "AI_POWER_INFRASTRUCTURE_MONITORED",
         "quantum_state_emulation": "QUBIT_LATTICE_SECURE"
     }
 }
