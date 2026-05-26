@@ -4,21 +4,18 @@
         "status": "FUSED_SUCCESFULLY"
     },
     "ANALYSIS": {
-        "timestamp_execution": "2026-05-25T21:36:44.781180",
+        "timestamp_execution": "2026-05-25T21:41:23.083051",
         "liquidity_firewall_usd": 3250000000.0,
         "trading_allocation_usd": 1750000000.0,
         "citgo_undervaluation_gap_billion": 9.2,
-        "energy_complex": {
-            "wti_current": 90.61,
-            "brent_current": 94.07
+        "energy_complex_floating": {
+            "wti_live": 90.61,
+            "brent_live": 94.07,
+            "amplitude_spread": 3.46
         },
         "kernel_telemetry": {
             "target_architecture": "NVIDIA_HOPPER_H100_90a",
-            "compiled_modules": [
-                "test_all_to_all",
-                "bench_all_to_all"
-            ],
-            "status": "SUCCESS_VIA_EMULATION_LATENCY_SUB_MICROSECOND",
+            "status": "SUCCESS_VIA_EMULATION",
             "throughput_gb_s": 850.4
         },
         "security_lock": "INTRADAY_SPREAD_CAPTURE_ONLY"
