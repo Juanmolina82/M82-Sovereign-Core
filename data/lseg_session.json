@@ -1,0 +1,8 @@
+{
+    "access_token": "m82_refinitiv_live_token_ok",
+    "expires_in": "3600",
+    "token_type": "Bearer",
+    "app_key": "334817448150428d8b67152d193d3545c138",
+    "status": "AUTHENTICATED",
+    "organization": "MOLINA HOLDINGS LLC"
+}

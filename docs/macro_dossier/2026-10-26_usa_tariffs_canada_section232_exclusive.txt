@@ -1,0 +1,27 @@
+SOURCE: Reuters Exclusive / LSEG Workspace
+WIRE ID: dXJuOm5ld3NtbDpuZXdzd2lyZS5yZWZpbml0aXYuY29tOjIwMjYxMDI2Om5MNk40NkMxMVU6Mw==
+TIMESTAMP: 2026-10-26 16:02 VET
+TAG: USA-TRUMP/TARIFFS-CANADA (EXCLUSIVE,PIX)
+AUTHORS: Promit Mukherjee and David Shepardson / Ottawa, Washington
+LINK: https://go.refinitiv.com/news?id=dXJuOm5ld3NtbDpuZXdzd2lyZS5yZWZpbml0aXYuY29tOjIwMjYxMDI2Om5MNk40NkMxMVU6Mw==
+
+HEADLINE:
+US, Canada working on deal to ease steel, auto tariffs, sources say
+
+BODY SUMMARY:
+- Talks focus on Section 232 duties on Canadian steel and autos — up to 50% steel + 25% autos — administered by Commerce Dept (Howard Lutnick) not USTR.
+- Deal could come before November 3 midterms, Canadian sources say — Trump low approval, GOP risk losing Congress, tariffs liability in border states.
+- Trump has said steel and auto tariffs to rise to 50% from Jan 1, 2027.
+- Trade talks collapsed in August over medium/heavy-duty vehicles. Trump signed order Friday to remove 50% tariffs on some Canadian agricultural/forestry (Maine benefit).
+- Lutnick + Canada Dominic LeBlanc (minister responsible for Canada-U.S. trade) in regular contact.
+- LeBlanc office: "Canada remains in constructive dialogue..."
+- Canadian industry source: "If it happens, it'll happen fast. But my sense is it'll be a narrowed deal, if it even happens."
+- Another source: Deal likely before midterms, driven by Trump + PM Mark Carney.
+
+M82 MACRO RISK DECODE:
+- Section 232 = National Security tariff — Commerce centered
+- Pre-Midterm tactical relief, not strategic USMCA — Narrowed deal, fast
+- Deadline: Nov 3 2026 midterms — 8 days — Border states GOP pressure
+- Threat: 50% from Jan 1 2027 if no deal — Inflationary for US steel/auto Q1 2027
+- Leverage Pattern: Same as Venezuela GL 41/46E — US uses economic tools for political pace
+- Action: BUNKER MODE 0.30x LOCK / Exp 0.22x / VaR 1.68% — HOLD — No rebalance until deal confirmed — If deal confirmed → Exp 0.22x→0.28x max — Canadian steel + auto long, US steel short hedge

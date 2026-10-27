@@ -1,0 +1,55 @@
+version: '3.8'
+
+services:
+  m82_db:
+    image: postgres:16-alpine
+    container_name: m82_postgres
+    restart: always
+    environment:
+      POSTGRES_DB: m82_desk
+      POSTGRES_USER: molina_admin
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-M82QuantumSecure2026!}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U molina_admin -d m82_desk"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  m82_grafana:
+    image: grafana/grafana:latest
+    container_name: m82_grafana
+    restart: always
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=${GRAFANA_PASSWORD:-M82MolinaGrafana2026!}
+      - GF_USERS_ALLOW_SIGN_UP=false
+    volumes:
+      - grafana_data:/var/lib/grafana
+    depends_on:
+      - m82_db
+
+  m82_engine:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: m82_quant_engine
+    restart: always
+    environment:
+      - DB_HOST=m82_db
+      - DB_NAME=m82_desk
+      - DB_USER=molina_admin
+      - DB_PASSWORD=${POSTGRES_PASSWORD:-M82QuantumSecure2026!}
+      - NTFY_TOPIC=M82-Molina-Alerts-v2
+    depends_on:
+      m82_db:
+        condition: service_healthy
+
+volumes:
+  postgres_data:
+  grafana_data:

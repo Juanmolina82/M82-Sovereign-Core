@@ -1,0 +1,16 @@
+{
+  "logs": {
+    "level": "error"
+  },
+  "sessions": {
+    "default": "platform.rdp",
+    "platform": {
+      "rdp": {
+        "app-key": "23487c4e5f59423b97b5f0a02c1f025e4133ac28",
+        "username": "jmmp@molina82.com",
+        "password": "Trader2026****",
+        "auto-reconnect": true
+      }
+    }
+  }
+}

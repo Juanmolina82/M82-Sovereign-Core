@@ -1,0 +1,396 @@
+=================================================================
+          M82 QUANTUM MACRO DOSSIER // DAILY CLOSING
+          NODE: CHARALLAVE EDGE // TIMESTAMP: 2026-10-04 19:38:28
+=================================================================
+
+TOTAL EVENTOS REGISTRADOS (RISK >= 8.0): 97
+
+-----------------------------------------------------------------
+[2026-10-04 19:36:52] TAG: VEN_TRANSITION_10 | SCORE: 10.0/10.0 | SRC: NYPOST_MCM
+CATEGORY: VENEZUELA_TRANSITION
+HEADLINE: MCM: Fijar fecha elecciones presidenciales dentro del próximo año, acuerdo nacional civil-militar, Venezuela socio más fuerte EEUU post-arresto Maduro 3 enero
+-----------------------------------------------------------------
+[2026-10-04 19:19:14] TAG: VEN_TRANSITION_10 | SCORE: 10.0/10.0 | SRC: NYPOST_MCM
+CATEGORY: VENEZUELA_TRANSITION
+HEADLINE: MCM: Fijar fecha elecciones presidenciales dentro del próximo año, hoja de ruta libre y justa, acuerdo nacional civil-militar, Venezuela socio más fuerte EEUU post-arresto Maduro 3 enero
+-----------------------------------------------------------------
+[2026-09-30 23:16:30] TAG: SYSTEM_INFRASTRUCTURE | SCORE: 10.0/10.0 | SRC: CHARALLAVE_NODE
+CATEGORY: SYSTEM_INFRASTRUCTURE
+HEADLINE: Wake-Lock Held: 40 Daemons active in Lite Polling Mode
+-----------------------------------------------------------------
+[2026-09-30 23:15:03] TAG: SYSTEM_INFRASTRUCTURE | SCORE: 10.0/10.0 | SRC: CHARALLAVE_NODE
+CATEGORY: SYSTEM_INFRASTRUCTURE
+HEADLINE: Wake-Lock Held: 40 Daemons active in Lite Polling Mode
+-----------------------------------------------------------------
+[2026-09-30 23:14:26] TAG: SYSTEM_INFRASTRUCTURE | SCORE: 10.0/10.0 | SRC: CHARALLAVE_NODE
+CATEGORY: SYSTEM_INFRASTRUCTURE
+HEADLINE: Wake-Lock Held: 40 Daemons active in Lite Polling Mode
+-----------------------------------------------------------------
+[2026-09-30 23:14:26] TAG: SYSTEM_INFRASTRUCTURE | SCORE: 10.0/10.0 | SRC: CHARALLAVE_NODE
+CATEGORY: SYSTEM_INFRASTRUCTURE
+HEADLINE: Wake-Lock Held: 40 Daemons active in Lite Polling Mode
+-----------------------------------------------------------------
+[2026-09-30 23:14:11] TAG: SYSTEM_INFRASTRUCTURE | SCORE: 10.0/10.0 | SRC: CHARALLAVE_NODE
+CATEGORY: SYSTEM_INFRASTRUCTURE
+HEADLINE: Wake-Lock Held: 40 Daemons active in Lite Polling Mode
+-----------------------------------------------------------------
+[2026-09-30 23:13:17] TAG: SYSTEM_INFRASTRUCTURE | SCORE: 10.0/10.0 | SRC: CHARALLAVE_NODE
+CATEGORY: SYSTEM_INFRASTRUCTURE
+HEADLINE: Wake-Lock Held: 40 Daemons active in Lite Mode
+-----------------------------------------------------------------
+[2026-09-30 23:12:31] TAG: SYSTEM_INFRASTRUCTURE | SCORE: 10.0/10.0 | SRC: CHARALLAVE_NODE
+CATEGORY: SYSTEM_INFRASTRUCTURE
+HEADLINE: Wake-Lock Held: 40 Daemons active in Lite Mode
+-----------------------------------------------------------------
+[2026-09-30 22:56:09] TAG: SYSTEM_INFRASTRUCTURE | SCORE: 10.0/10.0 | SRC: CHARALLAVE_NODE
+CATEGORY: SYSTEM_INFRASTRUCTURE
+HEADLINE: Wake-Lock Held: 40 Daemons active in Lite Mode
+-----------------------------------------------------------------
+[2026-09-30 22:55:23] TAG: SYSTEM_INFRASTRUCTURE | SCORE: 10.0/10.0 | SRC: CHARALLAVE_NODE
+CATEGORY: SYSTEM_INFRASTRUCTURE
+HEADLINE: Wake-Lock Held: 40 Daemons active in Lite Mode
+-----------------------------------------------------------------
+[2026-09-30 22:54:33] TAG: SYSTEM_INFRASTRUCTURE | SCORE: 10.0/10.0 | SRC: CHARALLAVE_NODE
+CATEGORY: SYSTEM_INFRASTRUCTURE
+HEADLINE: Wake-Lock Held: 40 Daemons active in Lite Mode
+-----------------------------------------------------------------
+[2026-09-30 22:15:56] TAG: SYSTEM_INFRASTRUCTURE | SCORE: 10.0/10.0 | SRC: CHARALLAVE_NODE
+CATEGORY: SYSTEM_INFRASTRUCTURE
+HEADLINE: Wake-Lock Held: 40 Daemons active in Lite Mode
+-----------------------------------------------------------------
+[2026-09-30 21:51:55] TAG: SYSTEM_INFRASTRUCTURE | SCORE: 10.0/10.0 | SRC: CHARALLAVE_NODE
+CATEGORY: SYSTEM_INFRASTRUCTURE
+HEADLINE: Wake-Lock Held: 40 Daemons active in Lite Mode
+-----------------------------------------------------------------
+[2026-09-30 21:50:55] TAG: SYSTEM_INFRASTRUCTURE | SCORE: 10.0/10.0 | SRC: CHARALLAVE_NODE
+CATEGORY: SYSTEM_INFRASTRUCTURE
+HEADLINE: Wake-Lock Held: 40 Daemons active in Lite Mode
+-----------------------------------------------------------------
+[2026-09-30 21:34:34] TAG: SYSTEM_INFRASTRUCTURE | SCORE: 10.0/10.0 | SRC: CHARALLAVE_NODE
+CATEGORY: SYSTEM_INFRASTRUCTURE
+HEADLINE: Wake-Lock Held: 40 Daemons active in Lite Mode
+-----------------------------------------------------------------
+[2026-09-30 21:33:54] TAG: SYSTEM_INFRASTRUCTURE | SCORE: 10.0/10.0 | SRC: CHARALLAVE_NODE
+CATEGORY: SYSTEM_INFRASTRUCTURE
+HEADLINE: Wake-Lock Held: 40 Daemons active in Lite Mode
+-----------------------------------------------------------------
+[2026-09-30 21:33:11] TAG: SYSTEM_INFRASTRUCTURE | SCORE: 10.0/10.0 | SRC: CHARALLAVE_NODE
+CATEGORY: SYSTEM_INFRASTRUCTURE
+HEADLINE: Wake-Lock Held: 40 Daemons active in Lite Mode
+-----------------------------------------------------------------
+[2026-09-30 21:31:42] TAG: SYSTEM_INFRASTRUCTURE | SCORE: 10.0/10.0 | SRC: CHARALLAVE_NODE
+CATEGORY: SYSTEM_INFRASTRUCTURE
+HEADLINE: Wake-Lock Held: 40 Daemons active in Lite Mode
+-----------------------------------------------------------------
+[2026-09-30 21:28:27] TAG: SYSTEM_INFRASTRUCTURE | SCORE: 10.0/10.0 | SRC: CHARALLAVE_NODE
+CATEGORY: SYSTEM_INFRASTRUCTURE
+HEADLINE: Wake-Lock Held: 40 Daemons active in Lite Mode
+-----------------------------------------------------------------
+[2026-09-30 21:14:34] TAG: SYSTEM_INFRASTRUCTURE | SCORE: 10.0/10.0 | SRC: CHARALLAVE_NODE
+CATEGORY: SYSTEM_INFRASTRUCTURE
+HEADLINE: Wake-Lock Held: 40 Daemons active in Lite Mode
+-----------------------------------------------------------------
+[2026-09-30 21:13:51] TAG: SYSTEM_INFRASTRUCTURE | SCORE: 10.0/10.0 | SRC: CHARALLAVE_NODE
+CATEGORY: SYSTEM_INFRASTRUCTURE
+HEADLINE: Wake-Lock Held: 40 Daemons active in Lite Mode
+-----------------------------------------------------------------
+[2026-09-30 21:13:22] TAG: SYSTEM_INFRASTRUCTURE | SCORE: 10.0/10.0 | SRC: CHARALLAVE_NODE
+CATEGORY: SYSTEM_INFRASTRUCTURE
+HEADLINE: Wake-Lock Held: 40 Daemons active in Lite Mode
+-----------------------------------------------------------------
+[2026-09-30 21:12:44] TAG: SYSTEM_INFRASTRUCTURE | SCORE: 10.0/10.0 | SRC: CHARALLAVE_NODE
+CATEGORY: SYSTEM_INFRASTRUCTURE
+HEADLINE: Wake-Lock Held: 40 Daemons active in Lite Mode
+-----------------------------------------------------------------
+[2026-09-30 21:01:03] TAG: SYSTEM_INFRASTRUCTURE | SCORE: 10.0/10.0 | SRC: CHARALLAVE_NODE
+CATEGORY: SYSTEM_INFRASTRUCTURE
+HEADLINE: Wake-Lock Held: 40 Daemons active in Lite Mode
+-----------------------------------------------------------------
+[2026-09-30 20:56:32] TAG: SYSTEM_INFRASTRUCTURE | SCORE: 10.0/10.0 | SRC: CHARALLAVE_NODE
+CATEGORY: SYSTEM_INFRASTRUCTURE
+HEADLINE: Wake-Lock Held: 40 Daemons active in Lite Mode
+-----------------------------------------------------------------
+[2026-09-30 20:51:24] TAG: SYSTEM_INFRASTRUCTURE | SCORE: 10.0/10.0 | SRC: CHARALLAVE_NODE
+CATEGORY: SYSTEM_INFRASTRUCTURE
+HEADLINE: Wake-Lock Held: 40 Daemons active in Lite Mode
+-----------------------------------------------------------------
+[2026-09-30 20:44:21] TAG: SYSTEM_INFRASTRUCTURE | SCORE: 10.0/10.0 | SRC: CHARALLAVE_NODE
+CATEGORY: SYSTEM_INFRASTRUCTURE
+HEADLINE: Wake-Lock Held: 40 Daemons active in Lite Mode
+-----------------------------------------------------------------
+[2026-09-30 14:38:12] TAG: SYSTEM_INFRASTRUCTURE | SCORE: 10.0/10.0 | SRC: CHARALLAVE_NODE
+CATEGORY: SYSTEM_INFRASTRUCTURE
+HEADLINE: Wake-Lock Held: 40 Daemons active in Lite Mode
+-----------------------------------------------------------------
+[2026-09-30 23:46:19] TAG: VENEZUELA_DESK | SCORE: 9.9/10.0 | SRC: NABEP_M82
+CATEGORY: VENEZUELA_DESK
+HEADLINE: Venezuela PDVSA crude exports rally to 65B barrels capacity with 16c to 54c bond yield surge
+-----------------------------------------------------------------
+[2026-09-30 06:21:32] TAG: FIRM_AND_COMPANY_RANKINGS | SCORE: 9.9/10.0 | SRC: REFINITIV_WORKSPACE_FULL
+CATEGORY: FIRM_AND_COMPANY_RANKINGS
+HEADLINE: Refinitiv Workspace Telemetry Render Complete: Firm & Company Rankings Fully Synced
+-----------------------------------------------------------------
+[2026-09-30 06:16:36] TAG: FIRM_AND_COMPANY_RANKINGS | SCORE: 9.9/10.0 | SRC: REFINITIV_WORKSPACE_FULL
+CATEGORY: FIRM_AND_COMPANY_RANKINGS
+HEADLINE: Refinitiv Workspace Telemetry Render Complete: Firm & Company Rankings Fully Synced
+-----------------------------------------------------------------
+[2026-09-30 06:15:12] TAG: FIRM_AND_COMPANY_RANKINGS | SCORE: 9.9/10.0 | SRC: REFINITIV_WORKSPACE_FULL
+CATEGORY: FIRM_AND_COMPANY_RANKINGS
+HEADLINE: Refinitiv Workspace Telemetry Render Complete: Firm & Company Rankings Fully Synced
+-----------------------------------------------------------------
+[2026-09-30 06:09:54] TAG: PE_DEAL_CONCENTRATION | SCORE: 9.9/10.0 | SRC: REFINITIV_COMPANY_RANKING_DESK
+CATEGORY: PE_DEAL_CONCENTRATION
+HEADLINE: Company Ranking Analytics: High Volume Capital Allocation Outlier Detected in Primary Targets
+-----------------------------------------------------------------
+[2026-09-30 23:46:19] TAG: GEOPOLITICS_DESK | SCORE: 9.8/10.0 | SRC: RTRS
+CATEGORY: GEOPOLITICS_DESK
+HEADLINE: Oil prices rise by about $1/bbl on stalled US-Iran talks and tight fuel markets
+-----------------------------------------------------------------
+[2026-09-30 23:12:26] TAG: MEGA_FUNDS_CONCENTRATION | SCORE: 9.8/10.0 | SRC: PE_LARGEST_FUNDS_DESK
+CATEGORY: MEGA_FUNDS_CONCENTRATION
+HEADLINE: Top 10 Largest Private Equity Funds Concentration Reaches 189.84 Billion USD
+-----------------------------------------------------------------
+[2026-09-30 22:55:43] TAG: VEN_BONDS_SHORT_SQUEEZE | SCORE: 9.8/10.0 | SRC: REFINITIV_WORKSPACE_LSEG
+CATEGORY: VEN_BONDS_SHORT_SQUEEZE
+HEADLINE: Venezuela's default bonds rally on debt restructuring prospect
+-----------------------------------------------------------------
+[2026-09-30 22:15:28] TAG: VEN_BONDS_SHORT_SQUEEZE | SCORE: 9.8/10.0 | SRC: REFINITIV_WORKSPACE_LSEG
+CATEGORY: VEN_BONDS_SHORT_SQUEEZE
+HEADLINE: Venezuela's default bonds rally on debt restructuring prospect
+-----------------------------------------------------------------
+[2026-09-30 21:51:42] TAG: VEN_BONDS_SHORT_SQUEEZE | SCORE: 9.8/10.0 | SRC: LSEG_FA_MAG
+CATEGORY: VEN_BONDS_SHORT_SQUEEZE
+HEADLINE: Trump Warships Trigger Rally in Venezuela Defaulted Bonds: VENZ 27 0.16 -> 0.54 highest since 2019
+-----------------------------------------------------------------
+[2026-09-30 14:52:50] TAG: ANTHROPIC_2T_MOONSHOT | SCORE: 9.8/10.0 | SRC: m82_vc_ai_unicorns_daemon.py
+CATEGORY: ANTHROPIC_2T_MOONSHOT
+HEADLINE: Anthropic's 2 trillion USD goal is AI's biggest moonshot
+-----------------------------------------------------------------
+[2026-09-30 14:48:24] TAG: US_IRAQ_PULLOUT_VACUUM | SCORE: 9.8/10.0 | SRC: m82_geopolitical_events_daemon.py
+CATEGORY: US_IRAQ_PULLOUT_VACUUM
+HEADLINE: US forces quit Iraq leaving potential security vacuum; Iran responds to Washington proposal
+-----------------------------------------------------------------
+[2026-09-30 06:21:33] TAG: MEGA_FUNDS_CONCENTRATION | SCORE: 9.8/10.0 | SRC: PE_LARGEST_FUNDS_DESK
+CATEGORY: MEGA_FUNDS_CONCENTRATION
+HEADLINE: Top 10 Largest Private Equity Funds Concentration Reaches 189.84 Billion USD
+-----------------------------------------------------------------
+[2026-09-30 06:16:37] TAG: MEGA_FUNDS_CONCENTRATION | SCORE: 9.8/10.0 | SRC: PE_LARGEST_FUNDS_DESK
+CATEGORY: MEGA_FUNDS_CONCENTRATION
+HEADLINE: Top 10 Largest Private Equity Funds Concentration Reaches 189.84 Billion USD
+-----------------------------------------------------------------
+[2026-09-30 06:15:13] TAG: MEGA_FUNDS_CONCENTRATION | SCORE: 9.8/10.0 | SRC: PE_LARGEST_FUNDS_DESK
+CATEGORY: MEGA_FUNDS_CONCENTRATION
+HEADLINE: Top 10 Largest Private Equity Funds Concentration Reaches 189.84 Billion USD
+-----------------------------------------------------------------
+[2026-09-30 06:09:58] TAG: MEGA_FUNDS_CONCENTRATION | SCORE: 9.8/10.0 | SRC: PE_LARGEST_FUNDS_DESK
+CATEGORY: MEGA_FUNDS_CONCENTRATION
+HEADLINE: Top 10 Largest Private Equity Funds Concentration Reaches 189.84 Billion USD
+-----------------------------------------------------------------
+[2026-09-30 05:58:51] TAG: MEGA_FUNDS_CONCENTRATION | SCORE: 9.8/10.0 | SRC: PE_LARGEST_FUNDS_DESK
+CATEGORY: MEGA_FUNDS_CONCENTRATION
+HEADLINE: Top 10 Largest Private Equity Funds Concentration Reaches 189.84 Billion USD
+-----------------------------------------------------------------
+[2026-09-30 20:43:27] TAG: PCE_FED_REPRICING | SCORE: 9.7/10.0 | SRC: LSEG_REUTERS_WIRE
+CATEGORY: PCE_FED_REPRICING
+HEADLINE: PCE 0.3% vs 0.4% exp dampens Fed hike odds; 2Y eases to 4.868% but 10Y at 5.272% biggest monthly gain since 2022
+-----------------------------------------------------------------
+[2026-09-30 14:52:50] TAG: CHINA_DEBT_EXPORT_1.5T | SCORE: 9.7/10.0 | SRC: m82_sovereign_debt_risk_daemon.py
+CATEGORY: CHINA_DEBT_EXPORT_1.5T
+HEADLINE: China's next big export could be 1.5 trillion USD of debt
+-----------------------------------------------------------------
+[2026-09-30 05:54:00] TAG: MEGA_FUND_CLOSURES | SCORE: 9.7/10.0 | SRC: PE_MEGA_FUNDS_DESK
+CATEGORY: MEGA_FUND_CLOSURES
+HEADLINE: General Atlantic, Francisco Partners And KKR Close Mega Vehicles Exceeding 23B USD Each
+-----------------------------------------------------------------
+[2026-10-04 18:48:30] TAG: DIPLOMATIC_TENSIONS | SCORE: 9.6/10.0 | SRC: LSEG_REFINITIV
+CATEGORY: DIPLOMATIC_RISK
+HEADLINE: US halts consular services in Brazil ahead of election amid rising tensions
+-----------------------------------------------------------------
+[2026-09-30 23:12:26] TAG: GLOBAL_DRY_POWDER | SCORE: 9.6/10.0 | SRC: PE_MARKET_DESK
+CATEGORY: GLOBAL_DRY_POWDER
+HEADLINE: Global PE Dry Powder Exceeds 2.008 Trillion USD Across 1873 Active Funds
+-----------------------------------------------------------------
+[2026-09-30 14:48:24] TAG: AI_ARMS_SURGE_BONDS | SCORE: 9.6/10.0 | SRC: m82_treasury_bonds_daemon.py
+CATEGORY: AI_ARMS_SURGE_BONDS
+HEADLINE: The $8 trillion arms surge fueling AI spooking bond yields and US credit markets
+-----------------------------------------------------------------
+[2026-09-30 06:21:34] TAG: GLOBAL_DRY_POWDER | SCORE: 9.6/10.0 | SRC: PE_MARKET_DESK
+CATEGORY: GLOBAL_DRY_POWDER
+HEADLINE: Global PE Dry Powder Exceeds 2.008 Trillion USD Across 1873 Active Funds
+-----------------------------------------------------------------
+[2026-09-30 06:16:39] TAG: GLOBAL_DRY_POWDER | SCORE: 9.6/10.0 | SRC: PE_MARKET_DESK
+CATEGORY: GLOBAL_DRY_POWDER
+HEADLINE: Global PE Dry Powder Exceeds 2.008 Trillion USD Across 1873 Active Funds
+-----------------------------------------------------------------
+[2026-09-30 06:15:15] TAG: GLOBAL_DRY_POWDER | SCORE: 9.6/10.0 | SRC: PE_MARKET_DESK
+CATEGORY: GLOBAL_DRY_POWDER
+HEADLINE: Global PE Dry Powder Exceeds 2.008 Trillion USD Across 1873 Active Funds
+-----------------------------------------------------------------
+[2026-09-30 06:10:00] TAG: GLOBAL_DRY_POWDER | SCORE: 9.6/10.0 | SRC: PE_MARKET_DESK
+CATEGORY: GLOBAL_DRY_POWDER
+HEADLINE: Global PE Dry Powder Exceeds 2.008 Trillion USD Across 1873 Active Funds
+-----------------------------------------------------------------
+[2026-09-30 05:58:53] TAG: GLOBAL_DRY_POWDER | SCORE: 9.6/10.0 | SRC: PE_MARKET_DESK
+CATEGORY: GLOBAL_DRY_POWDER
+HEADLINE: Global PE Dry Powder Exceeds 2.008 Trillion USD Across 1873 Active Funds
+-----------------------------------------------------------------
+[2026-09-30 05:53:55] TAG: GLOBAL_DRY_POWDER | SCORE: 9.6/10.0 | SRC: PE_MARKET_DESK
+CATEGORY: GLOBAL_DRY_POWDER
+HEADLINE: Global PE Dry Powder Exceeds 2.008 Trillion USD Across 1873 Active Funds
+-----------------------------------------------------------------
+[2026-10-04 18:37:50] TAG: LATAM_ELECTIONS | SCORE: 9.5/10.0 | SRC: LSEG_REFINITIV
+CATEGORY: LATAM_GEOPOLITICS
+HEADLINE: FLASH: Polls close in first round of Brazil high-stakes presidential election
+-----------------------------------------------------------------
+[2026-09-30 14:52:50] TAG: UBS_SWITZERLAND_EXIT_RISK | SCORE: 9.5/10.0 | SRC: m82_sovereign_debt_risk_daemon.py
+CATEGORY: UBS_SWITZERLAND_EXIT_RISK
+HEADLINE: How and why UBS could leave Switzerland amid capital requirements pressure
+-----------------------------------------------------------------
+[2026-09-30 15:10:45] TAG: US_CORE_PCE_INFLATION | SCORE: 9.4/10.0 | SRC: m82_treasury_bonds_daemon.py
+CATEGORY: US_CORE_PCE_INFLATION
+HEADLINE: US Core PCE Index matches target at 2.6% YoY; Fed SOFR Swaps adjusting rate path
+-----------------------------------------------------------------
+[2026-09-30 14:48:24] TAG: LNG_ALASKA_MEGA_DEAL | SCORE: 9.4/10.0 | SRC: m82_lng_gas_global_daemon.py
+CATEGORY: LNG_ALASKA_MEGA_DEAL
+HEADLINE: Trump expected to announce $54 billion South Korea investment in Alaska LNG
+-----------------------------------------------------------------
+[2026-09-30 05:58:55] TAG: BUYOUT_GENERALIST_DOMINANCE | SCORE: 9.4/10.0 | SRC: PE_STAGE_DESK
+CATEGORY: BUYOUT_GENERALIST_DOMINANCE
+HEADLINE: Generalist And Buyout Funds Control Over 613 Billion USD In Unallocated Capital
+-----------------------------------------------------------------
+[2026-09-30 05:53:56] TAG: BUYOUT_GENERALIST_DOMINANCE | SCORE: 9.4/10.0 | SRC: PE_STAGE_DESK
+CATEGORY: BUYOUT_GENERALIST_DOMINANCE
+HEADLINE: Generalist And Buyout Funds Control Over 613 Billion USD In Unallocated Capital
+-----------------------------------------------------------------
+[2026-09-30 15:10:45] TAG: EIA_CRUDE_INVENTORY_DRAW | SCORE: 9.3/10.0 | SRC: m82_crypto_commodities_daemon.py
+CATEGORY: EIA_CRUDE_INVENTORY_DRAW
+HEADLINE: EIA Weekly Crude Stocks draw down by 0.451M barrels tightening energy spreads
+-----------------------------------------------------------------
+[2026-09-30 05:58:56] TAG: US_UK_CONCENTRATION | SCORE: 9.3/10.0 | SRC: PE_GEO_DESK
+CATEGORY: US_UK_CONCENTRATION
+HEADLINE: United States And United Kingdom Account For 837 Billion USD In Infrastructure And Growth Capital
+-----------------------------------------------------------------
+[2026-09-30 05:53:58] TAG: US_UK_CONCENTRATION | SCORE: 9.3/10.0 | SRC: PE_GEO_DESK
+CATEGORY: US_UK_CONCENTRATION
+HEADLINE: United States And United Kingdom Account For 837 Billion USD In Infrastructure And Growth Capital
+-----------------------------------------------------------------
+[2026-10-04 19:25:54] TAG: YEMEN_OFFENSIVE_92 | SCORE: 9.2/10.0 | SRC: REFINITIV_FRONT_PAGE
+CATEGORY: GEOPOL_MIDDLE_EAST
+HEADLINE: Yemeni Govt Launches Major Offensive To Seize All Areas From Iran-Backed Houthis
+-----------------------------------------------------------------
+[2026-10-04 18:08:56] TAG: CENTRAL_BANKS | SCORE: 9.2/10.0 | SRC: LSEG_REFINITIV
+CATEGORY: MACRO_POLICY
+HEADLINE: Fed may skip October but rate hike trigger in December - LSEG
+-----------------------------------------------------------------
+[2026-10-01 02:15:57] TAG: VC_AI_UNICORNS | SCORE: 9.2/10.0 | SRC: LSEG_REUTERS
+CATEGORY: VC_AI_UNICORNS
+HEADLINE: Anthropic $2T IPO: AI May Resist Shutdown to Make It Safer - Paradox Filing
+-----------------------------------------------------------------
+[2026-09-30 23:12:26] TAG: VEN_BONDS_RALLY | SCORE: 9.2/10.0 | SRC: REFINITIV_WORKSPACE_LSEG
+CATEGORY: VEN_BONDS_RALLY
+HEADLINE: Venezuela debt rally sees eyes on higher recovery price
+-----------------------------------------------------------------
+[2026-09-30 22:55:43] TAG: VEN_BONDS_RALLY | SCORE: 9.2/10.0 | SRC: REFINITIV_WORKSPACE_LSEG
+CATEGORY: VEN_BONDS_RALLY
+HEADLINE: Venezuela debt rally sees eyes on higher recovery price
+-----------------------------------------------------------------
+[2026-09-30 22:15:28] TAG: VEN_BONDS_RALLY | SCORE: 9.2/10.0 | SRC: REFINITIV_WORKSPACE_LSEG
+CATEGORY: VEN_BONDS_RALLY
+HEADLINE: Venezuela debt rally sees eyes on higher recovery price
+-----------------------------------------------------------------
+[2026-09-30 14:52:50] TAG: NUBANK_MONZO_FINTECH_MA | SCORE: 9.1/10.0 | SRC: m82_pe_megafunds_daemon.py
+CATEGORY: NUBANK_MONZO_FINTECH_MA
+HEADLINE: Why a NuBank-Monzo deal could make financial sense for global expansion
+-----------------------------------------------------------------
+[2026-09-30 14:48:24] TAG: OPEC_POLICY_STEADY | SCORE: 9.1/10.0 | SRC: m82_faja_orinoco_ep_daemon.py
+CATEGORY: OPEC_POLICY_STEADY
+HEADLINE: OPEC+ oil producers set to keep output targets steady at Sunday meeting
+-----------------------------------------------------------------
+[2026-09-30 06:09:57] TAG: TELEMETRY_LATENCY_ALERT | SCORE: 9.1/10.0 | SRC: REFINITIV_FIRM_RANKING_DESK
+CATEGORY: TELEMETRY_LATENCY_ALERT
+HEADLINE: Firm Ranking Query Filter Optimization: Narrowing Scope for Real-Time Execution
+-----------------------------------------------------------------
+[2026-10-04 18:08:56] TAG: EUROZONE | SCORE: 9.0/10.0 | SRC: LSEG_REFINITIV
+CATEGORY: EUROZONE_INFLATION
+HEADLINE: Euro zone inflation surges more than expected, keeping pressure on ECB to hike rates
+-----------------------------------------------------------------
+[2026-09-30 22:55:43] TAG: VEN_DIPLOMACY_MINING | SCORE: 9.0/10.0 | SRC: REFINITIV_WORKSPACE_LSEG
+CATEGORY: VEN_DIPLOMACY_MINING
+HEADLINE: Maduro confirma renovadas relaciones con EE.UU. en minería y reestructuración fiscal con Delcy Rodríguez
+-----------------------------------------------------------------
+[2026-09-30 22:15:28] TAG: VEN_DIPLOMACY_MINING | SCORE: 9.0/10.0 | SRC: REFINITIV_WORKSPACE_LSEG
+CATEGORY: VEN_DIPLOMACY_MINING
+HEADLINE: Maduro confirma renovadas relaciones con EE.UU. en minería y reestructuración fiscal con Delcy Rodríguez
+-----------------------------------------------------------------
+[2026-10-01 02:25:39] TAG: MACRO_DESK_BOJ | SCORE: 8.9/10.0 | SRC: LSEG_REUTERS
+CATEGORY: MACRO_DESK_BOJ
+HEADLINE: BOJ debated faster hikes - 1.25% 31Y high, neutral 1.1-2.5% - USDJPY 157.87 - doves warn soft consumption
+-----------------------------------------------------------------
+[2026-10-01 02:21:05] TAG: MACRO_DESK_BOJ | SCORE: 8.9/10.0 | SRC: LSEG_REUTERS
+CATEGORY: MACRO_DESK_BOJ
+HEADLINE: BOJ debated faster hikes - 1.25% 31Y high, neutral 1.1-2.5% - USDJPY 157.87 - doves warn soft consumption
+-----------------------------------------------------------------
+[2026-10-01 01:33:02] TAG: GEOPOLITICS | SCORE: 8.9/10.0 | SRC: REUTERS_LSEG
+CATEGORY: GEOPOLITICS
+HEADLINE: Trump says he discussed release of political prisoners (Jimmy Lai, Min Zin) with Xi Jinping
+-----------------------------------------------------------------
+[2026-09-30 23:12:26] TAG: VEN_DEBT_RESTRUCTURING | SCORE: 8.9/10.0 | SRC: REFINITIV_WORKSPACE_LSEG
+CATEGORY: VEN_DEBT_RESTRUCTURING
+HEADLINE: Lazard offers Venezuela debt restructuring advice
+-----------------------------------------------------------------
+[2026-09-30 22:55:43] TAG: VEN_DEBT_RESTRUCTURING | SCORE: 8.9/10.0 | SRC: REFINITIV_WORKSPACE_LSEG
+CATEGORY: VEN_DEBT_RESTRUCTURING
+HEADLINE: Lazard offers Venezuela debt restructuring advice
+-----------------------------------------------------------------
+[2026-09-30 22:15:28] TAG: VEN_DEBT_RESTRUCTURING | SCORE: 8.9/10.0 | SRC: REFINITIV_WORKSPACE_LSEG
+CATEGORY: VEN_DEBT_RESTRUCTURING
+HEADLINE: Lazard offers Venezuela debt restructuring advice
+-----------------------------------------------------------------
+[2026-09-30 15:10:45] TAG: CHINA_CAIXIN_PMI_EXPANSION | SCORE: 8.9/10.0 | SRC: m82_us_china_tariffs_daemon.py
+CATEGORY: CHINA_CAIXIN_PMI_EXPANSION
+HEADLINE: China Official Manufacturing PMI stabilizes at 50.1 signaling industrial floor
+-----------------------------------------------------------------
+[2026-10-04 18:08:56] TAG: GLOBAL_TRADE | SCORE: 8.8/10.0 | SRC: LSEG_REFINITIV
+CATEGORY: GEOPOLITICS_TRADE
+HEADLINE: Handful of G20 countries reject US stance on excess industrial capacity
+-----------------------------------------------------------------
+[2026-10-01 01:10:59] TAG: MACRO_DESK | SCORE: 8.8/10.0 | SRC: RTRS
+CATEGORY: MACRO_DESK
+HEADLINE: BOJ debated need for more rate hikes at September meeting, summary shows
+-----------------------------------------------------------------
+[2026-10-04 18:37:50] TAG: LATAM_SOVEREIGN | SCORE: 8.7/10.0 | SRC: LSEG_REFINITIV
+CATEGORY: LATAM_MACRO
+HEADLINE: Brazil Selic Target Rate holds at 13.75% as 10Y Sovereign CDS trades near 213 bps
+-----------------------------------------------------------------
+[2026-09-30 15:10:45] TAG: US_JOBLESS_CLAIMS_STABILITY | SCORE: 8.7/10.0 | SRC: m82_high_yield_credit_daemon.py
+CATEGORY: US_JOBLESS_CLAIMS_STABILITY
+HEADLINE: US Initial Jobless Claims steady at 218K maintaining labor market balance
+-----------------------------------------------------------------
+[2026-10-04 23:10:03] TAG: UK_EU_MACRO | SCORE: 8.5/10.0 | SRC: None
+CATEGORY: None
+HEADLINE: ROADMAP TO REVERSE BREXIT EMERGES AMID UK GDP LAG AND POLITICAL SHIFT
+-----------------------------------------------------------------
+[2026-10-04 18:08:56] TAG: US_ECONOMY | SCORE: 8.5/10.0 | SRC: LSEG_REFINITIV
+CATEGORY: MACRO_JOBS
+HEADLINE: US job growth undershoots expectations in September, but labor market remains stable
+-----------------------------------------------------------------
+[2026-10-01 01:10:59] TAG: MACRO_DESK | SCORE: 8.5/10.0 | SRC: RTRS
+CATEGORY: MACRO_DESK
+HEADLINE: Fed seen on pause in October after inflation data
+-----------------------------------------------------------------
+[2026-09-30 23:46:19] TAG: MACRO_DESK | SCORE: 8.5/10.0 | SRC: RTRS
+CATEGORY: MACRO_DESK
+HEADLINE: Inflation comes in cooler than expected. Diesel could change that
+-----------------------------------------------------------------
+[2026-10-04 18:48:30] TAG: LATAM_FX | SCORE: 8.4/10.0 | SRC: LSEG_REFINITIV
+CATEGORY: FX_OUTLOOK
+HEADLINE: Brazil Real spurt does not reflect a shift in recent bearish macro outlook
+-----------------------------------------------------------------
+[2026-10-01 01:10:59] TAG: MACRO_DESK | SCORE: 8.2/10.0 | SRC: RTRS
+CATEGORY: MACRO_DESK
+HEADLINE: US inflation does below expectations in August, gives the Fed breathing space
+-----------------------------------------------------------------
+[2026-10-04 18:48:30] TAG: CHINA_LATAM | SCORE: 8.1/10.0 | SRC: LSEG_REFINITIV
+CATEGORY: LATAM_TRADE
+HEADLINE: Chinese auto show debuts in Argentina as sales surge amid shift in Mercosur trade
+-----------------------------------------------------------------

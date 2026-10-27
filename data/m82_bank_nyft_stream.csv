@@ -1,0 +1,7 @@
+ticker,name,revenue,revenue_yoy,rev_status,net_income,net_income_yoy,net_status,eps,eps_yoy,eps_prev,roe,roe_prev,premarket,premarket_change,ceo_quote
+WFC,WELLS FARGO,$21.87B,-2.02%,MISS,$5.90B,+6.40%,BEAT,$1.87,+12.00%,$1.66,13.8%,12.8%,$82.60,+1.04%,Consumidor y clientes comerciales saludables. Morosidad baja y expansión en depósitos e inversión.
+JPM,JPMORGAN CHASE,$43.32B,+6.50%,BEAT,$12.90B,+1.80%,BEAT,$4.37,+12.30%,$3.89,17.0%,16.2%,$224.50,+1.85%,"La economía de EE.UU. se mantiene firme, aunque persisten riesgos geopolíticos y presiones inflacionarias."
+BAC,BANK OF AMERICA,$25.49B,+0.70%,BEAT,$6.90B,-12.00%,MISS,$0.81,-9.00%,$0.89,10.8%,11.2%,$42.10,-0.75%,Crecimiento constante de clientes y calidad crediticia sólida en toda la franquicia comercial.
+C,CITIGROUP,$20.32B,+1.10%,BEAT,$3.20B,-8.50%,BEAT,$1.51,-7.30%,$1.63,7.0%,7.7%,$66.80,+1.20%,"Nuestra transformación avanza según lo planificado, impulsando la eficiencia operativa y retornos clave."
+GS,GOLDMAN SACHS,$12.70B,+7.50%,BEAT,$2.99B,+45.00%,BEAT,$8.40,+53.50%,$5.47,10.4%,7.1%,$525.00,+2.40%,Fuerte reactivación en banca de inversión y operaciones de capitales impulsa el desempeño trimestral.
+MS,MORGAN STANLEY,$15.38B,+15.30%,BEAT,$3.19B,+32.00%,BEAT,$1.88,+36.20%,$1.38,13.1%,10.6%,$112.30,+3.10%,Sólido crecimiento de activos bajo gestión en Wealth Management y fuerte actividad en trading.
