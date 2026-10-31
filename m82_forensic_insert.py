@@ -1,0 +1,15 @@
+import sqlite3, os
+DB=os.path.expanduser("~/M82/m82_database.db")
+conn=sqlite3.connect(DB, timeout=60)
+c=conn.cursor()
+c.execute("PRAGMA journal_mode=WAL;")
+c.execute("PRAGMA busy_timeout=60000;")
+c.execute("""
+INSERT OR REPLACE INTO m82_multi_stream (id, daemon_source, headline, status, alpha_score)
+VALUES (10428, 'BANKING_DESK', 'CoreWeave GF 8/100: 2.2GW gap 40.5% online & $104B backlog illiquid under 16% yield', 'PENDING', 0.96)
+""")
+conn.commit()
+c.execute("UPDATE m82_multi_stream SET status='PENDING' WHERE id=10423 AND status='DISPATCHED'")
+conn.commit()
+conn.close()
+print("✅ 10428 INSERTED | 10423 RESET TO PENDING")

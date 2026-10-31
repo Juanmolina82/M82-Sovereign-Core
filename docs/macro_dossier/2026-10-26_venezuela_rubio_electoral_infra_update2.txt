@@ -1,0 +1,27 @@
+SOURCE: Reuters / LSEG Workspace
+WIRE ID: dXJuOm5ld3NtbDpuZXdzd2lyZS5yZWZpbml0aXYuY29tOjIwMjYxMDI2Om5MNk40NkMxNUg6Mg==
+TIMESTAMP: 2026-10-26 16:42 VET — WASHINGTON, Oct 26
+TAG: VENEZUELA-VOTING/ (UPDATE 2)
+AUTHORS: Simon Lewis and Matt Spetalnick
+LINK: https://go.refinitiv.com/news?id=dXJuOm5ld3NtbDpuZXdzd2lyZS5yZWZpbml0aXYuY29tOjIwMjYxMDI2Om5MNk40NkMxNUg6Mg==
+
+HEADLINE:
+Rubio says Venezuela's electoral infrastructure must be replaced before a vote
+
+BODY:
+- Rubio: Venezuela's electoral infrastructure designed to rig elections and so must be quickly replaced before valid election can be held. Spoke by phone day after Maria Corina Machado returned for first time since US captured Maduro in January and took him to NY for trial.
+- US believes talks underway between interim government Caracas and opposition expected to see new supreme judicial tribunal by end of year and new electoral council shortly thereafter — senior US State Dept official earlier. Rubio: "I think we're making real progress"
+- Rubio point person Venezuela for Trump. "If anybody tries to derail that process, they're doing a great harm to Venezuela."
+- Maduro govt set up electoral infrastructure to rig so must be quickly changed. Rubio stopped short of giving target date. Machado says elections by mid-2027, Trump said not ready for nationwide vote.
+- Machado return after 10 months out, year hiding after disputed 2024 election — prevented from challenging — Nobel Peace Prize — risks straining ties with Trump admin. Washington says Machado has every right to be in Venezuela, but praised acting President Delcy Rodriguez and supports negotiation Rodriguez govt + opposition groups that do NOT include Machado's Vente Venezuela.
+- Rubio only discouraged Machado return immediate aftermath devastating earthquakes summer — humanitarian crisis. Weeks ago US told interim authorities Machado "belongs in her country" and "should be allowed to return unperturbed" — government agreed.
+- Machado criticism oil deal Trump struck with interim rulers — Rubio insists good one for both but she has right to express opinion.
+- Trump repeatedly expressed support for Rodriguez, former deputy to Maduro, hailed deals oil production and other business ventures US companies in South America. Critics accuse neo-colonialist approach aimed at exploiting natural resources.
+- Faction opposition and interim govt held talks this month, aim remaking top court and electoral council ahead of eventual elections. Talks have not included Machado movement.
+
+M82 DECODE:
+- Confirms prior wire TSJ EOY 2026 + CNE shortly thereafter + Elections mid-2027 — Rubio voice = validation
+- Infrastructure rigged must be replaced quickly — no target date Rubio
+- Machado excluded from talks — Vente Venezuela not included — Risk opposition fracture
+- Oil deal Trump-Rodriguez good per Rubio — Neo-colonial critics — GL 41/46E continues — Flow USGC
+- BUNKER 0.30x LOCK HOLD — Risk 0.75 Alpha 0.88 — Event RUBIO_CONFIRMS_RIGGED_INFRA_TSJ_EOY

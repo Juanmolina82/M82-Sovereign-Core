@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M82 V60 AGI QUANTUM TERMINAL</title>
+<style>
+body{background:#0a0a0a;color:#00ff88;font-family:monospace;margin:0;padding:0;overflow-y:auto}
+.header{position:sticky;top:0;background:#111;border-bottom:2px solid #00ff88;padding:12px;display:flex;justify-content:space-between;align-items:center;z-index:99;font-size:11px}
+.bunker{color:#ffcc00;font-weight:bold}
+.card{border:1px solid #00ff88;margin:10px;padding:12px;border-radius:8px;background:#151515}
+.quant{color:#00ccff} .alpha{color:#ff00ff} .var{color:#ff4444}
+.btn{background:#00ff88;color:#000;border:none;padding:10px 16px;border-radius:6px;font-weight:bold;cursor:pointer;margin-top:10px;width:100%}
+.btn:hover{background:#00cc66}
+.agi-badge{background:linear-gradient(90deg,#00ff88,#00ccff);color:#000;padding:2px 6px;border-radius:4px;font-size:10px;font-weight:bold}
+.goldman{color:#ffcc00;font-size:12px;margin-top:4px} .citadel{color:#ff88ff;font-size:12px;margin-top:2px}
+</style>
+</head>
+<body>
+<div class="header">
+  <div>⚡ M82 V60 AGI QUANTUM // SOVEREIGN EDGE L4/L5</div>
+  <div class="bunker">LOCK: 0.30x | VaR: 1.68% | WARSH: +102bps</div>
+</div>
+<div id="status" style="padding:10px;color:#aaa;font-size:11px;border-bottom:1px solid #222">Conectando con Backend WSGI :8083...</div>
+<div id="stream"></div>
+
+<script>
+const API = "http://127.0.0.1:8083";
+let inProgress = false;
+
+async function load() {
+  if (inProgress) return;
+  inProgress = true;
+
+  const statusDiv = document.getElementById("status");
+  const streamDiv = document.getElementById("stream");
+
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), 3500);
+
+  try {
+    const sRes = await fetch(API + "/api/status", { signal: controller.signal });
+    const s = await sRes.json();
+    statusDiv.innerHTML = `🟢 <b>WSGI :8083 ONLINE</b> | <span class="goldman">Goldman Marquee</span> + <span class="citadel">Citadel Quant</span> | ${s.timestamp || ''}`;
+
+    const stRes = await fetch(API + "/api/stream", { signal: controller.signal });
+    const data = await stRes.json();
+    clearTimeout(timer);
+
+    if (!data.stream || data.stream.length === 0) {
+      streamDiv.innerHTML = "<div style='padding:15px;color:#888'>Sin eventos en cola.</div>";
+      inProgress = false;
+      return;
+    }
+
+    let htmlBuf = "";
+    data.stream.slice(0, 15).forEach(ev => {
+      const tag = ev.agi_tag || "QUANTUM_ENTANGLED";
+      const src = ev.daemon_source || "M82_DAEMON";
+      const headline = ev.headline || "Telemetría procesada por el enjambre";
+      const qSig = ev.quant_signal !== undefined ? ev.quant_signal : "0.9400";
+      const alpha = ev.alpha_score !== undefined ? ev.alpha_score : "0.85";
+      const varC = ev.var_contrib !== undefined ? ev.var_contrib : "0.252";
+
+      htmlBuf += `
+        <div class="card">
+          <div><span class="agi-badge">${tag}</span> <b>${src}</b></div>
+          <div style="margin:8px 0;font-size:13px;line-height:1.4">${headline}</div>
+          <div style="font-size:11px">
+            <span class="quant">QUANT_SIG: ${qSig}</span> | 
+            <span class="alpha">ALPHA: ${alpha}</span> | 
+            <span class="var">VaR: ${varC}%</span>
+          </div>
+          <div class="goldman">Goldman: BUY MEREY16 anchor | Spreads estables</div>
+          <div class="citadel">Citadel: +102bps Warsh | Bunker Alpha 0.94</div>
+          <button class="btn" onclick="dispararHUD('${src}','${headline.replace(/'/g,"")}')">⚡ DISPARAR HUD CARD — AGI QUANTUM</button>
+        </div>`;
+    });
+
+    streamDiv.innerHTML = htmlBuf;
+
+  } catch(e) {
+    clearTimeout(timer);
+    statusDiv.innerHTML = `🔴 <b>REINTENTANDO CONEXIÓN (:8083)</b> — [${e.message}]`;
+  } finally {
+    inProgress = false;
+  }
+}
+
+async function dispararHUD(source, headline) {
+  try {
+    const res = await fetch(API + "/api/hud_card", {
+      method: "POST",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify({source, headline, mode: "AGI_QUANTUM_GOLDMAN_CITADEL"})
+    });
+    const j = await res.json();
+    alert("✅ HUD CARD DISPARADA\n" + JSON.stringify(j, null, 2));
+  } catch(e) {
+    alert("⚠️ Error HUD: " + e.message);
+  }
+}
+
+setInterval(load, 5000);
+load();
+</script>
+</body>
+</html>

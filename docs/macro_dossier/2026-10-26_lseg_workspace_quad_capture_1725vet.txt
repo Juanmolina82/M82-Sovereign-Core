@@ -1,0 +1,29 @@
+SOURCE: Refinitiv Workspace (space.refinitiv.com)
+CAPTURE TIMESTAMP: 2026-10-26 17:25-17:26 VET
+NODE: Charallave L4/L5 Edge
+
+PANEL 1 (TOP NEWS / TECH & AI):
+- Meta eyes record $10 billion equity raise to fund AI expansion
+- Microsoft offers buyouts to 10,000 employees
+- DTE to buy Fluor Resources in $13B deal to create top US gas generator
+- In China, the AI bubble has already burst
+- Gold defends gain on Middle East tension & Houthi attacks
+
+PANEL 2 (COMMODITIES / ENERGY & HORMUZ):
+- Drone attacks in Strait of Hormuz hit record high in October
+- Russia Norilsk Nickel furnace overhaul affects 2025-2026 output
+- DTE/Fluor $13B gas infrastructure M&A
+- Trump's energy dominance turned into Mideast dilemma
+
+PANEL 3 (MARKETS & BRAZIL LULA SHOCK):
+- Brazilian stocks tumble after Lula's shock win (EWZ selloff / buying opportunity)
+- ECB expected to leave key rate unchanged amid French bond volatility
+- Commercial Real Estate riding the AI data center boom
+
+PANEL 4 (GEOPOLITICS & VENEZUELA):
+- Maria Corina Machado walks tightrope with supporters, Trump
+- Trump election comments & Middle East friction
+
+M82 DECODE & ACTION:
+- Multi-vector macro confirmation: Brazil repricing, Hormuz drone record, AI CapEx M&A ($10B Meta / $13B DTE-Fluor)
+- Posture: BUNKER MODE 0.30x LOCK / Exp 0.22x / VaR 1.68% (Zero Exposure Expansion)

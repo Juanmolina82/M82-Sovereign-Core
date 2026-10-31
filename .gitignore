@@ -1,0 +1,17 @@
+m82_database.db
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+backups/
+*.sql
+*.sq3
+*.tar.gz
+logs/
+*.log
+nohup.out
+vault.json
+.env
+__pycache__/
+*.pyc

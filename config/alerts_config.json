@@ -1,0 +1,12 @@
+{
+  "telegram": {
+    "enabled": true,
+    "bot_token": "8600412468:AAHLLRDPus66Y1hSgDKbwGC5zdW6DdufP3Y",
+    "chat_id": "-1004335849125"
+  },
+  "ntfy": {
+    "enabled": true,
+    "server": "https://ntfy.sh",
+    "topic": "M82-Molina-Alerts-v2"
+  }
+}
