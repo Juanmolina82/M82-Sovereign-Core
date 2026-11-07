@@ -1,0 +1,9 @@
+{
+  "name": "M82 SOVEREIGN PRIVATE CORE",
+  "short_name": "M82 CORE",
+  "start_url": "https://core.molina82.com/",
+  "display": "standalone",
+  "background_color": "#020b14",
+  "theme_color": "#020b14",
+  "icons": []
+}

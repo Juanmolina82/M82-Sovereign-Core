@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>M82 SOVEREIGN MONITOR // OBS BROADCAST EDITION</title>
+<style>
+  :root { --bg: #030712; --card: #0b1329; --border: #1e293b; --accent: #38bdf8; --green: #22c55e; --red: #ef4444; --gold: #eab308; }
+  body { background: var(--bg); color: #f8fafc; font-family: 'Courier New', monospace; margin: 0; padding: 10px; overflow-x: hidden; }
+  .header { border: 1px solid var(--border); background: var(--card); padding: 10px; border-radius: 6px; margin-bottom: 10px; box-shadow: 0 0 15px rgba(56, 189, 248, 0.1); }
+  .title { font-size: 11px; color: var(--accent); font-weight: bold; letter-spacing: 1px; display: flex; justify-content: space-between; }
+  .pulse { display: inline-block; width: 8px; height: 8px; background: var(--green); border-radius: 50%; margin-right: 5px; animation: blink 1s infinite; }
+  @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+  .metrics { display: flex; justify-content: space-between; font-size: 12px; margin-top: 6px; border-top: 1px solid var(--border); padding-top: 6px; }
+  .bunker-tag { color: var(--gold); font-weight: bold; }
+  
+  .card { border: 1px solid var(--border); background: var(--card); padding: 10px; border-radius: 6px; margin-bottom: 10px; }
+  .card-header { color: #e2e8f0; font-size: 11px; font-weight: bold; border-bottom: 1px solid var(--border); padding-bottom: 4px; margin-bottom: 8px; display: flex; align-items: center; }
+  .news-list { font-size: 11px; color: #cbd5e1; list-style: none; padding: 0; margin: 0; }
+  .news-list li { margin-bottom: 6px; border-bottom: 1px dashed #1e293b; padding-bottom: 4px; display: flex; align-items: flex-start; }
+  .news-list li::before { content: "► "; color: var(--accent); font-size: 10px; margin-right: 4px; }
+  
+  .equities-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px; font-size: 11px; }
+  .eq-item { background: #070e1e; padding: 6px; border-radius: 4px; border: 1px solid #131f37; }
+  .up { color: var(--green); } .down { color: var(--red); }
+  
+  /* MARQUESINA TV BROADCAST PARA OBS */
+  .ticker-wrap { position: fixed; bottom: 0; left: 0; width: 100%; background: #020617; border-top: 2px solid var(--accent); overflow: hidden; height: 28px; line-height: 28px; z-index: 1000; }
+  .ticker { display: inline-block; white-space: nowrap; padding-left: 100%; animation: ticker 35s linear infinite; font-size: 11px; color: #f1f5f9; }
+  @keyframes ticker { 0% { transform: translate3d(0, 0, 0); } 100% { transform: translate3d(-100%, 0, 0); } }
+
+  .btn-lock { background: #991b1b; color: white; border: none; width: 100%; padding: 10px; border-radius: 6px; font-weight: bold; cursor: pointer; margin-top: 5px; margin-bottom: 35px; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="title">
+    <span><span class="pulse"></span>SYSTEM: AGI-CORE // NODE: SOVEREIGN EXECUTION CORE</span>
+    <span id="live-clock">00:00:00 VET</span>
+  </div>
+  <div style="font-size: 10px; color: #64748b; margin-top: 2px;">DAEMON: M82_SOVEREIGN_WIRE_DESK</div>
+  <div class="metrics">
+    <span class="bunker-tag">EXPOSURE: 0.22x / 0.30x LOCK</span>
+    <span>VaR L5.1: 1.68%</span>
+  </div>
+  <div style="font-size: 11px; margin-top: 4px; color: #94a3b8;">
+    MEREY 16: <b style="color:var(--gold);">$93.92 LIVE</b> | BRENT: <b id="brent-header" style="color:var(--green);">$97.84</b>
+  </div>
+</div>
+
+<!-- TARJETA NOTICIAS MARCA M82 -->
+<div class="card">
+  <div class="card-header" style="color:var(--red);">🔴 BREAKING NEWS - M82 SOVEREIGN WIRE</div>
+  <ul class="news-list" id="news-container">
+    <li>OPEC+ monitorea estrecho de Ormuz: respuesta defensiva en crudo</li>
+    <li>Fed mantiene postura restrictiva: rendimientos del Treasury en observación</li>
+    <li>M82 Core Telemetry Bridge - Flujo Sovereign RDP Active</li>
+  </ul>
+</div>
+
+<!-- TARJETA EQUITIES & COMMODITIES -->
+<div class="card">
+  <div class="card-header" style="color:var(--accent);">📊 EQUITIES UNIVERSAL & COMMODITIES</div>
+  <div class="equities-grid" id="equities-container">
+    <div class="eq-item">S&P 500: <b class="up">5,982.10 (+0.42%)</b></div>
+    <div class="eq-item">NASDAQ: <b class="up">18,972.45 (+0.65%)</b></div>
+    <div class="eq-item">BRENT: <b class="up">$97.84 (+0.40%)</b></div>
+    <div class="eq-item">WTI: <b class="up">$90.67 (+0.25%)</b></div>
+  </div>
+</div>
+
+<!-- ALERTAS TÁCTICAS -->
+<div class="card" style="border-left: 3px solid var(--red);">
+  <div style="font-size: 11px;">
+    🔴 <b>HORMUZ:</b> Piso $93-$97 - NO comprar en spike<br>
+    🔴 <b>MEREY:</b> No sellar sin recalcular<br>
+    🟡 <b>EIA:</b> Natgas 3,801 BCF +77
+  </div>
+</div>
+
+<button class="btn-lock">🔒 NODO PROTEGIDO // OPERACIÓN AUTÓNOMA</button>
+
+<!-- MARQUESINA DESPLAZABLE PARA OBS -->
+<div class="ticker-wrap">
+  <div class="ticker" id="obs-ticker">
+    ⚡ M82 SOVEREIGN TELEMETRY FEED ── MEREY 16: $93.92 LIVE ── BRENT: $97.84 (+0.40%) ── WTI: $90.67 (+0.25%) ── S&P 500: 5,982.10 ── NASDAQ: 18,972.45 ── CUSTODIA PASIVA 0.30x LOCK ── NODO CHARALLAVE EDGE ONLINE ──
+  </div>
+</div>
+
+<script>
+  function updateClock() {
+    const now = new Date();
+    document.getElementById('live-clock').innerText = now.toTimeString().split(' ')[0] + ' VET';
+  }
+  setInterval(updateClock, 1000);
+  updateClock();
+
+  async function refreshData() {
+    try {
+      const res = await fetch('data.json?t=' + Date.now());
+      if(res.ok) {
+        const data = await res.json();
+        if(data.equities && data.equities.BRENT) {
+          document.getElementById('brent-header').innerText = '$' + data.equities.BRENT.last;
+        }
+      }
+    } catch(e){}
+  }
+  setInterval(refreshData, 5000);
+</script>
+
+</body>
+</html>

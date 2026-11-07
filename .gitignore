@@ -1,0 +1,8 @@
+*.db
+*.db-wal
+*.db-shm
+*.db.bak*
+daemon.log
+pwa.log
+api.log
+backup/

@@ -1,0 +1,67 @@
+{
+  "updated": "2026-11-06 22:28 VET",
+  "breaking": [
+    {
+      "t": "2026-11-06 22:28 VET",
+      "title": "OPEC+ monitorea estrecho de Ormuz; respuesta defensiva en crudo",
+      "src": "M82 WIRE",
+      "ric": "CLc1"
+    },
+    {
+      "t": "2026-11-06 22:28 VET",
+      "title": "Fed mantiene postura restrictiva; rendimientos del Treasury en observación",
+      "src": "M82 WIRE",
+      "ric": "US10YT"
+    },
+    {
+      "t": "2026-11-06 22:28 VET",
+      "title": "M82 Core Telemetry Bridge — Flujo Refinitiv RDP Standby",
+      "src": "M82 SYSTEM",
+      "ric": "CORE"
+    }
+  ],
+  "earnings": [
+    {
+      "t": "2026-11-06 22:28 VET",
+      "title": "NVDA: Q3 Reporte de Ingresos Data Center superando previsiones",
+      "ric": "NVDA.OQ"
+    },
+    {
+      "t": "2026-11-06 22:28 VET",
+      "title": "XOM / CVX: Guía Capex 2026-2027 ajustada a banda $90-$95 Brent",
+      "ric": "XOM.N"
+    },
+    {
+      "t": "2026-11-06 22:28 VET",
+      "title": "AAPL: Transición de semiconductores de arquitectura propia en tiempo",
+      "ric": "AAPL.OQ"
+    }
+  ],
+  "equities": [
+    {
+      "ric": "S&P 500",
+      "last": "5,982.10",
+      "pct": "+0.42"
+    },
+    {
+      "ric": "NASDAQ",
+      "last": "18,972.40",
+      "pct": "+0.65"
+    },
+    {
+      "ric": "BRENT",
+      "last": "97.84",
+      "pct": "+0.40"
+    },
+    {
+      "ric": "WTI",
+      "last": "90.67",
+      "pct": "+0.25"
+    },
+    {
+      "ric": "VIX",
+      "last": "14.20",
+      "pct": "-2.10"
+    }
+  ]
+}
