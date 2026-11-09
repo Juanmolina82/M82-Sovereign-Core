@@ -1,0 +1,16 @@
+SOURCE: Reuters / LSEG Workspace
+WIRE ID: dXJuOm5ld3NtbDpuZXdzd2lyZS5yZWZpbml0aXYuY29tOjIwMjYxMDI2Om5TME4zWkYwN0w6MQ==
+TIMESTAMP: 2026-10-26 15:36 VET
+TAG: VENEZUELA-VOTING/URGENT
+
+HEADLINE:
+US expects revamped electoral infrastructure in Venezuela before elections can be held — 
+new supreme judicial tribunal [TSJ] by end of year + new electoral [CNE] shortly thereafter — 
+Washington working with interim authorities using leverage to ensure reforms continue at proper pace.
+
+M82 LATAM RISK DECODE:
+- TSJ Reset: EOY 2026
+- CNE Reset: Early 2027
+- Presidential Elections: Delayed to 2027
+- Strategic Leverage: OFAC Licences + Capital Escrow
+- Action: BUNKER MODE 0.30x LOCK / Exp 0.22x / VaR 1.68% (Zero Exposure Rebalance)

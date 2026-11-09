@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/home/M82/m82_fix_breaking_card_engine.py", line 107, in <module>
+    c.execute("""
+    ~~~~~~~~~^^^^
+        INSERT INTO m82_multi_stream (daemon_source, headline, status, timestamp)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        VALUES (?, ?, 'DISPATCHED', ?)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        ON CONFLICT(daemon_source, headline) DO UPDATE SET timestamp=excluded.timestamp
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    """, (daemon_id, headline, now))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: ON CONFLICT clause does not match any PRIMARY KEY or UNIQUE constraint

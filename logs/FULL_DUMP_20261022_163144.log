@@ -1,0 +1,62 @@
+=== M82 FULL DUMP — Thu Oct 22 16:31:44 -04 2026 — BUNKER 0.30x ===
+
+--- [1] WAL STATE ---
+120000
+0|0|0
+wal
+0|0|0
+
+--- [2] macro_dossier FULL — LAST 25 ---
+timeout
+-------
+ 120000
+id      m82_tag       risk_score  alpha_score  category                                      headline
+--  ----------------  ----------  -----------  --------  --------------------------------------------------------------------------------
+11  BUNKER_HOLD_030X        1.68         0.99
+ 4  BUNKER_HOLD_030X         9.8         0.99            OFAC regime controls all Merey flows. Quad-SPV requires Specific Licenses per hu
+ 3  BUNKER_HOLD_030X         9.9         0.99            LSEG Refinitiv Workspace Audit captured for Euroclear Bank S.A. (Brussels). Rati
+ 2  BUNKER_HOLD_030X         9.9         0.99            LSEG Refinitiv Workspace Audit captured for Norges Bank Investment Management (N
+ 1  BUNKER_HOLD_030X         9.8         0.99            100-Year Contractual Timeline Analysis. Venezuela failed due to internal custody
+
+--- [3] m82_multi_stream FULL — LAST 25 ---
+timeout
+-------
+ 120000
+  id         timestamp             daemon_source         alpha_score            event_trigger                                                          headline
+------  -------------------  --------------------------  -----------  ---------------------------------  ----------------------------------------------------------------------------------------------------
+875187  2026-10-22 16:37:02  M82_ROBUST_DEPLOY                  0.99  M82_ROBUST_DEPLOY_CARD             M82 Master Architecture Deployed: macro_dossier WAL 30GB + 100 Daemons + Supervisor Anti-Kill + LSEG
+875186  2026-10-22 16:22:20  REFINITIV_LSEG_NDX                 0.99  LSEG_NASDAQ100_MIDDAY_ROTATION     LSEG 11:01 AM EDT: Nasdaq 100 -2.34% (29,125.36) — Semis Equipment Selloff (LRCX/TER -10.3%, MPWR -8
+875185  2026-10-22 15:36:14  HARDWARE_ABSTRACTION               0.87                                     [HARDWARE_ABSTRACTION | 2026-10-22 11:36:09] Hardware abstraction layer verified: agnostic VLA routi
+875184  2026-10-22 15:22:39  M82_SYSTEM_SCALER                  0.99  SWARM_ROBUSTNESS_100_DAEMONS       Swarm Robustness Upgraded: 100 Active Daemons Verified — LSEG Advanced Telemetry, Anti-Crash Supervi
+875183  2026-10-22 15:22:31  ROBOTICS_PHYSICAL                  0.91                                     [ROBOTICS_PHYSICAL | 2026-10-22 11:22:31] Edge VLA inference pipeline active on local Jetson / Orin
+875182  2026-10-22 14:41:27  REFINITIV_LSEG_IBD                 0.99  LSEG_BREAKING_OIL_100_STRIKE_PLAN  LSEG 22-Oct 09:46 ET: WTI $100/bbl (+3%) on US-Israel Iran Strike Reports Post-Nov 3 + UST10Y Plunge
+875181  2026-10-22 14:41:21  ROBOTICS_PHYSICAL                  0.91                                     [ROBOTICS_PHYSICAL | 2026-10-22 10:41:21] Edge VLA inference pipeline active on local Jetson / Orin
+875180  2026-10-22 13:44:51  HARDWARE_ABSTRACTION                0.9                                     [HARDWARE_ABSTRACTION | 2026-10-22 09:44:50] Hardware abstraction layer verified: agnostic VLA routi
+875179  2026-10-22 02:25:49  REFINITIV_EARNINGS_ROUNDUP         0.99  LSEG_EARNINGS_ROUNDUP_Q3           LSEG 22:19 VET: Tesla Surprise Positive Free Cash Flow + Energy/AI Pivot + Meta Beat $1.83 + JPM NII
+875178  2026-10-22 02:25:45  ROBOTICS_PHYSICAL                   0.9                                     [ROBOTICS_PHYSICAL | 2026-10-21 22:25:45] Edge VLA inference pipeline active on local Jetson / Orin
+875177  2026-10-21 22:32:56  REFINITIV_FRONT_PAGE               0.99  LSEG_PEACE_TALKS_TURKEY_SAUDI      LSEG 18:31 VET: Putin Agrees to 3-Way Peace Talks + Zelenskiy Rejects Trump Proposal + Turkey Milita
+875176  2026-10-21 22:32:46  WORLD_MODEL_SIM                    0.84                                     [WORLD_MODEL_SIM | 2026-10-21 18:32:46] Oasis 3D world model synthesis generating synthetic physical
+875175  2026-10-21 22:18:43  REFINITIV_FRONT_PAGE               0.99  LSEG_TSLA_EPS_048_BEAT             LSEG 21-Oct-2026 16:42 ET: Tesla EPS $0.48 Beat +6.67% Revenue $28.05B Beat 0.96% — Zacks Rank 4 Sel
+875174  2026-10-21 22:18:37  ROBOTICS_PHYSICAL                  0.89                                     [ROBOTICS_PHYSICAL | 2026-10-21 18:18:37] Edge VLA inference pipeline active on local Jetson / Orin
+875173  2026-10-21 21:42:07  PERIMETER_MONITOR                  0.99  FBI_PHP_RCE_MITIGATION             CVE-2026-105618/19 PHP RCE Isolation Verified — Edge Node Immunity (No PHP Runtime) — Alpha 0.99
+875172  2026-10-21 21:40:59  PERIMETER_MONITOR                  0.99  FBI_PHP_RCE_MITIGATION             CVE-2026-109618/19 PHP RCE — Inventory & Isolation — FBI Alert 2026
+875171  2026-10-21 21:39:58  HARDWARE_ABSTRACTION               0.88                                     [HARDWARE_ABSTRACTION | 2026-10-21 17:39:55] Hardware abstraction layer verified: agnostic VLA routi
+875170  2026-10-21 20:43:45  REFINITIV_FRONT_PAGE               0.99  LSEG_TESLA_EARNINGS_ARAMCO_ATTACK  LSEG 16:42 ET: Tesla Revenue Beat & Surprise Positive Cash Flow + Saudi Aramco Shaybah Drone Strike
+875169  2026-10-21 20:43:41  PERIMETER_MONITOR                  0.92                                     [PERIMETER_MONITOR | 2026-10-21 16:43:41] Local edge vision feed calibrated - zero-latency telemetry
+875168  2026-10-21 20:31:42  ROBOTICS_PHYSICAL                   0.9                                     [ROBOTICS_PHYSICAL | 2026-10-21 16:31:42] Edge VLA inference pipeline active on local Jetson / Orin
+875166  2026-10-21 20:27:20  PERIMETER_MONITOR                  0.94                                     [PERIMETER_MONITOR | 2026-10-21 16:27:20] Local edge vision feed calibrated - zero-latency telemetry
+875165  2026-10-21 20:26:22  M82_AGI_CORE_V70                   0.99  AGI_SUPERINTELLIGENCE_V70_UPGRADE  AGI Quantum Kernel & Superintelligence Engine Upgraded to V70 — 5s Hyper-Foresight Loop Active — Ten
+875164  2026-10-21 20:22:34  ROBOTICS_PHYSICAL                   0.9                                     [ROBOTICS_PHYSICAL | 2026-10-21 16:22:34] Edge VLA inference pipeline active on local Jetson / Orin
+875163  2026-10-21 20:21:35  HARDWARE_ABSTRACTION               0.87                                     [HARDWARE_ABSTRACTION | 2026-10-21 16:21:35] Hardware abstraction layer verified: agnostic VLA routi
+875162  2026-10-21 20:16:02  HARDWARE_ABSTRACTION               0.89                                     [HARDWARE_ABSTRACTION | 2026-10-21 16:16:01] Hardware abstraction layer verified: agnostic VLA routi
+
+--- [4] banking_ai_risk + oil_gulf_tracker ---
+timeout
+-------
+ 120000
+Parse error near line 4: near "2": syntax error
+   * FROM banking_ai_risk ORDER BY id DESC LIMIT 10 2>/dev/null || echo "banking
+                                      error here ---^
+Parse error near line 5: near "2": syntax error
+  * FROM oil_gulf_tracker ORDER BY id DESC LIMIT 10 2>/dev/null || echo "oil_gul
+                                      error here ---^

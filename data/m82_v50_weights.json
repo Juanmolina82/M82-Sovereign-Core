@@ -1,0 +1,16 @@
+{
+    "desk": "FORENSE_DESK_2_MUSK_TECH",
+    "version": "M82_V50",
+    "bull_anniversary_origin": "2022-10-12",
+    "alpha_score": 0.88,
+    "bunker_factor": 0.30,
+    "spx_pe_fwd": 19.0,
+    "mag7_pe_fwd": 26.0,
+    "concentration_top10": 0.40,
+    "eps_growth_exp": {
+        "2026": 0.33,
+        "2027": 0.16
+    },
+    "critical_tickers": ["NVDA", "PLTR", "VRT", "MU", "DELL", "AVGO"],
+    "linked_ric_commodity": "0#MB-RE-NDPR"
+}

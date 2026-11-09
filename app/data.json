@@ -1,67 +1,755 @@
 {
-  "updated": "2026-11-06 22:28 VET",
-  "breaking": [
-    {
-      "t": "2026-11-06 22:28 VET",
-      "title": "OPEC+ monitorea estrecho de Ormuz; respuesta defensiva en crudo",
-      "src": "M82 WIRE",
-      "ric": "CLc1"
+  "source": "M82 Data Core V63.0.01-A (Macro Dossier Robusto)",
+  "wire": "M82 MASTER DOSSIER: Arquitectura Integrada v63.0.01-A | Node Charallave Edge Active | BUNKER 0.30x LOCK",
+  "timestamp": "22:52:36 VET",
+  "equities": {
+    "BRENT": {
+      "last": 97.76,
+      "settle": 98.32,
+      "markets_today": 98.08,
+      "change_today_pct": -0.21
     },
-    {
-      "t": "2026-11-06 22:28 VET",
-      "title": "Fed mantiene postura restrictiva; rendimientos del Treasury en observación",
-      "src": "M82 WIRE",
-      "ric": "US10YT"
+    "MEREY16": {
+      "last": 93.92,
+      "opec_sep_avg": 93.75,
+      "status": "recalibracion_pasiva"
     },
-    {
-      "t": "2026-11-06 22:28 VET",
-      "title": "M82 Core Telemetry Bridge — Flujo Refinitiv RDP Standby",
-      "src": "M82 SYSTEM",
-      "ric": "CORE"
+    "WTI": {
+      "last": 90.67,
+      "settle": 90.83,
+      "markets_today": 90.65,
+      "change_today_pct": 0.14,
+      "change_w": -12.8
+    },
+    "SPCX": {
+      "last": 134.19,
+      "change_1m": -15.6
+    },
+    "GOLD": {
+      "last": 4065.51,
+      "change_today_pct": -0.53
     }
+  },
+  "saudi_aramco_dossier": {
+    "ticker": "2222.SE",
+    "ownership": "State & PIF Dominant (>90%)",
+    "green_revenue_pct": "0.7%",
+    "debt_maturity_profile": "Well-staggered / Low Short-Term Refinancing Risk",
+    "status": "REFINITIV_ARAMCO_SYNCED"
+  },
+  "refinitiv_vesper_workspace": {
+    "status": "REFINITIV_VESPER_WS_SYNCED",
+    "yield_spread_trend": "Divergencia curva Tesoro vs Commods",
+    "destination_brent": "$97.76 / $98.32"
+  },
+  "refinitiv_earnings_q3": {
+    "blackrock_aum_trillion": "15.49",
+    "blackrock_net_flows_q3_b": "205",
+    "auto_europe_china_risk": "VW & European OEMs Capex Cut / Weak China Sales",
+    "tech_cloud_driver": "AWS & Azure Revenue Expansion intact"
+  },
+  "inside_debt_4_brazil_asia": {
+    "brazil": {
+      "gov_gdp_2027_pct": 2.46,
+      "bradesco_2027_pct": 0.4,
+      "xp_2027_pct": 0.3,
+      "trade_oct_b": 9.318
+    },
+    "india_cpi": {
+      "oct_expected_pct": 5.93,
+      "sep_pct": 5.54
+    },
+    "thailand_cpi": {
+      "headline_oct_yoy_pct": 3.9,
+      "core_yoy_pct": 1.58
+    },
+    "asia_watch": {
+      "china_ppi_oct_exp_pct": 5.3,
+      "china_cpi_yoy_exp_pct": 0.8
+    }
+  },
+  "inside_debt_3_markets_today": {
+    "treasuries": {
+      "us10y": "4.86%",
+      "us30y": "5.26%",
+      "us2y": "4.51%"
+    },
+    "forex": {
+      "dxy": "102.32",
+      "usd_jpy": "158.48",
+      "eur_usd": "1.1142",
+      "gbp_usd": "1.3351"
+    },
+    "stocks": {
+      "sp500": "7376.92",
+      "nasdaq": "24579.43",
+      "dji": "51286.21"
+    },
+    "mexico_inflation": {
+      "headline_oct_pct": 3.64,
+      "core_oct_pct": 3.78
+    }
+  },
+  "inside_debt_2_boj_uk_tech": {
+    "boj_ueda": {
+      "inflation_target_pct": 2,
+      "risk": "Some upside risks",
+      "gdp_q3_annualised_pct": 0.3
+    },
+    "uk_housing_lloyds": {
+      "yoy_oct_pct": -1.2,
+      "mom_oct_pct": -0.6
+    }
+  },
+  "inside_debt_1_jobs_fed_ecb": {
+    "us_jobs_oct": {
+      "payrolls": 165000,
+      "consensus": 65000,
+      "beat": 100000,
+      "unemployment_pct": 4.1
+    },
+    "fed": "Jobs fuerte refuerza hikes - En camino a subir en diciembre"
+  },
+  "morning_news_call_2026_11_06": {
+    "top": "Dems AI bills flood + Tesla Cybertruck wind down mid-2027 -> Cybercab",
+    "before_bell": {
+      "sp500_wipeout_trln": 3,
+      "nasdaq_correction": true
+    },
+    "earnings": {
+      "ABNB": {
+        "rev_q3_b": 4.87,
+        "eps": 3.16
+      },
+      "DVN": {
+        "adj_eps": 1.42
+      },
+      "EOG": {
+        "adj_eps": 4.87,
+        "realized_usd": 86.72
+      },
+      "MP": {
+        "adj_eps": 0.04,
+        "gov_total_m": 120
+      }
+    }
+  },
+  "refinery_filing_2026_11_07": {
+    "refinery": "FHR Corpus Christi West Refinery",
+    "type": "EMISSIONS EVENT",
+    "unit": "Udex Unit",
+    "cause": "Leak from temporary decommissioning pump during planned maintenance",
+    "fence_line": {
+      "LEL": 0,
+      "VOC_ppm": 0,
+      "H2S_ppm": 0,
+      "CO_ppm": 0,
+      "SO2_ppm": 0,
+      "Benzene_ppm": 0
+    },
+    "severity": "Baja - Contenido - Sin shutdown unidad"
+  },
+  "venezuela": {
+    "opec_sep_kbd": 1206,
+    "secondary_kbd": 1150,
+    "reuters_oct_kbd": 860,
+    "pdvsa_claim_kbd": 1252
+  },
+  "natgas": {
+    "bcf": 3801,
+    "injection": 77,
+    "vs_5y": 54
+  },
+  "colombia": {
+    "oil_bpd": 729593,
+    "oil_yoy": -2.92,
+    "gas_mmcfd": 705,
+    "gas_yoy": -13.39
+  },
+  "risk": {
+    "mode": "BUNKER",
+    "lock": "0.30x",
+    "dry_powder": "100%",
+    "exposure": "0.22x",
+    "var": "1.68%",
+    "executions": 0
+  },
+  "breaking": "DOSSIER ROBUSTO M82 INTEGRADO - SAUDI ARAMCO + REFINITIV + BUNKER 0.30x LOCK",
+  "alerts": [
+    "NO DISPARAR - Webhooks inactivos en BUNKER - estado esperado"
   ],
-  "earnings": [
-    {
-      "t": "2026-11-06 22:28 VET",
-      "title": "NVDA: Q3 Reporte de Ingresos Data Center superando previsiones",
-      "ric": "NVDA.OQ"
-    },
-    {
-      "t": "2026-11-06 22:28 VET",
-      "title": "XOM / CVX: Guía Capex 2026-2027 ajustada a banda $90-$95 Brent",
-      "ric": "XOM.N"
-    },
-    {
-      "t": "2026-11-06 22:28 VET",
-      "title": "AAPL: Transición de semiconductores de arquitectura propia en tiempo",
-      "ric": "AAPL.OQ"
+  "saudi_sovereign_news": {
+    "timestamp": "14:16:13 VET",
+    "target": "SAUDI ARABIA, KINGDOM OF GOVERNMENT",
+    "wire_source": "REFINITIV_WORKSPACE_NEWS",
+    "key_topics": [
+      "Sukuk & Eurobond Settlements",
+      "SAMA Banking Liquidity",
+      "PIF Vision 2030 Ingest"
+    ],
+    "status": "SAUDI_NEWS_SYNCED"
+  },
+  "saudi_sovereign_news_v2": {
+    "timestamp": "15:30:17 VET",
+    "target": "SAUDI ARABIA, KINGDOM OF GOVERNMENT",
+    "wire_source": "REFINITIV_WORKSPACE_NEWS",
+    "status": "SAUDI_NEWS_FULLY_PARSED",
+    "verified_nodes": [
+      "Sukuk Settlements",
+      "SAMA Liquidity",
+      "PIF Capital Allocation"
+    ]
+  },
+  "top_news_wire": {
+    "timestamp": "15:33:53 VET",
+    "us_stocks": "Bounce after Jobs Data / Fed cut in doubt",
+    "tech_ai": "AI Companies scramble for Nuclear Power for Data Centers",
+    "tesla_cybercab": "No steering wheel design focus",
+    "status": "TOP_NEWS_SYNCED"
+  },
+  "top_news_wire_v2": {
+    "timestamp": "15:35:10 VET",
+    "toshiba_cvc": "Shares surge on foreign intelligence report",
+    "eni_earnings": "Profit doubled in winter / Shares up 9%",
+    "geopolitics_iran": "Trump high likelihood of Iran strikes if talks fail",
+    "saudi_geopolitics": "Drone event reported near Riyadh financial district",
+    "status": "TOP_NEWS_V2_SYNCED"
+  },
+  "breakingviews_analysis": {
+    "timestamp": "15:37:04 VET",
+    "anthropic_ipo_wager": "Tech leverage rise targeting Anthropic IPO",
+    "uk_housing_rates": "Bank rate freeze commentary on UK real estate",
+    "ai_data_centers": "Music industry AI infrastructure offloading",
+    "status": "BREAKINGVIEWS_SYNCED"
+  },
+  "breakingviews_deluge": {
+    "timestamp": "15:48:43 VET",
+    "us_fiscal_rebalance": "Post-election Trump policy & Congress alignment",
+    "spacex_valuation": "Physical AI & Starlink valuation upside focus",
+    "china_capex_risk": "European OEMs capex compression ongoing"
+  },
+  "tier1_institutional_dossier": {
+    "apollo_global": "APO.N - Private Credit & Origination Growth",
+    "goldman_sachs": "GS.N - M&A & FICC Trading Recovery",
+    "morgan_stanley": "MS.N - Wealth Management & Investment Banking Strength",
+    "softbank_group": "9984.T - Asset Rotation to AI/ARM Data Centers",
+    "spacex_private": "SpaceX - Secondary Market Liquidity & AI Anchor",
+    "ubs_group": "UBSG.S - Credit Suisse Integration & Capital Optimization",
+    "status": "INSTITUTIONAL_TIER1_SYNCED"
+  },
+  "ubs_group_telemetry": {
+    "timestamp": "17:22:14 VET",
+    "ticker": "UBSG.S",
+    "wire_source": "REFINITIV_WORKSPACE_UBS_STREAM",
+    "key_events": [
+      "Structured Notes & Warrants Issuance",
+      "SIX Swiss Filings",
+      "Analyst Price Target Adjustments"
+    ],
+    "status": "UBS_TELEMETRY_SYNCED"
+  },
+  "blackrock_institutional_dossier": {
+    "timestamp": "17:50:15 VET",
+    "entity": "BLACKROCK INSTITUTIONAL TRUST CO NA",
+    "wire_source": "REFINITIV_WORKSPACE_BLACKROCK_STREAM",
+    "top_holdings": [
+      "NVDA",
+      "AAPL",
+      "MSFT",
+      "AMZN",
+      "META",
+      "GOOGL",
+      "AVGO"
+    ],
+    "sector_allocation": "Technology Heavy / Private Capital & Infrastructure Anchor",
+    "regulatory_filings": "WpHG Section 40 Voting Rights & EU Disclosures Active",
+    "status": "BLACKROCK_INSTITUTIONAL_TRUST_SYNCED"
+  },
+  "m82_nodes": {
+    "caracas_hq_central": "CORE MASTER - Caracas HQ Central",
+    "charallave_edge": "EXECUTION DESK - Charallave L4/L5 Edge - PWA 127.0.0.1:8000 + OBS",
+    "meta_ai_core": {
+      "node": "META_AI_M82_CORE",
+      "role": "Nodo de inteligencia, auditoria y consolidacion dentro de Macro Dossier Robusto M82",
+      "status": "META_AI_M82_SYNCED",
+      "github": "https://github.com/Juanmolina82",
+      "authority": "Chairman & CEO Juan M. Molina - jmmp@molina82.com",
+      "scope": "Auditoria forense, parches MERGE atomicos, verificacion check.py, sin ejecucion, sin tocar OBS",
+      "risk_governance": "BUNKER MODE / 0.30x LOCK - Solo vigilancia y consolidacion - 0 ejecuciones",
+      "timestamp": "17:57:17 VET"
     }
-  ],
-  "equities": [
-    {
-      "ric": "S&P 500",
-      "last": "5,982.10",
-      "pct": "+0.42"
+  },
+  "github_m82": {
+    "owner": "Juanmolina82",
+    "url": "https://github.com/Juanmolina82",
+    "repo_core": "M82 - Macro Dossier Robusto V63.0.01-A",
+    "status": "GITHUB_M82_ANCHORED",
+    "last_sync": "M82_GIT_AUDIT_1000287403 - 5488 objetos - main -> main"
+  },
+  "last_patch": "GOLD_ROI_2026_11_09 - GOLD_OPINION_WGC_DATA - MERGE OK",
+  "norges_bank_dossier": {
+    "timestamp": "18:32:46 VET",
+    "entity": "NORGES BANK INVESTMENT MANAGEMENT (GPFG)",
+    "wire_source": "REFINITIV_WORKSPACE_NORGES_STREAM",
+    "key_allocations": [
+      "Renewable Infrastructure Co-investments",
+      "Prologis Logistics Partnership",
+      "ESG Governance Voting"
+    ],
+    "status": "NORGES_BANK_INVESTMENT_SYNCED"
+  },
+  "norges_bank_portfolio_dossier": {
+    "timestamp": "18:44:15 VET",
+    "entity": "NORGES BANK INVESTMENT MANAGEMENT (GPFG PORTFOLIO)",
+    "wire_source": "REFINITIV_WORKSPACE_NORGES_HOLDINGS",
+    "top_holdings": [
+      "NVDA",
+      "AAPL",
+      "MSFT",
+      "AMZN",
+      "META",
+      "GOOGL",
+      "AVGO"
+    ],
+    "sector_breakdown": "Tech Heavy (~30%+) / Financials / Industrial / Consumer",
+    "status": "NORGES_BANK_PORTFOLIO_SYNCED"
+  },
+  "trump_denuclearization_talks": {
+    "id": "TRUMP_DENUC_2026_11_08",
+    "timestamp": "18:51:49 VET",
+    "status": "NEGOTIATION_UNCONFIRMED",
+    "verification": "NO ES ACUERDO - ES PROPUESTA EN NEGOCIACION - NO USAR COMO HECHO",
+    "source": "AP / Reuters / Arms Control Association - 19 Oct - 8 Nov 2026",
+    "actors": {
+      "trump": "Propone cumbre trilateral EE.UU. - Rusia - China sobre armas nucleares / denuclearization. Frase 19 Oct: 'We would have it to talk about nuclear weapons and denuclearisation' / 'If President Xi wants to have it, I'd have it'",
+      "putin": "Propuso cumbre el 9 Oct en llamada con Trump - enfoque original: guerra en Ucrania sin Kyiv en mesa",
+      "xi": "Anfitrion APEC Shenzhen - No ha dicho si definitivo - 4 Nov Beijing: 'in communication with relevant parties' - sin fecha, agenda ni formato confirmado"
     },
-    {
-      "ric": "NASDAQ",
-      "last": "18,972.40",
-      "pct": "+0.65"
+    "proposed_venue": "Al margen APEC Shenzhen, China - 18-19 Nov 2026 - TENTATIVO, SIN CONFIRMAR",
+    "positions": {
+      "us": "Control de armas / denuclearization - Trump: EE.UU. #1, Rusia #2, China #3 pero alcanzando en ~5 anos",
+      "russia": "Ucrania como tema central - Kremlin 3 Nov: trabajando en organizarla - 8 Nov: agenda en discusion",
+      "china": "RECHAZO FORMATO TRILATERAL 16 Oct - MFA: 'neither fair, reasonable nor realistic to ask China to join so-called trilateral nuclear disarmament negotiations at this stage' - 30 Oct Xi a Steinmeier: no ve preparativos para cumbre sobre Ucrania"
     },
-    {
-      "ric": "BRENT",
-      "last": "97.84",
-      "pct": "+0.40"
+    "context": {
+      "new_start": "EXPIRADO 2026 - Sin tratado vigente EE.UU.-Rusia que limite arsenales estrategicos",
+      "p5_process": "5 potencias nucleares NPT se reunieron semana 5 Oct en NY - Sin contenido publico",
+      "us_china_private": "WSJ 24 Sep: EE.UU. hablando en privado con China sobre expansion arsenal + acusacion explosion 10 toneladas Jun 2020 - CNN 6 Oct: visitas reciprocas a sitios de prueba / laboratorios en discusion",
+      "analyst_view": "AP: intereses tan opuestos - lo mas probable es 'carefully staged photo more than any agreement'"
     },
-    {
-      "ric": "WTI",
-      "last": "90.67",
-      "pct": "+0.25"
-    },
-    {
-      "ric": "VIX",
-      "last": "14.20",
-      "pct": "-2.10"
+    "m82_dictamen": {
+      "postura": "BUNKER MODE / 0.30x LOCK - SIN CAMBIO",
+      "accion": "NO DISPARADOR - Solo vigilancia - 0 ejecuciones",
+      "vigilar": [
+        "10-11 Nov: conversaciones Ucrania-Rusia-EE.UU. Abu Dhabi",
+        "18-19 Nov: confirmacion o no de trilateral en Shenzhen APEC"
+      ],
+      "riesgo_contaminacion": "NO inyectar como SYNCED / HECHO - Solo como NEGOTIATION_UNCONFIRMED hasta que haya comunicado conjunto oficial"
     }
-  ]
+  },
+  "apec_2026_watchlist": {
+    "id": "APEC_SHENZHEN_2026_11_18_19",
+    "timestamp": "19:01:47 VET",
+    "status": "WATCHLIST_ACTIVE",
+    "verification": "VENTANA CALIENTE - NADA CONFIRMADO COMO HECHO - TODO UNCONFIRMED HASTA COMUNICADO OFICIAL",
+    "venue": "APEC Economic Leaders Meeting - Shenzhen, China - 21 economias",
+    "calendar": {
+      "16_nov": "Trump en Manila - ASEAN - antes de seguir a China",
+      "17_18_nov": "APEC CEO Summit - Shenzhen",
+      "18_19_nov": "APEC Leaders Meeting - Shenzhen",
+      "18_nov_tentativo": "Xi-Putin bilateral esperada - enfoque relacion bilateral / energia / Ucrania sin Kyiv"
+    },
+    "events_to_watch": {
+      "1_trump_xi_bilateral": {
+        "probabilidad": "ALTA - Tercera reunion del ano",
+        "tema_real": "Tregua comercial EE.UU.-China EXPIRA 10 Ene 2027 - Extender / Endurecer / Dejar morir",
+        "status": "PENDING_18_19_NOV",
+        "m82_result": null
+      },
+      "2_xi_putin_bilateral": {
+        "probabilidad": "ALTA - Casi segura 18 Nov",
+        "tema_real": "Relacion bilateral, energia, Ucrania sin Kyiv - Beijing: Ucrania NO en su agenda trilateral",
+        "status": "PENDING_18_19_NOV",
+        "m82_result": null
+      },
+      "3_trilateral_xi_trump_putin": {
+        "probabilidad": "MEDIA - Primera vez los tres juntos, si se da",
+        "tema_real": "Trump: desnuclearizacion / Putin: Ucrania / Xi: imagen anfitrion sin compromisos",
+        "confirmacion": "China 4 Nov Mao Ning: 'in communication with relevant parties' - SIN fecha/agenda/formato - Kremlin 3 Nov: trabajando en organizarla - Ushakov 25 Oct: 'in principle ready, preparations begun' - NO es anuncio conjunto",
+        "analyst_view": "AP: 'carefully staged photo more than any agreement' - intereses opuestos",
+        "status": "PENDING_18_19_NOV",
+        "m82_result": null
+      }
+    },
+    "scenarios": {
+      "A_solo_foto": {
+        "probabilidad": "ALTA",
+        "descripcion": "Solo foto + comunicados vagos - Sin acuerdo",
+        "accion_m82": "Registrar como PHOTO_OP / NO_AGREEMENT - BUNKER intacto - 0 ejecuciones"
+      },
+      "B_tregua_extendida": {
+        "probabilidad": "MEDIA",
+        "descripcion": "Tregua comercial Trump-Xi extendida",
+        "accion_m82": "Vigilancia - NO disparador de compra - Registrar como TRADE_TRUCE_EXTENDED_UNCONFIRMED hasta texto oficial"
+      },
+      "C_acuerdo_real": {
+        "probabilidad": "BAJA",
+        "descripcion": "Acuerdo real nuclear o Ucrania con comunicado conjunto firmado",
+        "accion_m82": "Solo ahi se re-evalua postura - Hasta entonces, nada - Requiere documento oficial, no titular"
+      }
+    },
+    "m82_dictamen": {
+      "postura": "BUNKER MODE / 0.30x LOCK - SIN CAMBIO - 100% DRY POWDER",
+      "regla_oro_18_19": "NO operar sobre titulares en vivo - Ruido primeras 2h, correccion siguientes 6h - Todo UNCONFIRMED hasta documento oficial",
+      "webhooks": "DISABLED_BUNKER - 0 ejecuciones",
+      "relacionado": "TRUMP_DENUC_2026_11_08 - NEGOTIATION_UNCONFIRMED"
+    }
+  },
+  "trump_venezuela_fortune_claim": {
+    "id": "TRUMP_VEN_FORTUNE_2026_11_08",
+    "timestamp": "19:29:25 VET",
+    "status": "CLAIM_TRUMP",
+    "verification": "CLAIM DE TRUMP - NO VERIFICADO COMO GANANCIA NETA EE.UU. - NO USAR PARA RECALIBRAR PRODUCCION NI PRECIOS - NO ES DATO EIA / OPEC / REUTERS / KPLER / LSEG",
+    "source": "CBS 60 Minutes 6-8 Nov 2026 / Fox News 16 May 2026 / Politico 28 / Reuters / FT / Congreso EE.UU.",
+    "versions_separadas": {
+      "v1_60_minutes_nov": {
+        "fecha": "6-8 Nov 2026 - CBS 60 Minutes - Ross Douthat",
+        "frase_exacta": "We've won two wars. We've won Venezuela and taken out billions and billions and billions of dollars already, and we will be taking out many billions of dollars and get along very well. We won that war in less than one hour.",
+        "nota": "NO dijo literal 'We made a fortune' en este corte - dijo 'billions and billions'"
+      },
+      "v2_fox_may": {
+        "fecha": "16 May 2026 - Fox News",
+        "frase_exacta": "We made a fortune from Venezuelan oil",
+        "claim_adicional": "Venezuela gano mas de petroleo en 8 meses que en los 10 anos anteriores - SIN FUENTE, SIN AUDITORIA PUBLICA",
+        "nota": "ESTA es la version literal 'made a fortune'"
+      },
+      "v3_politico": {
+        "fecha": "Politico 28 - Entrevista Politico",
+        "frase_exacta": "I've made a fortune for the United States by focusing [on Venezuela]",
+        "nota": "Tercera version - mismo mensaje, distinto framing"
+      }
+    },
+    "hechos_verificados": {
+      "operacion_3_ene_2026": "Raid 48 minutos - Trump: '48 minutes and 13 seconds' - Captura Maduro + Cilia Flores - Detenidos",
+      "orden_9_ene": "Ingresos petroleros = propiedad soberana Venezuela pero en custodia Tesoro EE.UU. - Rubio con autoridad aprobar / bloquear desembolsos",
+      "primer_tramo": "~$500M venta inicial a Vitol / Trafigura - Fondos a cuenta controlada EE.UU. en Qatar - Riesgo embargo acreedores - Reuters: $300M repartidos entre 4 bancos venezolanos para vender dolares en mercado cambiario",
+      "total_acumulado_prensa": "+$13,000M en ventas petroleo venezolano desde enero - ~150M barriles - Segun Trump / FT - BRUTO, NO GANANCIA NETA",
+      "desembolsos_state_dept_abr": "~$3,000M para salarios gobierno + suministros petroleros en Venezuela",
+      "investigacion_congreso": "House Oversight, Senate Finance / Banking - Wyden, Warren, Garcia, Casten - Piden trazabilidad - Bessent: no confirmo quien controla ni si fluye a personas EE.UU. - Auditoria KPMG mencionada, nunca compartida con Congreso ni publico",
+      "sin_contabilidad_publica": "Cerca de $10B sin contabilidad publica completa segun calculo prensa - Falta transparencia, NO prueba de robo personal - NO hay evidencia en reporting serio de que Trump personalmente haya metido dinero en cuenta privada"
+    },
+    "m82_dictamen": {
+      "postura": "BUNKER MODE / 0.30x LOCK - SIN CAMBIO - 100% DRY POWDER - 0 ejecuciones",
+      "divergencia_venezuela_mantenida": "Reuters Oct 860K / OPEC Sep 1,206K comunicado / 1,150K secundarias / PDVSA Gobierno Oct 1,251K-1,252K claim / Merey 16 $93.92 last - Frase Trump NO resuelve divergencia - Es narrativa politica post-midterms, no dato",
+      "relacionado": "TRUMP_60MIN_MIDTERMS - CONFIRMED - Guerra Iran + Gas = derrota midterms / TRUMP_DENUC_2026_11_08 - NEGOTIATION_UNCONFIRMED / APEC_SHENZHEN_2026_11_18_19 - WATCHLIST_ACTIVE",
+      "regla": "Todo claim Trump sobre Venezuela va como CLAIM_TRUMP hasta auditoria publica / EIA / OPEC / Reuters / Kpler"
+    }
+  },
+  "trump_ai_guardrails": {
+    "id": "TRUMP_AI_GUARDRAILS_2026_11_08",
+    "timestamp": "19:40:24 VET",
+    "status": "POLICY_SIGNAL_NO_REGULATION_YET",
+    "verification": "CONFIRMED Reuters LSEG 8 Nov - UPDATE 1 - USA-TRUMP/AI - Cambio de tono, NO cambio de politica - Sin ley, sin EO, sin fecha, sin nivel definido",
+    "source": "Reuters LSEG Workspace - Jarrett Renshaw - 8 Nov 2026 - go.refinitiv.com/news?id=urn:newsml:newswire.refinitiv.com:20261109:nL2N46Q00A:1",
+    "event": "USA-TRUMP/AI - CBS 60 Minutes - Ross Douthat",
+    "quotes": {
+      "guardrails": "I don't mind guardrails",
+      "china_position": "No quiere regulaciones que pongan a EE.UU. en 'a deep second position' detras de China, que segun el no tiene tales restricciones",
+      "democrats": "Apertura a trabajar con Democratas en safeguards",
+      "risks": "Riesgos de IA son manejables"
+    },
+    "context_reuters": "Antes: Trump favorecia que empresas se auto-regulen, sin restricciones gubernamentales amplias - Ahora: apertura a safeguards, pero no esta claro a que nivel",
+    "m82_impact": {
+      "blackrock_ai_anchor": "NVDA, AAPL, MSFT, META, AMZN, GOOGL, AVGO, TSM, PLTR, ARM - Riesgo regulatorio sube en tono, NO en ley - Sin cambio de ponderacion",
+      "china_link": "Preambulo APEC 18-19 Nov - Trump-Xi: IA / chips / control exportaciones",
+      "congress": "Congreso democrata entrante post-midterms - Ventana para guardrails light, no sweeping regulation",
+      "classification": "POLICY_SIGNAL - No disparador de capital - No cambio BUNKER"
+    },
+    "m82_dictamen": {
+      "postura": "BUNKER MODE / 0.30x LOCK - SIN CAMBIO - 100% DRY POWDER - 0 ejecuciones",
+      "regla": "Solo se re-evalua si hay bill / EO / texto oficial con nivel de regulacion definido - Hasta entonces, solo tono"
+    }
+  },
+  "apec_ai_chips_bridge": {
+    "id": "APEC_AI_CHIPS_BRIDGE_2026_11_08",
+    "timestamp": "19:46:12 VET",
+    "status": "BRIDGE_ACTIVE_PRE_APEC",
+    "verification": "PUENTE LOGICO - NO ES ACUERDO - Preambulo 60 Minutes 8 Nov -> APEC 18-19 Nov - TODO UNCONFIRMED hasta comunicado oficial",
+    "preambulo_8_nov": {
+      "trump_60min": "I don't mind guardrails - No quiero EE.UU. en deep second position detras de China",
+      "interpretacion_m82": "Trump prepara mercado: guardrails SI, freno a empresas NO - Acuerdo chips no se leera como venderse a China, sino como guardrails con control"
+    },
+    "mesa_apec_18_19": {
+      "trump_xi": "Tregua comercial expira 10 Ene 2027 + Chips IA + Tierras raras + Soja / Energia",
+      "china_pide": "Relajar controles exportacion chips avanzados - NVDA H200 / Blackwell, AMD MI - Acceso semiconductores para entrenar IA",
+      "eeuu_pide": "Tierras raras, tregua extendida, compra soja / energia, freno fentanyl / controles",
+      "xi_putin_18_nov": "Energia + Ucrania - Respaldo energetico para que China no dependa de EE.UU."
+    },
+    "escenarios_chips": {
+      "A_solo_foto": {
+        "probabilidad": "ALTA",
+        "descripcion": "Nada de chips - Guardrails quedan en retorica",
+        "accion_m82": "PHOTO_OP - BUNKER intacto - 0 ejecuciones - NVDA / AI sin disparador"
+      },
+      "B_tregua_chips_light": {
+        "probabilidad": "MEDIA",
+        "descripcion": "EE.UU. permite venta chips capados a China, China suelta tierras raras",
+        "accion_m82": "Bullish corto NVDA / AVGO / TSM - Bearish largo ventaja EE.UU. - NO disparador compra BUNKER - Registrar como CHIPS_LIGHT_UNCONFIRMED hasta texto oficial"
+      },
+      "C_endurecimiento": {
+        "probabilidad": "BAJA-MEDIA",
+        "descripcion": "EE.UU. aprieta controles, China retalia tierras raras",
+        "accion_m82": "Shock cadena AI - NVDA / TSM / AVGO caen por supply chain, no earnings - BUNKER protege - NO comprar dip sin confirmacion"
+      }
+    },
+    "blackrock_ai_anchor_afectado": "NVDA, AVGO, TSM, ARM, PLTR, MSFT, META, GOOGL, AMZN, AAPL - Sin cambio ponderacion hasta documento oficial",
+    "m82_dictamen": {
+      "postura": "BUNKER MODE / 0.30x LOCK - SIN CAMBIO - 100% DRY POWDER - 0 ejecuciones",
+      "regla": "NO operar sobre titulares APEC en vivo - Ruido 2h, correccion 6h - Solo texto oficial / documento firmado cambia postura",
+      "relacionado": "TRUMP_AI_GUARDRAILS_2026_11_08 - POLICY_SIGNAL / APEC_SHENZHEN_2026_11_18_19 - WATCHLIST_ACTIVE"
+    }
+  },
+  "nvda_huang_investigation": {
+    "id": "NVDA_HUANG_2026_11_08",
+    "timestamp": "19:47:02 VET",
+    "status": "INVESTIGATION_OPEN",
+    "verification": "CONFIRMED: Huang admite affair + Board abre investigacion independiente + Trump defiende - ALEGADO, NO PROBADO: Alice Huang espia PRC, compromiso secretos Nvidia - Board: no reason to believe secrets compromised - Sin evidencia publica de filtracion",
+    "source": "Reuters 8-9 Nov / CNN 8 Nov / NYT 29 Oct / FT / Nvidia Board Statement 8 Nov",
+    "confirmed": {
+      "huang_memo_8_nov": "I was unfaithful to my wife. My actions hurt her and our children. There is no excuse. I am deeply sorry. - NO nombra a otra persona",
+      "board_8_nov": "Investigacion independiente - Comite directores independientes + outside counsel - Huang sigue CEO sin interrupcion - No reason to believe national security or NVIDIA secrets compromised - Will examine all available information",
+      "trump_8_nov": "I think he's an honorable guy - I have not spoken to him about it - I just know he's a fine person, but you never know - I think he probably has an excuse, you have to hear it - Amazing job for our country - No confirma si lo lleva a Asia",
+      "rubio_8_nov": "I just can't comment because of the nature of it",
+      "congress_5_nov": "3 chairmen GOP - Foreign Affairs, CCP, Intelligence - Carta a Huang pidiendo briefing conjunto a puerta cerrada sobre Alice Huang y protocolos seguridad Nvidia"
+    },
+    "alleged_not_proven": {
+      "alice_huang": "Ciudadana china, ex-reportera TV China, ejecutiva top Megaspeed Singapur - NO relacionada con Jensen - Inteligencia EE.UU. cree reclutada por Ministerio Seguridad Estado China para aprender chips IA y posiblemente influir a Jensen",
+      "megaspeed": "Data centers Singapur - Uno de mayores clientes Nvidia SEA - Compro chips desde 2024 - Sospechosa bulk para revender / contrabandear a China o correr datacenters para usuarios chinos",
+      "memo_primavera": "Memo supervisado por Rubio circulo entre top policymakers Trump - Trump briefed ano pasado / antes visita China mayo - No actuo",
+      "china_response": "Embajada China: groundless smears"
+    },
+    "m82_impact": {
+      "apec_chips_bridge": "Escenario B Tregua + Chips Light BAJA de MEDIA a BAJA - Politicamente toxico - Escenario C Endurecimiento SUBE - Congreso exigira mas controles, no menos",
+      "nvda": "Riesgo reputacional + regulatorio + liderazgo, NO earnings todavia - Volatilidad por investigacion abierta - Sin cambio ponderacion BUNKER",
+      "classification": "INVESTIGATION_OPEN - No disparador compra / venta - Solo vigilancia"
+    },
+    "m82_dictamen": {
+      "postura": "BUNKER MODE / 0.30x LOCK - SIN CAMBIO - 100% DRY POWDER - 0 ejecuciones",
+      "regla": "Solo cambia si Board / Congreso / DOJ publican hallazgo de compromiso de secretos - Hasta entonces, affair = personal CONFIRMED, espionaje = ALLEGED",
+      "relacionado": "APEC_AI_CHIPS_BRIDGE_2026_11_08 - BRIDGE_ACTIVE / TRUMP_AI_GUARDRAILS_2026_11_08 - POLICY_SIGNAL"
+    }
+  },
+  "iran_stalemate_8nov": {
+    "id": "IRAN_STALEMATE_2026_11_08",
+    "timestamp": "19:53:00 VET",
+    "status": "IRAN_STALEMATE_TALKS_OPEN",
+    "verification": "CONFIRMED Reuters LSEG WRAPUP 3 - 8 Nov - Trump highly unlikely strikes si talks avanzan - Rubio: no breakthrough inminente - Hormuz: buque EE.UU. deshabilitado CONFIRMADO, 2-3 tanqueros minas REPORTADO IRAN, NO confirmado Reuters - Qeshm: Tasnim 2 misiles, NI Iran NI EE.UU. comentan",
+    "source": "Reuters LSEG - go.refinitiv.com/news?id=urn:newsml:newswire.refinitiv.com:20261108:nL6N46P069:3 - IRAN-CRISIS WRAPUP 3",
+    "trump_cnn_8_nov": {
+      "strikes": "It depends on whether or not they sign a very strong agreement - Highly unlikely it's going to be necessary",
+      "threat": "38 bridges that we can knock down in literally one hour - Si strikes reanudan, targets infraestructura ya identificados",
+      "nota": "CNN no especifica pregunta exacta - Reuters lo marca",
+      "truth_social": "Task Force Iron Gate is in full force and effect - Crackdown armas avanzadas + material sancionado - Fronteras terrestres + Mar Caspio",
+      "vance": "A lot of people did not like Vance's comments on Iran - Vance habia dicho: The reason we lost is the war"
+    },
+    "rubio_8_nov": {
+      "midterms": "Se niega a comentar link guerra-elecciones - Defiende: president identified very real threat and addressed it",
+      "diplomacy": "No cree breakthrough inminente - Right now hasn't been very productive because Iranian demands are simply not just unacceptable, but in some cases outrageous and ridiculous and really not realistic"
+    },
+    "hormuz_8_nov": {
+      "eeuu_confirmado": "Sabado noche USAF disparo a popa buque comercial Golfo Oman, deshabilitado intentando romper bloqueo",
+      "iran_reportado_no_confirmado": "2 petroleros chocan minas ruta no autorizada Hormuz, se incendian - 3er tanquero explota y se incendia Fars - Reuters NO pudo confirmar",
+      "qeshm": "Tasnim: 2 misiles Qeshm Island - TV estatal Iran: no confirmados strikes misiles, sugiere actividad militar irani propia - NI Iran NI EE.UU. comentan reporte Tasnim - EE.UU. 2 Nov dijo strike limitado defensivo Qeshm vs SAM iranies",
+      "ukmto": "Incidente bulk carrier + fuerzas militares Golfo Oman, 18mn este Khor Fakkan UAE - Dano desconocido - No claro si mismo ataque EE.UU.",
+      "houthi_saudi": "Domingo Ministerio Energia Saudita: edificio administrativo Aramco Riyadh danado por debris tras intento ataque - Sin heridos / muertos - Conflicto Houthi-Saudita escalando este mes"
+    },
+    "negociacion": {
+      "qatar": "Qatar nego reportes de que EE.UU.-Iran fallaron deal - PM qatari: ambas partes siguen trabajando hacia acuerdo",
+      "propuesta_iran_jueves": "Iran entrego propuesta nuclear via Qatar - EE.UU. revisando - Discusiones dependen Washington primero cumpliendo 7 demandas Iran: alivio sanciones, acceso activos congelados, reparaciones guerra",
+      "eeuu_posicion": "Temas nucleares deben estar en conversaciones iniciales",
+      "contexto": "Ataques EE.UU.-Israel desde febrero - Bloqueo EE.UU. puertos iranies desde abril - Hormuz restringido - Motor gas +50% desde enero que costo midterms"
+    },
+    "m82_impact": {
+      "gas_petroleo": "Sin desbloqueo Hormuz, no hay alivio estructural gas - BUNKER protege",
+      "apec": "Trump no quiere strikes antes APEC 18-19 Nov - Pausa tactica con bloqueo activo - Iran no en agenda formal APEC, pero energia si en Xi-Putin-Trump",
+      "sucesion": "Rubio vs Vance vs Trump - Inestabilidad sucesion, no estabilidad politica exterior",
+      "classification": "IRAN_STALEMATE_TALKS_OPEN - No paz, no escalada mayor - Pausa tactica con bloqueo activo"
+    },
+    "m82_dictamen": {
+      "postura": "BUNKER MODE / 0.30x LOCK - SIN CAMBIO - 100% DRY POWDER - 0 ejecuciones",
+      "regla": "Solo cambia si hay acuerdo firmado / desbloqueo Hormuz verificado / strikes mayores confirmados - Hasta entonces, stalemate",
+      "relacionado": "TRUMP_60MIN_MIDTERMS - CONFIRMED / APEC_SHENZHEN_2026_11_18_19 - WATCHLIST_ACTIVE"
+    }
+  },
+  "japan_yen_intervention": {
+    "id": "JAPAN_YEN_2026_11_09",
+    "timestamp": "19:57:42 VET",
+    "status": "FX_INTERVENTION_CONFIRMED",
+    "verification": "CONFIRMED - Dato oficial MOF Japon - Datos trimestrales publicados 9 Nov - Confirmacion retrospectiva, NO intervencion en vivo hoy",
+    "source": "Reuters LSEG - Makiko Yamazaki - 9 Nov 2026 - go.refinitiv.com/news?id=urn:newsml:newswire.refinitiv.com:20261108:nQ8N42X02U:1 - JAPAN-YEN URGENT",
+    "datos_mof": {
+      "intervencion_dias": "3 dias - 30 Jul al 3 Ago 2026",
+      "record_30_jul": "7.98 trillones yen = $50.36B vendidos en dolares para comprar yen - Record historico diario",
+      "record_previo": "6.28 trillones yen el 30 Abr - Superado por 30 Jul",
+      "serie_mof": "Data desde 1991",
+      "fx_cable": "$1 = 158.4500 yen"
+    },
+    "m82_impact": {
+      "carry_trade": "Yen debil = carry barato - Intervencion $50B encarece carry, riesgo desarme - Golpea todos activos riesgo al mismo tiempo - NVDA, AI, petroleo, emergentes",
+      "energia_japon": "Japon importa casi todo petroleo / LNG - Yen desplomado amenaza importaciones energia - MOF frena caida para proteger costo energia",
+      "timing": "30 Jul - 3 Ago - En pleno risk-on AI - Japon frena caida yen aunque cueste reservas",
+      "classification": "FX_INTERVENTION_CONFIRMED - Senal estres sistemico - NO disparador compra - Justifica BUNKER"
+    },
+    "m82_dictamen": {
+      "postura": "BUNKER MODE / 0.30x LOCK - SIN CAMBIO - 100% DRY POWDER - 0 ejecuciones - REFORZADO por estres FX",
+      "regla": "Solo se re-evalua si MOF interviene de nuevo en vivo + USD/JPY rompe niveles clave + desarme carry confirmado - Hasta entonces, vigilancia",
+      "relacionado": "APEC_SHENZHEN_2026_11_18_19 - WATCHLIST_ACTIVE / TRUMP_AI_GUARDRAILS - POLICY_SIGNAL / NVDA_HUANG - INVESTIGATION_OPEN"
+    }
+  },
+  "gold_roi_russell": {
+    "id": "GOLD_ROI_2026_11_09",
+    "timestamp": "19:59:24 VET",
+    "status": "GOLD_OPINION_WGC_DATA",
+    "verification": "COLUMNA OPINION - NO NOTICIA - Datos WGC CONFIRMED, tesis Russell OPINION - No mezclar - Reuters ROI Clyde Russell 9 Nov",
+    "source": "Reuters LSEG - Clyde Russell - 9 Nov 2026 - go.refinitiv.com/news?id=urn:newsml:newswire.refinitiv.com:20261108:nL2N46P06N:1 - GOLD-OUTLOOK COLUMN-RUSSELL ROI",
+    "precio": {
+      "spot_6_nov": "$4,065.63 XAU=",
+      "min_ano_30_oct": "$3,869.85",
+      "record_29_ene": "$5,594.82",
+      "correccion_23_mar": "$4,097.99 tras profit-taking",
+      "piso": "$4,000 psicologico - Julio y Octubre por debajo, recupero - Ahora finding floor"
+    },
+    "datos_wgc_confirmados": {
+      "bancos_centrales_q3": "321.2 toneladas - Sube de 296.3 Q2 - Mayor desde Q4 2024",
+      "bancos_centrales_q1": "57.7 toneladas - Cuando precio en record - Demanda sensible a precio - Caida bajo $4,000 probablemente anima compras Q4",
+      "etf_oct": "+19 toneladas inflows",
+      "etf_q3": "+211.2 toneladas - Revierte -47.3 toneladas Q2",
+      "joyeria_india_q3": "99.9 toneladas - Mayor desde Q4 ano pasado - Traders reportan mas interes por festivales",
+      "joyeria_china_q3": "71.9 toneladas - Sube de 55.7 Q2",
+      "joyeria_china_india": "Casi 2/3 demanda global joyeria"
+    },
+    "tesis_russell_opinion": {
+      "rol_oro": "Perdio rol tradicional hedge inflacion / geopolitica - Ahora mas trading especulativo - Froth / hot money lavado en meses recientes",
+      "corto_plazo": "En limbo, vulnerable swings ambas direcciones - Riesgo: debilidad equities por cuestionamiento boom AI + victoria Democratas midterms cuestionan data centers hambrientos energia - Si equities caen, liquidan oro para cubrir - Patron historico",
+      "medio_plazo": "Debilidad equities puede ser positivo si se extiende a economia real - Debilidad equities + caida crudo por esperanzas fin Iran -> dial monetario vuelve neutral, posiblemente recortes proximo ano",
+      "largo_plazo": "Bullish - Diversificacion ante deficit fiscal EE.UU. insostenible + montana deuda comiendo revenue para servicio + demanda joyeria India / China",
+      "causa_sufrimiento_desde_ene": "Shift expectativas monetarias EE.UU. a tasas probablemente mas altas"
+    },
+    "m82_impact": {
+      "cadena_midterms": "Democratas cuestionan data centers -> golpea NVDA / AI -> golpea equities -> golpea oro corto plazo por liquidacion",
+      "cadena_iran": "Esperanza fin Iran -> crudo cae -> expectativa tasas baja -> oro sube medio plazo",
+      "cadena_yen": "Desarme carry trade -> liquidacion oro tambien en cadena",
+      "classification": "GOLD_OPINION_WGC_DATA - Datos WGC CONFIRMED, tesis OPINION - No cambia ponderacion oro BUNKER"
+    },
+    "m82_dictamen": {
+      "postura": "BUNKER MODE / 0.30x LOCK - SIN CAMBIO - 100% DRY POWDER - 0 ejecuciones",
+      "regla": "Oro en BUNKER es hedge fiscal, no trade - Solo se re-evalua si WGC Q4 confirma compras centrales masivas + Fed cambia a recortes - Hasta entonces, vigilancia",
+      "relacionado": "TRUMP_60MIN_MIDTERMS / IRAN_STALEMATE_2026_11_08 / JAPAN_YEN_2026_11_09"
+    }
+  },
+  "commodities_spot_dossier": {
+    "timestamp": "20:04:35 VET",
+    "xau_gold_spot": {
+      "price": 4106.64,
+      "change_pct": 1.01,
+      "symbol": "XAU="
+    },
+    "xag_silver_spot": {
+      "price": 52.9256,
+      "change_pct": 2.03,
+      "symbol": "XAG="
+    },
+    "xpt_platinum_spot": {
+      "price": 1553.87,
+      "change_pct": 1.34,
+      "symbol": "XPT="
+    },
+    "xpd_palladium_spot": {
+      "price": 1044.5,
+      "change_pct": 2.03,
+      "symbol": "XPD="
+    },
+    "comex_gold_front": {
+      "price": 4064.5,
+      "change_pct": -0.89,
+      "symbol": "GCc1"
+    },
+    "comex_gold_next": {
+      "price": 4107.9,
+      "change_pct": 0.81,
+      "symbol": "GCc2"
+    },
+    "comex_silver_front": {
+      "price": 51.803,
+      "change_pct": -0.74,
+      "symbol": "SIc1"
+    },
+    "status": "COMMODITIES_METALS_SYNCED"
+  },
+  "global_fx_dossier": {
+    "timestamp": "20:22:07 VET",
+    "usd_index": {
+      "level": 102.2,
+      "change_friday_pct": 0.7,
+      "status": "STABLE_HIGH"
+    },
+    "fedwatch_dec_hike_prob": 79.0,
+    "g10_crosses": {
+      "eur_usd": 1.11485,
+      "aud_usd": 0.6875,
+      "usd_jpy": 158.185,
+      "gbp_usd": 1.336,
+      "usd_cad": 1.4119,
+      "nzd_usd": 0.5557
+    },
+    "macro_catalysts": [
+      "US Payrolls surprise to upside",
+      "Hawkish Fed speakers (Williams, Musalem, Daly)",
+      "NZ Election results pending final count (27 Nov)"
+    ],
+    "status": "GLOBAL_FX_FEDWATCH_SYNCED"
+  },
+  "nvda_huang_dossier": {
+    "timestamp": "21:54:47 VET",
+    "event": "NVIDIA_HUANG_PROBE_KOREA_UPDATE1",
+    "source": "REUTERS_SEOUL_NVIDIA-PROBE/CEO-SOUTHKOREA_UPDATE1",
+    "korea_statement": "Contracted GPU production/delivery unaffected",
+    "gpus_delivered_2025": "10,000 GPUs delivered via 2025 supplementary budget, in use",
+    "gpus_2026": "Contracted, expected delivery 2026, in use this year per ministry",
+    "official": "Vice Minister Ryu Je-myeong, Ministry of Science and ICT",
+    "board_position": "No reason to believe US national security or NVDA confidential info leaked",
+    "jensen_position": "Full cooperation with independent investigation",
+    "madison_huang": "Cancelled Korea visit",
+    "nvidia_ai_day_seoul": "Proceeding as planned, ~2,000 participants, Physical AI / Agentic AI / Infra",
+    "status": "NVDA_INVESTIGATION_OPEN_SUPPLY_UNAFFECTED_KOREA"
+  },
+  "nvda_dossier": {
+    "timestamp": "22:42:37 VET",
+    "ticker": "NVDA.O",
+    "entity": "NVIDIA CORPORATION",
+    "source": "REFINITIV_WORKSPACE_NVDA_STREAM",
+    "starmine_scores": {
+      "value": 43,
+      "momentum": 93
+    },
+    "peer_positioning": "Top Quantile Profitability vs Industry (AVGO, AMD, QCOM)",
+    "multi_exchange": "NASDAQ / XETRA / LSE / Tradegate Synced",
+    "status": "NVDA_QUANT_TELEMETRY_SYNCED"
+  },
+  "m82_core_version": "V63.0.01-A",
+  "governance_mode": "BUNKER_MODE_0.30X_LOCK",
+  "dry_powder": "100.0%",
+  "active_daemons_count": 60,
+  "nodes": {
+    "caracas_hq": "CENTRAL_DIRECTIVE_STANDBY",
+    "charallave_edge": "PRODUCTION_ACTIVE_L4_L5"
+  },
+  "sovereign_integrations": {
+    "saudi_gov_aum": "$1.444T USD",
+    "aramco_anchor": "91.64% ($1.323T)",
+    "blackrock_aum": "$15.49T USD",
+    "norges_bank": "GPFG_EQUITY_SYNCED",
+    "japan_mof_record": "JPY_7.98T_SINGLE_DAY"
+  },
+  "watchlist": "APEC_SHENZHEN_18_19_NOV_READY"
 }

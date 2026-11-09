@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/home/M82/m82_red_days_counter.py", line 35, in <module>
+    update_checklist_counter()
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/data/data/com.termux/files/home/M82/m82_red_days_counter.py", line 7, in update_checklist_counter
+    res = execute_query("SELECT consecutive_red_days FROM m82_mcm_checklist ORDER BY id DESC LIMIT 1;", fetch=True)
+  File "/data/data/com.termux/files/home/M82/m82_db.py", line 21, in execute_query
+    cursor.execute(query, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: m82_mcm_checklist

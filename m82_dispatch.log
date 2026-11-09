@@ -1,0 +1,12 @@
+2026-10-20 19:28:32,444 [INFO] Telegram alert dispatched successfully.
+2026-10-20 19:28:32,750 [INFO] ntfy push alert dispatched successfully.
+2026-10-20 19:32:33,382 [INFO] Telegram Macro alert dispatched successfully.
+2026-10-20 19:33:45,201 [ERROR] Error procesando updates de Telegram: ('Connection aborted.', ConnectionAbortedError(103, 'Software caused connection abort'))
+2026-10-20 19:33:54,479 [INFO] Telegram Macro alert dispatched successfully.
+2026-10-20 19:36:10,950 [INFO] Telegram Macro alert dispatched successfully.
+2026-10-20 19:36:16,352 [INFO] Telegram Macro alert dispatched successfully.
+2026-10-20 19:39:05,740 [INFO] Telegram Macro alert dispatched successfully.
+2026-10-20 19:40:42,934 [INFO] Telegram Macro alert dispatched successfully.
+2026-10-20 19:42:27,937 [INFO] Telegram Macro alert dispatched successfully.
+2026-10-20 19:43:29,279 [INFO] Telegram Macro alert dispatched successfully.
+2026-10-20 19:46:25,577 [ERROR] Error procesando updates de Telegram: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot8600412468:AAHiBNgu230J01IzeqL7rZORHdmAcgHFcj4/getUpdates?offset=0&timeout=5 (Caused by NewConnectionError("HTTPSConnection(host='api.telegram.org', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))

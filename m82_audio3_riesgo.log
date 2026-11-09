@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/home/M82/m82_audio3_riesgo.py", line 23, in <module>
+    c.execute("UPDATE m82_ve_deal SET spr_logica = spr_logica || ' | AUDIO3: No mueve precio - 170k/350k vs 10M global - timing antes Nov' WHERE id = (SELECT MAX(id) FROM m82_ve_deal)")
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: m82_ve_deal

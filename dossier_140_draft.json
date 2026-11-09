@@ -1,0 +1,39 @@
+{
+    "dossier_id": 140,
+    "status": "RESERVED_PENDING_G20_CONFIRMATION",
+    "timestamp_updated": "2026-10-06 22:18:25",
+    "topic": "STRUCTURAL_ENERGY_RENTS_OFFSHORE_DRAIN",
+    "target_asset": "CVG Venalum / Bauxilum / Guri Energy Matrix",
+    "risk_score": 8.5,
+    "architectural_framework": "Structured Commercial Credit & Offtake Discount (Vicepresidencia / Min. Econom\u00eda y Finanzas)",
+    "thesis_core": {
+        "mechanism": "Arbitraje de Estructura Contractual (Tolling Offshore vs. Retenci\u00f3n Onshore)",
+        "entity_counterparty": "Mercuria Energy Group Ltd (Dubai) / Heeney Capital JV",
+        "value_capture_flow": [
+            "1. Pre-financiamiento offshore de insumos cr\u00edticos (al\u00famina, \u00e1nodos, coke) + CAPEX de celdas",
+            "2. Estructuraci\u00f3n de deuda comercial registrada como pasivo para la estatal (Venalum)",
+            "3. Offtake fijado con descuento masivo sobre LME (15-30%) + Fee de estructuraci\u00f3n offshore",
+            "4. Absorci\u00f3n de la energ\u00eda hundida del Guri (~$5-10/MWh) consumida localmente, valor monetizado en SPV Dub\u00e1i/Zug",
+            "5. Liquidaci\u00f3n neta residual hacia el Tesoro Nacional (TGN) / Renta descontada en origen"
+        ],
+        "fiscal_impact": "Operaci\u00f3n contable a p\u00e9rdida/breakeven nacional; margen capturado fuera de jurisdicci\u00f3n SENIAT/TGN",
+        "analog_vector": "Dossier #138 (Merey 16 STS Offtake) & ID 33 (Mercuria Refinitiv Dubai Validation)"
+    },
+    "houston_g20_policy_lever": "Exigencia de cl\u00e1usula de reversi\u00f3n de margen onshore para condicionar licenciamiento/operatividad",
+    "trigger_event": "Confirmation of 15,000 ton shipment or MOU disclosure at G20 Energy Summit Houston",
+    "market_surveillance_matrix": {
+        "master_ticker": "TSLA",
+        "role": "Nodo de Transmisi\u00f3n Tri-Vectorial (BTC / NVDA-TSM CAPEX / xAI-Musk Cross-Drain)",
+        "leading_indicators": [
+            "TSM",
+            "NVDA"
+        ],
+        "beta_control": "QQQ",
+        "private_liquidity_proxy": "SPCX",
+        "transmission_mechanics": {
+            "vector_1_btc": "Mark-to-market directo en balance corporativo -> liquidez real.",
+            "vector_2_ai_capex": "Demanda marginal FSD/Dojo. Sensible al costo de chips NVDA/TSM.",
+            "vector_3_musk_ecosystem": "Competencia de wafers TSM entre xAI y TSLA + drenaje de capital privado."
+        }
+    }
+}

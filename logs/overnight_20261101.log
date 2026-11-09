@@ -1,0 +1,96 @@
+🏛️ M82 FUTURES OVERNIGHT PULL — 2026-11-01 21:36:52.057534 VET
+✅ ES=F     S&P 500 E-mini          7644.25 -0.01%
+✅ NQ=F     Nasdaq 100 E-mini      28755.00 -0.01%
+✅ YM=F     Dow E-mini             52096.00 -0.00%
+✅ RTY=F    Russell 2000 E-mini     2837.50 +0.01%
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: NK=F"}}}
+$NK=F: No data found, symbol may be delisted
+$NK=F: No data found, symbol may be delisted
+⚠️ NK=F error single positional indexer is out-of-bounds
+✅ ^N225    Nikkei Cash Proxy      63093.17 +0.02%
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: 9984.HK"}}}
+$9984.HK: No data found, symbol may be delisted
+$9984.HK: No data found, symbol may be delisted
+⚠️ 9984.HK error single positional indexer is out-of-bounds
+✅ ^GDAXI   DAX Proxy              25817.48 +0.05%
+✅ CL=F     WTI Crude                101.18 -0.03%
+✅ BZ=F     Brent Proxy              110.60 -0.03%
+✅ GC=F     Gold                    3918.30 -0.01%
+✅ SI=F     Silver                    49.99 +0.00%
+✅ ZB=F     US 30Y Bond Future       107.66 +0.03%
+✅ DX-Y.NYB DXY Dollar Index         101.97 -0.01%
+✅ BTC-USD  BTC Overnight          78296.62 -0.03%
+✅ TELEMETRIA OVERNIGHT DESPACHADA
+✅ WAL CLEAN — 13 FUTURES INGESTED
+🏛️ M82 FUTURES OVERNIGHT PULL — 2026-11-01 21:38:13.716850 VET
+✅ ES=F     S&P 500 E-mini          7646.00 +0.02%
+✅ NQ=F     Nasdaq 100 E-mini      28764.50 +0.03%
+✅ YM=F     Dow E-mini             52105.00 +0.01%
+✅ RTY=F    Russell 2000 E-mini     2838.30 +0.01%
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: NK=F"}}}
+$NK=F: No data found, symbol may be delisted
+$NK=F: No data found, symbol may be delisted
+⚠️ NK=F error single positional indexer is out-of-bounds
+✅ ^N225    Nikkei Cash Proxy      63103.56 +0.08%
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: 9984.HK"}}}
+$9984.HK: No data found, symbol may be delisted
+$9984.HK: No data found, symbol may be delisted
+⚠️ 9984.HK error single positional indexer is out-of-bounds
+✅ ^GDAXI   DAX Proxy              25817.48 +0.05%
+✅ CL=F     WTI Crude                101.16 -0.07%
+✅ BZ=F     Brent Proxy              110.60 -0.03%
+✅ GC=F     Gold                    3920.60 +0.05%
+✅ SI=F     Silver                    49.99 +0.01%
+✅ ZB=F     US 30Y Bond Future       107.66 +0.00%
+✅ DX-Y.NYB DXY Dollar Index         101.98 +0.00%
+✅ BTC-USD  BTC Overnight          78296.95 +0.00%
+✅ TELEMETRIA OVERNIGHT DESPACHADA
+✅ WAL CLEAN — 13 FUTURES INGESTED
+🏛️ M82 FUTURES OVERNIGHT PULL — 2026-11-01 21:43:38.962266 VET
+✅ ES=F     S&P 500 E-mini          7646.00 -0.01%
+✅ NQ=F     Nasdaq 100 E-mini      28769.75 -0.02%
+✅ YM=F     Dow E-mini             52115.00 +0.00%
+✅ RTY=F    Russell 2000 E-mini     2838.80 -0.02%
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: NK=F"}}}
+$NK=F: No data found, symbol may be delisted
+$NK=F: No data found, symbol may be delisted
+⚠️ NK=F error single positional indexer is out-of-bounds
+✅ ^N225    Nikkei Cash Proxy      63067.36 +0.05%
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: 9984.HK"}}}
+$9984.HK: No data found, symbol may be delisted
+$9984.HK: No data found, symbol may be delisted
+⚠️ 9984.HK error single positional indexer is out-of-bounds
+✅ ^GDAXI   DAX Proxy              25817.48 +0.05%
+✅ CL=F     WTI Crude                101.07 +0.09%
+✅ BZ=F     Brent Proxy              110.39 +0.01%
+✅ GC=F     Gold                    3918.20 +0.04%
+✅ SI=F     Silver                    50.01 +0.12%
+✅ ZB=F     US 30Y Bond Future       107.69 +0.00%
+✅ DX-Y.NYB DXY Dollar Index         101.98 +0.00%
+✅ BTC-USD  BTC Overnight          78390.17 +0.03%
+✅ TELEMETRIA OVERNIGHT DESPACHADA
+✅ WAL CLEAN — 13 FUTURES INGESTED
+🏛️ M82 FUTURES OVERNIGHT PULL — 2026-11-01 21:45:42.285042 VET
+✅ ES=F     S&P 500 E-mini          7644.75 -0.01%
+✅ NQ=F     Nasdaq 100 E-mini      28766.50 -0.01%
+✅ YM=F     Dow E-mini             52104.00 -0.02%
+✅ RTY=F    Russell 2000 E-mini     2838.50 -0.01%
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: NK=F"}}}
+$NK=F: No data found, symbol may be delisted
+$NK=F: No data found, symbol may be delisted
+⚠️ NK=F error single positional indexer is out-of-bounds
+✅ ^N225    Nikkei Cash Proxy      63105.54 +0.02%
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: 9984.HK"}}}
+$9984.HK: No data found, symbol may be delisted
+$9984.HK: No data found, symbol may be delisted
+⚠️ 9984.HK error single positional indexer is out-of-bounds
+✅ ^GDAXI   DAX Proxy              25817.48 +0.05%
+✅ CL=F     WTI Crude                101.04 -0.04%
+✅ BZ=F     Brent Proxy              110.34 -0.09%
+✅ GC=F     Gold                    3916.20 -0.01%
+✅ SI=F     Silver                    49.92 -0.14%
+✅ ZB=F     US 30Y Bond Future       107.72 +0.00%
+✅ DX-Y.NYB DXY Dollar Index         101.97 -0.00%
+✅ BTC-USD  BTC Overnight          78326.43 -0.03%
+✅ TELEMETRIA OVERNIGHT DESPACHADA
+✅ WAL CLEAN — 13 FUTURES INGESTED

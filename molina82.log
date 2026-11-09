@@ -1,0 +1,6 @@
+nohup: ignoring input
+INFO:     Started server process [30805]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8083 (Press CTRL+C to quit)
+INFO:     127.0.0.1:46678 - "POST /v1/chat HTTP/1.1" 500 Internal Server Error

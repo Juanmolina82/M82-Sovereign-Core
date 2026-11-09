@@ -1,0 +1,61 @@
+{
+    "equities": [
+        {
+            "ticker": "SPX",
+            "name": "S&P 500 Index",
+            "last": "5,815.20",
+            "change": "+0.45%"
+        },
+        {
+            "ticker": "NDX",
+            "name": "NASDAQ 100",
+            "last": "20,420.10",
+            "change": "+0.82%"
+        },
+        {
+            "ticker": "DJI",
+            "name": "Dow Jones Ind",
+            "last": "42,860.50",
+            "change": "+0.12%"
+        }
+    ],
+    "fx": [
+        {
+            "pair": "EUR/USD",
+            "last": "1.0925",
+            "change": "-0.15%"
+        },
+        {
+            "pair": "GBP/USD",
+            "last": "1.3060",
+            "change": "+0.08%"
+        },
+        {
+            "pair": "USD/JPY",
+            "last": "149.20",
+            "change": "+0.35%"
+        }
+    ],
+    "commodities": [
+        {
+            "item": "BRENT CRUDE",
+            "last": "$77.40",
+            "change": "-1.20%"
+        },
+        {
+            "item": "GOLD (XAU)",
+            "last": "$2,658.50",
+            "change": "+0.65%"
+        },
+        {
+            "item": "COPPER",
+            "last": "$4.38",
+            "change": "+1.10%"
+        }
+    ],
+    "news": [
+        "US Inflation expectations stabilize as Fed signals rate pause.",
+        "LSEG Industrials Q3 Earnings momentum hits 3-year high.",
+        "Oil edges lower amid demand concerns in Asian markets."
+    ]
+}

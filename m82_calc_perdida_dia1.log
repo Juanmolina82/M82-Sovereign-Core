@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/home/M82/m82_calc_perdida_dia1.py", line 8, in <module>
+    c.execute("SELECT brent_price, dubai_squeeze, red_day_flag, consecutive_red_days FROM m82_mcn_checklist ORDER BY id DESC LIMIT 1")
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: m82_mcn_checklist

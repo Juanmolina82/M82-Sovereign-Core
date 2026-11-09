@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/home/M82/m82_core_final_reservas.py", line 27, in <module>
+    c.execute("UPDATE m82_ve_deal SET campos = campos || ' | RESERVAS INFLADAS: 1 trillon in situ pero 5-8% real vs 20% Chavez - M82_MACRO no lo aceptaria como probada' WHERE id = (SELECT MAX(id) FROM m82_ve_deal)")
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: m82_ve_deal

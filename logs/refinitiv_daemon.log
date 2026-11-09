@@ -1,0 +1,26 @@
+nohup: ignoring input
+📡 [REFINITIV WORKSPACE DAEMON] Conectado a la red de feeds...
+📰 [REFINITIV DAEMON] Capturado: GCC MARKETS: Saudi & UAE Sukuk Yields Adjust Ahead...
+📰 [REFINITIV DAEMON] Capturado: MENA SUKUK: Qatar & Bahrain Islamic Bonds Moderate...
+📰 [REFINITIV DAEMON] Capturado: REFINITIV IF NEWS: GIB Named Top-Performing Middle...
+📰 [REFINITIV DAEMON] Capturado: MENA SUKUK: Qatar & Bahrain Islamic Bonds Moderate...
+📰 [REFINITIV DAEMON] Capturado: ISLAMIC FINANCE: International Sukuk Issuance Reac...
+📰 [REFINITIV DAEMON] Capturado: REFINITIV IF NEWS: GIB Named Top-Performing Middle...
+📰 [REFINITIV DAEMON] Capturado: MENA SUKUK: Qatar & Bahrain Islamic Bonds Moderate...
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/home/M82/m82_refinitiv_daemon.py", line 59, in <module>
+    main()
+    ~~~~^^
+  File "/data/data/com.termux/files/home/M82/m82_refinitiv_daemon.py", line 56, in main
+    push_refinitiv_headline(f"{news} - {datetime.now().strftime('%H:%M')}")
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/home/M82/m82_refinitiv_daemon.py", line 36, in push_refinitiv_headline
+    cursor.execute("""
+    ~~~~~~~~~~~~~~^^^^
+        INSERT INTO m82_multi_stream (daemon_source, headline, status)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        VALUES ('REFINITIV_WORKSPACE', ?, 'PENDING')
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    """, (headline,))
+    ^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked

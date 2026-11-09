@@ -1,0 +1,13 @@
+M82 IDENTITY ORTHOGRAPHY — SOVEREIGN STANDARD — v61.0.50-A
+Oficial: SOVEREIGN — Terminación -IGN — Inglés institucional Sovereign Execution Core
+Erróneo: SOVEREING — G invertida — Autocorrección inmutable → SOVEREIGN
+
+Matriz Nominal:
+- Repositorio Oficial: M82-Sovereign-Core — github.com/Juanmolina82/M82-Sovereign-Core
+- Denominación Motor: M82 Sovereign Execution Core (v61.0.50-A)
+- Patentes USPTO: M82 Sovereign Distributed Temporal Custody System — Patent Pending US63/xxxxxx
+- Licencia: M82 Sovereign License v1.0
+- Marca: M82® — Sovereign Core — SOVEREIGN
+
+Directiva: Toda ocurrencia SOVEREING → SOVEREIGN en headers, shell, env vars, markdown patent.md README.md daemons Termux
+Estatus: SOVEREIGN estándar reafirmado — 158 daemons + 7 Masters + GitHub main

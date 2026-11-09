@@ -1,0 +1,26 @@
+================================================================================
+ 🚀 INICIALIZANDO DEPLOYER MAESTRO M82 // NODO CHARALLAVE (FULL SUITE UPDATED)
+================================================================================
+
+[FASE 0] Adquiriendo Termux Wake-Lock para ejecución continua...
+  ✓ Wake-Lock activado (Protección contra Deep Sleep CPU).
+
+[FASE 1] Configurando y Blindando Esquemas SQLite...
+  ✓ Base de datos SQLite y migraciones sincronizadas correctamente.
+
+[FASE 2] Registrando Matriz Completa de 40 Daemons (8 Mesas)...
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/home/M82/m82_charallave_node_deployer.py", line 421, in <module>
+    register_daemons()
+    ~~~~~~~~~~~~~~~~^^
+  File "/data/data/com.termux/files/home/M82/m82_charallave_node_deployer.py", line 167, in register_daemons
+    c.execute("""
+    ~~~~~~~~~^^^^
+        INSERT INTO m82_daemons_registry (daemon_name, desk_category, vector_type, status, last_heartbeat)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+            last_heartbeat=excluded.last_heartbeat
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    """, (d_name, desk, vector, now))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked

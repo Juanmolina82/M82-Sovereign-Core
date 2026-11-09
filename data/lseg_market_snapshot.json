@@ -1,0 +1,97 @@
+{
+    "timestamp": "2026-10-13 22:10:49",
+    "indices": {
+        "S&P 500": 5815.2,
+        "NASDAQ 100": 20420.1,
+        "DOW JONES": 42860.5
+    },
+    "fx_rates": {
+        "EUR/USD": 1.0925,
+        "GBP/USD": 1.306,
+        "USD/JPY": 149.2
+    },
+    "commodities": {
+        "BRENT CRUDE": 77.4,
+        "GOLD": 2658.5,
+        "COPPER": 4.38
+    },
+    "gics_sectors": {
+        "XLE": {
+            "gics": "10 Energy",
+            "price": 517.52,
+            "alpha_score": 0.57,
+            "chain": "0#SPX-ENERGY",
+            "description": "Oil, gas, refining, Chevron JV, Faja heavy"
+        },
+        "XLB": {
+            "gics": "15 Materials",
+            "price": 359.15,
+            "alpha_score": 0.71,
+            "chain": "0#MB-RAREARTH",
+            "description": "Rare earths, chemicals, Merey, steel"
+        },
+        "XLI": {
+            "gics": "20 Industrials",
+            "price": 227.91,
+            "alpha_score": 0.69,
+            "chain": "0#MB-RE-NDPR",
+            "description": "Aerospace, logistics, BETA eVTOL, RIVN supply chain"
+        },
+        "XLY": {
+            "gics": "25 Consumer Disc",
+            "price": 358.51,
+            "alpha_score": 0.55,
+            "chain": "0#AMZN-RTAIL",
+            "description": "AMZN, TSLA, RIVN, luxury"
+        },
+        "XLP": {
+            "gics": "30 Consumer Staples",
+            "price": 328.64,
+            "alpha_score": 0.65,
+            "chain": "0#US-STAPLES",
+            "description": "Defensivo, inflation sticky"
+        },
+        "XLV": {
+            "gics": "35 Health Care",
+            "price": 166.66,
+            "alpha_score": 0.89,
+            "chain": "0#US-HEALTH",
+            "description": "Pharma, biotech"
+        },
+        "XLF": {
+            "gics": "40 Financials",
+            "price": 204.38,
+            "alpha_score": 0.69,
+            "chain": "0#US-BANKS",
+            "description": "JPM WFC BAC C GS MS Q3 BEAT/MISS"
+        },
+        "XLK": {
+            "gics": "45 Information Tech",
+            "price": 407.58,
+            "alpha_score": 0.82,
+            "chain": "0#MB-RE-ND",
+            "description": "NVDA MSFT AAPL, AI bull 4yr + Mag7 40% SPX, H100/H200"
+        },
+        "XLC": {
+            "gics": "50 Comm Services",
+            "price": 511.83,
+            "alpha_score": 0.85,
+            "chain": "0#SPACEX-TELCO",
+            "description": "GOOGL META NFLX, Starlink telco -6% AT&T/Verizon"
+        },
+        "XLU": {
+            "gics": "55 Utilities",
+            "price": 541.98,
+            "alpha_score": 0.71,
+            "chain": "0#CHINA-GRID",
+            "description": "Power grid, CoreWeave 240MW Mumbai, China curtail 50/20"
+        },
+        "XLRE": {
+            "gics": "60 Real Estate",
+            "price": 250.32,
+            "alpha_score": 0.61,
+            "chain": "0#US-REIT",
+            "description": "REITs, rates sensitivity"
+        }
+    }
+}

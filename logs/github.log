@@ -1,0 +1,70 @@
+[main af35f96] M82 AUTO-BLINDAJE 2026-11-04T18:38:20Z — 0.12B 33ev PID 24606 — BUNKER 0.30x — Warsh 102bps
+ 26 files changed, 682 insertions(+), 112 deletions(-)
+ create mode 100644 lseg_all_sectors.csv
+ create mode 100644 lseg_block_trades.csv
+ create mode 100644 lseg_export.csv
+ create mode 100644 lseg_market_monitor.csv
+ create mode 100755 m82_all_sectors_ingest.py
+ create mode 100755 m82_futures_overnight_pull.py
+ create mode 100755 m82_lseg_block_trades_daemon.py
+ create mode 100755 m82_lseg_market_monitor.py
+ mode change 100644 => 100755 m82_master_dossier.py
+ create mode 100755 scripts/ingest_workspace_feeds.sh
+ create mode 100755 scripts/lseg_csv_to_ntfy.sh
+ create mode 100755 scripts/m82_auto_ntfy_dispatcher.sh
+ create mode 100755 scripts/m82_block_dispatch.sh
+ create mode 100755 scripts/m82_dual_5min_dispatcher.sh
+ create mode 100755 scripts/m82_earnings_sector_alert.sh
+ create mode 100755 scripts/m82_fix_cron_earnings.sh
+ create mode 100755 scripts/m82_fix_ntfy_dedup.sh
+ create mode 100755 scripts/m82_fix_tmpdir_termux.sh
+ create mode 100755 scripts/m82_full_closing_dispatch.sh
+ create mode 100755 scripts/m82_github_blindaje.sh
+ create mode 100755 scripts/m82_monthly_dossier.sh
+ create mode 100755 scripts/m82_wallstreet_daemon.sh
+ create mode 100755 scripts/m82_weekly_dossier.sh
+ create mode 100755 scripts/ntfy.sh
+ create mode 100755 scripts/ntfy_dedup_wrapper.sh
+ create mode 100755 scripts/warriors_three_240.sh
+[main 6cd992a] M82 AUTO-BLINDAJE 2026-11-05T20:03:46Z — 0.12B 33ev PID 24606 — BUNKER 0.30x — Warsh 102bps
+ 9 files changed, 597 insertions(+)
+ create mode 100644 m82_analytics_pivot_engine.py
+ create mode 100644 m82_dispatch_dashboard.py
+ create mode 100644 m82_dossier_engine.py
+ create mode 100644 m82_ingest_lseg_qcom.py
+ create mode 100644 m82_ingest_macro_pivot.py
+ create mode 100644 m82_quantum_plunge_ingest.py
+ create mode 100644 m82_quantum_pythagoras.py
+ create mode 100644 m82_quantum_swarm_vectorizer.py
+ create mode 100644 m82_v63_master_seal.py
+[main cb84fe2] M82 AUTO-BLINDAJE 2026-11-06T00:00:30Z — 0.12B 33ev PID 24606 — BUNKER 0.30x — Warsh 102bps
+ 5 files changed, 193 insertions(+), 85 deletions(-)
+ create mode 100644 m82_cli_patch.py
+ create mode 100755 m82_futures_bridge.py
+ create mode 100644 m82_futures_patch.py
+[main d2657f8] M82 AUTO-BLINDAJE 2026-11-06T16:06:14Z — 0.12B 33ev PID 24606 — BUNKER 0.30x — Warsh 102bps
+ 24 files changed, 1197 insertions(+), 210 deletions(-)
+ create mode 100644 m82_colombia_oil_fix.py
+ create mode 100644 m82_colombia_oil_ingest.py
+ create mode 100644 m82_eia_natgas_ingest.py
+ create mode 100644 m82_eia_venezuela_ingest.py
+ create mode 100644 m82_extr_ma_ingest.py
+ create mode 100644 m82_final_fix_dossier.py
+ create mode 100644 m82_fix_macro_dossier.py
+ create mode 100755 m82_gas_universe_monitor.py
+ create mode 100644 m82_global_instruments_ingest.py
+ create mode 100755 m82_inject_live_prices.py
+ create mode 100644 m82_nfp_beat_ingest.py
+ create mode 100644 m82_nfp_wrapup2_ingest.py
+ create mode 100644 m82_nyse_full_ingest.py
+ create mode 100644 m82_quant_doctrine_ingest.py
+ create mode 100644 m82_rebuild_macro_dossier.py
+ create mode 100755 m82_refinitiv_workspace_pull.py
+ create mode 100755 m82_telegram_dispatcher.py
+ create mode 100644 m82_update_realtime.py
+ create mode 100644 m82_update_telemetry.py
+ create mode 100644 m82_wallstreet_deep_analytics.py
+ create mode 100644 m82_wrapup8_ingest.py
+[main ae280c7] M82 AUTO-BLINDAJE 2026-11-07T00:36:07Z — 0.12B 33ev PID 24606 — BUNKER 0.30x — Warsh 102bps
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 m82_database.db

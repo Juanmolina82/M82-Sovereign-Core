@@ -1,0 +1,1 @@
+/data/data/com.termux/files/home/M82/lite_runner_v2_integrated.py

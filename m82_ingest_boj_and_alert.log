@@ -1,0 +1,8 @@
+================================================================================
+ 🚀 INGESTION & DISPATCHER: BOJ RATE POLICY (NODO CHARALLAVE)
+================================================================================
+[*] Conectando a la BD con soporte WAL y timeout=30s...
+✅ BOJ Sep summary inyectado exitosamente en macro_dosier.
+[*] Despachando alerta a ntfy.sh/MM82...
+  ✓ Alerta Push entregada a ntfy.sh/MM82
+================================================================================

@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/home/M82/m82_macro_ofac48D.py", line 47, in <module>
+    c.execute("INSERT INTO m82_multi_stream VALUES (NULL,?,?,?,?)", ("M82_OFAC_48D_V6", h, "PENDING", now))
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: UNIQUE constraint failed: m82_multi_stream.headline

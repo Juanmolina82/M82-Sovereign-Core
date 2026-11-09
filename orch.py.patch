@@ -1,0 +1,2 @@
+# ADD THIS AT TOP OF process_stream loop:
+# if 'Signal update' in headline or '1792729293' in headline or len(headline)<30: continue

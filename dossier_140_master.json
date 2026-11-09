@@ -1,0 +1,33 @@
+{
+    "dossier_metadata": {
+        "dossier_id": 140,
+        "classification": "RESERVED_MACRO_FINANCIAL_DOSSIER",
+        "node_id": "Nodo Charallave (M82)",
+        "active_node": "NODE_83_POST_HIKE_CROWDING",
+        "updated_at": "2026-10-07T15:54:00-04:00",
+        "status": "NODE_83_ACTIVE"
+    },
+    "market_surveillance_matrix": {
+        "master_ticker": "TSLA",
+        "transmission_beta": "-2x vs QQQ",
+        "us10y_yield": "5.316%",
+        "us2y_yield": "4.780%",
+        "brent_crude": "99.86",
+        "wti_nov_close": "88.28",
+        "crowding_drivers": [
+            "SpaceX $40B IG offering",
+            "Hyperscalers $489B debt wall",
+            "US Treasury $39B auction"
+        ]
+    },
+    "portfolio_positioning_node_83": {
+        "tbills_3m_sgov": "70%",
+        "xle_gold_hedge": "20%",
+        "venz_distressed_sovereign": "10%"
+    },
+    "macro_triggers_log": [
+        {"id": 43, "ticker": "CROWDING_OUT_BEAR_STEEPENER", "impact": "Bear steepener en curva 2s10s por emisión masiva privada vs Treasuries"},
+        {"id": 44, "ticker": "FOMC_MINUTES_HAWKISH_RELEASE", "impact": "Minutas confirman sesgo hawkish. US10Y toca 5.36% intradía."},
+        {"id": 45, "ticker": "NODE_83_OPEN_POST_HIKE_CROWDING", "impact": "Transición oficial a Node 83. Matriz defensiva 70/20/10."}
+    ]
+}

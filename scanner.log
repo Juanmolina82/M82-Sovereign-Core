@@ -1,0 +1,95 @@
+nohup: ignoring input
+🚀 [M82 TICKER SCANNER] Barrido sobre 88 activos...
+ REGIME: MELTUP_CONCENTRATED | DRAIN SCALE: 50%
+✅ [BARRIDO FINALIZADO] Tickers registrados exitosamente en m82_database.db
+🚀 [M82 TICKER SCANNER] Barrido sobre 88 activos...
+ REGIME: MELTUP_CONCENTRATED | DRAIN SCALE: 30%
+✅ [BARRIDO FINALIZADO] Tickers registrados exitosamente en m82_database.db
+🚀 [M82 TICKER SCANNER] Barrido sobre 88 activos...
+ REGIME: MELTUP_CONCENTRATED | DRAIN SCALE: 30%
+✅ [BARRIDO FINALIZADO] Tickers registrados exitosamente en m82_database.db
+🚀 [M82 TICKER SCANNER] Barrido sobre 88 activos...
+ REGIME: MELTUP_CONCENTRATED | DRAIN SCALE: 30%
+✅ [BARRIDO FINALIZADO] Tickers registrados exitosamente en m82_database.db
+🚀 [M82 TICKER SCANNER] Barrido sobre 88 activos...
+ REGIME: MELTUP_CONCENTRATED | DRAIN SCALE: 30%
+✅ [BARRIDO FINALIZADO] Tickers registrados exitosamente en m82_database.db
+🚀 [M82 TICKER SCANNER] Barrido sobre 88 activos...
+ REGIME: MELTUP_CONCENTRATED | DRAIN SCALE: 30%
+✅ [BARRIDO FINALIZADO] Tickers registrados exitosamente en m82_database.db
+🚀 [M82 TICKER SCANNER] Barrido sobre 88 activos...
+ REGIME: MELTUP_CONCENTRATED | DRAIN SCALE: 30%
+✅ [BARRIDO FINALIZADO] Tickers registrados exitosamente en m82_database.db
+🚀 [M82 TICKER SCANNER] Barrido sobre 88 activos...
+ REGIME: MELTUP_CONCENTRATED | DRAIN SCALE: 30%
+✅ [BARRIDO FINALIZADO] Tickers registrados exitosamente en m82_database.db
+🚀 [M82 TICKER SCANNER] Barrido sobre 88 activos...
+ REGIME: MELTUP_CONCENTRATED | DRAIN SCALE: 30%
+✅ [BARRIDO FINALIZADO] Tickers registrados exitosamente en m82_database.db
+🚀 [M82 TICKER SCANNER] Barrido sobre 88 activos...
+ REGIME: MELTUP_CONCENTRATED | DRAIN SCALE: 30%
+✅ [BARRIDO FINALIZADO] Tickers registrados exitosamente en m82_database.db
+🚀 [M82 TICKER SCANNER] Barrido sobre 88 activos...
+ REGIME: MELTUP_CONCENTRATED | DRAIN SCALE: 30%
+✅ [BARRIDO FINALIZADO] Tickers registrados exitosamente en m82_database.db
+🚀 [M82 TICKER SCANNER] Barrido sobre 88 activos...
+ REGIME: MELTUP_CONCENTRATED | DRAIN SCALE: 30%
+✅ [BARRIDO FINALIZADO] Tickers registrados exitosamente en m82_database.db
+🚀 [M82 TICKER SCANNER] Barrido sobre 88 activos...
+ REGIME: MELTUP_CONCENTRATED | DRAIN SCALE: 30%
+✅ [BARRIDO FINALIZADO] Tickers registrados exitosamente en m82_database.db
+🚀 [M82 TICKER SCANNER] Barrido sobre 88 activos...
+ REGIME: MELTUP_CONCENTRATED | DRAIN SCALE: 30%
+✅ [BARRIDO FINALIZADO] Tickers registrados exitosamente en m82_database.db
+🚀 [M82 TICKER SCANNER] Barrido sobre 88 activos...
+ REGIME: MELTUP_CONCENTRATED | DRAIN SCALE: 30%
+✅ [BARRIDO FINALIZADO] Tickers registrados exitosamente en m82_database.db
+🚀 [M82 TICKER SCANNER] Barrido sobre 88 activos...
+ REGIME: MELTUP_CONCENTRATED | DRAIN SCALE: 30%
+✅ [BARRIDO FINALIZADO] Tickers registrados exitosamente en m82_database.db
+🚀 [M82 TICKER SCANNER] Barrido sobre 88 activos...
+ REGIME: MELTUP_CONCENTRATED | DRAIN SCALE: 30%
+✅ [BARRIDO FINALIZADO] Tickers registrados exitosamente en m82_database.db
+🚀 [M82 TICKER SCANNER] Barrido sobre 88 activos...
+ REGIME: MELTUP_CONCENTRATED | DRAIN SCALE: 30%
+✅ [BARRIDO FINALIZADO] Tickers registrados exitosamente en m82_database.db
+🚀 [M82 TICKER SCANNER] Barrido sobre 88 activos...
+ REGIME: MELTUP_CONCENTRATED | DRAIN SCALE: 30%
+✅ [BARRIDO FINALIZADO] Tickers registrados exitosamente en m82_database.db
+🚀 [M82 TICKER SCANNER] Barrido sobre 88 activos...
+ REGIME: MELTUP_CONCENTRATED | DRAIN SCALE: 30%
+✅ [BARRIDO FINALIZADO] Tickers registrados exitosamente en m82_database.db
+🚀 [M82 TICKER SCANNER] Barrido sobre 88 activos...
+ REGIME: MELTUP_CONCENTRATED | DRAIN SCALE: 30%
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/home/M82/m82_ticker_scorer.py", line 75, in run_scanner
+    c.execute("""
+    ~~~~~~~~~^^^^
+        INSERT OR IGNORE INTO m82_multi_stream
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        (daemon_source, headline, clean_headline, alpha_score, confidence, final_score, asset_impact, status, created_at, risk_budget_usd)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    """, (f"SCANNER_{ticker}", headline, clean_hl, score, 90, score, ticker, status, now_str, ev * 0.10))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/home/M82/m82_ticker_scorer.py", line 92, in <module>
+    run_scanner()
+    ~~~~~~~~~~~^^
+  File "/data/data/com.termux/files/home/M82/m82_ticker_scorer.py", line 81, in run_scanner
+    c.execute("""
+    ~~~~~~~~~^^^^
+        INSERT OR IGNORE INTO m82_multi_stream
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        (daemon_source, headline, clean_headline, alpha_score, confidence, final_score, asset_impact, status, created_at)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    """, (f"SCANNER_{ticker}", headline, clean_hl, score, 90, score, ticker, status, now_str))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked

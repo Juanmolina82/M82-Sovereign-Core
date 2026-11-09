@@ -1,0 +1,5 @@
+nohup: ignoring input
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/home/M82/m82_high_frequency.py", line 9, in <module>
+    from m82_fusion_engine import FusionEngine
+ModuleNotFoundError: No module named 'm82_fusion_engine'

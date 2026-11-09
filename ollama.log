@@ -1,0 +1,53 @@
+nohup: ignoring input
+Couldn't find '/data/data/com.termux/files/home/.ollama/id_ed25519'. Generating new private key.
+Your new public key is: 
+
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFmgLsqJhRR4yV6GuA3u/Fe1CZT1uBztgMayHcL2tp0r
+
+time=2026-10-14T04:51:25.509Z level=INFO source=routes.go:1919 msg="server config" env="map[CUDA_VISIBLE_DEVICES: GGML_VK_VISIBLE_DEVICES: GPU_DEVICE_ORDINAL: HIP_VISIBLE_DEVICES: HSA_OVERRIDE_GFX_VERSION: HTTPS_PROXY: HTTP_PROXY: LLAMA_ARG_FIT: LLAMA_ARG_FIT_TARGET: NO_PROXY: OLLAMA_CONTEXT_LENGTH:0 OLLAMA_DEBUG:INFO OLLAMA_DEBUG_LOG_REQUESTS:false OLLAMA_EDITOR: OLLAMA_FLASH_ATTENTION:false OLLAMA_GO_TEMPLATE:true OLLAMA_GPU_OVERHEAD:0 OLLAMA_HOST:http://127.0.0.1:11434 OLLAMA_IGPU_ENABLE: OLLAMA_KEEP_ALIVE:5m0s OLLAMA_KV_CACHE_TYPE: OLLAMA_LLM_LIBRARY: OLLAMA_LOAD_TIMEOUT:5m0s OLLAMA_MAX_LOADED_MODELS:0 OLLAMA_MAX_QUEUE:512 OLLAMA_MAX_TRANSFER_STREAMS:4 OLLAMA_MODELS:/data/data/com.termux/files/home/.ollama/models OLLAMA_NOHISTORY:false OLLAMA_NOPRUNE:false OLLAMA_NO_CLOUD:false OLLAMA_NUM_PARALLEL:1 OLLAMA_ORIGINS:[http://localhost https://localhost http://localhost:* https://localhost:* http://127.0.0.1 https://127.0.0.1 http://127.0.0.1:* https://127.0.0.1:* http://0.0.0.0 https://0.0.0.0 http://0.0.0.0:* https://0.0.0.0:* app://* file://* tauri://* vscode-webview://* vscode-file://*] OLLAMA_REMOTES:[ollama.com] OLLAMA_SCHED_SPREAD:false OLLAMA_VULKAN:true ROCR_VISIBLE_DEVICES: http_proxy: https_proxy: no_proxy:]"
+time=2026-10-14T04:51:25.511Z level=INFO source=routes.go:1921 msg="Ollama cloud disabled: false"
+time=2026-10-14T04:51:25.515Z level=INFO source=images.go:864 msg="total blobs: 0"
+time=2026-10-14T04:51:25.515Z level=INFO source=images.go:871 msg="total unused blobs removed: 0"
+time=2026-10-14T04:51:25.517Z level=INFO source=routes.go:1981 msg="Listening on 127.0.0.1:11434 (version 0.30.10)"
+time=2026-10-14T04:51:25.523Z level=INFO source=model_list_cache.go:111 msg="model list cache hydration complete" models=0 failures=0 elapsed=5.757154ms
+time=2026-10-14T04:51:25.526Z level=INFO source=runner.go:60 msg="discovering available GPUs..."
+time=2026-10-14T04:51:26.457Z level=INFO source=types.go:50 msg="inference compute" id=cpu library=cpu compute="" name=cpu description=cpu libdirs=ollama driver="" pci_id="" type="" total="7.6 GiB" available="2.6 GiB"
+time=2026-10-14T04:51:26.457Z level=INFO source=routes.go:2031 msg="vram-based default context" total_vram="0 B" default_num_ctx=4096
+[GIN] 2026/10/14 - 04:51:26 | 404 |    5.757231ms |       127.0.0.1 | POST     "/api/generate"
+[GIN] 2026/10/14 - 04:51:26 | 404 |    5.837769ms |       127.0.0.1 | POST     "/api/generate"
+time=2026-10-14T04:51:26.491Z level=INFO source=model_recommendations.go:177 msg="model recommendations cache sleep scheduled" wait=3h50m11.995352461s consecutive_failures=0
+[GIN] 2026/10/14 - 04:51:34 | 404 |     1.47723ms |       127.0.0.1 | POST     "/api/generate"
+[GIN] 2026/10/14 - 04:51:41 | 404 |    3.087693ms |       127.0.0.1 | POST     "/api/generate"
+[GIN] 2026/10/14 - 04:51:49 | 404 |     415.077µs |       127.0.0.1 | POST     "/api/generate"
+[GIN] 2026/10/14 - 04:51:56 | 404 |     694.692µs |       127.0.0.1 | POST     "/api/generate"
+[GIN] 2026/10/14 - 04:52:03 | 404 |    1.529462ms |       127.0.0.1 | POST     "/api/generate"
+[GIN] 2026/10/14 - 04:53:39 | 404 |    1.828077ms |       127.0.0.1 | POST     "/api/generate"
+[GIN] 2026/10/14 - 04:53:46 | 404 |     757.846µs |       127.0.0.1 | POST     "/api/generate"
+[GIN] 2026/10/14 - 04:53:57 | 404 |    1.103462ms |       127.0.0.1 | POST     "/api/generate"
+[GIN] 2026/10/14 - 04:54:04 | 404 |     821.846µs |       127.0.0.1 | POST     "/api/generate"
+[GIN] 2026/10/14 - 04:54:12 | 404 |     566.385µs |       127.0.0.1 | POST     "/api/generate"
+[GIN] 2026/10/14 - 04:54:18 | 404 |     512.308µs |       127.0.0.1 | POST     "/api/generate"
+[GIN] 2026/10/14 - 04:54:18 | 404 |     866.692µs |       127.0.0.1 | POST     "/api/generate"
+[GIN] 2026/10/14 - 04:54:25 | 404 |    2.051692ms |       127.0.0.1 | POST     "/api/generate"
+[GIN] 2026/10/14 - 04:54:32 | 404 |     636.923µs |       127.0.0.1 | POST     "/api/generate"
+[GIN] 2026/10/14 - 04:54:39 | 404 |         700µs |       127.0.0.1 | POST     "/api/generate"
+[GIN] 2026/10/14 - 04:54:46 | 404 |    1.504385ms |       127.0.0.1 | POST     "/api/generate"
+[GIN] 2026/10/14 - 04:54:53 | 404 |     350.154µs |       127.0.0.1 | POST     "/api/generate"
+[GIN] 2026/10/14 - 04:55:00 | 404 |     913.308µs |       127.0.0.1 | POST     "/api/generate"
+[GIN] 2026/10/14 - 04:55:07 | 404 |    1.175077ms |       127.0.0.1 | POST     "/api/generate"
+[GIN] 2026/10/14 - 04:55:14 | 404 |         953µs |       127.0.0.1 | POST     "/api/generate"
+[GIN] 2026/10/14 - 04:55:21 | 404 |     826.769µs |       127.0.0.1 | POST     "/api/generate"
+[GIN] 2026/10/14 - 04:55:28 | 404 |     843.385µs |       127.0.0.1 | POST     "/api/generate"
+[GIN] 2026/10/14 - 04:55:36 | 404 |    1.394153ms |       127.0.0.1 | POST     "/api/generate"
+[GIN] 2026/10/14 - 04:55:43 | 404 |     966.385µs |       127.0.0.1 | POST     "/api/generate"
+[GIN] 2026/10/14 - 04:55:50 | 404 |    1.148923ms |       127.0.0.1 | POST     "/api/generate"
+[GIN] 2026/10/14 - 04:55:58 | 404 |         591µs |       127.0.0.1 | POST     "/api/generate"
+[GIN] 2026/10/14 - 04:56:07 | 404 |    1.965615ms |       127.0.0.1 | POST     "/api/generate"
+[GIN] 2026/10/14 - 04:56:14 | 404 |    1.598461ms |       127.0.0.1 | POST     "/api/generate"
+[GIN] 2026/10/14 - 04:56:23 | 404 |    1.029538ms |       127.0.0.1 | POST     "/api/generate"
+[GIN] 2026/10/14 - 04:59:20 | 404 |   21.577846ms |       127.0.0.1 | POST     "/api/generate"
+[GIN] 2026/10/14 - 05:33:34 | 404 |   25.766153ms |       127.0.0.1 | POST     "/api/generate"
+[GIN] 2026/10/14 - 05:33:41 | 404 |     798.077µs |       127.0.0.1 | POST     "/api/generate"
+[GIN] 2026/10/14 - 05:36:46 | 404 |   81.621924ms |       127.0.0.1 | POST     "/api/generate"
+[GIN] 2026/10/14 - 05:36:54 | 404 |     881.231µs |       127.0.0.1 | POST     "/api/generate"
+[GIN] 2026/10/14 - 06:32:42 | 404 |   49.194077ms |       127.0.0.1 | POST     "/api/generate"

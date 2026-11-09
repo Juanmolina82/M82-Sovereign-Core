@@ -1,0 +1,13 @@
+================================================================================
+ 🤖 M82 NYFT BOT & DISPATCHER CORE
+================================================================================
+ [+] Evento Crítico Detectado [ID 5]:
+  ├─ Origen: NABEP_M82
+  ├─ Mesa: VENEZUELA_DESK
+  ├─ Risk Score: 9.9
+  └─ Titular: Venezuela PDVSA crude exports rally to 65B barrels capacity with 16c to 54c bond yield surge
+[*] Generando Tarjeta HUD para: [#M82 VENEZUELA_DESK] Venezuela PDVSA crude exports rally to 6...
+  ✓ Tarjeta HUD renderizada exitosamente.
+[i] Telegram Token/Chat_ID no configurados. Omitiendo envío remoto.
+  └─> Noticia procesada localmente: [VENEZUELA_DESK] Venezuela PDVSA crude exports rally to 65B barrels capacity with 16c to 54c bond yield surge
+================================================================================

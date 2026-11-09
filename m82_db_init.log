@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/home/M82/m82_db_init.py", line 23, in <module>
+    inicializar_m82_db()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/data/data/com.termux/files/home/M82/m82_db_init.py", line 17, in inicializar_m82_db
+    c.execute("INSERT INTO snapshot VALUES (datetime('now'), 92.43, 97.5, 32.5, 775.60, 810.46, 18.51)")
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: table snapshot has 3 columns but 7 values were supplied

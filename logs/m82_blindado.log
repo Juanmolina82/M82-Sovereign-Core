@@ -1,0 +1,16 @@
+==================================================================
+ M82 BLINDADO :: AUDITORIA + HARDENING
+Fri Nov  6 16:25:29 UTC 2026
+==================================================================
+ [1/4] HARDENING PERMISOS...
+  -> Permisos: 700 en ~/M82, 600 en .bashrc y DBs OK
+ [2/4] PERSISTENCIA WAL CHECKPOINT & INTEGRIDAD...
+60000
+0|0|0
+60000
+60000
+0|0|0
+ [3/4] CENSO REAL EN DATABASE...
+  DB Principal (m82_database.db) Registrados: 157
+  DB Familia (m82_familia.db) Registrados: 0 (sin tabla)
+ [4/4] GOBERNANZA BUNKER MODE 0.30x LOCK - WAL 0/0/0 CLEAN

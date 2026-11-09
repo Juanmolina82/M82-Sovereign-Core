@@ -1,0 +1,6 @@
+[Error 401] - {'error': 'invalid_client', 'error_description': 'Invalid Application Credential.'}
+Session is not opened. Can't send any request
+{
+  "error": "Session is not opened. Can't send any request",
+  "source": "M82_WIRE_WORKSPACE"
+}

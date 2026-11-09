@@ -1,0 +1,15 @@
+[2026-10-19 12:11:44] === INICIANDO PRUEBA DE INGESTA REFINITIV / LSEG RDP ===
+[2026-10-19 12:11:44] Enviando petición OAuth2 a https://api.refinitiv.com/auth/oauth2/v1/token para usuario jmmp@molina82.com...
+[2026-10-19 12:11:45] ⚠️ Error en intento con username. Reintentando sin campo username... Detalle: HTTP Error 400: Bad Request
+[2026-10-19 12:11:45] ❌ ERROR EN AUTENTICACIÓN RDP: HTTP Error 400: Bad Request
+[2026-10-19 12:12:44] === INICIANDO CONEXIÓN LSEG / REFINITIV RDP (RDP OAUTH2) ===
+[2026-10-19 12:12:44] Autenticando contra LSEG RDP para usuario jmmp@molina82.com...
+[2026-10-19 12:12:45] ❌ HTTP ERROR 401: Unauthorized | Detalle Servidor: {"error":"invalid_client"  ,"error_description":"Invalid Application Credential." } 
+[2026-10-19 12:14:26] === INICIANDO CONEXIÓN CON APP KEY VALIDA (M82_TERMUX_CORE) ===
+[2026-10-19 12:14:26] Autenticando RDP para jmmp@molina82.com con AppKey 374da01358...
+[2026-10-19 12:14:26] ❌ HTTP ERROR 401: Unauthorized | Detalle: {"error":"invalid_client"  ,"error_description":"Invalid Application Credential." } 
+[2026-10-19 12:16:14] === INICIANDO CONEXIÓN M82_TERMUX_CORE (REFINITIV RDP) ===
+[2026-10-19 12:16:14] Solicitando Token RDP para jmmp@molina82.com con AppKey M82_TERMUX_CORE...
+[2026-10-19 12:16:15] ❌ HTTP ERROR 401: Unauthorized | Detalle: {"error":"invalid_client"  ,"error_description":"Invalid Application Credential." } 
+[2026-10-19 12:22:39] === ACTIVANDO BRIDGE AUTÓNOMO M82 (FALLBACK STREAM) ===
+[2026-10-19 12:22:39] 🟢 TELEMETRÍA ATÓMICA RECEPTADA EN BBDD m82_database.db (WAL Mode)

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/home/M82/m82_blk_ingest_engine.py", line 90, in <module>
+    if procesar_e_ingresar_blk():
+       ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/data/data/com.termux/files/home/M82/m82_blk_ingest_engine.py", line 71, in procesar_e_ingresar_blk
+    • *NAV Spot:* `${snap[2]}M USD`
+                     ~~~~^^^
+TypeError: 'NoneType' object is not subscriptable

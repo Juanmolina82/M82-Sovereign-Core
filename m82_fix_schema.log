@@ -1,0 +1,9 @@
+🔧 [M82 SCHEMA REPAIR] Verificando columnas de m82_mcm_checklist...
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/home/M82/m82_fix_schema.py", line 31, in <module>
+    fix_and_run()
+    ~~~~~~~~~~~^^
+  File "/data/data/com.termux/files/home/M82/m82_fix_schema.py", line 21, in fix_and_run
+    c.execute("ALTER TABLE m82_mcm_checklist ADD COLUMN diesel_shortage_active INTEGER DEFAULT 1;")
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: m82_mcm_checklist

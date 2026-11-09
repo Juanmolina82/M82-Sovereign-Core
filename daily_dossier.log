@@ -1,0 +1,4 @@
+✅ Daily Dossier V3.1 generado: /data/data/com.termux/files/home/M82/daily_dossier.json - 30 alertas | Schema: ['id', 'timestamp', 'source', 'category', 'headline', 'gprk_index', 'yield_10y_delta', 'oil_spread_impact', 'risk_score', 'metadata_json', 'm82_tag', 'sentiment', 'entities']
+[2026-10-04 21:26:07] Daily Dossier re-index completed successfully.
+[2026-10-07 01:36:07] Daily Dossier re-index completed successfully.
+[2026-10-09 00:00:01] Daily Dossier re-index completed successfully.

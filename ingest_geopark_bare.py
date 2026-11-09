@@ -1,0 +1,20 @@
+#!/usr/bin/env python3
+import sqlite3, os, datetime
+
+DB = os.path.expanduser("~/M82/m82_database.db")
+
+headline = "GEOPARK BARE FIELD: 25-Yr Production Contract • $7B Capex • 1,100 Wells Reactivation (11k -> 95k bpd)"
+now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+conn = sqlite3.connect(DB, timeout=60.0)
+conn.execute("PRAGMA journal_mode=WAL;")
+c = conn.cursor()
+
+c.execute("""
+    INSERT OR REPLACE INTO m82_multi_stream (daemon_source, headline, status, timestamp)
+    VALUES ('M82_WIRE_GEOPARK_BARE', ?, 'PENDING', ?)
+""", (f"{headline} [{now}]", now))
+
+conn.commit()
+conn.close()
+print("✅ Evento GeoPark Campo Bare inyectado a m82_database.db.")

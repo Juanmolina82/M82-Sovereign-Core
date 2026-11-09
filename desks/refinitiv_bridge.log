@@ -1,0 +1,19 @@
+=========================================================================
+   M82 SOVEREIGN CORE :: INGESTA TELEMÉTRICA DE FUTUROS GLOBALES (WAL)  
+=========================================================================
+[M82 NODE] Target User: jmmp@molina82.com | Sede: Charallave L4/L5 Edge
+[FUTURES INGEST OK] CLc1    -> Spot/Last: $74.20     | Time: 19:57:03
+[FUTURES INGEST OK] LCOc1   -> Spot/Last: $78.45     | Time: 19:57:03
+[FUTURES INGEST OK] NGc1    -> Spot/Last: $2.68      | Time: 19:57:03
+[FUTURES INGEST OK] RBc1    -> Spot/Last: $2.15      | Time: 19:57:03
+[FUTURES INGEST OK] HOc1    -> Spot/Last: $2.32      | Time: 19:57:03
+[FUTURES INGEST OK] GCc1    -> Spot/Last: $2738.50   | Time: 19:57:03
+[FUTURES INGEST OK] SIc1    -> Spot/Last: $32.40     | Time: 19:57:03
+[FUTURES INGEST OK] HGc1    -> Spot/Last: $4.35      | Time: 19:57:03
+[FUTURES INGEST OK] ESc1    -> Spot/Last: $5780.25   | Time: 19:57:03
+[FUTURES INGEST OK] NQc1    -> Spot/Last: $20420.50  | Time: 19:57:03
+[FUTURES INGEST OK] VXc1    -> Spot/Last: $15.80     | Time: 19:57:03
+[FUTURES INGEST OK] ZCc1    -> Spot/Last: $412.50    | Time: 19:57:03
+[FUTURES INGEST OK] ZSc1    -> Spot/Last: $998.25    | Time: 19:57:03
+
+[M82 SYSTEM] ✅ Ingesta de Futuros completada con exito en BBDD WAL.

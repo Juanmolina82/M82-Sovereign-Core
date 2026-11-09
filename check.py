@@ -1,0 +1,13 @@
+import os, json
+p = os.path.expanduser('~/M82/app/data.json')
+d = json.load(open(p))
+print('=== CONSOLIDACION TOTAL ===')
+print('Source:', d.get('source'))
+print('Aramco:', d.get('saudi_aramco_dossier', {}).get('status'), d.get('saudi_aramco_dossier', {}).get('ticker'))
+print('Saudi News:', d.get('refinitiv_saudi_news_1000288295', {}).get('status'))
+print('BlackRock AUM:', d.get('refinitiv_earnings_q3', {}).get('blackrock_aum_trillion'), 'T')
+print('Vesper:', d.get('refinitiv_vesper_workspace', {}).get('status'))
+print('Merey:', d.get('equities', {}).get('MEREY16'))
+print('Debt 1-4:', all(k in d for k in ['inside_debt_1_jobs_fed_ecb','inside_debt_2_boj_uk_tech','inside_debt_3_markets_today','inside_debt_4_brazil_asia']))
+print('FHR + Morning:', 'refinery_filing_2026_11_07' in d and 'morning_news_call_2026_11_06' in d)
+print('BUNKER:', d.get('risk', {}).get('mode'), d.get('risk', {}).get('lock'))

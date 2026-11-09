@@ -1,0 +1,45 @@
+{
+  "source": "M82 Data Core",
+  "wire": "M82 Sovereign Wire",
+  "timestamp": "20:48:29 VET",
+  "equities": {
+    "S&P 500": {
+      "last": 5982.1,
+      "change": 0.42
+    },
+    "NASDAQ": {
+      "last": 18972.45,
+      "change": 0.65
+    },
+    "BRENT": {
+      "last": 97.76,
+      "change": 0.4
+    },
+    "MEREY16": {
+      "last": 93.92,
+      "change": 0.0
+    },
+    "WTI": {
+      "last": 90.67,
+      "change": 0.25
+    },
+    "SPCX": {
+      "last": 134.19,
+      "change_1m": -15.6
+    }
+  },
+  "risk": {
+    "mode": "BUNKER",
+    "lock": "0.30x",
+    "dry_powder": "100%",
+    "exposure": "0.22x",
+    "var": "1.68%"
+  },
+  "alerts": [
+    "HORMUZ: Piso $93-$97 - NO comprar en spike",
+    "MEREY: No sellar sin recalcular",
+    "EIA: Natgas 3,801 BCF +77",
+    "SPCX -15.6% en 1M vs NASDAQ-100 -13.6% - Sell-off tech, no tesis rota"
+  ],
+  "breaking": "OPEC+ monitorea estrecho de Ormuz: respuesta defensiva en crudo | Fed mantiene postura restrictiva | SPCX $134.19 (-15.6% 1M)"
+}

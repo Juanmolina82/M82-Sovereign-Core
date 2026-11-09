@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>M82 EXECUTIVE TERMINAL // SOVEREIGN CORE</title>
+<style>
+:root{--bg:#05080e;--panel:#070e17;--border:#121f33;--blue:#00e5ff;--amber:#ff9100;--red:#ff1744;--dim:#708090}
+body{background:var(--bg);color:#fff;font-family:Segoe UI,Roboto,monospace;margin:0;padding:10px}
+header{background:var(--panel);border:1px solid var(--blue);padding:10px 15px;border-radius:4px;display:flex;justify-content:space-between;align-items:center}
+.header-title{font-size:14px;font-weight:bold;color:var(--blue);letter-spacing:1px}
+.header-status{font-size:11px;color:#00ff66;font-weight:bold}
+.grid{display:grid;grid-template-columns:1fr;gap:10px;margin-top:10px}
+@media(min-width:768px){.grid{grid-template-columns:1fr 1fr}}
+.card{background:var(--panel);border:1px solid var(--border);padding:12px;border-radius:4px}
+.card-h{font-size:12px;font-weight:bold;color:var(--amber);border-bottom:1px solid var(--border);padding-bottom:6px;margin-bottom:8px;display:flex;justify-content:space-between}
+.row{display:flex;justify-content:space-between;font-size:11px;margin-bottom:5px}
+.val{font-weight:bold;color:var(--blue)}
+.stream{height:320px;overflow-y:auto;font-size:11px}
+.item{padding:6px 0;border-bottom:1px dashed var(--border)}
+.src{color:var(--blue);font-weight:bold}
+.time{color:var(--dim);font-size:9px}
+.footer{text-align:center;font-size:10px;color:var(--dim);margin-top:15px;padding:10px;border-top:1px solid var(--border)}
+</style>
+</head>
+<body>
+<header>
+<div><div class="header-title">M82 EXECUTIVE QUANTUM TERMINAL</div><div style="font-size:9px;color:var(--dim)">SOVEREIGN EXECUTION CORE // 100+ DAEMONS</div></div>
+<div class="header-status">🟢 SYNC 100+</div>
+</header>
+<div class="grid">
+<div class="card"><div class="card-h"><span>🛡 GOVERNANCE & RISK</span><span>BUNKER 0.30x</span></div>
+<div class="row"><span>EXPOSURE LOCK:</span><span class="val">0.22x / 0.30x</span></div>
+<div class="row"><span>VaR L5.1:</span><span class="val">1.68%</span></div>
+<div class="row"><span>WARSH SPREAD:</span><span class="val">+102.0 bps</span></div>
+<div class="row"><span>MEREY 16:</span><span class="val" style="color:var(--amber)">$93.75 Sep / $93.92 Live</span></div>
+<div class="row"><span>BRENT:</span><span class="val" style="color:var(--red)">$112.92 / $112.50 Hormuz</span></div>
+<div class="row"><span>WTI:</span><span class="val">$99.16 / $99.50</span></div></div>
+<div class="card"><div class="card-h"><span>📊 STARMINE 15 MODELS</span><span>QUANT</span></div>
+<div class="row"><span>CAM Combined Alpha:</span><span class="val">0.99 TOP</span></div>
+<div class="row"><span>ARM Revisions:</span><span class="val">0.96 ACCEL</span></div>
+<div class="row"><span>EQ Earnings Quality:</span><span class="val">0.94 SOLID</span></div>
+<div class="row"><span>CCR Credit Risk:</span><span class="val" style="color:#00ff66">LOW</span></div>
+<div class="row"><span>MATM M&A:</span><span class="val">ACTIVE</span></div>
+<div class="row"><span>RV/IV Val-Mo:</span><span class="val">ROTATION HARD ASSETS</span></div></div>
+</div>
+<div class="card" style="margin-top:10px"><div class="card-h"><span>🚨 M82-SOVEREIGN-CORE WIRE — 100+ DAEMONS</span><span id="clock">--:--:--</span></div>
+<div class="stream" id="stream">Cargando telemetría...</div></div>
+<div class="footer">[ AGI QUANTUM VERIFIED — CUSTODIA PASIVA 0.30x LOCK — @MolinaHoldings | Sovereign Execution Node ]</div>
+<script>
+function clk(){document.getElementById('clock').innerText=new Date().toTimeString().split(' ')[0]+" ET"};setInterval(clk,1000);
+async function fetchS(){try{let r=await fetch('/api/stream');if(r.ok){let d=await r.json();let c=document.getElementById('stream');c.innerHTML='';d.forEach(i=>{let div=document.createElement('div');div.className='item';div.innerHTML=`<div><span class="src">[${i.daemon_source}]</span> <span class="time">${i.created_at||''} #${i.id}</span></div><div>${i.headline}</div>`;c.appendChild(div)})}}catch(e){}};setInterval(fetchS,5000);fetchS();
+</script>
+</body>
+</html>

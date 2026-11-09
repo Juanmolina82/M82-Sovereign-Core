@@ -1,0 +1,223 @@
+timeout
+-------
+  60000
+                         Header
+--------------------------------------------------------
+========================================================
+                        Header
+-------------------------------------------------------
+   M82 CONSOLIDATED STREAMING DOSSIER (ULTIMOS 200)
+                         Header
+--------------------------------------------------------
+========================================================
+  id            daemon_source                                                                  headline                                                              status       created_at
+------  ------------------------------  ----------------------------------------------------------------------------------------------------------------------  ----------------  ----------
+872092  BRENT_CRUDE                     [BRENT_CRUDE | 2026-10-19 14:17:57] Brent tight physical Middle East tension                                            PENDING
+872091  COREWEAVE_AI                    [COREWEAVE_AI | 2026-10-19 14:17:12] CoreWeave 240MW Mumbai AdaniConneX CAPEX AI infra                                  PROCESSED
+872090  BRENT_CRUDE                     [BRENT_CRUDE | 2026-10-19 14:16:30] Brent tight physical Middle East tension                                            PROCESSED
+872089  ROBOTICS_PHYSICAL               [ROBOTICS_PHYSICAL | 2026-10-19 14:16:30] Edge VLA inference pipeline active on local Jetson / Orin node                PROCESSED
+872088  US10Y_YIELD                     [US10Y_YIELD | 2026-10-19 14:15:22] US 10Y Treasury yield shift credit impact                                           PROCESSED
+872087  VENZ34_DEBT                     [VENZ34_DEBT | 2026-10-19 14:14:52] VENZ34 sovereign debt restructuring range                                           PROCESSED
+872086  CARACAS_DESK_MONITOR            [CARACAS_DESK_MONITOR | 2026-10-19 14:14:19] Jose-Houston corridor via RD commercial SPV AMTB/BPOP                      PROCESSED
+872085  SPACEX_TELCO                    [SPACEX_TELCO | 2026-10-19 14:13:32] Starlink Direct-to-Cell FCC spectrum -6% AT&T/Verizon                              PROCESSED
+872084  ORINOCO_CRUDE                   [ORINOCO_CRUDE | 2026-10-19 14:13:04] Jose Terminal Faja heavy loading schedule                                         PROCESSED
+872083  PERIMETER_MONITOR               [PERIMETER_MONITOR | 2026-10-19 14:12:23] Local edge vision feed calibrated - zero-latency telemetry synced to WAL      PROCESSED
+872082  CARACAS_DESK_MONITOR            [CARACAS_DESK_MONITOR | 2026-10-19 14:12:23] Jose-Houston corridor via RD commercial SPV AMTB/BPOP                      PROCESSED
+872081  PERIMETER_MONITOR               [PERIMETER_MONITOR | 2026-10-19 14:08:35] Local edge vision feed calibrated - zero-latency telemetry synced to WAL      PROCESSED
+872080  IMF_GULF                        [IMF_GULF | 2026-10-19 14:08:35] IMF cuts Gulf -3.3% to -16% heavy premium validation                                   PROCESSED
+872079  VENZ34_DEBT                     [VENZ34_DEBT | 2026-10-19 14:07:46] VENZ34 sovereign debt restructuring range                                           PROCESSED
+872078  CHINA_GRID                      [CHINA_GRID | 2026-10-19 14:07:11] China power grid 50% cap 20% gen curtailment heavy baseload                          PROCESSED
+872077  BRENT_CRUDE                     [BRENT_CRUDE | 2026-10-19 14:06:50] Brent tight physical Middle East tension                                            PROCESSED
+872076  IMF_GULF                        [IMF_GULF | 2026-10-19 14:06:25] IMF cuts Gulf -3.3% to -16% heavy premium validation                                   PROCESSED
+872075  CITGO_OFAC_DESK                 [CITGO_OFAC_DESK | 2026-10-19 14:05:28] OFAC GL 5Z Citgo auction Delaware docket update                                 PROCESSED
+872074  PERIMETER_MONITOR               [PERIMETER_MONITOR | 2026-10-19 14:04:44] Local edge vision feed calibrated - zero-latency telemetry synced to WAL      PROCESSED
+872073  VENZ34_DEBT                     [VENZ34_DEBT | 2026-10-19 14:04:44] VENZ34 sovereign debt restructuring range                                           PROCESSED
+872072  PERIMETER_MONITOR               [PERIMETER_MONITOR | 2026-10-19 14:00:43] Local edge vision feed calibrated - zero-latency telemetry synced to WAL      PROCESSED
+872071  US10Y_YIELD                     [US10Y_YIELD | 2026-10-19 14:00:43] US 10Y Treasury yield shift credit impact                                           PROCESSED
+872070  IMF_GULF                        [IMF_GULF | 2026-10-19 13:20:48] IMF cuts Gulf -3.3% to -16% heavy premium validation                                   PROCESSED
+872069  COREWEAVE_AI                    [COREWEAVE_AI | 2026-10-19 13:20:09] CoreWeave 240MW Mumbai AdaniConneX CAPEX AI infra                                  PROCESSED
+872068  CITGO_OFAC_DESK                 [CITGO_OFAC_DESK | 2026-10-19 13:19:35] OFAC GL 5Z Citgo auction Delaware docket update                                 PROCESSED
+872067  HARDWARE_ABSTRACTION            [HARDWARE_ABSTRACTION | 2026-10-19 13:19:32] Hardware abstraction layer verified: agnostic VLA routing ready            PROCESSED
+872066  ORINOCO_CRUDE                   [ORINOCO_CRUDE | 2026-10-19 13:18:49] Jose Terminal Faja heavy loading schedule                                         PROCESSED
+872065  CITGO_OFAC_DESK                 [CITGO_OFAC_DESK | 2026-10-19 13:18:28] OFAC GL 5Z Citgo auction Delaware docket update                                 PROCESSED
+872064  LSEG_REFINITIV                  [IMF_GROWTH_CUT] IMF cuts Growth FX forecast for first time since May on Middle East supply fears                       PROCESSED
+872063  LSEG_REFINITIV                  [GOLD_REAL_YIELDS] Gold edges lower as firm dollar, elevated yields weigh                                               PROCESSED
+872062  LSEG_REFINITIV                  [LATAM_MEXICO_PE] LatAm PE edge higher with focus on Mexico polls                                                       PROCESSED
+872061  LSEG_REFINITIV                  [INDIA_IPO_MARKET] Indias Hyundai draws about $3.3 billion in IPO anchor investor tick                                  PROCESSED
+872060  LSEG_REFINITIV                  [CHINA_AUSS_GROWTH] Euro dips on French turmoil, Aussie lifted by China growth                                          PROCESSED
+872059  LSEG_REFINITIV                  [EURONEXT_FRENCH] French markets tumble as risks add to political crisis                                                PROCESSED
+872058  LSEG_REFINITIV                  [US_EARNINGS_STOCKS] US stocks rebound with Q1 earnings test at hand; French markets tumble                             PROCESSED
+872057  LSEG_REFINITIV                  [SEMI_CAPEX] Mapping the Market: Semiconductor stocks may be about to rise                                              PROCESSED
+872056  LSEG_REFINITIV                  [RATES_US10Y] US yields slightly higher as Traders focus on Fed policy shift                                            PROCESSED
+872055  LSEG_REFINITIV                  [OIL_TANKER_BRENT] Oil slips from five-month highs with Hormuz crossings, Russian sanctions waiver in focus             PROCESSED
+872054  PERIMETER_MONITOR               [PERIMETER_MONITOR | 2026-10-19 13:16:18] Local edge vision feed calibrated - zero-latency telemetry synced to WAL      PROCESSED
+872053  SPACEX_TELCO                    [SPACEX_TELCO | 2026-10-19 13:16:18] Starlink Direct-to-Cell FCC spectrum -6% AT&T/Verizon                              PROCESSED
+872051  CHINA_GRID                      [CHINA_GRID | 2026-10-19 13:09:56] China power grid 50% cap 20% gen curtailment heavy baseload                          MCM_ACTIVE
+872050  US10Y_YIELD                     [US10Y_YIELD | 2026-10-19 13:10:55] US 10Y Treasury yield shift credit impact — 418bps spread                           BUNKER_HOLD_030X
+872045  CHINA_GRID                      [CHINA_GRID | 2026-10-19 13:12:35] China power grid 50% cap 20% gen curtailment heavy baseload                          PROCESSED
+872044  US10Y_YIELD                     [US10Y_YIELD | 2026-10-19 13:10:55] US 10Y Treasury yield shift credit impact                                           PROCESSED
+872043  CHINA_GRID                      [CHINA_GRID | 2026-10-19 13:10:26] China power grid 50% cap 20% gen curtailment heavy baseload                          PROCESSED
+872042  COREWEAVE_AI                    [COREWEAVE_AI | 2026-10-19 13:09:56] CoreWeave 240MW Mumbai AdaniConneX CAPEX AI infra                                  PROCESSED
+872041  ROBOTICS_PHYSICAL               [ROBOTICS_PHYSICAL | 2026-10-19 13:09:56] Edge VLA inference pipeline active on local Jetson / Orin node                PROCESSED
+872040  IMF_GULF                        [IMF_GULF | 2026-10-19 13:07:15] IMF cuts Gulf -3.3% to -16% heavy premium validation                                   PROCESSED
+872039  ORINOCO_CRUDE                   [ORINOCO_CRUDE | 2026-10-19 13:06:30] Jose Terminal Faja heavy loading schedule                                         PROCESSED
+872038  IMF_GULF                        [IMF_GULF | 2026-10-19 13:03:34] IMF cuts Gulf -3.3% to -16% heavy premium validation                                   PROCESSED
+872037  HARDWARE_ABSTRACTION            [HARDWARE_ABSTRACTION | 2026-10-19 13:03:34] Hardware abstraction layer verified: agnostic VLA routing ready            PROCESSED
+872036  COREWEAVE_AI                    [COREWEAVE_AI | 2026-10-19 13:02:46] CoreWeave 240MW Mumbai AdaniConneX CAPEX AI infra                                  PROCESSED
+872035  CHINA_GRID                      [CHINA_GRID | 2026-10-19 13:02:23] China power grid 50% cap 20% gen curtailment heavy baseload                          PROCESSED
+872034  CHINA_GRID                      [CHINA_GRID | 2026-10-19 13:01:38] China power grid 50% cap 20% gen curtailment heavy baseload                          PROCESSED
+872033  ORINOCO_CRUDE                   [ORINOCO_CRUDE | 2026-10-19 13:01:14] Jose Terminal Faja heavy loading schedule                                         PROCESSED
+872032  REFINITIV_WIRE                  Portuguese airline deal stays in PGMO premium                                                                           PROCESSED
+872031  REFINITIV_WIRE                  AI boom shortens over white-water events                                                                                PROCESSED
+872030  REFINITIV_WIRE                  PETRA ODFX Accor scapegoating has lots of truth                                                                         PROCESSED
+872029  REFINITIV_WIRE                  Gali latest strain imperils a rapid recovery                                                                            PROCESSED
+872028  REFINITIV_WIRE                  Artcurials $11M dream stems from defect top                                                                             PROCESSED
+872027  REFINITIV_WIRE                  Galu Fleiss $27 billion play may stir in M&A skill                                                                      PROCESSED
+872026  REFINITIV_WIRE                  Crime network ingenuity extends to warehousing                                                                          PROCESSED
+872025  REFINITIV_WIRE                  Coreweave growth dreams hit a sanity check                                                                              PROCESSED
+872024  REFINITIV_WIRE                  Microdoses are set to reshape Hollywoods Artists                                                                        PROCESSED
+872023  REFINITIV_WIRE                  MELI announcement throws Indonesia into a panic                                                                         PROCESSED
+872022  REFINITIV_WIRE                  Russia sanctions fail to hit fuel exports to Europe                                                                     PROCESSED
+872021  REFINITIV_WIRE                  Aviation outlook flat so no real gains in AI soft-landing                                                               PROCESSED
+872020  REFINITIV_WIRE                  Euronexts car makers set course for managed decline                                                                     PROCESSED
+872019  REFINITIV_WIRE                  United Airlines rings the alarm on corporate AI                                                                         PROCESSED
+872018  REFINITIV_WIRE                  How US allies can win from a Trump mid-term defeat                                                                      PROCESSED
+872017  WORLD_MODEL_SIM                 [WORLD_MODEL_SIM | 2026-10-19 12:59:23] Oasis 3D world model synthesis generating synthetic physical edge telemetry     PROCESSED
+872016  CARACAS_DESK_MONITOR            [CARACAS_DESK_MONITOR | 2026-10-19 12:59:23] Jose-Houston corridor via RD commercial SPV AMTB/BPOP                      PROCESSED
+872015  WSJ_WIRE                        AI Agenda Trading Stocks While You Sleep; Charles Schwab CEO Is Skeptical                                               PROCESSED
+872014  WSJ_WIRE                        China Report Shows Alaska Deep Economic Problems at Home                                                                PROCESSED
+872013  WSJ_WIRE                        Farms Are Getting Hit by a Twin Whammy, Food Prices Could Jump More                                                     PROCESSED
+872012  WSJ_WIRE                        French Contagion Less Violent Than in Previous Eurozone Crisis                                                          PROCESSED
+872011  WSJ_WIRE                        Homebuyers Numbers Fall Short in a Bad Sign for Home Sale Margins                                                       PROCESSED
+872010  WSJ_WIRE                        Putin Pushes a Summit With Trump and Xi to Discuss Ukraine Deal                                                         PROCESSED
+872009  HARDWARE_ABSTRACTION            [HARDWARE_ABSTRACTION | 2026-10-19 12:54:00] Hardware abstraction layer verified: agnostic VLA routing ready            PROCESSED
+872008  BRENT_CRUDE                     [BRENT_CRUDE | 2026-10-19 12:54:00] Brent tight physical Middle East tension                                            PROCESSED
+872007  COREWEAVE_AI                    [COREWEAVE_AI | 2026-10-19 12:52:17] CoreWeave 240MW Mumbai AdaniConneX CAPEX AI infra                                  PROCESSED
+872006  RARE_EARTHS                     [RARE_EARTHS | 2026-10-19 12:51:44] China 80-90% rare earths dominance EV magnets weapon                                PROCESSED
+872005  CARACAS_HQ_EXEC                 [M82] CARACAS_HQ_EXEC | Updated Sovereign HUD Header verified without node mention                                      PROCESSED
+872004  CITGO_OFAC_DESK                 [CITGO_OFAC_DESK | 2026-10-19 12:50:13] OFAC GL 5Z Citgo auction Delaware docket update                                 PROCESSED
+872003  CARACAS_HQ_EXEC                 [M82] CARACAS_HQ_EXEC | Dynamic Card Generation verified for M82 Macro Dossier                                          PROCESSED
+872002  HARDWARE_ABSTRACTION            [HARDWARE_ABSTRACTION | 2026-10-19 12:48:55] Hardware abstraction layer verified: agnostic VLA routing ready            PROCESSED
+872001  PDVSA26_SWAPS                   [PDVSA26_SWAPS | 2026-10-19 12:48:53] PDVSA26 CDS curve shift                                                           PROCESSED
+872000  COREWEAVE_AI                    [COREWEAVE_AI | 2026-10-19 12:45:22] CoreWeave 240MW Mumbai AdaniConneX CAPEX AI infra                                  PROCESSED
+871999  ROBOTICS_PHYSICAL               [ROBOTICS_PHYSICAL | 2026-10-19 12:43:52] Edge VLA inference pipeline active on local Jetson / Orin node                PROCESSED
+871998  IMF_GULF                        [IMF_GULF | 2026-10-19 12:43:52] IMF cuts Gulf -3.3% to -16% heavy premium validation                                   PROCESSED
+871997  SPACEX_TELCO                    [SPACEX_TELCO | 2026-10-19 12:42:59] Starlink Direct-to-Cell FCC spectrum -6% AT&T/Verizon                              PROCESSED
+871996  RARE_EARTHS                     [RARE_EARTHS | 2026-10-19 12:42:15] China 80-90% rare earths dominance EV magnets weapon                                PROCESSED
+871995  PDVSA26_SWAPS                   [PDVSA26_SWAPS | 2026-10-19 12:41:40] PDVSA26 CDS curve shift                                                           PROCESSED
+871994  ORINOCO_CRUDE                   [ORINOCO_CRUDE | 2026-10-19 12:40:48] Jose Terminal Faja heavy loading schedule                                         PROCESSED
+871993  CARACAS_DESK_MONITOR            [CARACAS_DESK_MONITOR | 2026-10-19 12:39:52] Jose-Houston corridor via RD commercial SPV AMTB/BPOP                      PROCESSED
+871992  RARE_EARTHS                     [RARE_EARTHS | 2026-10-19 12:39:30] China 80-90% rare earths dominance EV magnets weapon                                PROCESSED
+871991  PERIMETER_MONITOR               [PERIMETER_MONITOR | 2026-10-19 12:38:58] Local edge vision feed calibrated - zero-latency telemetry synced to WAL      PROCESSED
+871990  COREWEAVE_AI                    [COREWEAVE_AI | 2026-10-19 12:38:58] CoreWeave 240MW Mumbai AdaniConneX CAPEX AI infra                                  PROCESSED
+871989  VENZ34_DEBT                     [VENZ34_DEBT | 2026-10-19 12:25:02] VENZ34 sovereign debt restructuring range                                           PROCESSED
+871988  CARACAS_DESK_MONITOR            [CARACAS_DESK_MONITOR | 2026-10-19 12:24:35] Jose-Houston corridor via RD commercial SPV AMTB/BPOP                      PROCESSED
+871987  RARE_EARTHS                     [RARE_EARTHS | 2026-10-19 12:23:49] China 80-90% rare earths dominance EV magnets weapon                                PROCESSED
+871986  RARE_EARTHS                     [RARE_EARTHS | 2026-10-19 12:23:27] China 80-90% rare earths dominance EV magnets weapon                                PROCESSED
+871985  CHINA_GRID                      [CHINA_GRID | 2026-10-19 12:22:45] China power grid 50% cap 20% gen curtailment heavy baseload                          PROCESSED
+871984  REFINITIV_INTERNAL_RELAY        [M82_REFINITIV_WIRE | 2026-10-19 12:22:39] Live Telemetry Relay Active — Merey 16 ITM / UST10Y 4.02% Verified           PROCESSED
+871983  WORLD_MODEL_SIM                 [WORLD_MODEL_SIM | 2026-10-19 12:22:16] Oasis 3D world model synthesis generating synthetic physical edge telemetry     PROCESSED
+871982  ORINOCO_CRUDE                   [ORINOCO_CRUDE | 2026-10-19 12:22:16] Jose Terminal Faja heavy loading schedule                                         PROCESSED
+871981  CARACAS_DESK_MONITOR            [CARACAS_DESK_MONITOR | 2026-10-19 12:18:32] Jose-Houston corridor via RD commercial SPV AMTB/BPOP                      PROCESSED
+871980  RARE_EARTHS                     [RARE_EARTHS | 2026-10-19 12:18:03] China 80-90% rare earths dominance EV magnets weapon                                PROCESSED
+871979  CHINA_GRID                      [CHINA_GRID | 2026-10-19 12:17:19] China power grid 50% cap 20% gen curtailment heavy baseload                          PROCESSED
+871978  VENZ34_DEBT                     [VENZ34_DEBT | 2026-10-19 12:16:40] VENZ34 sovereign debt restructuring range                                           PROCESSED
+871977  IMF_GULF                        [IMF_GULF | 2026-10-19 12:16:11] IMF cuts Gulf -3.3% to -16% heavy premium validation                                   PROCESSED
+871976  CARACAS_DESK_MONITOR            [CARACAS_DESK_MONITOR | 2026-10-19 12:14:57] Jose-Houston corridor via RD commercial SPV AMTB/BPOP                      PROCESSED
+871975  US10Y_YIELD                     [US10Y_YIELD | 2026-10-19 12:14:20] US 10Y Treasury yield shift credit impact                                           PROCESSED
+871974  HARDWARE_ABSTRACTION            [HARDWARE_ABSTRACTION | 2026-10-19 12:14:20] Hardware abstraction layer verified: agnostic VLA routing ready            PROCESSED
+871973  BRENT_CRUDE                     [BRENT_CRUDE | 2026-10-19 12:12:54] Brent tight physical Middle East tension                                            PROCESSED
+871972  CHINA_GRID                      [CHINA_GRID | 2026-10-19 12:12:14] China power grid 50% cap 20% gen curtailment heavy baseload                          PROCESSED
+871971  US10Y_YIELD                     [US10Y_YIELD | 2026-10-19 12:11:28] US 10Y Treasury yield shift credit impact                                           PROCESSED
+871970  ROBOTICS_PHYSICAL               [ROBOTICS_PHYSICAL | 2026-10-19 12:10:41] Edge VLA inference pipeline active on local Jetson / Orin node                PROCESSED
+871969  IMF_GULF                        [IMF_GULF | 2026-10-19 12:10:41] IMF cuts Gulf -3.3% to -16% heavy premium validation                                   PROCESSED
+871968  PDVSA26_SWAPS                   [PDVSA26_SWAPS | 2026-10-19 12:09:48] PDVSA26 CDS curve shift                                                           PROCESSED
+871967  ORINOCO_CRUDE                   [ORINOCO_CRUDE | 2026-10-19 12:09:00] Jose Terminal Faja heavy loading schedule                                         PROCESSED
+871966  CITGO_OFAC_DESK                 [CITGO_OFAC_DESK | 2026-10-19 12:08:20] OFAC GL 5Z Citgo auction Delaware docket update                                 PROCESSED
+871965  PERIMETER_MONITOR               [PERIMETER_MONITOR | 2026-10-19 12:06:51] Local edge vision feed calibrated - zero-latency telemetry synced to WAL      PROCESSED
+871964  ORINOCO_CRUDE                   [ORINOCO_CRUDE | 2026-10-19 12:06:51] Jose Terminal Faja heavy loading schedule                                         PROCESSED
+871963  CHINA_GRID                      [CHINA_GRID | 2026-10-19 11:46:39] China power grid 50% cap 20% gen curtailment heavy baseload                          PROCESSED
+871962  WORLD_MODEL_SIM                 [WORLD_MODEL_SIM | 2026-10-19 11:46:39] Oasis 3D world model synthesis generating synthetic physical edge telemetry     PROCESSED
+871961  ORINOCO_CRUDE                   [ORINOCO_CRUDE | 2026-10-19 07:23:58] Jose Terminal Faja heavy loading schedule                                         PROCESSED
+871960  HARDWARE_ABSTRACTION            [HARDWARE_ABSTRACTION | 2026-10-19 07:23:53] Hardware abstraction layer verified: agnostic VLA routing ready            PROCESSED
+871959  CITGO_OFAC_DESK                 [CITGO_OFAC_DESK | 2026-10-19 07:23:30] OFAC GL 5Z Citgo auction Delaware docket update                                 PROCESSED
+871958  VENZ34_DEBT                     [VENZ34_DEBT | 2026-10-19 07:22:55] VENZ34 sovereign debt restructuring range                                           PROCESSED
+871957  SPACEX_TELCO                    [SPACEX_TELCO | 2026-10-19 07:22:13] Starlink Direct-to-Cell FCC spectrum -6% AT&T/Verizon                              PROCESSED
+871956  COREWEAVE_AI                    [COREWEAVE_AI | 2026-10-19 07:21:29] CoreWeave 240MW Mumbai AdaniConneX CAPEX AI infra                                  PROCESSED
+871955  ORINOCO_CRUDE                   [ORINOCO_CRUDE | 2026-10-19 07:21:02] Jose Terminal Faja heavy loading schedule                                         PROCESSED
+871954  SPACEX_TELCO                    [SPACEX_TELCO | 2026-10-19 07:19:37] Starlink Direct-to-Cell FCC spectrum -6% AT&T/Verizon                              PROCESSED
+871953  PERIMETER_MONITOR               [PERIMETER_MONITOR | 2026-10-19 07:19:14] Local edge vision feed calibrated - zero-latency telemetry synced to WAL      PROCESSED
+871952  SPACEX_TELCO                    [SPACEX_TELCO | 2026-10-19 07:19:05] Starlink Direct-to-Cell FCC spectrum -6% AT&T/Verizon                              PROCESSED
+871951  BRENT_CRUDE                     [BRENT_CRUDE | 2026-10-19 07:18:17] Brent tight physical Middle East tension                                            PROCESSED
+871950  VENZ34_DEBT                     [VENZ34_DEBT | 2026-10-19 07:17:39] VENZ34 sovereign debt restructuring range                                           PROCESSED
+871949  SPACEX_TELCO                    [SPACEX_TELCO | 2026-10-19 07:17:14] Starlink Direct-to-Cell FCC spectrum -6% AT&T/Verizon                              PROCESSED
+871948  BRENT_CRUDE                     [BRENT_CRUDE | 2026-10-19 07:16:46] Brent tight physical Middle East tension                                            PROCESSED
+871947  COREWEAVE_AI                    [COREWEAVE_AI | 2026-10-19 07:16:01] CoreWeave 240MW Mumbai AdaniConneX CAPEX AI infra                                  PROCESSED
+871946  RUBIO_DOCTRINE_DIVERSIFICATION  [RUBIO | ANTI-CONCENTRATION] USGC Merey 400k bpd Orinoco = Natural hedge vs Hormuz/Asia — Quad-SPV MCM eliminates SPOF  BUNKER_HOLD_030X
+871945  ROBOTICS_PHYSICAL               [ROBOTICS_PHYSICAL | 2026-10-19 07:14:58] Edge VLA inference pipeline active on local Jetson / Orin node                PROCESSED
+871944  IMF_GULF                        [IMF_GULF | 2026-10-19 07:14:55] IMF cuts Gulf -3.3% to -16% heavy premium validation                                   PROCESSED
+871943  PDVSA26_SWAPS                   [PDVSA26_SWAPS | 2026-10-19 07:12:20] PDVSA26 CDS curve shift                                                           PROCESSED
+871942  ROBOTICS_PHYSICAL               [ROBOTICS_PHYSICAL | 2026-10-19 07:11:47] Edge VLA inference pipeline active on local Jetson / Orin node                PROCESSED
+871941  COREWEAVE_AI                    [COREWEAVE_AI | 2026-10-19 07:11:47] CoreWeave 240MW Mumbai AdaniConneX CAPEX AI infra                                  PROCESSED
+871940  RARE_EARTHS                     [RARE_EARTHS | 2026-10-19 07:09:53] China 80-90% rare earths dominance EV magnets weapon                                PROCESSED
+871939  CARACAS_DESK_MONITOR            [CARACAS_DESK_MONITOR | 2026-10-19 07:07:59] Jose-Houston corridor via RD commercial SPV AMTB/BPOP                      PROCESSED
+871938  CITGO_OFAC_DESK                 [CITGO_OFAC_DESK | 2026-10-19 07:07:14] OFAC GL 5Z Citgo auction Delaware docket update                                 PROCESSED
+871937  SPACEX_TELCO                    [SPACEX_TELCO | 2026-10-19 07:06:45] Starlink Direct-to-Cell FCC spectrum -6% AT&T/Verizon                              PROCESSED
+871936  PDVSA26_SWAPS                   [PDVSA26_SWAPS | 2026-10-19 07:06:18] PDVSA26 CDS curve shift                                                           PROCESSED
+871935  ROBOTICS_PHYSICAL               [ROBOTICS_PHYSICAL | 2026-10-19 07:05:45] Edge VLA inference pipeline active on local Jetson / Orin node                PROCESSED
+871934  CHINA_GRID                      [CHINA_GRID | 2026-10-19 07:05:35] China power grid 50% cap 20% gen curtailment heavy baseload                          PROCESSED
+871933  TERMINAL_AUDIT                  [SYSTEM_VERIFIED | 2026-10-19 11:05:32] Node Charallave L4/L5 Edge 100% Nominal                                         COMPLETED
+871932  IMF_GULF                        [IMF_GULF | 2026-10-19 07:05:05] IMF cuts Gulf -3.3% to -16% heavy premium validation                                   PROCESSED
+871931  CARACAS_DESK_MONITOR            [CARACAS_DESK_MONITOR | 2026-10-19 07:04:27] Jose-Houston corridor via RD commercial SPV AMTB/BPOP                      PROCESSED
+871930  ORINOCO_CRUDE                   [ORINOCO_CRUDE | 2026-10-19 07:03:58] Jose Terminal Faja heavy loading schedule                                         PROCESSED
+871929  RARE_EARTHS                     [RARE_EARTHS | 2026-10-19 07:03:30] China 80-90% rare earths dominance EV magnets weapon                                PROCESSED
+871928  CITGO_OFAC_DESK                 [CITGO_OFAC_DESK | 2026-10-19 07:02:57] OFAC GL 5Z Citgo auction Delaware docket update                                 PROCESSED
+871927  SPACEX_TELCO                    [SPACEX_TELCO | 2026-10-19 07:02:25] Starlink Direct-to-Cell FCC spectrum -6% AT&T/Verizon                              PROCESSED
+871926  ROBOTICS_PHYSICAL               [ROBOTICS_PHYSICAL | 2026-10-19 07:02:03] Edge VLA inference pipeline active on local Jetson / Orin node                PROCESSED
+871925  IMF_GULF                        [IMF_GULF | 2026-10-19 07:02:03] IMF cuts Gulf -3.3% to -16% heavy premium validation                                   PROCESSED
+871924  PDVSA26_SWAPS                   [PDVSA26_SWAPS | 2026-10-19 07:01:20] PDVSA26 CDS curve shift                                                           PROCESSED
+871923  CITGO_OFAC_DESK                 [CITGO_OFAC_DESK | 2026-10-19 07:00:53] OFAC GL 5Z Citgo auction Delaware docket update                                 PROCESSED
+871922  ORINOCO_CRUDE                   [ORINOCO_CRUDE | 2026-10-19 07:00:05] Jose Terminal Faja heavy loading schedule                                         PROCESSED
+871921  CHINA_GRID                      [CHINA_GRID | 2026-10-19 06:59:20] China power grid 50% cap 20% gen curtailment heavy baseload                          PROCESSED
+871920  IMF_GULF                        [IMF_GULF | 2026-10-19 06:58:54] IMF cuts Gulf -3.3% to -16% heavy premium validation                                   PROCESSED
+871919  VENZ34_DEBT                     [VENZ34_DEBT | 2026-10-19 06:58:25] VENZ34 sovereign debt restructuring range                                           PROCESSED
+871918  WORLD_MODEL_SIM                 [WORLD_MODEL_SIM | 2026-10-19 06:57:37] Oasis 3D world model synthesis generating synthetic physical edge telemetry     PROCESSED
+871917  RARE_EARTHS                     [RARE_EARTHS | 2026-10-19 06:57:18] China 80-90% rare earths dominance EV magnets weapon                                PROCESSED
+871916  US10Y_YIELD                     [US10Y_YIELD | 2026-10-19 06:56:55] US 10Y Treasury yield shift credit impact                                           PROCESSED
+871915  CARACAS_DESK_MONITOR            [CARACAS_DESK_MONITOR | 2026-10-19 06:56:18] Jose-Houston corridor via RD commercial SPV AMTB/BPOP                      PROCESSED
+871914  US10Y_YIELD                     [US10Y_YIELD | 2026-10-19 06:55:55] US 10Y Treasury yield shift credit impact                                           PROCESSED
+871913  ORINOCO_CRUDE                   [ORINOCO_CRUDE | 2026-10-19 06:55:21] Jose Terminal Faja heavy loading schedule                                         PROCESSED
+871912  PDVSA26_SWAPS                   [PDVSA26_SWAPS | 2026-10-19 06:54:46] PDVSA26 CDS curve shift                                                           PROCESSED
+871911  IMF_GULF                        [IMF_GULF | 2026-10-19 06:54:01] IMF cuts Gulf -3.3% to -16% heavy premium validation                                   PROCESSED
+871910  PDVSA26_SWAPS                   [PDVSA26_SWAPS | 2026-10-19 06:53:35] PDVSA26 CDS curve shift                                                           PROCESSED
+871909  WORLD_MODEL_SIM                 [WORLD_MODEL_SIM | 2026-10-19 06:53:33] Oasis 3D world model synthesis generating synthetic physical edge telemetry     PROCESSED
+871908  COREWEAVE_AI                    [COREWEAVE_AI | 2026-10-19 06:52:57] CoreWeave 240MW Mumbai AdaniConneX CAPEX AI infra                                  PROCESSED
+871907  US10Y_YIELD                     [US10Y_YIELD | 2026-10-19 06:52:26] US 10Y Treasury yield shift credit impact                                           PROCESSED
+871906  CITGO_OFAC_DESK                 [CITGO_OFAC_DESK | 2026-10-19 06:51:17] OFAC GL 5Z Citgo auction Delaware docket update                                 PROCESSED
+871905  CARACAS_DESK_MONITOR            [CARACAS_DESK_MONITOR | 2026-10-19 06:50:41] Jose-Houston corridor via RD commercial SPV AMTB/BPOP                      PROCESSED
+871904  SPACEX_TELCO                    [SPACEX_TELCO | 2026-10-19 06:50:21] Starlink Direct-to-Cell FCC spectrum -6% AT&T/Verizon                              PROCESSED
+871903  IMF_GULF                        [IMF_GULF | 2026-10-19 06:49:32] IMF cuts Gulf -3.3% to -16% heavy premium validation                                   PROCESSED
+871902  WORLD_MODEL_SIM                 [WORLD_MODEL_SIM | 2026-10-19 06:49:32] Oasis 3D world model synthesis generating synthetic physical edge telemetry     PROCESSED
+871901  COREWEAVE_AI                    [COREWEAVE_AI | 2026-10-19 06:48:34] CoreWeave 240MW Mumbai AdaniConneX CAPEX AI infra                                  PROCESSED
+871900  M82_TERMINAL_HOTFIX             [SQL_DIAGNOSTIC | 2026-10-19] Schema synced in ~/M82/m82_database.db — BUNKER 0.30x                                     BUNKER_HOLD_030X
+871899  CHINA_GRID                      [CHINA_GRID | 2026-10-19 06:48:09] China power grid 50% cap 20% gen curtailment heavy baseload                          PROCESSED
+871898  RARE_EARTHS                     [RARE_EARTHS | 2026-10-19 06:47:45] China 80-90% rare earths dominance EV magnets weapon                                PROCESSED
+871897  RARE_EARTHS                     [RARE_EARTHS | 2026-10-19 06:46:30] China 80-90% rare earths dominance EV magnets weapon                                PROCESSED
+871896  M82_TERMINAL_HOTFIX             [SQL_DIAGNOSTIC | 2026-10-19] Schema synced in ~/M82/m82_database.db                                                    BUNKER_HOLD_030X
+871895  CARACAS_DESK_MONITOR            [CARACAS_DESK_MONITOR | 2026-10-19 06:45:58] Jose-Houston corridor via RD commercial SPV AMTB/BPOP                      PROCESSED
+871894  ORINOCO_CRUDE                   [ORINOCO_CRUDE | 2026-10-19 06:45:09] Jose Terminal Faja heavy loading schedule                                         PROCESSED
+871893  RARE_EARTHS                     [RARE_EARTHS | 2026-10-19 06:44:43] China 80-90% rare earths dominance EV magnets weapon                                PROCESSED
+871892  WORLD_MODEL_SIM                 [WORLD_MODEL_SIM | 2026-10-19 06:44:40] Oasis 3D world model synthesis generating synthetic physical edge telemetry     PROCESSED
+871891  CARACAS_DESK_MONITOR            [CARACAS_DESK_MONITOR | 2026-10-19 06:44:01] Jose-Houston corridor via RD commercial SPV AMTB/BPOP                      PROCESSED
+871890  ORINOCO_CRUDE                   [ORINOCO_CRUDE | 2026-10-19 06:43:24] Jose Terminal Faja heavy loading schedule                                         PROCESSED
+871889  PDVSA26_SWAPS                   [PDVSA26_SWAPS | 2026-10-19 06:42:20] PDVSA26 CDS curve shift                                                           PROCESSED
+871888  HARDWARE_ABSTRACTION            [HARDWARE_ABSTRACTION | 2026-10-19 06:41:05] Hardware abstraction layer verified: agnostic VLA routing ready            PROCESSED
+                         Header
+--------------------------------------------------------
+========================================================
+                        Header
+-------------------------------------------------------
+   MACRO DOSSIER AUDIT TRAIL
+                         Header
+--------------------------------------------------------
+========================================================

@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/home/M82/m82_fix_timestamp.py", line 20, in <module>
+    c.execute("""
+    ~~~~~~~~~^^^^
+    INSERT INTO m82_mcn_checklist
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    (timestamp, brent_price, dubai_squeeze, red_day_flag, consecutive_red_days, diesel_shortage_active, real_yield)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    VALUES (?, ?, ?, 1, 1, 1, ?);
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    """, (now, brent, squeeze, real_yield))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: m82_mcn_checklist

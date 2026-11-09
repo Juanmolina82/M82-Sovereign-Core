@@ -1,0 +1,500 @@
+2026-10-09 02:00:25 [ERROR] HQ:Caracas NODE:Charallave | FETCH ERR https://news.google.com/rss/search?q=Anthropic+AI+IPO+shutdown+paradox: 
+2026-10-09 02:00:25 [ERROR] HQ:Caracas NODE:Charallave | FETCH ERR https://news.google.com/rss/search?q=PCE+inflation+Fed+rates+pause: 
+2026-10-09 02:00:28 [INFO] HQ:Caracas NODE:Charallave | M82 INTEGRATED V3 START - Caracas HQ | Charallave Edge - M82 Dossier V1-V15 ACTIVE
+2026-10-09 02:00:28 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['$BRENT'] | HASH:b0dd51abe371 | How will the US-Venezuela oil deal work? Alejandro Betancourt, China and Trump’s 65 bn bar
+2026-10-09 02:00:28 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['CVX'] | HASH:c85d3016b3c5 | Chevron’s Venezuela licence downgrade threatens 200 kbd in output - Kpler
+2026-10-09 02:00:28 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:e1e630405321 | Japanese Yen softens as BoJ rate hike expectations recede, FOMC Minutes loom - FXStreet
+2026-10-09 02:00:28 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:bff57b169afe | Japanese Yen softens as BoJ rate hike expectations recede, FOMC Minutes loom - tmgm.com
+2026-10-09 02:00:28 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:84891214c09d | USD/JPY Analysis: Is the Yen Still Weak Despite the BOJ Rate Hike? - FOREX.com
+2026-10-09 02:00:28 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.67 | TKR:['$BRENT'] | HASH:8f34f8c475e1 | Oil prices jump as Iran steps up tanker attacks, hurricane threatens U.S. Gulf production 
+2026-10-09 02:00:28 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:['$BRENT'] | HASH:aa5cda68094f | The difference between the "paper" price of Brent crude and what refiners pay for it - Mar
+2026-10-09 02:00:28 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:-0.33 | TKR:['$BRENT'] | HASH:9888f9b64b86 | Oil Prices Fall as Market Awaits Possible US-Iran Ceasefire Deal - EnergyNow
+2026-10-09 02:00:28 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.33 | TKR:['$BRENT', '$BRENT'] | HASH:7030e0281472 | Crude Oil Outlook: WTI Holds Support as Brent Shows Strength - StoneX
+2026-10-09 02:00:28 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:572612cac055 | Fed seen on pause in October after inflation data - Reuters
+2026-10-09 02:00:28 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:baeca3c82e7a | The Fed's preferred inflation measure was lower than expected in August. Is that a good th
+2026-10-09 02:00:28 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:7b97a9946e69 | Minneapolis Fed's Neel Kashkari said soft inflation data isn't enough to stop more rate hi
+2026-10-09 02:00:28 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:[] | HASH:131e9fb3ba8c | US rate hike bets fade as revised inflation data points to October pause - Nikkei Asia
+2026-10-09 02:00:28 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.33 | TKR:['FED'] | HASH:4fffda1c638a | Fed pauses again as markets debate rate hikes - HousingWire
+2026-10-09 02:00:28 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:c3bc65f723ca | EXCLUSIVE: Anthropic's IPO pitch embraces AI's promise and peril - Reuters
+2026-10-09 02:00:28 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:4023bc07e02b | Anthropic’s $2 trillion AI dream is built on a series of contradictions - CTech
+2026-10-09 02:00:28 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:e72a506688f3 | Leaked Anthropic IPO Prospectus Gives Wall Street an Early Look at How AI Could Go Off the
+2026-10-09 02:00:28 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:b68a5df447e6 | ​Anthropic's AI paradox: More powerful systems could mean bigger risks to humanity - The T
+2026-10-09 02:00:29 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['$BRENT'] | HASH:b0dd51abe371 | How will the US-Venezuela oil deal work? Alejandro Betancourt, China and Trump’s 65 bn bar
+2026-10-09 02:00:29 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['CVX'] | HASH:c85d3016b3c5 | Chevron’s Venezuela licence downgrade threatens 200 kbd in output - Kpler
+2026-10-09 02:00:29 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:e1e630405321 | Japanese Yen softens as BoJ rate hike expectations recede, FOMC Minutes loom - FXStreet
+2026-10-09 02:00:29 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:bff57b169afe | Japanese Yen softens as BoJ rate hike expectations recede, FOMC Minutes loom - tmgm.com
+2026-10-09 02:00:29 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:84891214c09d | USD/JPY Analysis: Is the Yen Still Weak Despite the BOJ Rate Hike? - FOREX.com
+2026-10-09 02:00:29 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.67 | TKR:['$BRENT'] | HASH:8f34f8c475e1 | Oil prices jump as Iran steps up tanker attacks, hurricane threatens U.S. Gulf production 
+2026-10-09 02:00:29 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:['$BRENT'] | HASH:aa5cda68094f | The difference between the "paper" price of Brent crude and what refiners pay for it - Mar
+2026-10-09 02:00:29 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:-0.33 | TKR:['$BRENT'] | HASH:9888f9b64b86 | Oil Prices Fall as Market Awaits Possible US-Iran Ceasefire Deal - EnergyNow
+2026-10-09 02:00:29 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.33 | TKR:['$BRENT', '$BRENT'] | HASH:7030e0281472 | Crude Oil Outlook: WTI Holds Support as Brent Shows Strength - StoneX
+2026-10-09 02:00:29 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:572612cac055 | Fed seen on pause in October after inflation data - Reuters
+2026-10-09 02:00:29 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:baeca3c82e7a | The Fed's preferred inflation measure was lower than expected in August. Is that a good th
+2026-10-09 02:00:29 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:7b97a9946e69 | Minneapolis Fed's Neel Kashkari said soft inflation data isn't enough to stop more rate hi
+2026-10-09 02:00:29 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:[] | HASH:131e9fb3ba8c | US rate hike bets fade as revised inflation data points to October pause - Nikkei Asia
+2026-10-09 02:00:29 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.33 | TKR:['FED'] | HASH:4fffda1c638a | Fed pauses again as markets debate rate hikes - HousingWire
+2026-10-09 02:00:29 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:c3bc65f723ca | EXCLUSIVE: Anthropic's IPO pitch embraces AI's promise and peril - Reuters
+2026-10-09 02:00:29 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:4023bc07e02b | Anthropic’s $2 trillion AI dream is built on a series of contradictions - CTech
+2026-10-09 02:00:29 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:e72a506688f3 | Leaked Anthropic IPO Prospectus Gives Wall Street an Early Look at How AI Could Go Off the
+2026-10-09 02:00:29 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:b68a5df447e6 | ​Anthropic's AI paradox: More powerful systems could mean bigger risks to humanity - The T
+2026-10-09 02:00:32 [INFO] HQ:Caracas NODE:Charallave | M82 INTEGRATED V3 START - Caracas HQ | Charallave Edge - M82 Dossier V1-V15 ACTIVE
+2026-10-09 02:00:33 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['$BRENT'] | HASH:b0dd51abe371 | How will the US-Venezuela oil deal work? Alejandro Betancourt, China and Trump’s 65 bn bar
+2026-10-09 02:00:33 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['CVX'] | HASH:c85d3016b3c5 | Chevron’s Venezuela licence downgrade threatens 200 kbd in output - Kpler
+2026-10-09 02:00:33 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:e1e630405321 | Japanese Yen softens as BoJ rate hike expectations recede, FOMC Minutes loom - FXStreet
+2026-10-09 02:00:33 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:bff57b169afe | Japanese Yen softens as BoJ rate hike expectations recede, FOMC Minutes loom - tmgm.com
+2026-10-09 02:00:33 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:84891214c09d | USD/JPY Analysis: Is the Yen Still Weak Despite the BOJ Rate Hike? - FOREX.com
+2026-10-09 02:00:33 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.67 | TKR:['$BRENT'] | HASH:8f34f8c475e1 | Oil prices jump as Iran steps up tanker attacks, hurricane threatens U.S. Gulf production 
+2026-10-09 02:00:33 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:['$BRENT'] | HASH:aa5cda68094f | The difference between the "paper" price of Brent crude and what refiners pay for it - Mar
+2026-10-09 02:00:33 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:-0.33 | TKR:['$BRENT'] | HASH:9888f9b64b86 | Oil Prices Fall as Market Awaits Possible US-Iran Ceasefire Deal - EnergyNow
+2026-10-09 02:00:33 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.33 | TKR:['$BRENT', '$BRENT'] | HASH:7030e0281472 | Crude Oil Outlook: WTI Holds Support as Brent Shows Strength - StoneX
+2026-10-09 02:00:33 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:572612cac055 | Fed seen on pause in October after inflation data - Reuters
+2026-10-09 02:00:33 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:baeca3c82e7a | The Fed's preferred inflation measure was lower than expected in August. Is that a good th
+2026-10-09 02:00:33 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:7b97a9946e69 | Minneapolis Fed's Neel Kashkari said soft inflation data isn't enough to stop more rate hi
+2026-10-09 02:00:33 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:[] | HASH:131e9fb3ba8c | US rate hike bets fade as revised inflation data points to October pause - Nikkei Asia
+2026-10-09 02:00:33 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.33 | TKR:['FED'] | HASH:4fffda1c638a | Fed pauses again as markets debate rate hikes - HousingWire
+2026-10-09 02:00:33 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:c3bc65f723ca | EXCLUSIVE: Anthropic's IPO pitch embraces AI's promise and peril - Reuters
+2026-10-09 02:00:33 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:4023bc07e02b | Anthropic’s $2 trillion AI dream is built on a series of contradictions - CTech
+2026-10-09 02:00:33 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:e72a506688f3 | Leaked Anthropic IPO Prospectus Gives Wall Street an Early Look at How AI Could Go Off the
+2026-10-09 02:00:33 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:b68a5df447e6 | ​Anthropic's AI paradox: More powerful systems could mean bigger risks to humanity - The T
+2026-10-09 02:01:01 [INFO] HQ:Caracas NODE:Charallave | M82 INTEGRATED V3 START - Caracas HQ | Charallave Edge - M82 Dossier V1-V15 ACTIVE
+2026-10-09 02:01:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['$BRENT'] | HASH:b0dd51abe371 | How will the US-Venezuela oil deal work? Alejandro Betancourt, China and Trump’s 65 bn bar
+2026-10-09 02:01:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['CVX'] | HASH:c85d3016b3c5 | Chevron’s Venezuela licence downgrade threatens 200 kbd in output - Kpler
+2026-10-09 02:01:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:e1e630405321 | Japanese Yen softens as BoJ rate hike expectations recede, FOMC Minutes loom - FXStreet
+2026-10-09 02:01:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:bff57b169afe | Japanese Yen softens as BoJ rate hike expectations recede, FOMC Minutes loom - tmgm.com
+2026-10-09 02:01:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:84891214c09d | USD/JPY Analysis: Is the Yen Still Weak Despite the BOJ Rate Hike? - FOREX.com
+2026-10-09 02:01:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.67 | TKR:['$BRENT'] | HASH:8f34f8c475e1 | Oil prices jump as Iran steps up tanker attacks, hurricane threatens U.S. Gulf production 
+2026-10-09 02:01:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:['$BRENT'] | HASH:aa5cda68094f | The difference between the "paper" price of Brent crude and what refiners pay for it - Mar
+2026-10-09 02:01:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:-0.33 | TKR:['$BRENT'] | HASH:9888f9b64b86 | Oil Prices Fall as Market Awaits Possible US-Iran Ceasefire Deal - EnergyNow
+2026-10-09 02:01:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.33 | TKR:['$BRENT', '$BRENT'] | HASH:7030e0281472 | Crude Oil Outlook: WTI Holds Support as Brent Shows Strength - StoneX
+2026-10-09 02:01:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:572612cac055 | Fed seen on pause in October after inflation data - Reuters
+2026-10-09 02:01:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:baeca3c82e7a | The Fed's preferred inflation measure was lower than expected in August. Is that a good th
+2026-10-09 02:01:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:7b97a9946e69 | Minneapolis Fed's Neel Kashkari said soft inflation data isn't enough to stop more rate hi
+2026-10-09 02:01:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:[] | HASH:131e9fb3ba8c | US rate hike bets fade as revised inflation data points to October pause - Nikkei Asia
+2026-10-09 02:01:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.33 | TKR:['FED'] | HASH:4fffda1c638a | Fed pauses again as markets debate rate hikes - HousingWire
+2026-10-09 02:01:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:c3bc65f723ca | EXCLUSIVE: Anthropic's IPO pitch embraces AI's promise and peril - Reuters
+2026-10-09 02:01:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:4023bc07e02b | Anthropic’s $2 trillion AI dream is built on a series of contradictions - CTech
+2026-10-09 02:01:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:e72a506688f3 | Leaked Anthropic IPO Prospectus Gives Wall Street an Early Look at How AI Could Go Off the
+2026-10-09 02:01:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:b68a5df447e6 | ​Anthropic's AI paradox: More powerful systems could mean bigger risks to humanity - The T
+2026-10-09 02:26:38 [INFO] HQ:Caracas NODE:Charallave | M82 INTEGRATED V3 START - Caracas HQ | Charallave Edge - M82 Dossier V1-V15 ACTIVE
+2026-10-09 02:26:40 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['$BRENT'] | HASH:b0dd51abe371 | How will the US-Venezuela oil deal work? Alejandro Betancourt, China and Trump’s 65 bn bar
+2026-10-09 02:26:40 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['CVX'] | HASH:c85d3016b3c5 | Chevron’s Venezuela licence downgrade threatens 200 kbd in output - Kpler
+2026-10-09 02:26:40 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:e1e630405321 | Japanese Yen softens as BoJ rate hike expectations recede, FOMC Minutes loom - FXStreet
+2026-10-09 02:26:40 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:bff57b169afe | Japanese Yen softens as BoJ rate hike expectations recede, FOMC Minutes loom - tmgm.com
+2026-10-09 02:26:40 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:84891214c09d | USD/JPY Analysis: Is the Yen Still Weak Despite the BOJ Rate Hike? - FOREX.com
+2026-10-09 02:26:40 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.67 | TKR:['$BRENT'] | HASH:8f34f8c475e1 | Oil prices jump as Iran steps up tanker attacks, hurricane threatens U.S. Gulf production 
+2026-10-09 02:26:40 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:['$BRENT'] | HASH:aa5cda68094f | The difference between the "paper" price of Brent crude and what refiners pay for it - Mar
+2026-10-09 02:26:40 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:-0.33 | TKR:['$BRENT'] | HASH:9888f9b64b86 | Oil Prices Fall as Market Awaits Possible US-Iran Ceasefire Deal - EnergyNow
+2026-10-09 02:26:40 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.33 | TKR:['$BRENT', '$BRENT'] | HASH:7030e0281472 | Crude Oil Outlook: WTI Holds Support as Brent Shows Strength - StoneX
+2026-10-09 02:26:40 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:572612cac055 | Fed seen on pause in October after inflation data - Reuters
+2026-10-09 02:26:40 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:baeca3c82e7a | The Fed's preferred inflation measure was lower than expected in August. Is that a good th
+2026-10-09 02:26:40 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:7b97a9946e69 | Minneapolis Fed's Neel Kashkari said soft inflation data isn't enough to stop more rate hi
+2026-10-09 02:26:40 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:[] | HASH:131e9fb3ba8c | US rate hike bets fade as revised inflation data points to October pause - Nikkei Asia
+2026-10-09 02:26:40 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.33 | TKR:['FED'] | HASH:4fffda1c638a | Fed pauses again as markets debate rate hikes - HousingWire
+2026-10-09 02:26:40 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:c3bc65f723ca | EXCLUSIVE: Anthropic's IPO pitch embraces AI's promise and peril - Reuters
+2026-10-09 02:26:40 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:4023bc07e02b | Anthropic’s $2 trillion AI dream is built on a series of contradictions - CTech
+2026-10-09 02:26:40 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:e72a506688f3 | Leaked Anthropic IPO Prospectus Gives Wall Street an Early Look at How AI Could Go Off the
+2026-10-09 02:26:40 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:b68a5df447e6 | ​Anthropic's AI paradox: More powerful systems could mean bigger risks to humanity - The T
+2026-10-09 09:51:43 [INFO] HQ:Caracas NODE:Charallave | M82 INTEGRATED V3 START - Caracas HQ | Charallave Edge - M82 Dossier V1-V15 ACTIVE
+2026-10-09 10:09:28 [ERROR] HQ:Caracas NODE:Charallave | FETCH ERR https://news.google.com/rss/search?q=Anthropic+AI+IPO+shutdown+paradox: 
+2026-10-09 10:09:28 [ERROR] HQ:Caracas NODE:Charallave | FETCH ERR https://news.google.com/rss/search?q=PCE+inflation+Fed+rates+pause: 
+2026-10-09 10:09:28 [ERROR] HQ:Caracas NODE:Charallave | FETCH ERR https://news.google.com/rss/search?q=BOJ+rate+USDJPY+yen: 
+2026-10-09 10:09:28 [ERROR] HQ:Caracas NODE:Charallave | FETCH ERR https://news.google.com/rss/search?q=Brent+crude+WTI+oil+prices: 
+2026-10-09 10:09:30 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['$BRENT'] | HASH:b0dd51abe371 | How will the US-Venezuela oil deal work? Alejandro Betancourt, China and Trump’s 65 bn bar
+2026-10-09 10:09:30 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['CVX'] | HASH:c85d3016b3c5 | Chevron’s Venezuela licence downgrade threatens 200 kbd in output - Kpler
+2026-10-09 10:09:30 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:['JPY='] | HASH:e312fe772e44 | Why a Yen Reversal Could Shake Treasuries, Tech Stocks and Global Markets - Investing.com
+2026-10-09 10:09:30 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:e1e630405321 | Japanese Yen softens as BoJ rate hike expectations recede, FOMC Minutes loom - FXStreet
+2026-10-09 10:09:30 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:bff57b169afe | Japanese Yen softens as BoJ rate hike expectations recede, FOMC Minutes loom - tmgm.com
+2026-10-09 10:09:30 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:84891214c09d | USD/JPY Analysis: Is the Yen Still Weak Despite the BOJ Rate Hike? - FOREX.com
+2026-10-09 10:09:30 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.67 | TKR:['$BRENT'] | HASH:8f34f8c475e1 | Oil prices jump as Iran steps up tanker attacks, hurricane threatens U.S. Gulf production 
+2026-10-09 10:09:30 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:-0.33 | TKR:['$BRENT'] | HASH:9888f9b64b86 | Oil Prices Fall as Market Awaits Possible US-Iran Ceasefire Deal - EnergyNow
+2026-10-09 10:09:30 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.33 | TKR:['$BRENT', '$BRENT'] | HASH:7030e0281472 | Crude Oil Outlook: WTI Holds Support as Brent Shows Strength - StoneX
+2026-10-09 10:09:30 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:['$BRENT', '$BRENT'] | HASH:9944344cae19 | Oil prices today: Brent slips as Trump cites 'productive talks' with Iran - The Times of I
+2026-10-09 10:09:30 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:572612cac055 | Fed seen on pause in October after inflation data - Reuters
+2026-10-09 10:09:30 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:baeca3c82e7a | The Fed's preferred inflation measure was lower than expected in August. Is that a good th
+2026-10-09 10:09:30 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:7b97a9946e69 | Minneapolis Fed's Neel Kashkari said soft inflation data isn't enough to stop more rate hi
+2026-10-09 10:09:30 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:[] | HASH:131e9fb3ba8c | US rate hike bets fade as revised inflation data points to October pause - Nikkei Asia
+2026-10-09 10:09:30 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.33 | TKR:['FED'] | HASH:4fffda1c638a | Fed pauses again as markets debate rate hikes - HousingWire
+2026-10-09 10:09:30 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:c3bc65f723ca | EXCLUSIVE: Anthropic's IPO pitch embraces AI's promise and peril - Reuters
+2026-10-09 10:09:30 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:4023bc07e02b | Anthropic’s $2 trillion AI dream is built on a series of contradictions - CTech
+2026-10-09 10:09:30 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:e72a506688f3 | Leaked Anthropic IPO Prospectus Gives Wall Street an Early Look at How AI Could Go Off the
+2026-10-09 10:09:30 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:b68a5df447e6 | ​Anthropic's AI paradox: More powerful systems could mean bigger risks to humanity - The T
+2026-10-09 10:09:30 [INFO] HQ:Caracas NODE:Charallave | M82 INTEGRATED V3 START - Caracas HQ | Charallave Edge - M82 Dossier V1-V15 ACTIVE
+2026-10-09 10:09:32 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['$BRENT'] | HASH:b0dd51abe371 | How will the US-Venezuela oil deal work? Alejandro Betancourt, China and Trump’s 65 bn bar
+2026-10-09 10:09:32 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['CVX'] | HASH:c85d3016b3c5 | Chevron’s Venezuela licence downgrade threatens 200 kbd in output - Kpler
+2026-10-09 10:09:32 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:['JPY='] | HASH:e312fe772e44 | Why a Yen Reversal Could Shake Treasuries, Tech Stocks and Global Markets - Investing.com
+2026-10-09 10:09:32 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:e1e630405321 | Japanese Yen softens as BoJ rate hike expectations recede, FOMC Minutes loom - FXStreet
+2026-10-09 10:09:32 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:bff57b169afe | Japanese Yen softens as BoJ rate hike expectations recede, FOMC Minutes loom - tmgm.com
+2026-10-09 10:09:32 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:84891214c09d | USD/JPY Analysis: Is the Yen Still Weak Despite the BOJ Rate Hike? - FOREX.com
+2026-10-09 10:09:32 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.67 | TKR:['$BRENT'] | HASH:8f34f8c475e1 | Oil prices jump as Iran steps up tanker attacks, hurricane threatens U.S. Gulf production 
+2026-10-09 10:09:32 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:-0.33 | TKR:['$BRENT'] | HASH:9888f9b64b86 | Oil Prices Fall as Market Awaits Possible US-Iran Ceasefire Deal - EnergyNow
+2026-10-09 10:09:32 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.33 | TKR:['$BRENT', '$BRENT'] | HASH:7030e0281472 | Crude Oil Outlook: WTI Holds Support as Brent Shows Strength - StoneX
+2026-10-09 10:09:32 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:['$BRENT', '$BRENT'] | HASH:9944344cae19 | Oil prices today: Brent slips as Trump cites 'productive talks' with Iran - The Times of I
+2026-10-09 10:09:32 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:572612cac055 | Fed seen on pause in October after inflation data - Reuters
+2026-10-09 10:09:32 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:baeca3c82e7a | The Fed's preferred inflation measure was lower than expected in August. Is that a good th
+2026-10-09 10:09:32 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:7b97a9946e69 | Minneapolis Fed's Neel Kashkari said soft inflation data isn't enough to stop more rate hi
+2026-10-09 10:09:32 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:[] | HASH:131e9fb3ba8c | US rate hike bets fade as revised inflation data points to October pause - Nikkei Asia
+2026-10-09 10:09:32 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.33 | TKR:['FED'] | HASH:4fffda1c638a | Fed pauses again as markets debate rate hikes - HousingWire
+2026-10-09 10:09:32 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:c3bc65f723ca | EXCLUSIVE: Anthropic's IPO pitch embraces AI's promise and peril - Reuters
+2026-10-09 10:09:32 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:4023bc07e02b | Anthropic’s $2 trillion AI dream is built on a series of contradictions - CTech
+2026-10-09 10:09:32 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:e72a506688f3 | Leaked Anthropic IPO Prospectus Gives Wall Street an Early Look at How AI Could Go Off the
+2026-10-09 10:09:32 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:b68a5df447e6 | ​Anthropic's AI paradox: More powerful systems could mean bigger risks to humanity - The T
+2026-10-09 10:10:01 [INFO] HQ:Caracas NODE:Charallave | M82 INTEGRATED V3 START - Caracas HQ | Charallave Edge - M82 Dossier V1-V15 ACTIVE
+2026-10-09 10:10:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['$BRENT'] | HASH:b0dd51abe371 | How will the US-Venezuela oil deal work? Alejandro Betancourt, China and Trump’s 65 bn bar
+2026-10-09 10:10:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['CVX'] | HASH:c85d3016b3c5 | Chevron’s Venezuela licence downgrade threatens 200 kbd in output - Kpler
+2026-10-09 10:10:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:['JPY='] | HASH:e312fe772e44 | Why a Yen Reversal Could Shake Treasuries, Tech Stocks and Global Markets - Investing.com
+2026-10-09 10:10:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:e1e630405321 | Japanese Yen softens as BoJ rate hike expectations recede, FOMC Minutes loom - FXStreet
+2026-10-09 10:10:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:bff57b169afe | Japanese Yen softens as BoJ rate hike expectations recede, FOMC Minutes loom - tmgm.com
+2026-10-09 10:10:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:84891214c09d | USD/JPY Analysis: Is the Yen Still Weak Despite the BOJ Rate Hike? - FOREX.com
+2026-10-09 10:10:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.67 | TKR:['$BRENT'] | HASH:8f34f8c475e1 | Oil prices jump as Iran steps up tanker attacks, hurricane threatens U.S. Gulf production 
+2026-10-09 10:10:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:-0.33 | TKR:['$BRENT'] | HASH:9888f9b64b86 | Oil Prices Fall as Market Awaits Possible US-Iran Ceasefire Deal - EnergyNow
+2026-10-09 10:10:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.33 | TKR:['$BRENT', '$BRENT'] | HASH:7030e0281472 | Crude Oil Outlook: WTI Holds Support as Brent Shows Strength - StoneX
+2026-10-09 10:10:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:['$BRENT', '$BRENT'] | HASH:9944344cae19 | Oil prices today: Brent slips as Trump cites 'productive talks' with Iran - The Times of I
+2026-10-09 10:10:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:572612cac055 | Fed seen on pause in October after inflation data - Reuters
+2026-10-09 10:10:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:baeca3c82e7a | The Fed's preferred inflation measure was lower than expected in August. Is that a good th
+2026-10-09 10:10:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:7b97a9946e69 | Minneapolis Fed's Neel Kashkari said soft inflation data isn't enough to stop more rate hi
+2026-10-09 10:10:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:[] | HASH:131e9fb3ba8c | US rate hike bets fade as revised inflation data points to October pause - Nikkei Asia
+2026-10-09 10:10:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.33 | TKR:['FED'] | HASH:4fffda1c638a | Fed pauses again as markets debate rate hikes - HousingWire
+2026-10-09 10:10:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:c3bc65f723ca | EXCLUSIVE: Anthropic's IPO pitch embraces AI's promise and peril - Reuters
+2026-10-09 10:10:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:4023bc07e02b | Anthropic’s $2 trillion AI dream is built on a series of contradictions - CTech
+2026-10-09 10:10:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:e72a506688f3 | Leaked Anthropic IPO Prospectus Gives Wall Street an Early Look at How AI Could Go Off the
+2026-10-09 10:10:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:b68a5df447e6 | ​Anthropic's AI paradox: More powerful systems could mean bigger risks to humanity - The T
+2026-10-09 10:11:01 [INFO] HQ:Caracas NODE:Charallave | M82 INTEGRATED V3 START - Caracas HQ | Charallave Edge - M82 Dossier V1-V15 ACTIVE
+2026-10-09 10:11:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['$BRENT'] | HASH:b0dd51abe371 | How will the US-Venezuela oil deal work? Alejandro Betancourt, China and Trump’s 65 bn bar
+2026-10-09 10:11:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['CVX'] | HASH:c85d3016b3c5 | Chevron’s Venezuela licence downgrade threatens 200 kbd in output - Kpler
+2026-10-09 10:11:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:['JPY='] | HASH:e312fe772e44 | Why a Yen Reversal Could Shake Treasuries, Tech Stocks and Global Markets - Investing.com
+2026-10-09 10:11:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:e1e630405321 | Japanese Yen softens as BoJ rate hike expectations recede, FOMC Minutes loom - FXStreet
+2026-10-09 10:11:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:bff57b169afe | Japanese Yen softens as BoJ rate hike expectations recede, FOMC Minutes loom - tmgm.com
+2026-10-09 10:11:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:84891214c09d | USD/JPY Analysis: Is the Yen Still Weak Despite the BOJ Rate Hike? - FOREX.com
+2026-10-09 10:11:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.67 | TKR:['$BRENT'] | HASH:8f34f8c475e1 | Oil prices jump as Iran steps up tanker attacks, hurricane threatens U.S. Gulf production 
+2026-10-09 10:11:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:-0.33 | TKR:['$BRENT'] | HASH:9888f9b64b86 | Oil Prices Fall as Market Awaits Possible US-Iran Ceasefire Deal - EnergyNow
+2026-10-09 10:11:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.33 | TKR:['$BRENT', '$BRENT'] | HASH:7030e0281472 | Crude Oil Outlook: WTI Holds Support as Brent Shows Strength - StoneX
+2026-10-09 10:11:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:['$BRENT', '$BRENT'] | HASH:9944344cae19 | Oil prices today: Brent slips as Trump cites 'productive talks' with Iran - The Times of I
+2026-10-09 10:11:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:572612cac055 | Fed seen on pause in October after inflation data - Reuters
+2026-10-09 10:11:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:baeca3c82e7a | The Fed's preferred inflation measure was lower than expected in August. Is that a good th
+2026-10-09 10:11:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:7b97a9946e69 | Minneapolis Fed's Neel Kashkari said soft inflation data isn't enough to stop more rate hi
+2026-10-09 10:11:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:[] | HASH:131e9fb3ba8c | US rate hike bets fade as revised inflation data points to October pause - Nikkei Asia
+2026-10-09 10:11:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.33 | TKR:['FED'] | HASH:4fffda1c638a | Fed pauses again as markets debate rate hikes - HousingWire
+2026-10-09 10:11:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:c3bc65f723ca | EXCLUSIVE: Anthropic's IPO pitch embraces AI's promise and peril - Reuters
+2026-10-09 10:11:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:4023bc07e02b | Anthropic’s $2 trillion AI dream is built on a series of contradictions - CTech
+2026-10-09 10:11:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:e72a506688f3 | Leaked Anthropic IPO Prospectus Gives Wall Street an Early Look at How AI Could Go Off the
+2026-10-09 10:11:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:b68a5df447e6 | ​Anthropic's AI paradox: More powerful systems could mean bigger risks to humanity - The T
+2026-10-09 10:12:01 [INFO] HQ:Caracas NODE:Charallave | M82 INTEGRATED V3 START - Caracas HQ | Charallave Edge - M82 Dossier V1-V15 ACTIVE
+2026-10-09 10:12:03 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['$BRENT'] | HASH:b0dd51abe371 | How will the US-Venezuela oil deal work? Alejandro Betancourt, China and Trump’s 65 bn bar
+2026-10-09 10:12:03 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['CVX'] | HASH:c85d3016b3c5 | Chevron’s Venezuela licence downgrade threatens 200 kbd in output - Kpler
+2026-10-09 10:12:03 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:['JPY='] | HASH:e312fe772e44 | Why a Yen Reversal Could Shake Treasuries, Tech Stocks and Global Markets - Investing.com
+2026-10-09 10:12:03 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:e1e630405321 | Japanese Yen softens as BoJ rate hike expectations recede, FOMC Minutes loom - FXStreet
+2026-10-09 10:12:03 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:bff57b169afe | Japanese Yen softens as BoJ rate hike expectations recede, FOMC Minutes loom - tmgm.com
+2026-10-09 10:12:03 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:84891214c09d | USD/JPY Analysis: Is the Yen Still Weak Despite the BOJ Rate Hike? - FOREX.com
+2026-10-09 10:12:03 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.67 | TKR:['$BRENT'] | HASH:8f34f8c475e1 | Oil prices jump as Iran steps up tanker attacks, hurricane threatens U.S. Gulf production 
+2026-10-09 10:12:03 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:-0.33 | TKR:['$BRENT'] | HASH:9888f9b64b86 | Oil Prices Fall as Market Awaits Possible US-Iran Ceasefire Deal - EnergyNow
+2026-10-09 10:12:03 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.33 | TKR:['$BRENT', '$BRENT'] | HASH:7030e0281472 | Crude Oil Outlook: WTI Holds Support as Brent Shows Strength - StoneX
+2026-10-09 10:12:03 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:['$BRENT', '$BRENT'] | HASH:9944344cae19 | Oil prices today: Brent slips as Trump cites 'productive talks' with Iran - The Times of I
+2026-10-09 10:12:03 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:572612cac055 | Fed seen on pause in October after inflation data - Reuters
+2026-10-09 10:12:03 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:baeca3c82e7a | The Fed's preferred inflation measure was lower than expected in August. Is that a good th
+2026-10-09 10:12:03 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:7b97a9946e69 | Minneapolis Fed's Neel Kashkari said soft inflation data isn't enough to stop more rate hi
+2026-10-09 10:12:03 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:[] | HASH:131e9fb3ba8c | US rate hike bets fade as revised inflation data points to October pause - Nikkei Asia
+2026-10-09 10:12:03 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.33 | TKR:['FED'] | HASH:4fffda1c638a | Fed pauses again as markets debate rate hikes - HousingWire
+2026-10-09 10:12:03 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:c3bc65f723ca | EXCLUSIVE: Anthropic's IPO pitch embraces AI's promise and peril - Reuters
+2026-10-09 10:12:03 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:4023bc07e02b | Anthropic’s $2 trillion AI dream is built on a series of contradictions - CTech
+2026-10-09 10:12:03 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:e72a506688f3 | Leaked Anthropic IPO Prospectus Gives Wall Street an Early Look at How AI Could Go Off the
+2026-10-09 10:12:03 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:b68a5df447e6 | ​Anthropic's AI paradox: More powerful systems could mean bigger risks to humanity - The T
+2026-10-09 10:13:01 [INFO] HQ:Caracas NODE:Charallave | M82 INTEGRATED V3 START - Caracas HQ | Charallave Edge - M82 Dossier V1-V15 ACTIVE
+2026-10-09 10:13:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['$BRENT'] | HASH:b0dd51abe371 | How will the US-Venezuela oil deal work? Alejandro Betancourt, China and Trump’s 65 bn bar
+2026-10-09 10:13:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['CVX'] | HASH:c85d3016b3c5 | Chevron’s Venezuela licence downgrade threatens 200 kbd in output - Kpler
+2026-10-09 10:13:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:['JPY='] | HASH:e312fe772e44 | Why a Yen Reversal Could Shake Treasuries, Tech Stocks and Global Markets - Investing.com
+2026-10-09 10:13:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:e1e630405321 | Japanese Yen softens as BoJ rate hike expectations recede, FOMC Minutes loom - FXStreet
+2026-10-09 10:13:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:bff57b169afe | Japanese Yen softens as BoJ rate hike expectations recede, FOMC Minutes loom - tmgm.com
+2026-10-09 10:13:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:84891214c09d | USD/JPY Analysis: Is the Yen Still Weak Despite the BOJ Rate Hike? - FOREX.com
+2026-10-09 10:13:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.67 | TKR:['$BRENT'] | HASH:8f34f8c475e1 | Oil prices jump as Iran steps up tanker attacks, hurricane threatens U.S. Gulf production 
+2026-10-09 10:13:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:-0.33 | TKR:['$BRENT'] | HASH:9888f9b64b86 | Oil Prices Fall as Market Awaits Possible US-Iran Ceasefire Deal - EnergyNow
+2026-10-09 10:13:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.33 | TKR:['$BRENT', '$BRENT'] | HASH:7030e0281472 | Crude Oil Outlook: WTI Holds Support as Brent Shows Strength - StoneX
+2026-10-09 10:13:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:['$BRENT', '$BRENT'] | HASH:9944344cae19 | Oil prices today: Brent slips as Trump cites 'productive talks' with Iran - The Times of I
+2026-10-09 10:13:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:572612cac055 | Fed seen on pause in October after inflation data - Reuters
+2026-10-09 10:13:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:baeca3c82e7a | The Fed's preferred inflation measure was lower than expected in August. Is that a good th
+2026-10-09 10:13:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:7b97a9946e69 | Minneapolis Fed's Neel Kashkari said soft inflation data isn't enough to stop more rate hi
+2026-10-09 10:13:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:[] | HASH:131e9fb3ba8c | US rate hike bets fade as revised inflation data points to October pause - Nikkei Asia
+2026-10-09 10:13:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.33 | TKR:['FED'] | HASH:4fffda1c638a | Fed pauses again as markets debate rate hikes - HousingWire
+2026-10-09 10:13:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:c3bc65f723ca | EXCLUSIVE: Anthropic's IPO pitch embraces AI's promise and peril - Reuters
+2026-10-09 10:13:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:4023bc07e02b | Anthropic’s $2 trillion AI dream is built on a series of contradictions - CTech
+2026-10-09 10:13:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:e72a506688f3 | Leaked Anthropic IPO Prospectus Gives Wall Street an Early Look at How AI Could Go Off the
+2026-10-09 10:13:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:b68a5df447e6 | ​Anthropic's AI paradox: More powerful systems could mean bigger risks to humanity - The T
+2026-10-09 10:14:01 [INFO] HQ:Caracas NODE:Charallave | M82 INTEGRATED V3 START - Caracas HQ | Charallave Edge - M82 Dossier V1-V15 ACTIVE
+2026-10-09 10:14:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['$BRENT'] | HASH:b0dd51abe371 | How will the US-Venezuela oil deal work? Alejandro Betancourt, China and Trump’s 65 bn bar
+2026-10-09 10:14:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['CVX'] | HASH:c85d3016b3c5 | Chevron’s Venezuela licence downgrade threatens 200 kbd in output - Kpler
+2026-10-09 10:14:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:['JPY='] | HASH:e312fe772e44 | Why a Yen Reversal Could Shake Treasuries, Tech Stocks and Global Markets - Investing.com
+2026-10-09 10:14:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:e1e630405321 | Japanese Yen softens as BoJ rate hike expectations recede, FOMC Minutes loom - FXStreet
+2026-10-09 10:14:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:bff57b169afe | Japanese Yen softens as BoJ rate hike expectations recede, FOMC Minutes loom - tmgm.com
+2026-10-09 10:14:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:84891214c09d | USD/JPY Analysis: Is the Yen Still Weak Despite the BOJ Rate Hike? - FOREX.com
+2026-10-09 10:14:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.67 | TKR:['$BRENT'] | HASH:8f34f8c475e1 | Oil prices jump as Iran steps up tanker attacks, hurricane threatens U.S. Gulf production 
+2026-10-09 10:14:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:-0.33 | TKR:['$BRENT'] | HASH:9888f9b64b86 | Oil Prices Fall as Market Awaits Possible US-Iran Ceasefire Deal - EnergyNow
+2026-10-09 10:14:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.33 | TKR:['$BRENT', '$BRENT'] | HASH:7030e0281472 | Crude Oil Outlook: WTI Holds Support as Brent Shows Strength - StoneX
+2026-10-09 10:14:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:['$BRENT', '$BRENT'] | HASH:9944344cae19 | Oil prices today: Brent slips as Trump cites 'productive talks' with Iran - The Times of I
+2026-10-09 10:14:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:572612cac055 | Fed seen on pause in October after inflation data - Reuters
+2026-10-09 10:14:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:baeca3c82e7a | The Fed's preferred inflation measure was lower than expected in August. Is that a good th
+2026-10-09 10:14:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:7b97a9946e69 | Minneapolis Fed's Neel Kashkari said soft inflation data isn't enough to stop more rate hi
+2026-10-09 10:14:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:[] | HASH:131e9fb3ba8c | US rate hike bets fade as revised inflation data points to October pause - Nikkei Asia
+2026-10-09 10:14:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.33 | TKR:['FED'] | HASH:4fffda1c638a | Fed pauses again as markets debate rate hikes - HousingWire
+2026-10-09 10:14:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:c3bc65f723ca | EXCLUSIVE: Anthropic's IPO pitch embraces AI's promise and peril - Reuters
+2026-10-09 10:14:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:4023bc07e02b | Anthropic’s $2 trillion AI dream is built on a series of contradictions - CTech
+2026-10-09 10:14:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:e72a506688f3 | Leaked Anthropic IPO Prospectus Gives Wall Street an Early Look at How AI Could Go Off the
+2026-10-09 10:14:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:b68a5df447e6 | ​Anthropic's AI paradox: More powerful systems could mean bigger risks to humanity - The T
+2026-10-09 10:15:01 [INFO] HQ:Caracas NODE:Charallave | M82 INTEGRATED V3 START - Caracas HQ | Charallave Edge - M82 Dossier V1-V15 ACTIVE
+2026-10-09 10:15:04 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['$BRENT'] | HASH:b0dd51abe371 | How will the US-Venezuela oil deal work? Alejandro Betancourt, China and Trump’s 65 bn bar
+2026-10-09 10:15:04 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['CVX'] | HASH:c85d3016b3c5 | Chevron’s Venezuela licence downgrade threatens 200 kbd in output - Kpler
+2026-10-09 10:15:04 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:['JPY='] | HASH:e312fe772e44 | Why a Yen Reversal Could Shake Treasuries, Tech Stocks and Global Markets - Investing.com
+2026-10-09 10:15:04 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:e1e630405321 | Japanese Yen softens as BoJ rate hike expectations recede, FOMC Minutes loom - FXStreet
+2026-10-09 10:15:04 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:bff57b169afe | Japanese Yen softens as BoJ rate hike expectations recede, FOMC Minutes loom - tmgm.com
+2026-10-09 10:15:04 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:84891214c09d | USD/JPY Analysis: Is the Yen Still Weak Despite the BOJ Rate Hike? - FOREX.com
+2026-10-09 10:15:04 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.67 | TKR:['$BRENT'] | HASH:8f34f8c475e1 | Oil prices jump as Iran steps up tanker attacks, hurricane threatens U.S. Gulf production 
+2026-10-09 10:15:04 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:-0.33 | TKR:['$BRENT'] | HASH:9888f9b64b86 | Oil Prices Fall as Market Awaits Possible US-Iran Ceasefire Deal - EnergyNow
+2026-10-09 10:15:04 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.33 | TKR:['$BRENT', '$BRENT'] | HASH:7030e0281472 | Crude Oil Outlook: WTI Holds Support as Brent Shows Strength - StoneX
+2026-10-09 10:15:04 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:['$BRENT', '$BRENT'] | HASH:9944344cae19 | Oil prices today: Brent slips as Trump cites 'productive talks' with Iran - The Times of I
+2026-10-09 10:15:04 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:572612cac055 | Fed seen on pause in October after inflation data - Reuters
+2026-10-09 10:15:04 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:baeca3c82e7a | The Fed's preferred inflation measure was lower than expected in August. Is that a good th
+2026-10-09 10:15:04 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:7b97a9946e69 | Minneapolis Fed's Neel Kashkari said soft inflation data isn't enough to stop more rate hi
+2026-10-09 10:15:04 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:[] | HASH:131e9fb3ba8c | US rate hike bets fade as revised inflation data points to October pause - Nikkei Asia
+2026-10-09 10:15:04 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.33 | TKR:['FED'] | HASH:4fffda1c638a | Fed pauses again as markets debate rate hikes - HousingWire
+2026-10-09 10:15:04 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:c3bc65f723ca | EXCLUSIVE: Anthropic's IPO pitch embraces AI's promise and peril - Reuters
+2026-10-09 10:15:04 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:4023bc07e02b | Anthropic’s $2 trillion AI dream is built on a series of contradictions - CTech
+2026-10-09 10:15:04 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:e72a506688f3 | Leaked Anthropic IPO Prospectus Gives Wall Street an Early Look at How AI Could Go Off the
+2026-10-09 10:15:04 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:b68a5df447e6 | ​Anthropic's AI paradox: More powerful systems could mean bigger risks to humanity - The T
+2026-10-09 10:16:00 [INFO] HQ:Caracas NODE:Charallave | M82 INTEGRATED V3 START - Caracas HQ | Charallave Edge - M82 Dossier V1-V15 ACTIVE
+2026-10-09 10:16:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['$BRENT'] | HASH:b0dd51abe371 | How will the US-Venezuela oil deal work? Alejandro Betancourt, China and Trump’s 65 bn bar
+2026-10-09 10:16:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['CVX'] | HASH:c85d3016b3c5 | Chevron’s Venezuela licence downgrade threatens 200 kbd in output - Kpler
+2026-10-09 10:16:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:['JPY='] | HASH:e312fe772e44 | Why a Yen Reversal Could Shake Treasuries, Tech Stocks and Global Markets - Investing.com
+2026-10-09 10:16:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:e1e630405321 | Japanese Yen softens as BoJ rate hike expectations recede, FOMC Minutes loom - FXStreet
+2026-10-09 10:16:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:bff57b169afe | Japanese Yen softens as BoJ rate hike expectations recede, FOMC Minutes loom - tmgm.com
+2026-10-09 10:16:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:84891214c09d | USD/JPY Analysis: Is the Yen Still Weak Despite the BOJ Rate Hike? - FOREX.com
+2026-10-09 10:16:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.67 | TKR:['$BRENT'] | HASH:8f34f8c475e1 | Oil prices jump as Iran steps up tanker attacks, hurricane threatens U.S. Gulf production 
+2026-10-09 10:16:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:-0.33 | TKR:['$BRENT'] | HASH:9888f9b64b86 | Oil Prices Fall as Market Awaits Possible US-Iran Ceasefire Deal - EnergyNow
+2026-10-09 10:16:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.33 | TKR:['$BRENT', '$BRENT'] | HASH:7030e0281472 | Crude Oil Outlook: WTI Holds Support as Brent Shows Strength - StoneX
+2026-10-09 10:16:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:['$BRENT', '$BRENT'] | HASH:9944344cae19 | Oil prices today: Brent slips as Trump cites 'productive talks' with Iran - The Times of I
+2026-10-09 10:16:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:572612cac055 | Fed seen on pause in October after inflation data - Reuters
+2026-10-09 10:16:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:baeca3c82e7a | The Fed's preferred inflation measure was lower than expected in August. Is that a good th
+2026-10-09 10:16:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:7b97a9946e69 | Minneapolis Fed's Neel Kashkari said soft inflation data isn't enough to stop more rate hi
+2026-10-09 10:16:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:[] | HASH:131e9fb3ba8c | US rate hike bets fade as revised inflation data points to October pause - Nikkei Asia
+2026-10-09 10:16:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.33 | TKR:['FED'] | HASH:4fffda1c638a | Fed pauses again as markets debate rate hikes - HousingWire
+2026-10-09 10:16:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:c3bc65f723ca | EXCLUSIVE: Anthropic's IPO pitch embraces AI's promise and peril - Reuters
+2026-10-09 10:16:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:4023bc07e02b | Anthropic’s $2 trillion AI dream is built on a series of contradictions - CTech
+2026-10-09 10:16:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:e72a506688f3 | Leaked Anthropic IPO Prospectus Gives Wall Street an Early Look at How AI Could Go Off the
+2026-10-09 10:16:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:b68a5df447e6 | ​Anthropic's AI paradox: More powerful systems could mean bigger risks to humanity - The T
+2026-10-09 10:17:01 [INFO] HQ:Caracas NODE:Charallave | M82 INTEGRATED V3 START - Caracas HQ | Charallave Edge - M82 Dossier V1-V15 ACTIVE
+2026-10-09 10:17:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['$BRENT'] | HASH:b0dd51abe371 | How will the US-Venezuela oil deal work? Alejandro Betancourt, China and Trump’s 65 bn bar
+2026-10-09 10:17:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['CVX'] | HASH:c85d3016b3c5 | Chevron’s Venezuela licence downgrade threatens 200 kbd in output - Kpler
+2026-10-09 10:17:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:['JPY='] | HASH:e312fe772e44 | Why a Yen Reversal Could Shake Treasuries, Tech Stocks and Global Markets - Investing.com
+2026-10-09 10:17:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:e1e630405321 | Japanese Yen softens as BoJ rate hike expectations recede, FOMC Minutes loom - FXStreet
+2026-10-09 10:17:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:bff57b169afe | Japanese Yen softens as BoJ rate hike expectations recede, FOMC Minutes loom - tmgm.com
+2026-10-09 10:17:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:84891214c09d | USD/JPY Analysis: Is the Yen Still Weak Despite the BOJ Rate Hike? - FOREX.com
+2026-10-09 10:17:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.67 | TKR:['$BRENT'] | HASH:8f34f8c475e1 | Oil prices jump as Iran steps up tanker attacks, hurricane threatens U.S. Gulf production 
+2026-10-09 10:17:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:-0.33 | TKR:['$BRENT'] | HASH:9888f9b64b86 | Oil Prices Fall as Market Awaits Possible US-Iran Ceasefire Deal - EnergyNow
+2026-10-09 10:17:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.33 | TKR:['$BRENT', '$BRENT'] | HASH:7030e0281472 | Crude Oil Outlook: WTI Holds Support as Brent Shows Strength - StoneX
+2026-10-09 10:17:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:['$BRENT', '$BRENT'] | HASH:9944344cae19 | Oil prices today: Brent slips as Trump cites 'productive talks' with Iran - The Times of I
+2026-10-09 10:17:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:572612cac055 | Fed seen on pause in October after inflation data - Reuters
+2026-10-09 10:17:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:baeca3c82e7a | The Fed's preferred inflation measure was lower than expected in August. Is that a good th
+2026-10-09 10:17:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:7b97a9946e69 | Minneapolis Fed's Neel Kashkari said soft inflation data isn't enough to stop more rate hi
+2026-10-09 10:17:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:[] | HASH:131e9fb3ba8c | US rate hike bets fade as revised inflation data points to October pause - Nikkei Asia
+2026-10-09 10:17:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.33 | TKR:['FED'] | HASH:4fffda1c638a | Fed pauses again as markets debate rate hikes - HousingWire
+2026-10-09 10:17:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:c3bc65f723ca | EXCLUSIVE: Anthropic's IPO pitch embraces AI's promise and peril - Reuters
+2026-10-09 10:17:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:4023bc07e02b | Anthropic’s $2 trillion AI dream is built on a series of contradictions - CTech
+2026-10-09 10:17:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:e72a506688f3 | Leaked Anthropic IPO Prospectus Gives Wall Street an Early Look at How AI Could Go Off the
+2026-10-09 10:17:02 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:b68a5df447e6 | ​Anthropic's AI paradox: More powerful systems could mean bigger risks to humanity - The T
+2026-10-09 10:18:01 [INFO] HQ:Caracas NODE:Charallave | M82 INTEGRATED V3 START - Caracas HQ | Charallave Edge - M82 Dossier V1-V15 ACTIVE
+2026-10-09 10:18:04 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['$BRENT'] | HASH:b0dd51abe371 | How will the US-Venezuela oil deal work? Alejandro Betancourt, China and Trump’s 65 bn bar
+2026-10-09 10:18:04 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['CVX'] | HASH:c85d3016b3c5 | Chevron’s Venezuela licence downgrade threatens 200 kbd in output - Kpler
+2026-10-09 10:18:04 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:['JPY='] | HASH:e312fe772e44 | Why a Yen Reversal Could Shake Treasuries, Tech Stocks and Global Markets - Investing.com
+2026-10-09 10:18:04 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:e1e630405321 | Japanese Yen softens as BoJ rate hike expectations recede, FOMC Minutes loom - FXStreet
+2026-10-09 10:18:04 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:bff57b169afe | Japanese Yen softens as BoJ rate hike expectations recede, FOMC Minutes loom - tmgm.com
+2026-10-09 10:18:04 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:84891214c09d | USD/JPY Analysis: Is the Yen Still Weak Despite the BOJ Rate Hike? - FOREX.com
+2026-10-09 10:18:04 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.67 | TKR:['$BRENT'] | HASH:8f34f8c475e1 | Oil prices jump as Iran steps up tanker attacks, hurricane threatens U.S. Gulf production 
+2026-10-09 10:18:04 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:-0.33 | TKR:['$BRENT'] | HASH:9888f9b64b86 | Oil Prices Fall as Market Awaits Possible US-Iran Ceasefire Deal - EnergyNow
+2026-10-09 10:18:04 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.33 | TKR:['$BRENT', '$BRENT'] | HASH:7030e0281472 | Crude Oil Outlook: WTI Holds Support as Brent Shows Strength - StoneX
+2026-10-09 10:18:04 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:['$BRENT', '$BRENT'] | HASH:9944344cae19 | Oil prices today: Brent slips as Trump cites 'productive talks' with Iran - The Times of I
+2026-10-09 10:18:04 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:572612cac055 | Fed seen on pause in October after inflation data - Reuters
+2026-10-09 10:18:04 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:baeca3c82e7a | The Fed's preferred inflation measure was lower than expected in August. Is that a good th
+2026-10-09 10:18:04 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:7b97a9946e69 | Minneapolis Fed's Neel Kashkari said soft inflation data isn't enough to stop more rate hi
+2026-10-09 10:18:04 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:[] | HASH:131e9fb3ba8c | US rate hike bets fade as revised inflation data points to October pause - Nikkei Asia
+2026-10-09 10:18:04 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.33 | TKR:['FED'] | HASH:4fffda1c638a | Fed pauses again as markets debate rate hikes - HousingWire
+2026-10-09 10:18:04 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:c3bc65f723ca | EXCLUSIVE: Anthropic's IPO pitch embraces AI's promise and peril - Reuters
+2026-10-09 10:18:04 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:4023bc07e02b | Anthropic’s $2 trillion AI dream is built on a series of contradictions - CTech
+2026-10-09 10:18:04 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:e72a506688f3 | Leaked Anthropic IPO Prospectus Gives Wall Street an Early Look at How AI Could Go Off the
+2026-10-09 10:18:04 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:b68a5df447e6 | ​Anthropic's AI paradox: More powerful systems could mean bigger risks to humanity - The T
+2026-10-09 10:19:02 [INFO] HQ:Caracas NODE:Charallave | M82 INTEGRATED V3 START - Caracas HQ | Charallave Edge - M82 Dossier V1-V15 ACTIVE
+2026-10-09 10:19:04 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['$BRENT'] | HASH:b0dd51abe371 | How will the US-Venezuela oil deal work? Alejandro Betancourt, China and Trump’s 65 bn bar
+2026-10-09 10:19:04 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['CVX'] | HASH:c85d3016b3c5 | Chevron’s Venezuela licence downgrade threatens 200 kbd in output - Kpler
+2026-10-09 10:19:04 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:['JPY='] | HASH:e312fe772e44 | Why a Yen Reversal Could Shake Treasuries, Tech Stocks and Global Markets - Investing.com
+2026-10-09 10:19:04 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:e1e630405321 | Japanese Yen softens as BoJ rate hike expectations recede, FOMC Minutes loom - FXStreet
+2026-10-09 10:19:04 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:bff57b169afe | Japanese Yen softens as BoJ rate hike expectations recede, FOMC Minutes loom - tmgm.com
+2026-10-09 10:19:04 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:84891214c09d | USD/JPY Analysis: Is the Yen Still Weak Despite the BOJ Rate Hike? - FOREX.com
+2026-10-09 10:19:04 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.67 | TKR:['$BRENT'] | HASH:8f34f8c475e1 | Oil prices jump as Iran steps up tanker attacks, hurricane threatens U.S. Gulf production 
+2026-10-09 10:19:04 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:-0.33 | TKR:['$BRENT'] | HASH:9888f9b64b86 | Oil Prices Fall as Market Awaits Possible US-Iran Ceasefire Deal - EnergyNow
+2026-10-09 10:19:04 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.33 | TKR:['$BRENT', '$BRENT'] | HASH:7030e0281472 | Crude Oil Outlook: WTI Holds Support as Brent Shows Strength - StoneX
+2026-10-09 10:19:04 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:['$BRENT', '$BRENT'] | HASH:9944344cae19 | Oil prices today: Brent slips as Trump cites 'productive talks' with Iran - The Times of I
+2026-10-09 10:19:04 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:572612cac055 | Fed seen on pause in October after inflation data - Reuters
+2026-10-09 10:19:04 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:baeca3c82e7a | The Fed's preferred inflation measure was lower than expected in August. Is that a good th
+2026-10-09 10:19:04 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:7b97a9946e69 | Minneapolis Fed's Neel Kashkari said soft inflation data isn't enough to stop more rate hi
+2026-10-09 10:19:04 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:[] | HASH:131e9fb3ba8c | US rate hike bets fade as revised inflation data points to October pause - Nikkei Asia
+2026-10-09 10:19:04 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.33 | TKR:['FED'] | HASH:4fffda1c638a | Fed pauses again as markets debate rate hikes - HousingWire
+2026-10-09 10:19:04 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:c3bc65f723ca | EXCLUSIVE: Anthropic's IPO pitch embraces AI's promise and peril - Reuters
+2026-10-09 10:19:04 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:4023bc07e02b | Anthropic’s $2 trillion AI dream is built on a series of contradictions - CTech
+2026-10-09 10:19:04 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:e72a506688f3 | Leaked Anthropic IPO Prospectus Gives Wall Street an Early Look at How AI Could Go Off the
+2026-10-09 10:19:04 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:b68a5df447e6 | ​Anthropic's AI paradox: More powerful systems could mean bigger risks to humanity - The T
+2026-10-09 10:20:01 [INFO] HQ:Caracas NODE:Charallave | M82 INTEGRATED V3 START - Caracas HQ | Charallave Edge - M82 Dossier V1-V15 ACTIVE
+2026-10-09 10:20:03 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['$BRENT'] | HASH:b0dd51abe371 | How will the US-Venezuela oil deal work? Alejandro Betancourt, China and Trump’s 65 bn bar
+2026-10-09 10:20:03 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['CVX'] | HASH:c85d3016b3c5 | Chevron’s Venezuela licence downgrade threatens 200 kbd in output - Kpler
+2026-10-09 10:20:03 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:['JPY='] | HASH:e312fe772e44 | Why a Yen Reversal Could Shake Treasuries, Tech Stocks and Global Markets - Investing.com
+2026-10-09 10:20:03 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:e1e630405321 | Japanese Yen softens as BoJ rate hike expectations recede, FOMC Minutes loom - FXStreet
+2026-10-09 10:20:03 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:bff57b169afe | Japanese Yen softens as BoJ rate hike expectations recede, FOMC Minutes loom - tmgm.com
+2026-10-09 10:20:03 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:84891214c09d | USD/JPY Analysis: Is the Yen Still Weak Despite the BOJ Rate Hike? - FOREX.com
+2026-10-09 10:20:03 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.67 | TKR:['$BRENT'] | HASH:8f34f8c475e1 | Oil prices jump as Iran steps up tanker attacks, hurricane threatens U.S. Gulf production 
+2026-10-09 10:20:03 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:-0.33 | TKR:['$BRENT'] | HASH:9888f9b64b86 | Oil Prices Fall as Market Awaits Possible US-Iran Ceasefire Deal - EnergyNow
+2026-10-09 10:20:03 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.33 | TKR:['$BRENT', '$BRENT'] | HASH:7030e0281472 | Crude Oil Outlook: WTI Holds Support as Brent Shows Strength - StoneX
+2026-10-09 10:20:03 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:['$BRENT', '$BRENT'] | HASH:9944344cae19 | Oil prices today: Brent slips as Trump cites 'productive talks' with Iran - The Times of I
+2026-10-09 10:20:03 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:572612cac055 | Fed seen on pause in October after inflation data - Reuters
+2026-10-09 10:20:03 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:baeca3c82e7a | The Fed's preferred inflation measure was lower than expected in August. Is that a good th
+2026-10-09 10:20:03 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:7b97a9946e69 | Minneapolis Fed's Neel Kashkari said soft inflation data isn't enough to stop more rate hi
+2026-10-09 10:20:03 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:[] | HASH:131e9fb3ba8c | US rate hike bets fade as revised inflation data points to October pause - Nikkei Asia
+2026-10-09 10:20:03 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.33 | TKR:['FED'] | HASH:4fffda1c638a | Fed pauses again as markets debate rate hikes - HousingWire
+2026-10-09 10:20:03 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:c3bc65f723ca | EXCLUSIVE: Anthropic's IPO pitch embraces AI's promise and peril - Reuters
+2026-10-09 10:20:03 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:4023bc07e02b | Anthropic’s $2 trillion AI dream is built on a series of contradictions - CTech
+2026-10-09 10:20:03 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:e72a506688f3 | Leaked Anthropic IPO Prospectus Gives Wall Street an Early Look at How AI Could Go Off the
+2026-10-09 10:20:03 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:b68a5df447e6 | ​Anthropic's AI paradox: More powerful systems could mean bigger risks to humanity - The T
+2026-10-09 10:21:01 [INFO] HQ:Caracas NODE:Charallave | M82 INTEGRATED V3 START - Caracas HQ | Charallave Edge - M82 Dossier V1-V15 ACTIVE
+2026-10-09 10:21:03 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['$BRENT'] | HASH:b0dd51abe371 | How will the US-Venezuela oil deal work? Alejandro Betancourt, China and Trump’s 65 bn bar
+2026-10-09 10:21:03 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['CVX'] | HASH:c85d3016b3c5 | Chevron’s Venezuela licence downgrade threatens 200 kbd in output - Kpler
+2026-10-09 10:21:03 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:['JPY='] | HASH:e312fe772e44 | Why a Yen Reversal Could Shake Treasuries, Tech Stocks and Global Markets - Investing.com
+2026-10-09 10:21:03 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:e1e630405321 | Japanese Yen softens as BoJ rate hike expectations recede, FOMC Minutes loom - FXStreet
+2026-10-09 10:21:03 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:bff57b169afe | Japanese Yen softens as BoJ rate hike expectations recede, FOMC Minutes loom - tmgm.com
+2026-10-09 10:21:03 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:84891214c09d | USD/JPY Analysis: Is the Yen Still Weak Despite the BOJ Rate Hike? - FOREX.com
+2026-10-09 10:21:03 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.67 | TKR:['$BRENT'] | HASH:8f34f8c475e1 | Oil prices jump as Iran steps up tanker attacks, hurricane threatens U.S. Gulf production 
+2026-10-09 10:21:03 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:-0.33 | TKR:['$BRENT'] | HASH:9888f9b64b86 | Oil Prices Fall as Market Awaits Possible US-Iran Ceasefire Deal - EnergyNow
+2026-10-09 10:21:03 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.33 | TKR:['$BRENT', '$BRENT'] | HASH:7030e0281472 | Crude Oil Outlook: WTI Holds Support as Brent Shows Strength - StoneX
+2026-10-09 10:21:03 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:['$BRENT', '$BRENT'] | HASH:9944344cae19 | Oil prices today: Brent slips as Trump cites 'productive talks' with Iran - The Times of I
+2026-10-09 10:21:03 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:572612cac055 | Fed seen on pause in October after inflation data - Reuters
+2026-10-09 10:21:03 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:baeca3c82e7a | The Fed's preferred inflation measure was lower than expected in August. Is that a good th
+2026-10-09 10:21:03 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:7b97a9946e69 | Minneapolis Fed's Neel Kashkari said soft inflation data isn't enough to stop more rate hi
+2026-10-09 10:21:03 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:[] | HASH:131e9fb3ba8c | US rate hike bets fade as revised inflation data points to October pause - Nikkei Asia
+2026-10-09 10:21:03 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.33 | TKR:['FED'] | HASH:4fffda1c638a | Fed pauses again as markets debate rate hikes - HousingWire
+2026-10-09 10:21:03 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:c3bc65f723ca | EXCLUSIVE: Anthropic's IPO pitch embraces AI's promise and peril - Reuters
+2026-10-09 10:21:03 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:4023bc07e02b | Anthropic’s $2 trillion AI dream is built on a series of contradictions - CTech
+2026-10-09 10:21:03 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:e72a506688f3 | Leaked Anthropic IPO Prospectus Gives Wall Street an Early Look at How AI Could Go Off the
+2026-10-09 10:21:03 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:b68a5df447e6 | ​Anthropic's AI paradox: More powerful systems could mean bigger risks to humanity - The T
+2026-10-09 10:23:11 [INFO] HQ:Caracas NODE:Charallave | M82 INTEGRATED V3 START - Caracas HQ | Charallave Edge - M82 Dossier V1-V15 ACTIVE
+2026-10-09 10:23:13 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['$BRENT'] | HASH:b0dd51abe371 | How will the US-Venezuela oil deal work? Alejandro Betancourt, China and Trump’s 65 bn bar
+2026-10-09 10:23:13 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['CVX'] | HASH:c85d3016b3c5 | Chevron’s Venezuela licence downgrade threatens 200 kbd in output - Kpler
+2026-10-09 10:23:13 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:['JPY='] | HASH:e312fe772e44 | Why a Yen Reversal Could Shake Treasuries, Tech Stocks and Global Markets - Investing.com
+2026-10-09 10:23:13 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:e1e630405321 | Japanese Yen softens as BoJ rate hike expectations recede, FOMC Minutes loom - FXStreet
+2026-10-09 10:23:13 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:bff57b169afe | Japanese Yen softens as BoJ rate hike expectations recede, FOMC Minutes loom - tmgm.com
+2026-10-09 10:23:13 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:84891214c09d | USD/JPY Analysis: Is the Yen Still Weak Despite the BOJ Rate Hike? - FOREX.com
+2026-10-09 10:23:13 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.67 | TKR:['$BRENT'] | HASH:8f34f8c475e1 | Oil prices jump as Iran steps up tanker attacks, hurricane threatens U.S. Gulf production 
+2026-10-09 10:23:13 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:-0.33 | TKR:['$BRENT'] | HASH:9888f9b64b86 | Oil Prices Fall as Market Awaits Possible US-Iran Ceasefire Deal - EnergyNow
+2026-10-09 10:23:13 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.33 | TKR:['$BRENT', '$BRENT'] | HASH:7030e0281472 | Crude Oil Outlook: WTI Holds Support as Brent Shows Strength - StoneX
+2026-10-09 10:23:13 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:['$BRENT', '$BRENT'] | HASH:9944344cae19 | Oil prices today: Brent slips as Trump cites 'productive talks' with Iran - The Times of I
+2026-10-09 10:23:13 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:572612cac055 | Fed seen on pause in October after inflation data - Reuters
+2026-10-09 10:23:13 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:baeca3c82e7a | The Fed's preferred inflation measure was lower than expected in August. Is that a good th
+2026-10-09 10:23:13 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:7b97a9946e69 | Minneapolis Fed's Neel Kashkari said soft inflation data isn't enough to stop more rate hi
+2026-10-09 10:23:13 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:[] | HASH:131e9fb3ba8c | US rate hike bets fade as revised inflation data points to October pause - Nikkei Asia
+2026-10-09 10:23:13 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.33 | TKR:['FED'] | HASH:4fffda1c638a | Fed pauses again as markets debate rate hikes - HousingWire
+2026-10-09 10:23:13 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:c3bc65f723ca | EXCLUSIVE: Anthropic's IPO pitch embraces AI's promise and peril - Reuters
+2026-10-09 10:23:13 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:4023bc07e02b | Anthropic’s $2 trillion AI dream is built on a series of contradictions - CTech
+2026-10-09 10:23:13 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:e72a506688f3 | Leaked Anthropic IPO Prospectus Gives Wall Street an Early Look at How AI Could Go Off the
+2026-10-09 10:23:13 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:b68a5df447e6 | ​Anthropic's AI paradox: More powerful systems could mean bigger risks to humanity - The T
+2026-10-09 10:23:14 [INFO] HQ:Caracas NODE:Charallave | M82 INTEGRATED V3 START - Caracas HQ | Charallave Edge - M82 Dossier V1-V15 ACTIVE
+2026-10-09 10:23:15 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['$BRENT'] | HASH:b0dd51abe371 | How will the US-Venezuela oil deal work? Alejandro Betancourt, China and Trump’s 65 bn bar
+2026-10-09 10:23:15 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['CVX'] | HASH:c85d3016b3c5 | Chevron’s Venezuela licence downgrade threatens 200 kbd in output - Kpler
+2026-10-09 10:23:15 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:['JPY='] | HASH:e312fe772e44 | Why a Yen Reversal Could Shake Treasuries, Tech Stocks and Global Markets - Investing.com
+2026-10-09 10:23:15 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:e1e630405321 | Japanese Yen softens as BoJ rate hike expectations recede, FOMC Minutes loom - FXStreet
+2026-10-09 10:23:15 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:bff57b169afe | Japanese Yen softens as BoJ rate hike expectations recede, FOMC Minutes loom - tmgm.com
+2026-10-09 10:23:15 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:84891214c09d | USD/JPY Analysis: Is the Yen Still Weak Despite the BOJ Rate Hike? - FOREX.com
+2026-10-09 10:23:15 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.67 | TKR:['$BRENT'] | HASH:8f34f8c475e1 | Oil prices jump as Iran steps up tanker attacks, hurricane threatens U.S. Gulf production 
+2026-10-09 10:23:15 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:-0.33 | TKR:['$BRENT'] | HASH:9888f9b64b86 | Oil Prices Fall as Market Awaits Possible US-Iran Ceasefire Deal - EnergyNow
+2026-10-09 10:23:15 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.33 | TKR:['$BRENT', '$BRENT'] | HASH:7030e0281472 | Crude Oil Outlook: WTI Holds Support as Brent Shows Strength - StoneX
+2026-10-09 10:23:15 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:['$BRENT', '$BRENT'] | HASH:9944344cae19 | Oil prices today: Brent slips as Trump cites 'productive talks' with Iran - The Times of I
+2026-10-09 10:23:15 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:572612cac055 | Fed seen on pause in October after inflation data - Reuters
+2026-10-09 10:23:15 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:baeca3c82e7a | The Fed's preferred inflation measure was lower than expected in August. Is that a good th
+2026-10-09 10:23:15 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:7b97a9946e69 | Minneapolis Fed's Neel Kashkari said soft inflation data isn't enough to stop more rate hi
+2026-10-09 10:23:15 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:[] | HASH:131e9fb3ba8c | US rate hike bets fade as revised inflation data points to October pause - Nikkei Asia
+2026-10-09 10:23:15 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.33 | TKR:['FED'] | HASH:4fffda1c638a | Fed pauses again as markets debate rate hikes - HousingWire
+2026-10-09 10:23:15 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:c3bc65f723ca | EXCLUSIVE: Anthropic's IPO pitch embraces AI's promise and peril - Reuters
+2026-10-09 10:23:15 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:4023bc07e02b | Anthropic’s $2 trillion AI dream is built on a series of contradictions - CTech
+2026-10-09 10:23:15 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:e72a506688f3 | Leaked Anthropic IPO Prospectus Gives Wall Street an Early Look at How AI Could Go Off the
+2026-10-09 10:23:15 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:b68a5df447e6 | ​Anthropic's AI paradox: More powerful systems could mean bigger risks to humanity - The T
+2026-10-09 10:24:17 [INFO] HQ:Caracas NODE:Charallave | M82 INTEGRATED V3 START - Caracas HQ | Charallave Edge - M82 Dossier V1-V15 ACTIVE
+2026-10-09 10:24:18 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['$BRENT'] | HASH:b0dd51abe371 | How will the US-Venezuela oil deal work? Alejandro Betancourt, China and Trump’s 65 bn bar
+2026-10-09 10:24:18 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['CVX'] | HASH:c85d3016b3c5 | Chevron’s Venezuela licence downgrade threatens 200 kbd in output - Kpler
+2026-10-09 10:24:18 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:['JPY='] | HASH:e312fe772e44 | Why a Yen Reversal Could Shake Treasuries, Tech Stocks and Global Markets - Investing.com
+2026-10-09 10:24:18 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:e1e630405321 | Japanese Yen softens as BoJ rate hike expectations recede, FOMC Minutes loom - FXStreet
+2026-10-09 10:24:18 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:bff57b169afe | Japanese Yen softens as BoJ rate hike expectations recede, FOMC Minutes loom - tmgm.com
+2026-10-09 10:24:18 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:84891214c09d | USD/JPY Analysis: Is the Yen Still Weak Despite the BOJ Rate Hike? - FOREX.com
+2026-10-09 10:24:18 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.67 | TKR:['$BRENT'] | HASH:8f34f8c475e1 | Oil prices jump as Iran steps up tanker attacks, hurricane threatens U.S. Gulf production 
+2026-10-09 10:24:18 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:-0.33 | TKR:['$BRENT'] | HASH:9888f9b64b86 | Oil Prices Fall as Market Awaits Possible US-Iran Ceasefire Deal - EnergyNow
+2026-10-09 10:24:18 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.33 | TKR:['$BRENT', '$BRENT'] | HASH:7030e0281472 | Crude Oil Outlook: WTI Holds Support as Brent Shows Strength - StoneX
+2026-10-09 10:24:18 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:['$BRENT', '$BRENT'] | HASH:9944344cae19 | Oil prices today: Brent slips as Trump cites 'productive talks' with Iran - The Times of I
+2026-10-09 10:24:18 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:572612cac055 | Fed seen on pause in October after inflation data - Reuters
+2026-10-09 10:24:18 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:baeca3c82e7a | The Fed's preferred inflation measure was lower than expected in August. Is that a good th
+2026-10-09 10:24:18 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:7b97a9946e69 | Minneapolis Fed's Neel Kashkari said soft inflation data isn't enough to stop more rate hi
+2026-10-09 10:24:18 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:[] | HASH:131e9fb3ba8c | US rate hike bets fade as revised inflation data points to October pause - Nikkei Asia
+2026-10-09 10:24:18 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.33 | TKR:['FED'] | HASH:4fffda1c638a | Fed pauses again as markets debate rate hikes - HousingWire
+2026-10-09 10:24:18 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:c3bc65f723ca | EXCLUSIVE: Anthropic's IPO pitch embraces AI's promise and peril - Reuters
+2026-10-09 10:24:18 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:4023bc07e02b | Anthropic’s $2 trillion AI dream is built on a series of contradictions - CTech
+2026-10-09 10:24:18 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:e72a506688f3 | Leaked Anthropic IPO Prospectus Gives Wall Street an Early Look at How AI Could Go Off the
+2026-10-09 10:24:18 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:b68a5df447e6 | ​Anthropic's AI paradox: More powerful systems could mean bigger risks to humanity - The T
+2026-10-09 10:50:29 [INFO] HQ:Caracas NODE:Charallave | M82 INTEGRATED V3 START - Caracas HQ | Charallave Edge - M82 Dossier V1-V15 ACTIVE
+2026-10-09 10:50:31 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['$BRENT'] | HASH:b0dd51abe371 | How will the US-Venezuela oil deal work? Alejandro Betancourt, China and Trump’s 65 bn bar
+2026-10-09 10:50:31 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['CVX'] | HASH:c85d3016b3c5 | Chevron’s Venezuela licence downgrade threatens 200 kbd in output - Kpler
+2026-10-09 10:50:31 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:['JPY='] | HASH:e312fe772e44 | Why a Yen Reversal Could Shake Treasuries, Tech Stocks and Global Markets - Investing.com
+2026-10-09 10:50:31 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:e1e630405321 | Japanese Yen softens as BoJ rate hike expectations recede, FOMC Minutes loom - FXStreet
+2026-10-09 10:50:31 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:bff57b169afe | Japanese Yen softens as BoJ rate hike expectations recede, FOMC Minutes loom - tmgm.com
+2026-10-09 10:50:31 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:84891214c09d | USD/JPY Analysis: Is the Yen Still Weak Despite the BOJ Rate Hike? - FOREX.com
+2026-10-09 10:50:31 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.67 | TKR:['$BRENT'] | HASH:8f34f8c475e1 | Oil prices jump as Iran steps up tanker attacks, hurricane threatens U.S. Gulf production 
+2026-10-09 10:50:31 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:-0.33 | TKR:['$BRENT'] | HASH:9888f9b64b86 | Oil Prices Fall as Market Awaits Possible US-Iran Ceasefire Deal - EnergyNow
+2026-10-09 10:50:31 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.33 | TKR:['$BRENT', '$BRENT'] | HASH:7030e0281472 | Crude Oil Outlook: WTI Holds Support as Brent Shows Strength - StoneX
+2026-10-09 10:50:31 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:['$BRENT', '$BRENT'] | HASH:9944344cae19 | Oil prices today: Brent slips as Trump cites 'productive talks' with Iran - The Times of I
+2026-10-09 10:50:31 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:572612cac055 | Fed seen on pause in October after inflation data - Reuters
+2026-10-09 10:50:31 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:baeca3c82e7a | The Fed's preferred inflation measure was lower than expected in August. Is that a good th
+2026-10-09 10:50:31 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:7b97a9946e69 | Minneapolis Fed's Neel Kashkari said soft inflation data isn't enough to stop more rate hi
+2026-10-09 10:50:31 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:[] | HASH:131e9fb3ba8c | US rate hike bets fade as revised inflation data points to October pause - Nikkei Asia
+2026-10-09 10:50:31 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.33 | TKR:['FED'] | HASH:4fffda1c638a | Fed pauses again as markets debate rate hikes - HousingWire
+2026-10-09 10:50:31 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:c3bc65f723ca | EXCLUSIVE: Anthropic's IPO pitch embraces AI's promise and peril - Reuters
+2026-10-09 10:50:31 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:4023bc07e02b | Anthropic’s $2 trillion AI dream is built on a series of contradictions - CTech
+2026-10-09 10:50:31 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:e72a506688f3 | Leaked Anthropic IPO Prospectus Gives Wall Street an Early Look at How AI Could Go Off the
+2026-10-09 10:50:31 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:b68a5df447e6 | ​Anthropic's AI paradox: More powerful systems could mean bigger risks to humanity - The T
+2026-10-09 10:51:17 [INFO] HQ:Caracas NODE:Charallave | M82 INTEGRATED V3 START - Caracas HQ | Charallave Edge - M82 Dossier V1-V15 ACTIVE
+2026-10-09 10:51:18 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['$BRENT'] | HASH:b0dd51abe371 | How will the US-Venezuela oil deal work? Alejandro Betancourt, China and Trump’s 65 bn bar
+2026-10-09 10:51:18 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['CVX'] | HASH:c85d3016b3c5 | Chevron’s Venezuela licence downgrade threatens 200 kbd in output - Kpler
+2026-10-09 10:51:18 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:['JPY='] | HASH:e312fe772e44 | Why a Yen Reversal Could Shake Treasuries, Tech Stocks and Global Markets - Investing.com
+2026-10-09 10:51:18 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:e1e630405321 | Japanese Yen softens as BoJ rate hike expectations recede, FOMC Minutes loom - FXStreet
+2026-10-09 10:51:18 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:bff57b169afe | Japanese Yen softens as BoJ rate hike expectations recede, FOMC Minutes loom - tmgm.com
+2026-10-09 10:51:18 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:84891214c09d | USD/JPY Analysis: Is the Yen Still Weak Despite the BOJ Rate Hike? - FOREX.com
+2026-10-09 10:51:18 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.67 | TKR:['$BRENT'] | HASH:8f34f8c475e1 | Oil prices jump as Iran steps up tanker attacks, hurricane threatens U.S. Gulf production 
+2026-10-09 10:51:18 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:-0.33 | TKR:['$BRENT'] | HASH:9888f9b64b86 | Oil Prices Fall as Market Awaits Possible US-Iran Ceasefire Deal - EnergyNow
+2026-10-09 10:51:18 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.33 | TKR:['$BRENT', '$BRENT'] | HASH:7030e0281472 | Crude Oil Outlook: WTI Holds Support as Brent Shows Strength - StoneX
+2026-10-09 10:51:18 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:['$BRENT', '$BRENT'] | HASH:9944344cae19 | Oil prices today: Brent slips as Trump cites 'productive talks' with Iran - The Times of I
+2026-10-09 10:51:18 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:572612cac055 | Fed seen on pause in October after inflation data - Reuters
+2026-10-09 10:51:18 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:baeca3c82e7a | The Fed's preferred inflation measure was lower than expected in August. Is that a good th
+2026-10-09 10:51:18 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:7b97a9946e69 | Minneapolis Fed's Neel Kashkari said soft inflation data isn't enough to stop more rate hi
+2026-10-09 10:51:18 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:[] | HASH:131e9fb3ba8c | US rate hike bets fade as revised inflation data points to October pause - Nikkei Asia
+2026-10-09 10:51:18 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.33 | TKR:['FED'] | HASH:4fffda1c638a | Fed pauses again as markets debate rate hikes - HousingWire
+2026-10-09 10:51:18 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:c3bc65f723ca | EXCLUSIVE: Anthropic's IPO pitch embraces AI's promise and peril - Reuters
+2026-10-09 10:51:18 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:4023bc07e02b | Anthropic’s $2 trillion AI dream is built on a series of contradictions - CTech
+2026-10-09 10:51:18 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:e72a506688f3 | Leaked Anthropic IPO Prospectus Gives Wall Street an Early Look at How AI Could Go Off the
+2026-10-09 10:51:18 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:b68a5df447e6 | ​Anthropic's AI paradox: More powerful systems could mean bigger risks to humanity - The T
+2026-10-09 11:04:18 [INFO] HQ:Caracas NODE:Charallave | M82 INTEGRATED V3 START - Caracas HQ | Charallave Edge - M82 Dossier V1-V15 ACTIVE
+2026-10-09 11:04:21 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['$BRENT'] | HASH:b0dd51abe371 | How will the US-Venezuela oil deal work? Alejandro Betancourt, China and Trump’s 65 bn bar
+2026-10-09 11:04:21 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['CVX'] | HASH:c85d3016b3c5 | Chevron’s Venezuela licence downgrade threatens 200 kbd in output - Kpler
+2026-10-09 11:04:21 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:['JPY='] | HASH:e312fe772e44 | Why a Yen Reversal Could Shake Treasuries, Tech Stocks and Global Markets - Investing.com
+2026-10-09 11:04:21 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:e1e630405321 | Japanese Yen softens as BoJ rate hike expectations recede, FOMC Minutes loom - FXStreet
+2026-10-09 11:04:21 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:bff57b169afe | Japanese Yen softens as BoJ rate hike expectations recede, FOMC Minutes loom - tmgm.com
+2026-10-09 11:04:21 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['JPY=', 'JPY='] | HASH:84891214c09d | USD/JPY Analysis: Is the Yen Still Weak Despite the BOJ Rate Hike? - FOREX.com
+2026-10-09 11:04:21 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.67 | TKR:['$BRENT'] | HASH:8f34f8c475e1 | Oil prices jump as Iran steps up tanker attacks, hurricane threatens U.S. Gulf production 
+2026-10-09 11:04:21 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:-0.33 | TKR:['$BRENT'] | HASH:9888f9b64b86 | Oil Prices Fall as Market Awaits Possible US-Iran Ceasefire Deal - EnergyNow
+2026-10-09 11:04:21 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.33 | TKR:['$BRENT', '$BRENT'] | HASH:7030e0281472 | Crude Oil Outlook: WTI Holds Support as Brent Shows Strength - StoneX
+2026-10-09 11:04:21 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:['$BRENT', '$BRENT'] | HASH:9944344cae19 | Oil prices today: Brent slips as Trump cites 'productive talks' with Iran - The Times of I
+2026-10-09 11:04:21 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:572612cac055 | Fed seen on pause in October after inflation data - Reuters
+2026-10-09 11:04:21 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:baeca3c82e7a | The Fed's preferred inflation measure was lower than expected in August. Is that a good th
+2026-10-09 11:04:21 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:['FED'] | HASH:7b97a9946e69 | Minneapolis Fed's Neel Kashkari said soft inflation data isn't enough to stop more rate hi
+2026-10-09 11:04:21 [INFO] HQ:Caracas NODE:Charallave | SCORE:4/10 | SENT:+0.00 | TKR:[] | HASH:131e9fb3ba8c | US rate hike bets fade as revised inflation data points to October pause - Nikkei Asia
+2026-10-09 11:04:21 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.33 | TKR:['FED'] | HASH:4fffda1c638a | Fed pauses again as markets debate rate hikes - HousingWire
+2026-10-09 11:04:21 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:c3bc65f723ca | EXCLUSIVE: Anthropic's IPO pitch embraces AI's promise and peril - Reuters
+2026-10-09 11:04:21 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:4023bc07e02b | Anthropic’s $2 trillion AI dream is built on a series of contradictions - CTech
+2026-10-09 11:04:21 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:e72a506688f3 | Leaked Anthropic IPO Prospectus Gives Wall Street an Early Look at How AI Could Go Off the
+2026-10-09 11:04:21 [INFO] HQ:Caracas NODE:Charallave | SCORE:6/10 | SENT:+0.00 | TKR:[] | HASH:b68a5df447e6 | ​Anthropic's AI paradox: More powerful systems could mean bigger risks to humanity - The T

@@ -1,0 +1,28 @@
+/data/data/com.termux/files/home/M82/m82_master_dossier.py:59: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "timestamp": datetime.utcnow().isoformat() + "Z",
+==============================================================================
+⚡ M82 MACRO DOSSIER EXECUTIVE SNAPSHOT — GOLDMAN / CITADEL LEVEL
+──────────────────────────────────────────────────────────────────────────────
+{
+  "timestamp": "2026-11-02T01:39:38.191664Z",
+  "node": "SOVEREIGN EDGE EXECUTION NODE L4/L5",
+  "governance": {
+    "mode": "BUNKER MODE / CUSTODIA PASIVA",
+    "lock_ratio": "0.30x",
+    "var_daily": "1.68%",
+    "warsh_spread": "+102.0 bps"
+  },
+  "portfolio_anchors": {
+    "merey16_spot": "$105.40/bbl",
+    "citgo_valuation_target": "$2.1B Bond Recovery",
+    "quad_spv_settlement": "APPROVED"
+  },
+  "telemetry_health": {
+    "total_stream_events": 738232,
+    "high_alpha_signals": 714394,
+    "active_daemons": 40,
+    "wsgi_threads": 16
+  }
+}
+==============================================================================
+🚀 [M82 MASTER] Desplegando red de 40 Daemons de telemetría...

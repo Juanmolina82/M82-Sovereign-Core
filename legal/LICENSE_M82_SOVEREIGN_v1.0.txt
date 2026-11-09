@@ -1,0 +1,18 @@
+M82 SOVEREIGN LICENSE v1.0 — PROPRIETARY — ALL RIGHTS RESERVED
+Copyright (c) 2026 Molina82 — jmmp@molina82.com — https://molina82.com
+Architect: José Manuel Molina Paiva — Nodo Charallave L4/L5 Edge — Caracas HQ Central
+
+This license governs the entire M82 Sovereign Architecture including:
+- M82 Sovereign Core v61.0.51-A
+- M82 Sovereign Distributed Temporal Custody System
+- Macro Dossier Robusta (7 AGI Masters + Macro Dossier Soberano)
+- All daemons, scripts, bridges, telemetry, ratios, models
+
+Domain Authority: molina82.com is the canonical sovereign domain for all M82 IP.
+Any deployment, fork, or reference must resolve to https://molina82.com/license
+Contact: legal@molina82.com | jmmp@molina82.com
+
+USPTO Reference: Provisional Application US63/xxxxxx filed under 35 U.S.C. §111(b)
+Trademark: M82® and M82 Sovereign® pending — Owner: Molina82 — Domain: molina82.com
+
+NO USE WITHOUT WRITTEN CONSENT FROM molina82.com
