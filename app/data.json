@@ -1,7 +1,7 @@
 {
   "source": "M82 Data Core V63.0.01-A (Macro Dossier Robusto)",
-  "wire": "M82 CLI: Interactive Dossier Script dossier_m82.py Deployed & Validated | 9 Nov 2026",
-  "timestamp": "2026-11-09 18:55:30 VET",
+  "wire": "M82 WIRE 19:03 VET - LSEG CAPTURADO, PENDIENTE VERIFICACION | 9 Nov 2026",
+  "timestamp": "2026-11-09 19:04:54 VET",
   "equities": {
     "BRENT": {
       "last": 97.76,
@@ -772,7 +772,7 @@
     "SAUDI_GOV_PORTFOLIO_1.444T"
   ],
   "core_integrity_check": "100% VERIFIED",
-  "audit_source": "LSEG Workspace Realtime Wire (jmmp@molina82.com)",
+  "audit_source": "LSEG Workspace Wire (jmmp@molina82.com) - Captura 1000289100.jpg",
   "macro_chains": {
     "midterms_chain": "Presion democrata sobre Data Centers -> Venta NVDA/AI -> Caida Equities -> Liquidacion Oro corto plazo",
     "iran_chain": "Expectativa resolucion -> Caida crudo -> Expectativas baja tasas -> Soporte mediano plazo Oro",
@@ -878,8 +878,8 @@
   },
   "ai_audit": {
     "builder": "Fable 5.2 - OK",
-    "auditor": "Mythos 5.2 - SELLAR",
-    "verdict_status": "SELLADO_EN_CORE"
+    "auditor": "Mythos 5.2 - SELLAR_COMO_WIRE_NO_COMO_HECHO",
+    "verdict_status": "ESPERAR_CPI"
   },
   "nvda_governance_risk": {
     "event": "Board Probe - Intraday -8% / Cierre -5.3% a -5.6%",
@@ -913,5 +913,11 @@
     "file": "dossier_m82.py",
     "status": "EXECUTABLE_OK",
     "menu_structure": "Tesis Madre / Arquitectura 3 Capas / Telemetria Core"
+  },
+  "wire_vectors_7pm": {
+    "fbi_nvda_probe": "PENDIENTE_VERIFICAR - Titular OCR: Trump says FBI probing Huang as China espionage target",
+    "venezuela_future_energy": "OCR_ROTO - Probable: future power starts in Venezuela - Frase exacta pendiente",
+    "nvda_board_silence_broken": "Circulo interno NVDA rompe silencio tras concerns inteligencia extranjera",
+    "key_man_risk_status": "Riesgo gobernanza elevado - Descuento por politica, no por Blackwell"
   }
 }
