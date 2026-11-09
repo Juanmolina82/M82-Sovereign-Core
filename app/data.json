@@ -1,7 +1,7 @@
 {
   "source": "M82 Data Core V63.0.01-A (Macro Dossier Robusto)",
   "wire": "M82 WIRE: NVDA Board Probe / Jensen Huang Succession Risk & China Espionage Target | 9 Nov 2026",
-  "timestamp": "2026-11-09 15:19:33 VET",
+  "timestamp": "2026-11-09 15:21:30 VET",
   "equities": {
     "BRENT": {
       "last": 97.76,
@@ -166,7 +166,13 @@
     "gas_mmcfd": 705,
     "gas_yoy": -13.39
   },
-  "risk": "BUNKER MODE / 0.30x LOCK - 100% Dry Powder - 0 ejecuciones hasta ver CPI Martes",
+  "risk": {
+    "mode": "BUNKER MODE",
+    "lock": "0.30x LOCK",
+    "dry_powder": "100%",
+    "executions": 0,
+    "wait_for": "CPI Martes 8:30 AM ET"
+  },
   "breaking": "DOSSIER ROBUSTO M82 INTEGRADO - SAUDI ARAMCO + REFINITIV + BUNKER 0.30x LOCK",
   "alerts": [
     "NO DISPARAR - Webhooks inactivos en BUNKER - estado esperado"
@@ -766,7 +772,7 @@
     "SAUDI_GOV_PORTFOLIO_1.444T"
   ],
   "core_integrity_check": "100% VERIFIED",
-  "audit_source": "LSEG Workspace / WSJ (Amrith Ramkumar)",
+  "audit_source": "LSEG / WSJ - Board Probe, Alice Huang / Megaspeed",
   "macro_chains": {
     "midterms_chain": "Presion democrata sobre Data Centers -> Venta NVDA/AI -> Caida Equities -> Liquidacion Oro corto plazo",
     "iran_chain": "Expectativa resolucion -> Caida crudo -> Expectativas baja tasas -> Soporte mediano plazo Oro",
@@ -872,15 +878,15 @@
   },
   "ai_audit": {
     "builder": "Fable 5.2 - OK",
-    "auditor": "Mythos 5.2 - VEREDICTO SELLAR EN CORE",
+    "auditor": "Mythos 5.2 - SELLAR",
     "verdict_status": "SELLADO_EN_CORE"
   },
   "nvda_governance_risk": {
-    "event": "Investigaci\u00f3n de Junta Directiva a Jensen Huang (-8% intrad\u00eda / -5.6% cierre)",
-    "catalyst": "Target de campa\u00f1a de espionaje de Inteligencia China",
-    "key_man_risk": "Cero plan de sucesi\u00f3n - Estructura plana de 60 reportes directos",
-    "proxy_warning": "NVIDIA advierte formalmente riesgo estrategico por falta de sucesi\u00f3n",
-    "geopolitical_clout": "Relaciones insustituibles con Trump, Macron, Merz, Musk (SpaceX), TSMC e Intel ($5B deal)",
-    "reading": "Descuento por prima de riesgo pol\u00edtico/gobernanza, no por deterioro operativo de chips"
+    "event": "Board Probe - Intraday -8% / Cierre -5.3% a -5.6%",
+    "catalyst": "Investigacion si Huang fue target de espionaje - Affair con Alice Huang / Megaspeed",
+    "board_statement": "No reason to believe secrets or national security compromised - Confianza en CEO",
+    "key_man_risk": "Cero plan sucesion formal - 60 reportes directos - Bench parcial: Ian Buck",
+    "geopolitical": "Riesgo export controls + MATCH Act + investigacion congresional",
+    "reading": "Prima riesgo politico/gobernanza, no deterioro operativo chips"
   }
 }
