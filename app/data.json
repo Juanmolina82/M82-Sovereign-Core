@@ -1,7 +1,7 @@
 {
   "source": "M82 Data Core V63.0.01-A (Macro Dossier Robusto)",
-  "wire": "M82 WIRE: NVDA Board Probe / Jensen Huang Succession Risk & China Espionage Target | 9 Nov 2026",
-  "timestamp": "2026-11-09 15:21:30 VET",
+  "wire": "M82 WIRE: SpaceX Targeting Nov 10 Falcon 9 Launch of USSF-627 (Vandenberg SLC-4E) | 9 Nov 2026",
+  "timestamp": "2026-11-09 16:12:03 VET",
   "equities": {
     "BRENT": {
       "last": 97.76,
@@ -772,7 +772,7 @@
     "SAUDI_GOV_PORTFOLIO_1.444T"
   ],
   "core_integrity_check": "100% VERIFIED",
-  "audit_source": "LSEG / WSJ - Board Probe, Alice Huang / Megaspeed",
+  "audit_source": "LSEG Workspace / Reuters (nFWN46Q2K6)",
   "macro_chains": {
     "midterms_chain": "Presion democrata sobre Data Centers -> Venta NVDA/AI -> Caida Equities -> Liquidacion Oro corto plazo",
     "iran_chain": "Expectativa resolucion -> Caida crudo -> Expectativas baja tasas -> Soporte mediano plazo Oro",
@@ -888,5 +888,12 @@
     "key_man_risk": "Cero plan sucesion formal - 60 reportes directos - Bench parcial: Ian Buck",
     "geopolitical": "Riesgo export controls + MATCH Act + investigacion congresional",
     "reading": "Prima riesgo politico/gobernanza, no deterioro operativo chips"
+  },
+  "spacex_mission": {
+    "operator": "SpaceX (Falcon 9)",
+    "mission_id": "USSF-627 (US Space Force)",
+    "launch_site": "Space Launch Complex 4E (SLC-4E), Vandenberg Space Force Base, CA",
+    "target_date": "10 Nov 2026",
+    "reading": "Ejecuci\u00f3n operacional continua de infraestructura espacial defensiva US. Confluencia fecha CPI."
   }
 }
