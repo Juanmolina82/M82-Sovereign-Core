@@ -1,4 +1,5 @@
 import os, json, time
+
 DATA_PATH = os.path.expanduser("~/M82/app/data.json")
 payload = {}
 if os.path.exists(DATA_PATH):
@@ -7,9 +8,9 @@ if os.path.exists(DATA_PATH):
     except Exception: payload = {}
 
 patch = {
-    "wire": "M82 WIRE: USA-STOCKS UPDATE 1 - Wall Street Rebound tras AI Selloff - NVDA sigue en rojo | 9 Nov 2026",
+    "wire": "M82 WIRE: USA-STOCKS UPDATE 1 - Wall Street Rebound tras AI Selloff - NVDA recortado a -5.6% | 9 Nov 2026",
     "timestamp": time.strftime("%H:%M:%S VET"),
-    "audit_source": "LSEG Reuters USA-STOCKS UPDATE 1 - Version China",
+    "audit_source": "LSEG Reuters USA-STOCKS UPDATE 1 - Wall Street Rebound",
     "wallstreet_open": {
         "dow": "+1.27% - 51,938.22 (+652.49)",
         "sp500": "+1.48% - 7,485.67 (+108.81)",
@@ -27,11 +28,12 @@ patch = {
         "qualcomm": "+2%",
         "mega_caps": "MSFT / GOOGL / META / AMZN +2.5% a +5% - TSLA +4.5%"
     },
-    "thesis_update": "Morgan Stanley + UBS: Caida AI semana pasada fue SOBRE-REACCION - Riesgo regulacion extrema Data Centers con Congreso democrata POCO PROBABLE - Debilita Cadena Midterms",
+    "thesis_update": "Morgan Stanley + UBS: Caida AI semana pasada fue SOBRE-REACCION - Riesgo regulacion extrema Data Centers POCO PROBABLE - Debilita Cadena Midterms",
     "next_catalyst": "CPI Martes - Expectativa Reuters +2.7% YoY - Si sale alto, vuelve miedo hike Dic (FedWatch 79%)",
     "earnings": "335 empresas S&P reportadas - 82.4% supero expectativas - KKR +1% profit record - CEG +2.8% - BRK.B -0.1%",
     "risk": "BUNKER MODE / 0.30x LOCK - 100% Dry Powder - 0 ejecuciones - NO CAMBIA POSTURA"
 }
+
 payload.update(patch)
 tmp = DATA_PATH + ".tmp"
 with open(tmp, "w") as f: json.dump(payload, f, indent=2)

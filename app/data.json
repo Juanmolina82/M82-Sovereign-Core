@@ -1,7 +1,7 @@
 {
   "source": "M82 Data Core V63.0.01-A (Macro Dossier Robusto)",
-  "wire": "M82 WIRE: USA-STOCKS UPDATE 1 - Wall Street Rebound tras AI Selloff - NVDA sigue en rojo | 9 Nov 2026",
-  "timestamp": "10:09:09 VET",
+  "wire": "M82 WIRE: USA-STOCKS UPDATE 1 - Wall Street Rebound tras AI Selloff - NVDA recortado a -5.6% | 9 Nov 2026",
+  "timestamp": "10:11:04 VET",
   "equities": {
     "BRENT": {
       "last": 97.76,
@@ -766,7 +766,7 @@
     "SAUDI_GOV_PORTFOLIO_1.444T"
   ],
   "core_integrity_check": "100% VERIFIED",
-  "audit_source": "LSEG Reuters USA-STOCKS UPDATE 1 - Version China",
+  "audit_source": "LSEG Reuters USA-STOCKS UPDATE 1 - Wall Street Rebound",
   "macro_chains": {
     "midterms_chain": "Presion democrata sobre Data Centers -> Venta NVDA/AI -> Caida Equities -> Liquidacion Oro corto plazo",
     "iran_chain": "Expectativa resolucion -> Caida crudo -> Expectativas baja tasas -> Soporte mediano plazo Oro",
@@ -806,7 +806,7 @@
     "qualcomm": "+2%",
     "mega_caps": "MSFT / GOOGL / META / AMZN +2.5% a +5% - TSLA +4.5%"
   },
-  "thesis_update": "Morgan Stanley + UBS: Caida AI semana pasada fue SOBRE-REACCION - Riesgo regulacion extrema Data Centers con Congreso democrata POCO PROBABLE - Debilita Cadena Midterms",
+  "thesis_update": "Morgan Stanley + UBS: Caida AI semana pasada fue SOBRE-REACCION - Riesgo regulacion extrema Data Centers POCO PROBABLE - Debilita Cadena Midterms",
   "next_catalyst": "CPI Martes - Expectativa Reuters +2.7% YoY - Si sale alto, vuelve miedo hike Dic (FedWatch 79%)",
   "earnings": "335 empresas S&P reportadas - 82.4% supero expectativas - KKR +1% profit record - CEG +2.8% - BRK.B -0.1%"
 }
