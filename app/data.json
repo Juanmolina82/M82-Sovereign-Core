@@ -1,7 +1,7 @@
 {
   "source": "M82 Data Core V63.0.01-A (Macro Dossier Robusto)",
-  "wire": "M82 WIRE: USA-STOCKS UPDATE 1 - Wall Street Rebound tras AI Selloff - NVDA recortado a -5.6% | 9 Nov 2026",
-  "timestamp": "10:11:04 VET",
+  "wire": "M82 WIRE: LSEG Energy Real-Time - Brent $94.32 (-4.07%), WTI $87.71 (-3.43%) | 9 Nov 2026",
+  "timestamp": "2026-11-09 10:23:09 VET",
   "equities": {
     "BRENT": {
       "last": 97.76,
@@ -808,5 +808,15 @@
   },
   "thesis_update": "Morgan Stanley + UBS: Caida AI semana pasada fue SOBRE-REACCION - Riesgo regulacion extrema Data Centers POCO PROBABLE - Debilita Cadena Midterms",
   "next_catalyst": "CPI Martes - Expectativa Reuters +2.7% YoY - Si sale alto, vuelve miedo hike Dic (FedWatch 79%)",
-  "earnings": "335 empresas S&P reportadas - 82.4% supero expectativas - KKR +1% profit record - CEG +2.8% - BRK.B -0.1%"
+  "earnings": "335 empresas S&P reportadas - 82.4% supero expectativas - KKR +1% profit record - CEG +2.8% - BRK.B -0.1%",
+  "commodities_live": {
+    "brent_lcoc1": 94.32,
+    "brent_change_pct": -4.07,
+    "wti_clc1": 87.71,
+    "wti_change_pct": -3.43,
+    "wti_clc2": 86.64,
+    "brent_lcoc2": 92.05,
+    "merey16_live": 83.15,
+    "status": "LSEG_WORKSPACE_SYNCED"
+  }
 }

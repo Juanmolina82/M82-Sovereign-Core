@@ -1,5 +1,23 @@
 #!/usr/bin/env python3
 import os, time, sqlite3, requests, textwrap
+
+# --- M82 DYNAMIC LOADER - Lee data.json en cada render, nunca valores quemados ---
+import json as _json
+def _load_live():
+    try:
+        with open(os.path.expanduser("~/M82/app/data.json")) as _f:
+            _d = _json.load(_f)
+        _c = _d.get("commodities_live", {}) if isinstance(_d, dict) else {}
+        return {
+            "brent": f"${_c.get('brent_lcoc1', 'N/A')} ({_c.get('brent_change_pct', '')}%)",
+            "wti": f"${_c.get('wti_clc1', 'N/A')} ({_c.get('wti_change_pct', '')}%)",
+            "merey": f"${_c.get('merey16_live', 'N/A')} LIVE",
+        }
+    except Exception as _e:
+        return {"brent": "N/A", "wti": "N/A", "merey": "N/A"}
+_live = _load_live()
+brent, wti, merey = _live["brent"], _live["wti"], _live["merey"]
+
 from PIL import Image, ImageDraw, ImageFont
 
 DB_PATH = os.path.expanduser("~/M82/m82_database.db")
@@ -41,7 +59,7 @@ def render_hud_card(evt_id, headline, daemon_source):
 
     draw.rectangle([55, 225, W - 55, 325], fill='#0a101d', outline='#1a293d', width=2)
     draw.text((75, 240), "EXPOSURE: 0.22x / 0.30x LOCK  |  VaR L5.1: 1.68%", fill='#00b0ff', font=f_sub)
-    draw.text((75, 280), "MEREY 16: $93.75 SEP / $93.92 LIVE  |  BRENT: $114.72", fill='#ff9100', font=f_sub)
+    draw.text((75, 280), "MEREY 16: {merey} | WTI: {wti}  |  BRENT: $114.72", fill='#ff9100', font=f_sub)
 
     draw.text((55, 348), "❚ M82_SOVEREIGN WORKSPACE TELEMETRY WIRE", fill='#ff1744', font=f_red)
     draw.line([(55, 388), (W - 55, 388)], fill='#ff1744', width=3)
