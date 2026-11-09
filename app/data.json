@@ -1,7 +1,7 @@
 {
   "source": "M82 Data Core V63.0.01-A (Macro Dossier Robusto)",
-  "wire": "M82 MEDIA: Guion Reels/TikTok 60s Sellado (SpaceX + Trump Energetico + Bunker CPI) | 9 Nov 2026",
-  "timestamp": "2026-11-09 17:14:57 VET",
+  "wire": "M82 WIRE: LSEG Breaking - NVDA/Huang Lawsuit on Spy Probe | Trump on Venezuela Elections | 9 Nov 2026",
+  "timestamp": "2026-11-09 17:47:41 VET",
   "equities": {
     "BRENT": {
       "last": 97.76,
@@ -772,7 +772,7 @@
     "SAUDI_GOV_PORTFOLIO_1.444T"
   ],
   "core_integrity_check": "100% VERIFIED",
-  "audit_source": "LSEG Workspace / Reuters (nFWN46Q2K6)",
+  "audit_source": "LSEG Workspace Realtime Wire (jmmp@molina82.com)",
   "macro_chains": {
     "midterms_chain": "Presion democrata sobre Data Centers -> Venta NVDA/AI -> Caida Equities -> Liquidacion Oro corto plazo",
     "iran_chain": "Expectativa resolucion -> Caida crudo -> Expectativas baja tasas -> Soporte mediano plazo Oro",
@@ -901,5 +901,12 @@
     "duration": "60 seconds",
     "narrative_arc": "Charallave Edge -> SpaceX USSF-627 -> Venezuela Energy -> CPI Bunker Mode",
     "status": "APPROVED_FOR_PRODUCTION"
+  },
+  "breaking_news_vectors": {
+    "nvda_lawsuit": "Demanda a NVDA y CEO Huang por falta de divulgaci\u00f3n sobre espionaje chino",
+    "trump_nvda_statement": "Trump confirma que Huang afirm\u00f3 no conocer los nexos de espionaje de la involucrada",
+    "venezuela_geopolitics": "Trump declara que las elecciones en Venezuela tomar\u00e1n lugar oportunamente",
+    "iran_security_wire": "Ir\u00e1n tilda de fake news los rumores de conversaciones diplom\u00e1ticas con EE. UU.",
+    "us_defense_politics": "Voto de Impeachment en la C\u00e1mara para el Secretario de Defensa Hegseth"
   }
 }
