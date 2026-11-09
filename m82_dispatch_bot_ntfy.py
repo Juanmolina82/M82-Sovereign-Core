@@ -1,21 +1,16 @@
 import os, json, requests, time
 
 DATA_PATH = os.path.expanduser("~/M82/app/data.json")
-
-# 1. Carga de Variables de Entorno y Payload
 payload = {}
 if os.path.exists(DATA_PATH):
     try:
-        with open(DATA_PATH, "r") as f:
-            payload = json.load(f)
-    except Exception:
-        payload = {}
+        with open(DATA_PATH, "r") as f: payload = json.load(f)
+    except Exception: payload = {}
 
-wire_text = payload.get("wire", "M82 WIRE: Broadcast activo desde Nodo Charallave Edge.")
+wire_text = payload.get("wire", "M82 WIRE: Telemetría unificada activa.")
 bunker_status = payload.get("governance_mode", "BUNKER_MODE_0.30X_LOCK")
 timestamp = time.strftime("%Y-%m-%d %H:%M:%S VET")
 
-# Formateo del Mensaje de Difusión Institucional
 message = f"""⚡ *M82 AGENTIC TELEMETRY BROADCAST*
 ────────────────────────────
 *Timestamp:* {timestamp}
@@ -25,49 +20,51 @@ message = f"""⚡ *M82 AGENTIC TELEMETRY BROADCAST*
 📡 *WIRE:*
 {wire_text}
 
-📊 *DATOS CLAVE INGESTADOS:*
-• NVDA Shock: -8% Mon (~$350B loss) | Korea Supply OK
-• Saudi Gov Portfolio: $1.444T AUM (Aramco 91.64%)
-• FedWatch Dec Hike: 79% Prob
-• Japan MOF Intervention: Record ¥7.98T single-day
+📊 *MATRIZ DE RIESGO ACTIVA:*
+• Wall Street Rebound: Dow +1.27% | Nasdaq +1.87%
+• NVDA Shock: Recortado a -5.6% (Investigación Huang)
+• Próximo Catalizador: CPI Martes (+2.7% YoY)
+• Postura: BUNKER 0.30x LOCK (Sin cambios)
 
 *Caracas HQ Central ⊗ Charallave Edge Node*"""
 
-# 2. Despacho vía Bot Privado de Telegram (si variables están activas)
-telegram_token = os.getenv("TELEGRAM_TOKEN", "")
-chat_id = os.getenv("CHAT_ID", "")
+tg_token = os.getenv("TELEGRAM_TOKEN", "8600412468:AAHiBNgu230J01IzeqL7rZORHdmAcgHFcj4")
+raw_id = os.getenv("CHAT_ID", "1004335849125").replace("-100", "").replace("-", "")
 
-if telegram_token and chat_id:
+# Intentar IDs estándar de canal/grupo de Telegram
+targets = [raw_id, f"-100{raw_id}", f"-{raw_id}"]
+tg_success = False
+
+for tid in targets:
     try:
-        tg_url = f"https://api.telegram.org/bot{telegram_token}/sendMessage"
-        tg_res = requests.post(tg_url, json={"chat_id": chat_id, "text": message, "parse_mode": "Markdown"}, timeout=5)
-        if tg_res.status_code == 200:
-            print("[BOT TG OK] Alerta enviada con éxito al Bot Privado Telegram.")
+        url = f"https://api.telegram.org/bot{tg_token}/sendMessage"
+        res = requests.post(url, json={"chat_id": tid, "text": message, "parse_mode": "Markdown"}, timeout=5)
+        if res.status_code == 200:
+            print(f"[BOT TG OK] Notificación entregada con éxito a Chat ID: {tid}")
+            tg_success = True
+            break
         else:
-            print(f"[BOT TG WARN] Telegram respondió HTTP {tg_res.status_code}")
+            print(f"[BOT TG WARN] Falló envío a ID {tid}: HTTP {res.status_code} ({res.text})")
     except Exception as e:
         print(f"[BOT TG ERROR] {e}")
-else:
-    print("[BOT TG SKIP] TELEGRAM_TOKEN o CHAT_ID no configurados en entorno. Despacho alterno activo.")
 
-# 3. Despacho vía Canal Alterno Ntfy (Push Server)
-ntfy_topic = os.getenv("NTFY_TOPIC", "m82_sovereign_alerts")
+# Despacho Ntfy v2
+ntfy_topic = os.getenv("NTFY_TOPIC", "M82-Molina-Alerts-v2")
 try:
     ntfy_url = f"https://ntfy.sh/{ntfy_topic}"
-    ntfy_res = requests.post(
+    res = requests.post(
         ntfy_url,
         data=wire_text.encode('utf-8'),
         headers={
-            "Title": "⚡ M82 TELEMETRY BROADCAST",
+            "Title": "⚡ M82 TELEMETRY BROADCAST v2",
             "Priority": "high",
-            "Tags": "warning,chart_with_upwards_trend"
+            "Tags": "rocket,chart_with_upwards_trend"
         },
         timeout=5
     )
-    if ntfy_res.status_code == 200:
-        print(f"[NTFY OK] Notificación Push emitida con éxito al tópico: {ntfy_topic}")
+    if res.status_code == 200:
+        print(f"[NTFY OK] Push emitido exitosamente a https://ntfy.sh/{ntfy_topic}")
     else:
-        print(f"[NTFY WARN] Ntfy respondió HTTP {ntfy_res.status_code}")
+        print(f"[NTFY WARN] Ntfy respondió: HTTP {res.status_code}")
 except Exception as e:
     print(f"[NTFY ERROR] {e}")
-
