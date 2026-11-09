@@ -1,7 +1,7 @@
 {
   "source": "M82 Data Core V63.0.01-A (Macro Dossier Robusto)",
-  "wire": "M82 MASTER CORE: Arquitectura Unificada 1 CORE / 1 REPO | 60 Daemons Listos | BUNKER 0.30x LOCK",
-  "timestamp": "09:56:40 VET",
+  "wire": "M82 WIRE: Telemetria Macro & Sovereign Core Auditada (1000288638.jpg) | BUNKER 0.30x LOCK Intacto",
+  "timestamp": "10:01:54 VET",
   "equities": {
     "BRENT": {
       "last": 97.76,
@@ -166,14 +166,7 @@
     "gas_mmcfd": 705,
     "gas_yoy": -13.39
   },
-  "risk": {
-    "mode": "BUNKER",
-    "lock": "0.30x",
-    "dry_powder": "100%",
-    "exposure": "0.22x",
-    "var": "1.68%",
-    "executions": 0
-  },
+  "risk": "BUNKER MODE / 0.30x LOCK - 100% Dry Powder - 0 ejecuciones",
   "breaking": "DOSSIER ROBUSTO M82 INTEGRADO - SAUDI ARAMCO + REFINITIV + BUNKER 0.30x LOCK",
   "alerts": [
     "NO DISPARAR - Webhooks inactivos en BUNKER - estado esperado"
@@ -771,5 +764,29 @@
     "GOLD_4000_FLOOR_XAU_4106",
     "COMMODITIES_XAG_52.92",
     "SAUDI_GOV_PORTFOLIO_1.444T"
-  ]
+  ],
+  "core_integrity_check": "100% VERIFIED",
+  "audit_source": "1000288638.jpg - Termux JSON Terminal Dump",
+  "macro_chains": {
+    "midterms_chain": "Presion democrata sobre Data Centers -> Venta NVDA/AI -> Caida Equities -> Liquidacion Oro corto plazo",
+    "iran_chain": "Expectativa resolucion -> Caida crudo -> Expectativas baja tasas -> Soporte mediano plazo Oro",
+    "yen_carry_chain": "Desarme posiciones Yen -> Presion compresiva liquidacion cruzada",
+    "gold_hedge": "Cobertura fiscal sin trading activo en bunker. Re-evaluacion condicionada a compras Q4 bancos centrales (WGC) y pivote Fed"
+  },
+  "fx_sovereign": {
+    "fedwatch_dec_hike": "79.0%",
+    "eur_usd": 1.11485,
+    "nz_election": "Conteo final pendiente 27 Nov",
+    "blackrock_aum": "$15.49T",
+    "norges_gpfq": "GPFG Equity Synced",
+    "japan_mof_single_day_record": "\u00a57.98T single-day",
+    "japan_mof_total_period": "\u00a515.4T / $97.19B - FX_INTERVENTION_CONFIRMED"
+  },
+  "vectors_alert": {
+    "apec_shenzhen": "Watchlist 18-19 Nov",
+    "nvda": "Huang Probe UPDATE 6 -8% ~$350B",
+    "iran": "STALEMATE_TALKS_OPEN",
+    "gold_floor": "$4,000 - XAU $4,106.64",
+    "silver_spot": "XAG $52.92"
+  }
 }
