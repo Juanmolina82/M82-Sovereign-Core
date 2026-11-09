@@ -1,7 +1,7 @@
 {
   "source": "M82 Data Core V63.0.01-A (Macro Dossier Robusto)",
-  "wire": "M82 CPI READINESS: Fable Build - CPI Martes 10 Nov 8:30 AM ET - MoM +0.3% / Core +0.2% - Sin YoY oficial por shutdown",
-  "timestamp": "2026-11-09 14:17:45 VET",
+  "wire": "M82 CPI READINESS: Fable Build + Mythos Audit SELLAR - CPI Martes 10 Nov 8:30 AM ET (MoM +0.3% / Core +0.2%)",
+  "timestamp": "2026-11-09 14:19:52 VET",
   "equities": {
     "BRENT": {
       "last": 97.76,
@@ -766,7 +766,7 @@
     "SAUDI_GOV_PORTFOLIO_1.444T"
   ],
   "core_integrity_check": "100% VERIFIED",
-  "audit_source": "LSEG Workspace - KKR Co-CEO Scott Nuttall Wire",
+  "audit_source": "Fable 5.2 (Builder) \u2297 Mythos 5.2 (Auditor)",
   "macro_chains": {
     "midterms_chain": "Presion democrata sobre Data Centers -> Venta NVDA/AI -> Caida Equities -> Liquidacion Oro corto plazo",
     "iran_chain": "Expectativa resolucion -> Caida crudo -> Expectativas baja tasas -> Soporte mediano plazo Oro",
@@ -856,20 +856,23 @@
     "rule": "Fable construye, Mythos audita, check.py verifica, Chairman decide"
   },
   "cpi_readiness": {
-    "event": "CPI Martes 10 Nov 2026 - 8:30 AM ET",
+    "event": "CPI US Release - Martes 10 Nov 2026 8:30 AM ET",
     "consensus_mom_headline": "+0.3% MoM",
     "consensus_mom_core": "+0.2% MoM",
-    "yoy_official": "NO PUBLICADO - Falta Oct 2025 por shutdown",
-    "sept_reference": "Headline +0.6% MoM / 3.7% YoY - Core +0.3% MoM / 2.6% YoY",
-    "fed_dec": "~80% odds hike Dic - CME FedWatch",
-    "brent_ref": "$94.32 (-4.07%)",
-    "wti_ref": "$87.71 (-3.43%)",
-    "xau_ref": "$4,120 aprox",
-    "posture": "BUNKER 0.30x LOCK - 100% Dry Powder - 0 ejecuciones hasta ver CPI"
+    "yoy_status": "DISTORSI\u00d3N SHUTDOWN OCTUBRE - FOCO EN LECTURA MOM",
+    "september_ref": "Headline +0.6% MoM / 3.7% YoY - Core +0.3% MoM / 2.6% YoY",
+    "fedwatch_odds": "~80% Probabilidad Hike Diciembre (CME Group)",
+    "lseg_benchmarks": {
+      "brent_lcoc1": 94.32,
+      "wti_clc1": 87.71,
+      "merey16_live": 83.15,
+      "xau_gold_ref": 4073.59
+    },
+    "posture": "BUNKER MODE / 0.30x LOCK - 100% Dry Powder - 0 ejecuciones hasta ver print CPI"
   },
   "ai_audit": {
-    "builder": "Fable 5.2",
-    "auditor": "Mythos 5.2 - PENDIENTE",
-    "verdict": "PENDIENTE AUDITORIA"
+    "builder": "Fable 5.2 - OK",
+    "auditor": "Mythos 5.2 - VEREDICTO SELLAR",
+    "verdict_status": "SELLADO_EN_CORE"
   }
 }
