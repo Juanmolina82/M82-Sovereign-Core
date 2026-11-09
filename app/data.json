@@ -1,7 +1,7 @@
 {
   "source": "M82 Data Core V63.0.01-A (Macro Dossier Robusto)",
-  "wire": "M82 MAIN: Fable 5.2 (Builder) + Mythos 5.2 (Auditor Limited) integrados a arquitectura M82 V63.0.01-A",
-  "timestamp": "2026-11-09 14:13:02 VET",
+  "wire": "M82 CPI READINESS: Fable Build - CPI Martes 10 Nov 8:30 AM ET - MoM +0.3% / Core +0.2% - Sin YoY oficial por shutdown",
+  "timestamp": "2026-11-09 14:17:45 VET",
   "equities": {
     "BRENT": {
       "last": 97.76,
@@ -854,5 +854,22 @@
     "mythos_5_2": "AUDITOR LIMITED - Audita LSEG / Tesis / CPI / KKR 6% - Veredicto SELLAR/ESPERAR",
     "routing_file": "m82_ai_routing.py",
     "rule": "Fable construye, Mythos audita, check.py verifica, Chairman decide"
+  },
+  "cpi_readiness": {
+    "event": "CPI Martes 10 Nov 2026 - 8:30 AM ET",
+    "consensus_mom_headline": "+0.3% MoM",
+    "consensus_mom_core": "+0.2% MoM",
+    "yoy_official": "NO PUBLICADO - Falta Oct 2025 por shutdown",
+    "sept_reference": "Headline +0.6% MoM / 3.7% YoY - Core +0.3% MoM / 2.6% YoY",
+    "fed_dec": "~80% odds hike Dic - CME FedWatch",
+    "brent_ref": "$94.32 (-4.07%)",
+    "wti_ref": "$87.71 (-3.43%)",
+    "xau_ref": "$4,120 aprox",
+    "posture": "BUNKER 0.30x LOCK - 100% Dry Powder - 0 ejecuciones hasta ver CPI"
+  },
+  "ai_audit": {
+    "builder": "Fable 5.2",
+    "auditor": "Mythos 5.2 - PENDIENTE",
+    "verdict": "PENDIENTE AUDITORIA"
   }
 }
