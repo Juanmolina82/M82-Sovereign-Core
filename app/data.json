@@ -1,7 +1,7 @@
 {
   "source": "M82 Data Core V63.0.01-A (Macro Dossier Robusto)",
-  "wire": "M82 WIRE: LSEG Breaking - NVDA/Huang Lawsuit on Spy Probe | Trump on Venezuela Elections | 9 Nov 2026",
-  "timestamp": "2026-11-09 17:47:41 VET",
+  "wire": "M82 CLI: Interactive Dossier Script dossier_m82.py Deployed & Validated | 9 Nov 2026",
+  "timestamp": "2026-11-09 18:55:30 VET",
   "equities": {
     "BRENT": {
       "last": 97.76,
@@ -908,5 +908,10 @@
     "venezuela_geopolitics": "Trump declara que las elecciones en Venezuela tomar\u00e1n lugar oportunamente",
     "iran_security_wire": "Ir\u00e1n tilda de fake news los rumores de conversaciones diplom\u00e1ticas con EE. UU.",
     "us_defense_politics": "Voto de Impeachment en la C\u00e1mara para el Secretario de Defensa Hegseth"
+  },
+  "cli_module": {
+    "file": "dossier_m82.py",
+    "status": "EXECUTABLE_OK",
+    "menu_structure": "Tesis Madre / Arquitectura 3 Capas / Telemetria Core"
   }
 }
