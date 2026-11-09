@@ -1,7 +1,7 @@
 {
   "source": "M82 Data Core V63.0.01-A (Macro Dossier Robusto)",
-  "wire": "M82 WIRE: SpaceX Targeting Nov 10 Falcon 9 Launch of USSF-627 (Vandenberg SLC-4E) | 9 Nov 2026",
-  "timestamp": "2026-11-09 16:15:54 VET",
+  "wire": "M82 MEDIA: Guion Reels/TikTok 60s Sellado (SpaceX + Trump Energetico + Bunker CPI) | 9 Nov 2026",
+  "timestamp": "2026-11-09 17:14:57 VET",
   "equities": {
     "BRENT": {
       "last": 97.76,
@@ -895,5 +895,11 @@
     "launch_site": "Space Launch Complex 4E (SLC-4E), Vandenberg Space Force Base, CA",
     "target_date": "10 Nov 2026",
     "reading": "Ejecuci\u00f3n operacional continua de infraestructura espacial defensiva US. Confluencia fecha CPI."
+  },
+  "media_script": {
+    "file": "scripts/script1_60s.txt",
+    "duration": "60 seconds",
+    "narrative_arc": "Charallave Edge -> SpaceX USSF-627 -> Venezuela Energy -> CPI Bunker Mode",
+    "status": "APPROVED_FOR_PRODUCTION"
   }
 }
