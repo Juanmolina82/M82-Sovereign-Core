@@ -1,7 +1,7 @@
 {
   "source": "M82 Data Core V63.0.01-A (Macro Dossier Robusto)",
-  "wire": "M82 WIRE: LSEG Energy Real-Time - Brent $94.32 (-4.07%), WTI $87.71 (-3.43%) | 9 Nov 2026",
-  "timestamp": "2026-11-09 10:23:09 VET",
+  "wire": "M82 SOCIAL BROADCAST: Post Energ\u00e9tico publicado en X (#Brent $94.32 / WTI $87.71) | BUNKER 0.30x LOCK",
+  "timestamp": "2026-11-09 10:42:28 VET",
   "equities": {
     "BRENT": {
       "last": 97.76,
@@ -818,5 +818,10 @@
     "brent_lcoc2": 92.05,
     "merey16_live": 83.15,
     "status": "LSEG_WORKSPACE_SYNCED"
+  },
+  "x_post_active": {
+    "text": "#Brent $94.32 (-4.07%) WTI $87.71 | No perseguimos spikes. Custodia pasiva. 100% Dry Powder. 0 ejecuciones. #M82 #BUNKER #HedgeFund #Oil #OOTT #Crude #C02",
+    "length_chars": 158,
+    "status": "DISPATCHED_TO_X"
   }
 }
