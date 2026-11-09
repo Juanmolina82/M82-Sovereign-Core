@@ -21,42 +21,38 @@ message = f"""⚡ *M82 AGENTIC TELEMETRY BROADCAST*
 {wire_text}
 
 📊 *MATRIZ DE RIESGO ACTIVA:*
+• KKR Infra AUM: 7 Data Center Platforms = 6% AUM (Nuttall)
 • Wall Street Rebound: Dow +1.27% | Nasdaq +1.87%
-• NVDA Shock: Recortado a -5.6% (Investigación Huang)
+• LSEG Energy: Brent $94.32 (-4.07%) | WTI $87.71 (-3.43%)
 • Próximo Catalizador: CPI Martes (+2.7% YoY)
 • Postura: BUNKER 0.30x LOCK (Sin cambios)
 
 *Caracas HQ Central ⊗ Charallave Edge Node*"""
 
+# 1. Despacho Telegram (Target ID verificado: -1004335849125)
 tg_token = os.getenv("TELEGRAM_TOKEN", "8600412468:AAHiBNgu230J01IzeqL7rZORHdmAcgHFcj4")
-raw_id = os.getenv("CHAT_ID", "1004335849125").replace("-100", "").replace("-", "")
+target_id = "-1004335849125"
 
-# Intentar IDs estándar de canal/grupo de Telegram
-targets = [raw_id, f"-100{raw_id}", f"-{raw_id}"]
-tg_success = False
+try:
+    url = f"https://api.telegram.org/bot{tg_token}/sendMessage"
+    res = requests.post(url, json={"chat_id": target_id, "text": message, "parse_mode": "Markdown"}, timeout=5)
+    if res.status_code == 200:
+        print(f"[BOT TG OK] Notificación entregada con éxito a Chat ID: {target_id}")
+    else:
+        print(f"[BOT TG WARN] Falló envío a ID {target_id}: HTTP {res.status_code}")
+except Exception as e:
+    print(f"[BOT TG ERROR] {e}")
 
-for tid in targets:
-    try:
-        url = f"https://api.telegram.org/bot{tg_token}/sendMessage"
-        res = requests.post(url, json={"chat_id": tid, "text": message, "parse_mode": "Markdown"}, timeout=5)
-        if res.status_code == 200:
-            print(f"[BOT TG OK] Notificación entregada con éxito a Chat ID: {tid}")
-            tg_success = True
-            break
-        else:
-            print(f"[BOT TG WARN] Falló envío a ID {tid}: HTTP {res.status_code} ({res.text})")
-    except Exception as e:
-        print(f"[BOT TG ERROR] {e}")
-
-# Despacho Ntfy v2
+# 2. Despacho Ntfy v2 (Fix de Codificación UTF-8 en Headers y Body)
 ntfy_topic = os.getenv("NTFY_TOPIC", "M82-Molina-Alerts-v2")
 try:
     ntfy_url = f"https://ntfy.sh/{ntfy_topic}"
+    clean_title = "M82 TELEMETRY BROADCAST v2" # Título en ASCII seguro
     res = requests.post(
         ntfy_url,
         data=wire_text.encode('utf-8'),
         headers={
-            "Title": "⚡ M82 TELEMETRY BROADCAST v2",
+            "Title": clean_title,
             "Priority": "high",
             "Tags": "rocket,chart_with_upwards_trend"
         },
