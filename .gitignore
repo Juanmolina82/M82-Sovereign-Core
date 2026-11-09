@@ -11,3 +11,7 @@ http.log
 dossier.log
 orch.log
 api.log
+*.log
+logs/
+backup/
+app/data.json.tmp
