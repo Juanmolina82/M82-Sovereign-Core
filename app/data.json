@@ -1,7 +1,7 @@
 {
   "source": "M82 Data Core V63.0.01-A (Macro Dossier Robusto)",
-  "wire": "M82 WIRE: RDP Authenticated Direct Socket (jmmp@molina82.com) - M82_SOVEREIGN_CORE AppKey Active | 2026-11-09 11:07:08 VET",
-  "timestamp": "2026-11-09 11:07:08 VET",
+  "wire": "M82 WIRE: Anthropic releases Claude Fable 5.2 + Mythos 5.2 - Mythos access limited - AI discipline",
+  "timestamp": "2026-11-09 14:10:57 VET",
   "equities": {
     "BRENT": {
       "last": 97.76,
@@ -839,5 +839,14 @@
     "wti_clc1": 87.71,
     "merey16_live": 83.15,
     "status": "LIVE_RDP_STREAM"
+  },
+  "anthropic": {
+    "models": [
+      "Claude Fable 5.2",
+      "Claude Mythos 5.2"
+    ],
+    "focus": "Complex coding / technical work",
+    "mythos_access": "LIMITED",
+    "reading": "AI discipline - No free compute - Converge con KKR 6% + Banks tightening AI debt"
   }
 }
