@@ -12,7 +12,7 @@ def broadcast_cycle():
             with open(DATA_PATH, "r") as f: payload = json.load(f)
         except Exception: payload = {}
 
-    wire_text = payload.get("wire", "M82 WIRE: RDP Authenticated Direct Socket Active")
+    wire_text = payload.get("wire", "M82 WIRE: Telemetría RDP Activa")
     bunker_status = payload.get("governance_mode", "BUNKER_MODE_0.30X_LOCK")
     timestamp = time.strftime("%Y-%m-%d %H:%M:%S VET")
 
@@ -34,7 +34,7 @@ def broadcast_cycle():
 
 *Caracas HQ Central ⊗ Charallave Edge Node*"""
 
-    # 1. Despacho Telegram
+    # 1. Despacho Telegram Supergrupo
     try:
         url_tg = f"https://api.telegram.org/bot{TG_TOKEN}/sendMessage"
         r_tg = requests.post(url_tg, json={"chat_id": CHAT_ID, "text": msg_tg, "parse_mode": "Markdown"}, timeout=5)
@@ -45,7 +45,10 @@ def broadcast_cycle():
     except Exception as e:
         print(f"[TG ERROR] {e}")
 
-    # 2. Despacho Ntfy v2 (UTF-8 Header Safe)
+    # Pausa de 2 segundos para evitar HTTP 429
+    time.sleep(2)
+
+    # 2. Despacho Ntfy v2 (Rate-Limit Safe)
     try:
         url_ntfy = f"https://ntfy.sh/{NTFY_TOPIC}"
         r_ntfy = requests.post(
@@ -60,11 +63,12 @@ def broadcast_cycle():
         )
         if r_ntfy.status_code == 200:
             print(f"[{time.strftime('%H:%M:%S')}] [NTFY OK] Push emitido a https://ntfy.sh/{NTFY_TOPIC}")
+        elif r_ntfy.status_code == 429:
+            print(f"[{time.strftime('%H:%M:%S')}] [NTFY WARN] Rate limit alcanzado (429). Reintentando en próximo ciclo.")
         else:
             print(f"[{time.strftime('%H:%M:%S')}] [NTFY WARN] Status {r_ntfy.status_code}")
     except Exception as e:
         print(f"[NTFY ERROR] {e}")
 
 if __name__ == "__main__":
-    print("🚀 [M82 CONTINUOUS BROADCASTER] Daemon activo. Escupiendo telemetría a Telegram, Ntfy y PWA...")
     broadcast_cycle()
