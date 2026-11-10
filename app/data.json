@@ -1,7 +1,7 @@
 {
   "source": "M82 Data Core V63.0.01-A (Macro Dossier Robusto)",
-  "wire": "M82 WIRE: LSEG 21:xx PM VET - ExxonMobil MoU PDVSA Confirmado / Regreso Venezuela | 9 Nov 2026",
-  "timestamp": "2026-11-09 21:01:41 VET",
+  "wire": "M82 WIRE: LSEG 21:xx PM VET - Anthropic IPO Filing Retracted / 867M Shares $70-80 | 9 Nov 2026",
+  "timestamp": "2026-11-09 21:33:28 VET",
   "equities": {
     "BRENT": {
       "last": 97.76,
@@ -772,7 +772,7 @@
     "SAUDI_GOV_PORTFOLIO_1.444T"
   ],
   "core_integrity_check": "100% VERIFIED",
-  "audit_source": "Reuters / LSEG Workspace (jmmp@molina82.com) - ExxonMobil MoU PDVSA 9 Nov 2026",
+  "audit_source": "Reuters via LSEG Workspace (jmmp@molina82.com) - Anthropic IPO UPDATE 1 EXCLUSIVE",
   "macro_chains": {
     "midterms_chain": "Presion democrata sobre Data Centers -> Venta NVDA/AI -> Caida Equities -> Liquidacion Oro corto plazo",
     "iran_chain": "Expectativa resolucion -> Caida crudo -> Expectativas baja tasas -> Soporte mediano plazo Oro",
@@ -947,5 +947,10 @@
     "exxon_return": "Regreso tras casi 20 anos desde expropiacion era Chavez. Requiere contrato definitivo empresa mixta o produccion compartida bajo Ley Hidrocarburos reformada",
     "pdvsa_rafaga": "TotalEnergies MoU Miraflores / Continental Ayacucho 2 / Repsol Petroquiriquire / Sulzer 5 anos / Baker Hughes gas",
     "pdvsa_marco": "61 acuerdos bilaterales suscritos, 44 en discusion, produccion >1.2M b/d Q3 2026 reportada"
+  },
+  "wire_vectors_anthropic": {
+    "anthropic_ipo_filing": "Anthropic envio filing IPO con 867M acciones a 70-80 USD por accion",
+    "anthropic_retraction": "Segundo email: detalles de pricing inexactos, filing sera actualizado luego",
+    "anthropic_comment": "Anthropic declino comentar"
   }
 }
