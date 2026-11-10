@@ -1,7 +1,7 @@
 {
   "source": "M82 Data Core V63.0.01-A (Macro Dossier Robusto)",
-  "wire": "M82 WIRE: LSEG 21:xx PM VET - Anthropic IPO Filing Retracted / 867M Shares $70-80 | 9 Nov 2026",
-  "timestamp": "2026-11-09 21:33:28 VET",
+  "wire": "M82 DOSSIER ROBUSTO - Macro Principal Actualizado | 10 Nov 2026 - Pre-CPI",
+  "timestamp": "2026-11-10 01:03:13 VET",
   "equities": {
     "BRENT": {
       "last": 97.76,
@@ -171,7 +171,7 @@
     "lock": "0.30x LOCK",
     "dry_powder": "100%",
     "executions": 0,
-    "wait_for": "CPI Martes 8:30 AM ET"
+    "wait_for": "CPI 8:30 AM ET / 9:30 AM VET"
   },
   "breaking": "DOSSIER ROBUSTO M82 INTEGRADO - SAUDI ARAMCO + REFINITIV + BUNKER 0.30x LOCK",
   "alerts": [
@@ -952,5 +952,42 @@
     "anthropic_ipo_filing": "Anthropic envio filing IPO con 867M acciones a 70-80 USD por accion",
     "anthropic_retraction": "Segundo email: detalles de pricing inexactos, filing sera actualizado luego",
     "anthropic_comment": "Anthropic declino comentar"
+  },
+  "dossier_macro": {
+    "cpi_today": {
+      "event": "CPI Oct 2026 - 10 Nov 8:30 AM ET / 9:30 AM VET",
+      "consensus_mom_headline": "+0.3%",
+      "consensus_mom_core": "+0.2%",
+      "yoy_official": "NO PUBLICADO - Falta Oct 2025 por shutdown",
+      "sept_ref": "Headline +0.6% MoM / 3.7% YoY - Core +0.3% MoM / 2.6% YoY",
+      "cleveland_nowcast": "0.24% Headline / 0.21% Core",
+      "kalshi_mom_03": "45-50% prob +0.3% MoM"
+    },
+    "fed": {
+      "dec_hike_odds": "81-84% CME FedWatch - CORREGIDO de 75-78%",
+      "prev_odds": "71% pre-NFP",
+      "catalyst_nfp": "165k payrolls, desempleo 4.1%",
+      "next_meeting": "9 Dic 2026",
+      "ubs_view": "Hike Dic + Mar 2027"
+    },
+    "energy": {
+      "brent": "$94.32 (-4.07%)",
+      "wti": "$87.71 (-3.43%)",
+      "merey": "$83.15",
+      "xau": "$4,073.59 LSEG sellado",
+      "xom_pdvsaa": "MoU NO vinculante 9 Nov - Exploracion Orinoco - Athabasca know-how",
+      "xom_condition": "Stable policies, clear regs, protections, competitive returns",
+      "chevron_contrast": "$7B / 5 anos - 600k b/d - Compromiso real"
+    },
+    "tech_ai": {
+      "nvda": "Board Probe - Intraday -8% / Cierre -5.3% - Key-Man Risk - 60 reportes - Board: no secrets compromised",
+      "anthropic": {
+        "ticker": "ANT Nasdaq",
+        "valuation_pushback": "$1.1T-$1.3T vs $1.5T previo",
+        "placement_26b": "DRAFT RETRACTADO - Pendiente S-1/A - Google, NVDA, AMD, Broadcom, Micron, MSFT, TSMC",
+        "roadshow": "10 Nov - Trading esperado 19-20 Nov"
+      },
+      "spacex": "USSF-627 Falcon 9 - 10 Nov 04:59 UTC / 00:59 VET - SLC-4E Vandenberg - LEO Clasificado"
+    }
   }
 }
