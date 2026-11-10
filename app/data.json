@@ -1,7 +1,7 @@
 {
   "source": "M82 Data Core V63.0.01-A (Macro Dossier Robusto)",
-  "wire": "M82 SYSTEM: Fable 5.2 Frontier Breakthrough Confirmed | Dual AI Architecture Formally Validated | 9 Nov 2026",
-  "timestamp": "2026-11-09 19:16:52 VET",
+  "wire": "M82 WIRE: LSEG 8:08 PM VET - Trump Signals Russia-Ukraine End / EU Energy & Poll Vectors | 9 Nov 2026",
+  "timestamp": "2026-11-09 20:14:57 VET",
   "equities": {
     "BRENT": {
       "last": 97.76,
@@ -772,7 +772,7 @@
     "SAUDI_GOV_PORTFOLIO_1.444T"
   ],
   "core_integrity_check": "100% VERIFIED",
-  "audit_source": "LSEG Workspace Wire (jmmp@molina82.com) - Captura 1000289100.jpg",
+  "audit_source": "LSEG Workspace Realtime Wire (jmmp@molina82.com) - Captura 1000289119.jpg",
   "macro_chains": {
     "midterms_chain": "Presion democrata sobre Data Centers -> Venta NVDA/AI -> Caida Equities -> Liquidacion Oro corto plazo",
     "iran_chain": "Expectativa resolucion -> Caida crudo -> Expectativas baja tasas -> Soporte mediano plazo Oro",
@@ -925,5 +925,10 @@
     "milestone_1": "Closed 23-year black hole calculation",
     "milestone_2": "Exact limit found for 15-year modular bootstrapping technique",
     "m82_implication": "Confirms Bunker logic: Builder without Auditor risks market overfitting. Dual setup is the structural edge."
+  },
+  "wire_vectors_8pm": {
+    "trump_ukraine_statement": "Trump indica se\u00f1ales fuertes para finalizar la guerra entre Rusia y Ucrania",
+    "eu_coal_shipments": "Compras oportunistas de bajo volumen en envios de carbon a la UE",
+    "us_approval_poll": "Encuesta Ipsos muestra aprobacion presidencial de Trump en 52%"
   }
 }
