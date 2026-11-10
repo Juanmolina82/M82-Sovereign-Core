@@ -1,0 +1,23 @@
+[
+  {
+    "timestamp": "2026-11-10 04:11:34 VET",
+    "veto": [
+      "diesel ruso operativo -> LAVROV_DIESEL - Sin evidencia, prohibido"
+    ],
+    "status": "BLOQUEADO"
+  },
+  {
+    "timestamp": "2026-11-10 04:11:56 VET",
+    "veto": [
+      "diesel ruso operativo -> LAVROV_DIESEL - Sin evidencia, prohibido"
+    ],
+    "status": "BLOQUEADO"
+  },
+  {
+    "timestamp": "2026-11-10 04:12:11 VET",
+    "veto": [
+      "diesel ruso operativo -> LAVROV_DIESEL - Sin evidencia, prohibido"
+    ],
+    "status": "BLOQUEADO"
+  }
+]
