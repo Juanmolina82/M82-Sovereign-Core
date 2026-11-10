@@ -4,19 +4,19 @@ DATA_PATH = os.path.expanduser("~/M82/app/data.json")
 payload = {}
 if os.path.exists(DATA_PATH):
     try:
-        with open(DATA_PATH, "r") as f:
-            payload = json.load(f)
-    except Exception:
-        payload = {}
+        with open(DATA_PATH, "r") as f: payload = json.load(f)
+    except Exception: payload = {}
 
-exxon_payload = {
-    "wire": "M82 WIRE: LSEG 8:44 PM VET - ExxonMobil MoU PDVSA Confirmed | Upstream Evaluation | 9 Nov 2026",
+exxon_pdvsa_payload = {
+    "wire": "M82 WIRE: LSEG 21:xx PM VET - ExxonMobil MoU PDVSA Confirmado / Regreso Venezuela | 9 Nov 2026",
     "timestamp": time.strftime("%Y-%m-%d %H:%M:%S VET"),
-    "audit_source": "LSEG Workspace Realtime Wire (jmmp@molina82.com) - Captura 1000289131.jpg",
-    "wire_vectors_exxon": {
-        "xom_mou_pdvsa": "ExxonMobil firma MoU no vinculante con PDVSA para evaluar activos upstream",
-        "capex_commitment": "Sin capex inicial comprometido; sujeto a marcos regulatorios estables",
-        "energy_cluster": "TotalEnergies, Continental, Repsol, Sulzer y Baker Hughes consolidan rafaga en Venezuela"
+    "audit_source": "Reuters / LSEG Workspace (jmmp@molina82.com) - ExxonMobil MoU PDVSA 9 Nov 2026",
+    "wire_vectors_exxon_pdvsa": {
+        "exxon_pdvsa_mou": "ExxonMobil firma MoU no vinculante con PDVSA para evaluar oportunidades E&P Venezuela",
+        "exxon_condition": "Inversion futura requiere politicas estables, regulaciones claras, garantias inversion, rentabilidad competitiva",
+        "exxon_return": "Regreso tras casi 20 anos desde expropiacion era Chavez. Requiere contrato definitivo empresa mixta o produccion compartida bajo Ley Hidrocarburos reformada",
+        "pdvsa_rafaga": "TotalEnergies MoU Miraflores / Continental Ayacucho 2 / Repsol Petroquiriquire / Sulzer 5 anos / Baker Hughes gas",
+        "pdvsa_marco": "61 acuerdos bilaterales suscritos, 44 en discusion, produccion >1.2M b/d Q3 2026 reportada"
     },
     "ai_audit": {
         "builder": "Fable 5.2 - OK",
@@ -32,9 +32,8 @@ exxon_payload = {
     }
 }
 
-payload.update(exxon_payload)
+payload.update(exxon_pdvsa_payload)
 tmp = DATA_PATH + ".tmp"
-with open(tmp, "w") as f:
-    json.dump(payload, f, indent=2)
+with open(tmp, "w") as f: json.dump(payload, f, indent=2)
 os.replace(tmp, DATA_PATH)
-print("[FABLE BUILD OK] Wire ExxonMobil-PDVSA inyectado y sellado en CORE.")
+print("[FABLE BUILD OK] Wire ExxonMobil MoU PDVSA inyectado y sellado en CORE.")

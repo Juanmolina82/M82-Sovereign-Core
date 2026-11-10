@@ -1,7 +1,7 @@
 {
   "source": "M82 Data Core V63.0.01-A (Macro Dossier Robusto)",
-  "wire": "M82 WIRE: LSEG 8:44 PM VET - ExxonMobil MoU PDVSA Confirmed | Upstream Evaluation | 9 Nov 2026",
-  "timestamp": "2026-11-09 20:50:20 VET",
+  "wire": "M82 WIRE: LSEG 21:xx PM VET - ExxonMobil MoU PDVSA Confirmado / Regreso Venezuela | 9 Nov 2026",
+  "timestamp": "2026-11-09 21:01:41 VET",
   "equities": {
     "BRENT": {
       "last": 97.76,
@@ -772,7 +772,7 @@
     "SAUDI_GOV_PORTFOLIO_1.444T"
   ],
   "core_integrity_check": "100% VERIFIED",
-  "audit_source": "LSEG Workspace Realtime Wire (jmmp@molina82.com) - Captura 1000289131.jpg",
+  "audit_source": "Reuters / LSEG Workspace (jmmp@molina82.com) - ExxonMobil MoU PDVSA 9 Nov 2026",
   "macro_chains": {
     "midterms_chain": "Presion democrata sobre Data Centers -> Venta NVDA/AI -> Caida Equities -> Liquidacion Oro corto plazo",
     "iran_chain": "Expectativa resolucion -> Caida crudo -> Expectativas baja tasas -> Soporte mediano plazo Oro",
@@ -940,5 +940,12 @@
     "xom_mou_pdvsa": "ExxonMobil firma MoU no vinculante con PDVSA para evaluar activos upstream",
     "capex_commitment": "Sin capex inicial comprometido; sujeto a marcos regulatorios estables",
     "energy_cluster": "TotalEnergies, Continental, Repsol, Sulzer y Baker Hughes consolidan rafaga en Venezuela"
+  },
+  "wire_vectors_exxon_pdvsa": {
+    "exxon_pdvsa_mou": "ExxonMobil firma MoU no vinculante con PDVSA para evaluar oportunidades E&P Venezuela",
+    "exxon_condition": "Inversion futura requiere politicas estables, regulaciones claras, garantias inversion, rentabilidad competitiva",
+    "exxon_return": "Regreso tras casi 20 anos desde expropiacion era Chavez. Requiere contrato definitivo empresa mixta o produccion compartida bajo Ley Hidrocarburos reformada",
+    "pdvsa_rafaga": "TotalEnergies MoU Miraflores / Continental Ayacucho 2 / Repsol Petroquiriquire / Sulzer 5 anos / Baker Hughes gas",
+    "pdvsa_marco": "61 acuerdos bilaterales suscritos, 44 en discusion, produccion >1.2M b/d Q3 2026 reportada"
   }
 }
