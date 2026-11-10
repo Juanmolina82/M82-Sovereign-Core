@@ -1,7 +1,7 @@
 {
   "source": "M82 Data Core V63.0.01-A (Macro Dossier Robusto)",
-  "wire": "M82 DOSSIER ROBUSTO - Mythos Guard FIJO + Precedente EMEA Sellado | 10 Nov 2026",
-  "timestamp": "2026-11-10 04:11:56 VET",
+  "wire": "M82 UNIVERSE WALL STREET - Refinitiv Workspace Ingestion",
+  "timestamp": "2026-11-10 04:17:25 VET",
   "equities": {
     "BRENT": {
       "last": 97.76,
@@ -878,7 +878,7 @@
   },
   "ai_audit": {
     "builder": "Fable 5.2 - OK",
-    "auditor": "Mythos 5.2 - GUARD FIJO ACTIVO",
+    "auditor": "Mythos 5.2 - GUARD UNIVERSAL",
     "verdict_status": "SELLADO_EN_CORE"
   },
   "nvda_governance_risk": {
@@ -1036,5 +1036,11 @@
     "abu_dhabi_talks": "10-11 Nov Abu Dhabi - Witkoff + Kushner - Medinsky / Umerov",
     "unicredit_status": "ESPERA aprobacion - 16 Nov decision",
     "cpi_countdown": "Hoy 8:30 AM ET / 9:30 AM VET"
-  }
+  },
+  "refinitiv_user": "jmmp@molina82.com",
+  "universe_wallstreet": {
+    "mode": "WIRE_FALLBACK",
+    "note": "Revisa APP_KEY y sesion Workspace"
+  },
+  "universe_count": 72
 }
