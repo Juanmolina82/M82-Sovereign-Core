@@ -1,7 +1,7 @@
 {
   "source": "M82 Data Core V63.0.01-A (Macro Dossier Robusto)",
-  "wire": "M82 WIRE: LSEG 8:08 PM VET - Trump Signals Russia-Ukraine End / EU Energy & Poll Vectors | 9 Nov 2026",
-  "timestamp": "2026-11-09 20:14:57 VET",
+  "wire": "M82 WIRE: LSEG 8:39 PM VET - ExxonMobil Debt Structuring / Global Capital Flows | 9 Nov 2026",
+  "timestamp": "2026-11-09 20:41:28 VET",
   "equities": {
     "BRENT": {
       "last": 97.76,
@@ -772,7 +772,7 @@
     "SAUDI_GOV_PORTFOLIO_1.444T"
   ],
   "core_integrity_check": "100% VERIFIED",
-  "audit_source": "LSEG Workspace Realtime Wire (jmmp@molina82.com) - Captura 1000289119.jpg",
+  "audit_source": "LSEG Workspace Realtime Wire (jmmp@molina82.com) - Captura 1000289128.jpg",
   "macro_chains": {
     "midterms_chain": "Presion democrata sobre Data Centers -> Venta NVDA/AI -> Caida Equities -> Liquidacion Oro corto plazo",
     "iran_chain": "Expectativa resolucion -> Caida crudo -> Expectativas baja tasas -> Soporte mediano plazo Oro",
@@ -930,5 +930,10 @@
     "trump_ukraine_statement": "Trump indica se\u00f1ales fuertes para finalizar la guerra entre Rusia y Ucrania",
     "eu_coal_shipments": "Compras oportunistas de bajo volumen en envios de carbon a la UE",
     "us_approval_poll": "Encuesta Ipsos muestra aprobacion presidencial de Trump en 52%"
+  },
+  "wire_vectors_839pm": {
+    "xom_corporate_wire": "ExxonMobil mantiene flujo ordenado de estructuracion y financiamiento",
+    "global_equity_flows": "Reacomodo pasivo de capitales pre-CPI en plazas europeas y asiaticas",
+    "credit_liquidity_status": "Sin tensiones de margen ni eventos de riesgo de credito detectados"
   }
 }
