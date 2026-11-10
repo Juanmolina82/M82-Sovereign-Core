@@ -1,7 +1,7 @@
 {
   "source": "M82 Data Core V63.0.01-A (Macro Dossier Robusto)",
-  "wire": "M82 DOSSIER ROBUSTO - Macro Principal Actualizado | 10 Nov 2026 - Pre-CPI",
-  "timestamp": "2026-11-10 01:03:13 VET",
+  "wire": "M82 WIRE: LSEG 3:38 AM VET - SoftBank LOSS \u00a51.115T / Nikkei +2.7% Rebote Pre-CPI | 10 Nov 2026",
+  "timestamp": "2026-11-10 03:44:09 VET",
   "equities": {
     "BRENT": {
       "last": 97.76,
@@ -171,7 +171,7 @@
     "lock": "0.30x LOCK",
     "dry_powder": "100%",
     "executions": 0,
-    "wait_for": "CPI 8:30 AM ET / 9:30 AM VET"
+    "wait_for": "CPI 8:30 AM ET / 9:30 AM VET - Faltan ~4.8h"
   },
   "breaking": "DOSSIER ROBUSTO M82 INTEGRADO - SAUDI ARAMCO + REFINITIV + BUNKER 0.30x LOCK",
   "alerts": [
@@ -772,7 +772,7 @@
     "SAUDI_GOV_PORTFOLIO_1.444T"
   ],
   "core_integrity_check": "100% VERIFIED",
-  "audit_source": "Reuters via LSEG Workspace (jmmp@molina82.com) - Anthropic IPO UPDATE 1 EXCLUSIVE",
+  "audit_source": "Reuters / Dow Jones / LSEG - SoftBank Earnings 10 Nov 07:44 GMT",
   "macro_chains": {
     "midterms_chain": "Presion democrata sobre Data Centers -> Venta NVDA/AI -> Caida Equities -> Liquidacion Oro corto plazo",
     "iran_chain": "Expectativa resolucion -> Caida crudo -> Expectativas baja tasas -> Soporte mediano plazo Oro",
@@ -877,9 +877,9 @@
     "posture": "BUNKER MODE / 0.30x LOCK - 100% Dry Powder - 0 ejecuciones hasta ver print CPI"
   },
   "ai_audit": {
-    "builder": "Fable 5.2 - OK",
-    "auditor": "Mythos 5.2 - SELLAR",
-    "verdict_status": "SELLADO_EN_CORE"
+    "builder": "Fable 5.2 - CORREGIDO",
+    "auditor": "Mythos 5.2 - SELLAR CORREGIDO",
+    "verdict_status": "SELLADO_EN_CORE_CORREGIDO"
   },
   "nvda_governance_risk": {
     "event": "Board Probe - Intraday -8% / Cierre -5.3% a -5.6%",
@@ -989,5 +989,12 @@
       },
       "spacex": "USSF-627 Falcon 9 - 10 Nov 04:59 UTC / 00:59 VET - SLC-4E Vandenberg - LEO Clasificado"
     }
+  },
+  "wire_vectors_338am_CORREGIDO": {
+    "softbank_real": "Perdida neta \u00a51.115T ($7.06B) Jul-Sep - Miss vs +\u00a553.5B esperado - Perdida \u00a5597.2B data-center procurement USA - Financiamiento x2 a \u00a5462B",
+    "softbank_rally_previo": "Accion +14.38% ANTES de earnings - Rebote tecnico, no validacion de resultados - SB Energy IPO retrasado",
+    "openai_exposure": "$64.6B / 13% - Riesgo concentracion, no fortaleza liquidez",
+    "asia_markets": "Nikkei +2.7% a 60,471 - KOSPI +4-5.5% - Rebote post -6% viernes - Yen 158.06",
+    "reading_mythos": "SoftBank confirma STRESS de financiamiento AI, no liquidez fluida. Valida BUNKER, no sesgo positivo."
   }
 }
