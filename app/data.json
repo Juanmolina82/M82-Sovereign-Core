@@ -1,7 +1,7 @@
 {
   "source": "M82 Data Core V63.0.01-A (Macro Dossier Robusto)",
-  "wire": "M82 WIRE: LSEG 3:38 AM VET - SoftBank LOSS \u00a51.115T / Nikkei +2.7% Rebote Pre-CPI | 10 Nov 2026",
-  "timestamp": "2026-11-10 03:44:09 VET",
+  "wire": "M82 WIRE: LSEG EMEA Morning Call CORREGIDO - Brent $91.68 / Abu Dhabi Talks / UniCredit Pendiente | 10 Nov 2026",
+  "timestamp": "2026-11-10 04:10:05 VET",
   "equities": {
     "BRENT": {
       "last": 97.76,
@@ -171,7 +171,7 @@
     "lock": "0.30x LOCK",
     "dry_powder": "100%",
     "executions": 0,
-    "wait_for": "CPI 8:30 AM ET / 9:30 AM VET - Faltan ~4.8h"
+    "wait_for": "CPI 8:30 AM ET / 9:30 AM VET - Faltan ~4.3h"
   },
   "breaking": "DOSSIER ROBUSTO M82 INTEGRADO - SAUDI ARAMCO + REFINITIV + BUNKER 0.30x LOCK",
   "alerts": [
@@ -772,7 +772,7 @@
     "SAUDI_GOV_PORTFOLIO_1.444T"
   ],
   "core_integrity_check": "100% VERIFIED",
-  "audit_source": "Reuters / Dow Jones / LSEG - SoftBank Earnings 10 Nov 07:44 GMT",
+  "audit_source": "Reuters / CNN / LSEG - Morning Call 0530 GMT CORREGIDO por Mythos",
   "macro_chains": {
     "midterms_chain": "Presion democrata sobre Data Centers -> Venta NVDA/AI -> Caida Equities -> Liquidacion Oro corto plazo",
     "iran_chain": "Expectativa resolucion -> Caida crudo -> Expectativas baja tasas -> Soporte mediano plazo Oro",
@@ -996,5 +996,14 @@
     "openai_exposure": "$64.6B / 13% - Riesgo concentracion, no fortaleza liquidez",
     "asia_markets": "Nikkei +2.7% a 60,471 - KOSPI +4-5.5% - Rebote post -6% viernes - Yen 158.06",
     "reading_mythos": "SoftBank confirma STRESS de financiamiento AI, no liquidez fluida. Valida BUNKER, no sesgo positivo."
+  },
+  "wire_vectors_emea_CORREGIDO": {
+    "brent_crude": "$91.68 (-0.96%) - Caida por Trump descarta strikes Iran por ahora, bloqueo Hormuz sigue",
+    "wti": "$85.93 (-1.06%)",
+    "us_treasury_10y": "4.8863% (+2.4 bps)",
+    "geopolitics_CORREGIDO": "Conversaciones Rusia-Ucrania 2 dias en ABU DHABI, no EE.UU. - Witkoff + Kushner median - Medinsky / Umerov - Inicio 06:30 GMT",
+    "lavrov_diesel": "ELIMINADO - Sin evidencia - No existe acuerdo diesel ruso operativo confirmado",
+    "m_and_a_CORREGIDO": "UniCredit ESPERA aprobacion incondicional UE para Commerzbank - Decision formal 16 Nov - No otorgada aun - Reuters 9 Nov fuentes",
+    "merey_margin": "Brent $91.68 mantiene margen Merey 16 - Base $72 / Stress $110 - Intacto"
   }
 }
