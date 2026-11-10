@@ -12,7 +12,7 @@ if os.path.exists(DATA_PATH):
 exxon_payload = {
     "wire": "M82 WIRE: LSEG 8:44 PM VET - ExxonMobil MoU PDVSA Confirmed | Upstream Evaluation | 9 Nov 2026",
     "timestamp": time.strftime("%Y-%m-%d %H:%M:%S VET"),
-    "audit_source": "LSEG Workspace Realtime Wire (jmmp@molina82.com) - Captura 1000289130.jpg",
+    "audit_source": "LSEG Workspace Realtime Wire (jmmp@molina82.com) - Captura 1000289131.jpg",
     "wire_vectors_exxon": {
         "xom_mou_pdvsa": "ExxonMobil firma MoU no vinculante con PDVSA para evaluar activos upstream",
         "capex_commitment": "Sin capex inicial comprometido; sujeto a marcos regulatorios estables",
