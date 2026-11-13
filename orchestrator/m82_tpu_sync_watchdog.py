@@ -29,7 +29,7 @@ def evaluate_health():
         if cats.get("SUPERVISOR_CORE", 0) < 1:
             alerts.append(("CRITICAL", "SUPERVISOR_HEARTBEAT", "SUPERVISOR_CORE sin procesos activos en RAM."))
         if "HEALTHY" not in core_status:
-            alerts.append(("WARNING", "CORE_DB_CONTENTION", fEstado CoreDB anomalo: {core_status}"))
+            alerts.append(("WARNING", "CORE_DB_CONTENTION", f"Estado CoreDB anomalo: {core_status}"))
         for idx, (sev, cat, msg) in enumerate(alerts):
             conn.execute("INSERT OR REPLACE INTO m82_governance_alerts VALUES (?, ?, ?, ?, ?);", (f"{audit_id}-A{idx}", sev, cat, msg, now))
         print(f"[M82 TPU-SYNC WATCHDOG] {now} | Audit: {audit_id} | Flota: {total_reg} | RAM: {cats} | Alertas: {len(alerts)}", flush=True)
