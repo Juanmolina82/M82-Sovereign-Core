@@ -45,6 +45,9 @@ document.getElementById('al').innerHTML=(d.a||[]).map(a=>`<div style="padding:4p
 ld();setInterval(ld,15000);if("serviceWorker"in navigator)navigator.serviceWorker.register("/sw.js");</script></body></html>"""
 class H(BaseHTTPRequestHandler):
     def do_GET(self):
+        tok=open(os.path.expanduser("~/M82/.env.gateway")).read().strip().split("=")[1]
+        if self.path=="/api" and self.headers.get("X-M82-Token")!=tok and f"t={tok}" not in self.path:
+            self.send_response(401); self.end_headers(); self.wfile.write(b"UNAUTHORIZED"); return
         c, b = ("application/json", json.dumps(state()).encode()) if self.path=="/api" else ("text/html;charset=utf-8", HTML.encode())
         self.send_response(200); self.send_header("Content-Type", c); self.end_headers(); self.wfile.write(b)
     def log_message(self, *a): pass
