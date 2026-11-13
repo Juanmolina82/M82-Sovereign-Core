@@ -7,7 +7,7 @@ DB_PATH = os.path.join(M82_DIR, "m82_database.db")
 VAULT_PATH = os.path.join(M82_DIR, "vault/protected/vault.json")
 
 def get_lseg_credentials():
-    client_id = "a404050A11740359473F5E70042D524581e"
+    client_id = "374da013581c4eebd9276922248ade81e285d0d6"
     user = "jmmp@molina82.com"
     if os.path.exists(VAULT_PATH):
         try:
@@ -21,22 +21,18 @@ def get_lseg_credentials():
 def get_rdp_token(client_id, user):
     url = "https://api.refinitiv.com/auth/oauth2/v1/token"
     payload = {
-        "grant_type": "client_credentials",
+        "grant_type": "password",
+        "username": user,
+        "password": "Trader2026****",
         "client_id": client_id,
         "scope": "tra.RDP",
-        "username": user
+        "takeExclusiveSignOnControl": "true"
     }
     headers = {"Content-Type": "application/x-www-form-urlencoded"}
     try:
         res = requests.post(url, data=payload, headers=headers, timeout=10)
         if res.status_code == 200:
             return res.json().get("access_token")
-        else:
-            # Fallback simple sin username si la política de la app key es estricta
-            payload_simple = {"grant_type": "client_credentials", "client_id": client_id, "scope": "tra.RDP"}
-            res_s = requests.post(url, data=payload_simple, headers=headers, timeout=10)
-            if res_s.status_code == 200:
-                return res_s.json().get("access_token")
     except Exception as e:
         print(f"⚠️ [M82 LSEG] Auth Error: {e}")
     return None
@@ -77,15 +73,13 @@ def inject_to_wal(records):
 if __name__ == "__main__":
     print("⚡ [M82] INICIANDO STREAM EN CRUDO DESDE REFINITIV WORKSPACE (LSEG RDP)")
     client_id, user = get_lseg_credentials()
-    while True:
-        token = get_rdp_token(client_id, user)
-        now_str = datetime.now(timezone.utc).strftime("%H:%M:%S UTC")
-        if token:
-            records = fetch_lseg_wire(token)
-            inserted = inject_to_wal(records)
-            print(f"[{now_str}] 🟢 LSEG Stream Pull OK :: {len(records)} cables recibidos | {inserted} nuevos inyectados.")
-            for rec in records[:3]:
-                print(f"   └── 📰 {rec['time']} | {rec['headline']}")
-        else:
-            print(f"[{now_str}] ⚠️ RDP Auth fallback (usando puente WAL activo). Reintentando en 60s...")
-        time.sleep(60)
+    token = get_rdp_token(client_id, user)
+    now_str = datetime.now(timezone.utc).strftime("%H:%M:%S UTC")
+    if token:
+        records = fetch_lseg_wire(token)
+        inserted = inject_to_wal(records)
+        print(f"[{now_str}] 🟢 LSEG Stream Pull OK :: {len(records)} cables recibidos | {inserted} nuevos inyectados.")
+        for rec in records[:3]:
+            print(f"   └── 📰 {rec['time']} | {rec['headline']}")
+    else:
+        print(f"[{now_str}] ⚠️ RDP Auth response devuelto. PID 10448 permanece protegido.")

@@ -74,3 +74,7 @@ if __name__ == "__main__":
     daemon_name = sys.argv[1] if len(sys.argv) > 1 else "REUTERS_TOP"
     query = sys.argv[2] if len(sys.argv) > 2 else ""
     run_daemon(daemon_name, query)
+
+
+# M82 DANEKA - Anti-ruido post-CPI
+DANEKA_EXCLUDE = ["QB", "Blues", "hockey", "football", "Convocation", "Channelled his Energy", "brings the energy", "concentrators", "John Kerry", "Oklahoma"]

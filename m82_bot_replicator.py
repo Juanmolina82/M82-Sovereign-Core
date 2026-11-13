@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import textwrap
 import os, sys, time, sqlite3, requests
 from PIL import Image, ImageDraw, ImageFont
 
@@ -83,7 +84,7 @@ def generate_option_b_canvas(evt_id, headline, daemon_source):
             line += word + " "
         else:
             draw.text((80, y_pos), line, fill='#ffffff', font=font_body)
-            y_pos += 58
+            y_pos += 62
             line = word + " "
     if line:
         draw.text((80, y_pos), line, fill='#ffffff', font=font_body)

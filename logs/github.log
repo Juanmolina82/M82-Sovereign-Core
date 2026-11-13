@@ -70,3 +70,20 @@
  create mode 100644 m82_database.db
 [main 0c2d81c] M82 AUTO-BLINDAJE 2026-11-09T20:11:20Z — 0.12B 33ev PID 24606 — BUNKER 0.30x — Warsh 102bps
  5 files changed, 352 insertions(+)
+[main 4dcab70] M82 AUTO-BLINDAJE 2026-11-10T16:51:03Z — 0.12B 33ev PID 24606 — BUNKER 0.30x — Warsh 102bps
+ 16 files changed, 735 insertions(+), 22 deletions(-)
+ create mode 100755 logs/api.log
+ create mode 100644 logs/broadcaster.log
+ create mode 100755 logs/daemon.log
+ create mode 100644 logs/pwa.log
+ create mode 100644 m82_cpi_alert.py
+ create mode 100644 m82_database.db
+ create mode 100755 m82_force_dispatch.py
+ create mode 100755 m82_lite_pull.py
+ create mode 100755 m82_private_local.py
+ mode change 100644 => 100755 m82_refinitiv_stream.py
+[main fc223c0] M82 AUTO-BLINDAJE 2026-11-11T00:21:33Z — 0.12B 33ev PID 24606 — BUNKER 0.30x — Warsh 102bps
+ 11 files changed, 11830 insertions(+)
+ create mode 100644 logs/daneka_postcpi.log
+ create mode 100644 logs/launch_postcpi.log
+ create mode 100755 m82_export_claude_stack.py

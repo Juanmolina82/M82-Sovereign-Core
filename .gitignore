@@ -5,3 +5,8 @@ refinitiv_key.txt
 m82_secrets.json
 __pycache__/
 *.bak.*
+
+# M82 Binary Databases & WAL Journals
+*.db
+*.db-wal
+*.db-shm
