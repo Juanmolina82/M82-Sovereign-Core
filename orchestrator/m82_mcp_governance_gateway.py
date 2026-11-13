@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-import os, re, json, sqlite3, hashlib, subprocess
+import os, re, glob, json, sqlite3, hashlib, subprocess
 from datetime import datetime, timezone
 
-ORCH_DB = os.path.expanduser("~/M82/m82_orchestrator_wal.db")
-CORE_DB = os.path.expanduser("~/M82/m82_database.db")
+M82_ROOT = os.path.expanduser("~/M82")
+ORCH_DB = os.path.join(M82_ROOT, "m82_orchestrator_wal.db")
+CORE_DB = os.path.join(M82_ROOT, "m82_database.db")
 
 POLICY = {
     "posture": "BUNKER MODE / CUSTODIA PASIVA 0.30x LOCK",
@@ -17,14 +18,14 @@ POLICY = {
 }
 
 TOOLS = [
-    ("mcp.m82.swarm_discovery", "READ_ONLY", "Inventario dinamico en tiempo real de todos los daemons M82 activos y sus PIDs."),
+    ("mcp.m82.swarm_discovery", "READ_ONLY", "Censo dual: procesos vivos en RAM + catalogo completo de daemons en disco/SQLite."),
     ("mcp.m82.bunker_risk_guard", "AUDIT_ENFORCE", "Verificacion continua de exposicion (<=0.30x), VaR diario y Warsh Spread."),
     ("mcp.m82.wal_checkpoint_sync", "STATE_PERSIST", "Serializacion de estado multi-dia patron TPU Sync en m82_orchestrator_wal.db."),
     ("mcp.m82.refinitiv_telemetry_probe", "READ_ONLY", "Sonda de frescura sobre m82_refinitiv_realtime_bridge y feeds de mercado.")
 ]
 
-def discover_daemons():
-    daemons = []
+def discover_live_processes():
+    live = []
     out = subprocess.check_output(["ps", "-eo", "pid,etime,args"], text=True, stderr=subprocess.DEVNULL)
     for line in out.splitlines()[1:]:
         parts = line.strip().split(None, 2)
@@ -41,8 +42,26 @@ def discover_daemons():
                     "SUPERVISOR_CORE" if any(s in cmd for s in ("orch.py", "supervisor", "watchdog", "dossier")) else "AGENT_WORKER"
                 )
             )
-            daemons.append({"pid": int(pid_s), "name": name, "category": cat, "uptime": etime, "cmd": cmd[:180]})
-    return daemons
+            live.append({"pid": int(pid_s), "name": name, "category": cat, "uptime": etime, "cmd": cmd[:180]})
+    return live
+
+def discover_registered_modules():
+    patterns = [
+        os.path.join(M82_ROOT, "m82_*.py"),
+        os.path.join(M82_ROOT, "orch.py"),
+        os.path.join(M82_ROOT, "force_dispatch.py"),
+        os.path.join(M82_ROOT, "desks", "*.py"),
+        os.path.join(M82_ROOT, "scripts", "*.py"),
+        os.path.join(M82_ROOT, "orchestrator", "*.py"),
+        os.path.join(M82_ROOT, "v2", "**", "*.py"),
+        os.path.join(M82_ROOT, "v3", "**", "*.py"),
+    ]
+    files = set()
+    for pat in patterns:
+        for f in glob.glob(pat, recursive=True):
+            if os.path.isfile(f) and not f.endswith(".bak"):
+                files.add(os.path.relpath(f, M82_ROOT))
+    return sorted(files)
 
 def probe_core():
     if not os.path.exists(CORE_DB):
@@ -57,13 +76,26 @@ def probe_core():
         return {"status": f"BUSY: {e}", "table_count": 0}
 
 def main():
-    daemons = discover_daemons()
+    live = discover_live_processes()
+    registered = discover_registered_modules()
+    live_names = {d["name"] for d in live}
+    standby = [r for r in registered if os.path.basename(r) not in live_names]
     core = probe_core()
     now = datetime.now(timezone.utc).isoformat()
+
     cats = {}
-    for d in daemons:
+    for d in live:
         cats[d["category"]] = cats.get(d["category"], 0) + 1
-    summary = {"timestamp_utc": now, "total_active_daemons": len(daemons), "breakdown": cats, "core_db": core, "policy": POLICY}
+
+    summary = {
+        "timestamp_utc": now,
+        "live_processes_count": len(live),
+        "registered_modules_count": len(registered),
+        "standby_modules_count": len(standby),
+        "live_breakdown": cats,
+        "core_db": core,
+        "policy": POLICY
+    }
     h = hashlib.sha256(json.dumps(summary, sort_keys=True).encode()).hexdigest()
 
     conn = sqlite3.connect(ORCH_DB, timeout=30.0, isolation_level=None)
@@ -76,12 +108,13 @@ def main():
         conn.execute("CREATE TABLE IF NOT EXISTS m82_swarm_audit_log (audit_id TEXT PRIMARY KEY, total_daemons INTEGER, category_breakdown TEXT, daemon_inventory TEXT, core_db_status TEXT, governance_posture TEXT, audited_at TEXT);")
         for tid, sc, desc in TOOLS:
             conn.execute("INSERT OR REPLACE INTO m82_mcp_registry VALUES (?, ?, ?, ?, ?);", (tid, sc, desc, POLICY["posture"], now))
+        inventory_payload = json.dumps({"live": live, "registered_total": len(registered), "standby": standby})
         conn.execute("INSERT OR REPLACE INTO m82_swarm_audit_log VALUES (?, ?, ?, ?, ?, ?, ?);",
-                     (f"AUDIT-{h[:16]}", len(daemons), json.dumps(cats), json.dumps(daemons), core["status"], POLICY["posture"], now))
+                     (f"AUDIT-{h[:16]}", len(registered), json.dumps(cats), inventory_payload, core["status"], POLICY["posture"], now))
         conn.execute("UPDATE m82_agent_missions SET tier_state='TIER-2-MCP-GATEWAY-ACTIVE', checkpoint_payload=?, updated_at=? WHERE mission_id='MISSION-CORE-001';",
                      (json.dumps(summary), now))
         conn.execute("COMMIT;")
-        print(f"[M82 MCP GATEWAY] Total Daemons Activos: {len(daemons)} | Desglose: {json.dumps(cats)} | CoreDB: {core['status']} ({core['table_count']} tablas) | Hash: {h[:16]}")
+        print(f"[M82 MCP GATEWAY] Registrados en Flota: {len(registered)} | Vivos en RAM: {len(live)} {json.dumps(cats)} | Standby (Bunker): {len(standby)} | CoreDB: {core['status']} ({core['table_count']} tablas) | Hash: {h[:16]}")
     except Exception:
         conn.execute("ROLLBACK;")
         raise
