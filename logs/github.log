@@ -172,3 +172,6 @@ Untracked files:
 	v3/
 
 no changes added to commit (use "git add" and/or "git commit -a")
+[main 6676669] M82 AUTO-BLINDAJE 2026-11-13T20:02:40Z — 0.12B 33ev PID 24606 — BUNKER 0.30x — Warsh 102bps
+ 11 files changed, 786 insertions(+), 2 deletions(-)
+ create mode 100644 logs/mcp_watchdog.log
