@@ -87,3 +87,88 @@
  create mode 100644 logs/daneka_postcpi.log
  create mode 100644 logs/launch_postcpi.log
  create mode 100755 m82_export_claude_stack.py
+[main 250ddfd] M82 AUTO-BLINDAJE 2026-11-11T16:33:57Z — 0.12B 33ev PID 24606 — BUNKER 0.30x — Warsh 102bps
+ 7 files changed, 230 insertions(+)
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   .env
+	modified:   __pycache__/orch.cpython-313.pyc
+	modified:   execution_engine.log
+	modified:   logs/auto_ntfy.log
+	modified:   logs/earnings.log
+	modified:   logs/github.log
+	modified:   logs/lseg_websocket.log
+	modified:   logs/ntfy.log
+	modified:   logs/wallstreet.log
+	modified:   lseg_websocket.log
+	modified:   m82_database.db
+	modified:   m82_workspace_pull.sh
+	modified:   orch.log
+	modified:   orch.py
+	modified:   price_feeder.log
+	modified:   refinitiv-data.config.json
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.token
+	api.log
+	backup/
+	backup_m82.db
+	backup_m82_20261111.db
+	backup_v3_20261111.sql
+	backups/
+	claude_m82_stack.json
+	cpi_scheduler.log
+	daemon.log
+	db/
+	desks/background_pull.log
+	desks/launch_all.log
+	dispatcher.log
+	dossier_8088.log
+	force_dispatch.py
+	frontend/m82_database.db
+	m82_backup_20261106_1940.db
+	m82_bot_replicator.py.bak
+	m82_cpi_alert.py.bak
+	m82_cpi_jalon_rest.sh
+	m82_daemon_factory.py.bak_10nov_postcpi
+	m82_daemon_factory.py.bak_cpi
+	m82_daemon_factory.py.bak_post_cpi
+	m82_data.db
+	m82_database.db-shm
+	m82_database.db-wal
+	m82_database_backup_v61.0.51A.db
+	m82_database_backup_v62.0.03A.db
+	m82_database_backup_v63.0.01A_UNIVERSAL_DOSSIER_FIXED.db
+	m82_database_backup_v63.0.01A_UNIVERSAL_DOSSIER_PATCHED.db
+	m82_database_v61_MSI1500_444.db
+	m82_dossier_robusto_v63.json
+	m82_dossier_robusto_v63_02.json
+	m82_earnings.db
+	m82_familia.db
+	m82_jalon_bash.sh
+	m82_launch_all.py.bak_10nov_postcpi
+	m82_oraculo.db
+	m82_quick_pull.sh
+	m82_vault.db
+	m82_wallstreet.sh
+	m82_wallstreet_master_20261109.xlsx
+	m82_wallstreet_master_20261110.xlsx
+	m82_wallstreet_master_20261111.xlsx
+	m82_wallstreet_master_20261112.xlsx
+	orch.py.bak_line62_1315
+	orch.py.bak_line62_20261111_1317
+	private/
+	pwa.log
+	pwa_8000.log
+	sqlite/
+	super/m82_super.db
+	v2/
+	v3/
+
+no changes added to commit (use "git add" and/or "git commit -a")
