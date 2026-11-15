@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, ScrollView, TouchableOpacity, SafeAreaView } fr
 import { StatusBar } from 'expo-status-bar';
 import * as LocalAuthentication from 'expo-local-authentication';
 
-const API_URL = 'https://wire.molina82.com/api?t=23bd5bf695350216506321df0466834b'; // Cambiar a https://wire.molina82.com en produccion
+const API_URL = 'https://mmolina82.com/api?t=23bd5bf695350216506321df0466834b'; // Cambiar a https://mmolina82.com en produccion
 
 export default function App() {
   const [unlocked, setUnlocked] = useState(false);
