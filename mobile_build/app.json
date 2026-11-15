@@ -4,7 +4,7 @@
     "slug": "m82-macro-dossier",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "../orchestrator/icon-512.png",
+    "icon": "./assets/icon-512.png",
     "userInterfaceStyle": "dark",
     "backgroundColor": "#07090d",
     "primaryColor": "#1e90ff",
@@ -12,27 +12,41 @@
       "bundleIdentifier": "com.mmolina82.app",
       "buildNumber": "1",
       "supportsTablet": true,
-      "infoPlist": { "ITSAppUsesNonExemptEncryption": false }
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "package": "com.mmolina82.app",
       "versionCode": 1,
       "adaptiveIcon": {
-        "foregroundImage": "../orchestrator/icon-512.png",
+        "foregroundImage": "./assets/icon-512.png",
         "backgroundColor": "#07090d"
       },
       "intentFilters": [
         {
           "action": "VIEW",
           "autoVerify": true,
-          "data": [{ "scheme": "https", "host": "molina82.com", "pathPrefix": "/dispatch" }],
-          "category": ["BROWSABLE", "DEFAULT"]
+          "data": [
+            {
+              "scheme": "https",
+              "host": "molina82.com",
+              "pathPrefix": "/dispatch"
+            }
+          ],
+          "category": [
+            "BROWSABLE",
+            "DEFAULT"
+          ]
         }
       ]
     },
     "extra": {
       "apexUrl": "https://molina82.com",
-      "bunkerMode": "CUSTODIA_PASIVA_0.30x_LOCK"
+      "bunkerMode": "CUSTODIA_PASIVA_0.30x_LOCK",
+      "eas": {
+        "projectId": "a38d5e2a-7d74-4f87-8631-281a3ce74dae"
+      }
     }
   }
 }

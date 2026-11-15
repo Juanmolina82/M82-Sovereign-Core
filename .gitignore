@@ -11,3 +11,6 @@ __pycache__/
 *.db-wal
 *.db-shm
 .env.refinitiv
+mobile_build/node_modules/
+mobile_build/.git/
+mobile_build/*.aab
