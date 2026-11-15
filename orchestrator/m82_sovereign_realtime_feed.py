@@ -87,6 +87,11 @@ def sanitize_brand(text):
         text = text.replace(bad, "M82 Wire")
     return text
 
+def is_macro_relevant(t):
+    low = t.lower()
+    noise = ("beauty", "advent calendar", "fashion", "celebrity", "recipe", "horoscope", "kardashian")
+    return not any(n in low for n in noise)
+
 def sync_cycle():
     seen = load_seen()
     conn = sqlite3.connect(DB_PATH, timeout=60.0)

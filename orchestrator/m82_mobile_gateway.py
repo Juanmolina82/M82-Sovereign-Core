@@ -72,7 +72,18 @@ document.getElementById('tk').innerHTML=`<span>WTI $${q.CLc1||'-'}</span><span>B
 document.getElementById('nl').innerHTML=(d.n||[]).map(x=>`<div class="card"><small style="color:#888">${x.s} &bull; ${(x.ts||'').slice(0,16)}</small><h3>${x.h}</h3><small style="color:#ffb300">RISK: ${x.r}</small><br><span class="tag">${x.t}</span></div>`).join('');
 document.getElementById('mg').innerHTML=[['WTI','$'+q.CLc1],['Brent','$'+q.LCOc1],['Crack 3-2-1','$'+q.crack_321_usd],['UST 10Y',q['US10YT=RR']+'%'],['DXY',q['.DXY']],['HO','$'+q.HOc1]].map(i=>`<div class="box"><small style="color:#888">${i[0]}</small><h2>${i[1]}</h2></div>`).join('');
 document.getElementById('al').innerHTML=(d.a||[]).map(a=>`<div style="padding:4px 0;border-bottom:1px solid #222"><b style="color:#ff5252">[${a.r}] ${a.t}</b>: ${a.h}</div>`).join('');}
-ld();setInterval(ld,15000);if("serviceWorker"in navigator)navigator.serviceWorker.register("/sw.js");</script></body></html>"""
+ld();setInterval(ld,15000);if("serviceWorker"in navigator)navigator.serviceWorker.register("/sw.js");</script>
+<script>
+document.addEventListener('click', e => {
+  const card = e.target.closest('div, li, article');
+  if (card && card.innerText && card.innerText.length > 25 && !e.target.closest('a, button, .m82-tape-wrap')) {
+    const idAttr = card.getAttribute('data-id') || 'latest';
+    window.location.href = '/dispatch/' + idAttr;
+  }
+});
+</script>
+
+</body></html>"""
 class H(BaseHTTPRequestHandler):
     def do_GET(self):
         p_clean = self.path.split("?")[0]
