@@ -31,13 +31,13 @@ HTML = """<!DOCTYPE html><html><head><meta charset="utf-8"><link rel="manifest" 
 .nav button{background:none;border:none;color:#777;font-size:11px;font-weight:700}.nav button.act{color:#1e90ff}.tab{display:none}.tab.act{display:block}
 </style></head><body>
 <div class="top"><strong style="color:#1e90ff">M82 QUANTUM WIRE</strong><span class="b">BUNKER 0.30x LOCK</span></div>
-<div id="t-n" class="tab act"><div class="ban"><h2>M82 breaking wire</h2><small>M82 SOVEREIGN WIRE / M82 SOVEREIGN WIRE &bull; CHARALLAVE EDGE</small></div><div id="nl"></div></div>
+<div id="t-n" class="tab act"><div class="ban"><h2>M82 breaking wire</h2><small>M82 SOVEREIGN WIRE / M82 SOVEREIGN WIRE &bull;</small></div><div id="nl"></div></div>
 <div id="t-m" class="tab"><div class="grid" id="mg"></div></div>
 <div id="t-p" class="tab"><div class="grid"><div class="box"><small style="color:#888">EXPOSICION</small><h2>0.22x / 0.30x</h2></div><div class="box"><small style="color:#888">DRY POWDER</small><h2>78.0%</h2></div><div class="box"><small style="color:#888">VaR DIARIO</small><h2 style="color:#ffb300">1.68%</h2></div><div class="box"><small style="color:#888">WARSH SPREAD</small><h2>102.0 bps</h2></div><div class="box" style="grid-column:span 2" id="al"></div></div></div>
 <div class="tk" id="tk">Cargando WAL...</div>
 <div class="nav"><button onclick="sw('m',this)">Mercados</button><button onclick="sw('p',this)">Portafolio</button><button class="act" onclick="sw('n',this)">Noticias</button></div>
 <script>function sw(i,b){document.querySelectorAll('.tab').forEach(e=>e.classList.remove('act'));document.querySelectorAll('.nav button').forEach(e=>e.classList.remove('act'));document.getElementById('t-'+i).classList.add('act');b.classList.add('act')}
-async function ld(){const r=await fetch('/api?t=23bd5bf695350216506321df0466834b');const d=await r.json();const q=d.q||{};
+async function ld(){const r=await fetch("/api?token=23bd5bf695350216506321df0466834b&t=23bd5bf695350216506321df0466834b", {headers: {"X-M82-Token": "23bd5bf695350216506321df0466834b"}});const d=await r.json();const q=d.q||{};
 document.getElementById('tk').innerHTML=`<span>WTI $${q.CLc1||'-'}</span><span>BRENT $${q.LCOc1||'-'}</span><span>CRACK $${q.crack_321_usd||'-'}</span><span>10Y ${q['US10YT=RR']||'-'}%</span>`;
 document.getElementById('nl').innerHTML=(d.n||[]).map(x=>`<div class="card"><small style="color:#888">${x.s} &bull; ${(x.ts||'').slice(0,16)}</small><h3>${x.h}</h3><small style="color:#ffb300">RISK: ${x.r}</small><br><span class="tag">${x.t}</span></div>`).join('');
 document.getElementById('mg').innerHTML=[['WTI','$'+q.CLc1],['Brent','$'+q.LCOc1],['Crack 3-2-1','$'+q.crack_321_usd],['UST 10Y',q['US10YT=RR']+'%'],['DXY',q['.DXY']],['HO','$'+q.HOc1]].map(i=>`<div class="box"><small style="color:#888">${i[0]}</small><h2>${i[1]}</h2></div>`).join('');
@@ -58,9 +58,9 @@ class H(BaseHTTPRequestHandler):
             self.send_response(200); self.send_header("Content-Type", "application/javascript"); self.send_header("Content-Length", str(len(sw))); self.end_headers(); self.wfile.write(sw); return
 
         tok=open(os.path.expanduser("~/M82/.env.gateway")).read().strip().split("=")[1]
-        if self.path=="/api" and self.headers.get("X-M82-Token")!=tok and f"t={tok}" not in self.path:
+        if self.path.startswith("/api") and self.headers.get("X-M82-Token")!=tok and f"t={tok}" not in self.path:
             self.send_response(401); self.end_headers(); self.wfile.write(b"UNAUTHORIZED"); return
-        c, b = ("application/json", json.dumps(state()).encode()) if self.path=="/api" else ("text/html;charset=utf-8", HTML.encode())
+        c, b = ("application/json", json.dumps(state()).encode()) if self.path.startswith("/api") else ("text/html;charset=utf-8", HTML.encode())
         self.send_response(200); self.send_header("Content-Type", c); self.end_headers(); self.wfile.write(b)
     def log_message(self, *a): pass
 HTTPServer.allow_reuse_address = True; HTTPServer(("0.0.0.0", 8282), H).serve_forever()
