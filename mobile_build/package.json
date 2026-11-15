@@ -1,0 +1,19 @@
+{
+  "name": "mobile_build",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "expo": "^58.0.25",
+    "react": "^19.3.1",
+    "react-native": "^0.88.1",
+    "react-native-webview": "^14.0.1"
+  }
+}
