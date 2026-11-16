@@ -447,6 +447,9 @@ document.addEventListener('click', e=>{
 </script></body></html>""".replace("__TOK__", TOK)
 
 class M82MobileRequestHandler(BaseHTTPRequestHandler):
+    def _safe_write(self, b):
+        try: self.wfile.write(b)
+        except (BrokenPipeError, ConnectionResetError): pass
     def do_GET(self):
         p_clean = self.path.split("?")[0]
         if p_clean in ("/icon.png", "/icon-192.png", "/icon-512.png"):
@@ -459,20 +462,14 @@ class M82MobileRequestHandler(BaseHTTPRequestHandler):
         if p_clean.startswith("/dispatch/"):
             did = unquote(p_clean.replace("/dispatch/", "", 1)) or "latest"
             body = render_dispatch(did).encode()
-            self.send_response(200); self.send_header("Content-Type", "text/html; charset=utf-8"); self.send_header("Content-Length", str(len(body))); self.end_headers(); try:
-            self.wfile.write(body)
-        except (BrokenPipeError, ConnectionResetError):
-            pass; return
+            self.send_response(200); self.send_header("Content-Type", "text/html; charset=utf-8"); self.send_header("Content-Length", str(len(body))); self.end_headers(); self._safe_write(body); return
         if p_clean.startswith("/api"):
             if self.headers.get("X-M82-Token") != TOK and f"token={TOK}" not in self.path:
                 self.send_response(401); self.end_headers(); self.wfile.write(b"UNAUTHORIZED"); return
             payload = json.dumps(state()).encode()
             self.send_response(200); self.send_header("Content-Type", "application/json"); self.send_header("Content-Length", str(len(payload))); self.end_headers(); self.wfile.write(payload); return
         body = HTML.encode()
-        self.send_response(200); self.send_header("Content-Type", "text/html; charset=utf-8"); self.send_header("Content-Length", str(len(body))); self.end_headers(); try:
-            self.wfile.write(body)
-        except (BrokenPipeError, ConnectionResetError):
-            pass
+        self.send_response(200); self.send_header("Content-Type", "text/html; charset=utf-8"); self.send_header("Content-Length", str(len(body))); self.end_headers(); self._safe_write(body)
     def log_message(self, *a): pass
 
 HTTPServer.allow_reuse_address = True
