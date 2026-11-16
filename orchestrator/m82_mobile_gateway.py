@@ -156,31 +156,15 @@ body{background:#07090d;color:#f8fafc;padding-bottom:84px}
   <span class="b">&#128274; BUNKER 0.30x</span>
 </div>
 
-<!-- 1. NEWS TAB: Cascada + Feed Paginado -->
+<!-- 1. NEWS TAB: 3-Level M82 Taxonomy -->
 <div id="t-n" class="tab act">
-  <div id="news-p1">
-    <div class="casc-sec">M82 Sovereign Wire</div>
-    <div class="casc-list">
-      <div class="casc-row" onclick="openNewsPage(0)"><div>Front Page<small>Despacho ejecutivo global en vivo</small></div><span>&#8250;</span></div>
-      <div class="casc-row" onclick="openNewsPage(1)"><div>Central Banks &amp; Global Economy<small>Tasas, Fed, inflación y liquidez macro</small></div><span>&#8250;</span></div>
-      <div class="casc-row" onclick="openNewsPage(2)"><div>Commodities &amp; Energy<small>WTI, Brent, Crack Spreads y OPEP+</small></div><span>&#8250;</span></div>
-      <div class="casc-row" onclick="openNewsPage(3)"><div>Regulation &amp; Tail-Risk<small>Alertas de riesgo sistémico (&ge; 5.0)</small></div><span>&#8250;</span></div>
-    </div>
-    <div class="casc-sec">Desk Coverage</div>
-    <div class="casc-list">
-      <div class="casc-row" onclick="openNewsPage(4)"><div>Banking &amp; Finance<small>Crédito institucional y flujos de capital</small></div><span>&#8250;</span></div>
-      <div class="casc-row" onclick="openNewsPage(5)"><div>Companies &amp; Equities<small>Tecnología, IA, semiconductores y balances</small></div><span>&#8250;</span></div>
-      <div class="casc-row" onclick="openNewsPage(6)"><div>Markets &amp; Rates<small>Índices, bonos del Tesoro y divisas</small></div><span>&#8250;</span></div>
-      <div class="casc-row" onclick="openNewsPage(7)"><div>Regional &amp; LatAm<small>Cobertura estratégica regional y mercados emergentes</small></div><span>&#8250;</span></div>
-    </div>
+  <div id="news-lvl1"></div>
+  <div id="news-lvl2" style="display:none">
+    <div class="pager-bar"><button class="pg-btn" onclick="showLvl1()">&#8249; News</button><div class="pg-mid" id="lvl2-title">Category</div><div style="width:52px"></div></div>
+    <div id="news-lvl2-list"></div>
   </div>
-  <div id="news-p2" style="display:none">
-    <div class="pager-bar">
-      <button class="pg-btn" onclick="backToCascade()">&#8592; Índice</button>
-      <button class="pg-btn" onclick="stepNewsPage(-1)">&#9664;</button>
-      <div class="pg-mid" id="pg-label">1 / 8 &mdash; Front Page</div>
-      <button class="pg-btn pri" onclick="stepNewsPage(1)">Sig &#8212; &#9654;</button>
-    </div>
+  <div id="news-lvl3" style="display:none">
+    <div class="pager-bar"><button class="pg-btn" id="lvl3-back" onclick="backFromFeed()">&#8249; Atrás</button><button class="pg-btn" onclick="stepSubDesk(-1)">&#9664;</button><div class="pg-mid" id="pg-label">1 / 1 &mdash; Front Page</div><button class="pg-btn pri" onclick="stepSubDesk(1)">Sig &#8212; &#9654;</button></div>
     <div id="nl"></div>
   </div>
 </div>
@@ -329,47 +313,28 @@ function doLogout(){
   document.getElementById('login-scr').style.display = 'flex';
 }
 
-const NEWS_PAGES = [
-  {code:'ALL', label:'Front Page'},
-  {code:'MACRO', label:'Central Banks & Global Economy'},
-  {code:'ENERGY', label:'Commodities & Energy'},
-  {code:'RISK', label:'Regulation & Tail-Risk'},
-  {code:'BANKING', label:'Banking & Finance'},
-  {code:'COMPANIES', label:'Companies & Equities'},
-  {code:'MARKETS', label:'Markets & Rates'},
-  {code:'REGIONAL', label:'Regional & LatAm'}
-];
-let curPageIdx = 0;
-function openNewsPage(idx){
-  curPageIdx = (idx + NEWS_PAGES.length) % NEWS_PAGES.length;
-  const pg = NEWS_PAGES[curPageIdx];
-  nFilter = pg.code;
-  document.getElementById('news-p1').style.display = 'none';
-  document.getElementById('news-p2').style.display = 'block';
-  document.getElementById('hdr-title').innerText = pg.label;
-  document.getElementById('pg-label').innerHTML = `${curPageIdx+1}/${NEWS_PAGES.length} &mdash; ${pg.label}`;
-  renderAll();
-}
-function stepNewsPage(delta){ openNewsPage(curPageIdx + delta); }
-function backToCascade(){
-  document.getElementById('news-p2').style.display = 'none';
-  document.getElementById('news-p1').style.display = 'block';
-  document.getElementById('hdr-title').innerHTML = '&#9776; News';
-}
-function sw(t, title, b){
-  document.querySelectorAll('.tab').forEach(e=>e.classList.remove('act'));
-  document.getElementById('t-'+t).classList.add('act');
-  document.querySelectorAll('.nav button').forEach(e=>e.classList.remove('act'));
-  if(b) b.classList.add('act');
-  if(t==='n'){ backToCascade(); }
-  else { document.getElementById('hdr-title').innerText = title; }
-}
-function setNFilter(f, b){
-  nFilter = f;
-  document.querySelectorAll('#news-filters button').forEach(x=>x.classList.remove('act'));
-  b.classList.add('act');
-  renderAll();
-}
+const M82_TAXONOMY=[
+{group:"M82 Sovereign Wire",direct:true,items:[{label:"Front Page",sub:"Despacho ejecutivo global en vivo",rx:""},{label:"Central Banks & Global Economy",sub:"Fed, tasas, inflación y liquidez macro",rx:"FED|RATE|GDP|INFLATION|CPI|BOJ|CENTRAL|ECONOMY"},{label:"Sustainable Finance",sub:"Transición energética, ESG y flujos verdes",rx:"GREEN|SOLAR|CLIMATE|ESG|TRANSITION|CARBON"},{label:"Regulation & Compliance",sub:"Política monetaria, sanciones y regulación",rx:"REGULAT|SEC|SANCTION|COMPLIANCE|POLICY|TARIFF"}]},
+{group:"News Categories",direct:false,categories:[
+{name:"Banking & Finance",sub:"Financial Services, Investment Banking, Crypto",subs:[{label:"Financial Services",rx:"BANK|FINANCIAL|CREDIT|INSURANCE|FINTECH"},{label:"Investment Banking",rx:"M&A|IPO|DEAL|GOLDMAN|JPM|MORGAN|CAPITAL"},{label:"Fixed Income & Rates",rx:"BOND|TREASURY|YIELD|10Y|2Y|SPREAD|DEBT"},{label:"Digital Finance & Crypto",rx:"BTC|BITCOIN|CRYPTO|ETH|BLOCKCHAIN|DIGITAL"}]},
+{name:"Commentary",sub:"M82 Breakingviews, Open Interest, FX Comment",subs:[{label:"M82 Breakingviews",rx:"ANALYSIS|OUTLOOK|VIEW|STRATEGY|RISK"},{label:"M82 Open Interest",rx:"FUTURES|POSITION|HEDGE|FUND|FLOW"},{label:"FX & Macro Desk Comment",rx:"USD|JPY|EUR|DXY|FX|CURRENCY|DOLLAR"}]},
+{name:"Companies",sub:"U.S., European & Asian Corporates",subs:[{label:"U.S. Companies",rx:"US|NVDA|AAPL|MSFT|TECH|AI|EARNINGS|WALL STREET"},{label:"European Companies",rx:"EUROPE|DAX|FTSE|STOXX|EU|GERMAN|UK"},{label:"Asian Companies",rx:"ASIA|CHINA|JAPAN|NIKKEI|KOREA|TAIWAN|TSMC"}]},
+{name:"Commodities",sub:"Energy, Metals, Agriculture, Gas & LNG",subs:[{label:"Commodities Overview",rx:"COMMODIT|RAW|SUPPLY|OPEC"},{label:"Energy (WTI / Brent / Crack)",rx:"OIL|WTI|BRENT|CRUDE|CRACK|REFIN|OPEC"},{label:"Metals (Gold / Silver / Copper)",rx:"GOLD|SILVER|COPPER|METAL|MINING"},{label:"Agricultural Commodities",rx:"WHEAT|CORN|SOY|GRAIN|AGRI|COFFEE"},{label:"Global Gas, Power & LNG",rx:"GAS|LNG|POWER|ELECTRIC|NATGAS"}]},
+{name:"Industries",sub:"TMT, Heavy Industry, Consumer & Healthcare",subs:[{label:"Technology, Media & Telecoms",rx:"AI|TECH|CHIP|SEMICONDUCTOR|CLOUD|TELECOM"},{label:"Heavy Industry & Transport",rx:"INDUSTR|TRANSPORT|AVIATION|FLIGHT|SHIPPING|AUTO"},{label:"Consumer & Retail",rx:"CONSUMER|RETAIL|SPENDING|HOUSEHOLD"},{label:"Healthcare & Pharma",rx:"HEALTH|PHARMA|BIOTECH|DRUG|MEDICAL"}]},
+{name:"Regional",sub:"Latin America, U.S., Europe, Middle East, Asia",subs:[{label:"Latin America",rx:"LATAM|VENEZUELA|BRAZIL|MEXICO|ARGENTINA|CHILE"},{label:"United States",rx:"US|U\.S\.|FED|WASHINGTON|AMERICAN"},{label:"Canada",rx:"CANADA|TORONTO|BOC|CAD"},{label:"Europe & Russia",rx:"EUROPE|RUSSIA|UKRAINE|ECB|EUROZONE|GERMANY"},{label:"United Kingdom",rx:"UK|BRITAIN|BOE|LONDON|STERLING"},{label:"Middle East & Africa",rx:"MIDDLE EAST|SAUDI|IRAN|ISRAEL|AFRICA|GULF"},{label:"Greater China",rx:"CHINA|BEIJING|HONG KONG|YUAN|PBOC"},{label:"Japan & the Koreas",rx:"JAPAN|BOJ|YEN|KOREA|TOKYO|SEOUL"},{label:"Southeast Asia",rx:"ASEAN|SINGAPORE|INDONESIA|VIETNAM|THAILAND"},{label:"India & South Asia",rx:"INDIA|MUMBAI|RBI|RUPEE"},{label:"Australia & New Zealand",rx:"AUSTRALIA|RBA|SYDNEY|NEW ZEALAND"}]},
+{name:"National Languages",sub:"Español, English, Português, Deutsch, Français, 日本語",subs:[{label:"Español (M82 Wire)",rx:""},{label:"Global English Desk",rx:""},{label:"Brasil / Português",rx:"BRAZIL|BRASIL|REAL|BCB"},{label:"Deutschland / Deutsch",rx:"GERMAN|DAX|BUND|BERLIN"},{label:"France / Français",rx:"FRANCE|PARIS|CAC|ECB"},{label:"Japan / 日本語デスク",rx:"JAPAN|BOJ|NIKKEI|YEN"}]},
+{name:"Sports & Lifestyle",sub:"Sports, Executive Lifestyle & Global Events",subs:[{label:"Sports",rx:"SPORT|OLYMPIC|FIFA|F1|CHAMPION"},{label:"Lifestyle & Entertainment",rx:"LIFESTYLE|TRAVEL|LUXURY|CULTURE"}]}
+]}];
+let activeSubList=M82_TAXONOMY[0].items,curSubIdx=0,activeRx="",cameFromLvl2=false;
+function buildLvl1(){let h="";M82_TAXONOMY.forEach(sec=>{h+=`<div class="casc-sec">${sec.group}</div><div class="casc-list">`;if(sec.direct){sec.items.forEach((it,idx)=>{h+=`<div class="casc-row" onclick="openDirectFeed(${idx})"><div>${it.label}<small>${it.sub}</small></div><span>&#8250;</span></div>`;});}else{sec.categories.forEach((cat,cIdx)=>{h+=`<div class="casc-row" onclick="openLvl2(${cIdx})"><div>${cat.name}<small>${cat.sub}</small></div><span>&#8250;</span></div>`;});}h+=`</div>`;});document.getElementById("news-lvl1").innerHTML=h;}
+function showLvl1(){document.getElementById("news-lvl1").style.display="block";document.getElementById("news-lvl2").style.display="none";document.getElementById("news-lvl3").style.display="none";document.getElementById("hdr-title").innerHTML="&#9776; News";}
+function openLvl2(cIdx){const cat=M82_TAXONOMY[1].categories[cIdx];activeSubList=cat.subs;cameFromLvl2=true;document.getElementById("news-lvl1").style.display="none";document.getElementById("news-lvl3").style.display="none";document.getElementById("news-lvl2").style.display="block";document.getElementById("hdr-title").innerText=cat.name;document.getElementById("lvl2-title").innerText=cat.name;let h=`<div class="casc-list" style="margin-top:12px">`;cat.subs.forEach((sb,idx)=>{h+=`<div class="casc-row" onclick="openLvl3(${idx},true)"><div>${sb.label}</div><span>&#8250;</span></div>`;});h+=`</div>`;document.getElementById("news-lvl2-list").innerHTML=h;}
+function openDirectFeed(idx){activeSubList=M82_TAXONOMY[0].items;cameFromLvl2=false;openLvl3(idx,false);}
+function openLvl3(idx,from2){curSubIdx=(idx+activeSubList.length)%activeSubList.length;const item=activeSubList[curSubIdx];activeRx=item.rx||"";document.getElementById("news-lvl1").style.display="none";document.getElementById("news-lvl2").style.display="none";document.getElementById("news-lvl3").style.display="block";document.getElementById("hdr-title").innerText=item.label;document.getElementById("lvl3-back").innerHTML=from2?"&#8249; Sub-Desks":"&#8249; News";document.getElementById("pg-label").innerHTML=`${curSubIdx+1}/${activeSubList.length} &mdash; ${item.label}`;renderAll();}
+function stepSubDesk(d){openLvl3(curSubIdx+d,cameFromLvl2);}
+function backFromFeed(){if(cameFromLvl2){document.getElementById("news-lvl3").style.display="none";document.getElementById("news-lvl2").style.display="block";}else{showLvl1();}}
+function sw(t,title,b){document.querySelectorAll(".tab").forEach(e=>e.classList.remove("act"));document.getElementById("t-"+t).classList.add("act");document.querySelectorAll(".nav button").forEach(e=>e.classList.remove("act"));if(b)b.classList.add("act");if(t==="n"){showLvl1();}else{document.getElementById("hdr-title").innerText=title;}}
+function setNFilter(f,b){}
 function setMFilter(f, b){
   mFilter = f;
   document.querySelectorAll('#mkt-filters button').forEach(x=>x.classList.remove('act'));
@@ -419,14 +384,9 @@ function renderAll(){
   const skip = new Set(['source','captured_at','user','status','ts','workspace']);
   const entries = Object.entries(q).filter(([k,v])=>!skip.has(k) && v!==null && typeof v!=='object');
 
-  // News filtered
-  const newsFiltered = (lastData.m || []).filter(x=>{
-    const txt = (x.h + ' ' + x.c + ' ' + x.t).toUpperCase();
-    if(nFilter==='ENERGY') return /OIL|BRENT|WTI|OPEC|CRUDE|ENERGY|GAS/.test(txt);
-    if(nFilter==='MACRO') return /FED|RATE|GDP|INFLATION|CPI|TREASURY|YIELD|BOJ/.test(txt);
-    if(nFilter==='RISK') return parseFloat(x.r||0) >= 5.0;
-    return true;
-  });
+  // News filtered by 3-Level Taxonomy
+  let newsFiltered = (lastData.m || []);
+  if(activeRx){const rxObj=new RegExp(activeRx,"i");const m=newsFiltered.filter(x=>rxObj.test((x.h||"")+" "+(x.c||"")+" "+(x.t||"")));if(m.length>0)newsFiltered=m;}
   document.getElementById('nl').innerHTML = newsFiltered.map(renderNewsCard).join('') || '<div style="padding:20px;color:#64748b">Sin despachos en este filtro.</div>';
 
   // Markets filtered
@@ -473,6 +433,7 @@ async function ld(){
   }catch(e){}
 }
 
+buildLvl1();
 ld();
 setInterval(ld, 2000);
 
