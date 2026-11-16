@@ -31,7 +31,7 @@ def state():
                 for tk, val in c2.execute(f"SELECT ric, {vcol} FROM {t} ORDER BY rowid DESC LIMIT 30").fetchall():
                     if tk and val is not None: d["q"][str(tk)] = val
         if "macro_dossier" in tabs:
-            rows = c2.execute("SELECT id, source, category, headline, risk_score, m82_tag, created_at FROM macro_dossier WHERE headline NOT LIKE '%Live Poll 20 activos%' AND headline NOT LIKE '%Multichannel Telegram%' ORDER BY id DESC LIMIT 35").fetchall()
+            rows = c2.execute("SELECT id, source, category, headline, risk_score, m82_tag, created_at FROM macro_dossier WHERE headline NOT LIKE '%Live Poll 20 activos%' AND headline NOT LIKE '%Live Pull 20 activos%' AND headline NOT LIKE '%Multichannel Telegram%' ORDER BY id DESC LIMIT 35").fetchall()
             d["m"] = [{"id": r[0], "s": r[1], "c": r[2], "h": r[3], "r": r[4], "t": r[5], "ts": r[6]} for r in rows]
         if "m82_tail_risk_alerts" in tabs:
             rows = c2.execute("SELECT id, event_type, headline, risk_score FROM m82_tail_risk_alerts ORDER BY id DESC LIMIT 12").fetchall()
@@ -51,7 +51,7 @@ def render_dispatch(item_id):
             aid = str(item_id).replace("A-", "")
             row = c2.execute("SELECT event_type, headline, risk_score FROM m82_tail_risk_alerts WHERE id=?", (aid,)).fetchone()
             if row:
-                cat, title, risk, source, tag = str(row[0]), str(row[1]), str(row[2]), "M82 TAIL-RISK ENGINE", "TAIL_RISK_ALERT"
+                cat, title, risk, source, tag = str(row[0]), str(row[1]), str(row[2]), "M82 Quantum TAIL-RISK", "TAIL_RISK_ALERT"
                 body = title
         else:
             q_sql = f"SELECT source, category, headline, risk_score, m82_tag, created_at, {extra_col} FROM macro_dossier " + ("ORDER BY id DESC LIMIT 1" if item_id == "latest" else "WHERE id=?")
@@ -61,23 +61,27 @@ def render_dispatch(item_id):
         c2.close()
     except Exception as e:
         body = f"Lectura RAM WAL: {e}"
-    return f"""<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><style>body{{background:#07090d;color:#e8f0fe;font-family:sans-serif;margin:0;padding:16px}}.bar{{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #1e293b;padding-bottom:12px;margin-bottom:16px}}.btn{{background:#001eff;color:#fff;border:none;padding:8px 14px;border-radius:6px;text-decoration:none;font-weight:700;font-size:12px}}.bunker{{background:#2a080d;border:1px solid #ff1744;color:#ff5252;padding:6px 10px;border-radius:4px;font-size:11px;font-weight:700}}.card{{background:#0d1117;border:1px solid #1f2937;border-radius:8px;padding:16px}}.meta{{color:#94a3b8;font-size:12px;margin-bottom:8px;font-family:monospace}}h1{{font-size:18px;line-height:1.4;margin:8px 0 14px;color:#fff}}.body{{font-size:14px;line-height:1.65;color:#cbd5e1;white-space:pre-wrap;border-top:1px solid #1f2937;padding-top:12px}}.tag{{display:inline-block;background:#1e1b4b;color:#a5b4fc;border:1px solid #4338ca;padding:3px 8px;border-radius:4px;font-size:11px;font-weight:700;margin-right:6px}}/* Category Drawer (100% M82 Proprietary Brand) */
-#cat-drawer{position:fixed;inset:0;z-index:80;background:#07090d;display:none;flex-direction:column;overflow-y:auto;padding-bottom:30px}
-.cd-top{background:#001eff;padding:14px 16px;display:flex;justify-content:space-between;align-items:center}
-.cd-sec{padding:16px 16px 8px;font-size:13px;font-weight:800;color:#94a3b8;text-transform:uppercase;letter-spacing:.6px}
-.cd-item{padding:15px 16px;border-bottom:1px solid #1e293b;font-size:15px;font-weight:600;color:#f8fafc;display:flex;justify-content:space-between;align-items:center;cursor:pointer}
-.cd-item.sel{border-left:4px solid #3b82f6;background:#0f172a}
-.cd-item:active{background:#1e293b}
+    return f"""<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><style>body{{background:#07090d;color:#e8f0fe;font-family:sans-serif;margin:0;padding:16px}}.bar{{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #1e293b;padding-bottom:12px;margin-bottom:16px}}.btn{{background:#001eff;color:#fff;border:none;padding:8px 14px;border-radius:6px;text-decoration:none;font-weight:700;font-size:12px}}.bunker{{background:#2a080d;border:1px solid #ff1744;color:#ff5252;padding:6px 10px;border-radius:4px;font-size:11px;font-weight:700}}.card{{background:#0d1117;border:1px solid #1f2937;border-radius:8px;padding:16px}}.meta{{color:#94a3b8;font-size:12px;margin-bottom:8px;font-family:monospace}}h1{{font-size:18px;line-height:1.4;margin:8px 0 14px;color:#fff}}.body{{font-size:14px;line-height:1.65;color:#cbd5e1;white-space:pre-wrap;border-top:1px solid #1f2937;padding-top:12px}}.tag{{display:inline-block;background:#1e1b4b;color:#a5b4fc;border:1px solid #4338ca;padding:3px 8px;border-radius:4px;font-size:11px;font-weight:700;margin-right:6px}}
+.casc-sec{padding:16px 14px 8px;font-size:12px;font-weight:800;color:#60a5fa;text-transform:uppercase;letter-spacing:.7px;background:#07090d}
+.casc-list{display:flex;flex-direction:column;background:#0d1117;border-top:1px solid #1e293b;border-bottom:1px solid #1e293b}
+.casc-row{display:flex;justify-content:space-between;align-items:center;padding:16px 14px;border-bottom:1px solid #1e293b;font-size:15px;font-weight:700;color:#f8fafc;cursor:pointer;width:100%}
+.casc-row:last-child{border-bottom:none}
+.casc-row:active{background:#1e293b}
+.casc-row small{display:block;font-size:11px;font-weight:500;color:#94a3b8;margin-top:2px}
+.pager-bar{display:flex;justify-content:space-between;align-items:center;background:#0b1120;padding:10px 12px;border-bottom:1px solid #1e293b;gap:6px}
+.pg-btn{background:#111827;border:1px solid #1f2937;color:#e2e8f0;padding:6px 10px;border-radius:6px;font-size:11px;font-weight:700;cursor:pointer}
+.pg-btn.pri{background:#001eff;border-color:#3b82f6;color:#fff}
+.pg-mid{font-size:12px;font-weight:800;color:#94a3b8;text-align:center;flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 </style></head><body><div class="bar"><a class="btn" href="/">&#8592; Front Page</a><span class="bunker">&#128274; BUNKER 0.30x LOCK</span></div><div class="card"><div class="meta">ID #{html.escape(str(item_id))} &bull; {html.escape(source)} &bull; {html.escape(ts)}</div><div><span class="tag">{html.escape(cat)}</span><span class="tag" style="color:#fbbf24;border-color:#b45309;background:#451a03">RISK {html.escape(risk)}</span><span class="tag">{html.escape(tag)}</span></div><h1>{html.escape(title)}</h1><div class="body">{html.escape(body or title)}</div></div></body></html>"""
 
 HTML = """<!doctype html><html><head><meta charset="utf-8"><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#001eff"><meta name="viewport" content="width=device-width,initial-scale=1"><style>
 *{box-sizing:border-box;margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,sans-serif}
 body{background:#07090d;color:#f8fafc;padding-bottom:84px}
-/* LSEG Institutional Cobalt Header */
+/* M82 Institutional Cobalt Header */
 .top{position:sticky;top:0;z-index:30;background:#001eff;padding:12px 14px;display:flex;justify-content:space-between;align-items:center;box-shadow:0 2px 10px rgba(0,30,255,.35)}
 .top-title{font-size:17px;font-weight:800;color:#fff;letter-spacing:.2px;display:flex;align-items:center;gap:8px}
 .b{background:#111827;border:1px solid #ff5252;color:#ff5252;padding:4px 8px;border-radius:4px;font-size:10px;font-weight:800}
-/* Sub-tabs (LSEG Style) */
+/* Sub-tabs (M82 Style) */
 .subnav{display:flex;gap:6px;overflow-x:auto;background:#0b1120;padding:8px 12px;border-bottom:1px solid #1e293b}
 .subnav button{background:#111827;border:1px solid #1f2937;color:#94a3b8;padding:5px 11px;border-radius:14px;font-size:11px;font-weight:700;white-space:nowrap}
 .subnav button.act{background:#001eff;border-color:#3b82f6;color:#fff}
@@ -95,7 +99,7 @@ body{background:#07090d;color:#f8fafc;padding-bottom:84px}
 .box.dn{border-color:#ff5252;background:#240b0e}
 .star{position:absolute;top:8px;right:9px;font-size:14px;color:#475569;cursor:pointer}
 .star.on{color:#fbbf24}
-/* More Menu (LSEG My Workspace Style) */
+/* More Menu (M82 My Workspace Style) */
 .ws-sec{padding:14px 14px 6px;font-size:13px;font-weight:800;color:#94a3b8;text-transform:uppercase;letter-spacing:.6px}
 .ws-list{background:#0d1117;margin:0 12px 12px;border-radius:10px;border:1px solid #1f2937;overflow:hidden}
 .ws-item{display:flex;justify-content:space-between;align-items:center;padding:14px;border-bottom:1px solid #1f2937;font-size:14px;font-weight:600;color:#f1f5f9;cursor:pointer}
@@ -105,20 +109,31 @@ body{background:#07090d;color:#f8fafc;padding-bottom:84px}
 /* Search Input */
 .srch-box{padding:12px;background:#0b1120;border-bottom:1px solid #1e293b}
 .srch-inp{width:100%;background:#07090d;border:1px solid #3b82f6;color:#fff;padding:11px 14px;border-radius:8px;font-size:14px;outline:none}
-/* Persistent Bottom Ticker & 5-Tab LSEG Bar */
+/* Persistent Bottom Ticker & 5-Tab M82 Bar */
 .tk{position:fixed;bottom:56px;left:0;right:0;z-index:25;background:#0b1120;border-top:1px solid #1e293b;padding:5px 10px;font-size:10px;font-family:monospace;display:flex;justify-content:space-between;color:#38bdf8;font-weight:700}
 .nav{position:fixed;bottom:0;left:0;right:0;z-index:30;height:56px;background:#05070b;border-top:1px solid #1e293b;display:flex;justify-content:space-around;align-items:center}
 .nav button{background:none;border:none;color:#64748b;font-size:10px;font-weight:700;padding:6px 4px;display:flex;flex-direction:column;align-items:center;gap:3px;flex:1}
 .nav button.act{color:#3b82f6;border-top:2px solid #001eff}
 .tab{display:none}.tab.act{display:block}
-/* LSEG Sign-In Overlay */
+/* M82 Sign-In Overlay */
 #login-scr{position:fixed;inset:0;z-index:100;background:#001eff;color:#fff;display:none;flex-direction:column;justify-content:space-between;padding:28px 20px}
 .l-card{background:#fff;color:#0f172a;border-radius:10px;padding:18px;margin-top:20px}
 .l-inp{width:100%;border:1px solid #cbd5e1;padding:11px;border-radius:6px;font-size:15px;font-weight:600;margin-top:6px;color:#0f172a}
 .l-btn{width:100%;background:#001eff;color:#fff;border:none;padding:14px;border-radius:8px;font-size:15px;font-weight:800;margin-top:14px;cursor:pointer}
+
+.casc-sec{padding:16px 14px 8px;font-size:12px;font-weight:800;color:#60a5fa;text-transform:uppercase;letter-spacing:.7px}
+.casc-list{background:#0d1117;margin:0 12px 12px;border-radius:10px;border:1px solid #1f2937;overflow:hidden}
+.casc-row{display:flex;justify-content:space-between;align-items:center;padding:15px 14px;border-bottom:1px solid #1f2937;font-size:14px;font-weight:700;color:#f8fafc;cursor:pointer}
+.casc-row:last-child{border-bottom:none}
+.casc-row:active{background:#1e293b}
+.casc-row small{display:block;font-size:11px;font-weight:400;color:#94a3b8;margin-top:3px}
+.pager-bar{display:flex;justify-content:space-between;align-items:center;background:#0b1120;padding:10px 12px;border-bottom:1px solid #1e293b;gap:6px}
+.pg-btn{background:#111827;border:1px solid #1f2937;color:#e2e8f0;padding:6px 10px;border-radius:6px;font-size:11px;font-weight:700;cursor:pointer}
+.pg-btn.pri{background:#001eff;border-color:#3b82f6;color:#fff}
+.pg-mid{font-size:12px;font-weight:800;color:#e2e8f0;text-align:center;flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 </style></head><body>
 
-<!-- LSEG-Style Sovereign Sign In Screen -->
+<!-- M82-Style Sovereign Sign In Screen -->
 <div id="login-scr">
   <div>
     <div style="font-size:14px;font-weight:700;opacity:.9;margin-top:18px">Sign in with:</div>
@@ -136,37 +151,38 @@ body{background:#07090d;color:#f8fafc;padding-bottom:84px}
   <div style="font-size:11px;opacity:.85;text-align:center">Molina Holdings LLC &bull; Nodo Charallave L4/L5 Edge &bull; BUNKER 0.30x LOCK</div>
 </div>
 
-<!-- M82 Sovereign News Categories Drawer -->
-<div id="cat-drawer">
-  <div class="cd-top">
-    <span style="font-size:20px;font-weight:800;color:#fff">News Categories</span>
-    <span style="font-size:22px;color:#fff;cursor:pointer;padding:0 6px" onclick="toggleDrawer(false)">&#10005;</span>
-  </div>
-  <div class="cd-sec">M82 Sovereign Wire</div>
-  <div class="cd-item sel" onclick="pickCat('ALL','Front Page')"><span>Front Page</span><span>&#8250;</span></div>
-  <div class="cd-item" onclick="pickCat('MACRO','Central Banks & Global Economy')"><span>Central Banks &amp; Global Economy</span><span>&#8250;</span></div>
-  <div class="cd-item" onclick="pickCat('ENERGY','Commodities & Energy')"><span>Commodities &amp; Energy</span><span>&#8250;</span></div>
-  <div class="cd-item" onclick="pickCat('RISK','Regulation & Tail-Risk')"><span>Regulation &amp; Tail-Risk</span><span>&#8250;</span></div>
-  <div class="cd-sec">Desk Coverage</div>
-  <div class="cd-item" onclick="pickCat('BANKING','Banking & Finance')"><span>Banking &amp; Finance</span><span>&#8250;</span></div>
-  <div class="cd-item" onclick="pickCat('COMPANIES','Companies & Equities')"><span>Companies &amp; Equities</span><span>&#8250;</span></div>
-  <div class="cd-item" onclick="pickCat('MARKETS','Markets & Rates')"><span>Markets &amp; Rates</span><span>&#8250;</span></div>
-  <div class="cd-item" onclick="pickCat('REGIONAL','Regional & LatAm')"><span>Regional &amp; LatAm</span><span>&#8250;</span></div>
-</div>
 <div class="top">
-  <div class="top-title" id="hdr-title" onclick="if(document.getElementById('t-n').classList.contains('act'))toggleDrawer(true)" style="cursor:pointer">&#9776; Front Page</div>
+  <div class="top-title" id="hdr-title">&#9776; Front Page</div>
   <span class="b">&#128274; BUNKER 0.30x</span>
 </div>
 
-<!-- 1. NEWS TAB (Front Page) -->
+<!-- 1. NEWS TAB: Cascada + Feed Paginado -->
 <div id="t-n" class="tab act">
-  <div class="subnav" id="news-filters">
-    <button class="act" onclick="setNFilter('ALL',this)">All Wire</button>
-    <button onclick="setNFilter('ENERGY',this)">Energy &amp; Oil</button>
-    <button onclick="setNFilter('MACRO',this)">Macro &amp; Rates</button>
-    <button onclick="setNFilter('RISK',this)">High Risk (&ge;5)</button>
+  <div id="news-p1">
+    <div class="casc-sec">M82 Sovereign Wire</div>
+    <div class="casc-list">
+      <div class="casc-row" onclick="openNewsPage(0)"><div>Front Page<small>Despacho ejecutivo global en vivo</small></div><span>&#8250;</span></div>
+      <div class="casc-row" onclick="openNewsPage(1)"><div>Central Banks &amp; Global Economy<small>Tasas, Fed, inflación y liquidez macro</small></div><span>&#8250;</span></div>
+      <div class="casc-row" onclick="openNewsPage(2)"><div>Commodities &amp; Energy<small>WTI, Brent, Crack Spreads y OPEP+</small></div><span>&#8250;</span></div>
+      <div class="casc-row" onclick="openNewsPage(3)"><div>Regulation &amp; Tail-Risk<small>Alertas de riesgo sistémico (&ge; 5.0)</small></div><span>&#8250;</span></div>
+    </div>
+    <div class="casc-sec">Desk Coverage</div>
+    <div class="casc-list">
+      <div class="casc-row" onclick="openNewsPage(4)"><div>Banking &amp; Finance<small>Crédito institucional y flujos de capital</small></div><span>&#8250;</span></div>
+      <div class="casc-row" onclick="openNewsPage(5)"><div>Companies &amp; Equities<small>Tecnología, IA, semiconductores y balances</small></div><span>&#8250;</span></div>
+      <div class="casc-row" onclick="openNewsPage(6)"><div>Markets &amp; Rates<small>Índices, bonos del Tesoro y divisas</small></div><span>&#8250;</span></div>
+      <div class="casc-row" onclick="openNewsPage(7)"><div>Regional &amp; LatAm<small>Cobertura estratégica regional y mercados emergentes</small></div><span>&#8250;</span></div>
+    </div>
   </div>
-  <div id="nl"></div>
+  <div id="news-p2" style="display:none">
+    <div class="pager-bar">
+      <button class="pg-btn" onclick="backToCascade()">&#8592; Índice</button>
+      <button class="pg-btn" onclick="stepNewsPage(-1)">&#9664;</button>
+      <div class="pg-mid" id="pg-label">1 / 8 &mdash; Front Page</div>
+      <button class="pg-btn pri" onclick="stepNewsPage(1)">Sig &#8212; &#9654;</button>
+    </div>
+    <div id="nl"></div>
+  </div>
 </div>
 
 <!-- 2. MARKETS TAB -->
@@ -202,7 +218,7 @@ body{background:#07090d;color:#f8fafc;padding-bottom:84px}
   <div id="srch-news"></div>
 </div>
 
-<!-- 5. MORE TAB (My Workspace LSEG Style) -->
+<!-- 5. MORE TAB (My Workspace M82 Style) -->
 <div id="t-more" class="tab">
   <div class="ws-sec">My Workspace</div>
   <div class="ws-list">
@@ -211,11 +227,11 @@ body{background:#07090d;color:#f8fafc;padding-bottom:84px}
     <div class="ws-item" onclick="sw('w','Watchlists',document.getElementById('nav-w'))"><span>&#128188; Briefcase &amp; Watchlist</span><span class="ws-val" id="cnt-wl">PINNED</span></div>
     <div class="ws-item" onclick="sw('n','Front Page',document.getElementById('nav-n'))"><span>&#128197; Economic Events &amp; Wire</span><span class="ws-val">24/7 WAL</span></div>
     <div class="ws-item" onclick="sw('w','Watchlists',document.getElementById('nav-w'))"><span>&#128202; Portfolios (Bunker Risk)</span><span class="ws-val">0.22x / 0.30x</span></div>
-    <div class="ws-item" onclick="alert('Dispatch Channels Active:\n- Telegram Sovereign Bot\n- Ntfy Priority Channel\n- M82 Real-Time Telemetry Bridge (2s WAL)')"><span>&#128172; Messenger &amp; Dispatch</span><span class="ws-val">ONLINE</span></div>
+    <div class="ws-item" onclick="alert('Dispatch Channels Active:\n- Telegram Sovereign Bot\n- Ntfy Priority Channel\n- M82 M82 Telemetry Bridge (2s WAL)')"><span>&#128172; Messenger &amp; Dispatch</span><span class="ws-val">ONLINE</span></div>
   </div>
   <div class="ws-sec">My App &amp; Governance</div>
   <div class="ws-list">
-    <div class="ws-item"><span>Version</span><span class="ws-val">M82-QUANTUM v2.2.0</span></div>
+    <div class="ws-item"><span>Version</span><span class="ws-val">M82-M82 v2.0.0</span></div>
     <div class="ws-item"><span>Execution Node</span><span class="ws-val">Charallave L4/L5</span></div>
     <div class="ws-item"><span>Database Engine</span><span class="ws-val">SQLite WAL (?mode=ro)</span></div>
   </div>
@@ -313,12 +329,40 @@ function doLogout(){
   document.getElementById('login-scr').style.display = 'flex';
 }
 
+const NEWS_PAGES = [
+  {code:'ALL', label:'Front Page'},
+  {code:'MACRO', label:'Central Banks & Global Economy'},
+  {code:'ENERGY', label:'Commodities & Energy'},
+  {code:'RISK', label:'Regulation & Tail-Risk'},
+  {code:'BANKING', label:'Banking & Finance'},
+  {code:'COMPANIES', label:'Companies & Equities'},
+  {code:'MARKETS', label:'Markets & Rates'},
+  {code:'REGIONAL', label:'Regional & LatAm'}
+];
+let curPageIdx = 0;
+function openNewsPage(idx){
+  curPageIdx = (idx + NEWS_PAGES.length) % NEWS_PAGES.length;
+  const pg = NEWS_PAGES[curPageIdx];
+  nFilter = pg.code;
+  document.getElementById('news-p1').style.display = 'none';
+  document.getElementById('news-p2').style.display = 'block';
+  document.getElementById('hdr-title').innerText = pg.label;
+  document.getElementById('pg-label').innerHTML = `${curPageIdx+1}/${NEWS_PAGES.length} &mdash; ${pg.label}`;
+  renderAll();
+}
+function stepNewsPage(delta){ openNewsPage(curPageIdx + delta); }
+function backToCascade(){
+  document.getElementById('news-p2').style.display = 'none';
+  document.getElementById('news-p1').style.display = 'block';
+  document.getElementById('hdr-title').innerHTML = '&#9776; News';
+}
 function sw(t, title, b){
   document.querySelectorAll('.tab').forEach(e=>e.classList.remove('act'));
   document.getElementById('t-'+t).classList.add('act');
   document.querySelectorAll('.nav button').forEach(e=>e.classList.remove('act'));
   if(b) b.classList.add('act');
-  document.getElementById('hdr-title').innerHTML = (t==='n' ? '&#9776; ' : '') + title;
+  if(t==='n'){ backToCascade(); }
+  else { document.getElementById('hdr-title').innerText = title; }
 }
 function setNFilter(f, b){
   nFilter = f;
@@ -364,24 +408,10 @@ function renderCardBox(k, v){
   return `<div class="box ${st}"><span class="star ${on}" onclick="toggleFav(event,'${k}')">&#9733;</span><small style="color:#94a3b8">${k}</small><h2 style="color:${vCol};font-size:17px;margin-top:3px">${fmtInst(k,v)}${arr}</h2></div>`;
 }
 
-function cleanBrand(str){
-  return String(str || 'M82 Sovereign Wire').replace(/LSEG|Refinitiv|Reuters|WSJ/gi, 'M82 Wire');
-}
-function toggleDrawer(show){
-  document.getElementById('cat-drawer').style.display = show ? 'flex' : 'none';
-}
-function pickCat(code, label){
-  nFilter = code;
-  toggleDrawer(false);
-  document.getElementById('hdr-title').innerHTML = '&#9776; ' + label;
-  renderAll();
-}
 function renderNewsCard(x){
   const rVal = parseFloat(x.r || 0);
   const buzz = rVal >= 4.0 ? `<span class="buzz">BUZZ</span>` : '';
-  const tagClean = cleanBrand(x.t || 'M82_QUANTUM_WIRE');
-  const srcClean = cleanBrand(x.s || 'M82 Sovereign Desk');
-  return `<div class="card" data-id="${x.id||'latest'}"><h3>${x.h}</h3><div>${buzz}<span class="tag">${tagClean}</span> <small style="color:#fbbf24;margin-left:6px">RISK ${x.r}</small></div><div class="meta-row"><span>${srcClean}</span><span>&bull;</span><span>${(x.ts||'').slice(0,16)}</span></div></div>`;
+  return `<div class="card" data-id="${x.id||'latest'}"><h3>${x.h}</h3><div>${buzz}<span class="tag">${x.t || 'M82_QUANTUM_WIRE'}</span> <small style="color:#fbbf24;margin-left:6px">RISK ${x.r}</small></div><div class="meta-row"><span>${x.s}</span><span>&bull;</span><span>${(x.ts||'').slice(0,16)}</span></div></div>`;
 }
 
 function renderAll(){
@@ -392,13 +422,9 @@ function renderAll(){
   // News filtered
   const newsFiltered = (lastData.m || []).filter(x=>{
     const txt = (x.h + ' ' + x.c + ' ' + x.t).toUpperCase();
-    if(nFilter==='ENERGY') return /OIL|BRENT|WTI|OPEC|CRUDE|ENERGY|GAS|COMMODIT/.test(txt);
-    if(nFilter==='MACRO') return /FED|RATE|GDP|INFLATION|CPI|TREASURY|YIELD|BOJ|ECONOMY|BANK/.test(txt);
+    if(nFilter==='ENERGY') return /OIL|BRENT|WTI|OPEC|CRUDE|ENERGY|GAS/.test(txt);
+    if(nFilter==='MACRO') return /FED|RATE|GDP|INFLATION|CPI|TREASURY|YIELD|BOJ/.test(txt);
     if(nFilter==='RISK') return parseFloat(x.r||0) >= 5.0;
-    if(nFilter==='BANKING') return /BANK|CREDIT|JPM|GS|FINANCE|LIQUIDITY/.test(txt);
-    if(nFilter==='COMPANIES') return /NVDA|AAPL|MSFT|TECH|AI|EARNINGS|CORP|STOCK/.test(txt);
-    if(nFilter==='MARKETS') return /MARKET|INDEX|SPX|NDX|DXY|BOND|EQUIT/.test(txt);
-    if(nFilter==='REGIONAL') return /LATAM|VENEZUELA|BRAZIL|MEXICO|EMERGING|REGIONAL/.test(txt);
     return true;
   });
   document.getElementById('nl').innerHTML = newsFiltered.map(renderNewsCard).join('') || '<div style="padding:20px;color:#64748b">Sin despachos en este filtro.</div>';
