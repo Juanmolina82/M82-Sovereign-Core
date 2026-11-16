@@ -51,7 +51,7 @@ def render_dispatch(item_id):
             aid = str(item_id).replace("A-", "")
             row = c2.execute("SELECT event_type, headline, risk_score FROM m82_tail_risk_alerts WHERE id=?", (aid,)).fetchone()
             if row:
-                cat, title, risk, source, tag = str(row[0]), str(row[1]), str(row[2]), "LSEG / M82 TAIL-RISK", "TAIL_RISK_ALERT"
+                cat, title, risk, source, tag = str(row[0]), str(row[1]), str(row[2]), "M82 TAIL-RISK ENGINE", "TAIL_RISK_ALERT"
                 body = title
         else:
             q_sql = f"SELECT source, category, headline, risk_score, m82_tag, created_at, {extra_col} FROM macro_dossier " + ("ORDER BY id DESC LIMIT 1" if item_id == "latest" else "WHERE id=?")
@@ -61,7 +61,14 @@ def render_dispatch(item_id):
         c2.close()
     except Exception as e:
         body = f"Lectura RAM WAL: {e}"
-    return f"""<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><style>body{{background:#07090d;color:#e8f0fe;font-family:sans-serif;margin:0;padding:16px}}.bar{{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #1e293b;padding-bottom:12px;margin-bottom:16px}}.btn{{background:#001eff;color:#fff;border:none;padding:8px 14px;border-radius:6px;text-decoration:none;font-weight:700;font-size:12px}}.bunker{{background:#2a080d;border:1px solid #ff1744;color:#ff5252;padding:6px 10px;border-radius:4px;font-size:11px;font-weight:700}}.card{{background:#0d1117;border:1px solid #1f2937;border-radius:8px;padding:16px}}.meta{{color:#94a3b8;font-size:12px;margin-bottom:8px;font-family:monospace}}h1{{font-size:18px;line-height:1.4;margin:8px 0 14px;color:#fff}}.body{{font-size:14px;line-height:1.65;color:#cbd5e1;white-space:pre-wrap;border-top:1px solid #1f2937;padding-top:12px}}.tag{{display:inline-block;background:#1e1b4b;color:#a5b4fc;border:1px solid #4338ca;padding:3px 8px;border-radius:4px;font-size:11px;font-weight:700;margin-right:6px}}</style></head><body><div class="bar"><a class="btn" href="/">&#8592; Front Page</a><span class="bunker">&#128274; BUNKER 0.30x LOCK</span></div><div class="card"><div class="meta">ID #{html.escape(str(item_id))} &bull; {html.escape(source)} &bull; {html.escape(ts)}</div><div><span class="tag">{html.escape(cat)}</span><span class="tag" style="color:#fbbf24;border-color:#b45309;background:#451a03">RISK {html.escape(risk)}</span><span class="tag">{html.escape(tag)}</span></div><h1>{html.escape(title)}</h1><div class="body">{html.escape(body or title)}</div></div></body></html>"""
+    return f"""<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><style>body{{background:#07090d;color:#e8f0fe;font-family:sans-serif;margin:0;padding:16px}}.bar{{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #1e293b;padding-bottom:12px;margin-bottom:16px}}.btn{{background:#001eff;color:#fff;border:none;padding:8px 14px;border-radius:6px;text-decoration:none;font-weight:700;font-size:12px}}.bunker{{background:#2a080d;border:1px solid #ff1744;color:#ff5252;padding:6px 10px;border-radius:4px;font-size:11px;font-weight:700}}.card{{background:#0d1117;border:1px solid #1f2937;border-radius:8px;padding:16px}}.meta{{color:#94a3b8;font-size:12px;margin-bottom:8px;font-family:monospace}}h1{{font-size:18px;line-height:1.4;margin:8px 0 14px;color:#fff}}.body{{font-size:14px;line-height:1.65;color:#cbd5e1;white-space:pre-wrap;border-top:1px solid #1f2937;padding-top:12px}}.tag{{display:inline-block;background:#1e1b4b;color:#a5b4fc;border:1px solid #4338ca;padding:3px 8px;border-radius:4px;font-size:11px;font-weight:700;margin-right:6px}}/* Category Drawer (100% M82 Proprietary Brand) */
+#cat-drawer{position:fixed;inset:0;z-index:80;background:#07090d;display:none;flex-direction:column;overflow-y:auto;padding-bottom:30px}
+.cd-top{background:#001eff;padding:14px 16px;display:flex;justify-content:space-between;align-items:center}
+.cd-sec{padding:16px 16px 8px;font-size:13px;font-weight:800;color:#94a3b8;text-transform:uppercase;letter-spacing:.6px}
+.cd-item{padding:15px 16px;border-bottom:1px solid #1e293b;font-size:15px;font-weight:600;color:#f8fafc;display:flex;justify-content:space-between;align-items:center;cursor:pointer}
+.cd-item.sel{border-left:4px solid #3b82f6;background:#0f172a}
+.cd-item:active{background:#1e293b}
+</style></head><body><div class="bar"><a class="btn" href="/">&#8592; Front Page</a><span class="bunker">&#128274; BUNKER 0.30x LOCK</span></div><div class="card"><div class="meta">ID #{html.escape(str(item_id))} &bull; {html.escape(source)} &bull; {html.escape(ts)}</div><div><span class="tag">{html.escape(cat)}</span><span class="tag" style="color:#fbbf24;border-color:#b45309;background:#451a03">RISK {html.escape(risk)}</span><span class="tag">{html.escape(tag)}</span></div><h1>{html.escape(title)}</h1><div class="body">{html.escape(body or title)}</div></div></body></html>"""
 
 HTML = """<!doctype html><html><head><meta charset="utf-8"><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#001eff"><meta name="viewport" content="width=device-width,initial-scale=1"><style>
 *{box-sizing:border-box;margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,sans-serif}
@@ -115,7 +122,7 @@ body{background:#07090d;color:#f8fafc;padding-bottom:84px}
 <div id="login-scr">
   <div>
     <div style="font-size:14px;font-weight:700;opacity:.9;margin-top:18px">Sign in with:</div>
-    <div style="font-size:36px;font-weight:900;line-height:1.1;margin-top:6px">LSEG / M82<br>Workspace</div>
+    <div style="font-size:36px;font-weight:900;line-height:1.1;margin-top:6px">M82 Quantum<br>Workspace</div>
     <div class="l-card">
       <div style="font-size:11px;font-weight:800;color:#64748b">USER ID</div>
       <input id="uid-inp" class="l-inp" value="jmmp@molina82.com">
@@ -123,14 +130,31 @@ body{background:#07090d;color:#f8fafc;padding-bottom:84px}
       <input id="key-inp" type="password" class="l-inp" placeholder="Ingrese Token Soberano">
       <div id="l-err" style="color:#dc2626;font-size:12px;font-weight:700;margin-top:8px;display:none"></div>
       <button class="l-btn" onclick="doLogin()">SIGN IN WITH TOKEN</button>
-      <button id="bio-btn" class="l-btn" style="background:#0f172a;margin-top:10px" onclick="doBioLogin()">&#128070; SIGN IN WITH FINGERPRINT</button>
+      <button id="bio-btn" class="l-btn" style="background:#0f172a;margin-top:10px" onclick="doBioLogin()">&#128070; FINGERPRINT / QUICK PIN</button>
     </div>
   </div>
   <div style="font-size:11px;opacity:.85;text-align:center">Molina Holdings LLC &bull; Nodo Charallave L4/L5 Edge &bull; BUNKER 0.30x LOCK</div>
 </div>
 
+<!-- M82 Sovereign News Categories Drawer -->
+<div id="cat-drawer">
+  <div class="cd-top">
+    <span style="font-size:20px;font-weight:800;color:#fff">News Categories</span>
+    <span style="font-size:22px;color:#fff;cursor:pointer;padding:0 6px" onclick="toggleDrawer(false)">&#10005;</span>
+  </div>
+  <div class="cd-sec">M82 Sovereign Wire</div>
+  <div class="cd-item sel" onclick="pickCat('ALL','Front Page')"><span>Front Page</span><span>&#8250;</span></div>
+  <div class="cd-item" onclick="pickCat('MACRO','Central Banks & Global Economy')"><span>Central Banks &amp; Global Economy</span><span>&#8250;</span></div>
+  <div class="cd-item" onclick="pickCat('ENERGY','Commodities & Energy')"><span>Commodities &amp; Energy</span><span>&#8250;</span></div>
+  <div class="cd-item" onclick="pickCat('RISK','Regulation & Tail-Risk')"><span>Regulation &amp; Tail-Risk</span><span>&#8250;</span></div>
+  <div class="cd-sec">Desk Coverage</div>
+  <div class="cd-item" onclick="pickCat('BANKING','Banking & Finance')"><span>Banking &amp; Finance</span><span>&#8250;</span></div>
+  <div class="cd-item" onclick="pickCat('COMPANIES','Companies & Equities')"><span>Companies &amp; Equities</span><span>&#8250;</span></div>
+  <div class="cd-item" onclick="pickCat('MARKETS','Markets & Rates')"><span>Markets &amp; Rates</span><span>&#8250;</span></div>
+  <div class="cd-item" onclick="pickCat('REGIONAL','Regional & LatAm')"><span>Regional &amp; LatAm</span><span>&#8250;</span></div>
+</div>
 <div class="top">
-  <div class="top-title" id="hdr-title">&#9776; Front Page</div>
+  <div class="top-title" id="hdr-title" onclick="if(document.getElementById('t-n').classList.contains('act'))toggleDrawer(true)" style="cursor:pointer">&#9776; Front Page</div>
   <span class="b">&#128274; BUNKER 0.30x</span>
 </div>
 
@@ -187,11 +211,11 @@ body{background:#07090d;color:#f8fafc;padding-bottom:84px}
     <div class="ws-item" onclick="sw('w','Watchlists',document.getElementById('nav-w'))"><span>&#128188; Briefcase &amp; Watchlist</span><span class="ws-val" id="cnt-wl">PINNED</span></div>
     <div class="ws-item" onclick="sw('n','Front Page',document.getElementById('nav-n'))"><span>&#128197; Economic Events &amp; Wire</span><span class="ws-val">24/7 WAL</span></div>
     <div class="ws-item" onclick="sw('w','Watchlists',document.getElementById('nav-w'))"><span>&#128202; Portfolios (Bunker Risk)</span><span class="ws-val">0.22x / 0.30x</span></div>
-    <div class="ws-item" onclick="alert('Dispatch Channels Active:\n- Telegram Sovereign Bot\n- Ntfy Priority Channel\n- LSEG Refinitiv Bridge (2s WAL)')"><span>&#128172; Messenger &amp; Dispatch</span><span class="ws-val">ONLINE</span></div>
+    <div class="ws-item" onclick="alert('Dispatch Channels Active:\n- Telegram Sovereign Bot\n- Ntfy Priority Channel\n- M82 Real-Time Telemetry Bridge (2s WAL)')"><span>&#128172; Messenger &amp; Dispatch</span><span class="ws-val">ONLINE</span></div>
   </div>
   <div class="ws-sec">My App &amp; Governance</div>
   <div class="ws-list">
-    <div class="ws-item"><span>Version</span><span class="ws-val">M82-LSEG v2.0.0</span></div>
+    <div class="ws-item"><span>Version</span><span class="ws-val">M82-QUANTUM v2.2.0</span></div>
     <div class="ws-item"><span>Execution Node</span><span class="ws-val">Charallave L4/L5</span></div>
     <div class="ws-item"><span>Database Engine</span><span class="ws-val">SQLite WAL (?mode=ro)</span></div>
   </div>
@@ -240,8 +264,11 @@ async function enrollBio(){
     if(cred){
       const raw = btoa(String.fromCharCode(...new Uint8Array(cred.rawId)));
       localStorage.setItem('m82_bio_id', raw);
+      return;
     }
   }catch(e){}
+  const pin = prompt("WebView sin sensor directo. Cree un PIN Soberano de 4 dígitos para acceso rápido:");
+  if(pin && pin.trim().length >= 4) localStorage.setItem('m82_quick_pin', pin.trim());
 }
 async function doLogin(){
   const k = document.getElementById('key-inp').value.trim();
@@ -253,8 +280,18 @@ async function doLogin(){
 }
 async function doBioLogin(){
   const saved = localStorage.getItem('m82_bio_id');
-  if(!saved){ showErr("Primero ingrese su Gateway Key una vez para registrar su huella."); return; }
-  if(!window.PublicKeyCredential){ showErr("Sensor biométrico no disponible en este WebView."); return; }
+  const qpin = localStorage.getItem('m82_quick_pin');
+  if(!saved && qpin){
+    const inp = prompt("Ingrese su PIN Soberano:");
+    if(inp && inp.trim() === qpin){
+      document.getElementById('l-err').style.display = 'none';
+      localStorage.setItem('m82_locked', '0');
+      document.getElementById('login-scr').style.display = 'none';
+    } else if(inp !== null) { showErr("PIN Soberano incorrecto."); }
+    return;
+  }
+  if(!saved){ showErr("Ingrese su Gateway Key una vez para vincular huella o PIN."); return; }
+  if(!window.PublicKeyCredential){ showErr("Sensor no expuesto en WebView. Reingrese Gateway Key para fijar PIN."); return; }
   try{
     const ch = new Uint8Array(32); crypto.getRandomValues(ch);
     const rawId = Uint8Array.from(atob(saved), c => c.charCodeAt(0));
@@ -327,10 +364,24 @@ function renderCardBox(k, v){
   return `<div class="box ${st}"><span class="star ${on}" onclick="toggleFav(event,'${k}')">&#9733;</span><small style="color:#94a3b8">${k}</small><h2 style="color:${vCol};font-size:17px;margin-top:3px">${fmtInst(k,v)}${arr}</h2></div>`;
 }
 
+function cleanBrand(str){
+  return String(str || 'M82 Sovereign Wire').replace(/LSEG|Refinitiv|Reuters|WSJ/gi, 'M82 Wire');
+}
+function toggleDrawer(show){
+  document.getElementById('cat-drawer').style.display = show ? 'flex' : 'none';
+}
+function pickCat(code, label){
+  nFilter = code;
+  toggleDrawer(false);
+  document.getElementById('hdr-title').innerHTML = '&#9776; ' + label;
+  renderAll();
+}
 function renderNewsCard(x){
   const rVal = parseFloat(x.r || 0);
   const buzz = rVal >= 4.0 ? `<span class="buzz">BUZZ</span>` : '';
-  return `<div class="card" data-id="${x.id||'latest'}"><h3>${x.h}</h3><div>${buzz}<span class="tag">${x.t || 'LSEG_WIRE'}</span> <small style="color:#fbbf24;margin-left:6px">RISK ${x.r}</small></div><div class="meta-row"><span>${x.s}</span><span>&bull;</span><span>${(x.ts||'').slice(0,16)}</span></div></div>`;
+  const tagClean = cleanBrand(x.t || 'M82_QUANTUM_WIRE');
+  const srcClean = cleanBrand(x.s || 'M82 Sovereign Desk');
+  return `<div class="card" data-id="${x.id||'latest'}"><h3>${x.h}</h3><div>${buzz}<span class="tag">${tagClean}</span> <small style="color:#fbbf24;margin-left:6px">RISK ${x.r}</small></div><div class="meta-row"><span>${srcClean}</span><span>&bull;</span><span>${(x.ts||'').slice(0,16)}</span></div></div>`;
 }
 
 function renderAll(){
@@ -341,16 +392,20 @@ function renderAll(){
   // News filtered
   const newsFiltered = (lastData.m || []).filter(x=>{
     const txt = (x.h + ' ' + x.c + ' ' + x.t).toUpperCase();
-    if(nFilter==='ENERGY') return /OIL|BRENT|WTI|OPEC|CRUDE|ENERGY|GAS/.test(txt);
-    if(nFilter==='MACRO') return /FED|RATE|GDP|INFLATION|CPI|TREASURY|YIELD|BOJ/.test(txt);
+    if(nFilter==='ENERGY') return /OIL|BRENT|WTI|OPEC|CRUDE|ENERGY|GAS|COMMODIT/.test(txt);
+    if(nFilter==='MACRO') return /FED|RATE|GDP|INFLATION|CPI|TREASURY|YIELD|BOJ|ECONOMY|BANK/.test(txt);
     if(nFilter==='RISK') return parseFloat(x.r||0) >= 5.0;
+    if(nFilter==='BANKING') return /BANK|CREDIT|JPM|GS|FINANCE|LIQUIDITY/.test(txt);
+    if(nFilter==='COMPANIES') return /NVDA|AAPL|MSFT|TECH|AI|EARNINGS|CORP|STOCK/.test(txt);
+    if(nFilter==='MARKETS') return /MARKET|INDEX|SPX|NDX|DXY|BOND|EQUIT/.test(txt);
+    if(nFilter==='REGIONAL') return /LATAM|VENEZUELA|BRAZIL|MEXICO|EMERGING|REGIONAL/.test(txt);
     return true;
   });
   document.getElementById('nl').innerHTML = newsFiltered.map(renderNewsCard).join('') || '<div style="padding:20px;color:#64748b">Sin despachos en este filtro.</div>';
 
   // Markets filtered
   const mktFiltered = entries.filter(([k])=> mFilter==='ALL' || catOf(k)===mFilter);
-  document.getElementById('mg').innerHTML = `<div class="box" style="grid-column:span 2;border-color:#001eff;background:#0b1536"><small style="color:#60a5fa">LSEG WORKSPACE &bull; jmmp@molina82.com</small><h2 style="font-size:14px;margin-top:3px">${mktFiltered.length} INSTRUMENTOS EN VIVO (TICK 2s WAL)</h2></div>` + mktFiltered.map(([k,v])=>renderCardBox(k,v)).join('');
+  document.getElementById('mg').innerHTML = `<div class="box" style="grid-column:span 2;border-color:#001eff;background:#0b1536"><small style="color:#60a5fa">M82 QUANTUM DESK &bull; jmmp@molina82.com</small><h2 style="font-size:14px;margin-top:3px">${mktFiltered.length} INSTRUMENTOS EN VIVO (TICK 2s WAL)</h2></div>` + mktFiltered.map(([k,v])=>renderCardBox(k,v)).join('');
 
   // Watchlist pinned
   const pinned = entries.filter(([k])=>favs.has(k));
