@@ -39,6 +39,9 @@
             "DEFAULT"
           ]
         }
+      ],
+      "permissions": [
+        "android.permission.POST_NOTIFICATIONS"
       ]
     },
     "extra": {
@@ -47,6 +50,9 @@
       "eas": {
         "projectId": "a38d5e2a-7d74-4f87-8631-281a3ce74dae"
       }
-    }
+    },
+    "plugins": [
+      "./withM82Push"
+    ]
   }
 }
