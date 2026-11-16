@@ -131,6 +131,20 @@ body{background:#07090d;color:#f8fafc;padding-bottom:84px}
 .pg-btn{background:#111827;border:1px solid #1f2937;color:#e2e8f0;padding:6px 10px;border-radius:6px;font-size:11px;font-weight:700;cursor:pointer}
 .pg-btn.pri{background:#001eff;border-color:#3b82f6;color:#fff}
 .pg-mid{font-size:12px;font-weight:800;color:#e2e8f0;text-align:center;flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+/* M82 v2.4.3 Android High-Legibility Executive Scale */
+html, body { font-size: 16px !important; -webkit-text-size-adjust: 100%; }
+.casc-sec { font-size: 13px !important; padding: 18px 16px 9px !important; }
+.casc-row { font-size: 17px !important; padding: 18px 16px !important; line-height: 1.35 !important; }
+.casc-row small { font-size: 13.5px !important; margin-top: 5px !important; line-height: 1.35 !important; }
+.casc-row span { font-size: 22px !important; }
+.pg-mid { font-size: 14px !important; }
+.pg-btn { font-size: 13px !important; padding: 8px 12px !important; }
+#nl div, .news-item, .card { font-size: 16px !important; line-height: 1.45 !important; }
+#nl b, #nl strong, .n-title { font-size: 16.5px !important; line-height: 1.4 !important; }
+#nl small, .n-meta, .ts { font-size: 13px !important; }
+.nav button { font-size: 12.5px !important; }
+#hdr-title { font-size: 18px !important; }
 </style></head><body>
 
 <!-- M82-Style Sovereign Sign In Screen -->
