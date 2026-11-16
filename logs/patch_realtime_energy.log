@@ -1,0 +1,12 @@
+nohup: ignoring input
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/home/M82/patch_realtime_energy.py", line 31, in <module>
+    "merey16_live": {merey16},
+                     ^^^^^^^
+NameError: name 'merey16' is not defined
+nohup: ignoring input
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/home/M82/patch_realtime_energy.py", line 31, in <module>
+    "merey16_live": {merey16},
+                     ^^^^^^^
+NameError: name 'merey16' is not defined

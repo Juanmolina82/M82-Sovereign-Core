@@ -30,7 +30,7 @@ def send_telegram_signal(asset, bias, risk, exp, source):
 def process_dossier_signals():
     conn = sqlite3.connect(DB)
     c = conn.cursor()
-    rows = c.execute("SELECT source, headline, risk_score, metadata_json FROM macro_dossier ORDER BY id DESC LIMIT 10").fetchall()
+    rows = c.execute("SELECT source, headline, risk_score, metadata_json FROM macro_dossier ORDER BY id DESC LIMIT 3").fetchall()
     
     for source, headline, risk, meta_str in rows:
         # Verificar si ya existe registro en multi_stream para evitar spam

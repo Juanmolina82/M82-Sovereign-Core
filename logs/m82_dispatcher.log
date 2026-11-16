@@ -1,0 +1,20 @@
+nohup: ignoring input
+🚀 Procesando 5 eventos pendientes para Telegram y Ntfy...
+📲 [NTFY] Alerta enviada con éxito.
+💬 [TELEGRAM] Mensaje enviado con éxito.
+📲 [NTFY] Alerta enviada con éxito.
+💬 [TELEGRAM] Mensaje enviado con éxito.
+📲 [NTFY] Alerta enviada con éxito.
+💬 [TELEGRAM] Mensaje enviado con éxito.
+📲 [NTFY] Alerta enviada con éxito.
+💬 [TELEGRAM] Mensaje enviado con éxito.
+📲 [NTFY] Alerta enviada con éxito.
+💬 [TELEGRAM] Mensaje enviado con éxito.
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/home/M82/m82_dispatcher.py", line 84, in <module>
+    dispatch_pending_signals()
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/data/data/com.termux/files/home/M82/m82_dispatcher.py", line 72, in dispatch_pending_signals
+    c.execute("UPDATE m82_multi_stream SET status = 'PROCESSED' WHERE id = ?;", (rec_id,))
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked

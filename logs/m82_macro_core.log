@@ -1,0 +1,12 @@
+nohup: ignoring input
+[2026-11-16 01:20:39] [M82-MACRO-CORE] 📌 Imprimiendo tarjeta HD de tamaño gigante para ID 895868...
+Finished scanning 1 file(s)
+/data/data/com.termux/files/usr/bin/sh: 5: Syntax error: Unterminated quoted string
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/home/M82/m82_macro_core.py", line 154, in <module>
+    run_pipeline()
+    ~~~~~~~~~~~~^^
+  File "/data/data/com.termux/files/home/M82/m82_macro_core.py", line 145, in run_pipeline
+    c.execute("UPDATE m82_multi_stream SET status = 'SENT_DISPATCHED' WHERE id = ?", (row_id,))
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked

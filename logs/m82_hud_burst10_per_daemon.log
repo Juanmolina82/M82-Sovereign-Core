@@ -1,0 +1,139 @@
+nohup: ignoring input
+=== M82 BURST-10 PER DAEMON :: 2026-11-16 05:39:15 UTC ===
+LIVE BANNER : BTC: $64,642 (+0.27%) | MEREY 16: $81.14 | WTI: $89.21 | BRENT: $96.39
+DAEMONS     : 39 | TOTAL VECTORES: 52
+==================================================================================
+
+>>> DAEMON: BLS_NFP_20261106_ACTUAL (n=1/10 | Avg Alpha=0.78 | Avg Tail-Risk=1.90)
+  [ 1/10 | #  1] EQUITIES_MACRO_DESK  | A=0.78 T=1.90 | BLS Actual 06-Nov: NFP Oct +165K vs +65K Est BEAT +100K — Unemployment 4.1% — Wages 3.1% YoY
+
+>>> DAEMON: DEV_META_AI_COOKBOOK (n=1/10 | Avg Alpha=2.03 | Avg Tail-Risk=1.35)
+  [ 1/10 | #119] TECH_INFRA_AI_DESK   | A=2.03 T=1.35 | Meta Model API Framework: Interleaved Tool Use, Deterministic CI Replay & Sandboxed Executio
+
+>>> DAEMON: EIA_PETROLEUM_MONTHLY_20261106 (n=1/10 | Avg Alpha=1.50 | Avg Tail-Risk=1.35)
+  [ 1/10 | #  5] VENEZUELA_LATAM_DESK | A=1.50 T=1.35 | US EIA: US crude imports from Venezuela reached 701K b/d in July 2026 (highest since May 201
+
+>>> DAEMON: FAA_DOT_WIRE (n=1/10 | Avg Alpha=0.18 | Avg Tail-Risk=1.54)
+  [ 1/10 | #212] TECH_INFRA_AI_DESK   | A=0.18 T=1.54 | FAA Ground Stop nacional EE.UU. (20:54 UTC): fallo radio/radar en ARTCCs, ~7000 vuelos afect
+
+>>> DAEMON: GIT_SYSTEM_AUDIT (n=1/10 | Avg Alpha=1.73 | Avg Tail-Risk=1.45)
+  [ 1/10 | # 39] QUANT_TELEMETRY_CORE | A=1.73 T=1.45 | M82_GIT_AUDIT_1000287403 | Orphan Branch Reset SUCCESS | Forced Push 5488 objects (45.62 MiB
+
+>>> DAEMON: LSEG WORKSPACE / REFINITIV VENEZUELA BONDS DAILY LIVE (n=1/10 | Avg Alpha=2.04 | Avg Tail-Risk=1.68)
+  [ 1/10 | #274] VENEZUELA_LATAM_DESK | A=2.04 T=1.68 | VZ Daily Pull 35 RICs: Benchmark VENZ 2027 $50.61 (Rally +20% post Trump/Rubio 1M bbls Corpu
+
+>>> DAEMON: LSEG_REUTERS_APEC (n=1/10 | Avg Alpha=1.23 | Avg Tail-Risk=0.76)
+  [ 1/10 | #217] QUANT_TELEMETRY_CORE | A=1.23 T=0.76 | Cumbre trilateral Trump-Xi-Putin confirmada para jueves 19-Nov en Shenzhen (APEC): control n
+
+>>> DAEMON: LSEG_REUTERS_CLOSE (n=2/10 | Avg Alpha=0.82 | Avg Tail-Risk=1.27)
+  [ 1/10 | #218] EQUITIES_MACRO_DESK  | A=0.44 T=1.05 | S&P 500 y Nasdaq cierran a la baja lastrados por incertidumbre en Nvidia tras salida de Huan
+  [ 2/10 | # 35] EQUITIES_MACRO_DESK  | A=1.20 T=1.50 | Brent $97.84 / WTI $90.67 | Spread $7.17 | Semana Brent -17% WTI -13% | BUNKER 0.30x Validad
+
+>>> DAEMON: LSEG_REUTERS_ECM (n=1/10 | Avg Alpha=1.37 | Avg Tail-Risk=0.58)
+  [ 1/10 | #215] TECH_INFRA_AI_DESK   | A=1.37 T=0.58 | Anthropic IPO ($64B, pricing 18-Nov) alcanza 6x sobresuscripcion en roadshow; dispersion +/-
+
+>>> DAEMON: LSEG_REUTERS_UPD6 (n=1/10 | Avg Alpha=0.25 | Avg Tail-Risk=1.39)
+  [ 1/10 | #216] TECH_INFRA_AI_DESK   | A=0.25 T=1.39 | Nvidia contacta a Rene Haas (CEO Arm) para suceder a Jensen Huang tras perdida semanal de $5
+
+>>> DAEMON: LSEG_REUTERS_WIRE (n=1/10 | Avg Alpha=1.91 | Avg Tail-Risk=0.35)
+  [ 1/10 | #213] TECH_INFRA_AI_DESK   | A=1.91 T=0.35 | SpaceX Starship Flight 15 lanzado desde Starbase: 26 Starlink V3 y primer intento de doble c
+
+>>> DAEMON: LSEG_WORKSPACE_COP30 (n=1/10 | Avg Alpha=1.99 | Avg Tail-Risk=1.42)
+  [ 1/10 | #106] TECH_INFRA_AI_DESK   | A=1.99 T=1.42 | COP30 Refinitiv Ingest: Sustainable Finance & Decarbonization Thresholds for Infrastructure 
+
+>>> DAEMON: LSEG_WORKSPACE_COP_APP (n=1/10 | Avg Alpha=2.00 | Avg Tail-Risk=1.40)
+  [ 1/10 | #117] GLOBAL_ENERGY_DESK   | A=2.00 T=1.40 | LSEG COP App Ingest: Net Zero Demand Gap & Sustainable Infrastructure CAPEX Compliance
+
+>>> DAEMON: M82_CRON_DISPATCHER (n=2/10 | Avg Alpha=1.60 | Avg Tail-Risk=1.00)
+  [ 1/10 | # 14] QUANT_TELEMETRY_CORE | A=1.60 T=1.00 | Disparo telemétrico enviado a Telegram + NYFT
+  [ 2/10 | #  8] QUANT_TELEMETRY_CORE | A=1.60 T=1.00 | Disparo de reporte horaria a Bot Privado + NYFT completo — 19 RICs Refinitiv
+
+>>> DAEMON: M82_HORMUZ_CENTCOM_SENTINEL_DAEMON (n=1/10 | Avg Alpha=0.59 | Avg Tail-Risk=2.31)
+  [ 1/10 | #271] QUANT_TELEMETRY_CORE | A=0.59 T=2.31 | 3 US CSGs active in CENTCOM; monitoring Strait of Hormuz tanker transits, war-risk premiums 
+
+>>> DAEMON: M82_IEA_SUPPLY_BALANCE_DAEMON (n=1/10 | Avg Alpha=0.80 | Avg Tail-Risk=1.75)
+  [ 1/10 | #272] GLOBAL_ENERGY_DESK   | A=0.80 T=1.75 | Brent $95.37 / WTI $88.33 anchored; tracking +1.7M bpd Q4 IEA surplus, OPEC+ 97% output reco
+
+>>> DAEMON: M82_MULTICHANNEL (n=2/10 | Avg Alpha=1.34 | Avg Tail-Risk=1.48)
+  [ 1/10 | #280] CORE_MACRO           | A=1.15 T=1.45 | Multichannel Telegram + Ntfy
+  [ 2/10 | # 22] QUANT_TELEMETRY_CORE | A=1.54 T=1.50 | Multichannel Telegram + Ntfy OK
+
+>>> DAEMON: M82_MULTICHANNEL_DISPATCH (n=1/10 | Avg Alpha=1.60 | Avg Tail-Risk=1.00)
+  [ 1/10 | # 18] QUANT_TELEMETRY_CORE | A=1.60 T=1.00 | Disparo inmediato enviado a Telegram Bot DANFEKA + Ntfy NYFT Desk
+
+>>> DAEMON: M82_POLITICS_VZ (n=1/10 | Avg Alpha=1.83 | Avg Tail-Risk=2.50)
+  [ 1/10 | #276] QUANT_TELEMETRY_CORE | A=1.83 T=2.50 | María Corina Machado ofrece primeras declaraciones tras regreso a Venezuela — YouTube Live I
+
+>>> DAEMON: M82_REFINING_MEREY16_PARITY_DAEMON (n=1/10 | Avg Alpha=1.44 | Avg Tail-Risk=1.58)
+  [ 1/10 | #273] VENEZUELA_LATAM_DESK | A=1.44 T=1.58 | Diesel crack spreads (+77% vs pre-war) & shadow-fleet interdictions supporting Atlantic/USGC
+
+>>> DAEMON: M82_TELEGRAM_NYFT_STREAM (n=1/10 | Avg Alpha=1.60 | Avg Tail-Risk=1.00)
+  [ 1/10 | # 16] QUANT_TELEMETRY_CORE | A=1.60 T=1.00 | Disparo directo a Bot DANFEKA + NYFT Desk completado
+
+>>> DAEMON: OSINT_WARMAP_DAY1727 (n=1/10 | Avg Alpha=0.69 | Avg Tail-Risk=2.10)
+  [ 1/10 | #264] QUANT_TELEMETRY_CORE | A=0.69 T=2.10 | Strait retreat & upcoming meeting confirmed offset Bandar Abbas/Lengeh SEAD & SAM exchanges;
+
+>>> DAEMON: REFINITIV_WORKSPACE_JMMP@MOLINA82.COM (n=10/10 | Avg Alpha=1.52 | Avg Tail-Risk=1.51)
+  [ 1/10 | #279] CORE_MACRO           | A=1.35 T=1.60 | Live Pull 20 activos reales sellados - 2026-11-16 01:38:36
+  [ 2/10 | #259] QUANT_TELEMETRY_CORE | A=1.54 T=1.50 | Live Pull 20 activos reales sellados - 2026-11-15 22:37:00
+  [ 3/10 | #256] QUANT_TELEMETRY_CORE | A=1.54 T=1.50 | Live Pull 20 activos reales sellados - 2026-11-15 21:37:00
+  [ 4/10 | #254] QUANT_TELEMETRY_CORE | A=1.54 T=1.50 | Live Pull 20 activos reales sellados - 2026-11-15 20:37:01
+  [ 5/10 | #253] QUANT_TELEMETRY_CORE | A=1.54 T=1.50 | Live Pull 20 activos reales sellados - 2026-11-15 20:37:00
+  [ 6/10 | #250] QUANT_TELEMETRY_CORE | A=1.54 T=1.50 | Live Pull 20 activos reales sellados - 2026-11-15 19:37:00
+  [ 7/10 | #247] QUANT_TELEMETRY_CORE | A=1.54 T=1.50 | Live Pull 20 activos reales sellados - 2026-11-15 18:37:01
+  [ 8/10 | #244] QUANT_TELEMETRY_CORE | A=1.54 T=1.50 | Live Pull 20 activos reales sellados - 2026-11-15 17:37:01
+  [ 9/10 | #242] QUANT_TELEMETRY_CORE | A=1.54 T=1.50 | Live Pull 20 activos reales sellados - 2026-11-15 16:37:01
+  [10/10 | #241] QUANT_TELEMETRY_CORE | A=1.54 T=1.50 | Live Pull 20 activos reales sellados - 2026-11-15 16:37:00
+
+>>> DAEMON: REFINITIV_WORKSPACE_LSEG (n=2/10 | Avg Alpha=1.25 | Avg Tail-Risk=1.34)
+  [ 1/10 | #277] TECH_INFRA_AI_DESK   | A=0.55 T=0.94 | LME Copper hits 4-month low ($13,272.50/t, -0.9%) on stronger USD, weak China Oct factory da
+  [ 2/10 | #275] GLOBAL_ENERGY_DESK   | A=1.95 T=1.75 | GE Vernova Awaits Upfront Payment Before Starting Venezuela Power Grid Repairs — CEO Scott S
+
+>>> DAEMON: REFINITIV_WORKSPACE_SDDP (n=1/10 | Avg Alpha=1.96 | Avg Tail-Risk=1.68)
+  [ 1/10 | #191] GLOBAL_ENERGY_DESK   | A=1.96 T=1.68 | Nordic -19.6% WoW (54.15 EUR) vs DE 93.84 / NL 95.33 EUR — Continental CWE-Nordic spread at 
+
+>>> DAEMON: REUTERS_COLOMBIA_OIL_20261106 (n=1/10 | Avg Alpha=0.60 | Avg Tail-Risk=2.21)
+  [ 1/10 | #  4] VENEZUELA_LATAM_DESK | A=0.60 T=2.21 | Colombia ANH Sep: Oil 729.5K bpd +2.9% YoY — Gas 705 mpcd -13.39% YoY — Imports 40% gas — De
+
+>>> DAEMON: REUTERS_IEA_ENERGY (n=1/10 | Avg Alpha=0.76 | Avg Tail-Risk=1.79)
+  [ 1/10 | #262] GLOBAL_ENERGY_DESK   | A=0.76 T=1.79 | Brent slips to $95.37/bbl (WTI $88.33) as Hormuz shipments near pre-war levels, US extends J
+
+>>> DAEMON: REUTERS_NFP_WRAPUP2_20261106 (n=1/10 | Avg Alpha=0.63 | Avg Tail-Risk=2.38)
+  [ 1/10 | #  3] EQUITIES_MACRO_DESK  | A=0.63 T=2.38 | Reuters Wrapup2 Mutikani: NFP +165K vs 65K Est Range 35-125K — Breakeven 40K vs 150K 2024 (i
+
+>>> DAEMON: REUTERS_WRAPUP_20261106 (n=1/10 | Avg Alpha=0.82 | Avg Tail-Risk=1.98)
+  [ 1/10 | #  2] EQUITIES_MACRO_DESK  | A=0.82 T=1.98 | Reuters Wrapup: Nasdaq Fut +1.5% bounce after -5.5% -$2.5T — Nikkei -6% KOSPI -6% Taiwan -4.
+
+>>> DAEMON: WALLSTREET_AAPL.O (n=1/10 | Avg Alpha=1.93 | Avg Tail-Risk=1.68)
+  [ 1/10 | # 43] EQUITIES_MACRO_DESK  | A=1.93 T=1.68 | WallStreet Master Ingestion AAPL.O 10.1% upside
+
+>>> DAEMON: WALLSTREET_AMZN.O (n=1/10 | Avg Alpha=1.93 | Avg Tail-Risk=1.68)
+  [ 1/10 | # 47] EQUITIES_MACRO_DESK  | A=1.93 T=1.68 | WallStreet Master Ingestion AMZN.O 12.6% upside
+
+>>> DAEMON: WALLSTREET_CVX.N (n=1/10 | Avg Alpha=1.93 | Avg Tail-Risk=1.68)
+  [ 1/10 | # 52] EQUITIES_MACRO_DESK  | A=1.93 T=1.68 | WallStreet Master Ingestion CVX.N 12.3% upside
+
+>>> DAEMON: WALLSTREET_GOOGL.O (n=1/10 | Avg Alpha=1.93 | Avg Tail-Risk=1.68)
+  [ 1/10 | # 46] EQUITIES_MACRO_DESK  | A=1.93 T=1.68 | WallStreet Master Ingestion GOOGL.O 13.8% upside
+
+>>> DAEMON: WALLSTREET_JPM.N (n=1/10 | Avg Alpha=1.93 | Avg Tail-Risk=1.68)
+  [ 1/10 | # 50] EQUITIES_MACRO_DESK  | A=1.93 T=1.68 | WallStreet Master Ingestion JPM.N 10.5% upside
+
+>>> DAEMON: WALLSTREET_META.O (n=1/10 | Avg Alpha=1.93 | Avg Tail-Risk=1.68)
+  [ 1/10 | # 48] EQUITIES_MACRO_DESK  | A=1.93 T=1.68 | WallStreet Master Ingestion META.O 12.0% upside
+
+>>> DAEMON: WALLSTREET_MSFT.O (n=1/10 | Avg Alpha=1.93 | Avg Tail-Risk=1.68)
+  [ 1/10 | # 44] EQUITIES_MACRO_DESK  | A=1.93 T=1.68 | WallStreet Master Ingestion MSFT.O 12.9% upside
+
+>>> DAEMON: WALLSTREET_NVDA.O (n=1/10 | Avg Alpha=1.93 | Avg Tail-Risk=1.68)
+  [ 1/10 | # 45] EQUITIES_MACRO_DESK  | A=1.93 T=1.68 | WallStreet Master Ingestion NVDA.O 20.5% upside
+
+>>> DAEMON: WALLSTREET_TSLA.O (n=1/10 | Avg Alpha=1.93 | Avg Tail-Risk=1.68)
+  [ 1/10 | # 49] EQUITIES_MACRO_DESK  | A=1.93 T=1.68 | WallStreet Master Ingestion TSLA.O 12.7% upside
+
+>>> DAEMON: WALLSTREET_XOM.N (n=1/10 | Avg Alpha=1.93 | Avg Tail-Risk=1.68)
+  [ 1/10 | # 51] EQUITIES_MACRO_DESK  | A=1.93 T=1.68 | WallStreet Master Ingestion XOM.N 12.7% upside
+
+==================================================================================
+[+] DOSSIER CONSOLIDADO PARA PUBLICACION GUARDADO EN: /data/data/com.termux/files/home/M82/logs/m82_post_master_draft.md
+[+] ORCHESTRADOR HUD REINICIADO EN MODO BURST-10 PER DAEMON | orch.py PID=26272

@@ -1,3 +1,4 @@
+import time
 #!/usr/bin/env python3
 import os, sys, time, datetime, sqlite3, subprocess, math, random, textwrap
 from PIL import Image, ImageDraw, ImageFont

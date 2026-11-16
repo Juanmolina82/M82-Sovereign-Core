@@ -1,3 +1,17 @@
+
+def _m82_live_banner():
+    try:
+        import sqlite3 as _s
+        _c = _s.connect("file:/data/data/com.termux/files/home/M82/m82_database.db?mode=ro", uri=True, timeout=15.0)
+        _r = _c.execute("SELECT btc_price, btc_chg_pct, merey16_price, wti_price, wti_chg_pct, brent_price FROM m82_live_market_quotes WHERE id=1").fetchone()
+        _c.close()
+        if _r and _r[0]:
+            return f"BTC: ${_r[0]:,.0f} ({_r[1]:+.2f}%) | MEREY 16: ${_r[2]:.2f} | WTI: ${_r[3]:.2f} | BRENT: ${_r[5]:.2f}"
+    except Exception:
+        pass
+    return "BTC: LIVE | MEREY 16: LIVE | WTI: LIVE | BRENT: LIVE"
+
+import time
 #!/usr/bin/env python3
 import textwrap
 import os, sys, time, sqlite3, requests
@@ -58,7 +72,7 @@ def generate_option_b_canvas(evt_id, headline, daemon_source):
     # 4. Panel de Métricas de Riesgo
     draw.rectangle([55, 225, W - 55, 325], fill='#0a101d', outline='#1a293d', width=2)
     draw.text((75, 240), "EXPOSURE: 0.22x / 0.30x LOCK  |  VaR L5.1: 1.68%", fill='#00b0ff', font=font_sub)
-    draw.text((75, 280), "MEREY 16: $93.15 ITM  |  WARSH SPREAD: +102.0bps", fill='#ff9100', font=font_sub)
+    draw.text((75, 280), _m82_live_banner(), fill='#ff9100', font=font_sub)
 
     # 5. Indicador Red Breaking Line
     draw.text((55, 348), "❚ REFINITIV BREAKING WIRE", fill='#ff1744', font=font_red)

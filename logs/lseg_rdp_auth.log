@@ -1,0 +1,22 @@
+nohup: ignoring input
+[RDP AUTH] Iniciando handshake con LSEG RDP API para usuario: jmmp@molina82.com
+[RDP APP KEY] Registrada: 8424032d...7ef715 (MOLINA HOLDINGS LLC)
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/home/M82/lseg_rdp_auth.py", line 56, in <module>
+    authenticate_and_pull()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/data/data/com.termux/files/home/M82/lseg_rdp_auth.py", line 42, in authenticate_and_pull
+    "merey16_live": {merey16},
+                     ^^^^^^^
+NameError: name 'merey16' is not defined
+nohup: ignoring input
+[RDP AUTH] Iniciando handshake con LSEG RDP API para usuario: jmmp@molina82.com
+[RDP APP KEY] Registrada: 8424032d...7ef715 (MOLINA HOLDINGS LLC)
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/home/M82/lseg_rdp_auth.py", line 56, in <module>
+    authenticate_and_pull()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/data/data/com.termux/files/home/M82/lseg_rdp_auth.py", line 42, in authenticate_and_pull
+    "merey16_live": {merey16},
+                     ^^^^^^^
+NameError: name 'merey16' is not defined

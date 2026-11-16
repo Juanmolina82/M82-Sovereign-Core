@@ -1,3 +1,17 @@
+import time
+
+def _m82_live_banner():
+    try:
+        import sqlite3 as _s
+        _c = _s.connect("file:/data/data/com.termux/files/home/M82/m82_database.db?mode=ro", uri=True, timeout=15.0)
+        _r = _c.execute("SELECT btc_price, btc_chg_pct, merey16_price, wti_price, wti_chg_pct, brent_price FROM m82_live_market_quotes WHERE id=1").fetchone()
+        _c.close()
+        if _r and _r[0]:
+            return f"BTC: ${_r[0]:,.0f} ({_r[1]:+.2f}%) | MEREY 16: ${_r[2]:.2f} | WTI: ${_r[3]:.2f} | BRENT: ${_r[5]:.2f}"
+    except Exception:
+        pass
+    return "BTC: LIVE | MEREY 16: LIVE | WTI: LIVE | BRENT: LIVE"
+
 #!/usr/bin/env python3
 import os, sys, time, sqlite3, requests, datetime
 from PIL import Image, ImageDraw, ImageFont
@@ -21,7 +35,7 @@ if not os.path.exists(CARDS_DIR):
 os.makedirs(CARDS_DIR, exist_ok=True)
 
 # 2. Inserción atómica en BBDD
-headline_txt = "LSEG WORKSPACE: CMB.TECH (NYSE: CMBT) Floating Storage 16.4mb Peak. Heavy Crude Merey 16 $93.92 Live / Brent $114.72. Hard Asset Rotation confirmed."
+headline_txt = "LSEG WORKSPACE: CMB.TECH (NYSE: CMBT) Floating Storage 16.4mb Peak. Heavy Crude Merey 16 $93.92 Live / Brent ${brent}. Hard Asset Rotation confirmed."
 
 conn = sqlite3.connect(DB_PATH)
 conn.execute("PRAGMA journal_mode=WAL;")
@@ -60,7 +74,7 @@ draw.text((50, 85), "AIS FLOATING STORAGE TRACKER // HARD ASSETS ROTATION", fill
 # Título y Datos Clave
 draw.rectangle([55, 145, W - 55, 325], fill='#0a101d', outline='#1a293d', width=2)
 draw.text((75, 165), "🚢 CMB.TECH FLOATING STORAGE: 16.4M bbls PEAK", fill='#ff9100', font=f_title)
-draw.text((75, 220), "🛢 MEREY 16: $93.92 / bbl   |   BRENT: $114.72 / bbl", fill='#00b0ff', font=f_body)
+draw.text((75, 220), "🛢 MEREY 16: $93.92 / bbl   |   BRENT: ${brent} / bbl", fill='#00b0ff', font=f_body)
 draw.text((75, 270), "📊 SPREAD: $20.80 ITM (Jose -> Houston Direct Corridor)", fill='#00e5ff', font=f_sub)
 
 # Cuerpo / Mapa Consola
@@ -101,7 +115,7 @@ caption_tg = (
     f"⚡ <b>M82 SHIPPING DESK :: HARD ASSET ROTATION CONFIRMED</b>\n"
     f"───────────────────────────\n"
     f"🚢 <b>TICKER:</b> CMB.TECH (NYSE: CMBT) — Floating Storage 16.4M bbls Peak\n"
-    f"🛢 <b>PRICING:</b> Merey 16 $93.92 Live / Brent $114.72 (Spread $20.80 ITM)\n"
+    f"🛢 <b>PRICING:</b> Merey 16 $93.92 Live / Brent ${brent} (Spread $20.80 ITM)\n"
     f"🗺 <b>AIS CORRIDOR:</b> Direct Jose Terminal -> Houston (Off-Hormuz Hedge)\n"
     f"💰 <b>MEIB / MCM IMPACT:</b> $17.1BN Annual Rev Potential | 7.5% WACC Target\n"
     f"🛡 <b>GOVERNANCE:</b> 0.30x LOCK | VaR 1.68% | Citi NY Escrow Ready\n\n"
@@ -123,7 +137,7 @@ except Exception as e:
 # 5. Despacho Push a ntfy.sh
 try:
     ntfy_url = f"https://ntfy.sh/{NTFY_TOPIC}"
-    ntfy_body = f"M82 CMBT WIRE: Floating Storage 16.4M bbls Peak — Merey 16 $93.92 / Brent $114.72 — Hard Asset Rotation Confirmed"
+    ntfy_body = f"M82 CMBT WIRE: Floating Storage 16.4M bbls Peak — Merey 16 $93.92 / Brent ${brent} — Hard Asset Rotation Confirmed"
     requests.post(ntfy_url, data=ntfy_body.encode('utf-8'), headers={
         "Title": "🚢 M82 SHIPPING DESK — CMBT AIS PEAK",
         "Priority": "urgent",

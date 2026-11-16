@@ -1,0 +1,9 @@
+nohup: ignoring input
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/home/M82/m82_master_integration.py", line 54, in <module>
+    desplegar_plataforma_m82()
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/data/data/com.termux/files/home/M82/m82_master_integration.py", line 34, in desplegar_plataforma_m82
+    c.execute("INSERT OR REPLACE INTO snapshot VALUES (datetime('now'), 92.43, 97.50, 32.50, 775.60, 810.46, 18.51)")
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: table snapshot has 3 columns but 7 values were supplied

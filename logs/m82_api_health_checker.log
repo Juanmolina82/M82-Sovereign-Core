@@ -1,0 +1,8 @@
+nohup: ignoring input
+🛡️ M82 API & Scraper Health Checker Activo.
+[2026-11-16 01:20:40] [HEALTH-CHECK] META_GRAPH_API: ONLINE (0.574s)
+[2026-11-16 01:20:42] [HEALTH-CHECK] TELEGRAM_BOT_API: ONLINE (1.836s)
+[2026-11-16 01:20:43] [HEALTH-CHECK] M82_MACRO_EDGAR_API: ONLINE (1.072s)
+❌ Error guardando log: database is locked
+❌ Error guardando log: database is locked
+❌ Error guardando log: database is locked

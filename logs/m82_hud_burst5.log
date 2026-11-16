@@ -1,0 +1,11 @@
+nohup: ignoring input
+=== M82 HUD BURST-5 DISPATCH :: 2026-11-16 05:39:16 UTC ===
+LIVE BANNER: BTC: $64,642 (+0.27%) | MEREY 16: $81.14 | WTI: $89.21 | BRENT: $96.39
+------------------------------------------------------------------------------
+[CARD 1/5 | #280] DESK=CORE_MACRO             | A=1.15 T=1.45 | Multichannel Telegram + Ntfy
+[CARD 2/5 | #279] DESK=CORE_MACRO             | A=1.35 T=1.60 | Live Pull 20 activos reales sellados - 2026-11-16 01:38:36
+[CARD 3/5 | #277] DESK=TECH_INFRA_AI_DESK     | A=0.55 T=0.94 | LME Copper hits 4-month low ($13,272.50/t, -0.9%) on stronger USD, weak China Oct factory data & AI capex pullback ahead of Nvidia earnings & Anthropic IPO
+[CARD 4/5 | #276] DESK=QUANT_TELEMETRY_CORE   | A=1.83 T=2.50 | María Corina Machado ofrece primeras declaraciones tras regreso a Venezuela — YouTube Live IL80ZRWkm2g (Transmisión Transición & Plan País)
+[CARD 5/5 | #274] DESK=VENEZUELA_LATAM_DESK   | A=2.04 T=1.68 | VZ Daily Pull 35 RICs: Benchmark VENZ 2027 $50.61 (Rally +20% post Trump/Rubio 1M bbls Corpus Christi) + PDVSA 2020 50.1% Citgo collateral — Validated for Citi NY Escrow $200B
+------------------------------------------------------------------------------
+[+] DISPARADOR BURST-5 ACTIVO EN SEGUNDO PLANO | orch.py PID=26287

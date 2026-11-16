@@ -1,0 +1,13 @@
+nohup: ignoring input
+================================================================================
+ 🤖 M82 NYFT BOT & DISPATCHER CORE
+================================================================================
+ [+] Evento Crítico Detectado [ID 1]:
+  ├─ Origen: M82_MACRO_M82_WIRE
+  ├─ Mesa: DIPLOMATIC_RISK
+  ├─ Risk Score: 9.6
+  └─ Titular: US halts consular services in Brazil ahead of election amid rising tensions
+[*] Generando Tarjeta HUD para: [#M82 DIPLOMATIC_RISK] US halts consular services in Brazil ahe...
+  ✓ Tarjeta HUD renderizada exitosamente.
+[!] Error API Telegram (401): {"ok":false,"error_code":401,"description":"Unauthorized"}
+================================================================================

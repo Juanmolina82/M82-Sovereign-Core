@@ -1,3 +1,17 @@
+
+def _m82_live_banner():
+    try:
+        import sqlite3 as _s
+        _c = _s.connect("file:/data/data/com.termux/files/home/M82/m82_database.db?mode=ro", uri=True, timeout=15.0)
+        _r = _c.execute("SELECT btc_price, btc_chg_pct, merey16_price, wti_price, wti_chg_pct, brent_price FROM m82_live_market_quotes WHERE id=1").fetchone()
+        _c.close()
+        if _r and _r[0]:
+            return f"BTC: ${_r[0]:,.0f} ({_r[1]:+.2f}%) | MEREY 16: ${_r[2]:.2f} | WTI: ${_r[3]:.2f} | BRENT: ${_r[5]:.2f}"
+    except Exception:
+        pass
+    return "BTC: LIVE | MEREY 16: LIVE | WTI: LIVE | BRENT: LIVE"
+
+import time
 #!/usr/bin/env python3
 import sqlite3, os, time, requests
 from PIL import Image, ImageDraw, ImageFont
@@ -40,7 +54,7 @@ def draw_option_b_hud(daemon_name, headline, exp_str, var_str, warsh_str):
     
     # Bloque de Riesgo y Métricas
     draw.text((60, 245), f"EXPOSURE: {exp_str} | VaR L5.1: {var_str}", fill='#00E5FF', font=font_risk)
-    draw.text((60, 285), f"MEREY 16: $93.15 ITM | WARSH SPREAD: {warsh_str}", fill='#FFB74D', font=font_risk)
+    draw.text((60, 285), _m82_live_banner(), fill='#FFB74D', font=font_risk)
     
     # Divisor en Rojo Vívido (Wire Breaking)
     draw.line([(60, 340), (1020, 340)], fill='#FF1744', width=4)

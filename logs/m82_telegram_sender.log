@@ -1,0 +1,10 @@
+nohup: ignoring input
+[+] Iniciando despacho de 6 alertas al canal -1004335849125...
+[!] Error al enviar WFC: {"ok":false,"error_code":401,"description":"Unauthorized"}
+[!] Error al enviar JPM: {"ok":false,"error_code":401,"description":"Unauthorized"}
+[!] Error al enviar BAC: {"ok":false,"error_code":401,"description":"Unauthorized"}
+[!] Error al enviar C: {"ok":false,"error_code":401,"description":"Unauthorized"}
+[!] Error al enviar GS: {"ok":false,"error_code":401,"description":"Unauthorized"}
+[!] Error al enviar MS: {"ok":false,"error_code":401,"description":"Unauthorized"}
+
+[✓] TRANSMISIÓN M82 COMPLETADA EN TELEGRAM.

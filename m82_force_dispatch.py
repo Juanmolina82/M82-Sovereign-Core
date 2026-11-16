@@ -34,7 +34,7 @@ def dispatch():
     c.execute("PRAGMA busy_timeout=60000;")
     
     # Tomar titulares pendientes
-    c.execute("SELECT id, daemon_source, headline FROM m82_multi_stream WHERE status = 'PENDING' ORDER BY id DESC LIMIT 10")
+    c.execute("SELECT id, daemon_source, headline FROM m82_multi_stream WHERE status = 'PENDING' ORDER BY id DESC LIMIT 3")
     rows = c.fetchall()
     
     if not rows:

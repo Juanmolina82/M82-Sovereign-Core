@@ -54,7 +54,7 @@ def evaluate_risk_and_pnl():
     c.execute("PRAGMA busy_timeout=60000;")
     
     # 1. Leer señales recientes de L4 desde m82_multi_stream
-    rows = c.execute("SELECT daemon_source, headline, alpha_score, asset_impact FROM m82_multi_stream ORDER BY id DESC LIMIT 10").fetchall()
+    rows = c.execute("SELECT daemon_source, headline, alpha_score, asset_impact FROM m82_multi_stream ORDER BY id DESC LIMIT 3").fetchall()
     
     # Simulación de control VaR y exposición activa
     current_exposure = 0.22  # Exposición actual calculada (22%)

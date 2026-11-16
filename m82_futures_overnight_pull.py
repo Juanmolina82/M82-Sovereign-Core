@@ -70,7 +70,7 @@ if TOKEN:
     # Top movers overnight
     movers = sorted(rows, key=lambda x: abs(x[3]), reverse=True)[:5]
     msg = f"🏛️ M82 OVERNIGHT FUTURES — ASIA+US — {ts}\n"
-    for ticker,name,price,chg,vol in rows[:10]:
+    for ticker,name,price,chg,vol in rows[:3]:
         msg+= f"{'🟢' if chg>0 else '🔴'} {ticker} {price:.2f} {chg:+.2f}%\n"
     msg+= f"────────────────\n🛡️ BUNKER 0.30x LOCK Exp 0.22x VaR 1.68% Warsh +102bps\n🔒 WAL 0/0/0"
     try:

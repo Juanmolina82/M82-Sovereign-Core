@@ -1,0 +1,3 @@
+nohup: ignoring input
+[NTFY ERROR] 'latin-1' codec can't encode character '\u26a1' in position 0: ordinal not in range(256)
+[TELEGRAM] Estado: 400 - Notificación entregada.

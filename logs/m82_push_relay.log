@@ -1,0 +1,56 @@
+nohup: ignoring input
+🚀 M82 PUSH ENGINE INICIADO (FORMATO OPCIÓN B REAL CON BORDES CYAN)...
+Finished scanning 1 file(s)
+[*] TG Photo Relay Status: 400
+[*] TG Document Relay Status: 429
+[*] ntfy Relay Status: 200 OK
+Finished scanning 1 file(s)
+[*] TG Photo Relay Status: 429
+[*] TG Document Relay Status: 200
+[*] ntfy Relay Status: 200 OK
+Finished scanning 1 file(s)
+[*] TG Photo Relay Status: 200
+[*] TG Document Relay Status: 429
+[*] ntfy Relay Status: 200 OK
+Finished scanning 1 file(s)
+[*] TG Photo Relay Status: 400
+[*] TG Document Relay Status: 429
+[*] ntfy Relay Status: 200 OK
+Finished scanning 1 file(s)
+[*] TG Photo Relay Status: 400
+[*] TG Document Relay Status: 429
+[*] ntfy Relay Status: 200 OK
+Finished scanning 1 file(s)
+[*] TG Photo Relay Status: 429
+[*] TG Document Relay Status: 429
+[*] ntfy Relay Status: 200 OK
+Finished scanning 1 file(s)
+[*] TG Photo Relay Status: 400
+[*] TG Document Relay Status: 429
+[*] ntfy Relay Status: 200 OK
+Finished scanning 1 file(s)
+[*] TG Photo Relay Status: 400
+[*] TG Document Relay Status: 429
+[*] ntfy Relay Status: 200 OK
+Finished scanning 1 file(s)
+[*] TG Photo Relay Status: 400
+[*] TG Document Relay Status: 200
+[*] ntfy Relay Status: 200 OK
+Finished scanning 1 file(s)
+[*] TG Photo Relay Status: 400
+[*] TG Document Relay Status: 200
+[*] ntfy Relay Status: 200 OK
+nohup: ignoring input
+🚀 M82 PUSH ENGINE INICIADO (FORMATO OPCIÓN B REAL CON BORDES CYAN)...
+Finished scanning 1 file(s)
+[*] TG Photo Relay Status: 400
+[!] Error Telegram Document: ('Connection aborted.', ConnectionAbortedError(103, 'Software caused connection abort'))
+[*] ntfy Relay Status: 200 OK
+Finished scanning 1 file(s)
+[*] TG Photo Relay Status: 400
+[*] TG Document Relay Status: 200
+[*] ntfy Relay Status: 200 OK
+Finished scanning 1 file(s)
+[*] TG Photo Relay Status: 400
+[*] TG Document Relay Status: 200
+[*] ntfy Relay Status: 200 OK

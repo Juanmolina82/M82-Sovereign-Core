@@ -1,0 +1,169 @@
+/data/data/com.termux/files/home/M82/orchestrator/m82_mobile_gateway.py:352: SyntaxWarning: invalid escape sequence '\.'
+  {name:"Regional",sub:"Latin America, U.S., Europe, Middle East, Asia",subs:[{label:"Latin America",rx:"LATAM|VENEZUELA|BRAZIL|MEXICO|ARGENTINA|CHILE"},{label:"United States",rx:"US|U\.S\.|FED|WASHINGTON|AMERICAN"},{label:"Canada",rx:"CANADA|TORONTO|BOC|CAD"},{label:"Europe & Russia",rx:"EUROPE|RUSSIA|UKRAINE|ECB|EUROZONE|GERMANY"},{label:"United Kingdom",rx:"UK|BRITAIN|BOE|LONDON|STERLING"},{label:"Middle East & Africa",rx:"MIDDLE EAST|SAUDI|IRAN|ISRAEL|AFRICA|GULF"},{label:"Greater China",rx:"CHINA|BEIJING|HONG KONG|YUAN|PBOC"},{label:"Japan & the Koreas",rx:"JAPAN|BOJ|YEN|KOREA|TOKYO|SEOUL"},{label:"Southeast Asia",rx:"ASEAN|SINGAPORE|INDONESIA|VIETNAM|THAILAND"},{label:"India & South Asia",rx:"INDIA|MUMBAI|RBI|RUPEE"},{label:"Australia & New Zealand",rx:"AUSTRALIA|RBA|SYDNEY|NEW ZEALAND"}]},
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/home/M82/orchestrator/m82_mobile_gateway.py", line 523, in <module>
+    ThreadingHTTPServer(("0.0.0.0", 8282), M82MobileRequestHandler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^
+NameError: name 'ThreadingHTTPServer' is not defined
+/data/data/com.termux/files/home/M82/orchestrator/m82_mobile_gateway.py:352: SyntaxWarning: invalid escape sequence '\.'
+  {name:"Regional",sub:"Latin America, U.S., Europe, Middle East, Asia",subs:[{label:"Latin America",rx:"LATAM|VENEZUELA|BRAZIL|MEXICO|ARGENTINA|CHILE"},{label:"United States",rx:"US|U\.S\.|FED|WASHINGTON|AMERICAN"},{label:"Canada",rx:"CANADA|TORONTO|BOC|CAD"},{label:"Europe & Russia",rx:"EUROPE|RUSSIA|UKRAINE|ECB|EUROZONE|GERMANY"},{label:"United Kingdom",rx:"UK|BRITAIN|BOE|LONDON|STERLING"},{label:"Middle East & Africa",rx:"MIDDLE EAST|SAUDI|IRAN|ISRAEL|AFRICA|GULF"},{label:"Greater China",rx:"CHINA|BEIJING|HONG KONG|YUAN|PBOC"},{label:"Japan & the Koreas",rx:"JAPAN|BOJ|YEN|KOREA|TOKYO|SEOUL"},{label:"Southeast Asia",rx:"ASEAN|SINGAPORE|INDONESIA|VIETNAM|THAILAND"},{label:"India & South Asia",rx:"INDIA|MUMBAI|RBI|RUPEE"},{label:"Australia & New Zealand",rx:"AUSTRALIA|RBA|SYDNEY|NEW ZEALAND"}]},
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/home/M82/orchestrator/m82_mobile_gateway.py", line 523, in <module>
+    ThreadingHTTPServer(("0.0.0.0", 8282), M82MobileRequestHandler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^
+NameError: name 'ThreadingHTTPServer' is not defined
+/data/data/com.termux/files/home/M82/orchestrator/m82_mobile_gateway.py:352: SyntaxWarning: invalid escape sequence '\.'
+  {name:"Regional",sub:"Latin America, U.S., Europe, Middle East, Asia",subs:[{label:"Latin America",rx:"LATAM|VENEZUELA|BRAZIL|MEXICO|ARGENTINA|CHILE"},{label:"United States",rx:"US|U\.S\.|FED|WASHINGTON|AMERICAN"},{label:"Canada",rx:"CANADA|TORONTO|BOC|CAD"},{label:"Europe & Russia",rx:"EUROPE|RUSSIA|UKRAINE|ECB|EUROZONE|GERMANY"},{label:"United Kingdom",rx:"UK|BRITAIN|BOE|LONDON|STERLING"},{label:"Middle East & Africa",rx:"MIDDLE EAST|SAUDI|IRAN|ISRAEL|AFRICA|GULF"},{label:"Greater China",rx:"CHINA|BEIJING|HONG KONG|YUAN|PBOC"},{label:"Japan & the Koreas",rx:"JAPAN|BOJ|YEN|KOREA|TOKYO|SEOUL"},{label:"Southeast Asia",rx:"ASEAN|SINGAPORE|INDONESIA|VIETNAM|THAILAND"},{label:"India & South Asia",rx:"INDIA|MUMBAI|RBI|RUPEE"},{label:"Australia & New Zealand",rx:"AUSTRALIA|RBA|SYDNEY|NEW ZEALAND"}]},
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/home/M82/orchestrator/m82_mobile_gateway.py", line 523, in <module>
+    ThreadingHTTPServer(("0.0.0.0", 8282), M82MobileRequestHandler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^
+NameError: name 'ThreadingHTTPServer' is not defined
+/data/data/com.termux/files/home/M82/orchestrator/m82_mobile_gateway.py:352: SyntaxWarning: invalid escape sequence '\.'
+  {name:"Regional",sub:"Latin America, U.S., Europe, Middle East, Asia",subs:[{label:"Latin America",rx:"LATAM|VENEZUELA|BRAZIL|MEXICO|ARGENTINA|CHILE"},{label:"United States",rx:"US|U\.S\.|FED|WASHINGTON|AMERICAN"},{label:"Canada",rx:"CANADA|TORONTO|BOC|CAD"},{label:"Europe & Russia",rx:"EUROPE|RUSSIA|UKRAINE|ECB|EUROZONE|GERMANY"},{label:"United Kingdom",rx:"UK|BRITAIN|BOE|LONDON|STERLING"},{label:"Middle East & Africa",rx:"MIDDLE EAST|SAUDI|IRAN|ISRAEL|AFRICA|GULF"},{label:"Greater China",rx:"CHINA|BEIJING|HONG KONG|YUAN|PBOC"},{label:"Japan & the Koreas",rx:"JAPAN|BOJ|YEN|KOREA|TOKYO|SEOUL"},{label:"Southeast Asia",rx:"ASEAN|SINGAPORE|INDONESIA|VIETNAM|THAILAND"},{label:"India & South Asia",rx:"INDIA|MUMBAI|RBI|RUPEE"},{label:"Australia & New Zealand",rx:"AUSTRALIA|RBA|SYDNEY|NEW ZEALAND"}]},
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/home/M82/orchestrator/m82_mobile_gateway.py", line 523, in <module>
+    ThreadingHTTPServer(("0.0.0.0", 8282), M82MobileRequestHandler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^
+NameError: name 'ThreadingHTTPServer' is not defined
+/data/data/com.termux/files/home/M82/orchestrator/m82_mobile_gateway.py:361: SyntaxWarning: invalid escape sequence '\.'
+  {name:"Regional",sub:"Latin America, U.S., Europe, Middle East, Asia",subs:[{label:"Latin America",rx:"LATAM|VENEZUELA|BRAZIL|MEXICO|ARGENTINA|CHILE"},{label:"United States",rx:"US|U\.S\.|FED|WASHINGTON|AMERICAN"},{label:"Canada",rx:"CANADA|TORONTO|BOC|CAD"},{label:"Europe & Russia",rx:"EUROPE|RUSSIA|UKRAINE|ECB|EUROZONE|GERMANY"},{label:"United Kingdom",rx:"UK|BRITAIN|BOE|LONDON|STERLING"},{label:"Middle East & Africa",rx:"MIDDLE EAST|SAUDI|IRAN|ISRAEL|AFRICA|GULF"},{label:"Greater China",rx:"CHINA|BEIJING|HONG KONG|YUAN|PBOC"},{label:"Japan & the Koreas",rx:"JAPAN|BOJ|YEN|KOREA|TOKYO|SEOUL"},{label:"Southeast Asia",rx:"ASEAN|SINGAPORE|INDONESIA|VIETNAM|THAILAND"},{label:"India & South Asia",rx:"INDIA|MUMBAI|RBI|RUPEE"},{label:"Australia & New Zealand",rx:"AUSTRALIA|RBA|SYDNEY|NEW ZEALAND"}]},
+/data/data/com.termux/files/home/M82/orchestrator/m82_mobile_gateway.py:390: SyntaxWarning: invalid escape sequence '\.'
+  {name:"Regional",sub:"Latin America, U.S., Europe, Middle East, Asia",subs:[{label:"Latin America",rx:"LATAM|VENEZUELA|BRAZIL|MEXICO|ARGENTINA|CHILE"},{label:"United States",rx:"US|U\.S\.|FED|WASHINGTON|AMERICAN"},{label:"Canada",rx:"CANADA|TORONTO|BOC|CAD"},{label:"Europe & Russia",rx:"EUROPE|RUSSIA|UKRAINE|ECB|EUROZONE|GERMANY"},{label:"United Kingdom",rx:"UK|BRITAIN|BOE|LONDON|STERLING"},{label:"Middle East & Africa",rx:"MIDDLE EAST|SAUDI|IRAN|ISRAEL|AFRICA|GULF"},{label:"Greater China",rx:"CHINA|BEIJING|HONG KONG|YUAN|PBOC"},{label:"Japan & the Koreas",rx:"JAPAN|BOJ|YEN|KOREA|TOKYO|SEOUL"},{label:"Southeast Asia",rx:"ASEAN|SINGAPORE|INDONESIA|VIETNAM|THAILAND"},{label:"India & South Asia",rx:"INDIA|MUMBAI|RBI|RUPEE"},{label:"Australia & New Zealand",rx:"AUSTRALIA|RBA|SYDNEY|NEW ZEALAND"}]},
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 38150)
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.13/socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.13/socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.13/socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/data/data/com.termux/files/usr/lib/python3.13/http/server.py", line 447, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/data/data/com.termux/files/usr/lib/python3.13/http/server.py", line 435, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "/data/data/com.termux/files/home/M82/orchestrator/m82_mobile_gateway.py", line 551, in do_GET
+    return self._orig_do_GET()
+           ~~~~~~~~~~~~~~~~~^^
+  File "/data/data/com.termux/files/home/M82/orchestrator/m82_mobile_gateway.py", line 564, in _orig_do_GET
+    self.send_response(200); self.send_header("Content-Type", "image/png"); self.send_header("Content-Length", str(len(data))); self.end_headers(); self.wfile.write(data); return
+                                                                                                                                                    ~~~~~~~~~~~~~~~~^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.13/socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 50898)
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.13/socketserver.py", line 318, in _handle_request_noblock
+    self.process_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.13/socketserver.py", line 349, in process_request
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.13/socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.13/socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/data/data/com.termux/files/usr/lib/python3.13/http/server.py", line 447, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/data/data/com.termux/files/usr/lib/python3.13/http/server.py", line 435, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "/data/data/com.termux/files/home/M82/orchestrator/m82_mobile_gateway.py", line 137, in do_GET
+  File "/data/data/com.termux/files/usr/lib/python3.13/socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 50912)
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.13/socketserver.py", line 318, in _handle_request_noblock
+    self.process_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.13/socketserver.py", line 349, in process_request
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.13/socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.13/socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/data/data/com.termux/files/usr/lib/python3.13/http/server.py", line 447, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/data/data/com.termux/files/usr/lib/python3.13/http/server.py", line 435, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "/data/data/com.termux/files/home/M82/orchestrator/m82_mobile_gateway.py", line 139, in do_GET
+  File "/data/data/com.termux/files/usr/lib/python3.13/socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 36832)
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.13/socketserver.py", line 318, in _handle_request_noblock
+    self.process_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.13/socketserver.py", line 349, in process_request
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.13/socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.13/socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/data/data/com.termux/files/usr/lib/python3.13/http/server.py", line 447, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/data/data/com.termux/files/usr/lib/python3.13/http/server.py", line 435, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "/data/data/com.termux/files/home/M82/orchestrator/m82_mobile_gateway.py", line 139, in do_GET
+  File "/data/data/com.termux/files/usr/lib/python3.13/socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 36844)
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.13/socketserver.py", line 318, in _handle_request_noblock
+    self.process_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.13/socketserver.py", line 349, in process_request
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.13/socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.13/socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/data/data/com.termux/files/usr/lib/python3.13/http/server.py", line 447, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/data/data/com.termux/files/usr/lib/python3.13/http/server.py", line 435, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "/data/data/com.termux/files/home/M82/orchestrator/m82_mobile_gateway.py", line 139, in do_GET
+  File "/data/data/com.termux/files/usr/lib/python3.13/socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------

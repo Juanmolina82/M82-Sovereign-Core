@@ -1,0 +1,10 @@
+nohup: ignoring input
+[M82 FONT SUCCESS] Fuentes TrueType cargadas correctamente.
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/home/M82/m82_daemon_notifier.py", line 139, in <module>
+    dispatch_next()
+    ~~~~~~~~~~~~~^^
+  File "/data/data/com.termux/files/home/M82/m82_daemon_notifier.py", line 130, in dispatch_next
+    cursor.execute("UPDATE m82_multi_stream SET status='DISPATCHED' WHERE id=?", (rec_id,))
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked

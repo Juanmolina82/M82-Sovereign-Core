@@ -1,0 +1,15 @@
+nohup: ignoring input
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/home/M82/m82_market_scanner_v21_5.py", line 8, in <module>
+    bot = Bot(token=TOKEN) if TOKEN else None
+          ~~~^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.13/site-packages/telegram/_bot.py", line 353, in __init__
+    HTTPXRequest(connection_pool_size=1)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.13/site-packages/telegram/request/_httpxrequest.py", line 192, in __init__
+    self._client = self._build_client()
+                   ~~~~~~~~~~~~~~~~~~^^
+  File "/data/data/com.termux/files/usr/lib/python3.13/site-packages/telegram/request/_httpxrequest.py", line 227, in _build_client
+    return httpx.AsyncClient(**self._client_kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: AsyncClient.__init__() got an unexpected keyword argument 'proxy'

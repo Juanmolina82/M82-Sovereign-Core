@@ -1,3 +1,4 @@
+import time
 import sqlite3, time, os, requests, textwrap, re, math, random
 from PIL import Image, ImageDraw, ImageFont
 from dotenv import load_dotenv
