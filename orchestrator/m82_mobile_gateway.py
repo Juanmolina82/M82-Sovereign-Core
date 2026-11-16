@@ -120,8 +120,10 @@ body{background:#07090d;color:#f8fafc;padding-bottom:84px}
       <div style="font-size:11px;font-weight:800;color:#64748b">USER ID</div>
       <input id="uid-inp" class="l-inp" value="jmmp@molina82.com">
       <div style="font-size:11px;font-weight:800;color:#64748b;margin-top:12px">GATEWAY KEY</div>
-      <input id="key-inp" type="password" class="l-inp" value="__TOK__">
-      <button class="l-btn" onclick="doLogin()">SIGN IN TO TERMINAL</button>
+      <input id="key-inp" type="password" class="l-inp" placeholder="Ingrese Token Soberano">
+      <div id="l-err" style="color:#dc2626;font-size:12px;font-weight:700;margin-top:8px;display:none"></div>
+      <button class="l-btn" onclick="doLogin()">SIGN IN WITH TOKEN</button>
+      <button id="bio-btn" class="l-btn" style="background:#0f172a;margin-top:10px" onclick="doBioLogin()">&#128070; SIGN IN WITH FINGERPRINT</button>
     </div>
   </div>
   <div style="font-size:11px;opacity:.85;text-align:center">Molina Holdings LLC &bull; Nodo Charallave L4/L5 Edge &bull; BUNKER 0.30x LOCK</div>
@@ -218,11 +220,56 @@ let favs = new Set(JSON.parse(localStorage.getItem('m82_favs') || '["CLc1","LCOc
 if(localStorage.getItem('m82_locked') === '1'){
   document.getElementById('login-scr').style.display = 'flex';
 }
-function doLogin(){
+function showErr(m){
+  const e = document.getElementById('l-err');
+  e.innerText = m; e.style.display = 'block';
+}
+async function enrollBio(){
+  if(!window.PublicKeyCredential) return;
+  try{
+    const ch = new Uint8Array(32); crypto.getRandomValues(ch);
+    const uid = new TextEncoder().encode("jmmp@molina82.com");
+    const cred = await navigator.credentials.create({publicKey:{
+      challenge: ch,
+      rp: {name: "M82 Sovereign Terminal"},
+      user: {id: uid, name: "jmmp@molina82.com", displayName: "Chairman Juan M. Molina"},
+      pubKeyCredParams: [{type:"public-key", alg:-7}, {type:"public-key", alg:-257}],
+      authenticatorSelection: {authenticatorAttachment:"platform", userVerification:"required"},
+      timeout: 60000
+    }});
+    if(cred){
+      const raw = btoa(String.fromCharCode(...new Uint8Array(cred.rawId)));
+      localStorage.setItem('m82_bio_id', raw);
+    }
+  }catch(e){}
+}
+async function doLogin(){
   const k = document.getElementById('key-inp').value.trim();
-  if(!k) return;
+  if(k !== TOK){ showErr("ACCESO DENEGADO: GATEWAY KEY INVÁLIDO"); return; }
+  document.getElementById('l-err').style.display = 'none';
+  if(!localStorage.getItem('m82_bio_id')) await enrollBio();
   localStorage.setItem('m82_locked', '0');
   document.getElementById('login-scr').style.display = 'none';
+}
+async function doBioLogin(){
+  const saved = localStorage.getItem('m82_bio_id');
+  if(!saved){ showErr("Primero ingrese su Gateway Key una vez para registrar su huella."); return; }
+  if(!window.PublicKeyCredential){ showErr("Sensor biométrico no disponible en este WebView."); return; }
+  try{
+    const ch = new Uint8Array(32); crypto.getRandomValues(ch);
+    const rawId = Uint8Array.from(atob(saved), c => c.charCodeAt(0));
+    const assertion = await navigator.credentials.get({publicKey:{
+      challenge: ch,
+      allowCredentials: [{type:"public-key", id: rawId}],
+      userVerification: "required",
+      timeout: 60000
+    }});
+    if(assertion){
+      document.getElementById('l-err').style.display = 'none';
+      localStorage.setItem('m82_locked', '0');
+      document.getElementById('login-scr').style.display = 'none';
+    }
+  }catch(e){ showErr("Verificación biométrica cancelada o fallida."); }
 }
 function doLogout(){
   localStorage.setItem('m82_locked', '1');
