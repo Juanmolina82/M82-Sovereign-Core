@@ -459,15 +459,21 @@ class M82MobileRequestHandler(BaseHTTPRequestHandler):
         if p_clean.startswith("/dispatch/"):
             did = unquote(p_clean.replace("/dispatch/", "", 1)) or "latest"
             body = render_dispatch(did).encode()
-            self.send_response(200); self.send_header("Content-Type", "text/html; charset=utf-8"); self.send_header("Content-Length", str(len(body))); self.end_headers(); self.wfile.write(body); return
+            self.send_response(200); self.send_header("Content-Type", "text/html; charset=utf-8"); self.send_header("Content-Length", str(len(body))); self.end_headers(); try:
+            self.wfile.write(body)
+        except (BrokenPipeError, ConnectionResetError):
+            pass; return
         if p_clean.startswith("/api"):
             if self.headers.get("X-M82-Token") != TOK and f"token={TOK}" not in self.path:
                 self.send_response(401); self.end_headers(); self.wfile.write(b"UNAUTHORIZED"); return
             payload = json.dumps(state()).encode()
             self.send_response(200); self.send_header("Content-Type", "application/json"); self.send_header("Content-Length", str(len(payload))); self.end_headers(); self.wfile.write(payload); return
         body = HTML.encode()
-        self.send_response(200); self.send_header("Content-Type", "text/html; charset=utf-8"); self.send_header("Content-Length", str(len(body))); self.end_headers(); self.wfile.write(body)
+        self.send_response(200); self.send_header("Content-Type", "text/html; charset=utf-8"); self.send_header("Content-Length", str(len(body))); self.end_headers(); try:
+            self.wfile.write(body)
+        except (BrokenPipeError, ConnectionResetError):
+            pass
     def log_message(self, *a): pass
 
 HTTPServer.allow_reuse_address = True
-HTTPServer(("0.0.0.0", 8282), M82MobileRequestHandler).serve_forever()
+ThreadingHTTPServer(("0.0.0.0", 8282), M82MobileRequestHandler).serve_forever()
