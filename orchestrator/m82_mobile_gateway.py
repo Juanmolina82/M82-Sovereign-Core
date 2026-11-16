@@ -340,6 +340,22 @@ const M82_TAXONOMY=[
 {name:"Sports & Lifestyle",sub:"Sports, Executive Lifestyle & Global Events",subs:[{label:"Sports",rx:"SPORT|OLYMPIC|FIFA|F1|CHAMPION"},{label:"Lifestyle & Entertainment",rx:"LIFESTYLE|TRAVEL|LUXURY|CULTURE"}]}
 ]}];
 let activeSubList=M82_TAXONOMY[0].items,curSubIdx=0,activeRx="",cameFromLvl2=false;
+
+function checkDeepLink(){
+  const u = new URLSearchParams(window.location.search);
+  const q = u.get("q") || "";
+  const desk = u.get("desk") || "";
+  if(!q && !desk) return;
+  activeRx = q ? q.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") : desk;
+  cameFromLvl2 = false;
+  document.getElementById("news-lvl1").style.display = "none";
+  document.getElementById("news-lvl2").style.display = "none";
+  document.getElementById("news-lvl3").style.display = "block";
+  document.getElementById("hdr-title").innerText = desk || "M82 Breaking Alert";
+  document.getElementById("lvl3-back").innerHTML = "&#8249; News";
+  document.getElementById("pg-label").innerHTML = "ALERTA EN VIVO &mdash; " + (desk || "M82 Wire");
+}
+
 function buildLvl1(){let h="";M82_TAXONOMY.forEach(sec=>{h+=`<div class="casc-sec">${sec.group}</div><div class="casc-list">`;if(sec.direct){sec.items.forEach((it,idx)=>{h+=`<div class="casc-row" onclick="openDirectFeed(${idx})"><div>${it.label}<small>${it.sub}</small></div><span>&#8250;</span></div>`;});}else{sec.categories.forEach((cat,cIdx)=>{h+=`<div class="casc-row" onclick="openLvl2(${cIdx})"><div>${cat.name}<small>${cat.sub}</small></div><span>&#8250;</span></div>`;});}h+=`</div>`;});document.getElementById("news-lvl1").innerHTML=h;}
 function showLvl1(){document.getElementById("news-lvl1").style.display="block";document.getElementById("news-lvl2").style.display="none";document.getElementById("news-lvl3").style.display="none";document.getElementById("hdr-title").innerHTML="&#9776; News";}
 function openLvl2(cIdx){const cat=M82_TAXONOMY[1].categories[cIdx];activeSubList=cat.subs;cameFromLvl2=true;document.getElementById("news-lvl1").style.display="none";document.getElementById("news-lvl3").style.display="none";document.getElementById("news-lvl2").style.display="block";document.getElementById("hdr-title").innerText=cat.name;document.getElementById("lvl2-title").innerText=cat.name;let h=`<div class="casc-list" style="margin-top:12px">`;cat.subs.forEach((sb,idx)=>{h+=`<div class="casc-row" onclick="openLvl3(${idx},true)"><div>${sb.label}</div><span>&#8250;</span></div>`;});h+=`</div>`;document.getElementById("news-lvl2-list").innerHTML=h;}
@@ -448,6 +464,7 @@ async function ld(){
 }
 
 buildLvl1();
+checkDeepLink();
 ld();
 setInterval(ld, 2000);
 
