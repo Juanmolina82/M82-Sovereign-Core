@@ -330,3 +330,5 @@ no changes added to commit (use "git add" and/or "git commit -a")
 [main a6b666df] M82 AUTO-BLINDAJE 2026-11-16T20:00:08Z — 0.12B 33ev PID 24606 — BUNKER 0.30x — Warsh 102bps
  7 files changed, 370 insertions(+)
  create mode 100755 m82_offline_analyst.py
+[main 72293e25] M82 AUTO-BLINDAJE 2026-11-17T00:01:19Z — 0.12B 33ev PID 24606 — BUNKER 0.30x — Warsh 102bps
+ 3 files changed, 45 insertions(+)

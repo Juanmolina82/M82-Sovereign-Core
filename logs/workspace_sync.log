@@ -1,0 +1,6 @@
+nohup: ignoring input
+🔄 M82 WORKSPACE SYNC (:8286) ENGAGED
+[!] Sync error: HTTPConnectionPool(host='127.0.0.1', port=8286): Max retries exceeded with url: /api/workspace/ingest (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=8286): Failed to establish a new connection: [Errno 111] Connection refused"))
+[!] Sync error: HTTPConnectionPool(host='127.0.0.1', port=8286): Max retries exceeded with url: /api/workspace/ingest (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=8286): Failed to establish a new connection: [Errno 111] Connection refused"))
+[!] Sync error: HTTPConnectionPool(host='127.0.0.1', port=8286): Max retries exceeded with url: /api/workspace/ingest (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=8286): Failed to establish a new connection: [Errno 111] Connection refused"))
+[!] Sync error: HTTPConnectionPool(host='127.0.0.1', port=8286): Max retries exceeded with url: /api/workspace/ingest (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=8286): Failed to establish a new connection: [Errno 111] Connection refused"))
