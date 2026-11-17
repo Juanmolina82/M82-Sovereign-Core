@@ -1,14 +1,1 @@
-Traceback (most recent call last):
-  File "/data/data/com.termux/files/home/M82/desks/desk9_earnings_daemons.py", line 27, in <module>
-    register_daemons()
-    ~~~~~~~~~~~~~~~~^^
-  File "/data/data/com.termux/files/home/M82/desks/desk9_earnings_daemons.py", line 19, in register_daemons
-    c.execute("""
-    ~~~~~~~~~^^^^
-        INSERT OR REPLACE INTO m82_daemons_registry (daemon_name, desk_category, vector_type, status, last_heartbeat)
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-        VALUES (?, ?, ?, 'ACTIVE', CURRENT_TIMESTAMP)
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    """, (name, desk, vector))
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^
-sqlite3.OperationalError: database is locked
+✅ 5 Daemons de Earnings registrados e instanciados en m82_daemons_registry.

@@ -332,3 +332,28 @@ no changes added to commit (use "git add" and/or "git commit -a")
  create mode 100755 m82_offline_analyst.py
 [main 72293e25] M82 AUTO-BLINDAJE 2026-11-17T00:01:19Z — 0.12B 33ev PID 24606 — BUNKER 0.30x — Warsh 102bps
  3 files changed, 45 insertions(+)
+[main 91df0bc2] M82 AUTO-BLINDAJE 2026-11-17T16:24:21Z — 0.12B 33ev PID 24606 — BUNKER 0.30x — Warsh 102bps
+ 42 files changed, 351 insertions(+), 117 deletions(-)
+ create mode 100644 logs/desk9_earnings_daemons.log
+ create mode 100644 logs/m82_ai_hyperscalers_capex_daemon.log
+ create mode 100644 logs/m82_api_server.log
+ create mode 100644 logs/m82_comm_base_metals.log
+ create mode 100644 logs/m82_comm_cot_positioning.log
+ create mode 100644 logs/m82_comm_energy_crudes.log
+ create mode 100644 logs/m82_comm_forward_curves.log
+ create mode 100644 logs/m82_comm_freight_atlas.log
+ create mode 100644 logs/m82_comm_grains_oilseeds.log
+ create mode 100644 logs/m82_comm_indices_crb.log
+ create mode 100644 logs/m82_comm_natgas_lng.log
+ create mode 100644 logs/m82_comm_precious_metals.log
+ create mode 100644 logs/m82_comm_refined_cracks.log
+ create mode 100644 logs/m82_comm_softs_livestock.log
+ create mode 100644 logs/m82_comm_volatility_ovx.log
+ create mode 100644 logs/m82_freight_energy_margins_daemon.log
+ create mode 100644 logs/m82_private_credit_ai_daemon.log
+ create mode 100644 logs/m82_rare_earths_daemon.log
+ create mode 100644 logs/m82_workspace_hub.log
+ create mode 100644 logs/m82_workspace_sync.log
+ create mode 100644 logs/workspace_sync.log
+ create mode 100755 m82_workspace_hub.py
+ create mode 100755 m82_workspace_sync.py
