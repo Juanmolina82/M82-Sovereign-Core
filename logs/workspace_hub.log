@@ -6,39 +6,7 @@ nohup: ignoring input
  * Running on http://127.0.0.1:8286
  * Running on http://192.168.2.243:8286
 [33mPress CTRL+C to quit[0m
-127.0.0.1 - - [17/Nov/2026 14:02:04] "GET /health HTTP/1.1" 200 -
-127.0.0.1 - - [17/Nov/2026 14:02:10] "GET /health HTTP/1.1" 200 -
-127.0.0.1 - - [17/Nov/2026 14:03:31] "POST /api/workspace/ingest HTTP/1.1" 200 -
-127.0.0.1 - - [17/Nov/2026 14:03:31] "POST /api/workspace/ingest HTTP/1.1" 200 -
-127.0.0.1 - - [17/Nov/2026 14:03:32] "POST /api/workspace/ingest HTTP/1.1" 200 -
-127.0.0.1 - - [17/Nov/2026 14:03:32] "POST /api/workspace/ingest HTTP/1.1" 200 -
-127.0.0.1 - - [17/Nov/2026 14:03:34] "POST /api/workspace/ingest HTTP/1.1" 200 -
-127.0.0.1 - - [17/Nov/2026 14:03:34] "POST /api/workspace/ingest HTTP/1.1" 200 -
-127.0.0.1 - - [17/Nov/2026 14:03:34] "POST /api/workspace/ingest HTTP/1.1" 200 -
-127.0.0.1 - - [17/Nov/2026 14:03:34] "POST /api/workspace/ingest HTTP/1.1" 200 -
-127.0.0.1 - - [17/Nov/2026 14:03:34] "POST /api/workspace/ingest HTTP/1.1" 200 -
-127.0.0.1 - - [17/Nov/2026 14:03:34] "POST /api/workspace/ingest HTTP/1.1" 200 -
-127.0.0.1 - - [17/Nov/2026 14:03:34] "POST /api/workspace/ingest HTTP/1.1" 200 -
-127.0.0.1 - - [17/Nov/2026 14:03:34] "POST /api/workspace/ingest HTTP/1.1" 200 -
-127.0.0.1 - - [17/Nov/2026 14:03:34] "POST /api/workspace/ingest HTTP/1.1" 200 -
-127.0.0.1 - - [17/Nov/2026 14:03:34] "POST /api/workspace/ingest HTTP/1.1" 200 -
-127.0.0.1 - - [17/Nov/2026 14:03:35] "POST /api/workspace/ingest HTTP/1.1" 200 -
-127.0.0.1 - - [17/Nov/2026 14:03:35] "POST /api/workspace/ingest HTTP/1.1" 200 -
-127.0.0.1 - - [17/Nov/2026 14:03:35] "POST /api/workspace/ingest HTTP/1.1" 200 -
-127.0.0.1 - - [17/Nov/2026 14:03:35] "POST /api/workspace/ingest HTTP/1.1" 200 -
-127.0.0.1 - - [17/Nov/2026 14:03:35] "POST /api/workspace/ingest HTTP/1.1" 200 -
-127.0.0.1 - - [17/Nov/2026 14:03:35] "POST /api/workspace/ingest HTTP/1.1" 200 -
-127.0.0.1 - - [17/Nov/2026 14:03:35] "POST /api/workspace/ingest HTTP/1.1" 200 -
-127.0.0.1 - - [17/Nov/2026 14:03:35] "POST /api/workspace/ingest HTTP/1.1" 200 -
-127.0.0.1 - - [17/Nov/2026 14:03:35] "POST /api/workspace/ingest HTTP/1.1" 200 -
-127.0.0.1 - - [17/Nov/2026 14:03:35] "POST /api/workspace/ingest HTTP/1.1" 200 -
-127.0.0.1 - - [17/Nov/2026 14:03:35] "POST /api/workspace/ingest HTTP/1.1" 200 -
-127.0.0.1 - - [17/Nov/2026 14:03:35] "POST /api/workspace/ingest HTTP/1.1" 200 -
-127.0.0.1 - - [17/Nov/2026 14:03:35] "POST /api/workspace/ingest HTTP/1.1" 200 -
-127.0.0.1 - - [17/Nov/2026 14:03:35] "POST /api/workspace/ingest HTTP/1.1" 200 -
-127.0.0.1 - - [17/Nov/2026 14:03:35] "POST /api/workspace/ingest HTTP/1.1" 200 -
-127.0.0.1 - - [17/Nov/2026 14:03:35] "POST /api/workspace/ingest HTTP/1.1" 200 -
-127.0.0.1 - - [17/Nov/2026 14:03:35] "POST /api/workspace/ingest HTTP/1.1" 200 -
-127.0.0.1 - - [17/Nov/2026 14:03:35] "POST /api/workspace/ingest HTTP/1.1" 200 -
-127.0.0.1 - - [17/Nov/2026 14:03:35] "POST /api/workspace/ingest HTTP/1.1" 200 -
-127.0.0.1 - - [17/Nov/2026 14:03:35] "POST /api/workspace/ingest HTTP/1.1" 200 -
+127.0.0.1 - - [17/Nov/2026 19:49:12] "POST /api/workspace/ingest HTTP/1.1" 200 -
+127.0.0.1 - - [17/Nov/2026 19:49:12] "POST /api/workspace/ingest HTTP/1.1" 200 -
+127.0.0.1 - - [17/Nov/2026 19:49:12] "POST /api/workspace/ingest HTTP/1.1" 200 -
+127.0.0.1 - - [17/Nov/2026 19:49:12] "GET /health HTTP/1.1" 200 -
