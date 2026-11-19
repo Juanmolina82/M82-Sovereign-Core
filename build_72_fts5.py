@@ -32,7 +32,7 @@ else:
 c.execute("DROP TABLE IF EXISTS macro_dossier_fts;")
 c.execute("CREATE VIRTUAL TABLE macro_dossier_fts USING fts5(headline);")
 c.execute("INSERT INTO macro_dossier_fts(headline) SELECT headline FROM macro_dossier WHERE headline IS NOT NULL;")
-c.execute("PRAGMA wal_checkpoint(PASSIVE);")
+pass
 c.commit()
 tot = c.execute("SELECT COUNT(*) FROM macro_dossier;").fetchone()[0]
 idx = c.execute("SELECT COUNT(*) FROM macro_dossier_fts;").fetchone()[0]
