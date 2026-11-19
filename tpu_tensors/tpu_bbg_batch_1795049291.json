@@ -1,0 +1,16 @@
+{
+  "engine": "M82_TPU_XLA_VECTOR_CORE_v5",
+  "node": "CHARALLAVE_L4_L5_EDGE",
+  "source": "BLOOMBERG_TOP_NEWS_WIRE_20261118",
+  "headlines_ingested": [
+    "LNG Exports Through Hormuz Appear to Slow After More Attacks",
+    "Copper Rebounds After Rout as Physical Tightness Persists",
+    "China Airport Greetings Show How Xi Views Trump, Putin, Takaichi",
+    "Trump Says He Wouldn't Make Deals With Putin Without Ukraine",
+    "Morgan Stanley's Hornbach Says Rogue AI Biggest Underpriced Risk"
+  ],
+  "alpha_score": 0.9768000245094299,
+  "latency_ms": 0.28,
+  "governance": "BUNKER_MODE_0.30x_LOCK",
+  "sha256_seal": "e16738e8ea18cb81d300242111dd4d82e2260fa1a3b6b3ef80d682eac096ed91"
+}
