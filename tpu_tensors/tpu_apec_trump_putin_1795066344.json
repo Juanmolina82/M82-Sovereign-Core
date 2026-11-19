@@ -1,0 +1,14 @@
+{
+  "engine": "M82_TPU_XLA_VECTOR_CORE_v5",
+  "node": "CHARALLAVE_L4_L5_EDGE",
+  "source": "APEC_SHENZHEN_TRUMP_PUTIN_PULL_ASIDE_20261119",
+  "sequence": [
+    "1_TRUMP_PUTIN_PULL_ASIDE_COMPLETED",
+    "2_TRUMP_XI_ONE_ON_ONE_IMMINENT",
+    "3_TRUMP_XI_PUTIN_TRILATERAL_FOLLOWUP"
+  ],
+  "alpha_score": 0.9818000197410583,
+  "latency_ms": 0.366,
+  "governance": "BUNKER_MODE_0.30x_LOCK",
+  "sha256_seal": "5c0da82a5be561242afe42ba841ae3d03e768fb8601de133463677ba88a4e9e9"
+}
