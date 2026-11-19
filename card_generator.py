@@ -48,7 +48,7 @@ def generate_m82_card(headline, category="M82 BREAKING STREAM", source_tag="@Mol
 
     # Guardar la imagen limpia
     if not output_path:
-        output_dir = os.path.expanduser("~/M82/cards")
+        output_dir = "/storage/emulated/0/M82card"
         os.makedirs(output_dir, exist_ok=True)
         output_path = os.path.join(output_dir, "m82_clean_card.png")
 

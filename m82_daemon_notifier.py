@@ -6,7 +6,7 @@ from datetime import datetime
 from PIL import Image, ImageDraw, ImageFont
 
 DB_PATH = os.path.expanduser("~/M82/m82_database.db")
-CARDS_DIR = "/sdcard/Pictures/M82_Cards"
+CARDS_DIR = "/storage/emulated/0/M82card"
 FONT_BOLD = os.path.expanduser("~/M82/fonts/Roboto-Bold.ttf")
 FONT_REG = os.path.expanduser("~/M82/fonts/Roboto-Regular.ttf")
 BOT_TOKEN = os.getenv("M82_BOT_TOKEN")

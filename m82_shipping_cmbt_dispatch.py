@@ -29,9 +29,9 @@ DB_PATH = os.environ.get("M82_DB_PATH", os.path.expanduser("~/M82/m82_database.d
 TG_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "8600412468:AAHiBNgu230J01IzeqL7rZORHdmAcgHFcj4")
 CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "-1004335849125")
 NTFY_TOPIC = "M82-Molina-Alerts-v2"
-CARDS_DIR = os.path.expanduser("/sdcard/Pictures/M82_Cards")
+CARDS_DIR = "/storage/emulated/0/M82card"
 if not os.path.exists(CARDS_DIR):
-    CARDS_DIR = os.path.expanduser("~/storage/shared/Pictures/M82_Cards")
+    CARDS_DIR = "/storage/emulated/0/M82card"
 os.makedirs(CARDS_DIR, exist_ok=True)
 
 # 2. Inserción atómica en BBDD

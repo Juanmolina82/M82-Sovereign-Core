@@ -10,7 +10,7 @@ TOKEN = "8600412468:AAHLLRDPus66Y1hSgDKbwGC5zdW6DdufP3Y"
 CHAT_ID = "-1004335849125"
 NTFY_URL = "https://ntfy.sh/M82-Molina-Alerts-v2"
 IMG_PATH = os.path.expanduser("~/M82/m82_card.png")
-GALLERY_DIR = "/sdcard/Pictures/M82_Cards"
+GALLERY_DIR = "/storage/emulated/0/M82card"
 
 os.makedirs(GALLERY_DIR, exist_ok=True)
 

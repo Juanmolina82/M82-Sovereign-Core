@@ -8,9 +8,9 @@ try:
 except ImportError:
     HAS_OCR = False
 
-CARDS_DIR = os.path.expanduser("/sdcard/Pictures/M82_Cards")
+CARDS_DIR = "/storage/emulated/0/M82card"
 if not os.path.exists(CARDS_DIR):
-    CARDS_DIR = os.path.expanduser("~/storage/shared/Pictures/M82_Cards")
+    CARDS_DIR = "/storage/emulated/0/M82card"
 
 OUTPUT_FILE = os.path.expanduser("~/M82/m82_cards_ocr_summary.txt")
 

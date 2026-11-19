@@ -7,7 +7,7 @@ BASE_DIR = os.path.expanduser("~/M82")
 DB_PATH = os.path.join(BASE_DIR, "m82_database.db")
 CARD_PATH = os.path.join(BASE_DIR, "cards/m82_current_card.png")
 LOG_PATH = os.path.join(BASE_DIR, "m82_log.txt")
-GALLERY_DIR = "/sdcard/Pictures/M82_Cards"
+GALLERY_DIR = "/storage/emulated/0/M82card"
 
 os.makedirs(GALLERY_DIR, exist_ok=True)
 os.makedirs(os.path.join(BASE_DIR, "cards"), exist_ok=True)

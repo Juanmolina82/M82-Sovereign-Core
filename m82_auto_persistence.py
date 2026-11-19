@@ -3,7 +3,7 @@ import os, shutil, time, sqlite3
 
 BASE_DIR = os.path.expanduser("~/M82")
 DB_PATH = os.path.join(BASE_DIR, "m82_database.db")
-BACKUP_DIR = "/sdcard/M82_Backups"
+BACKUP_DIR = "/storage/emulated/0/M82card"
 
 os.makedirs(BACKUP_DIR, exist_ok=True)
 

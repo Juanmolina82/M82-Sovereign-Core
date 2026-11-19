@@ -2,7 +2,7 @@
 import os, textwrap, math, random
 from PIL import Image, ImageDraw, ImageFont
 
-GALLERY_DIR = "/sdcard/Pictures/M82_Cards"
+GALLERY_DIR = "/storage/emulated/0/M82card"
 
 def build_hud_card(headline="Exclusive | Pentagon-Backed Oil Company Is Set to Vie for Chevron's Crown in Venezuela", tag="#M82 BREAKING [VENEZUELA_DESK]"):
     os.makedirs(GALLERY_DIR, exist_ok=True)

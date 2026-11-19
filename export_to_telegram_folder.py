@@ -7,9 +7,9 @@ DB_PATH = os.path.expanduser("~/M82/m82_database.db")
 
 # Rutas seguras mediante el enlace de almacenamiento de Termux
 TELEGRAM_DIRS = [
-    os.path.expanduser("~/storage/shared/Pictures/Telegram"),
-    os.path.expanduser("~/storage/shared/Telegram"),
-    "/sdcard/Pictures/Telegram"
+    os.path.expanduser("/storage/emulated/0/M82card"),
+    os.path.expanduser("/storage/emulated/0/M82card"),
+    "/storage/emulated/0/M82card"
 ]
 
 # Intentar crear solo las rutas donde haya acceso de escritura

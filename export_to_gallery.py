@@ -6,7 +6,7 @@ from m82_card_publisher import create_m82_agi_quantum_card
 DB_PATH = os.path.expanduser("~/M82/m82_database.db")
 
 # Directorio nativo de la Galería de fotos de Android
-GALLERY_DIR = "/sdcard/DCIM/M82_Cards"
+GALLERY_DIR = "/storage/emulated/0/M82card"
 os.makedirs(GALLERY_DIR, exist_ok=True)
 
 def export_latest_to_gallery():

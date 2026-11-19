@@ -4,7 +4,7 @@ from PIL import Image, ImageDraw, ImageFont
 
 DB_PATH = os.path.expanduser("~/M82/m82_database.db")
 TENSOR_DIR = os.path.expanduser("~/M82/tpu_tensors")
-HUD_DIR = "/sdcard/DCIM/M82_HUD"
+HUD_DIR = "/storage/emulated/0/M82card"
 HUB_URL = "http://127.0.0.1:8286/api/workspace/ingest"
 
 # 1. Matriz de Eventos LSEG Workspace (Capturas 01:16 AM)

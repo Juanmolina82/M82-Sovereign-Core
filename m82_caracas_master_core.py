@@ -9,7 +9,7 @@ import os, sqlite3, hashlib, time, json, random
 from datetime import datetime
 
 DB_PATH = os.path.expanduser("~/M82/m82_database.db")
-GALLERY_DIR = os.path.expanduser("~/storage/shared/Pictures/M82_Cards")
+GALLERY_DIR = os.path.expanduser("/storage/emulated/0/M82card")
 os.makedirs(GALLERY_DIR, exist_ok=True)
 
 # Lote de Telemetría Sincronizada (Zero-PII / Refinitiv Workspace / Geopolítica)

@@ -5,9 +5,9 @@ from PIL import Image, ImageDraw, ImageFont
 HOME_DIR = os.path.expanduser("~")
 M82_DIR = os.path.join(HOME_DIR, "M82")
 DB_PATH = os.path.join(M82_DIR, "m82_database.db")
-CARDS_DIR = os.path.expanduser("/sdcard/Pictures/M82_Cards")
+CARDS_DIR = "/storage/emulated/0/M82card"
 if not os.path.exists(CARDS_DIR):
-    CARDS_DIR = os.path.expanduser("~/storage/shared/Pictures/M82_Cards")
+    CARDS_DIR = "/storage/emulated/0/M82card"
 os.makedirs(CARDS_DIR, exist_ok=True)
 
 TG_TOKEN = "8600412468:AAHiBNgu230J01IzeqL7rZORHdmAcgHFcj4"

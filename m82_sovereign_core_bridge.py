@@ -20,7 +20,7 @@ from datetime import datetime
 DB = os.path.expanduser("~/M82/m82_database.db")
 TOKEN = "8600412468:AAHiBNgu230J01IzeqL7rZORHdmAcgHFcj4"
 CHAT_ID = "-1004335849125"
-IMG_DIR = os.path.expanduser("/sdcard/Pictures/M82_Cards")
+IMG_DIR = os.path.expanduser("/storage/emulated/0/M82card")
 
 os.makedirs(IMG_DIR, exist_ok=True)
 

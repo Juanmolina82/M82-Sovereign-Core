@@ -18,9 +18,9 @@ import os, sys, time, sqlite3, requests
 from PIL import Image, ImageDraw, ImageFont
 
 DB_PATH = os.path.expanduser("~/M82/m82_database.db")
-CARDS_DIR = os.path.expanduser("/sdcard/Pictures/M82_Cards")
+CARDS_DIR = "/storage/emulated/0/M82card"
 if not os.path.exists(CARDS_DIR):
-    CARDS_DIR = os.path.expanduser("~/storage/shared/Pictures/M82_Cards")
+    CARDS_DIR = "/storage/emulated/0/M82card"
 
 os.makedirs(CARDS_DIR, exist_ok=True)
 

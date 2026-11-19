@@ -35,9 +35,9 @@ brent, wti, merey = _live["brent"], _live["wti"], _live["merey"]
 from PIL import Image, ImageDraw, ImageFont
 
 DB_PATH = os.path.expanduser("~/M82/m82_database.db")
-GALLERY_DIR = os.path.expanduser("/sdcard/Pictures/M82_Cards")
+GALLERY_DIR = os.path.expanduser("/storage/emulated/0/M82card")
 if not os.path.exists(GALLERY_DIR):
-    GALLERY_DIR = os.path.expanduser("~/storage/shared/Pictures/M82_Cards")
+    GALLERY_DIR = os.path.expanduser("/storage/emulated/0/M82card")
 os.makedirs(GALLERY_DIR, exist_ok=True)
 
 TG_TOKEN = "8600412468:AAHiBNgu230J01IzeqL7rZORHdmAcgHFcj4"

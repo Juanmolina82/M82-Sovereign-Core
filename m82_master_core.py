@@ -4,7 +4,7 @@ from PIL import Image, ImageDraw, ImageFont
 
 DB_PATH = os.path.expanduser("~/M82/m82_database.db")
 IMG_PATH = os.path.expanduser("~/M82/m82_vlcc_vs_crude_chart.png")
-GALLERY_DIR = "/sdcard/Pictures/M82_Cards"
+GALLERY_DIR = "/storage/emulated/0/M82card"
 os.makedirs(GALLERY_DIR, exist_ok=True)
 
 def get_font(size, bold_serif=False):

@@ -6,7 +6,7 @@ import requests
 from datetime import datetime
 
 DB_PATH = os.path.expanduser("~/M82/m82_database.db")
-TOKEN = "8600412468:AAGCpYsFN2V9sJQK6gBmwoFtG_GE_NQ2Hc8"
+TOKEN = "8600412468:AAHiBNgu230J01IzeqL7rZORHdmAcgHFcj4"
 CHAT_ID = "-1004335849125"
 NTFY_URL = "https://ntfy.sh/M82-Molina-Alerts-v3"
 

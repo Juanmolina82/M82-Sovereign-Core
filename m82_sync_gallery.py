@@ -2,7 +2,7 @@
 import os, sys, shutil, subprocess, time
 
 SOURCE_IMG = os.path.expanduser("~/M82/m82_card.png")
-TARGET_DIR = "/sdcard/Pictures/M82_Cards"
+TARGET_DIR = "/storage/emulated/0/M82card"
 
 def sync_to_gallery():
     if not os.path.exists(SOURCE_IMG):

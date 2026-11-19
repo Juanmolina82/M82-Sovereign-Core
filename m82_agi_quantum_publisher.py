@@ -164,7 +164,7 @@ def create_m82_agi_quantum_card(headline, output_path):
     img.save(output_path, quality=95)
     
     # Copia instantánea a la Galería de Android
-    gallery_dir = "/sdcard/Pictures/M82_Cards"
+    gallery_dir = "/storage/emulated/0/M82card"
     os.makedirs(gallery_dir, exist_ok=True)
     gallery_path = os.path.join(gallery_dir, os.path.basename(output_path))
     img.save(gallery_path, quality=95)

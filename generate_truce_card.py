@@ -1,7 +1,7 @@
 import os, time, subprocess
 from PIL import Image, ImageDraw, ImageFont
 
-GALLERY_DIR = "/sdcard/Pictures/M82_Cards"
+GALLERY_DIR = "/storage/emulated/0/M82card"
 os.makedirs(GALLERY_DIR, exist_ok=True)
 
 width, height = 800, 1000

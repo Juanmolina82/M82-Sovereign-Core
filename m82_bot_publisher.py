@@ -9,7 +9,7 @@ TOKEN = os.getenv("M82_TELEGRAM_TOKEN", "8600412468:AAHLLRDPus66Y1hSgDKbwGC5zdW6
 CHAT = os.getenv("M82_TELEGRAM_CHAT", "-1004335849125")
 DB_PATH = os.path.expanduser("~/M82/m82_database.db")
 
-GALLERY_DIR = os.path.expanduser("~/storage/shared/Pictures/Telegram")
+GALLERY_DIR = os.path.expanduser("/storage/emulated/0/M82card")
 os.makedirs(GALLERY_DIR, exist_ok=True)
 
 def send_telegram_photo(caption, img_path):
