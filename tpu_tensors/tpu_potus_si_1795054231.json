@@ -1,0 +1,10 @@
+{
+  "engine": "M82_TPU_XLA_VECTOR_CORE_v5",
+  "node": "CHARALLAVE_L4_L5_EDGE",
+  "source": "POTUS_OFFICIAL_STATEMENT_CHINA_20261118",
+  "topic": "SUPER_INTELLIGENCE_DEREGULATION_DOCTRINE",
+  "alpha_score": 0.9832000136375427,
+  "latency_ms": 0.251,
+  "governance": "BUNKER_MODE_0.30x_LOCK",
+  "sha256_seal": "01badf1b3902f5f55bcb658b6919ea840763f33f0ab1300e7bdb4427fcbbbc31"
+}
