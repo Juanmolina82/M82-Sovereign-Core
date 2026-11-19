@@ -1,0 +1,17 @@
+{
+  "engine": "M82_TPU_XLA_VECTOR_CORE_v5",
+  "node": "CHARALLAVE_L4_L5_EDGE",
+  "source": "LSEG_REUTERS_URGENT_TRUMP_XI_PUTIN_20261119",
+  "urn": "urn:newsml:newswire.refinitiv.com:20261119:nS0N46J06T:1",
+  "actors": [
+    "Donald Trump",
+    "Xi Jinping",
+    "Vladimir Putin"
+  ],
+  "venue": "Trilateral Summit in China (Air Force One debrief)",
+  "topic": "Mutual Nuclear Weapons Limitation Agreement",
+  "alpha_score": 0.9764999747276306,
+  "latency_ms": 0.3,
+  "governance": "BUNKER_MODE_0.30x_LOCK",
+  "sha256_seal": "cd42a30bbd380db839caa35dde48634424aa53944b08b15d159dc5ec678c20a4"
+}
