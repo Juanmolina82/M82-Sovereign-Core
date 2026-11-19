@@ -1,0 +1,23 @@
+{
+  "engine": "M82_TPU_XLA_VECTOR_CORE_v5",
+  "node": "CHARALLAVE_L4_L5_EDGE",
+  "source": "LSEG_BREAKINGVIEWS_ANTHROPIC_LAST_HURRAH_20261119",
+  "urn": "urn:newsml:newswire.refinitiv.com:20261119:nL6N47015E:3",
+  "metrics": {
+    "shares_sold_m": 980,
+    "ipo_price": 83.0,
+    "open_price": 111.5,
+    "intraday_1217et_price": 97.0,
+    "ev_to_next_fy_sales": 14.5,
+    "spacex_ev_to_sales": 9.0,
+    "q2_op_margin_pct": 8.0,
+    "q3_op_margin_pct": -3.0,
+    "total_infra_commitments_usd": "900B",
+    "next_12m_capex_due_usd": ">70B",
+    "vix_level": ">25"
+  },
+  "alpha_score": 0.9865000247955322,
+  "latency_ms": 0.24,
+  "governance": "BUNKER_MODE_0.30x_LOCK",
+  "sha256_seal": "74b94b4c24c4c3b4888f278ee9e1e1b808e649e33568bd983c1e0f1dabf493b0"
+}
