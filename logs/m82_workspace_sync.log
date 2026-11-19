@@ -1,2 +1,7 @@
 🏛️ M82 WALL STREET MULTI-ASSET CLASSIFIER (:8286) ACTIVE
+[!] WallStreet Sync Error: HTTPConnectionPool(host='127.0.0.1', port=8286): Read timed out. (read timeout=5)
+[!] WallStreet Sync Error: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+[!] WallStreet Sync Error: HTTPConnectionPool(host='127.0.0.1', port=8286): Max retries exceeded with url: /api/workspace/ingest (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=8286): Failed to establish a new connection: [Errno 111] Connection refused"))
+[!] WallStreet Sync Error: HTTPConnectionPool(host='127.0.0.1', port=8286): Max retries exceeded with url: /api/workspace/ingest (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=8286): Failed to establish a new connection: [Errno 111] Connection refused"))
+[!] WallStreet Sync Error: HTTPConnectionPool(host='127.0.0.1', port=8286): Max retries exceeded with url: /api/workspace/ingest (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=8286): Failed to establish a new connection: [Errno 111] Connection refused"))
 [!] WallStreet Sync Error: HTTPConnectionPool(host='127.0.0.1', port=8286): Max retries exceeded with url: /api/workspace/ingest (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=8286): Failed to establish a new connection: [Errno 111] Connection refused"))
