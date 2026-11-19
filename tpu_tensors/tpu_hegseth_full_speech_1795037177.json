@@ -1,0 +1,17 @@
+{
+  "engine": "M82_TPU_XLA_VECTOR_CORE_v5",
+  "node": "CHARALLAVE_L4_L5_EDGE",
+  "speaker": "SEC_WAR_PETE_HEGSETH",
+  "location": "CARACAS_VENEZUELA",
+  "date": "2026-11-18",
+  "key_milestones": [
+    "OPERATION_ABSOLUTE_RESOLVE_48MIN",
+    "MONROE_DOCTRINE_REAFFIRMED",
+    "AMERICAS_COUNTER_CARTEL_COALITION_ACC",
+    "TOP_TO_BOTTOM_MILITARY_REFORM",
+    "COMBINED_US_VEN_COUNTERTERROR_ULTIMATUM"
+  ],
+  "alpha_score": 0.9818000197410583,
+  "latency_ms": 0.266,
+  "governance": "BUNKER_MODE_0.30x_LOCK"
+}

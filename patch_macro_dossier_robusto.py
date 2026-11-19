@@ -1,3 +1,16 @@
+
+def _m82_live_banner():
+    try:
+        import sqlite3 as _s
+        _c = _s.connect("file:/data/data/com.termux/files/home/M82/m82_database.db?mode=ro", uri=True, timeout=15.0)
+        _r = _c.execute("SELECT btc_price, btc_chg_pct, merey16_price, wti_price, wti_chg_pct, brent_price FROM m82_live_market_quotes WHERE id=1").fetchone()
+        _c.close()
+        if _r and _r[0]:
+            return f"BTC: ${_r[0]:,.0f} ({_r[1]:+.2f}%) | MEREY 16: ${_r[2]:.2f} | WTI: ${_r[3]:.2f} | BRENT: ${_r[5]:.2f}"
+    except Exception:
+        pass
+    return "BTC: LIVE | MEREY 16: LIVE | WTI: LIVE | BRENT: LIVE"
+
 import os, json, time
 DATA_PATH = os.path.expanduser("~/M82/app/data.json")
 payload = {}
@@ -29,7 +42,7 @@ payload.update({
         "energy": {
             "brent": "$94.32 (-4.07%)",
             "wti": "$87.71 (-3.43%)",
-            "merey": "$83.15",
+            "merey": "${merey16}",
             "xau": "$4,073.59 LSEG sellado",
             "xom_pdvsaa": "MoU NO vinculante 9 Nov - Exploracion Orinoco - Athabasca know-how",
             "xom_condition": "Stable policies, clear regs, protections, competitive returns",

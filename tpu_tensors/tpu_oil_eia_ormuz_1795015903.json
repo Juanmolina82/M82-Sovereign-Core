@@ -1,0 +1,16 @@
+{
+  "engine": "M82_TPU_XLA_VECTOR_CORE_v5",
+  "node": "CHARALLAVE_L4_L5_EDGE",
+  "asset_class": "GLOBAL_ENERGY_CRUDE_SPREADS",
+  "metrics": {
+    "brent_usd": 92.02,
+    "wti_usd": 84.38,
+    "brent_wti_spread_usd": 7.64,
+    "eia_crude_build_mb": 3.4,
+    "eia_gasoline_build_mb": 5.2,
+    "eia_distillate_build_mb": 1.6
+  },
+  "alpha_score": 0.9585999846458435,
+  "latency_ms": 0.258,
+  "governance": "BUNKER_MODE_0.30x_LOCK"
+}

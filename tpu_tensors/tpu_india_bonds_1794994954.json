@@ -1,0 +1,11 @@
+{
+  "engine": "M82_TPU_XLA_VECTOR_CORE_v5",
+  "node": "CHARALLAVE_L4_L5_EDGE",
+  "asset_class": "EM_SOVEREIGN_RATES_INDIA",
+  "inflows_nov_usd_bn": 1.1,
+  "usd_inr": 93.435,
+  "brent_usd": 91.83,
+  "alpha_score": 0.9398000240325928,
+  "latency_ms": 0.36,
+  "governance": "BUNKER_MODE_0.30x_LOCK"
+}

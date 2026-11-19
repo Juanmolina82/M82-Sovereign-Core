@@ -1,0 +1,10 @@
+{
+  "engine": "M82_TPU_XLA_VECTOR_CORE_v5",
+  "node": "CHARALLAVE_L4_L5_EDGE",
+  "speaker": "SEC_WAR_PETE_HEGSETH",
+  "location": "US_EMBASSY_CARACAS_VENEZUELA",
+  "doctrine": "AMERICA_FIRST_ALONGSIDE_PARTNERS",
+  "alpha_score": 0.9728000164031982,
+  "latency_ms": 0.561,
+  "governance": "BUNKER_MODE_0.30x_LOCK"
+}

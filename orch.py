@@ -1,3 +1,17 @@
+import time
+
+def _m82_live_banner():
+    try:
+        import sqlite3 as _s
+        _c = _s.connect("file:/data/data/com.termux/files/home/M82/m82_database.db?mode=ro", uri=True, timeout=15.0)
+        _r = _c.execute("SELECT btc_price, btc_chg_pct, merey16_price, wti_price, wti_chg_pct, brent_price FROM m82_live_market_quotes WHERE id=1").fetchone()
+        _c.close()
+        if _r and _r[0]:
+            return f"BTC: ${_r[0]:,.0f} ({_r[1]:+.2f}%) | MEREY 16: ${_r[2]:.2f} | WTI: ${_r[3]:.2f} | BRENT: ${_r[5]:.2f}"
+    except Exception:
+        pass
+    return "BTC: LIVE | MEREY 16: LIVE | WTI: LIVE | BRENT: LIVE"
+
 #!/usr/bin/env python3
 import os, time, sqlite3, requests, textwrap
 
@@ -59,7 +73,7 @@ def render_hud_card(evt_id, headline, daemon_source):
 
     draw.rectangle([55, 225, W - 55, 325], fill='#0a101d', outline='#1a293d', width=2)
     draw.text((75, 240), "EXPOSURE: 0.22x / 0.30x LOCK  |  VaR L5.1: 1.68%", fill='#00b0ff', font=f_sub)
-    draw.text((75, 280), "MEREY 16: {merey} | WTI: {wti}  |  BRENT: $114.72", fill='#ff9100', font=f_sub)
+    draw.text((75, 280), _m82_live_banner(), fill='#ff9100', font=f_sub)
 
     draw.text((55, 348), "❚ M82_SOVEREIGN WORKSPACE TELEMETRY WIRE", fill='#ff1744', font=f_red)
     draw.line([(55, 388), (W - 55, 388)], fill='#ff1744', width=3)
@@ -87,7 +101,7 @@ def process_stream():
     conn.execute("PRAGMA busy_timeout=60000;")
     cur = conn.cursor()
     
-    cur.execute("SELECT id, headline, daemon_source FROM m82_multi_stream WHERE status='PENDING' ORDER BY id ASC LIMIT 10")
+    cur.execute("SELECT id, headline, daemon_source FROM m82_multi_stream WHERE status='PENDING' ORDER BY id ASC LIMIT 3")
     rows = cur.fetchall()
     
     for row in rows:
@@ -107,7 +121,7 @@ def process_stream():
             f"───────────────────────────\n"
             f"🏛 *WIRE:* {headline}\n\n"
             f"🛡 *RISK:* Exp 0.22x/0.30x LOCK | VaR 1.68%\n"
-            f"🛢 *ANCHOR:* Merey 16 $93.75 Sep / $93.92 Live | Brent $114.72\n"
+            f"🛢 *ANCHOR:* Merey 16 $93.75 Sep / $93.92 Live | Brent ${brent}\n"
             f"🔒 *SOVEREIGN EXECUTION CORE*"
         )
         try:
@@ -141,3 +155,16 @@ if __name__ == "__main__":
 
 import subprocess
 subprocess.run(["python3", os.path.expanduser("~/M82/scripts/m82_hud_card_sanitized_engine.py"), "B"], check=False)
+
+
+def send_telegram_card(photo_path, caption_text):
+    if not os.path.exists(photo_path):
+        return False
+    url = f"https://api.telegram.org/bot{TOKEN}/sendPhoto"
+    try:
+        with open(photo_path, 'rb') as photo:
+            r = requests.post(url, data={'chat_id': CHAT_ID, 'caption': caption_text, 'parse_mode': 'Markdown'}, files={'photo': photo}, timeout=15)
+            return r.status_code == 200
+    except Exception as e:
+        print(f"⚠️ Error enviando foto a Telegram: {e}")
+        return False

@@ -1,0 +1,13 @@
+{
+  "engine": "M82_TPU_XLA_VECTOR_CORE_v5",
+  "node": "CHARALLAVE_L4_L5_EDGE",
+  "event": "ANTHROPIC_RECORD_IPO_PRICING",
+  "metrics": {
+    "gross_proceeds_usd_bn": 81.31,
+    "ipo_price_usd": 83.0,
+    "milestone": "LARGEST_IPO_IN_HISTORY_ECLIPSING_SPACEX"
+  },
+  "alpha_score": 0.9789999723434448,
+  "latency_ms": 0.757,
+  "governance": "BUNKER_MODE_0.30x_LOCK"
+}

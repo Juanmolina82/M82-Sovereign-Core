@@ -1,0 +1,21 @@
+{
+  "engine": "M82_TPU_XLA_VECTOR_CORE_v5",
+  "node": "CHARALLAVE_L4_L5_EDGE",
+  "audit_subject": "NABEP_CAPEX_AND_INFRASTRUCTURE_DUE_DILIGENCE",
+  "verified_facts": {
+    "deployed_capex_usd_bn": 1.0,
+    "headline_pledge_usd_bn": 100.0,
+    "active_legacy_projects": 3,
+    "undeveloped_greenfield_blocks": 14,
+    "total_concession_blocks": 17,
+    "oct_production_bpd": 224000,
+    "ye26_target_bpd_via_workover": 250000,
+    "greenfield_maturation_months": 24
+  },
+  "x_dispatch": "Auditor\u00eda M82: NABEP carece de CapEx ejecutado ($1B inicial vs. $100B prometidos). Su meta de 250k+ bpd es solo workover en 3 proyectos activos (224k bpd oct), mientras 14 bloques greenfield sin infraestructura tardar\u00e1n 24+ meses. #Venezuela #Oil",
+  "char_count": 246,
+  "alpha_score": 0.9793999791145325,
+  "latency_ms": 0.352,
+  "governance": "BUNKER_MODE_0.30x_LOCK",
+  "sha256_seal": "ac12cab34ca0eeb657c5854c33d9f376189d0214a947bde7c86948cc87d59e1b"
+}

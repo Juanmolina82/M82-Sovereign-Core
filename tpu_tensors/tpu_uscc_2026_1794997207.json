@@ -1,0 +1,14 @@
+{
+  "engine": "M82_TPU_XLA_VECTOR_CORE_v5",
+  "node": "CHARALLAVE_L4_L5_EDGE",
+  "report": "USCC_2026_ANNUAL_REPORT",
+  "key_vectors": [
+    "TAIWAN_QUARANTINE_24M",
+    "OPEN_WEIGHT_AI_SEC",
+    "QUANTUM_CRYPTO",
+    "COMMODITIES_AND_40PCT_PHARMA_API"
+  ],
+  "alpha_score": 0.9724000096321106,
+  "latency_ms": 0.364,
+  "governance": "BUNKER_MODE_0.30x_LOCK"
+}

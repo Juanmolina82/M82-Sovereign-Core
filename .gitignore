@@ -1,16 +1,8 @@
 .env
+*.token
 *.key
 *.pem
-refinitiv_key.txt
-m82_secrets.json
+m82_database.db-wal
+m82_database.db-shm
+logs/*.log
 __pycache__/
-*.bak.*
-
-# M82 Binary Databases & WAL Journals
-*.db
-*.db-wal
-*.db-shm
-.env.refinitiv
-mobile_build/node_modules/
-mobile_build/.git/
-mobile_build/*.aab

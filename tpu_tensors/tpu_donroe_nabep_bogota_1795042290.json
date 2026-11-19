@@ -1,0 +1,22 @@
+{
+  "engine": "M82_TPU_XLA_VECTOR_CORE_v5",
+  "node": "CHARALLAVE_L4_L5_EDGE",
+  "doctrine": "DONROE_DOCTRINE_HEMISPHERIC_SECURITY",
+  "energy_telemetry": {
+    "operator": "NABEP_NORTH_AMERICAN_BLUE_ENERGY_PARTNERS",
+    "us_govt_stake_pct": 35.0,
+    "oilfields_count": 17,
+    "share_of_ven_reserves_pct": 20.0,
+    "oct_output_bpd": 224000,
+    "yearend_target_bpd": 250000,
+    "well_clusters": 10
+  },
+  "colombia_leg": {
+    "equipment": "LOCKHEED_MARTIN_C130_HERCULES",
+    "president": "ABELARDO_DE_LA_ESPRIELLA",
+    "congress_friction": true
+  },
+  "alpha_score": 0.972000002861023,
+  "latency_ms": 0.302,
+  "governance": "BUNKER_MODE_0.30x_LOCK"
+}

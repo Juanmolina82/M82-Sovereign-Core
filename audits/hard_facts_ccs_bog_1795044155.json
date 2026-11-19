@@ -1,0 +1,21 @@
+{
+  "engine": "M82_TPU_XLA_VECTOR_CORE_v5",
+  "node": "CHARALLAVE_L4_L5_EDGE",
+  "verification_tier": "PRIMARY_SOURCES_ONLY_REUTERS_WAR_GOV_CATAM",
+  "hard_facts": {
+    "meeting_venue": "MIRAFLORES_PALACE_CARACAS",
+    "pentagon_public_schedule": "NO_PUBLIC_EVENTS_STEALTH_PROTOCOL",
+    "official_readout_source": "WAR_GOV_RELEASE_4652907",
+    "three_phase_plan": [
+      "STABILIZATION",
+      "ECONOMIC_RECOVERY_AND_RECONCILIATION",
+      "DEMOCRATIC_TRANSITION"
+    ],
+    "doctrine_principle": "RESULTS_NOT_ARBITRARY_TIMELINES",
+    "next_stop_confirmed": "CATAM_AIR_BASE_BOGOTA_COLOMBIA_C130_DELIVERY"
+  },
+  "alpha_score": 0.9818000197410583,
+  "latency_ms": 0.48,
+  "governance": "BUNKER_MODE_0.30x_LOCK",
+  "sha256_seal": "be0926d43692252fea6559ade9bbec80aa29fb7c7b3da603af574c900fa633ac"
+}

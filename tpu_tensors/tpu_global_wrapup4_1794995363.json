@@ -1,0 +1,15 @@
+{
+  "engine": "M82_TPU_XLA_VECTOR_CORE_v5",
+  "node": "CHARALLAVE_L4_L5_EDGE",
+  "event": "GLOBAL_MARKETS_WRAPUP4_ANTHROPIC_IPO",
+  "metrics": {
+    "anthropic_ipo_val_usd_t": 1.4,
+    "brent_usd": 91.82,
+    "dxy": 103.82,
+    "eur_usd": 1.096,
+    "us10y_pct": 5.095
+  },
+  "alpha_score": 0.9521999955177307,
+  "latency_ms": 0.325,
+  "governance": "BUNKER_MODE_0.30x_LOCK"
+}

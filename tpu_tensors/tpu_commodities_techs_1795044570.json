@@ -1,0 +1,126 @@
+{
+  "engine": "M82_TPU_XLA_VECTOR_CORE_v5",
+  "node": "CHARALLAVE_L4_L5_EDGE",
+  "source": "LSEG_REUTERS_WANG_TAO_COMMODITIES_TECHNICALS",
+  "session": "SINGAPORE_19_NOV_2026",
+  "levels": {
+    "brent_1m": {
+      "targets": [
+        90.33,
+        89.69
+      ],
+      "resistance": [
+        92.0,
+        92.4,
+        93.04
+      ]
+    },
+    "wti_1m": {
+      "targets": [
+        81.37,
+        80.38
+      ],
+      "resistance": [
+        83.98,
+        85.15,
+        86.59
+      ]
+    },
+    "spot_gold": {
+      "targets": [
+        3713,
+        3693,
+        3661
+      ],
+      "resistance": [
+        3764,
+        3776,
+        3796
+      ]
+    },
+    "lme_copper_3m": {
+      "targets": [
+        12356
+      ],
+      "resistance": [
+        12652,
+        12756,
+        12909
+      ]
+    },
+    "lme_aluminium_3m": {
+      "targets": [
+        2798
+      ],
+      "resistance": [
+        2845,
+        2861,
+        2874
+      ]
+    },
+    "palm_oil_3m": {
+      "targets": [
+        4334,
+        4276
+      ],
+      "resistance": [
+        4392,
+        4463
+      ]
+    },
+    "cbot_soybeans_jan": {
+      "targets": [
+        12.0925,
+        12.065
+      ],
+      "resistance": [
+        12.2,
+        12.2425
+      ]
+    },
+    "cbot_corn_dec": {
+      "targets": [
+        4.275
+      ],
+      "resistance": [
+        4.405,
+        4.4875
+      ]
+    },
+    "cbot_wheat_dec": {
+      "targets": [
+        5.5725
+      ],
+      "resistance": [
+        5.7325,
+        5.765,
+        5.7975
+      ]
+    },
+    "ny_cocoa_dec": {
+      "targets": [
+        4807,
+        4755
+      ],
+      "resistance": [
+        4923,
+        4963,
+        5027
+      ]
+    },
+    "ny_coffee_dec": {
+      "targets": [
+        2.852
+      ],
+      "support": [
+        2.8015,
+        2.776,
+        2.7505
+      ]
+    }
+  },
+  "alpha_score": 0.9585999846458435,
+  "latency_ms": 0.629,
+  "governance": "BUNKER_MODE_0.30x_LOCK",
+  "sha256_seal": "ef1c327037edff05d69744f5acc1af4ddc3ffc22ffd56a6fbaa9ebb9c8359986"
+}

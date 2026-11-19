@@ -1,0 +1,9 @@
+{
+  "engine": "M82_TPU_XLA_VECTOR_CORE_v5",
+  "node": "CHARALLAVE_L4_L5_EDGE",
+  "event": "TRUMP_LANDS_CHINA_APEC",
+  "trilateral_date": "2026-11-19",
+  "alpha_score": 0.9571999907493591,
+  "latency_ms": 0.289,
+  "governance": "BUNKER_MODE_0.30x_LOCK"
+}

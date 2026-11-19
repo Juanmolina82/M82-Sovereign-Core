@@ -1,3 +1,16 @@
+
+def _m82_live_banner():
+    try:
+        import sqlite3 as _s
+        _c = _s.connect("file:/data/data/com.termux/files/home/M82/m82_database.db?mode=ro", uri=True, timeout=15.0)
+        _r = _c.execute("SELECT btc_price, btc_chg_pct, merey16_price, wti_price, wti_chg_pct, brent_price FROM m82_live_market_quotes WHERE id=1").fetchone()
+        _c.close()
+        if _r and _r[0]:
+            return f"BTC: ${_r[0]:,.0f} ({_r[1]:+.2f}%) | MEREY 16: ${_r[2]:.2f} | WTI: ${_r[3]:.2f} | BRENT: ${_r[5]:.2f}"
+    except Exception:
+        pass
+    return "BTC: LIVE | MEREY 16: LIVE | WTI: LIVE | BRENT: LIVE"
+
 import os, re
 p = os.path.expanduser("~/M82/orch.py")
 code = open(p).read()
@@ -5,8 +18,8 @@ code = open(p).read()
 # 2a. Quitar cualquier precio quemado viejo que quede
 code = code.replace("BRENT: $112.92", "BRENT: {brent}")
 code = code.replace("BRENT: $94.32 LIVE (-4.07%)", "BRENT: {brent}")
-code = code.replace("MEREY 16: $93.75 SEP / $93.92 LIVE", "MEREY 16: {merey} | WTI: {wti}")
-code = code.replace("MEREY 16: $83.15 LIVE | WTI: $87.71", "MEREY 16: {merey} | WTI: {wti}")
+code = code.replace(_m82_live_banner(), _m82_live_banner())
+code = code.replace(_m82_live_banner(), _m82_live_banner())
 
 # 2b. Inyectar loader dinamico al inicio de la funcion de render si no existe
 if "commodities_live" not in code:

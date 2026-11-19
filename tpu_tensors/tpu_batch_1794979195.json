@@ -1,0 +1,12 @@
+{
+  "engine": "M82_TPU_XLA_VECTOR_CORE_v5",
+  "node": "CHARALLAVE_L4_L5_EDGE",
+  "governance": "BUNKER_MODE_0.30x_LOCK",
+  "latency_ms": 0.508,
+  "shape": [
+    5,
+    4
+  ],
+  "mean_risk_tensor": 0.9301199913024902,
+  "max_alpha_tensor": 0.9589999914169312
+}

@@ -1,0 +1,16 @@
+{
+  "engine": "M82_TPU_XLA_VECTOR_CORE_v5",
+  "node": "CHARALLAVE_L4_L5_EDGE",
+  "speaker": "SEC_WAR_PETE_HEGSETH",
+  "location": "CARACAS_VENEZUELA",
+  "thesis": "VENEZUELA_OIL_DEAL_OFFSETS_HORMUZ_FOR_WESTERN_HEMISPHERE",
+  "metrics": {
+    "ven_deal_reserves_bn_bbl": 65.0,
+    "strategic_fields": 17,
+    "brent_usd": 92.02,
+    "wti_usd": 84.38
+  },
+  "alpha_score": 0.9761999845504761,
+  "latency_ms": 0.318,
+  "governance": "BUNKER_MODE_0.30x_LOCK"
+}

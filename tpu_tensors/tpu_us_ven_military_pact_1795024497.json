@@ -1,0 +1,15 @@
+{
+  "engine": "M82_TPU_XLA_VECTOR_CORE_v5",
+  "node": "CHARALLAVE_L4_L5_EDGE",
+  "speaker": "SEC_WAR_PETE_HEGSETH",
+  "location": "MIRAFLORES_CARACAS_VENEZUELA",
+  "agreement_pillars": [
+    "JOINT_TRAINING",
+    "INTELLIGENCE_SHARING",
+    "DEFENSE_EQUIPMENT",
+    "BORDER_SECURITY"
+  ],
+  "alpha_score": 0.9782000184059143,
+  "latency_ms": 0.297,
+  "governance": "BUNKER_MODE_0.30x_LOCK"
+}

@@ -1,0 +1,8 @@
+{
+  "engine": "M82_TPU_XLA_VECTOR_CORE_v5",
+  "node": "CHARALLAVE_L4_L5_EDGE",
+  "event": "DUAL_CVN_ARABIAN_SEA",
+  "alpha_score": 0.974399983882904,
+  "latency_ms": 0.344,
+  "governance": "BUNKER_MODE_0.30x_LOCK"
+}
