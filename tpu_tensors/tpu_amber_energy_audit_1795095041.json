@@ -1,0 +1,21 @@
+{
+  "engine": "M82_TPU_XLA_VECTOR_CORE_v5",
+  "node": "CHARALLAVE_L4_L5_EDGE",
+  "source": "M82_FORENSIC_AUDIT_AMBER_ENERGY_20261119",
+  "target_entity": "AMBER_ENERGY_ELLIOTT_INVESTMENT_MANAGEMENT",
+  "audit_findings": {
+    "bid_price_usd": "5.9B",
+    "citgo_2026_ebitda_est_usd": "7.7B-8.0B",
+    "implied_ev_ebitda": "0.75x",
+    "appellate_docket": "THIRD_CIRCUIT_NO_25_3347_ORAL_ARG_20261021",
+    "blocking_factors": [
+      "NO_OFAC_CLOSING_LICENSE",
+      "ETHICAL_WALL_CONFLICTS_WEIL_EVERCORE",
+      "PDVSA_2020_BONDHOLDER_CLAIM"
+    ]
+  },
+  "alpha_score": 0.9779999852180481,
+  "latency_ms": 0.45,
+  "governance": "BUNKER_MODE_0.30x_LOCK",
+  "sha256_seal": "5ea9c47870f42d5005809f517a66446f35cfd5f12bfb3fb1a7b2003d0706e585"
+}
