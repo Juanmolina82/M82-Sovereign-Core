@@ -1,0 +1,23 @@
+{
+  "engine": "M82_TPU_XLA_VECTOR_CORE_v5",
+  "node": "CHARALLAVE_L4_L5_EDGE",
+  "source": "LSEG_WORKSPACE_VISUAL_BOARD_20261119_1625VET",
+  "trending_topics": [
+    "Trump, Xi and Putin Summit",
+    "The Trump Administration",
+    "The Middle East Conflict",
+    "COP31",
+    "War in Ukraine",
+    "Mercury One"
+  ],
+  "key_headlines": [
+    "Trump, Xi and Putin to explore 'peace architecture'",
+    "Western allies warn against Yalta-style carve-up as Trump meets Xi and Putin",
+    "Trump official floated ceding Guyanese territory to Venezuela, sources say",
+    "Putin says he will hit back hard after Ukraine strikes Crimean Bridge again"
+  ],
+  "alpha_score": 0.984499990940094,
+  "latency_ms": 0.22,
+  "governance": "BUNKER_MODE_0.30x_LOCK",
+  "sha256_seal": "6b084d4193976b0658f1297c2640f205fe7df0f6f0ac3da020b3265a9f83b9d0"
+}
