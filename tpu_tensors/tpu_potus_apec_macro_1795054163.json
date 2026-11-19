@@ -1,0 +1,14 @@
+{
+  "engine": "M82_TPU_XLA_VECTOR_CORE_v5",
+  "node": "CHARALLAVE_L4_L5_EDGE",
+  "source": "POTUS_APEC_MACRO_STATEMENT_20261118",
+  "metrics_cited": {
+    "new_equipment_investment_yoy_pct": 21.0,
+    "us_exports_level": "ALL_TIME_HIGH",
+    "developed_markets_growth_rank": 1
+  },
+  "alpha_score": 0.9769999980926514,
+  "latency_ms": 0.221,
+  "governance": "BUNKER_MODE_0.30x_LOCK",
+  "sha256_seal": "1d012e2b429ff298ff75c370b7574cf731319969e15c5ccd363d8de2ba4b97fb"
+}
