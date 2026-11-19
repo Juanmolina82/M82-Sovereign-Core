@@ -1,0 +1,17 @@
+{
+  "engine": "M82_TPU_XLA_VECTOR_CORE_v5",
+  "node": "CHARALLAVE_L4_L5_EDGE",
+  "source": "CNBC_ANTHROPIC_SEC_WEALTH_20261119",
+  "metrics": {
+    "avg_employee_worth_base_usd": ">40M",
+    "employees_over_100m": ">400",
+    "base_ipo_price_usd": 83.0,
+    "base_valuation_usd": ">1.4T",
+    "opening_valuation_usd": "~2.0T",
+    "rank_us": "TOP_10_MOST_VALUABLE_US_COMPANIES"
+  },
+  "alpha_score": 0.9819999933242798,
+  "latency_ms": 0.3,
+  "governance": "BUNKER_MODE_0.30x_LOCK",
+  "sha256_seal": "4f757726827dfbf801011acf4002dbea2cc462b72514ff4d679a4881ac878236"
+}
