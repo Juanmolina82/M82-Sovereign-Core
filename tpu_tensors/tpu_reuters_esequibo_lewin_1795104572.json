@@ -1,0 +1,10 @@
+{
+  "engine": "M82_TPU_XLA_VECTOR_CORE_v5",
+  "node": "CHARALLAVE_L4_L5_EDGE",
+  "workspace_account": "jmmp@molina82.com",
+  "source": "REUTERS_EXCLUSIVE_LEWIN_GUYANA_ESEQUIBO_20261119",
+  "alpha_score": 0.9779999852180481,
+  "latency_ms": 0.357,
+  "governance": "BUNKER_MODE_0.30x_LOCK",
+  "sha256_seal": "22ec6231fdad28fec1f12651333af65e9a74fccf9df9446fb101ee576af5463e"
+}
