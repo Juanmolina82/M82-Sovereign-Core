@@ -1,8 +1,37 @@
+# === NÚCLEO, CREDENCIALES Y VAULT ===
+vault/
+vault.json
 .env
-*.token
-*.key
+.env.*
 *.pem
-m82_database.db-wal
-m82_database.db-shm
-logs/*.log
+*.key
+*.p12
+credentials.json
+
+# === BASES DE DATOS SQLITE WAL & ESTADO DE RUNTIME ===
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+m82_database.db*
+last_state.json
+metrics.json
+m82_fused_signal.json
+
+# === LOGS, CACHÉ Y ENTORNOS ===
 __pycache__/
+*.pyc
+*.log
+*.pid
+runtime/
+logs/
+.venv/
+env/
+
+# === ARTEFACTOS MULTIMEDIA Y BACKUPS ===
+M82_Backups/
+M82_Cards/
+*.png
+*.jpg
+*.tar.gz
