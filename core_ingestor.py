@@ -7,7 +7,7 @@ DB_PATH = os.path.join(BASE_DIR, "m82_database.db")
 BOT_SCRIPT = os.path.join(BASE_DIR, "m82_telegram_bot.py")
 
 def init_db():
-    conn = sqlite3.connect(DB_PATH)
+    conn = sqlite3.connect(DB_PATH, timeout=60.0)
     c = conn.cursor()
     # Habilitar Write-Ahead Logging para alto rendimiento concurrente
     c.execute("PRAGMA journal_mode=WAL;")
@@ -34,7 +34,7 @@ def ingest_event(source, category, headline, risk_score, sentiment, entities, m8
     ts = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     meta = {"hash": h, "desk": desk, "latency_ms": 95}
 
-    conn = sqlite3.connect(DB_PATH)
+    conn = sqlite3.connect(DB_PATH, timeout=60.0)
     c = conn.cursor()
     
     # De-duplicación estricta por hash
