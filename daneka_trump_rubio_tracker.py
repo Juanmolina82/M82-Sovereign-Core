@@ -2,7 +2,7 @@
 import os, sys, time, sqlite3, requests, datetime
 
 DB_PATH = os.path.expanduser("~/M82/m82_database.db")
-TG_TOKEN = "8600412468:AAHLLRdPus6OVIhSgDkbmGCS2dWKDUfP3Y"
+TG_TOKEN = "8600412468:AAHiBNgu230J01IzeqL7rZORHdmAcgHFcj4"
 CHAT_ID = "-1004335849125"
 NTFY_URL = "https://ntfy.sh/M82-Molina-Alerts-v3"
 

@@ -14,7 +14,7 @@ DB_PATH = os.path.expanduser("~/M82/m82_database.db")
 NTFY_TOPIC = "MM82"
 NTFY_URL = f"https://ntfy.sh/{NTFY_TOPIC}"
 
-TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "8600412468:AAHLLRDPus66Y1hSgDKbwGC5zdW6DdufP3Y")
+TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "8600412468:AAHiBNgu230J01IzeqL7rZORHdmAcgHFcj4")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "-1004335849125")
 
 def get_latest_event():

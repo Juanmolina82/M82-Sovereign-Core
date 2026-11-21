@@ -5,7 +5,7 @@ from PIL import Image, ImageDraw, ImageFont
 
 DB_PATH = os.path.expanduser("~/M82/m82_database.db")
 IMG_PATH = os.path.expanduser("~/M82/m82_card.png")
-TOKEN = "8600412468:AAHLLRDPus66Y1hSgDKbwGC5zdW6DdufP3Y"
+TOKEN = "8600412468:AAHiBNgu230J01IzeqL7rZORHdmAcgHFcj4"
 CHAT_ID = "-1004335849125"
 NFT_URL = "https://ntfy.sh/M82-Molina-Alerts-v2"
 

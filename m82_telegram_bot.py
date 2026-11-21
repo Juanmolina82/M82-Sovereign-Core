@@ -2,7 +2,7 @@
 import sqlite3, json, os, urllib.request, urllib.parse, math
 from PIL import Image, ImageDraw, ImageFont
 
-TELEGRAM_TOKEN = os.getenv("M82_TELEGRAM_TOKEN", "8600412468:AAHLLRDPus66Y1hSgDKbwGC5zdW6DdufP3Y")
+TELEGRAM_TOKEN = os.getenv("M82_TELEGRAM_TOKEN", "8600412468:AAHiBNgu230J01IzeqL7rZORHdmAcgHFcj4")
 TELEGRAM_CHAT_ID = os.getenv("M82_CHAT_ID", "-1004335849125")
 DB_PATH = os.path.expanduser("~/M82/m82_database.db")
 CARD_IMG_PATH = os.path.expanduser("~/M82/latest_card.png")

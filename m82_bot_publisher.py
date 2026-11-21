@@ -5,7 +5,7 @@ import requests
 import subprocess
 from m82_card_publisher import create_m82_agi_quantum_card
 
-TOKEN = os.getenv("M82_TELEGRAM_TOKEN", "8600412468:AAHLLRDPus66Y1hSgDKbwGC5zdW6DdufP3Y")
+TOKEN = os.getenv("M82_TELEGRAM_TOKEN", "8600412468:AAHiBNgu230J01IzeqL7rZORHdmAcgHFcj4")
 CHAT = os.getenv("M82_TELEGRAM_CHAT", "-1004335849125")
 DB_PATH = os.path.expanduser("~/M82/m82_database.db")
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import os, sys, time, sqlite3, requests, json
 
-TOKEN = "8600412468:AAHLLRDPus66Y1hSgDKbwGC5zdW6DdufP3Y"
+TOKEN = "8600412468:AAHiBNgu230J01IzeqL7rZORHdmAcgHFcj4"
 DB_PATH = os.path.expanduser("~/M82/m82_database.db")
 BASE_URL = f"https://api.telegram.org/bot{TOKEN}"
 

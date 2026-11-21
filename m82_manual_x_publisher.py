@@ -4,7 +4,7 @@ import os
 import requests
 
 DB_PATH = os.path.expanduser("~/M82/m82_database.db")
-TG_TOKEN = "8600412468:AAHLURDPus66Y1hSgDKbwGC5zdN6DdufP3Y"
+TG_TOKEN = "8600412468:AAHiBNgu230J01IzeqL7rZORHdmAcgHFcj4"
 TG_CHAT_ID = "-1004335849125"
 
 def test_telegram_connection():

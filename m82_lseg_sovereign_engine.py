@@ -18,7 +18,7 @@ BASE_DIR = Path("/data/data/com.termux/files/home/M82")
 DB_PATH = BASE_DIR / "m82_database.db"
 ENV_FILE = BASE_DIR / ".lseg_sovereign.env"
 
-TG_TOKEN = "8600412468:AAHLLRDPus66Y1hSgDKbwGC5zdW6DdufP3Y"
+TG_TOKEN = "8600412468:AAHiBNgu230J01IzeqL7rZORHdmAcgHFcj4"
 TG_CHAT = "-1004335849125"
 
 # Universo de instrumentos LSEG Workspace monitoreados autonomamente

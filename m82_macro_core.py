@@ -12,7 +12,7 @@ GALLERY_DIR = "/storage/emulated/0/M82card"
 os.makedirs(GALLERY_DIR, exist_ok=True)
 os.makedirs(os.path.join(BASE_DIR, "cards"), exist_ok=True)
 
-TOKEN = "8600412468:AAHLLRDPus66Y1hSgDKbwGC5zdW6DdufP3Y"
+TOKEN = "8600412468:AAHiBNgu230J01IzeqL7rZORHdmAcgHFcj4"
 CHAT_ID = "-1004335849125"
 
 def log(msg):

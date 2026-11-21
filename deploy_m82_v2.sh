@@ -35,7 +35,7 @@ DB_PATH = os.path.join(BASE_DIR, "m82_database.db")
 CARDS_DIR = "/sdcard/Pictures/M82_Cards"
 FONT_PATH = os.path.join(BASE_DIR, "fonts/Roboto-Bold.ttf")
 
-TOKEN = "8600412468:AAHLLRDPus66Y1hSgDKbwGC5zdW6DdufP3Y"
+TOKEN = "8600412468:AAHiBNgu230J01IzeqL7rZORHdmAcgHFcj4"
 CHAT_ID = "-1004335849125"
 
 def get_db():

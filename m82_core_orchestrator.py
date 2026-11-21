@@ -7,7 +7,7 @@ try:
 except Exception:
     pass
 
-TOKEN = "8600412468:AAHLLRDPus66Y1hSgDKbwGC5zdW6DdufP3Y"
+TOKEN = "8600412468:AAHiBNgu230J01IzeqL7rZORHdmAcgHFcj4"
 CHAT_ID = "-1004335849125"
 NTFY_URL = "https://ntfy.sh/M82-Molina-Alerts-v2"
 DB_PATH = os.path.expanduser("~/M82/m82_database.db")

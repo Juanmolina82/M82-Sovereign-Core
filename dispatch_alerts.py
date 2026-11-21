@@ -6,7 +6,7 @@ BASE_DIR = os.path.expanduser("~/M82")
 DB_PATH = os.path.join(BASE_DIR, "m82_database.db")
 CARD_PATH = os.path.join(BASE_DIR, "card_output.png")
 
-TELEGRAM_TOKEN = os.getenv("M82_TELEGRAM_TOKEN", "8600412468:AAHLLRDPus66Y1hSgDKbwGC5zdW6DdufP3Y")
+TELEGRAM_TOKEN = os.getenv("M82_TELEGRAM_TOKEN", "8600412468:AAHiBNgu230J01IzeqL7rZORHdmAcgHFcj4")
 TELEGRAM_CHAT_ID = os.getenv("M82_CHAT_ID", "-1004335849125")
 NYFT_ENDPOINT = os.getenv("NYFT_ENDPOINT", os.getenv("NFIT_ENDPOINT", "http://127.0.0.1:8080/api/alerts"))
 

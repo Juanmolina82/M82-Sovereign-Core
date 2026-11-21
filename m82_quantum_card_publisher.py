@@ -9,7 +9,7 @@ from PIL import Image, ImageDraw, ImageFont
 from dotenv import load_dotenv
 
 load_dotenv(os.path.expanduser("~/M82/.env"))
-TG_TOKEN = os.getenv("M82_TELEGRAM_TOKEN", "8600412468:AAHLLRDPus66Y1hSgDKbwGC5zdW6DdufP3Y")
+TG_TOKEN = os.getenv("M82_TELEGRAM_TOKEN", "8600412468:AAHiBNgu230J01IzeqL7rZORHdmAcgHFcj4")
 TG_CHAT_ID = os.getenv("M82_TELEGRAM_CHAT", "-1004335849125")
 DB_PATH = os.path.expanduser("~/m82_database.db")
 OUTPUT_DIR = os.path.expanduser("~/M82/output_cards")

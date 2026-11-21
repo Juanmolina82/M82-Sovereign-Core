@@ -63,3 +63,18 @@ def ingest_event(source, category, headline, risk_score, sentiment, entities, m8
 
 if __name__ == "__main__":
     print("Módulo core_ingestor.py listo para operación autónoma en Charallave.")
+
+
+    # --- M82CARD GALLERY SYNC & ANDROID MEDIA SCANNER ---
+    try:
+        import glob as _g, shutil as _sh, subprocess as _sp
+        _dest = "/storage/emulated/0/M82card"
+        os.makedirs(_dest, exist_ok=True)
+        for _src_dir in [os.path.expanduser("~/M82/cards"), os.path.expanduser("~/M82/output"), "/sdcard/Pictures/M82_Cards", _dest]:
+            for _png in _g.glob(os.path.join(_src_dir, "*.png")):
+                _target = os.path.join(_dest, os.path.basename(_png))
+                if os.path.abspath(_png) != os.path.abspath(_target) and not os.path.exists(_target):
+                    _sh.copy2(_png, _target)
+                _sp.run(["am", "broadcast", "-a", "android.intent.action.MEDIA_SCANNER_SCAN_FILE", "-d", f"file://{_target}"], stdout=_sp.DEVNULL, stderr=_sp.DEVNULL)
+    except Exception:
+        pass

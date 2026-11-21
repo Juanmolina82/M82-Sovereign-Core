@@ -14,7 +14,7 @@ from datetime import datetime
 
 BASE_DIR = Path("/data/data/com.termux/files/home/M82")
 DB_PATH = BASE_DIR / "m82_database.db"
-TG_TOKEN = "8600412468:AAHLLRDPus66Y1hSgDKbwGC5zdW6DdufP3Y"
+TG_TOKEN = "8600412468:AAHiBNgu230J01IzeqL7rZORHdmAcgHFcj4"
 TG_CHAT = "-1004335849125"
 NTFY_URL = "https://ntfy.sh/M82-Molina-Alerts-v2"
 

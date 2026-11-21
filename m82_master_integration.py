@@ -1,7 +1,7 @@
 import sqlite3
 import requests
 
-TOKEN = "8600412468:AAHLLRDPus66Y1hSgDKbwGC5zdW6DdufP3Y"
+TOKEN = "8600412468:AAHiBNgu230J01IzeqL7rZORHdmAcgHFcj4"
 CHAT_ID = "1020305418"
 
 def desplegar_plataforma_m82():
