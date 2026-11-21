@@ -4,10 +4,9 @@ import os, time, sqlite3
 DB_PATH = os.path.expanduser("~/M82/m82_database.db")
 
 def init_db():
-    conn = sqlite3.connect(DB_PATH, timeout=60)
+    conn = sqlite3.connect(DB_PATH)
     c = conn.cursor()
     c.execute("PRAGMA journal_mode=WAL;")
-    c.execute("PRAGMA busy_timeout=60000;")
     c.execute("""
         CREATE TABLE IF NOT EXISTS m82_multi_stream (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -21,9 +20,8 @@ def init_db():
     conn.close()
 
 def run_ingest_cycle():
-    conn = sqlite3.connect(DB_PATH, timeout=60)
+    conn = sqlite3.connect(DB_PATH)
     c = conn.cursor()
-    c.execute("PRAGMA busy_timeout=60000;")
     
     sample_signals = [
         ("REUTERS_TOP", "Global markets react to central bank interest rate decisions"),

@@ -1,55 +1,11 @@
-import time
 #!/usr/bin/env python3
-import sqlite3
-import json
-import os
-import urllib.request
-import urllib.parse
-import math
-import requests
-import subprocess
-import shutil
-from datetime import datetime
+import sqlite3, json, os, urllib.request, urllib.parse, math
 from PIL import Image, ImageDraw, ImageFont
 
 TELEGRAM_TOKEN = os.getenv("M82_TELEGRAM_TOKEN", "8600412468:AAHLLRDPus66Y1hSgDKbwGC5zdW6DdufP3Y")
 TELEGRAM_CHAT_ID = os.getenv("M82_CHAT_ID", "-1004335849125")
-NTFY_TOPIC_URL = "https://ntfy.sh/M82-Molina-Alerts-v2"
-
 DB_PATH = os.path.expanduser("~/M82/m82_database.db")
-CARD_IMG_PATH = os.path.expanduser("~/M82/card_output.png")
-STREAM_IMG_PATH = os.path.expanduser("~/M82/m82_breaking_stream_card.png")
-GALLERY_DIR = os.path.expanduser("~/storage/pictures/M82_Cards")
-
-def save_to_android_gallery():
-    try:
-        if not os.path.exists(GALLERY_DIR):
-            os.makedirs(GALLERY_DIR, exist_ok=True)
-            
-        timestamp_str = datetime.now().strftime("%Y%m%d_%H%M%S")
-        gallery_file = os.path.join(GALLERY_DIR, f"M82_CARD_{timestamp_str}.png")
-        
-        shutil.copy(CARD_IMG_PATH, gallery_file)
-        
-        # Escaneo asíncrono no bloqueante
-        subprocess.Popen(["termux-media-scan", gallery_file], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-        subprocess.Popen(["termux-media-scan", CARD_IMG_PATH], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-        print(f"📸 [GALERÍA] Guardada exitosamente: {gallery_file}")
-    except Exception as e:
-        print(f"⚠️ [GALERÍA] Error de sincronización: {e}")
-
-def build_240char_post(headline, tag):
-    tag_clean = str(tag).upper()
-    prefix = f"🚨 #M82 BREAKING [{tag_clean}]\n\n"
-    suffix = "\n\n🏛 @MolinaHoldings LLC | AGI Node"
-    max_headline_len = 240 - len(prefix) - len(suffix)
-    
-    if len(headline) > max_headline_len:
-        truncated_headline = headline[:max_headline_len - 3].strip() + "..."
-    else:
-        truncated_headline = headline
-        
-    return f"{prefix}{truncated_headline}{suffix}"
+CARD_IMG_PATH = os.path.expanduser("~/M82/latest_card.png")
 
 def load_safe_font(size):
     font_candidates = [
@@ -59,8 +15,10 @@ def load_safe_font(size):
     ]
     for path in font_candidates:
         if os.path.exists(path):
-            try: return ImageFont.truetype(path, size)
-            except Exception: continue
+            try:
+                return ImageFont.truetype(path, size)
+            except Exception:
+                continue
     return ImageFont.load_default()
 
 def draw_scaled_text(draw, position, text, fill, scale=3):
@@ -78,6 +36,7 @@ def generate_corporate_card(headline, source_tag):
     img = Image.new('RGB', (width, height), color='#070A12')
     draw = ImageDraw.Draw(img)
 
+    # Red Quantum M82
     nodes = [(700, 220), (820, 290), (910, 200), (970, 320), 
              (580, 580), (750, 560), (850, 640), (980, 600),
              (480, 640), (580, 750), (720, 900), (220, 940)]
@@ -95,7 +54,7 @@ def generate_corporate_card(headline, source_tag):
     font_header = load_safe_font(32)
     font_small = load_safe_font(20)
 
-    # Marcos
+    # Marcos esquineros
     draw.line([(40, 40), (80, 40)], fill='#334155', width=4)
     draw.line([(40, 40), (40, 80)], fill='#334155', width=4)
     draw.line([(920, 40), (960, 40)], fill='#334155', width=4)
@@ -108,9 +67,10 @@ def generate_corporate_card(headline, source_tag):
 
     # Encabezado
     draw.text((75, 70), "SYSTEM: AGI-CORE // QUANTUM NODE: M82-STREAM // LATENCY: 0.012ms", fill='#475569', font=font_small)
-    draw.text((75, 120), f"#M82 BREAKING [{str(source_tag).upper()}]", fill='#DC2626', font=font_header)
+    draw.text((75, 120), f"#M82 BREAKING [{source_tag.upper()}]", fill='#DC2626', font=font_header)
     draw.line([(75, 180), (925, 180)], fill='#1E293B', width=2)
 
+    # Headline Formateado
     formatted_headline = headline.title()
     words = formatted_headline.split()
     lines = []
@@ -124,6 +84,7 @@ def generate_corporate_card(headline, source_tag):
             current_line = [word]
     lines.append(" ".join(current_line))
 
+    # Renderizado del titular
     y_pos = 320
     is_default = isinstance(font_main, ImageFont.ImageFont)
     
@@ -140,73 +101,44 @@ def generate_corporate_card(headline, source_tag):
     draw.text((75, 1085), "@MolinaHoldings LLC", fill='#FFFFFF', font=font_header)
 
     img.save(CARD_IMG_PATH)
-    shutil.copy(CARD_IMG_PATH, STREAM_IMG_PATH)
-    save_to_android_gallery()
 
-def dispatch_all(row):
-    headline = row[0]
-    tag = row[4] if len(row) > 4 else "BREAKING"
-    risk = float(row[3]) if len(row) > 3 else 8.0
-    
-    caption_text = build_240char_post(headline, tag)
-
-    # 1. Telegram Dispatch
-    url_tg = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendPhoto"
+def send_telegram_photo():
+    url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendPhoto"
     boundary = "----WebKitFormBoundary7MA4YWxkTrZu0gW"
-    headers_tg = {"Content-Type": f"multipart/form-data; boundary={boundary}"}
+    headers = {"Content-Type": f"multipart/form-data; boundary={boundary}"}
     
-    if os.path.exists(CARD_IMG_PATH):
-        with open(CARD_IMG_PATH, 'rb') as f:
-            img_bytes = f.read()
+    if not os.path.exists(CARD_IMG_PATH):
+        print("❌ Imagen no encontrada para envío.")
+        return
 
-        body = []
-        body.append(f"--{boundary}\r\nContent-Disposition: form-data; name=\"chat_id\"\r\n\r\n{TELEGRAM_CHAT_ID}\r\n".encode())
-        body.append(f"--{boundary}\r\nContent-Disposition: form-data; name=\"caption\"\r\n\r\n{caption_text}\r\n".encode())
-        body.append(f"--{boundary}\r\nContent-Disposition: form-data; name=\"parse_mode\"\r\n\r\nMarkdown\r\n".encode())
-        body.append(f"--{boundary}\r\nContent-Disposition: form-data; name=\"photo\"; filename=\"card.png\"\r\nContent-Type: image/png\r\n\r\n".encode())
-        body.append(img_bytes)
-        body.append(f"\r\n--{boundary}--\r\n".encode())
-        
-        req = urllib.request.Request(url_tg, data=b"".join(body), headers=headers_tg)
-        try:
-            urllib.request.urlopen(req, timeout=10)
-            print("✅ [TELEGRAM] Alerta e imagen transmitidas exitosamente.")
-        except Exception as e:
-            print(f"❌ [TELEGRAM] Error: {e}")
+    with open(CARD_IMG_PATH, 'rb') as f:
+        img_bytes = f.read()
 
-    # 2. Ntfy Push
-    safe_title = f"#M82 BREAKING [{tag}]".encode('ascii', 'ignore').decode('ascii')
-    ntfy_headers = {
-        "Title": safe_title,
-        "Priority": "urgent" if risk >= 9.0 else "high",
-        "Tags": "warning,rotating_light",
-        "Markdown": "yes"
-    }
+    body = []
+    body.append(f"--{boundary}\r\nContent-Disposition: form-data; name=\"chat_id\"\r\n\r\n{TELEGRAM_CHAT_ID}\r\n".encode())
+    body.append(f"--{boundary}\r\nContent-Disposition: form-data; name=\"photo\"; filename=\"card.png\"\r\nContent-Type: image/png\r\n\r\n".encode())
+    body.append(img_bytes)
+    body.append(f"\r\n--{boundary}--\r\n".encode())
+    
+    payload = b"".join(body)
+    req = urllib.request.Request(url, data=payload, headers=headers)
+    
     try:
-        r_ntfy = requests.post(NTFY_TOPIC_URL, data=caption_text.encode('utf-8'), headers=ntfy_headers, timeout=5)
-        if r_ntfy.status_code == 200:
-            print(f"✅ [NTFY] Push transmitido a {NTFY_TOPIC_URL}")
+        urllib.request.urlopen(req, timeout=10)
+        print("✅ Tarjeta corporativa generada y enviada a Telegram exitosamente.")
     except Exception as e:
-        print(f"⚠️ [NTFY] Error: {e}")
+        print(f"❌ Error al enviar imagen a Telegram: {e}")
 
 if __name__ == "__main__":
     if not os.path.exists(DB_PATH):
         print("❌ Base de datos no encontrada.")
-        exit(1)
+        sys.exit(1)
 
     conn = sqlite3.connect(DB_PATH)
     c = conn.cursor()
-    c.execute("""
-        SELECT headline, source, category, risk_score, m82_tag, metadata_json, sentiment, entities 
-        FROM macro_dosier 
-        WHERE risk_score >= 8.0 
-        ORDER BY id DESC LIMIT 1;
-    """)
+    c.execute("SELECT headline, m82_tag FROM macro_dosier WHERE risk_score >= 8.0 ORDER BY id DESC LIMIT 1;")
     row = c.fetchone()
     if row:
-        print(f"⚡ Procesando despacho instantáneo para: {row[0][:50]}...")
-        generate_corporate_card(row[0], row[4])
-        dispatch_all(row)
-    else:
-        print("ℹ️ No hay registros con Risk Score >= 8.0 pendientes.")
+        generate_corporate_card(row[0], row[1])
+        send_telegram_photo()
     conn.close()
