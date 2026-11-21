@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
 """
 ================================================================================
- M82 MACRO-INTELLIGENCE SUITE // NODO CHARALLAVE (MASTER DEPLOYER & ORCHESTRATOR 2026)
+ M82 MACRO-INTELLIGENCE SUITE // NODO CHARALLAVE (MASTER DEPLOYER & ORCHESTRATOR)
 ================================================================================
- Arquitectura Unificada Actualizada:
-  1. Activación Automática de Termux Wake-Lock.
-  2. Base de Datos SQLite (m82_database.db): Esquemas, Migraciones, Registros y Audit.
-  3. Matriz Completa de 40 Daemons distribuidos en 8 Mesas Macro (Desks).
-  4. Ingesta Integrada: Cables M82 Wire/M82_MACRO (Venezuela/CVX), PE Dry Powder ($2.008T) y Top Megafunds.
-  5. Engine Visual HUD Headless (matplotlib Agg Backend) con estética Cyberpunk.
-  6. API Agent Server Flask (Puerto 8083) + Static HTTP Asset Server (Puerto 8080).
+ Arquitectura Unificada:
+  1. Base de Datos SQLite (m82_database.db): Esquemas, Migraciones, Registros y Audit.
+  2. Registro de 40 Daemons distribuidos en 8 Mesas Macro (Desks).
+  3. Engine Visual HUD Headless (matplotlib Agg Backend) con estética Cyberpunk.
+  4. Ingesta de Telemetría Refinitiv Workspace (PE Dry Powder $2.008T + Top 10 Megafunds).
+  5. API Agent Server Flask (Puerto 8083) + Static HTTP Asset Server (Puerto 8080).
+  6. Supervisor de Procesos Híbrido (8 Líderes Persistentes + 32 Workers On-Demand).
 """
 
 import os
@@ -19,7 +19,7 @@ import json
 import datetime
 import subprocess
 
-# Configuración de Entorno Headless para Visualización
+# Configuración de Entorno Headless
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
@@ -31,19 +31,8 @@ os.makedirs(BASE_DIR, exist_ok=True)
 DB_PATH = os.path.join(BASE_DIR, "m82_database.db")
 
 print("================================================================================")
-print(" 🚀 INICIALIZANDO DEPLOYER MAESTRO M82 // NODO CHARALLAVE (FULL SUITE UPDATED)")
+print(" 🚀 INICIALIZANDO DEPLOYER MAESTRO M82 // NODO CHARALLAVE")
 print("================================================================================")
-
-# ------------------------------------------------------------------------------
-# FASE 0: WAKE-LOCK TERMUX
-# ------------------------------------------------------------------------------
-def activate_wake_lock():
-    print("\n[FASE 0] Adquiriendo Termux Wake-Lock para ejecución continua...")
-    try:
-        subprocess.run(["termux-wake-lock"], check=False)
-        print("  ✓ Wake-Lock activado (Protección contra Deep Sleep CPU).")
-    except Exception as e:
-        print(f"  ⚠️ No se pudo invocar termux-wake-lock directamente: {e}")
 
 # ------------------------------------------------------------------------------
 # FASE 1: INICIALIZACIÓN Y MIGRACIÓN DE SCHEMAS SQLITE
@@ -115,7 +104,7 @@ def register_daemons():
         ("m82_pe_stage_allocation_daemon.py", "PE_DESK", "STAGE_ALLOCATION"),
         ("m82_pe_geographic_flows_daemon.py", "PE_DESK", "GEOGRAPHIC_FLOWS"),
         ("m82_vc_ai_unicorns_daemon.py", "VC_DESK", "AI_DEEPTECH_ROUNDS"),
-        ("m82_secondary_markets_daemon.py", "PE_DESK", "M82_MACROONDARY_LIQUIDITY"),
+        ("m82_secondary_markets_daemon.py", "PE_DESK", "SECONDARY_LIQUIDITY"),
         # 2. Musk Empire & Tech Desk (6)
         ("m82_musk_daemon.py", "MUSK_DESK", "GENERAL_TELEMETRY"),
         ("m82_musk_empire_daemon.py", "MUSK_DESK", "VALUATION_CONSOLIDATED"),
@@ -141,8 +130,8 @@ def register_daemons():
         ("m82_us_china_tariffs_daemon.py", "GEOPOLITICS_DESK", "TARIFFS_SEMICONDUCTORS"),
         ("m82_gprk_index_daemon.py", "GEOPOLITICS_DESK", "GPRK_REALTIME_INDEX"),
         ("m82_sanctions_compliance_daemon.py", "GEOPOLITICS_DESK", "OFAC_SHADOW_FLEETS"),
-        # 6. Terminales & M82_MACRO Desk (4)
-        ("m82_m82_macro_notebook_daemon.py", "TERMINAL_DESK", "M82_WIRE_WORKSPACE_NOTEBOOK"),
+        # 6. Terminales & LSEG Desk (4)
+        ("m82_lseg_notebook_daemon.py", "TERMINAL_DESK", "REFINITIV_WORKSPACE_NOTEBOOK"),
         ("m82_refinitiv_company_ranking_daemon.py", "TERMINAL_DESK", "COMPANY_RANKING_FEED"),
         ("m82_refinitiv_firm_ranking_daemon.py", "TERMINAL_DESK", "FIRM_RANKING_FEED"),
         ("m82_bloomberg_news_sentiment_daemon.py", "TERMINAL_DESK", "FINANCIAL_NEWS_NLP"),
@@ -166,54 +155,35 @@ def register_daemons():
     for d_name, desk, vector in daemons_matrix:
         c.execute("""
             INSERT INTO m82_daemons_registry (daemon_name, desk_category, vector_type, status, last_heartbeat)
-            VALUES (?, ?, ?, 'ACTIVE_LITE_WAKELOCK', ?)
+            VALUES (?, ?, ?, 'ACTIVE_REGISTERED', ?)
             ON CONFLICT(daemon_name) DO UPDATE SET
                 desk_category=excluded.desk_category,
                 vector_type=excluded.vector_type,
-                status='ACTIVE_LITE_WAKELOCK',
                 last_heartbeat=excluded.last_heartbeat
         """, (d_name, desk, vector, now))
 
     conn.commit()
     conn.close()
-    print(f"  ✓ {len(daemons_matrix)} Daemons registrados/actualizados en m82_daemons_registry.")
+    print(f"  ✓ {len(daemons_matrix)} Daemons registrados en m82_daemons_registry.")
 
 # ------------------------------------------------------------------------------
-# FASE 3: INGESTA DE SEÑALES MACRO (M82_WIRE WORKSPACE, CABLES VENEZUELA Y CVX)
+# FASE 3: INGESTA DE SEÑALES MACRO (REFINITIV WORKSPACE & PE MARKET)
 # ------------------------------------------------------------------------------
 def ingest_macro_signals():
-    print("\n[FASE 3] Inyectando Telemetría M82 Wire Workspace (Bonos VEN + CVX + PE) en macro_dosier...")
+    print("\n[FASE 3] Inyectando Telemetría Refinitiv Workspace en macro_dosier...")
     conn = sqlite3.connect(DB_PATH)
     c = conn.cursor()
 
     now = datetime.datetime.now().isoformat()
     signals = [
-        # Cables M82 Wire Workspace extraídos
         {
-            "source": "M82_WIRE_WORKSPACE_M82_MACRO",
-            "category": "VEN_BONDS_RALLY",
-            "headline": "Venezuela debt rally sees eyes on higher recovery price",
-            "gprk": 98.5,
-            "risk_score": 9.2,
-            "meta": {"entity": "REPUBLIC OF VENEZUELA", "duns": "003011988", "topic": "Debt Recovery Price Increase"}
+            "source": "REFINITIV_WORKSPACE_FULL",
+            "category": "FIRM_AND_COMPANY_RANKINGS",
+            "headline": "Refinitiv Workspace Telemetry Render Complete: Firm & Company Rankings Fully Synced",
+            "gprk": 99.1,
+            "risk_score": 9.9,
+            "meta": {"firm_ranking_status": "LOADED", "company_ranking_status": "LOADED", "workspace_sync": "100%"}
         },
-        {
-            "source": "M82_WIRE_WORKSPACE_M82_MACRO",
-            "category": "VEN_DEBT_RESTRUCTURING",
-            "headline": "Lazard offers Venezuela debt restructuring advice",
-            "gprk": 97.8,
-            "risk_score": 8.9,
-            "meta": {"advisor": "Lazard", "target": "Sovereign & PDVSA Bonds"}
-        },
-        {
-            "source": "M82_WIRE_WORKSPACE_M82_MACRO",
-            "category": "CVX_VENEZUELA_OPERATIONS",
-            "headline": "Chevron / Venezuela Joint Ventures for Oil Investment & Production Continuity",
-            "gprk": 96.4,
-            "risk_score": 7.5,
-            "meta": {"ticker": "CVX.N", "sector": "Integrated Oil & Gas", "joint_ventures": "Petropiar, Petroboscán"}
-        },
-        # Telemetría de Mercado Private Equity
         {
             "source": "PE_LARGEST_FUNDS_DESK",
             "category": "MEGA_FUNDS_CONCENTRATION",
@@ -238,7 +208,7 @@ def ingest_macro_signals():
     for sig in signals:
         c.execute("""
             INSERT INTO macro_dosier (source, category, headline, gprk_index, yield_10y_delta, oil_spread_impact, risk_score, metadata_json)
-            VALUES (?, ?, ?, ?, 0.02, 1.10, ?, ?)
+            VALUES (?, ?, ?, ?, 0.02, 0.85, ?, ?)
         """, (sig["source"], sig["category"], sig["headline"], sig["gprk"], sig["risk_score"], json.dumps(sig["meta"])))
 
         c.execute("""
@@ -248,7 +218,7 @@ def ingest_macro_signals():
 
     conn.commit()
     conn.close()
-    print("  ✓ Cables de M82 Wire Workspace y métricas PE inyectados en macro_dosier.")
+    print("  ✓ Señales de alta prioridad inyectadas y transmitidas a m82_multi_stream.")
 
 # ------------------------------------------------------------------------------
 # FASE 4: ENGINE RENDERER MATPLOTLIB (GENERACIÓN DE CARDS Y DASHBOARD)
@@ -318,7 +288,7 @@ def generate_hud_assets():
     plt.savefig(dash_path, facecolor=fig.get_facecolor(), edgecolor='none')
     plt.close()
 
-    print(f"  ✓ Assets visuales generados:\n     - {card_path}\n     - {dash_path}")
+    print(f"  ✓ Assets visuales creados:\n     - {card_path}\n     - {dash_path}")
 
 # ------------------------------------------------------------------------------
 # FASE 5: COMPILACIÓN DE SERVIDORES (API AGENT 8083 & HTTP ASSET SERVER 8080)
@@ -350,10 +320,10 @@ def analyze():
     row = c.fetchone()
     conn.close()
 
-    source = row[0] if row else "M82_WIRE_WORKSPACE_M82_MACRO"
-    category = row[1] if row else "VEN_BONDS_RALLY"
-    headline = row[2] if row else "Venezuela debt rally sees eyes on higher recovery price"
-    risk = row[3] if row else 9.2
+    source = row[0] if row else "PE_LARGEST_FUNDS_DESK"
+    category = row[1] if row else "MEGA_FUNDS_CONCENTRATION"
+    headline = row[2] if row else "Top 10 PE Funds Concentration"
+    risk = row[3] if row else 9.8
 
     hud_image_url = f"http://127.0.0.1:8080/hud_PE_LARGEST_FUNDS_DESK.png"
 
@@ -362,9 +332,9 @@ def analyze():
         f"🚨 [RISK {risk}] {category}\\n"
         f"📌 {headline}\\n\\n"
         f"![HUD M82]({hud_image_url})\\n\\n"
-        f"• Cobertura M82 Wire: Cables de bonos sovereign, Lazard restructuring y Chevron CVX.N activos.\\n"
-        f"• Dry Powder Global PE: $2.008 Trillones en 1,873 fondos.\\n"
-        f"• Estado Nodo Caracas: 40 Daemons en Lite Polling + Wake-Lock Habilitado."
+        f"• Dry Powder Global: $2.008 Trillones en 1,873 fondos.\\n"
+        f"• Top 10 Concentración: $189.84B USD (Líder: General Atlantic IV $23.70B).\\n"
+        f"• Impacto Macro: Capital fuertemente inclinado hacia Megafondos Tech e Infraestructura."
     )
 
     return jsonify({"response": response_text})
@@ -383,8 +353,8 @@ if __name__ == '__main__':
     # Iniciar API Agent Server (8083)
     subprocess.Popen(f"nohup python3 {api_script_path} > /dev/null 2>&1 &", shell=True)
 
-    print("  ✓ Servidor HTTP Assets activo en puerto 8080.")
-    print("  ✓ API Agent Server activo en puerto 8083.")
+    print("  ✓ Servidor HTTP Assets activo en puerto 8080 (servidor static ~/M82).")
+    print("  ✓ API Agent Server activo en puerto 8083 (endpoint Flask).")
 
 # ------------------------------------------------------------------------------
 # FASE 6: RESUMEN DE CONTROL Y PRUEBAS AUTOMÁTICAS
@@ -405,18 +375,16 @@ def verify_deployment():
     conn.close()
 
     print("\n================================================================================")
-    print(" 📊 RESUMEN EJECUTIVO ACTUALIZADO NODO CHARALLAVE M82")
+    print(" 📊 RESUMEN EJECUTIVO NODO CHARALLAVE M82")
     print("================================================================================")
     print(f" 🗄️ Base de Datos SQLite:   {DB_PATH}")
-    print(f" 🔒 Termux Wake-Lock:      ACTIVO (Prevención Deep Sleep)")
-    print(f" 🤖 Daemons Registrados:    {daemon_cnt} / 40 Vectores Listos")
-    print(f" 📡 Señales y Cables:       {dosier_cnt} Registros en Dosier (Incluye M82 Wire VEN/CVX)")
+    print(f" 🤖 Daemons Registrados:    {daemon_cnt} / 40 Vectores Activos")
+    print(f" 📡 Señales en Dosier:      {dosier_cnt} Alertas Sincronizadas")
     print(f" 🌐 HTTP Asset Server:      http://127.0.0.1:8080/")
     print(f" ⚡ Agent API Endpoint:     http://127.0.0.1:8083/")
     print("================================================================================\n")
 
 if __name__ == "__main__":
-    activate_wake_lock()
     setup_database()
     register_daemons()
     ingest_macro_signals()

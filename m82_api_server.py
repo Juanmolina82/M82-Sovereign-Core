@@ -1,33 +1,42 @@
 #!/usr/bin/env python3
-import os, sqlite3, json
-from flask import Flask, jsonify, send_from_directory
-app=Flask(__name__, static_folder=os.path.expanduser('~/M82'))
-DB=os.path.expanduser("~/M82/m82_database.db")
-def get_db():
-    conn=sqlite3.connect(DB); conn.row_factory=sqlite3.Row
-    conn.execute("PRAGMA journal_mode=WAL;"); conn.execute("PRAGMA busy_timeout=60000;")
-    return conn
-@app.route('/')
-def idx(): return send_from_directory(os.path.expanduser('~/M82'),'index.html')
-@app.route('/health')
-def health():
-    conn=get_db(); cur=conn.cursor()
-    cur.execute("SELECT COUNT(*) as c FROM m82_daemons_registry")
-    daemons=cur.fetchone()['c'] if cur else 0
+from flask import Flask, request, jsonify
+import sqlite3, os
+
+app = Flask(__name__)
+app.config['JSON_AS_ASCII'] = False
+
+BASE_DIR = os.path.expanduser("~/M82")
+DB_PATH = os.path.join(BASE_DIR, "m82_database.db")
+
+@app.route('/', methods=['POST'])
+def analyze():
+    data = request.get_json(force=True)
+    msg = data.get("message", "").lower()
+
+    conn = sqlite3.connect(DB_PATH)
+    c = conn.cursor()
+    c.execute("SELECT source, category, headline, risk_score FROM macro_dosier ORDER BY id DESC LIMIT 1")
+    row = c.fetchone()
     conn.close()
-    return jsonify({"status":"ONLINE","node":"SOVEREIGN EXECUTION CORE","daemons":daemons,"governance":"BUNKER_030X","var":"1.68%","exposure":"0.22x/0.30x","merey":"$93.75 Sep / $93.92 Live","brent":"$112.92"})
-@app.route('/api/stream')
-def stream():
-    try:
-        conn=get_db(); cur=conn.cursor()
-        cur.execute("SELECT id, daemon_source, headline, status, created_at FROM m82_multi_stream ORDER BY id DESC LIMIT 30")
-        rows=[dict(r) for r in cur.fetchall()]; conn.close()
-        return jsonify(rows)
-    except Exception as e: return jsonify({"error":str(e)}),500
-@app.route('/api/starmine')
-def starmine():
-    return jsonify({"models":15,"list":["CAM","ARM","EQ","RV","IV","Val-Mo","Price Mo","SH","SI","IF","CCR","SRCR","SCR","TMCR","MATM"],"proprietary":["Recommendation","Target Price","Upside %","Internal Research"]})
-if __name__=='__main__':
-    from waitress import serve
-    print("🚀 M82 API :8083 + WEB :8080 — 100+ DAEMONS — BUNKER 0.30x")
-    serve(app, host='0.0.0.0', port=8083)
+
+    source = row[0] if row else "PE_LARGEST_FUNDS_DESK"
+    category = row[1] if row else "MEGA_FUNDS_CONCENTRATION"
+    headline = row[2] if row else "Top 10 PE Funds Concentration"
+    risk = row[3] if row else 9.8
+
+    hud_image_url = f"http://127.0.0.1:8080/hud_PE_LARGEST_FUNDS_DESK.png"
+
+    response_text = (
+        f"=== DESGLOSE EJECUTIVO Y MATRIZ DE IMPACTO M82 ===\n"
+        f"🚨 [RISK {risk}] {category}\n"
+        f"📌 {headline}\n\n"
+        f"![HUD M82]({hud_image_url})\n\n"
+        f"• Dry Powder Global: $2.008 Trillones en 1,873 fondos.\n"
+        f"• Top 10 Concentración: $189.84B USD (Líder: General Atlantic IV $23.70B).\n"
+        f"• Impacto Macro: Capital fuertemente inclinado hacia Megafondos Tech e Infraestructura."
+    )
+
+    return jsonify({"response": response_text})
+
+if __name__ == '__main__':
+    app.run(host='127.0.0.1', port=8083)
