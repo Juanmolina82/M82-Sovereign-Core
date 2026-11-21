@@ -43,7 +43,7 @@ def health():
     return jsonify({
         "status": "ONLINE",
         "port": 8286,
-        "node": "SOVEREIGN_CHARALLAVE_L4_L5",
+        "node": "M82_CO2_MOLINA_HOLDINGS_L4_L5",
         "hq": "CARACAS_HQ_CENTRAL",
         "ny_et_clock": ny_now,
         "governance": "BUNKER_MODE_030X_LOCK",
@@ -92,13 +92,13 @@ def dashboard():
 </head>
 <body>
   <div class="header">
-    <div class="title">🏛️ M82 SOVEREIGN CORE v50 — UNIFIED HUB (:8286)</div>
+    <div class="title">🏛️ M82 / CO2 — MOLINA HOLDINGS LLC :: SOVEREIGN CORE (:8286)</div>
     <span class="badge">● ONLINE</span>
     <span class="badge warn">BUNKER MODE 0.30x LOCK</span>
     <span class="badge" id="ny-clock">NY ET: --:--:--</span>
   </div>
   <div class="grid">
-    <div class="card"><div class="label">NODO OPERATIVO</div><div class="val">CHARALLAVE L4/L5</div></div>
+    <div class="card"><div class="label">ENTIDAD NODO OPERATIVO CORE OPERATIVO</div><div class="val">M82 / CO2 — MOLINA HOLDINGS LLC</div></div>
     <div class="card"><div class="label">EXPOSICIÓN ACTIVA</div><div class="val">0.22x</div></div>
     <div class="card"><div class="label">VaR DIARIO (L5)</div><div class="val">1.68%</div></div>
     <div class="card"><div class="label">WARSH SPREAD</div><div class="val">+102.0 bps</div></div>
