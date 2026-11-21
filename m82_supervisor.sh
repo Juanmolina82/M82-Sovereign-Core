@@ -1,14 +1,33 @@
 #!/usr/bin/env bash
-cd ~/M82
-DAEMONS=("m82_master_dossier.py" "refinitiv_bridge.py" "price_feeder.py" "orch.py" "execution_engine.py")
+M82_DIR="$HOME/M82"
+termux-wake-lock 2>/dev/null || true
 
 while true; do
-    for script in "${DAEMONS[@]}"; do
-        if ! pgrep -f "$script" > /dev/null; then
-            nohup python3 -u "$script" > "${script%.py}.log" 2>&1 &
-            sleep 1
-        fi
-    done
-    ~/M82/auto_cleanup.sh > /dev/null 2>&1 || true
+    # Vigilar Servidor Unificado :8286
+    if ! pgrep -f "m82_unified_8286.py" > /dev/null; then
+        nohup python3 "$M82_DIR/m82_unified_8286.py" >> "$M82_DIR/hub_8286.log" 2>&1 &
+    fi
+
+    # Vigilar Orquestador Core si existe
+    if [ -f "$M82_DIR/m82_core_orchestrator.py" ] && ! pgrep -f "m82_core_orchestrator.py" > /dev/null; then
+        nohup python3 "$M82_DIR/m82_core_orchestrator.py" >> "$M82_DIR/orch.log" 2>&1 &
+    fi
+
+    # Vigilar Puente Refinitiv si existe
+    if [ -f "$M82_DIR/m82_refinitiv_realtime_bridge.py" ] && ! pgrep -f "m82_refinitiv_realtime_bridge.py" > /dev/null; then
+        nohup python3 "$M82_DIR/m82_refinitiv_realtime_bridge.py" >> "$M82_DIR/refinitiv.log" 2>&1 &
+    fi
+
+    # Vigilar los 40 daemons de mesas en ~/M82/desks/
+    if [ -d "$M82_DIR/desks" ]; then
+        for d in "$M82_DIR/desks/"*.py; do
+            [ -f "$d" ] || continue
+            bname=$(basename "$d")
+            if ! pgrep -f "$bname" > /dev/null; then
+                nohup python3 "$d" >> "$M82_DIR/desks.log" 2>&1 &
+            fi
+        done
+    fi
+
     sleep 15
 done
