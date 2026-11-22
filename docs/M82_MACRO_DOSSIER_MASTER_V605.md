@@ -1,5 +1,5 @@
 # M82 SOVEREIGN EXECUTION CORE V60.5 — MACRO DOSSIER MAESTRO UNIFICADO
-**Sello Temporal:** `2026-11-22 09:48:08 VET` | **Nodos:** Charallave L4/L5 Edge (Miranda) & Caracas HQ Central  
+**Sello Temporal:** `2026-11-22 11:13:55 VET` | **Nodos:** Charallave L4/L5 Edge (Miranda) & Caracas HQ Central  
 **Entidades:** Molina Holdings LLC / Corporación Internacional JMM, C.A. / M82 Molina AI Partners  
 **Gobernanza Activa:** `REGIMEN CRISIS / BUNKER 0.30x LOCK` | `LOCKOUT: NO TRADE (BLINDAJE ACTIVO)`  
 
@@ -23,7 +23,7 @@
 | **Exposición Activa / Techo Búnker** | **`0.22x` / `0.3x`** | *Dry Powder* 100% blindado |
 | **Warsh Spread / Hurdle Rate** | **`+102.0 bps`** | Costo de margen institucional |
 | **Sharpe Óptimo / VaR 99% Diario** | **`1.1` / `0.41%`** | Frontera Markowitz–Thorp Nivel VII |
-| **Alfa Neto Post-Fricción (Nivel IX)** | **`+13.28%`** | Fricción media `58.3 bps` \| Banda `±4.25%` |
+| **Alfa Neto Post-Fricción (Nivel IX)** | **`+13.27%`** | Fricción media `59.7 bps` \| Banda `±4.25%` |
 
 ## 2. Arquitectura de 10 Niveles Pitágoras–Thorp (*Beat the Market*)
 - **Niveles I–II (Kelly Fraccional & Ortogonalidad Pitagórica):** Dimensionamiento óptimo sin riesgo de ruina y minimización de varianza de cartera $\sigma_p^2 = \mathbf{w}^T \Sigma \mathbf{w}$.
@@ -55,7 +55,7 @@
 | **Nivel VI HUD** | `m82_quant_hud_renderer.py` | `812cc781b7827f12...` | Renderizador Visual Institucional 1000x1250 px para Telegram y Galería Android |
 | **Nivel VII** | `thorp_dynamic_frontier_l7.py` | `1569dc1e478c7699...` | Frontera Dinámica Markowitz-Thorp de 4 Pods Ortogonales |
 | **Nivel VIII** | `m82_sunday_open_sentinel.py` | `0c59d5aecc08fe61...` | Sentinel de Apertura Dominical (18:00 VET) y Compuerta Determinista |
-| **Nivel IX** | `thorp_execution_friction_l9.py` | `e4639a5b019915af...` | Auditoría de Fricción Real, Impacto Pitagórico √(Q/V) y Banda No-Trade |
+| **Nivel IX** | `thorp_execution_friction_l9.py` | `20d00c25e9afe442...` | Auditoría de Fricción Real, Impacto Pitagórico √(Q/V) y Banda No-Trade |
 | **Nivel X** | `thorp_bayesian_regime_l10.py` | `c4cdd3f5310c6a10...` | Inferencia Bayesiana de Cambio de Régimen P(Búnker | Evidencia) |
 | **Daemon Core** | `m82_quant_daemon.py` | `7e175cb5c7e40e17...` | Bucle Autónomo Continuo (900s) Monohilo Anti-Contención |
 | **Vault Backup** | `m82_github_vault_backup.sh` | `eef43ac22763e0ef...` | Respaldo Criptográfico Allowlist y Snapshot SHA-256 en GitHub |

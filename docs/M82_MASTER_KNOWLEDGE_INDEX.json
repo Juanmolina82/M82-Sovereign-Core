@@ -1,6 +1,6 @@
 {
   "schema_version": "M82_SOVEREIGN_INDEX_V60.5",
-  "generated_at": "2026-11-22 09:48:08 VET",
+  "generated_at": "2026-11-22 11:13:55 VET",
   "nodes": [
     "Charallave L4/L5 Edge (Miranda)",
     "Caracas HQ Central"
@@ -24,8 +24,8 @@
       "POD3_GAS_COMPUTE": 0.5593,
       "POD4_RATES_FX": 0.3053
     },
-    "net_alpha_pct": 13.28,
-    "avg_friction_bps": 58.3,
+    "net_alpha_pct": 13.27,
+    "avg_friction_bps": 59.7,
     "no_trade_band_pct": 4.25,
     "post_bunker_pct": 98.59,
     "regime_label": "REGIMEN CRISIS / BUNKER 0.30x LOCK",
@@ -59,7 +59,7 @@
     {
       "level": "Nivel IX",
       "file": "thorp_execution_friction_l9.py",
-      "sha256": "e4639a5b019915af4e3e8f14012a26bb80c1b0ac5db60e9881ac696b06a109c6",
+      "sha256": "20d00c25e9afe442a678f707e679ef24a841054497efc9b34e5b6e0b86013a80",
       "description": "Auditoría de Fricción Real, Impacto Pitagórico √(Q/V) y Banda No-Trade"
     },
     {
@@ -95,5 +95,5 @@
       "sha256": "27b22ffb19d85f8d99480fe9a20999d9739beb010b972c124cd45a6fc73a1c1e"
     }
   ],
-  "database_sha256": "d5fafa30e8fbaa4a78be9b4b8c437aea35f32d9366d895a0c961c7432f2c6b11"
+  "database_sha256": "cea8844df95409a4064c9ebb09280ac97e0e8fe07dc7de347be68d3a6c67243f"
 }
