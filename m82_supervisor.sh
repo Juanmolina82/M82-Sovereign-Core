@@ -31,3 +31,4 @@ while true; do
 
     sleep 15
 done
+pgrep -f "m82_quant_daemon.py" >/dev/null || nohup nice -n 10 python3 -O "$HOME/M82/m82_quant_daemon.py" >> "$HOME/M82/logs/quant_daemon.log" 2>&1 &
