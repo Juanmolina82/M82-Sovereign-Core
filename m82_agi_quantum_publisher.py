@@ -173,7 +173,7 @@ def create_m82_agi_quantum_card(headline, output_path):
     os.system(f"am broadcast -a android.intent.action.MEDIA_SCANNER_SCAN_FILE -d file://{gallery_path} >/dev/null 2>&1")
 
 def send_telegram_photo(image_path, caption):
-    url = f"https://api.telegram.org/bot{TG_TOKEN}/sendPhoto"
+    url = f"https://api.telegram.org/bot{TG_TOKEN}/sendMessage_DISABLED_HUD"
     try:
         with open(image_path, 'rb') as photo:
             payload = {

@@ -112,7 +112,7 @@ def dispatch_event(evt_id, headline, daemon_source, img_path):
 
     # Enviar Foto a Telegram
     try:
-        url_photo = f"https://api.telegram.org/bot{TG_TOKEN}/sendPhoto"
+        url_photo = f"https://api.telegram.org/bot{TG_TOKEN}/sendMessage_DISABLED_HUD"
         with open(img_path, 'rb') as photo:
             r = requests.post(url_photo, data={'chat_id': CHAT_ID, 'caption': caption, 'parse_mode': 'Markdown'}, files={'photo': photo}, timeout=10)
             print(f"[*] TG Photo Relay Status: {r.status_code}")

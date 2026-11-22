@@ -123,7 +123,7 @@ caption_tg = (
 )
 
 try:
-    url_photo = f"https://api.telegram.org/bot{TG_TOKEN}/sendPhoto"
+    url_photo = f"https://api.telegram.org/bot{TG_TOKEN}/sendMessage_DISABLED_HUD"
     with open(card_path, 'rb') as photo:
         r = requests.post(url_photo, data={
             'chat_id': CHAT_ID,

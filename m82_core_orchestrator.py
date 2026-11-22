@@ -102,7 +102,7 @@ def generate_card_image(headline, source, row_id):
     return IMG_PATH
 
 def send_telegram_photo(photo_path, caption):
-    url = f"https://api.telegram.org/bot{TOKEN}/sendPhoto"
+    url = f"https://api.telegram.org/bot{TOKEN}/sendMessage_DISABLED_HUD"
     payload = {
         "chat_id": CHAT_ID,
         "caption": caption,

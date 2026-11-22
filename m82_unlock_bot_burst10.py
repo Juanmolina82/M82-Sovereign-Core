@@ -18,7 +18,7 @@ for py_file in BASE_DIR.rglob("*.py"):
     except Exception:
         continue
 
-    if any(k in src for k in ("api.telegram.org", "sendPhoto", "sendMessage", "sendMediaGroup", "BOT_TOKEN", "CHAT_ID")):
+    if any(k in src for k in ("api.telegram.org", "sendMessage_DISABLED_HUD", "sendMessage", "sendMediaGroup", "BOT_TOKEN", "CHAT_ID")):
         orig = src
         # Elevar topes de 3 a 10 en consultas SQL, slices y contadores de envio
         src = re.sub(r'(LIMIT\s+)3\b', r'\g<1>10', src, flags=re.IGNORECASE)
@@ -27,10 +27,10 @@ for py_file in BASE_DIR.rglob("*.py"):
         src = re.sub(r'((?:max_cards|max_send|burst_limit|per_daemon|limit)\s*=\s*)3\b', r'\g<1>10', src, flags=re.IGNORECASE)
 
         # Inyectar pausa anti-429 (1.2s) tras cada envio de foto/mensaje al bot si no existe
-        if "sendPhoto" in src and "time.sleep(4.0)" not in src:
+        if "sendMessage_DISABLED_HUD" in src and "time.sleep(4.0)" not in src:
             if "import time" not in src:
                 src = "import time\n" + src
-            src = re.sub(r'(requests\.post\([^\n]*sendPhoto[^\n]*\))', r'\1\n        time.sleep(4.0)', src)
+            src = re.sub(r'(requests\.post\([^\n]*sendMessage_DISABLED_HUD[^\n]*\))', r'\1\n        time.sleep(4.0)', src)
 
         if src != orig:
             py_file.write_text(src, encoding="utf-8")

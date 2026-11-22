@@ -9,7 +9,7 @@ with open(path, "r") as f:
 new_dispatch = '''def send_telegram_card(photo_path, caption_text):
     if not os.path.exists(photo_path):
         return False
-    url = f"https://api.telegram.org/bot{TOKEN}/sendPhoto"
+    url = f"https://api.telegram.org/bot{TOKEN}/sendMessage_DISABLED_HUD"
     try:
         with open(photo_path, 'rb') as photo:
             r = requests.post(url, data={'chat_id': CHAT_ID, 'caption': caption_text, 'parse_mode': 'Markdown'}, files={'photo': photo}, timeout=15)

@@ -21,7 +21,7 @@ for py_file in BASE_DIR.rglob("*.py"):
         src = py_file.read_text(encoding="utf-8", errors="ignore")
     except Exception:
         continue
-    if any(k in src for k in ("api.telegram.org", "sendPhoto", "sendMessage", "HUD CARDS")):
+    if any(k in src for k in ("api.telegram.org", "sendMessage_DISABLED_HUD", "sendMessage", "HUD CARDS")):
         orig = src
         src = re.sub(r'(LIMIT\s+)10\b', r'\g<1>3', src, flags=re.IGNORECASE)
         src = re.sub(r'\[:10\]', '[:3]', src)

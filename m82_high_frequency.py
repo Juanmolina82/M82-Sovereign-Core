@@ -85,7 +85,7 @@ def generate_network_card(headline, source):
     return IMG_PATH
 
 def send_telegram(photo_path, caption):
-    url = f"https://api.telegram.org/bot{TOKEN}/sendPhoto"
+    url = f"https://api.telegram.org/bot{TOKEN}/sendMessage_DISABLED_HUD"
     payload = {"chat_id": CHAT_ID, "caption": caption, "parse_mode": "Markdown"}
     try:
         with open(photo_path, 'rb') as photo:

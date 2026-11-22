@@ -127,7 +127,7 @@ def dispatch_event(evt_id, headline, daemon_source, img_path):
 
     # Envío ÚNICO de Foto + Caption en un solo mensaje de Telegram
     try:
-        url_photo = f"https://api.telegram.org/bot{TG_TOKEN}/sendPhoto"
+        url_photo = f"https://api.telegram.org/bot{TG_TOKEN}/sendMessage_DISABLED_HUD"
         with open(img_path, 'rb') as photo:
             payload = {
                 'chat_id': CHAT_ID, 

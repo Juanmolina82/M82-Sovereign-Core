@@ -36,7 +36,7 @@ def send_telegram(message, image_path=None):
     try:
         # Enviar Imagen
         if image_path and os.path.exists(image_path):
-            url_photo = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendPhoto"
+            url_photo = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage_DISABLED_HUD"
             with open(image_path, 'rb') as photo:
                 requests.post(url_photo, data={'chat_id': TELEGRAM_CHAT_ID, 'caption': message[:1024]}, files={'photo': photo}, timeout=15)
         else:

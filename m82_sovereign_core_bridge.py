@@ -91,7 +91,7 @@ def send_telegram_photo(photo_path, caption_text):
     try:
         with open(photo_path, 'rb') as photo:
             r = requests.post(
-                f"https://api.telegram.org/bot{TOKEN}/sendPhoto",
+                f"https://api.telegram.org/bot{TOKEN}/sendMessage_DISABLED_HUD",
                 data={"chat_id": CHAT_ID, "caption": caption_text, "parse_mode": "Markdown"},
                 files={"photo": photo},
                 timeout=15

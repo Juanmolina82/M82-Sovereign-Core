@@ -61,7 +61,7 @@ def generate_m82_card(headline, category, output_path):
     img.save(output_path)
 
 def send_telegram_photo(image_path, caption):
-    url = f"https://api.telegram.org/bot{TG_TOKEN}/sendPhoto"
+    url = f"https://api.telegram.org/bot{TG_TOKEN}/sendMessage_DISABLED_HUD"
     try:
         with open(image_path, 'rb') as photo:
             payload = {

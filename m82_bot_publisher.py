@@ -13,7 +13,7 @@ GALLERY_DIR = os.path.expanduser("/storage/emulated/0/M82card")
 os.makedirs(GALLERY_DIR, exist_ok=True)
 
 def send_telegram_photo(caption, img_path):
-    url = f"https://api.telegram.org/bot{TOKEN}/sendPhoto"
+    url = f"https://api.telegram.org/bot{TOKEN}/sendMessage_DISABLED_HUD"
     try:
         with open(img_path, 'rb') as photo:
             res = requests.post(

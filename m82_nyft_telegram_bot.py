@@ -71,7 +71,7 @@ def send_telegram_breaking(category, headline, risk_score, gprk_index):
         print(f"  └─> Noticia procesada localmente: [{category}] {headline}")
         return False
 
-    url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendPhoto"
+    url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage_DISABLED_HUD"
     caption = (
         f"🚨 *#M82 BREAKING STREAM*\n\n"
         f"📌 *DESK:* `{category}`\n"

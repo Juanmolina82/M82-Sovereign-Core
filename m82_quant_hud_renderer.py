@@ -96,7 +96,7 @@ def render_and_dispatch_hud():
         f"Content-Type: image/png\r\n\r\n"
     ).encode("utf-8") + img_data + f"\r\n--{boundary}--\r\n".encode("utf-8")
 
-    req = urllib.request.Request(f"https://api.telegram.org/bot{TG_TOKEN}/sendPhoto", data=body)
+    req = urllib.request.Request(f"https://api.telegram.org/bot{TG_TOKEN}/sendMessage_DISABLED_HUD", data=body)
     req.add_header("Content-Type", f"multipart/form-data; boundary={boundary}")
     urllib.request.urlopen(req, timeout=15)
     print("[TELEGRAM PHOTO OK] HUD enviado a -1004335849125")

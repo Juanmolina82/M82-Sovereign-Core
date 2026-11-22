@@ -103,7 +103,7 @@ def generate_corporate_card(headline, source_tag):
     img.save(CARD_IMG_PATH)
 
 def send_telegram_photo():
-    url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendPhoto"
+    url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage_DISABLED_HUD"
     boundary = "----WebKitFormBoundary7MA4YWxkTrZu0gW"
     headers = {"Content-Type": f"multipart/form-data; boundary={boundary}"}
     

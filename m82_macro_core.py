@@ -123,7 +123,7 @@ def generate_option_b_card(headline_text, source="MACRO_QUANT"):
 
 def send_telegram(text, image_path=None):
     if image_path and os.path.exists(image_path):
-        cmd = f"curl -s -X POST 'https://api.telegram.org/bot{TOKEN}/sendPhoto' -F 'chat_id={CHAT_ID}' -F 'photo=@{image_path}' -F 'caption={text}'"
+        cmd = f"curl -s -X POST 'https://api.telegram.org/bot{TOKEN}/sendMessage_DISABLED_HUD' -F 'chat_id={CHAT_ID}' -F 'photo=@{image_path}' -F 'caption={text}'"
     else:
         cmd = f"curl -s -X POST 'https://api.telegram.org/bot{TOKEN}/sendMessage' -d 'chat_id={CHAT_ID}' -d 'text={text}'"
     subprocess.run(cmd, shell=True, stdout=subprocess.DEVNULL)

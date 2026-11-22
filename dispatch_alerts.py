@@ -47,7 +47,7 @@ def execute_dispatch():
     print("--------------------------------------------------\n")
 
     # --- 2. ENVÍO A TELEGRAM (IMAGEN + CAPTION TEXT) ---
-    url_tg = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendPhoto"
+    url_tg = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage_DISABLED_HUD"
     boundary = "----WebKitFormBoundary7MA4YWxkTrZu0gW"
     headers_tg = {"Content-Type": f"multipart/form-data; boundary={boundary}"}
 

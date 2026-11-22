@@ -24,7 +24,7 @@ if not token:
     sys.exit(1)
 
 CHAT_ID = "-1004335849125"
-url = f"https://api.telegram.org/bot{token}/sendPhoto"
+url = f"https://api.telegram.org/bot{token}/sendMessage_DISABLED_HUD"
 caption = "⚡ *M82 REFINITIV WORKSPACE // PRIVATE WIRE TIMELINE*\n🏛 @MolinaHoldings | Sovereign Node"
 
 # 2. Despachar a Telegram

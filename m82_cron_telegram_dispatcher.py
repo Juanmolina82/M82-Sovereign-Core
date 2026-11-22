@@ -42,7 +42,7 @@ def check_and_dispatch():
         
         # Envío a Telegram si las credenciales están presentes
         if TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID:
-            url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendPhoto"
+            url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage_DISABLED_HUD"
             caption = f"🚨 *#M82 BREAKING STREAM*\n\n📌 *{category}*\n{headline}\n\n[AGI QUANTUM VERIFIED]"
             with open(CARD_PATH, 'rb') as photo:
                 requests.post(url, data={'chat_id': TELEGRAM_CHAT_ID, 'caption': caption, 'parse_mode': 'Markdown'}, files={'photo': photo})

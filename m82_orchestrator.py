@@ -113,7 +113,7 @@ def generate_card_image(headline, source, row_id):
     return IMG_PATH
 
 def send_telegram(photo_path, caption):
-    url = f"https://api.telegram.org/bot{TOKEN}/sendPhoto"
+    url = f"https://api.telegram.org/bot{TOKEN}/sendMessage_DISABLED_HUD"
     try:
         with open(photo_path, 'rb') as p:
             r = requests.post(url, data={"chat_id": CHAT_ID, "caption": caption, "parse_mode": "Markdown"}, files={'photo': p}, timeout=12)

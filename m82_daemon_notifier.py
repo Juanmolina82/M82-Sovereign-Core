@@ -120,7 +120,7 @@ def dispatch_next():
         if len(caption) > 240:
             caption = caption[:237] + "..."
             
-        url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendPhoto"
+        url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage_DISABLED_HUD"
         with open(card_path, 'rb') as photo:
             payload = {'chat_id': CHAT_ID, 'caption': caption}
             files = {'photo': photo}

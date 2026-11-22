@@ -115,7 +115,7 @@ def main():
             9.99,
             0.99,
             "ORMUZ,BAHRAIN,MCM,EDMUNDO_GONZALEZ,SPARTA_II,NORWAY_DDOS,VIX34,THORP_KELLY,PITAGORAS,BUNKER_030X",
-            "MASTER_SYNC_V605_999",
+            "PURGED_LEGACY_LOOP",
             "CHARALLAVE_L4_L5_EDGE"
         )
     except Exception as e:

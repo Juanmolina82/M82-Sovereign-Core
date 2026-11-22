@@ -40,7 +40,7 @@ def render_hud_card():
 
 def dispatch_telegram_photo(title, caption):
     """Envía la imagen de la tarjeta HUD generada con pie de texto a Telegram."""
-    url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendPhoto"
+    url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage_DISABLED_HUD"
     
     if os.path.exists(CARD_IMG):
         with open(CARD_IMG, 'rb') as photo:
