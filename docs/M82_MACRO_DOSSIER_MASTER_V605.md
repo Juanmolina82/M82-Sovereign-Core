@@ -1,5 +1,5 @@
 # M82 SOVEREIGN EXECUTION CORE V60.5 — MACRO DOSSIER MAESTRO UNIFICADO
-**Sello Temporal:** `2026-11-22 11:13:55 VET` | **Nodos:** Charallave L4/L5 Edge (Miranda) & Caracas HQ Central  
+**Sello Temporal:** `2026-11-22 11:42:11 VET` | **Nodos:** Charallave L4/L5 Edge (Miranda) & Caracas HQ Central  
 **Entidades:** Molina Holdings LLC / Corporación Internacional JMM, C.A. / M82 Molina AI Partners  
 **Gobernanza Activa:** `REGIMEN CRISIS / BUNKER 0.30x LOCK` | `LOCKOUT: NO TRADE (BLINDAJE ACTIVO)`  
 

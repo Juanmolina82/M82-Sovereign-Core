@@ -1,6 +1,6 @@
 {
   "schema_version": "M82_SOVEREIGN_INDEX_V60.5",
-  "generated_at": "2026-11-22 11:13:55 VET",
+  "generated_at": "2026-11-22 11:42:11 VET",
   "nodes": [
     "Charallave L4/L5 Edge (Miranda)",
     "Caracas HQ Central"
@@ -95,5 +95,5 @@
       "sha256": "27b22ffb19d85f8d99480fe9a20999d9739beb010b972c124cd45a6fc73a1c1e"
     }
   ],
-  "database_sha256": "cea8844df95409a4064c9ebb09280ac97e0e8fe07dc7de347be68d3a6c67243f"
+  "database_sha256": "9a11076ce5ead5fb5c435dc8183ba58494f813728b86aeb215b1b77bc55b1f87"
 }
