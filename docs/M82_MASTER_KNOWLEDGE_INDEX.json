@@ -1,6 +1,6 @@
 {
   "schema_version": "M82_SOVEREIGN_INDEX_V60.5",
-  "generated_at": "2026-11-22 11:47:05 VET",
+  "generated_at": "2026-11-22 18:47:58 VET",
   "nodes": [
     "Charallave L4/L5 Edge (Miranda)",
     "Caracas HQ Central"
@@ -41,7 +41,7 @@
     {
       "level": "Nivel VI HUD",
       "file": "m82_quant_hud_renderer.py",
-      "sha256": "812cc781b7827f1210a9f6a151038dc42f4b3e444ead415125f54ebe251aac7d",
+      "sha256": "739854bf33003475518fb9bde9f681494efb2aabc9b925b27fec5778b9fbdd6e",
       "description": "Renderizador Visual Institucional 1000x1250 px para Telegram y Galería Android"
     },
     {
@@ -95,5 +95,5 @@
       "sha256": "27b22ffb19d85f8d99480fe9a20999d9739beb010b972c124cd45a6fc73a1c1e"
     }
   ],
-  "database_sha256": "24a50751d64114d91c3f5f7ca0c953bcec6968d62dd96d4b8f676d322852af1e"
+  "database_sha256": "feae30c5ecf301e087cb087757554f88e9334fc25e06fb81d04f381e64bf6592"
 }

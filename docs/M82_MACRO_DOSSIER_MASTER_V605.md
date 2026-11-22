@@ -1,5 +1,5 @@
 # M82 SOVEREIGN EXECUTION CORE V60.5 — MACRO DOSSIER MAESTRO UNIFICADO
-**Sello Temporal:** `2026-11-22 11:47:05 VET` | **Nodos:** Charallave L4/L5 Edge (Miranda) & Caracas HQ Central  
+**Sello Temporal:** `2026-11-22 18:47:58 VET` | **Nodos:** Charallave L4/L5 Edge (Miranda) & Caracas HQ Central  
 **Entidades:** Molina Holdings LLC / Corporación Internacional JMM, C.A. / M82 Molina AI Partners  
 **Gobernanza Activa:** `REGIMEN CRISIS / BUNKER 0.30x LOCK` | `LOCKOUT: NO TRADE (BLINDAJE ACTIVO)`  
 
@@ -52,7 +52,7 @@
 | Nivel / Rol | Archivo | Hash `SHA-256` (Prefijo) | Descripción Funcional |
 | :--- | :--- | :--- | :--- |
 | **Niveles I-VI** | `m82_pythagoras_thorp_orchestrator.py` | `73def774c85c1695...` | Orquestador Kelly Fraccional, Jacobi Espectral, Convexidad Gamma, Monte Carlo Jump-Diffusion & SQLite WAL |
-| **Nivel VI HUD** | `m82_quant_hud_renderer.py` | `812cc781b7827f12...` | Renderizador Visual Institucional 1000x1250 px para Telegram y Galería Android |
+| **Nivel VI HUD** | `m82_quant_hud_renderer.py` | `739854bf33003475...` | Renderizador Visual Institucional 1000x1250 px para Telegram y Galería Android |
 | **Nivel VII** | `thorp_dynamic_frontier_l7.py` | `1569dc1e478c7699...` | Frontera Dinámica Markowitz-Thorp de 4 Pods Ortogonales |
 | **Nivel VIII** | `m82_sunday_open_sentinel.py` | `0c59d5aecc08fe61...` | Sentinel de Apertura Dominical (18:00 VET) y Compuerta Determinista |
 | **Nivel IX** | `thorp_execution_friction_l9.py` | `20d00c25e9afe442...` | Auditoría de Fricción Real, Impacto Pitagórico √(Q/V) y Banda No-Trade |
