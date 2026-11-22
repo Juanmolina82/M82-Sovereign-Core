@@ -11,6 +11,7 @@ while True:
         subprocess.run(["python3", os.path.join(M82_DIR, "thorp_execution_friction_l9.py")], check=False)
         subprocess.run(["python3", os.path.join(M82_DIR, "thorp_bayesian_regime_l10.py")], check=False)
         subprocess.run(["python3", os.path.join(M82_DIR, "m82_sunday_open_sentinel.py")], check=False)
+        subprocess.run(["python3", os.path.join(M82_DIR, "m82_master_dossier_indexer.py")], check=False)
         subprocess.run(["python3", os.path.join(M82_DIR, "m82_quant_hud_renderer.py")], check=False)
         subprocess.run(["bash", os.path.join(M82_DIR, "m82_github_vault_backup.sh")], check=False)
     except Exception as e:

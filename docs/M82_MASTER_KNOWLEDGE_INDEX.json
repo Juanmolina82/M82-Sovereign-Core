@@ -1,0 +1,99 @@
+{
+  "schema_version": "M82_SOVEREIGN_INDEX_V60.5",
+  "generated_at": "2026-11-22 09:48:08 VET",
+  "nodes": [
+    "Charallave L4/L5 Edge (Miranda)",
+    "Caracas HQ Central"
+  ],
+  "governance": {
+    "mode": "BUNKER MODE / CUSTODIA PASIVA 0.30x LOCK",
+    "sunday_gate": "LOCKOUT: NO TRADE (BLINDAJE ACTIVO)",
+    "bayesian_bunker_prob_pct": 98.59
+  },
+  "telemetry": {
+    "vix": 34.0,
+    "warsh_spread_bps": 102.0,
+    "active_exposure": 0.22,
+    "bunker_cap": 0.3,
+    "lambda1_pct": 55.44,
+    "sharpe_opt": 1.1,
+    "var99_opt_pct": 0.41,
+    "weights": {
+      "POD1_MEREY16": 0.0915,
+      "POD2_OFAC": 0.044,
+      "POD3_GAS_COMPUTE": 0.5593,
+      "POD4_RATES_FX": 0.3053
+    },
+    "net_alpha_pct": 13.28,
+    "avg_friction_bps": 58.3,
+    "no_trade_band_pct": 4.25,
+    "post_bunker_pct": 98.59,
+    "regime_label": "REGIMEN CRISIS / BUNKER 0.30x LOCK",
+    "sunday_gate": "LOCKOUT: NO TRADE (BLINDAJE ACTIVO)"
+  },
+  "modules": [
+    {
+      "level": "Niveles I-VI",
+      "file": "m82_pythagoras_thorp_orchestrator.py",
+      "sha256": "73def774c85c169555ac0df1b77776a7456b30a3944519f82c36a48838aa099f",
+      "description": "Orquestador Kelly Fraccional, Jacobi Espectral, Convexidad Gamma, Monte Carlo Jump-Diffusion & SQLite WAL"
+    },
+    {
+      "level": "Nivel VI HUD",
+      "file": "m82_quant_hud_renderer.py",
+      "sha256": "812cc781b7827f1210a9f6a151038dc42f4b3e444ead415125f54ebe251aac7d",
+      "description": "Renderizador Visual Institucional 1000x1250 px para Telegram y Galería Android"
+    },
+    {
+      "level": "Nivel VII",
+      "file": "thorp_dynamic_frontier_l7.py",
+      "sha256": "1569dc1e478c769935b62091c69d88e0ce193cf1fb5883b293506c141443b50d",
+      "description": "Frontera Dinámica Markowitz-Thorp de 4 Pods Ortogonales"
+    },
+    {
+      "level": "Nivel VIII",
+      "file": "m82_sunday_open_sentinel.py",
+      "sha256": "0c59d5aecc08fe617fa41c9f545923ac6c20914105f5bbd7e34ddb786927f175",
+      "description": "Sentinel de Apertura Dominical (18:00 VET) y Compuerta Determinista"
+    },
+    {
+      "level": "Nivel IX",
+      "file": "thorp_execution_friction_l9.py",
+      "sha256": "e4639a5b019915af4e3e8f14012a26bb80c1b0ac5db60e9881ac696b06a109c6",
+      "description": "Auditoría de Fricción Real, Impacto Pitagórico √(Q/V) y Banda No-Trade"
+    },
+    {
+      "level": "Nivel X",
+      "file": "thorp_bayesian_regime_l10.py",
+      "sha256": "c4cdd3f5310c6a10b9885c6f68c20b7cce1bd251348fe2b307257c5a9f6fa8d6",
+      "description": "Inferencia Bayesiana de Cambio de Régimen P(Búnker | Evidencia)"
+    },
+    {
+      "level": "Daemon Core",
+      "file": "m82_quant_daemon.py",
+      "sha256": "7e175cb5c7e40e17231133ab3416576f64b458950d2e4a7a8976a7f32520d672",
+      "description": "Bucle Autónomo Continuo (900s) Monohilo Anti-Contención"
+    },
+    {
+      "level": "Vault Backup",
+      "file": "m82_github_vault_backup.sh",
+      "sha256": "eef43ac22763e0ef291cb84907f6a3a7fd918e8573992b09d4a1269d8d8f07bb",
+      "description": "Respaldo Criptográfico Allowlist y Snapshot SHA-256 en GitHub"
+    }
+  ],
+  "documents": [
+    {
+      "file": "docs/M82_PYTHAGORAS_THORP_DOCTRINE_V605.md",
+      "sha256": "b173eaed12a5432db9bb7889a32f17c04414beb1e7ffa56923da29274423da4b"
+    },
+    {
+      "file": "docs/M82_SUNDAY_PREFLIGHT_BRIEF.md",
+      "sha256": "d136305e106bf0be17dd74e9d6ec93cc7089aac024b615e26054710604490803"
+    },
+    {
+      "file": "docs/M82_PYTHAGORAS_THORP_COMPLETE_10_LEVELS.md",
+      "sha256": "27b22ffb19d85f8d99480fe9a20999d9739beb010b972c124cd45a6fc73a1c1e"
+    }
+  ],
+  "database_sha256": "d5fafa30e8fbaa4a78be9b4b8c437aea35f32d9366d895a0c961c7432f2c6b11"
+}

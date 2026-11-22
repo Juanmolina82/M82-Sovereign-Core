@@ -40,7 +40,7 @@ if [ ! -d .git ]; then
     git branch -M main
 fi
 
-git add .gitignore docs/M82_PYTHAGORAS_THORP_DOCTRINE_V605.md thorp_kelly_m82.py thorp_spectral_gamma_l3.py thorp_montecarlo_survival_l4.py m82_pythagoras_thorp_orchestrator.py m82_master_session_sync.py m82_github_vault_backup.sh m82_quant_hud_renderer.py m82_quant_daemon.py thorp_dynamic_frontier_l7.py m82_sunday_open_sentinel.py thorp_execution_friction_l9.py thorp_bayesian_regime_l10.py docs/M82_PYTHAGORAS_THORP_COMPLETE_10_LEVELS.md docs/M82_SUNDAY_PREFLIGHT_BRIEF.md backups/*.gz backups/*.sha256 2>/dev/null || true
+git add .gitignore docs/M82_PYTHAGORAS_THORP_DOCTRINE_V605.md thorp_kelly_m82.py thorp_spectral_gamma_l3.py thorp_montecarlo_survival_l4.py m82_pythagoras_thorp_orchestrator.py m82_master_session_sync.py m82_github_vault_backup.sh m82_quant_hud_renderer.py m82_quant_daemon.py thorp_dynamic_frontier_l7.py m82_sunday_open_sentinel.py thorp_execution_friction_l9.py thorp_bayesian_regime_l10.py docs/M82_PYTHAGORAS_THORP_COMPLETE_10_LEVELS.md m82_master_dossier_indexer.py docs/M82_MACRO_DOSSIER_MASTER_V605.md docs/M82_MASTER_KNOWLEDGE_INDEX.json docs/M82_SUNDAY_PREFLIGHT_BRIEF.md backups/*.gz backups/*.sha256 2>/dev/null || true
 
 if ! git diff --cached --quiet; then
     git commit -m "M82 V60.5 Sovereign Core: Pythagoras-Thorp L1-L5 Orchestrator, Doctrine & Verified Snapshot (${TS})"
