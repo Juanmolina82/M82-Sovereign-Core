@@ -265,7 +265,7 @@ def dispatch():
         # 1. Telegram Dispatch
         try:
             img_file = generate_hud(headline, source)
-            telegram_url = f"https://api.telegram.org/bot{TOKEN}/sendPhoto"
+            telegram_url = f"https://api.telegram.org/bot{TOKEN}/sendMessage_DISABLED_HUD"
             caption_text = (
                 f"🚨 *#M82 #BREAKING STREAM*\n\n"
                 f"{headline}\n\n"
