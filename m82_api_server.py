@@ -10,6 +10,72 @@ DB_PATH = os.path.join(BASE_DIR, "m82_database.db")
 
 @app.route('/', methods=['GET', 'POST'])
 def analyze():
+    from flask import request, render_template_string
+    import sqlite3, json
+    if request.method == "GET":
+        db = os.path.expanduser("~/M82/m82_database.db")
+        v, hjb, rows, ticks = 0, {}, [], []
+        try:
+            cn = sqlite3.connect(db, timeout=30)
+            cn.execute("PRAGMA journal_mode=WAL;")
+            cn.execute("PRAGMA busy_timeout=60000;")
+            v = cn.execute("SELECT count(*) FROM macro_dossier").fetchone()[0]
+            r = cn.execute("SELECT metadata_json FROM macro_dossier WHERE m82_tag='v60.5-NIVEL-XI-HJB-OPTIMAL-SWITCHING'").fetchone()
+            if r and r[0]:
+                hjb = json.loads(r[0])
+            ticks = cn.execute("SELECT asset, bid, ask, last_price, updated_at FROM price_ticks ORDER BY updated_at DESC LIMIT 10").fetchall()
+            rows = cn.execute("SELECT m82_tag, msi_index, risk_score, headline FROM macro_dossier ORDER BY msi_index DESC, id DESC LIMIT 12").fetchall()
+            cn.close()
+        except Exception as e:
+            rows = [("DB_ERR", 0, 0, str(e))]
+
+        tpl = """<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content='width=device-width,initial-scale=1'>
+<meta http-equiv=refresh content=15>
+<title>M82 Sovereign Core v60.5 | LSEG Live</title>
+<style>
+body{background:#090d14;color:#e2e8f0;font-family:monospace;padding:12px;margin:0}
+.box{background:#0f172a;border:1px solid #1e293b;padding:10px;border-radius:6px;margin-bottom:10px}
+.b{background:#7f1d1d;color:#fecaca;padding:3px 7px;border-radius:4px;font-size:11px;display:inline-block;margin-top:5px;margin-right:6px}
+.lseg{background:#064e3b;color:#a7f3d0;padding:3px 7px;border-radius:4px;font-size:11px;display:inline-block;margin-top:5px}
+.g{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:10px}
+.v{color:#10b981;font-size:14px;font-weight:bold;margin-top:2px}
+table{width:100%;border-collapse:collapse;font-size:11px;background:#0f172a;margin-bottom:10px}
+th,td{border:1px solid #1e293b;padding:5px;text-align:left}
+th{background:#1e293b;color:#38bdf8}
+</style>
+</head>
+<body>
+<div class=box>
+<div style='color:#38bdf8;font-weight:bold'>M82 SOVEREIGN CORE v60.5 | CHARALLAVE L4/L5 EDGE</div>
+<div class=b>BUNKER MODE / CUSTODIA PASIVA 0.30x LOCK | LOCKOUT: NO TRADE</div>
+<div class=lseg>LSEG WORKSPACE LIVE: jmmp@molina82.com</div>
+</div>
+<div class=g>
+<div class=box><div>EXPOSICIÓN / DRY POWDER</div><div class=v>0.22x / 78.0%</div></div>
+<div class=box><div>VECTORES DOSSIER</div><div class=v>{{v}} CANÓNICOS</div></div>
+<div class=box><div>NIVEL XI (HJB REAL)</div><div class=v style='color:#f59e0b'>{{hjb.get('regime','S1_BUNKER_LOCKOUT')}}</div></div>
+<div class=box><div>WARSH SPREAD / VaR</div><div class=v>+102.0 bps / 1.68%</div></div>
+</div>
+<table>
+<tr><th>RIC / ASSET (LSEG LIVE)</th><th>BID</th><th>ASK</th><th>LAST</th><th>UTC UPDATE</th></tr>
+{% for t in ticks %}
+<tr><td style='color:#38bdf8;font-weight:bold'>{{t[0]}}</td><td>{{t[1]}}</td><td>{{t[2]}}</td><td style='color:#10b981;font-weight:bold'>{{t[3]}}</td><td>{{t[4]}}</td></tr>
+{% endfor %}
+</table>
+<table>
+<tr><th>TAG</th><th>MSI</th><th>RISK</th><th>VECTOR</th></tr>
+{% for r in rows %}
+<tr><td>{{r[0]}}</td><td>{{r[1]}}</td><td>{{r[2]}}</td><td>{{r[3][:85]}}...</td></tr>
+{% endfor %}
+</table>
+</body>
+</html>"""
+        return render_template_string(tpl, v=v, hjb=hjb, rows=rows, ticks=ticks)
+
     from flask import request, jsonify, render_template_string
     import sqlite3, json
     if request.method == 'GET':
