@@ -1,3 +1,7 @@
+import sys
+sys.path.insert(0, "/data/data/com.termux/files/home/M82/scripts")
+from lseg_wal_reader import get_latest_lseg_live, check_lseg_thresholds
+
 #!/usr/bin/env python3
 import os, time, sqlite3, random
 from datetime import datetime
@@ -38,3 +42,19 @@ def daemon_worker():
 
 if __name__ == "__main__":
     daemon_worker()
+
+if __name__ == "__main__":
+    _snap = get_latest_lseg_live()
+    _alerts = check_lseg_thresholds(_snap)
+    print(f"=== [LSEG ALERTS: {len(_alerts)} ACTIVAS] ===")
+    for _a in _alerts:
+        print(f"[!] ALERTA LSEG: {_a['rule']} (LAST={_a['last_px']}) -> {_a['action']}")
+    print(f"\n=== [LSEG LIVE TELEMETRY - WAL MODE | {len(_snap)} RICS] ===")
+    for _ric, _v in _snap.items():
+        print(f"{_ric:<14} | {_v['dsply_name']:<20} | LAST:{_v['last_px']} | CHG:{_v['net_chg']}")
+
+if __name__ == "__main__":
+    _snap = get_latest_lseg_live()
+    print(f"\n=== [LSEG LIVE TELEMETRY - WAL MODE | {len(_snap)} RICS] ===")
+    for _ric, _v in _snap.items():
+        print(f"{_ric:<14} | {_v['dsply_name']:<20} | LAST:{_v['last_px']} | CHG:{_v['net_chg']}")
