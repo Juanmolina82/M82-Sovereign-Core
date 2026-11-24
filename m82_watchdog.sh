@@ -1,4 +1,16 @@
 #!/data/data/com.termux/files/usr/bin/bash
+# === M82 SINGLETON PID LOCK ===
+LOCKFILE="$HOME/M82/logs/m82_watchdog.pid"
+mkdir -p "$HOME/M82/logs"
+if [ -f "$LOCKFILE" ]; then
+    OLD_PID=$(cat "$LOCKFILE" 2>/dev/null)
+    if [ -n "$OLD_PID" ] && kill -0 "$OLD_PID" 2>/dev/null && [ "$OLD_PID" != "$$" ]; then
+        exit 0
+    fi
+fi
+echo "$$" > "$LOCKFILE"
+trap 'rm -f "$LOCKFILE"' EXIT INT TERM
+# ================================
 export PATH=/data/data/com.termux/files/usr/bin:$PATH
 B="/data/data/com.termux/files/home/M82"
 mkdir -p "$B/logs"
