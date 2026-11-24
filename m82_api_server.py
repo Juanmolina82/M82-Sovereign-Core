@@ -10,8 +10,14 @@ DB_PATH = os.path.join(BASE_DIR, "m82_database.db")
 
 @app.route('/', methods=['GET', 'POST'])
 def analyze():
-    from flask import request, render_template_string
-    import sqlite3, json
+    from flask import request, render_template_string, abort, make_response
+    import sqlite3, json, hmac
+    key_path = os.path.expanduser("~/M82/private/.m82_master_key")
+    expected_key = open(key_path).read().strip() if os.path.exists(key_path) else ""
+    provided_key = request.headers.get("X-M82-Key") or request.args.get("key") or request.cookies.get("m82_session") or ""
+    if expected_key and not hmac.compare_digest(provided_key, expected_key):
+        abort(403)
+
     if request.method == "GET":
         db = os.path.expanduser("~/M82/m82_database.db")
         v, hjb, rows, ticks = 0, {}, [], []
@@ -74,7 +80,11 @@ th{background:#1e293b;color:#38bdf8}
 </table>
 </body>
 </html>"""
-        return render_template_string(tpl, v=v, hjb=hjb, rows=rows, ticks=ticks)
+        resp = make_response(render_template_string(tpl, v=v, hjb=hjb, rows=rows, ticks=ticks))
+        resp.set_cookie('m82_session', expected_key, httponly=True, samesite='Strict')
+        resp.headers['X-Frame-Options'] = 'DENY'
+        resp.headers['X-Content-Type-Options'] = 'nosniff'
+        return resp
 
     from flask import request, jsonify, render_template_string
     import sqlite3, json
