@@ -1,6 +1,6 @@
 {
   "schema_version": "M82_V60.5_CANONICAL",
-  "generated_at_utc": "2026-11-24T21:38:48Z",
+  "generated_at_utc": "2026-11-24T21:40:54Z",
   "node": "CHARALLAVE-L4L5-EDGE",
   "hq": "CARACAS-HQ-CENTRAL",
   "governance": {
@@ -20,7 +20,7 @@
   },
   "artifacts": {
     "master_dossier_md": "/data/data/com.termux/files/home/M82/docs/M82_MACRO_DOSSIER_MASTER_V605.md",
-    "master_dossier_sha256": "41f0fb0df531fe8e6160a16884f276bb84572a9b8eebc5f1ded962532438b715",
+    "master_dossier_sha256": "9d12af54b350d0492a6ff5a46ab38d658b8799225dc08ab8434f23fc084e186b",
     "sqlite_db": "/data/data/com.termux/files/home/M82/m82_database.db",
     "ledger_seals_count": 5
   },

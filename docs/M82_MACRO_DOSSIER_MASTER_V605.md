@@ -59,3 +59,26 @@
 | **Nivel X** | `thorp_bayesian_regime_l10.py` | `c4cdd3f5310c6a10...` | Inferencia Bayesiana de Cambio de Régimen P(Búnker | Evidencia) |
 | **Daemon Core** | `m82_quant_daemon.py` | `7e175cb5c7e40e17...` | Bucle Autónomo Continuo (900s) Monohilo Anti-Contención |
 | **Vault Backup** | `m82_github_vault_backup.sh` | `eef43ac22763e0ef...` | Respaldo Criptográfico Allowlist y Snapshot SHA-256 en GitHub |
+---
+
+## ANEXO EJECUTIVO V60.5 — TELEMETRÍA CONSOLIDADA (2026-11-24)
+**Nodo Operativo:** `CHARALLAVE-L4L5-EDGE` ⊗ `CARACAS-HQ-CENTRAL` | **Timestamp UTC:** `2026-11-24T21:40:54Z`
+**Gobernanza Activa:** `BUNKER MODE / CUSTODIA PASIVA 0.30x LOCK | LOCKOUT: NO TRADE` (Exposición: `0.22x NAV` | Dry Powder: `78.0%` | VaR Diario: `1.68%` | Warsh Spread: `102.0 bps`)
+
+### 1. Inteligencia Corporativa Refinitiv Workspace (`RIC: NVDA.O` — 12 Secciones RAP)
+* **Acción de Mercado:** Cierre regular en **$155.38** (`-5.86%` / `-$9.67`; mínimo intradía `$150.50`, *After-Hours* `~$153.55`) con volumen de **381.4M** acciones (>2.0x promedio 3M de `183M`), consolidando tras el rally de `+31.48%` (`$165.05`) por la restitución unánime de Jensen Huang como CEO.
+* **Fundamentales y Guía (Q3 FY27 / Q4 FY27):** Ingresos Q3 FY27 de **$115.84B** (`+103% YoY`), impulsados por *Data Center* (**$107.6B**), con guía Q4 FY27 proyectada en **$130.0B**.
+* **Múltiplos de Valuación:** `16.39x P/E TTM` y `12.20x Forward P/E`.
+* **Vector Indexado:** `v60.5-REFINITIV-NVDA-12SECTIONS` (Sellado SHA-256 en `m82_ledger_seals_v2`).
+
+### 2. Auditoría Fiscal Soberana Venezuela 2012–2025 (`$691.5B` Combinados & Telemetría LSEG)
+* **Balance Acumulado 2012–2025:** **$454.0B** en exportaciones petroleras + **$237.54B** en deuda pública reconocida (**242.0% del PIB**, vs. estimación BID de `$162.6B`) = **$691.5B** (**7.05x el PIB 2025**), más **$23.0B** bajo investigación en la trama *PDVSA-Cripto*.
+* **Desglose de Pasivos Reconocidos (`$237.54B`):** `49.1%` obligaciones comerciales (`$116.5B`), `28.3%` deuda no financiera PDVSA (`$67.3B`), y `22.6%` pasivos bilaterales/arbitrales (`$127.4B` en reclamos totales; `$110.1B` en Eurobonos + `$45.9B` en PDI; `+$26.6B` nueva deuda).
+* **Cotizaciones LSEG WAL Mode (19 RICs):** Soberanos `VENZ` hasta **47.00¢** (`+3.25`), `PDVSA` hasta **47.50¢** (`+1.50`), `CITGO` (`17302XAN6=` / `USU17185AH96=`) en **101.125**, Brent (`LCOc1`) en **$90.88**, WTI (`CLc1`) en **$81.43** y Oro Spot (`XAU=`) en **$3,550.92**.
+* **Hito Regulatorio:** Vencimiento de la Licencia General **OFAC GL 5AA** (protección de activos CITGO) el **18 de diciembre de 2026**.
+* **Vector Indexado:** `v60.5-VZLA-2012-2025-691B-AUDIT` (Sellado SHA-256 en `m82_ledger_seals_v2`).
+
+### 3. Estructura Temporal de Volatilidad (`.VIX` / `NASDAQ`) & Riesgo Monetario
+* **Telemetría `.VIX`:** Spot en **26.36** (`-0.26` / `-0.98%`; rango intradía `25.98 – 32.38`) frente a Futuros en **24.19** (`+0.44%`), sosteniendo una curva invertida (**Backwardation de -2.17 pts**).
+* **Índice Tecnológico (`NASDAQ`):** Cierre en **23,733.54** (`-356.02` / `-1.48%`), presionado por el riesgo inflacionario del auge IA sobre la Reserva Federal de Kevin Warsh.
+* **Vector Indexado:** `v60.5-VIX-NASDAQ-20261124` (Quinto sello SHA-256 encadenado en `m82_ledger_seals_v2`).
