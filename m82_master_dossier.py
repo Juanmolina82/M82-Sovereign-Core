@@ -58,3 +58,25 @@ if __name__ == "__main__":
     print(f"\n=== [LSEG LIVE TELEMETRY - WAL MODE | {len(_snap)} RICS] ===")
     for _ric, _v in _snap.items():
         print(f"{_ric:<14} | {_v['dsply_name']:<20} | LAST:{_v['last_px']} | CHG:{_v['net_chg']}")
+
+
+# === M82 LSEG WAL LIVE 19-RICS HOOK ===
+def render_lseg_wal_live_block():
+    import sys, os
+    scripts_dir = os.path.expanduser("~/M82/scripts")
+    if scripts_dir not in sys.path:
+        sys.path.insert(0, scripts_dir)
+    from lseg_wal_reader import get_latest_lseg_live, check_lseg_thresholds
+    snap = get_latest_lseg_live()
+    alerts = check_lseg_thresholds(snap)
+    print(f"\n=== [LSEG LIVE TELEMETRY - WAL MODE | {len(snap)} RICS | ALERTAS: {len(alerts)}] ===")
+    for ric, v in snap.items():
+        name = (v.get("dsply_name") or "")[:20]
+        last_px = v.get("last_px")
+        net_chg = v.get("net_chg")
+        print(f"{ric:<14} | {name:<20} | LAST:{str(last_px):<8} | CHG:{net_chg}")
+    for a in alerts:
+        print(f"[ALERTA UMBRAL] {a['ric']} -> {a['action']}")
+
+if __name__ == "__main__":
+    render_lseg_wal_live_block()
