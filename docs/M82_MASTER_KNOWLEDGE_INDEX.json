@@ -1,8 +1,9 @@
 {
   "system": "M82_SOVEREIGN_CORE",
   "version": "v60.5",
+  "workspace_user": "jmmp@molina82.com",
   "origin_topology": "CHARALLAVE-L4L5-EDGE <-> CARACAS-HQ-CENTRAL",
-  "generated_at_utc": "2026-11-24T22:09:53Z",
+  "generated_at_utc": "2026-11-24T23:10:08Z",
   "governance_state": {
     "mode": "BUNKER_MODE_CUSTODIA_PASIVA_030X_LOCK",
     "lockout": "NO_TRADE",
@@ -14,11 +15,14 @@
     "ofac_gl_5aa_deadline": "2026-12-18"
   },
   "ledger_integrity": {
-    "total_vectors": 54,
-    "total_seals": 6,
+    "total_vectors": 56,
+    "total_seals": 7,
     "latest_seal_id": "SCV61-1500-M82-444-TRUST-113",
     "latest_payload_hash": "SHA256_TRUST_113_VALIDATED",
-    "latest_tag": "v60.5-REFINITIV-VZLA-237B-PRESS"
+    "latest_tags": [
+      "v60.5-REFINITIV-CITI-VZLA-CORRESPONDENT",
+      "v60.5-REFINITIV-VZLA-237.5B-DSA-GAP"
+    ]
   },
   "cryptographic_seals": [
     {
@@ -64,6 +68,15 @@
       "operation": "SEAL",
       "payload_hash": "648d556e1a1fd565e24bebf005920e1b4e8803477d551d8e36c5cc4c8af4393c",
       "timestamp": "2026-11-24T22:08:08Z",
+      "node_id": "CHARALLAVE-L4L5-EDGE"
+    },
+    {
+      "seal_id": null,
+      "prev_hash": "SHA256_TRUST_113_VALIDATED",
+      "record_id": "851",
+      "operation": "SEAL",
+      "payload_hash": "1feb33e124a83ca510affc9bfc257d8609fca4e42321a9e02cbfb4eea837e431",
+      "timestamp": "2026-11-24T23:10:08Z",
       "node_id": "CHARALLAVE-L4L5-EDGE"
     },
     {
@@ -831,6 +844,34 @@
       "alpha_score": 0.95,
       "msi_index": 1910.0,
       "hash_sha256": "8da398cc51b10ee78228f0a7091a3fe790725441a4dbe535b41d24a27f5b38f1",
+      "validated": 1
+    },
+    {
+      "id": 850,
+      "source": "REFINITIV_BLOOMBERG_STREAM_JMMP",
+      "category": "BANKING_SANCTIONS_WAIVERS",
+      "headline": "Workspace (jmmp@molina82.com): Citigroup (C.N @ $113.8) evalua retorno a Venezuela tras 5 anos via banca corresponsal sujeto a exenciones de sanciones (waivers) con administracion Trump",
+      "risk_score": 3.2,
+      "m82_tag": "v60.5-REFINITIV-CITI-VZLA-CORRESPONDENT",
+      "sentiment": 0.68,
+      "metadata_json": "{\"workspace_user\":\"jmmp@molina82.com\",\"source_feed\":\"REFINITIV_BLOOMBERG_AI_STREAM\",\"headline\":\"Citi Eyes Venezuela Return as Trump Looks to Reopen Its Economy\",\"ticker\":\"C.N\",\"price_ref\":113.8,\"entry_model\":\"CORRESPONDENT_BANKING_FIRST\",\"regulatory_gate\":\"US_TREASURY_OFAC_SANCTIONS_WAIVERS\",\"governance\":\"BUNKER_MODE_CUSTODIA_PASIVA_030X_LOCK\",\"captured_at_utc\":\"2026-11-24T23:10:08Z\"}",
+      "alpha_score": 0.94,
+      "msi_index": 1925.0,
+      "hash_sha256": "2235b93dc532dd580be7e6b31220c88a98287e1c5e55080db2ed8cc9ca75784f",
+      "validated": 1
+    },
+    {
+      "id": 851,
+      "source": "REFINITIV_BLOOMBERG_STREAM_JMMP",
+      "category": "SOVEREIGN_DEBT_DSA_GAP",
+      "headline": "Workspace (jmmp@molina82.com): Desglose oficial deuda VZLA $237.5B ($116.5B financiera >49% + $67.3B no financiera 28%); despacho advierte ausencia de Analisis de Sostenibilidad de Deuda (DSA) completo para negociar con acreedores",
+      "risk_score": 4.25,
+      "m82_tag": "v60.5-REFINITIV-VZLA-237.5B-DSA-GAP",
+      "sentiment": 0.25,
+      "metadata_json": "{\"workspace_user\":\"jmmp@molina82.com\",\"source_feed\":\"REFINITIV_BLOOMBERG_AI_STREAM\",\"headline\":\"Venezuela Unveils $237 Billion Debt Load Ahead of Restructuring\",\"total_public_debt_b\":237.5,\"financial_debt_b\":116.5,\"financial_debt_share_pct\":49.05,\"non_financial_commitments_b\":67.3,\"non_financial_share_pct\":28.34,\"critical_missing_element\":\"FULL_DEBT_SUSTAINABILITY_ANALYSIS_DSA\",\"governance\":\"BUNKER_MODE_CUSTODIA_PASIVA_030X_LOCK\",\"captured_at_utc\":\"2026-11-24T23:10:08Z\"}",
+      "alpha_score": 0.96,
+      "msi_index": 1935.0,
+      "hash_sha256": "6f3b0c65e8e70cf9748231836e050b0327c37134b0c2ce9da0126403b597514f",
       "validated": 1
     }
   ]
