@@ -1488,5 +1488,13 @@
       "hash_sha256": "443e1f89d4cb0ee2613ba54027ce5919251348c187835298862381ce168cd2fe",
       "version": 1
     }
+  ],
+  "last_updated_utc": "2026-11-25T03:23:36.504945+00:00",
+  "governance_regime": "BUNKER MODE / CUSTODIA PASIVA 0.30x LOCK | LOCKOUT: NO TRADE",
+  "macro_dossier_count": 61,
+  "recent_session_tags": [
+    "v60.5-DOS-VZLA-RECONCILIATION-TSJ-20261124",
+    "v60.5-ENERGY-US-VZLA-DEPENDENCE-CORTES-20261124",
+    "v60.5-XOM-WORKSPACE-VIEW-1000298026"
   ]
 }
