@@ -1489,13 +1489,32 @@
       "version": 1
     }
   ],
-  "last_updated_utc": "2026-11-25T03:57:35.014976+00:00",
+  "last_updated_utc": "2026-11-25T21:29:08.077652+00:00",
   "governance_regime": "BUNKER MODE / CUSTODIA PASIVA 0.30x LOCK | LOCKOUT: NO TRADE",
-  "macro_dossier_count": 62,
+  "macro_dossier_count": 81,
   "recent_session_tags": [
     "v60.5-DOS-VZLA-RECONCILIATION-TSJ-20261124",
     "v60.5-ENERGY-US-VZLA-DEPENDENCE-CORTES-20261124",
     "v60.5-XOM-WORKSPACE-VIEW-1000298026"
   ],
-  "latest_esg_tag": "v60.5-XOM-ESG-DOSSIER-20261124"
+  "latest_esg_tag": "v60.5-XOM-ESG-DOSSIER-20261124",
+  "latest_synthesis_tag": "v60.5-VZLA-PDVSA-REFINING-XOM-20261125",
+  "latest_defa14a_tag": "v60.5-XOM-DEFA14A-RETAIL-VOTING-20261112",
+  "latest_s13g_tag": "v60.5-XOM-S13G-IMPERIAL-OIL-20261125",
+  "latest_charter_tag": "v60.5-M82-MOLINA-HOLDINGS-CORP-JMM-CHARTER-20261125",
+  "latest_expansion_plan_tag": "v60.5-M82-EXPANSION-PLAN-MOLINA-HOLDINGS-CORP-JMM-20261125",
+  "latest_master_audit_tag": "v60.5-FULL-MACRO-DOSSIER-AUDIT-CARACAS-HQ-20261125",
+  "latest_reuters_tariffs_tag": "v60.5-REUTERS-TARIFFS-SEC301-BRAZIL-20261125",
+  "latest_reuters_us_stocks_tag": "v60.5-REUTERS-US-STOCKS-AI-PCE-20261125-0953",
+  "latest_marcelo_reply_tag": "v60.5-MARCELO-REPLY-CPPS-OIL-MINING-SS-20261125-1132",
+  "latest_lseg_alert_tag": "v60.5-LSEG-ALERT-IXIC-20261125-OPEN",
+  "latest_futures_tag": "v60.5-FUTURES-OPEN-20261125-0958",
+  "latest_jun15_release_tag": "v60.5-GLOBENEWSWIRE-KINGSROCK-HIRES-20260615",
+  "latest_globenewswire_tag": "v60.5-GLOBENEWSWIRE-KINGSROCK-REG-20260924",
+  "latest_midday_consolidation_tag": "v60.5-MACRO-DOSSIER-MIDDAY-CONSOLIDATED-20261125",
+  "latest_lseg_panel_tag": "v60.5-LSEG-PANEL-MULTI-20261125-1240",
+  "latest_tech_memory_audit_tag": "v60.5-TECH-MEMORY-TARIFF-FED-REBOUND-FAILED-20261125",
+  "latest_state_dept_reconciliation_tag": "v60.5-US-STATE-DEPT-VZLA-RECONCILIATION-20261124",
+  "latest_fed_beige_book_tag": "v60.5-REUTERS-FED-BEIGE-BOOK-STICKY-INFLATION-20261125",
+  "hq_topology": "Caracas HQ Central"
 }
