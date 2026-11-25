@@ -1489,12 +1489,13 @@
       "version": 1
     }
   ],
-  "last_updated_utc": "2026-11-25T03:23:36.504945+00:00",
+  "last_updated_utc": "2026-11-25T03:57:35.014976+00:00",
   "governance_regime": "BUNKER MODE / CUSTODIA PASIVA 0.30x LOCK | LOCKOUT: NO TRADE",
-  "macro_dossier_count": 61,
+  "macro_dossier_count": 62,
   "recent_session_tags": [
     "v60.5-DOS-VZLA-RECONCILIATION-TSJ-20261124",
     "v60.5-ENERGY-US-VZLA-DEPENDENCE-CORTES-20261124",
     "v60.5-XOM-WORKSPACE-VIEW-1000298026"
-  ]
+  ],
+  "latest_esg_tag": "v60.5-XOM-ESG-DOSSIER-20261124"
 }
