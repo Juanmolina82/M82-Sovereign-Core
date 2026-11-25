@@ -3,7 +3,7 @@
   "version": "v60.5",
   "workspace_user": "jmmp@molina82.com",
   "origin_topology": "CHARALLAVE-L4L5-EDGE <-> CARACAS-HQ-CENTRAL",
-  "generated_at_utc": "2026-11-24T23:10:08Z",
+  "generated_at_utc": "2026-11-25T00:54:38Z",
   "governance_state": {
     "mode": "BUNKER_MODE_CUSTODIA_PASIVA_030X_LOCK",
     "lockout": "NO_TRADE",
@@ -15,13 +15,13 @@
     "ofac_gl_5aa_deadline": "2026-12-18"
   },
   "ledger_integrity": {
-    "total_vectors": 56,
-    "total_seals": 7,
+    "total_vectors": 58,
+    "total_seals": 8,
     "latest_seal_id": "SCV61-1500-M82-444-TRUST-113",
     "latest_payload_hash": "SHA256_TRUST_113_VALIDATED",
     "latest_tags": [
-      "v60.5-REFINITIV-CITI-VZLA-CORRESPONDENT",
-      "v60.5-REFINITIV-VZLA-237.5B-DSA-GAP"
+      "v60.5-XOM-GUYANA-ICJ-STABROEK-NORTH",
+      "v60.5-XOM-DEBT-TENDER-SETTLEMENT-1.76B"
     ]
   },
   "cryptographic_seals": [
@@ -77,6 +77,15 @@
       "operation": "SEAL",
       "payload_hash": "1feb33e124a83ca510affc9bfc257d8609fca4e42321a9e02cbfb4eea837e431",
       "timestamp": "2026-11-24T23:10:08Z",
+      "node_id": "CHARALLAVE-L4L5-EDGE"
+    },
+    {
+      "seal_id": null,
+      "prev_hash": "SHA256_TRUST_113_VALIDATED",
+      "record_id": "863",
+      "operation": "SEAL",
+      "payload_hash": "7b6a3eba747b4f441acf969c4de7e906b76592297430dd43dba1e1fccc4567d6",
+      "timestamp": "2026-11-25T00:54:38Z",
       "node_id": "CHARALLAVE-L4L5-EDGE"
     },
     {
@@ -872,6 +881,34 @@
       "alpha_score": 0.96,
       "msi_index": 1935.0,
       "hash_sha256": "6f3b0c65e8e70cf9748231836e050b0327c37134b0c2ce9da0126403b597514f",
+      "validated": 1
+    },
+    {
+      "id": 862,
+      "source": "REFINITIV_XOM_MONITOR_JMMP",
+      "category": "ENERGY_GEOPOLITICS_ICJ",
+      "headline": "XOM.N ($156.90): ExxonMobil Guyana afirma que fallo CIJ marca cierre procesal y proyecta explorar norte del bloque Stabroek (bajo force majeure) en 2027 tras sentencia sobre diferendo Venezuela-Guyana",
+      "risk_score": 3.85,
+      "m82_tag": "v60.5-XOM-GUYANA-ICJ-STABROEK-NORTH",
+      "sentiment": 0.45,
+      "metadata_json": "{\"workspace_user\":\"jmmp@molina82.com\",\"source_feed\":\"REFINITIV_XOM_NEWS_MONITOR\",\"ticker\":\"XOM.N\",\"price_ref\":156.9,\"executive_spokesperson\":\"Alistair Routledge (President, ExxonMobil Guyana)\",\"legal_forum\":\"International Court of Justice (ICJ) - 1899 Arbitral Award\",\"operational_status\":\"FORCE_MAJEURE_NORTH_OF_70_DEGREE_LINE_STABROEK\",\"target_exploration_window\":\"2027_POST_ICJ_RULING\",\"governance\":\"BUNKER_MODE_CUSTODIA_PASIVA_030X_LOCK\",\"captured_at_utc\":\"2026-11-25T00:54:38Z\"}",
+      "alpha_score": 0.93,
+      "msi_index": 1940.0,
+      "hash_sha256": "b73cd76f1342409b82d81f55b1ea15b08afd7dc808fcbc8068c1e2dc43b18c86",
+      "validated": 1
+    },
+    {
+      "id": 863,
+      "source": "REFINITIV_XOM_MONITOR_JMMP",
+      "category": "CORPORATE_LIABILITY_MANAGEMENT",
+      "headline": "XOM.N ($156.90): ExxonMobil y Pioneer liquidan hoy (2026-11-24) recompra en efectivo de deuda senior por ~$1.76B (vencimientos 2030-2040; Citigroup dealer manager) optimizando estructura de capital",
+      "risk_score": 1.95,
+      "m82_tag": "v60.5-XOM-DEBT-TENDER-SETTLEMENT-1.76B",
+      "sentiment": 0.72,
+      "metadata_json": "{\"workspace_user\":\"jmmp@molina82.com\",\"source_feed\":\"REFINITIV_XOM_NEWS_MONITOR\",\"ticker\":\"XOM.N\",\"price_ref\":156.9,\"settlement_date\":\"2026-11-24\",\"total_accepted_principal_b\":1.76,\"tranches_usd_m\":{\"xom_3.482pct_2030\":705.4,\"xom_4.227pct_2040\":832.7,\"pioneer_1.900pct_2030\":128.7,\"pioneer_2.150pct_2031\":97.8},\"dealer_manager\":\"Citigroup\",\"governance\":\"BUNKER_MODE_CUSTODIA_PASIVA_030X_LOCK\",\"captured_at_utc\":\"2026-11-25T00:54:38Z\"}",
+      "alpha_score": 0.91,
+      "msi_index": 1942.0,
+      "hash_sha256": "e75b6fc6e27473002f9504f35947c273d7834b88862c6c36c501f8ccfd60ad1b",
       "validated": 1
     }
   ]
