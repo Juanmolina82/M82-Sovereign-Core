@@ -2,8 +2,8 @@
 set -e
 
 echo "=================================================================="
-echo "🛡️ M82 SOVEREIGN CORE :: TERMUX EDGE BOOTSTRAP (CHARALLAVE L4/L5)"
-echo "🔒 GOBERNANZA: BUNKER MODE / CUSTODIA PASIVA 0.30x LOCK | NO TRADE"
+echo "M82 SOVEREIGN CORE :: TERMUX EDGE BOOTSTRAP (CHARALLAVE L4/L5)"
+echo "GOBERNANZA: BUNKER MODE / CUSTODIA PASIVA 0.30x LOCK | NO TRADE"
 echo "=================================================================="
 
 # 1. Mantener CPU activa en Termux (evita Doze Mode de Android)
@@ -88,7 +88,11 @@ mkdir -p "$HOME/M82/logs"
 
 if [ -f "$LOCKFILE" ]; then
     OLD_PID=$(cat "$LOCKFILE" 2>/dev/null)
-    if [ -n "$OLD_PID" ] && kill -0 "$OLD_PID" 2>/dev/null && [ "$OLD_PID" != "$$" ]; then exit 0 fi fi echo "$$" > "$LOCKFILE"
+    if [ -n "$OLD_PID" ] && kill -0 "$OLD_PID" 2>/dev/null && [ "$OLD_PID" != "$$" ]; then
+        exit 0
+    fi
+fi
+echo "$$" > "$LOCKFILE"
 trap 'rm -f "$LOCKFILE"' EXIT INT TERM
 
 while true; do
