@@ -3,7 +3,7 @@
   "version": "v60.5",
   "workspace_user": "jmmp@molina82.com",
   "origin_topology": "CHARALLAVE-L4L5-EDGE <-> CARACAS-HQ-CENTRAL",
-  "generated_at_utc": "2026-11-25T01:05:35Z",
+  "generated_at_utc": "2026-11-25T01:13:06Z",
   "governance_state": {
     "mode": "BUNKER_MODE_CUSTODIA_PASIVA_030X_LOCK",
     "lockout": "NO_TRADE",
@@ -16,19 +16,31 @@
   "ledger_integrity": {
     "total_vectors": 58,
     "total_seals": 12,
-    "latest_seal_id": "SCV61-1500-M82-444-TRUST-113",
-    "latest_payload_hash": "SHA256_TRUST_113_VALIDATED"
+    "latest_seal_id": 12,
+    "latest_payload_hash": "3587b101de7cb879aeded37d142c7c9adae02c7e5f6e3cd62bf0b26dc8b8f5a6"
   },
   "cryptographic_seals": [
     {
+      "seal_id": "SCV61-1500-M82-444-TRUST-113",
+      "prev_hash": "GENESIS_444_BASE",
+      "record_id": "113",
+      "operation": "SEAL",
+      "payload_hash": "SHA256_TRUST_113_VALIDATED",
+      "timestamp": "2026-10-29T04:12:26Z",
+      "node_id": "CHARALLAVE-L4L5-EDGE",
+      "version": 1,
+      "seal_id_resolved": "SCV61-1500-M82-444-TRUST-113"
+    },
+    {
       "seal_id": null,
-      "prev_hash": null,
+      "prev_hash": "",
       "record_id": "835",
       "operation": null,
-      "payload_hash": null,
+      "payload_hash": "",
       "timestamp": "2026-11-24T19:42:25Z",
       "node_id": "CHARALLAVE-L4L5-EDGE",
-      "version": 1
+      "version": 1,
+      "seal_id_resolved": 2
     },
     {
       "seal_id": null,
@@ -38,7 +50,8 @@
       "payload_hash": "5277c6722d2c8c990aa3bb1a18569fb746649a2e340d76c620e4c351fc47af48",
       "timestamp": "2026-11-24T19:47:22Z",
       "node_id": "CHARALLAVE-L4L5-EDGE",
-      "version": 1
+      "version": 1,
+      "seal_id_resolved": 3
     },
     {
       "seal_id": null,
@@ -48,7 +61,8 @@
       "payload_hash": "4beb8932d4fbafcd1e1820a4150769b6f188abce8dfbf0f9ebbea8f5a5885f0d",
       "timestamp": "2026-11-24T19:47:22Z",
       "node_id": "CHARALLAVE-L4L5-EDGE",
-      "version": 1
+      "version": 1,
+      "seal_id_resolved": 4
     },
     {
       "seal_id": null,
@@ -58,7 +72,8 @@
       "payload_hash": "486599d560d4db5b137d8a56724650cfff77bd82bbfbc0599cc49fffae821c90",
       "timestamp": "2026-11-24T21:17:11Z",
       "node_id": "CHARALLAVE-L4L5-EDGE",
-      "version": 1
+      "version": 1,
+      "seal_id_resolved": 5
     },
     {
       "seal_id": null,
@@ -68,7 +83,8 @@
       "payload_hash": "648d556e1a1fd565e24bebf005920e1b4e8803477d551d8e36c5cc4c8af4393c",
       "timestamp": "2026-11-24T22:08:08Z",
       "node_id": "CHARALLAVE-L4L5-EDGE",
-      "version": 1
+      "version": 1,
+      "seal_id_resolved": 6
     },
     {
       "seal_id": null,
@@ -78,7 +94,8 @@
       "payload_hash": "1feb33e124a83ca510affc9bfc257d8609fca4e42321a9e02cbfb4eea837e431",
       "timestamp": "2026-11-24T23:10:08Z",
       "node_id": "CHARALLAVE-L4L5-EDGE",
-      "version": 1
+      "version": 1,
+      "seal_id_resolved": 7
     },
     {
       "seal_id": null,
@@ -88,7 +105,8 @@
       "payload_hash": "7b6a3eba747b4f441acf969c4de7e906b76592297430dd43dba1e1fccc4567d6",
       "timestamp": "2026-11-25T00:54:38Z",
       "node_id": "CHARALLAVE-L4L5-EDGE",
-      "version": 1
+      "version": 1,
+      "seal_id_resolved": 8
     },
     {
       "seal_id": null,
@@ -98,7 +116,8 @@
       "payload_hash": "f5b407b868adf0bc4cdb3f469e325fb76be82b9b161857d2d0e5a41691f8caaa",
       "timestamp": "2026-11-25T00:58:55Z",
       "node_id": "CHARALLAVE-L4L5-EDGE",
-      "version": 1
+      "version": 1,
+      "seal_id_resolved": 9
     },
     {
       "seal_id": null,
@@ -108,7 +127,8 @@
       "payload_hash": "a5a80da631b85cbab7c867074a9cac0eb7b67d0e2652a93f044744218c30290a",
       "timestamp": "2026-11-25T01:02:07Z",
       "node_id": "CHARALLAVE-L4L5-EDGE",
-      "version": 1
+      "version": 1,
+      "seal_id_resolved": 10
     },
     {
       "seal_id": null,
@@ -118,7 +138,8 @@
       "payload_hash": "2aa79552570d3b75eaa53ee920157cc0bbc0ff487a43b3517a6b634334399425",
       "timestamp": "2026-11-25T01:04:00Z",
       "node_id": "CHARALLAVE-L4L5-EDGE",
-      "version": 1
+      "version": 1,
+      "seal_id_resolved": 11
     },
     {
       "seal_id": null,
@@ -128,17 +149,8 @@
       "payload_hash": "3587b101de7cb879aeded37d142c7c9adae02c7e5f6e3cd62bf0b26dc8b8f5a6",
       "timestamp": "2026-11-25T01:05:35Z",
       "node_id": "CHARALLAVE-L4L5-EDGE",
-      "version": 1
-    },
-    {
-      "seal_id": "SCV61-1500-M82-444-TRUST-113",
-      "prev_hash": "GENESIS_444_BASE",
-      "record_id": "113",
-      "operation": "SEAL",
-      "payload_hash": "SHA256_TRUST_113_VALIDATED",
-      "timestamp": "2026-10-29T04:12:26Z",
-      "node_id": "CHARALLAVE-L4L5-EDGE",
-      "version": 1
+      "version": 1,
+      "seal_id_resolved": 12
     }
   ],
   "macro_vectors": [
