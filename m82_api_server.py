@@ -41,7 +41,7 @@ def analyze():
 <meta charset=utf-8>
 <meta name=viewport content='width=device-width,initial-scale=1'>
 <meta http-equiv=refresh content=15>
-<title>M82 Sovereign Core v60.5 | LSEG Live</title>
+<title>M82 Sovereign Core v60.5 | M82 FEED</title>
 <style>
 body{background:#090d14;color:#e2e8f0;font-family:monospace;padding:12px;margin:0}
 .box{background:#0f172a;border:1px solid #1e293b;padding:10px;border-radius:6px;margin-bottom:10px}
@@ -56,9 +56,9 @@ th{background:#1e293b;color:#38bdf8}
 </head>
 <body>
 <div class=box>
-<div style='color:#38bdf8;font-weight:bold'>M82 SOVEREIGN CORE v60.5 | CHARALLAVE L4/L5 EDGE</div>
+<div style='color:#38bdf8;font-weight:bold'>M82 SOVEREIGN CORE v60.5 | CARACAS HQ CENTRAL</div>
 <div class=b>BUNKER MODE / CUSTODIA PASIVA 0.30x LOCK | LOCKOUT: NO TRADE</div>
-<div class=lseg>LSEG WORKSPACE LIVE: jmmp@molina82.com</div>
+<div class=lseg>M82 TELEMETRY FEED | STREAM ACTIVO</div>
 </div>
 <div class=g>
 <div class=box><div>EXPOSICIÓN / DRY POWDER</div><div class=v>0.22x / 78.0%</div></div>
@@ -67,7 +67,7 @@ th{background:#1e293b;color:#38bdf8}
 <div class=box><div>WARSH SPREAD / VaR</div><div class=v>+102.0 bps / 1.68%</div></div>
 </div>
 <table>
-<tr><th>RIC / ASSET (LSEG LIVE)</th><th>BID</th><th>ASK</th><th>LAST</th><th>UTC UPDATE</th></tr>
+<tr><th>RIC / ASSET (M82 FEED)</th><th>BID</th><th>ASK</th><th>LAST</th><th>UTC UPDATE</th></tr>
 {% for t in ticks %}
 <tr><td style='color:#38bdf8;font-weight:bold'>{{t[0]}}</td><td>{{t[1]}}</td><td>{{t[2]}}</td><td style='color:#10b981;font-weight:bold'>{{t[3]}}</td><td>{{t[4]}}</td></tr>
 {% endfor %}
@@ -113,7 +113,7 @@ th{background:#1e293b;color:#38bdf8}
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <meta http-equiv="refresh" content="30">
-            <title>M82 Sovereign Core v60.5 | Charallave L4/L5 Edge</title>
+            <title>M82 Sovereign Core v60.5 | CARACAS HQ CENTRAL</title>
             <style>
                 body { background:#090d14; color:#e2e8f0; font-family:monospace; margin:0; padding:14px; }
                 .hdr { border:1px solid #1e293b; background:#0f172a; padding:12px; border-radius:6px; margin-bottom:12px; }
@@ -131,7 +131,7 @@ th{background:#1e293b;color:#38bdf8}
         </head>
         <body>
             <div class="hdr">
-                <div class="title">M82 SOVEREIGN CORE v60.5 — CHARALLAVE L4/L5 EDGE</div>
+                <div class="title">M82 SOVEREIGN CORE v60.5 — CARACAS HQ CENTRAL</div>
                 <div class="badge">BUNKER MODE / CUSTODIA PASIVA 0.30x LOCK | LOCKOUT: NO TRADE</div>
             </div>
             <div class="grid">
@@ -167,7 +167,7 @@ th{background:#1e293b;color:#38bdf8}
             cn.close()
         except Exception as e:
             rows = [("DB_ERR", 0, 0, str(e))]
-        tpl = "<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><meta http-equiv=refresh content=30><title>M82 Sovereign Core v60.5</title><style>body{background:#090d14;color:#e2e8f0;font-family:monospace;padding:12px}.box{background:#0f172a;border:1px solid #1e293b;padding:10px;border-radius:6px;margin-bottom:10px}.b{background:#7f1d1d;color:#fecaca;padding:3px 7px;border-radius:4px;font-size:11px;display:inline-block;margin-top:5px}.g{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:10px}.v{color:#10b981;font-size:15px;font-weight:bold}table{width:100%;border-collapse:collapse;font-size:11px;background:#0f172a}th,td{border:1px solid #1e293b;padding:5px;text-align:left}th{background:#1e293b;color:#38bdf8}</style></head><body><div class=box><div style='color:#38bdf8;font-weight:bold'>M82 SOVEREIGN CORE v60.5 | CHARALLAVE L4/L5 EDGE</div><div class=b>BUNKER MODE / CUSTODIA PASIVA 0.30x LOCK | LOCKOUT: NO TRADE</div></div><div class=g><div class=box><div>EXPOSICIÓN / DRY POWDER</div><div class=v>0.22x / 78.0%</div></div><div class=box><div>VECTORES DOSSIER</div><div class=v>{{v}} CANÓNICOS</div></div><div class=box><div>NIVEL XI (HJB)</div><div class=v style='color:#f59e0b'>{{hjb.get('regime','S1_BUNKER_LOCKOUT')}}</div></div><div class=box><div>WARSH SPREAD / VaR</div><div class=v>+102.0 bps / 1.68%</div></div></div><table><tr><th>TAG</th><th>MSI</th><th>RISK</th><th>VECTOR</th></tr>{% for r in rows %}<tr><td>{{r[0]}}</td><td>{{r[1]}}</td><td>{{r[2]}}</td><td>{{r[3][:85]}}...</td></tr>{% endfor %}</table></body></html>"
+        tpl = "<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><meta http-equiv=refresh content=30><title>M82 Sovereign Core v60.5</title><style>body{background:#090d14;color:#e2e8f0;font-family:monospace;padding:12px}.box{background:#0f172a;border:1px solid #1e293b;padding:10px;border-radius:6px;margin-bottom:10px}.b{background:#7f1d1d;color:#fecaca;padding:3px 7px;border-radius:4px;font-size:11px;display:inline-block;margin-top:5px}.g{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:10px}.v{color:#10b981;font-size:15px;font-weight:bold}table{width:100%;border-collapse:collapse;font-size:11px;background:#0f172a}th,td{border:1px solid #1e293b;padding:5px;text-align:left}th{background:#1e293b;color:#38bdf8}</style></head><body><div class=box><div style='color:#38bdf8;font-weight:bold'>M82 SOVEREIGN CORE v60.5 | CARACAS HQ CENTRAL</div><div class=b>BUNKER MODE / CUSTODIA PASIVA 0.30x LOCK | LOCKOUT: NO TRADE</div></div><div class=g><div class=box><div>EXPOSICIÓN / DRY POWDER</div><div class=v>0.22x / 78.0%</div></div><div class=box><div>VECTORES DOSSIER</div><div class=v>{{v}} CANÓNICOS</div></div><div class=box><div>NIVEL XI (HJB)</div><div class=v style='color:#f59e0b'>{{hjb.get('regime','S1_BUNKER_LOCKOUT')}}</div></div><div class=box><div>WARSH SPREAD / VaR</div><div class=v>+102.0 bps / 1.68%</div></div></div><table><tr><th>TAG</th><th>MSI</th><th>RISK</th><th>VECTOR</th></tr>{% for r in rows %}<tr><td>{{r[0]}}</td><td>{{r[1]}}</td><td>{{r[2]}}</td><td>{{r[3][:85]}}...</td></tr>{% endfor %}</table></body></html>"
         return render_template_string(tpl, v=v, hjb=hjb, rows=rows)
 
     data = request.get_json(force=True)
