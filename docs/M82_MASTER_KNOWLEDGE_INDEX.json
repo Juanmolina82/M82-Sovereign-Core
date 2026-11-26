@@ -2,7 +2,7 @@
   "system": "M82_SOVEREIGN_CORE",
   "version": "v60.5",
   "hq": "CARACAS-HQ-CENTRAL",
-  "generated_at_utc": "2026-11-26T13:38:23Z",
+  "generated_at_utc": "2026-11-26T13:39:05Z",
   "governance_state": {
     "mode": "BUNKER_MODE_CUSTODIA_PASIVA_030X_LOCK",
     "lockout": "NO_TRADE",
@@ -2734,12 +2734,12 @@
       "version": 1
     },
     {
-      "id": 973,
+      "id": 977,
       "node_origin": "Caracas HQ (Core) ⊗ Charallave Edge",
       "governance_mode": "BUNKER MODE / 0.30x LOCK",
       "var_daily": 1.68,
       "active_exposure": 0.22,
-      "created_at": "2026-11-26 13:38:23",
+      "created_at": "2026-11-26 13:39:04",
       "source": "CARACAS_HQ_INSIDER_AUDIT",
       "category": "EQUITY_INSIDER_FLOW",
       "headline": "M82 INSIDER AUDIT: BlackRock (BLK) President Robert S. Kapito reports 1,000-share Form 4 Gift on 2026-11-24 ($0.00; 209,186 direct shares remaining); neutral execution signal under BUNKER MODE 0.30x LOCK",
@@ -2753,16 +2753,16 @@
       "desk_cluster": "CORE_MACRO",
       "dispatched_tg": 0,
       "msi_index": 1850.0,
-      "hash_sha256": "1c49c85d0cc89f0ac79b94e8cae3f514efabb22cd22ba2e8dff714dbb6347cff",
+      "hash_sha256": "e22f3cd92d5be2f745ea2c7289c0d1fb2c35925bc26c67e6d31592e0f5bdd9f9",
       "version": 1
     },
     {
-      "id": 974,
+      "id": 978,
       "node_origin": "Caracas HQ (Core) ⊗ Charallave Edge",
       "governance_mode": "BUNKER MODE / 0.30x LOCK",
       "var_daily": 1.68,
       "active_exposure": 0.22,
-      "created_at": "2026-11-26 13:38:23",
+      "created_at": "2026-11-26 13:39:04",
       "source": "CARACAS_HQ_EQUITY_AUDIT",
       "category": "ASSET_MANAGERS_RELATIVE",
       "headline": "M82 EQUITY AUDIT: Invesco (IVZ) +1.12% to $28.10 (-16.52% vs 52w high $33.66; vol 4.6M vs 5.5M 50d avg) outperforming BLK (-0.36%), GS (-0.62%), MS (-0.73%) in mixed tape; BUNKER MODE 0.30x LOCK",
@@ -2776,16 +2776,16 @@
       "desk_cluster": "CORE_MACRO",
       "dispatched_tg": 0,
       "msi_index": 1760.0,
-      "hash_sha256": "f94388c6f1d49e1a1fc8229d626da24102f106d8c20c699ce61845157e8bc274",
+      "hash_sha256": "81b8a1574b8234162b15603419fc0a0d1b9da542f2268f2482f9d9ac9b69d4b6",
       "version": 1
     },
     {
-      "id": 975,
+      "id": 979,
       "node_origin": "Caracas HQ (Core) ⊗ Charallave Edge",
       "governance_mode": "BUNKER MODE / 0.30x LOCK",
       "var_daily": 1.68,
       "active_exposure": 0.22,
-      "created_at": "2026-11-26 13:38:23",
+      "created_at": "2026-11-26 13:39:04",
       "source": "CARACAS_HQ_MACRO_AUDIT",
       "category": "SOVEREIGN_BANKING_SANCTIONS",
       "headline": "M82 MACRO AUDIT: Citigroup evaluates return to Venezuela after 5 years via correspondent banking subject to US sanctions waivers and energy/Treasury flows; BUNKER MODE 0.30x LOCK",
@@ -2799,16 +2799,16 @@
       "desk_cluster": "VENEZUELA_LATAM_DESK",
       "dispatched_tg": 0,
       "msi_index": 1810.0,
-      "hash_sha256": "308d05b5bd8df7f0be02e9c4208d5cf618d8e015770fc0264d8c0f72701d78bd",
+      "hash_sha256": "bc0be4789831ad155313673a2fddd77774e74da1c19b16ac9028e54ecb2397ad",
       "version": 1
     },
     {
-      "id": 976,
+      "id": 980,
       "node_origin": "Caracas HQ (Core) ⊗ Charallave Edge",
       "governance_mode": "BUNKER MODE / 0.30x LOCK",
       "var_daily": 1.68,
       "active_exposure": 0.22,
-      "created_at": "2026-11-26 13:38:23",
+      "created_at": "2026-11-26 13:39:04",
       "source": "CARACAS_HQ_EQUITY_AUDIT",
       "category": "GLOBAL_BANKS_SCREENER",
       "headline": "M82 EQUITY AUDIT: Bank screener (BAC 47.67, JPM 312.05, C 111.13, SCHW 92.72, NU 12.04, WFC 79.72, HDB 28.45) shows sub-average volume and below-MA50/200 trend except HDB; BUNKER MODE 0.30x LOCK",
@@ -2822,7 +2822,7 @@
       "desk_cluster": "CORE_MACRO",
       "dispatched_tg": 0,
       "msi_index": 1790.0,
-      "hash_sha256": "9807b844977e5b90e59f7b63079da227f20b828918852365cf981537db4118ad",
+      "hash_sha256": "608e22ff66f440e23f68fb38ecb1d88670d84faa65ea96755ab8de26cfa35b8b",
       "version": 1
     }
   ]
