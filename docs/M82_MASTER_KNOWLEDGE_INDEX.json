@@ -3,7 +3,7 @@
   "version": "v60.5",
   "workspace_user": "jmmp@molina82.com",
   "origin_topology": "CHARALLAVE-L4L5-EDGE <-> CARACAS-HQ-CENTRAL",
-  "generated_at_utc": "2026-11-26T21:13:20Z",
+  "generated_at_utc": "2026-11-26T21:29:13Z",
   "governance_state": {
     "mode": "BUNKER_MODE_CUSTODIA_PASIVA_030X_LOCK",
     "lockout": "NO_TRADE",
@@ -20,9 +20,9 @@
   },
   "ledger_integrity": {
     "total_vectors": 106,
-    "total_seals": 99,
-    "latest_seal_id": 99,
-    "latest_payload_hash": "5d2ddd5519922174a546c8100d9eb73a6b5234117e276b92ca2ee2fb7cf32187"
+    "total_seals": 102,
+    "latest_seal_id": 102,
+    "latest_payload_hash": "5f8e8a73ad44ee1346a8c39bc665d953240a985e12c3997573a864570adee5b2"
   },
   "cryptographic_seals": [
     {
@@ -1113,6 +1113,39 @@
       "node_id": "CARACAS-HQ-CENTRAL",
       "version": 1,
       "seal_id_resolved": 99
+    },
+    {
+      "seal_id": null,
+      "prev_hash": "5d2ddd5519922174a546c8100d9eb73a6b5234117e276b92ca2ee2fb7cf32187",
+      "record_id": "1058",
+      "operation": "SEAL",
+      "payload_hash": "411174dfefee52cad5312853d3dfcf4251603ff4e570c22773508e9bf7329921",
+      "timestamp": "2026-11-26T21:18:21Z",
+      "node_id": "CARACAS-HQ-CENTRAL",
+      "version": 1,
+      "seal_id_resolved": 100
+    },
+    {
+      "seal_id": null,
+      "prev_hash": "411174dfefee52cad5312853d3dfcf4251603ff4e570c22773508e9bf7329921",
+      "record_id": "1059",
+      "operation": "SEAL",
+      "payload_hash": "6d3ab234f47ab9839e8735e27f7024f62eba24b59f553b1702e377bef4db6779",
+      "timestamp": "2026-11-26T21:23:58Z",
+      "node_id": "CARACAS-HQ-CENTRAL",
+      "version": 1,
+      "seal_id_resolved": 101
+    },
+    {
+      "seal_id": null,
+      "prev_hash": "6d3ab234f47ab9839e8735e27f7024f62eba24b59f553b1702e377bef4db6779",
+      "record_id": "1060",
+      "operation": "SEAL",
+      "payload_hash": "5f8e8a73ad44ee1346a8c39bc665d953240a985e12c3997573a864570adee5b2",
+      "timestamp": "2026-11-26T21:29:12Z",
+      "node_id": "CARACAS-HQ-CENTRAL",
+      "version": 1,
+      "seal_id_resolved": 102
     }
   ],
   "macro_vectors": [
@@ -3532,26 +3565,26 @@
       "version": 1
     },
     {
-      "id": 1057,
+      "id": 1060,
       "node_origin": "Caracas HQ (Core) ⊗ Charallave Edge",
       "governance_mode": "BUNKER MODE / 0.30x LOCK",
       "var_daily": 1.68,
       "active_exposure": 0.22,
-      "created_at": "2026-11-26 21:13:19",
+      "created_at": "2026-11-26 21:29:12",
       "source": "M82_HUD_AUDIT_DISPATCHER",
       "category": "HUD_GOVERNANCE_AUDIT",
-      "headline": "M82 HUD Audit (Caracas HQ Central): 106 vectors, 98 seals, BUNKER MODE / CUSTODIA PASIVA 0.30x LOCK | LOCKOUT: NO TRADE (0.22x NAV, 78.0% Dry Powder).",
+      "headline": "M82 HUD Audit (Caracas HQ Central): 106 vectors, 101 seals, BUNKER MODE / CUSTODIA PASIVA 0.30x LOCK | LOCKOUT: NO TRADE (0.22x NAV, 78.0% Dry Powder).",
       "risk_score": 2.4,
       "m82_tag": "v60.5-HUD-PERIODIC-AUDIT-CARACAS-HQ",
       "sentiment": 0.5,
-      "metadata_json": "{\"hq\": \"Caracas HQ Central\", \"total_vectors\": 106, \"seal_count\": 98, \"latest_seal_prefix\": \"fe27dab4c0db4c72\", \"regime\": \"BUNKER_MODE_CUSTODIA_PASIVA_030X_LOCK\", \"lockout\": \"NO_TRADE\", \"exposure_nav\": 0.22, \"dry_powder_pct\": 78.0, \"var_daily_pct\": 1.68, \"warsh_spread_bps\": 102.0, \"p_bunker\": 0.9859, \"vix\": 34.0, \"jacobi_lambda1\": 0.5544}",
+      "metadata_json": "{\"hq\": \"Caracas HQ Central\", \"total_vectors\": 106, \"seal_count\": 101, \"latest_seal_prefix\": \"6d3ab234f47ab983\", \"regime\": \"BUNKER_MODE_CUSTODIA_PASIVA_030X_LOCK\", \"lockout\": \"NO_TRADE\", \"exposure_nav\": 0.22, \"dry_powder_pct\": 78.0, \"var_daily_pct\": 1.68, \"warsh_spread_bps\": 102.0, \"p_bunker\": 0.9859, \"vix\": 34.0, \"jacobi_lambda1\": 0.5544}",
       "validated": 1,
       "alpha_score": 0.85,
       "tail_risk_index": 1.45,
       "desk_cluster": "CORE_MACRO",
       "dispatched_tg": 0,
       "msi_index": 1985.0,
-      "hash_sha256": "5d2ddd5519922174a546c8100d9eb73a6b5234117e276b92ca2ee2fb7cf32187",
+      "hash_sha256": "5f8e8a73ad44ee1346a8c39bc665d953240a985e12c3997573a864570adee5b2",
       "version": 1
     }
   ]
