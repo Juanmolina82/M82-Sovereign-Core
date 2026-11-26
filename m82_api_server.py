@@ -198,5 +198,82 @@ th{background:#1e293b;color:#38bdf8}
 
     return jsonify({"response": response_text})
 
+
+# --- M82 AUDIT VIEWS ENDPOINT (:8083) ---
+def load_local_app_views(index_path=None):
+    import json
+    from pathlib import Path
+    target = Path(index_path) if index_path else (Path.home() / "M82" / "docs" / "M82_MASTER_KNOWLEDGE_INDEX.json")
+    if not target.exists():
+        return {
+            "governance": {},
+            "ledger_integrity": {},
+            "views": {
+                "equities_and_peers": [],
+                "bonds_and_loans": [],
+                "board_reports": [],
+                "audit_templates": [],
+            },
+        }
+    payload = json.loads(target.read_text(encoding="utf-8"))
+    vectors = payload.get("macro_vectors") or []
+
+    equities, credit_and_loans, board_reports, universal_templates = [], [], [], []
+    for v in vectors:
+        cat = (v.get("category") or "").upper()
+        if "TEMPLATE" in cat:
+            universal_templates.append(v)
+        elif any(k in cat for k in ("BOARD", "BRIEF")):
+            board_reports.append(v)
+        elif any(k in cat for k in ("LOAN", "BOND", "DEAL")):
+            credit_and_loans.append(v)
+        else:
+            equities.append(v)
+
+    return {
+        "governance": payload.get("governance_lock") or {},
+        "ledger_integrity": payload.get("ledger_integrity") or {},
+        "views": {
+            "equities_and_peers": equities,
+            "bonds_and_loans": credit_and_loans,
+            "board_reports": board_reports,
+            "audit_templates": universal_templates,
+        },
+    }
+
+
+@app.route("/api/m82/audit-views", methods=["GET"])
+def api_m82_audit_views():
+    import hashlib
+    from pathlib import Path
+    from flask import request, jsonify
+
+    index_file = Path.home() / "M82" / "docs" / "M82_MASTER_KNOWLEDGE_INDEX.json"
+    if not index_file.exists():
+        return jsonify({"error": "M82_MASTER_KNOWLEDGE_INDEX.json not found"}), 404
+
+    raw_bytes = index_file.read_bytes()
+    file_sha256 = hashlib.sha256(raw_bytes).hexdigest()
+    data = load_local_app_views(index_file)
+    views = data["views"]
+
+    module = request.args.get("module")
+    if module:
+        if module not in views:
+            return jsonify({"error": f"Invalid module '{module}'"}), 400
+        filtered_views = {module: views[module]}
+    else:
+        filtered_views = views
+
+    return jsonify({
+        "origin_topology": "CHARALLAVE-L4L5-EDGE <-> CARACAS-HQ-CENTRAL",
+        "port": 8083,
+        "index_sha256": file_sha256,
+        "governance": data["governance"],
+        "ledger_integrity": data["ledger_integrity"],
+        "views": filtered_views,
+    }), 200
+# --- END M82 AUDIT VIEWS ENDPOINT ---
+
 if __name__ == '__main__':
     app.run(host='127.0.0.1', port=8083)
