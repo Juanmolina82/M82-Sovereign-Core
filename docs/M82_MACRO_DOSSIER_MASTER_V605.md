@@ -86,3 +86,13 @@
 ## Plantilla Universal de Auditoría M82 (`M82_UNIVERSAL_AUDIT_TEMPLATE_V605`)
 - **Gobernanza Activa:** `BUNKER MODE / CUSTODIA PASIVA 0.30x LOCK | LOCKOUT: NO TRADE` (`0.22x` NAV, `78.0%` *Dry Powder*, *VaR* `~1.68%`, *Warsh Spread* `~102.0 bps`).
 - **Cobertura:** *Equities* de Wall Street, banca/capital (`CET1`, `RoTCE`, `BVPS`, `TBVPS`), pares, estimaciones (`FY27–FY28`), *M&A*, bonos (*Investment Grade* / estructurados), préstamos (*Near Investment Grade* / *Highly Leveraged*), informes breves de junta e integración a **Molina Holdings LLC**, **Corporación Internacional JMM, C.A.** y **M82 Molina AI Partners**.
+
+<!-- M82_PERMANENT_INSTITUTIONAL_CRWV:v60.5-INSTITUTIONAL-CRWV-CORPORATE-AUDIT-PERMANENT -->
+## Ficha Institucional Permanente M82 — CoreWeave, Inc. ($CRWV)
+- **Instituciones:** Molina Holdings · Molina Global · Corporación Internacional JMM, C.A. (Caracas, Venezuela) · M82 Molina AI Partners
+- **Topología y Gobernanza:** Nodo Charallave L4/L5 Edge ⊗ Caracas HQ Central | BUNKER MODE / CUSTODIA PASIVA 0.30x LOCK | LOCKOUT: NO TRADE (0.22x NAV, 78.0% Dry Powder, VaR ~1.68%, Warsh Spread ~102.0 bps)
+- **Proyecciones:** FY27 Rev ~$27.28B / ARR ~$26.71B / EBITDA ~$17.19B / EPS ~-$1.94 | FY28 Rev ~$45.16B / ARR ~$48.38B / EBITDA ~$29.65B / EPS ~$1.69
+- **Crédito y Balance:** D/E ~9.11, Liquidez 0.44, Bonos 2031 ~17.9%, Facilidad GPU $4.5B, Acciones ~593.73M (FY27) -> ~636.75M (FY28)
+- **Sello Vector SHA-256:** `1f612bf2809af877ed629e440a59ee41fd2a923f72ca8ab580e4c3d79a7761e8`
+- **Hashtags LinkedIn:** #MacroDossierM82 #MolinaHoldings #MolinaGlobal #CorporacionInternacionalJMM #Caracas #Venezuela #WallStreet #InstitutionalResearch #PrivateCredit #InvestmentBanking #AIInfrastructure #Neocloud #CRWV #CoreWeave #CapitalMarkets #RiskGovernance
+- **Hashtags Redes:** #M82 #MacroDossier #MolinaGlobal #Caracas #CRWV #CoreWeave #AIInfra #CreditRisk #CapEx #WallStreet #QuantAudit #BunkerMode
