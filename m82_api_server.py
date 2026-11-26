@@ -275,5 +275,77 @@ def api_m82_audit_views():
     }), 200
 # --- END M82 AUDIT VIEWS ENDPOINT ---
 
+
+# --- M82 PWA & DIGITAL ASSET LINKS (:8083) ---
+def _m82_cf_domain():
+    env_dom = os.environ.get("M82_CF_DOMAIN", "").strip().removeprefix("https://").removeprefix("http://").rstrip("/")
+    if env_dom and env_dom != "tu-subdominio.tu-dominio.com":
+        return env_dom
+    dom_file = os.path.expanduser("~/.m82_cf_domain")
+    if os.path.exists(dom_file):
+        val = open(dom_file, encoding="utf-8").read().strip().removeprefix("https://").removeprefix("http://").rstrip("/")
+        if val:
+            return val
+    return env_dom or "localhost:8083"
+
+
+@app.route("/manifest.json", methods=["GET"])
+def m82_manifest_json():
+    from flask import jsonify
+    domain = _m82_cf_domain()
+    return jsonify({
+        "name": "M82 Sovereign Core v60.5",
+        "short_name": "M82 Core",
+        "description": "Caracas HQ Central x Nodo Charallave L4/L5 Edge — BUNKER MODE 0.30x LOCK",
+        "start_url": "/",
+        "scope": "/",
+        "display": "standalone",
+        "background_color": "#090d14",
+        "theme_color": "#0f172a",
+        "orientation": "portrait-primary",
+        "id": f"https://{domain}/",
+        "icons": []
+    }), 200
+
+
+@app.route("/sw.js", methods=["GET"])
+def m82_service_worker_js():
+    from flask import Response
+    sw_code = """const CACHE_NAME = 'm82-sovereign-v605-v1';
+self.addEventListener('install', event => {
+  self.skipWaiting();
+});
+self.addEventListener('activate', event => {
+  event.waitUntil(self.clients.claim());
+});
+self.addEventListener('fetch', event => {
+  if (event.request.method !== 'GET') return;
+  event.respondWith(
+    fetch(event.request).catch(() => caches.match(event.request))
+  );
+});
+"""
+    return Response(sw_code, mimetype="application/javascript", headers={"Cache-Control": "no-cache"})
+
+
+@app.route("/.well-known/assetlinks.json", methods=["GET"])
+def m82_assetlinks_json():
+    from flask import jsonify
+    pkg = os.environ.get("M82_ANDROID_PKG", "com.m82.sovereign.twa").strip()
+    sha256 = os.environ.get("M82_ANDROID_SHA256", "").strip().upper()
+    fingerprints = [sha256] if sha256 else []
+    payload = [
+        {
+            "relation": ["delegate_permission/common.handle_all_urls"],
+            "target": {
+                "namespace": "android_app",
+                "package_name": pkg,
+                "sha256_cert_fingerprints": fingerprints,
+            },
+        }
+    ]
+    return jsonify(payload), 200
+# --- END M82 PWA & DIGITAL ASSET LINKS ---
+
 if __name__ == '__main__':
     app.run(host='127.0.0.1', port=8083)

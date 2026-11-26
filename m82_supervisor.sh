@@ -27,7 +27,7 @@ while true; do
     if [ -f "$HOME/M82/.env.cf" ] && ! pgrep -f "cloudflared tunnel run" > /dev/null; then
         CF_TOKEN=$(cut -d '=' -f2- "$HOME/M82/.env.cf" | tr -d '"' | tr -d "'" | xargs)
         if [ -n "$CF_TOKEN" ]; then
-            nohup nice -n 10 cloudflared tunnel run --token "$CF_TOKEN" >> "$HOME/M82/logs/cf_tunnel.log" 2>&1 &
+            nohup nice -n 10 cloudflared tunnel run --protocol http2 --token "$CF_TOKEN" >> "$HOME/M82/logs/cf_tunnel.log" 2>&1 &
             sleep 1
         fi
     fi
