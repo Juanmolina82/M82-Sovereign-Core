@@ -20,3 +20,6 @@ mobile_build/
 *.pdf
 *.xlsx
 *.log
+
+__pycache__/
+*.pyc
