@@ -1028,10 +1028,11 @@
       "validated": 1
     }
   ],
-  "last_updated_utc": "2026-11-26T03:02:26.730329+00:00",
+  "last_updated_utc": "2026-11-26T04:21:07.946554+00:00",
   "governance_regime": "BUNKER MODE / CUSTODIA PASIVA 0.30x LOCK | LOCKOUT: NO TRADE",
-  "macro_dossier_count": 86,
-  "ledger_seals_count": 33,
+  "macro_dossier_count": 87,
+  "ledger_seals_count": 36,
   "latest_ingested_tag": "v60.5-NEW-SOURCE-TAG-20261125",
-  "latest_vanguard_ownership_tag": "v60.5-VANGUARD-OWNERSHIP-20261118"
+  "latest_vanguard_ownership_tag": "v60.5-VANGUARD-OWNERSHIP-20261118",
+  "latest_bui_dividend_tag": "v60.5-LSEG-BUI-DIVIDEND-POWER-20261124"
 }
