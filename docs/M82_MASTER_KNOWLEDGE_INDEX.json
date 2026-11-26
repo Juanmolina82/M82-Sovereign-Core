@@ -1489,9 +1489,9 @@
       "version": 1
     }
   ],
-  "last_updated_utc": "2026-11-25T21:29:08.077652+00:00",
+  "last_updated_utc": "2026-11-26T01:59:32.131394+00:00",
   "governance_regime": "BUNKER MODE / CUSTODIA PASIVA 0.30x LOCK | LOCKOUT: NO TRADE",
-  "macro_dossier_count": 81,
+  "macro_dossier_count": 84,
   "recent_session_tags": [
     "v60.5-DOS-VZLA-RECONCILIATION-TSJ-20261124",
     "v60.5-ENERGY-US-VZLA-DEPENDENCE-CORTES-20261124",
@@ -1516,5 +1516,8 @@
   "latest_tech_memory_audit_tag": "v60.5-TECH-MEMORY-TARIFF-FED-REBOUND-FAILED-20261125",
   "latest_state_dept_reconciliation_tag": "v60.5-US-STATE-DEPT-VZLA-RECONCILIATION-20261124",
   "latest_fed_beige_book_tag": "v60.5-REUTERS-FED-BEIGE-BOOK-STICKY-INFLATION-20261125",
-  "hq_topology": "Caracas HQ Central"
+  "hq_topology": "Caracas HQ Central",
+  "latest_vzla_omterra_tag": "v60.5-REUTERS-VZLA-PDVSA-OMTERRA-POWER-ALLIANCE-20261125",
+  "hq": "Caracas HQ Central",
+  "latest_capital_variation_ld_micro_tag": "v60.5-ALLY-CAPITAL-VARIATION-LD-MICRO-INVITATIONAL-XVI-202605"
 }
