@@ -1,0 +1,35 @@
+{
+  "template_id": "M82_UNIVERSAL_AUDIT_TEMPLATE_V605",
+  "version": "v60.5",
+  "origin_topology": "CHARALLAVE-L4L5-EDGE <-> CARACAS-HQ-CENTRAL",
+  "governance": {
+    "mode": "BUNKER_MODE_CUSTODIA_PASIVA_030X_LOCK",
+    "lockout": "NO_TRADE",
+    "exposure_nav": 0.22,
+    "max_exposure_cap": 0.3,
+    "dry_powder_pct": 78.0,
+    "daily_var_pct": 1.68,
+    "warsh_spread_bps": 102.0
+  },
+  "target_entities": [
+    "Molina Holdings LLC",
+    "Corporacion Internacional JMM, C.A.",
+    "M82 Molina AI Partners"
+  ],
+  "asset_classes": [
+    "WALL_STREET_EQUITIES",
+    "BANKING_CAPITAL_AND_PEERS",
+    "BONDS_AND_CREDIT_DEALS",
+    "LOANS_AND_LEVERAGED_FACILITIES",
+    "COMMODITIES_RATES_FX_AND_SOVEREIGN"
+  ],
+  "sections": [
+    "1_EXECUTIVE_BOARD_BRIEF",
+    "2_SCALE_INCOME_AND_CASHFLOW_LTM_FY_EST",
+    "3_VALUATION_MULTIPLES_AND_CAPITAL_STRUCTURE",
+    "4_PEERS_BENCHMARK_AND_RELATIVE_PERFORMANCE",
+    "5_DEALS_MA_EQUITY_BONDS_AND_LOANS",
+    "6_RISK_REGULATORY_SANCTIONS_AND_DATA_CHECKS",
+    "7_MODEL_INTEGRATION_AND_WAL_LEDGER_SEAL"
+  ]
+}

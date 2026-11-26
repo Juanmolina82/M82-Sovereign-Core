@@ -82,3 +82,7 @@
 * **Telemetría `.VIX`:** Spot en **26.36** (`-0.26` / `-0.98%`; rango intradía `25.98 – 32.38`) frente a Futuros en **24.19** (`+0.44%`), sosteniendo una curva invertida (**Backwardation de -2.17 pts**).
 * **Índice Tecnológico (`NASDAQ`):** Cierre en **23,733.54** (`-356.02` / `-1.48%`), presionado por el riesgo inflacionario del auge IA sobre la Reserva Federal de Kevin Warsh.
 * **Vector Indexado:** `v60.5-VIX-NASDAQ-20261124` (Quinto sello SHA-256 encadenado en `m82_ledger_seals_v2`).
+
+## Plantilla Universal de Auditoría M82 (`M82_UNIVERSAL_AUDIT_TEMPLATE_V605`)
+- **Gobernanza Activa:** `BUNKER MODE / CUSTODIA PASIVA 0.30x LOCK | LOCKOUT: NO TRADE` (`0.22x` NAV, `78.0%` *Dry Powder*, *VaR* `~1.68%`, *Warsh Spread* `~102.0 bps`).
+- **Cobertura:** *Equities* de Wall Street, banca/capital (`CET1`, `RoTCE`, `BVPS`, `TBVPS`), pares, estimaciones (`FY27–FY28`), *M&A*, bonos (*Investment Grade* / estructurados), préstamos (*Near Investment Grade* / *Highly Leveraged*), informes breves de junta e integración a **Molina Holdings LLC**, **Corporación Internacional JMM, C.A.** y **M82 Molina AI Partners**.

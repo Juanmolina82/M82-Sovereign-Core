@@ -1,7 +1,7 @@
 {
   "system": "M82_SOVEREIGN_CORE",
   "version": "v60.5",
-  "hq": "CARACAS-HQ-CENTRAL",
+  "hq": "Caracas HQ Central",
   "generated_at_utc": "2026-11-26T13:39:05Z",
   "governance_state": {
     "mode": "BUNKER_MODE_CUSTODIA_PASIVA_030X_LOCK",
@@ -2825,5 +2825,46 @@
       "hash_sha256": "608e22ff66f440e23f68fb38ecb1d88670d84faa65ea96755ab8de26cfa35b8b",
       "version": 1
     }
-  ]
+  ],
+  "last_updated_utc": "2026-11-26T14:28:18.370650+00:00",
+  "governance_regime": "BUNKER MODE / CUSTODIA PASIVA 0.30x LOCK | LOCKOUT: NO TRADE",
+  "macro_dossier_count": 99,
+  "universal_audit_template": {
+    "template_id": "M82_UNIVERSAL_AUDIT_TEMPLATE_V605",
+    "version": "v60.5",
+    "origin_topology": "CHARALLAVE-L4L5-EDGE <-> CARACAS-HQ-CENTRAL",
+    "governance": {
+      "mode": "BUNKER_MODE_CUSTODIA_PASIVA_030X_LOCK",
+      "lockout": "NO_TRADE",
+      "exposure_nav": 0.22,
+      "max_exposure_cap": 0.3,
+      "dry_powder_pct": 78.0,
+      "daily_var_pct": 1.68,
+      "warsh_spread_bps": 102.0
+    },
+    "target_entities": [
+      "Molina Holdings LLC",
+      "Corporacion Internacional JMM, C.A.",
+      "M82 Molina AI Partners"
+    ],
+    "asset_classes": [
+      "WALL_STREET_EQUITIES",
+      "BANKING_CAPITAL_AND_PEERS",
+      "BONDS_AND_CREDIT_DEALS",
+      "LOANS_AND_LEVERAGED_FACILITIES",
+      "COMMODITIES_RATES_FX_AND_SOVEREIGN"
+    ],
+    "sections": [
+      "1_EXECUTIVE_BOARD_BRIEF",
+      "2_SCALE_INCOME_AND_CASHFLOW_LTM_FY_EST",
+      "3_VALUATION_MULTIPLES_AND_CAPITAL_STRUCTURE",
+      "4_PEERS_BENCHMARK_AND_RELATIVE_PERFORMANCE",
+      "5_DEALS_MA_EQUITY_BONDS_AND_LOANS",
+      "6_RISK_REGULATORY_SANCTIONS_AND_DATA_CHECKS",
+      "7_MODEL_INTEGRATION_AND_WAL_LEDGER_SEAL"
+    ]
+  },
+  "universal_audit_template_path": "/data/data/com.termux/files/home/M82/docs/M82_UNIVERSAL_AUDIT_TEMPLATE_V605.json",
+  "master_dossier_sha256": "c10f93c8e5135857f8203abb15ad522e6fdedece51a8f78480ab28a73f2035b1",
+  "ledger_seals_count": 63
 }
