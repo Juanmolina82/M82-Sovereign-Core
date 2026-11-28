@@ -96,3 +96,8 @@
 - **Sello Vector SHA-256:** `1f612bf2809af877ed629e440a59ee41fd2a923f72ca8ab580e4c3d79a7761e8`
 - **Hashtags LinkedIn:** #MacroDossierM82 #MolinaHoldings #MolinaGlobal #CorporacionInternacionalJMM #Caracas #Venezuela #WallStreet #InstitutionalResearch #PrivateCredit #InvestmentBanking #AIInfrastructure #Neocloud #CRWV #CoreWeave #CapitalMarkets #RiskGovernance
 - **Hashtags Redes:** #M82 #MacroDossier #MolinaGlobal #Caracas #CRWV #CoreWeave #AIInfra #CreditRisk #CapEx #WallStreet #QuantAudit #BunkerMode
+
+## V. Enfoque Multiesectorial Integrado (2026-11-28T19:27:02Z)
+- **Vectores:** Agroindustria, Energia/Commodities/Shipping, Infraestructura/Servicios Publicos, Computo Agentico/Silicio/Neocloud ($CRWV, $NBIS, $IREN) y Mercados de Capitales/Tasas/FX.
+- **Sustrato Institucional:** Apertura de mercados, eliminacion de controles/cupos/guias discrecionales, derechos de propiedad y servicios basicos.
+- **Gobernanza:** BUNKER MODE / CUSTODIA PASIVA 0.30x LOCK | LOCKOUT: NO TRADE (0.22x exposicion, 78.0% Dry Powder, VaR ~1.68%, Warsh Spread ~102.0 bps).
