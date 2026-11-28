@@ -169,7 +169,8 @@ def persist_macro_and_index(conn, now_iso, eng, valid_count):
             "var_daily_pct": 1.68,
             "warsh_spread_bps": 102.0
         },
-        "lseg_stack": ["Workspace", "AlphaDesk", "REDI", "TORA", "Autex_Trade_Route", "FXall", "Tradeweb"],
+        "lseg_stack": ["Workspace", "AlphaDesk", "TORA", "Autex_Trade_Route", "Autex_IOI", "REDI", "FXall", "FX_Matching", "Tradeweb", "MarketAxess"],
+        "atr_scale": {"buy_side_firms": 1000, "brokers_venues": 600, "daily_equity_shares_bn": 4.0},
         "bonds_engine": eng,
         "valid_bond_ticks": valid_count,
         "ofac_gl_5aa_deadline": "2026-12-18"
@@ -344,7 +345,7 @@ Nodo: Charallave L4/L5 Edge x Caracas HQ Central
 Gob: BUNKER MODE 0.30x LOCK | LOCKOUT: NO TRADE
 Cartera: 0.22x NAV | Dry Powder 78.0% | VaR ~1.68% | Warsh ~102.0 bps
 
-1. LSEG AlphaDesk & F2B: OMS/PMS nube, rebalanceo, P&L (+100 campos), Shadow NAV, contabilidad, riesgo (VaR/escenarios/liquidez/tasas), compliance (40 Act/UCITS/MiFID II), Workspace, TORA y Autex Trade Route.
+1. LSEG AlphaDesk, TORA & Autex Trade Route (F2B): OMS/PMS nube (rebalanceo, P&L +100 campos, Shadow NAV, contabilidad, riesgo, 40 Act/UCITS/MiFID II), TORA OEMS (FIX/WebSocket APIs, spread/relative-value, pre/post-trade TCA, FXall/FX Matching, Tradeweb/MarketAxess, Digital Assets) y ATR (+1,000 buy-side, +600 brokers, +4B shares/dia, Autex IOI & REDI).
 2. Wall Street: Equities/IA, US 10Y/Fed, USD/JPY, Brent/WTI (Ormuz/OPEP+), XAU y BTC.
 3. VENZ & PDVSA ({eng}, ticks={valid_count}): Marco $237.5B y OFAC GL 5AA (18-Dic-2026).
 {bond_table[:1800]}"""

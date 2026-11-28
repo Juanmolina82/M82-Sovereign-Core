@@ -3,7 +3,7 @@
   "version": "v60.5",
   "workspace_user": "jmmp@molina82.com",
   "origin_topology": "CHARALLAVE-L4L5-EDGE <-> CARACAS-HQ-CENTRAL",
-  "generated_at_utc": "2026-11-28T07:39:17Z",
+  "generated_at_utc": "2026-11-28T07:43:25Z",
   "latest_tag": "v60.5-LSEG-MACRO-F2B-VZLA-BONDS-20261128",
   "governance_state": {
     "mode": "BUNKER_MODE_CUSTODIA_PASIVA_030X_LOCK",
@@ -23,9 +23,9 @@
   },
   "ledger_integrity": {
     "total_vectors": 108,
-    "total_seals": 107,
-    "latest_seal_id": 107,
-    "latest_payload_hash": "b688eca62ac625809bfadb8ef973813de4b33a39f2e48f6fe8c68d0755ed45ad"
+    "total_seals": 108,
+    "latest_seal_id": 108,
+    "latest_payload_hash": "a7e41de35e5cf461fb1a96ef4f69bacc72ce7a5ecd23601b2e72d5caa6720118"
   },
   "cryptographic_seals": [
     {
@@ -1204,6 +1204,17 @@
       "node_id": "CHARALLAVE-L4L5-EDGE",
       "version": 1,
       "seal_id_resolved": 107
+    },
+    {
+      "seal_id": null,
+      "prev_hash": "b688eca62ac625809bfadb8ef973813de4b33a39f2e48f6fe8c68d0755ed45ad",
+      "record_id": "1067",
+      "operation": "SEAL",
+      "payload_hash": "a7e41de35e5cf461fb1a96ef4f69bacc72ce7a5ecd23601b2e72d5caa6720118",
+      "timestamp": "2026-11-28T07:43:25Z",
+      "node_id": "CHARALLAVE-L4L5-EDGE",
+      "version": 1,
+      "seal_id_resolved": 108
     }
   ],
   "macro_vectors": [
@@ -3669,26 +3680,26 @@
       "version": 1
     },
     {
-      "id": 1066,
+      "id": 1067,
       "node_origin": "Caracas HQ (Core) ⊗ Charallave Edge",
       "governance_mode": "BUNKER MODE / 0.30x LOCK",
       "var_daily": 1.68,
       "active_exposure": 0.22,
-      "created_at": "2026-11-28 07:39:38",
+      "created_at": "2026-11-28 07:43:48",
       "source": "M82_MACRO_F2B_SOVEREIGN",
       "category": "MACRO_F2B_BONDS_DISPATCH",
       "headline": "Macro M82 (lseg.data, ticks=1): LSEG AlphaDesk OMS/PMS nube, Wall Street F2B y bonos VENZ/PDVSA (OFAC GL 5AA 18-Dic-2026) bajo BUNKER MODE 0.30x LOCK",
       "risk_score": 1.68,
       "m82_tag": "v60.5-LSEG-MACRO-F2B-VZLA-BONDS-20261128",
       "sentiment": 0.86,
-      "metadata_json": "{\"date_utc\": \"2026-11-28T07:39:17Z\", \"node\": \"CHARALLAVE-L4L5-EDGE\", \"hq\": \"CARACAS-HQ-CENTRAL\", \"governance\": {\"mode\": \"BUNKER_MODE_CUSTODIA_PASIVA_030X_LOCK\", \"lockout\": \"NO_TRADE\", \"exposure\": 0.22, \"lock_cap\": 0.3, \"dry_powder_pct\": 78.0, \"var_daily_pct\": 1.68, \"warsh_spread_bps\": 102.0}, \"lseg_stack\": [\"Workspace\", \"AlphaDesk\", \"REDI\", \"TORA\", \"Autex_Trade_Route\", \"FXall\", \"Tradeweb\"], \"bonds_engine\": \"lseg.data\", \"valid_bond_ticks\": 1, \"ofac_gl_5aa_deadline\": \"2026-12-18\"}",
+      "metadata_json": "{\"date_utc\": \"2026-11-28T07:43:25Z\", \"node\": \"CHARALLAVE-L4L5-EDGE\", \"hq\": \"CARACAS-HQ-CENTRAL\", \"governance\": {\"mode\": \"BUNKER_MODE_CUSTODIA_PASIVA_030X_LOCK\", \"lockout\": \"NO_TRADE\", \"exposure\": 0.22, \"lock_cap\": 0.3, \"dry_powder_pct\": 78.0, \"var_daily_pct\": 1.68, \"warsh_spread_bps\": 102.0}, \"lseg_stack\": [\"Workspace\", \"AlphaDesk\", \"TORA\", \"Autex_Trade_Route\", \"Autex_IOI\", \"REDI\", \"FXall\", \"FX_Matching\", \"Tradeweb\", \"MarketAxess\"], \"atr_scale\": {\"buy_side_firms\": 1000, \"brokers_venues\": 600, \"daily_equity_shares_bn\": 4.0}, \"bonds_engine\": \"lseg.data\", \"valid_bond_ticks\": 1, \"ofac_gl_5aa_deadline\": \"2026-12-18\"}",
       "validated": 1,
       "alpha_score": 0.88,
       "tail_risk_index": 1.45,
       "desk_cluster": "VENEZUELA_LATAM_DESK",
       "dispatched_tg": 0,
       "msi_index": 1875.0,
-      "hash_sha256": "b688eca62ac625809bfadb8ef973813de4b33a39f2e48f6fe8c68d0755ed45ad",
+      "hash_sha256": "a7e41de35e5cf461fb1a96ef4f69bacc72ce7a5ecd23601b2e72d5caa6720118",
       "version": 1
     }
   ]
