@@ -1,5 +1,21 @@
 #!/usr/bin/env python3
 import os, sys, json, sqlite3, hashlib, datetime, urllib.error, urllib.parse, urllib.request
+import math
+def to_float_safe(val):
+    if val is None:
+        return None
+    try:
+        import pandas as _pd
+        if _pd.isna(val):
+            return None
+    except Exception:
+        pass
+    try:
+        f = float(val)
+        return None if (math.isnan(f) or math.isinf(f)) else f
+    except Exception:
+        return None
+
 
 BASE_DIR = os.path.expanduser("~/M82")
 DB_PATH = os.path.join(BASE_DIR, "m82_database.db")
@@ -91,9 +107,10 @@ def fetch_bonds_and_store(conn, now_iso):
             b, a = r.get("BID"), r.get("ASK")
             p = r.get("TRDPRC_1") if r.get("TRDPRC_1") is not None else r.get("PRIMACT_1")
             c = r.get("NETCHNG_1")
-            bf = float(b) if b is not None and str(b) != "nan" else None
-            af = float(a) if a is not None and str(a) != "nan" else None
-            pf = float(p) if p is not None and str(p) != "nan" else None
+            bf = to_float_safe(b)
+            af = to_float_safe(a)
+            pf = to_float_safe(p)
+            cf = to_float_safe(c)
             mid = round((bf + af) / 2, 4) if (bf is not None and af is not None) else (round(pf, 4) if pf is not None else None)
             if mid is not None:
                 valid_count += 1
@@ -104,7 +121,7 @@ def fetch_bonds_and_store(conn, now_iso):
             bs = f"{bf:.2f}" if bf is not None else " N/A "
             as_ = f"{af:.2f}" if af is not None else " N/A "
             ms = f"{mid:.2f}" if mid is not None else " N/A "
-            cs = f"{float(c):+.2f}" if c is not None and str(c) != "nan" else " N/A "
+            cs = f"{cf:+.2f}" if cf is not None else " N/A "
             lines.append(f"{ric:<14} | {RICS.get(ric, ric)[:21]:<21} | {bs:>6} | {as_:>6} | {ms:>6} | {cs:>6}")
     else:
         lines.append(f"Sesion LSEG sin datos ({err_msg[:90]})")
