@@ -114,10 +114,32 @@ def fetch_bonds_and_store(conn, now_iso):
             mid = round((bf + af) / 2, 4) if (bf is not None and af is not None) else (round(pf, 4) if pf is not None else None)
             if mid is not None:
                 valid_count += 1
-                conn.execute(
-                    "INSERT INTO price_ticks (symbol,price,bid,ask,source,ts) VALUES (?,?,?,?,?,?)",
-                    (ric, mid, bf or mid, af or mid, f"LSEG_{eng}_VZLA", now_iso)
-                )
+                t_cols = {r[1] for r in conn.execute("PRAGMA table_info(price_ticks)").fetchall()}
+                if not t_cols:
+                    conn.execute(
+                        "CREATE TABLE IF NOT EXISTS price_ticks (id INTEGER PRIMARY KEY AUTOINCREMENT, ric TEXT, symbol TEXT, price REAL, mid REAL, bid REAL, ask REAL, source TEXT, ts TEXT)"
+                    )
+                    t_cols = {r[1] for r in conn.execute("PRAGMA table_info(price_ticks)").fetchall()}
+                tick_map = {
+                    "ric": ric,
+                    "symbol": ric,
+                    "instrument": ric,
+                    "price": mid,
+                    "mid": mid,
+                    "last_px": mid,
+                    "bid": bf if bf is not None else mid,
+                    "ask": af if af is not None else mid,
+                    "source": f"LSEG_{eng}_VZLA",
+                    "ts": now_iso,
+                    "ts_utc": now_iso,
+                    "timestamp": now_iso,
+                }
+                use_cols = [c for c in tick_map if c in t_cols]
+                if use_cols:
+                    conn.execute(
+                        f"INSERT INTO price_ticks ({', '.join(use_cols)}) VALUES ({', '.join(['?']*len(use_cols))})",
+                        [tick_map[c] for c in use_cols]
+                    )
             bs = f"{bf:.2f}" if bf is not None else " N/A "
             as_ = f"{af:.2f}" if af is not None else " N/A "
             ms = f"{mid:.2f}" if mid is not None else " N/A "
