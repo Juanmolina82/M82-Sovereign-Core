@@ -3,7 +3,7 @@
   "version": "v60.5",
   "workspace_user": "jmmp@molina82.com",
   "origin_topology": "CHARALLAVE-L4L5-EDGE <-> CARACAS-HQ-CENTRAL",
-  "generated_at_utc": "2026-11-26T21:29:13Z",
+  "generated_at_utc": "2026-11-27T15:22:21Z",
   "governance_state": {
     "mode": "BUNKER_MODE_CUSTODIA_PASIVA_030X_LOCK",
     "lockout": "NO_TRADE",
@@ -20,9 +20,9 @@
   },
   "ledger_integrity": {
     "total_vectors": 106,
-    "total_seals": 102,
-    "latest_seal_id": 102,
-    "latest_payload_hash": "5f8e8a73ad44ee1346a8c39bc665d953240a985e12c3997573a864570adee5b2"
+    "total_seals": 106,
+    "latest_seal_id": 106,
+    "latest_payload_hash": "ec008b9fa16b22312a26cf22891f331ff5aee22cea216b59e9ffeb336b6d3902"
   },
   "cryptographic_seals": [
     {
@@ -1146,6 +1146,50 @@
       "node_id": "CARACAS-HQ-CENTRAL",
       "version": 1,
       "seal_id_resolved": 102
+    },
+    {
+      "seal_id": null,
+      "prev_hash": "5f8e8a73ad44ee1346a8c39bc665d953240a985e12c3997573a864570adee5b2",
+      "record_id": "1061",
+      "operation": "SEAL",
+      "payload_hash": "e211b4726f83b1c175a843e6e9cef5116f226a8ec4c7c33a311a45d3803f0e5d",
+      "timestamp": "2026-11-26T21:34:15Z",
+      "node_id": "CARACAS-HQ-CENTRAL",
+      "version": 1,
+      "seal_id_resolved": 103
+    },
+    {
+      "seal_id": null,
+      "prev_hash": "e211b4726f83b1c175a843e6e9cef5116f226a8ec4c7c33a311a45d3803f0e5d",
+      "record_id": "1062",
+      "operation": "SEAL",
+      "payload_hash": "6db04d7fd14f92d3e68afe84d620af119bd12ddd4b4c25541d17bd5f2dfc178e",
+      "timestamp": "2026-11-26T21:39:17Z",
+      "node_id": "CARACAS-HQ-CENTRAL",
+      "version": 1,
+      "seal_id_resolved": 104
+    },
+    {
+      "seal_id": null,
+      "prev_hash": "6db04d7fd14f92d3e68afe84d620af119bd12ddd4b4c25541d17bd5f2dfc178e",
+      "record_id": "1063",
+      "operation": "SEAL",
+      "payload_hash": "c9cc06821e405d3d5c3d0ef5b75a9b95edb5b03f1607d1f57b75d1bd56e39dac",
+      "timestamp": "2026-11-27T04:04:24Z",
+      "node_id": "CARACAS-HQ-CENTRAL",
+      "version": 1,
+      "seal_id_resolved": 105
+    },
+    {
+      "seal_id": null,
+      "prev_hash": "c9cc06821e405d3d5c3d0ef5b75a9b95edb5b03f1607d1f57b75d1bd56e39dac",
+      "record_id": "1064",
+      "operation": "SEAL",
+      "payload_hash": "ec008b9fa16b22312a26cf22891f331ff5aee22cea216b59e9ffeb336b6d3902",
+      "timestamp": "2026-11-27T15:22:20Z",
+      "node_id": "CARACAS-HQ-CENTRAL",
+      "version": 1,
+      "seal_id_resolved": 106
     }
   ],
   "macro_vectors": [
@@ -3565,26 +3609,26 @@
       "version": 1
     },
     {
-      "id": 1060,
+      "id": 1064,
       "node_origin": "Caracas HQ (Core) ⊗ Charallave Edge",
       "governance_mode": "BUNKER MODE / 0.30x LOCK",
       "var_daily": 1.68,
       "active_exposure": 0.22,
-      "created_at": "2026-11-26 21:29:12",
+      "created_at": "2026-11-27 15:22:20",
       "source": "M82_HUD_AUDIT_DISPATCHER",
       "category": "HUD_GOVERNANCE_AUDIT",
-      "headline": "M82 HUD Audit (Caracas HQ Central): 106 vectors, 101 seals, BUNKER MODE / CUSTODIA PASIVA 0.30x LOCK | LOCKOUT: NO TRADE (0.22x NAV, 78.0% Dry Powder).",
+      "headline": "M82 HUD Audit (Caracas HQ Central): 106 vectors, 105 seals, BUNKER MODE / CUSTODIA PASIVA 0.30x LOCK | LOCKOUT: NO TRADE (0.22x NAV, 78.0% Dry Powder).",
       "risk_score": 2.4,
       "m82_tag": "v60.5-HUD-PERIODIC-AUDIT-CARACAS-HQ",
       "sentiment": 0.5,
-      "metadata_json": "{\"hq\": \"Caracas HQ Central\", \"total_vectors\": 106, \"seal_count\": 101, \"latest_seal_prefix\": \"6d3ab234f47ab983\", \"regime\": \"BUNKER_MODE_CUSTODIA_PASIVA_030X_LOCK\", \"lockout\": \"NO_TRADE\", \"exposure_nav\": 0.22, \"dry_powder_pct\": 78.0, \"var_daily_pct\": 1.68, \"warsh_spread_bps\": 102.0, \"p_bunker\": 0.9859, \"vix\": 34.0, \"jacobi_lambda1\": 0.5544}",
+      "metadata_json": "{\"hq\": \"Caracas HQ Central\", \"total_vectors\": 106, \"seal_count\": 105, \"latest_seal_prefix\": \"c9cc06821e405d3d\", \"regime\": \"BUNKER_MODE_CUSTODIA_PASIVA_030X_LOCK\", \"lockout\": \"NO_TRADE\", \"exposure_nav\": 0.22, \"dry_powder_pct\": 78.0, \"var_daily_pct\": 1.68, \"warsh_spread_bps\": 102.0, \"p_bunker\": 0.9859, \"vix\": 34.0, \"jacobi_lambda1\": 0.5544}",
       "validated": 1,
       "alpha_score": 0.85,
       "tail_risk_index": 1.45,
       "desk_cluster": "CORE_MACRO",
       "dispatched_tg": 0,
       "msi_index": 1985.0,
-      "hash_sha256": "5f8e8a73ad44ee1346a8c39bc665d953240a985e12c3997573a864570adee5b2",
+      "hash_sha256": "ec008b9fa16b22312a26cf22891f331ff5aee22cea216b59e9ffeb336b6d3902",
       "version": 1
     }
   ]
